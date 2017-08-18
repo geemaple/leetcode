@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 import pytest
 import random
 import sorting
@@ -59,10 +60,11 @@ def test_1k(sort_name, sort_func):
 def test_10k(sort_name, sort_func):
     general_test(sort_name, sort_func, 10000)
 
-@pytest.mark.parametrize("sort_name, sort_func", all_sortings)
-def test_100k(sort_name, sort_func):
-    general_test(sort_name, sort_func, 100000)
-
+# ⚠️⚠️⚠️ the following tests will take a significant amout of time to complete
+# @pytest.mark.parametrize("sort_name, sort_func", all_sortings)
+# def test_100k(sort_name, sort_func):
+#     general_test(sort_name, sort_func, 100000)
+#
 # @pytest.mark.parametrize("sort_name, sort_func", all_sortings)
 # def test_1m(sort_name, sort_func):
 #     general_test(sort_name, sort_func, 1000000)
