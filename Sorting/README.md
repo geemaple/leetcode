@@ -7,6 +7,10 @@
 * [Heap Sort](http://en.wikipedia.org/wiki/Heapsort)
 * [Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
 
+# Usage
+    pip install -r requirements.txt
+    pytest -v
+
 # Testing Results
 
 ![Testing Result](https://raw.githubusercontent.com/geemaple/algorithm/master/Sorting/sorting_test_results.jpg)
