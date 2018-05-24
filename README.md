@@ -1,39 +1,46 @@
 # leetcode
-leetcode answer in python
-This is an **early draft** of a **continually updated, open source** project.
+My personal leetcode answer in python<br/>
+This is a **continually updated, open source** project.
 
 # Algorithms
 
 - [leetcode](#leetcode)
 - [Algorithms](#algorithms)
     - [Binary Search](#binary-search)
-    - [Breadth First Traversal](#breadth-first-traversal)
-    - [Depth First Traversal](#depth-first-traversal)
+    - [Tree Traversal](#tree-traversal)
+    - [Graph Traversal](#graph-traversal)
     - [Divide and Conquer](#divide-and-conquer)
+    - [Topological Sort](#topological-sort)
     - [Dynamic Programming](#dynamic-programming)
 
 ## Binary Search
 
-|  Problem          |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
-| ----------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-
-## Breadth First Traversal
-
-|  Problem          |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
-| ----------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-|200.number-of-islands.py |  [python](./algorithm/200.number-of-islands.py) | 
-
-
-## Depth First Traversal
-
-|  Problem          |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
-| ----------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 
 ## Divide and Conquer
 
-|  Problem          |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
-| ----------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+
+
+## Tree Traversal
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+
+
+## Graph Traversal
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+|200.number-of-islands.py | [python](./algorithm/200.number-of-islands.py) | O(m * n) | Medium | BFS/DFS | union-find
+
+## Topological Sort
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 
 ## Dynamic Programming
-|  Problem          |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
-| ----------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|

@@ -1,43 +1,4 @@
 '''
-[200] Number of Islands  
-
-https://leetcode.com/problems/number-of-islands/description/
-
-* algorithms
-* Medium (36.87%)
-* Source Code:       200.number-of-islands.py
-* Total Accepted:    179.4K
-* Total Submissions: 486.3K
-* Testcase Example:  '[["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]'
-* Avail Languages:   c, cpp, csharp, golang, java, javascript, kotlin, python, python3, ruby, scala, swift
-
-Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
-
-Example 1:
-
-
-Input:
-11110
-11010
-11000
-00000
-
-Output: 1
-
-
-Example 2:
-
-
-Input:
-11000
-11000
-00100
-00011
-
-Output: 3
-'''
-
-'''
 ------------------------->
 |
 |          top
@@ -48,32 +9,72 @@ Output: 3
 |
 V
 '''
+class Solution(object):
 
-# class Solution(object):
-
-#     MOVE_LEFT = (0, -1)
-#     MOVE_RIGHT = (0, 1)
-#     MOVE_TOP = (-1, 0)
-#     MOVE_BOTTOM = (1, 0)
-
-#     def numIslands(self, grid):
-#         """
-#         :type grid: List[List[str]]
-#         :rtype: int
-#         """
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
         
-#         # corner case
-#         if grid is None or len(grid) == 0:
-#             return 0
+        # corner case
+        if grid is None or len(grid) == 0:
+            return 0
 
-#         row  = len(grid)
-#         column = len(grid[0])
+        result = 0
+        row  = len(grid)
+        column = len(grid[0])
+        visted = set()
 
-#         # find all node = '1'
-#         candidates = set()
-#         for i in range(row):
-#             for j in range(column):
-#                 if grid[i][j] is '1':
-#                     candidates.add((i, j))
+        # find all node = '1'
+        for i in range(row):
+            for j in range(column):
+                if grid[i][j] == '1':
+                    # breadth first search and mark it with '0'
+                    self.bfs_search(grid, (i, j), visted)
+                    result += 1
 
-#         visted = set()
+        return result
+
+
+    def check(self, graph, point, visted):
+        x , y = point
+        row = len(graph)
+        column = len(graph[0])
+
+        if point not in visted and 0 <= x < row and 0 <= y < column and graph[x][y] == '1':
+            visted.add(point)
+            return True
+        else:
+            return False
+
+    def bfs_search(self, graph, point, visted):
+        # direction = <top, left, bottom, right>
+        directionX = [-1, 0, 1, 0]
+        directionY = [0, -1, 0, 1]
+
+        queue = [point]
+        visted.add(point)
+
+        while(len(queue) > 0):
+            x, y = queue.pop(0)
+            graph[x][y] = '0'
+
+            for i in range(4):
+                neighbor = ((x + directionX[i]), (y + directionY[i]))
+
+                if self.check(graph, neighbor, visted):
+                    queue.append(neighbor)
+
+    def dfs_search(self, graph, point, visted):
+        # direction = <top, left, bottom, right>
+        directionX = [-1, 0, 1, 0]
+        directionY = [0, -1, 0, 1]
+
+        x, y = point
+        graph[x][y] = '0'
+        
+        for i in range(4):
+            neighbor = ((x + directionX[i]), (y + directionY[i]))
+            if self.check(graph, neighbor, visted):
+                self.dfs_search(graph, neighbor, visted)
