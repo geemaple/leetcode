@@ -10,6 +10,7 @@ This is a **continually updated, open source** project.
     - [Tree Traversal](#tree-traversal)
     - [Graph Traversal](#graph-traversal)
     - [Divide and Conquer](#divide-and-conquer)
+    - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
     - [Dynamic Programming](#dynamic-programming)
 
@@ -35,6 +36,11 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 |200.number-of-islands | [python](./algorithm/200.number-of-islands.py) | O(ROW x COL) | Medium | BFS/DFS | union-find
+
+## Backtracking
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 78.subsets | [python](./algorithm/78.subsets.py) | O(2^N) | Medium | DFS | bit-manipulation
 
 ## Topological Sort
 
