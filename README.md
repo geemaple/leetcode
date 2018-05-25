@@ -1,10 +1,10 @@
-# leetcode
+# Leetcode
 My personal leetcode answer in python<br/>
 This is a **continually updated, open source** project.
 
 # Algorithms
 
-- [leetcode](#leetcode)
+- [Leetcode](#leetcode)
 - [Algorithms](#algorithms)
     - [Binary Search](#binary-search)
     - [Tree Traversal](#tree-traversal)
@@ -41,6 +41,7 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 78.subsets | [python](./algorithm/78.subsets.py) | O(2^N) | Medium | DFS | bit-manipulation
+| 90.subsets-ii | [python](./algorithm/90.subsets-ii.py) | O(2^N) | Medium | DFS |  bit-manipulation
 
 ## Topological Sort
 
