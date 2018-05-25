@@ -44,6 +44,7 @@ This is a **continually updated, open source** project.
 | 40.combination-sum-ii | [python](./algorithm/40.combination-sum-ii.py) | ??? | Medium | DFS |
 | 78.subsets | [python](./algorithm/78.subsets.py) | ??? | Medium | DFS | bit-manipulation
 | 90.subsets-ii | [python](./algorithm/90.subsets-ii.py) | ??? | Medium | DFS |  bit-manipulation
+| 131.palindrome-partitioning | [python](./algorithm/131.palindrome-partitioning.py) | ??? | Medium | DFS |
 
 ## Topological Sort
 
