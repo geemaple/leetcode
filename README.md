@@ -43,6 +43,7 @@ This is a **continually updated, open source** project.
 | 39.combination-sum | [python](./algorithm/39.combination-sum.py) | ??? | Medium | DFS |
 | 40.combination-sum-ii | [python](./algorithm/40.combination-sum-ii.py) | ??? | Medium | DFS |
 | 46.permutations | [python](./algorithm/46.permutations.py) | ??? | Medium | DFS |
+| 47.permutations-ii | [python](./algorithm/47.permutations-ii.py) | ??? | Medium | DFS |
 | 78.subsets | [python](./algorithm/78.subsets.py) | ??? | Medium | DFS | bit-manipulation
 | 90.subsets-ii | [python](./algorithm/90.subsets-ii.py) | ??? | Medium | DFS |  bit-manipulation
 | 131.palindrome-partitioning | [python](./algorithm/131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
