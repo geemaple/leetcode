@@ -60,4 +60,4 @@ class Solution(object):
                 result += 'Q' if column == cols[row] else '.'
             chessboard.append(result)
 
-        return ','.join(chessboard)
+        return chessboard
