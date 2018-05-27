@@ -35,7 +35,8 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
-|200.number-of-islands | [python](./algorithm/200.number-of-islands.py) | O(ROW x COL) | Medium | BFS/DFS | union-find
+| 127.word-ladder | [python](./algorithm/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
+| 200.number-of-islands | [python](./algorithm/200.number-of-islands.py) | O(ROW x COL) | Medium | BFS/DFS | union-find
 
 ## Backtracking
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
@@ -54,7 +55,7 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
-|444.sequence-reconstruction | [python](./algorithm/444.sequence-reconstruction.py) | O(V+E) | Medium | BFS/DFS |
+| 444.sequence-reconstruction | [python](./algorithm/444.sequence-reconstruction.py) | O(V+E) | Medium | BFS/DFS |
 
 ## Dynamic Programming
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
