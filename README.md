@@ -6,6 +6,7 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
 - [Algorithms](#algorithms)
+    - [Linked List](#linked-list)
     - [Binary Search](#binary-search)
     - [Tree Traversal](#tree-traversal)
     - [Graph Traversal](#graph-traversal)
@@ -13,6 +14,12 @@ This is a **continually updated, open source** project.
     - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
     - [Dynamic Programming](#dynamic-programming)
+
+## Linked List
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 25.reverse-nodes-in-k-group | [python](./algorithm/25.reverse-nodes-in-k-group.py) | O(N) | HARD |
 
 ## Binary Search
 
