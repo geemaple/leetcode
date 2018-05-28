@@ -2,6 +2,11 @@
 My personal leetcode answer in python<br/>
 This is a **continually updated, open source** project.
 
+
+🎉🎉🎉 on 2018-05-28 finished 100 questinos
+
+
+
 # Algorithms
 
 - [Leetcode](#leetcode)
@@ -19,7 +24,8 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
-| 25.reverse-nodes-in-k-group | [python](./algorithm/25.reverse-nodes-in-k-group.py) | O(N) | HARD |
+| 25.reverse-nodes-in-k-group | [python](./algorithm/25.reverse-nodes-in-k-group.py) | O(N) | Hard |
+| 86.partition-list | [python](./algorithm/86.partition-list.py) | O(N) | Medium |
 
 ## Binary Search
 
@@ -56,7 +62,7 @@ This is a **continually updated, open source** project.
 | 52.n-queens-ii | [python](./algorithm/52.n-queens-ii.py) | ??? | Hard | DFS |
 | 78.subsets | [python](./algorithm/78.subsets.py) | ??? | Medium | DFS | bit-manipulation
 | 90.subsets-ii | [python](./algorithm/90.subsets-ii.py) | ??? | Medium | DFS |  bit-manipulation
-| 126.word-ladder-ii | [python](./algorithm/126.word-ladder-ii.py) | O((V+E) * L^2) | HARD | BFS+DFS |
+| 126.word-ladder-ii | [python](./algorithm/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./algorithm/131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
 
 ## Topological Sort
