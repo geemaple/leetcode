@@ -3,7 +3,7 @@ My personal leetcode answer in python<br/>
 This is a **continually updated, open source** project.
 
 
-🎉🎉🎉 on 2018-05-28 finished 100 questinos
+🎉🎉🎉 Finished 100 questions on 2018-05-28
 
 
 
