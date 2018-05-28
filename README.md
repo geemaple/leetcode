@@ -24,6 +24,7 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 21.merge-two-sorted-lists | [python](./algorithm/21.merge-two-sorted-lists.py) | O(N) | Easy |
 | 25.reverse-nodes-in-k-group | [python](./algorithm/25.reverse-nodes-in-k-group.py) | O(N) | Hard |
 | 86.partition-list | [python](./algorithm/86.partition-list.py) | O(N) | Medium |
 
