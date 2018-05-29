@@ -29,7 +29,7 @@ This is a **continually updated, open source** project.
 | 61.rotate-list | [python](./algorithm/61.rotate-list.py) | O(N) | Medium |
 | 86.partition-list | [python](./algorithm/86.partition-list.py) | O(N) | Medium |
 | 92.reverse-linked-list-ii | [python](./algorithm/92.reverse-linked-list-ii.py) | O(N) | Medium |
-| 138.copy-list-with-random-pointer | [python](./algorithm/138.copy-list-with-random-pointer.py) | O(N) Medium
+| 138.copy-list-with-random-pointer | [python](./algorithm/138.copy-list-with-random-pointer.py) | O(N) | Medium
 | 141.linked-list-cycle | [python](./algorithm/141.linked-list-cycle.py) | O(N) | Easy
 | 142.linked-list-cycle-ii | [python](./algorithm/142.linked-list-cycle-ii.py) | O(N) | Medium
 | 143.reorder-list | [python](./algorithm/143.reorder-list.py) | O(N) | Medium |
