@@ -39,6 +39,7 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 278.first-bad-version | [python](./algorithm/278.first-bad-version.py) | O(LogN) | Easy
 
 ## Divide and Conquer
 
