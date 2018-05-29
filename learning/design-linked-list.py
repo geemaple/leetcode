@@ -18,6 +18,7 @@ class MyLinkedList(object):
         :rtype: int
         """
         current = self.head
+
         for _ in range(index):
             if current.next is not None:
                 current = current.next
@@ -34,9 +35,7 @@ class MyLinkedList(object):
         :type val: int
         :rtype: void
         """
-        node = Node(val)
-        node.next = self.head.next
-        self.head.next = node
+        self.addAtIndex(0, val)
 
 
     def addAtTail(self, val):
@@ -48,6 +47,7 @@ class MyLinkedList(object):
         
         current = self.head
         node = Node(val)
+        
         while(current.next is not None):
             current = current.next
 
@@ -60,22 +60,18 @@ class MyLinkedList(object):
         :type val: int
         :rtype: void
         """
-        
-        count = 0
-        current = self.head        
-        while(current.next is not None):
-            if count == index:
-                break
-            count += 1
+
+        current = self.head   
+
+        for _ in range(index):
+            if current.next is None:
+                return
+
             current = current.next
-        
-        if index > count:
-            return
-        
+
         node = Node(val)
         node.next = current.next
-        current.next = node
-        
+        current.next = node        
 
     def deleteAtIndex(self, index):
         """
@@ -83,17 +79,17 @@ class MyLinkedList(object):
         :type index: int
         :rtype: void
         """
-        count = 0
-        current = self.head
-        while(current.next is not None):
-            if count == index:
-                break
-            count += 1
+        current = self.head   
+
+        for _ in range(index):
+            if current.next is None:
+                return
+
             current = current.next
-        
-        if index > count:
-            return
-        
+
         node = current.next
+        if node is None:
+            return
+
         current.next = node.next
-        node.next = None
+        del node
