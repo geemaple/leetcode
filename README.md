@@ -11,6 +11,7 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
 - [Algorithms](#algorithms)
+    - [Array](#array)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
     - [Binary Search](#binary-search)
@@ -20,6 +21,12 @@ This is a **continually updated, open source** project.
     - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
     - [Dynamic Programming](#dynamic-programming)
+
+## Array
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 88.merge-sorted-array | [python](./algorithm/88.merge-sorted-array.py) | O(N + M) | Easy |
 
 ## Two Pointers
 
