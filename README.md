@@ -45,6 +45,7 @@ This is a **continually updated, open source** project.
 | 148.sort-list | [python](./algorithm/148.sort-list.py) | O(N * logN) | Medium |
 | 203.remove-linked-list-elements | [python](./algorithm/203.remove-linked-list-elements.py) | O(N) | Easy
 | 206.reverse-linked-list | [python](./algorithm/206.reverse-linked-list.py) | O(N) | Easy |
+| 237.delete-node-in-a-linked-list | [python](./algorithm/237.delete-node-in-a-linked-list.py) | O(1) | Easy
 
 ## Binary Search
 
