@@ -28,6 +28,7 @@ This is a **continually updated, open source** project.
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 88.merge-sorted-array | [python](./algorithm/88.merge-sorted-array.py) | O(N + M) | Easy |
 | 349.intersection-of-two-arrays | [python](./algorithm/349.intersection-of-two-arrays.py) O(N + M) |Easy
+| 350.intersection-of-two-arrays-ii | [python](./algorithm/350.intersection-of-two-arrays-ii.py) O(N * logN) |Easy
 
 ## Two Pointers
 
