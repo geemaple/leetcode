@@ -42,6 +42,7 @@ This is a **continually updated, open source** project.
 | 92.reverse-linked-list-ii | [python](./algorithm/92.reverse-linked-list-ii.py) | O(N) | Medium |
 | 138.copy-list-with-random-pointer | [python](./algorithm/138.copy-list-with-random-pointer.py) | O(N) | Medium
 | 143.reorder-list | [python](./algorithm/143.reorder-list.py) | O(N) | Medium |
+| 148.sort-list | [python](./algorithm/148.sort-list.py) | O(N * logN) | Medium |
 | 203.remove-linked-list-elements | [python](./algorithm/203.remove-linked-list-elements.py) | O(N) | Easy
 | 206.reverse-linked-list | [python](./algorithm/206.reverse-linked-list.py) | O(N) | Easy |
 
