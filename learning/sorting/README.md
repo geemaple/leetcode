@@ -13,4 +13,4 @@
 
 # Testing Results
 
-![Testing Result](https://raw.githubusercontent.com/geemaple/algorithm/master/Sorting/sorting_test_results.jpg)
+![Testing Result](./sorting_test_results.jpg)

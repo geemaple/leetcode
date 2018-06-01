@@ -3,6 +3,8 @@
 Algorithms written in python 
 
 
-# [Sortings](./learning/sorting/README.md)
+# Category
 
-# [Leetcode](./leetcode/README.md)
+## [Sortings](./learning/sorting/README.md)
+
+## [Leetcode](./leetcode/README.md)
