@@ -10,6 +10,7 @@ This is a **continually updated, open source** project.
 - [Leetcode](#leetcode)
 - [Algorithms](#algorithms)
     - [Array](#array)
+    - [String](#string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
     - [Binary Search](#binary-search)
@@ -28,6 +29,12 @@ This is a **continually updated, open source** project.
 | 88.merge-sorted-array | [python](./88.merge-sorted-array.py) | O(N + M) | Easy |
 | 349.intersection-of-two-arrays | [python](./349.intersection-of-two-arrays.py) | O(N + M) |Easy
 | 350.intersection-of-two-arrays-ii | [python](./350.intersection-of-two-arrays-ii.py) | O(N * logN) |Easy
+
+## String
+
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 796.rotate-string | [python](./796.rotate-string.py) | O(N^2) | Easy | Rabin-Karp Algorithm / Rolling Hash, KMP algorithm
 
 ## Two Pointers
 
