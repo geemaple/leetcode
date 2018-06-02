@@ -19,6 +19,7 @@ This is a **continually updated, open source** project.
     - [Divide and Conquer](#divide-and-conquer)
     - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
+    - [Hash Table](#hash-table)
     - [Dynamic Programming](#dynamic-programming)
 
 ## Array
@@ -108,6 +109,11 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 444.sequence-reconstruction | [python](./444.sequence-reconstruction.py) | O(V+E) | Medium | BFS/DFS |
+
+## Hash Table
+|  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
+| ----------------- | --------------- | --------------- | ------------- |--------------|-----|
+| 1.two-sum | [python](./1.two-sum.py) | O(N) | Easy |
 
 ## Dynamic Programming
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
