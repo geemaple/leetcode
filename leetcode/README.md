@@ -34,6 +34,7 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 19.remove-nth-node-from-end-of-list | [python](./19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
+| 125.valid-palindrome | [python](./125.valid-palindrome.py) | O(N) | Easy
 | 141.linked-list-cycle | [python](./141.linked-list-cycle.py) | O(N) | Easy | linked-list
 | 142.linked-list-cycle-ii | [python](./142.linked-list-cycle-ii.py) | O(N) | Medium | linked-list
 | 160.intersection-of-two-linked-lists | [python](./160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | linked-list
