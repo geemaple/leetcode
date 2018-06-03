@@ -115,6 +115,7 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 1.two-sum | [python](./1.two-sum.py) | O(N) | Easy |
+| 170.two-sum-iii-data-structure-design | [python](./170.two-sum-iii-data-structure-design.py) | O(N) | Easy
 
 ## Dynamic Programming
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
