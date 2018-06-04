@@ -8,15 +8,15 @@ This is a **continually updated, open source** project.
 # Tags
 
 - [Leetcode](#leetcode)
-- [Algorithms](#algorithms)
+- [Tags](#tags)
     - [Array](#array)
     - [String](#string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
     - [Binary Search](#binary-search)
+    - [Divide and Conquer](#divide-and-conquer)
     - [Tree Traversal](#tree-traversal)
     - [Graph Traversal](#graph-traversal)
-    - [Divide and Conquer](#divide-and-conquer)
     - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
     - [Hash Table](#hash-table)
@@ -71,7 +71,8 @@ This is a **continually updated, open source** project.
 
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
-| 278.first-bad-version | [python](./278.first-bad-version.py) | O(LogN) | Easy
+| 153.find-minimum-in-rotated-sorted-array | [python](./153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
+| 278.first-bad-version | [python](./278.first-bad-version.py) | O(logN) | Easy
 
 ## Divide and Conquer
 
@@ -103,7 +104,7 @@ This is a **continually updated, open source** project.
 | 51.n-queens | [python](./51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./52.n-queens-ii.py) | ??? | Hard | DFS |
 | 78.subsets | [python](./78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation
-| 90.subsets-ii | [python](./90.subsets-ii.py) | ??? | Medium | DFS |  bit-manipulation
+| 90.subsets-ii | [python](./90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
 
