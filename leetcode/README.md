@@ -78,6 +78,7 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 4.median-of-two-sorted-arrays | [python](./4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
+| 104.maximum-depth-of-binary-tree | [python](./104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 
 ## Tree Traversal
 
@@ -101,7 +102,7 @@ This is a **continually updated, open source** project.
 | 47.permutations-ii | [python](./47.permutations-ii.py) | ??? | Medium | DFS |
 | 51.n-queens | [python](./51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./52.n-queens-ii.py) | ??? | Hard | DFS |
-| 78.subsets | [python](./78.subsets.py) | ??? | Medium | DFS | bit-manipulation
+| 78.subsets | [python](./78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation
 | 90.subsets-ii | [python](./90.subsets-ii.py) | ??? | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
