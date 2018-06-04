@@ -20,4 +20,10 @@ Python切算法
 - 基础算法
     - [排序](./learning/sorting/README.md)
 - 数据结构
-- [公众号文章](./learning/README.md)
+
+
+# 参考资料
+- [我的公众号文章](./learning/README.md)
+- [小土刀的面试刷题笔记](https://wdxtub.com/interview/index.html)
+- [kdn251/interviews](https://github.com/kdn251/interviews)
+- [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode)
