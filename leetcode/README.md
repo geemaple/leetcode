@@ -72,6 +72,7 @@ This is a **continually updated, open source** project.
 |  Problem          |  Solution       |  Time           | Difficulty    | Tag          | Note| 
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 153.find-minimum-in-rotated-sorted-array | [python](./153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
+| 154.find-minimum-in-rotated-sorted-array-ii | [python](./154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 278.first-bad-version | [python](./278.first-bad-version.py) | O(logN) | Easy
 
 ## Divide and Conquer
