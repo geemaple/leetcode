@@ -80,6 +80,7 @@ This is a **continually updated, open source** project.
 | ----------------- | --------------- | --------------- | ------------- |--------------|-----|
 | 4.median-of-two-sorted-arrays | [python](./4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
 | 104.maximum-depth-of-binary-tree | [python](./104.maximum-depth-of-binary-tree.py) | O(N) | Easy
+| 110.balanced-binary-tree | [python](./110.balanced-binary-tree.py) | O(N) | Easy
 
 ## Tree Traversal
 
