@@ -24,8 +24,8 @@ This is a **continually updated, open source** project.
 
 ## Array
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 53.maximum-subarray | [python](./53.maximum-subarray.py) | O(N) | Easy 
 | 88.merge-sorted-array | [python](./88.merge-sorted-array.py) | O(N + M) | Easy |
 | 349.intersection-of-two-arrays | [python](./349.intersection-of-two-arrays.py) | O(N + M) | Easy
@@ -34,14 +34,14 @@ This is a **continually updated, open source** project.
 
 ## String
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 796.rotate-string | [python](./796.rotate-string.py) | O(N^2) | Easy | Rabin-Karp Algorithm / Rolling Hash, KMP algorithm
 
 ## Two Pointers
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 15.3sum | [python](./15.3sum.py) | O(N^2) | Medium | 
 | 16.3sum-closest | [python](./16.3sum-closest.py) | O(N^2) | Medium |
 | 19.remove-nth-node-from-end-of-list | [python](./19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
@@ -55,8 +55,8 @@ This is a **continually updated, open source** project.
 
 ## Linked List
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 21.merge-two-sorted-lists | [python](./21.merge-two-sorted-lists.py) | O(N) | Easy |
 | 25.reverse-nodes-in-k-group | [python](./25.reverse-nodes-in-k-group.py) | O(N) | Hard |
 | 61.rotate-list | [python](./61.rotate-list.py) | O(N) | Medium |
@@ -70,17 +70,16 @@ This is a **continually updated, open source** project.
 | 237.delete-node-in-a-linked-list | [python](./237.delete-node-in-a-linked-list.py) | O(1) | Easy
 
 ## Binary Search
-
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 153.find-minimum-in-rotated-sorted-array | [python](./153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [python](./154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 278.first-bad-version | [python](./278.first-bad-version.py) | O(logN) | Easy
 
 ## Divide and Conquer
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 4.median-of-two-sorted-arrays | [python](./4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
 | 104.maximum-depth-of-binary-tree | [python](./104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 | 110.balanced-binary-tree | [python](./110.balanced-binary-tree.py) | O(N) | Easy
@@ -88,20 +87,20 @@ This is a **continually updated, open source** project.
 
 ## Tree Traversal
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 
 
 ## Graph Traversal
 
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 127.word-ladder | [python](./127.word-ladder.py) | O(N * L^2) | Medium | BFS |
 | 200.number-of-islands | [python](./200.number-of-islands.py) | O(ROW x COL) | Medium | BFS/DFS | union-find
 
 ## Backtracking
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 39.combination-sum | [python](./39.combination-sum.py) | ??? | Medium | DFS |
 | 40.combination-sum-ii | [python](./40.combination-sum-ii.py) | ??? | Medium | DFS |
 | 46.permutations | [python](./46.permutations.py) | ??? | Medium | DFS |
@@ -114,16 +113,16 @@ This is a **continually updated, open source** project.
 | 131.palindrome-partitioning | [python](./131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
 
 ## Topological Sort
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 444.sequence-reconstruction | [python](./444.sequence-reconstruction.py) | O(V+E) | Medium | BFS/DFS |
 
 ## Hash Table
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
 | 1.two-sum | [python](./1.two-sum.py) | O(N) | Easy |
 | 170.two-sum-iii-data-structure-design | [python](./170.two-sum-iii-data-structure-design.py) | O(N) | Easy
 
 ## Dynamic Programming
-| Problem     | Solution    | Time    | Difficulty    | Tag    | Note     |
-| ---------| ------------| ------------| --------| --------------| -------|
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
