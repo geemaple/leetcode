@@ -70,6 +70,7 @@ This is a **continually updated, open source** project.
 | 203.remove-linked-list-elements | [python](./203.remove-linked-list-elements.py) | O(N) | Easy
 | 206.reverse-linked-list | [python](./206.reverse-linked-list.py) | O(N) | Easy |
 | 237.delete-node-in-a-linked-list | [python](./237.delete-node-in-a-linked-list.py) | O(1) | Easy
+| 328.odd-even-linked-list | [python](./328.odd-even-linked-list.py) | O(N) | Medium
 
 ## Binary Search
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
