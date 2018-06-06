@@ -28,6 +28,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 53.maximum-subarray | [python](./53.maximum-subarray.py) | O(N) | Easy 
 | 88.merge-sorted-array | [python](./88.merge-sorted-array.py) | O(N + M) | Easy |
+| 240.search-a-2d-matrix-ii | [python](./240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
 | 349.intersection-of-two-arrays | [python](./349.intersection-of-two-arrays.py) | O(N + M) | Easy
 | 350.intersection-of-two-arrays-ii | [python](./350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 560.subarray-sum-equals-k | [python](./560.subarray-sum-equals-k.py) | O(N) | Medium
