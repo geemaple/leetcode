@@ -1,3 +1,4 @@
+# Your runtime beats 4.35 % of python submissions
 class Solution(object):
     def searchMatrix(self, matrix, target):
         """
