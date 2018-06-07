@@ -5,15 +5,22 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        #search from top-right to bottom-left
-        if matrix is None or len(matrix) == 0:
+        
+        if matrix is None:
+            return False
+
+        row = len(matrix)
+        if row == 0:
+            return False
+
+        column = len(matrix[0])
+        if column == 0:
             return False
 
         x = 0
-        y = len(matrix[0]) - 1
+        y = column - 1
 
-        while(x < len(matrix) and y >= 0):
-            
+        while(x < row and y >= 0):
             if matrix[x][y] == target:
                 return True
 
