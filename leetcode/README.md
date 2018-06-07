@@ -88,6 +88,7 @@ This is a **continually updated, open source** project.
 | 98.validate-binary-search-tree | [python](./98.validate-binary-search-tree.py) | O(N) | Medium |
 | 104.maximum-depth-of-binary-tree | [python](./104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 | 110.balanced-binary-tree | [python](./110.balanced-binary-tree.py) | O(N) | Easy
+| 215.kth-largest-element-in-an-array | [python](./215.kth-largest-element-in-an-array.py) | O(N) ~ O(N^2) | Medium | quick-select
 | 236.lowest-common-ancestor-of-a-binary-tree | [python](./236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
 ## Tree Traversal
