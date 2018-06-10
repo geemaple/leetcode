@@ -138,5 +138,6 @@ This is a **continually updated, open source** project.
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 62.unique-paths | [python](./leetcode/62.unique-paths.py) | O(M * N) | Medium |
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium |
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium |
