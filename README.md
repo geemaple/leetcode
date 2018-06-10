@@ -42,7 +42,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 796.rotate-string | [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | Rabin-Karp Algorithm / Rolling Hash, KMP algorithm
+| 796.rotate-string | [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | Rabin-Karp Algorithm, KMP algorithm
 
 ## Two Pointers
 
@@ -52,7 +52,7 @@ This is a **continually updated, open source** project.
 | 16.3sum-closest | [python](./leetcode/16.3sum-closest.py) | O(N^2) | Medium |
 | 18.4sum | [python](./leetcode/18.4sum.py) | O(N^3) | Medium |
 | 19.remove-nth-node-from-end-of-list | [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
-| 75.sort-colors | [python](./leetcode/75.sort-colors.py | O(N) | Medium
+| 75.sort-colors | [python](./leetcode/75.sort-colors.py) | O(N) | Medium
 | 125.valid-palindrome | [python](./leetcode/125.valid-palindrome.py) | O(N) | Easy
 | 141.linked-list-cycle | [python](./leetcode/141.linked-list-cycle.py) | O(N) | Easy | linked-list
 | 142.linked-list-cycle-ii | [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | Medium | linked-list
@@ -138,8 +138,8 @@ This is a **continually updated, open source** project.
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 62.unique-paths | [python](./leetcode/62.unique-paths.py) | O(M * N) | Medium |
-| 63.unique-paths-ii | [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | Medium |
-| 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium |
-| 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy |
-| 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium |
+| 62.unique-paths | [python](./leetcode/62.unique-paths.py) | O(M * N) | Medium | Coordinates
+| 63.unique-paths-ii | [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | Medium | Coordinates
+| 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
+| 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
+| 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
