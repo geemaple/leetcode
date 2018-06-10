@@ -108,7 +108,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
-| 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(ROW x COL) | Medium | BFS/DFS | union-find
+| 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(M x N) | Medium | BFS/DFS | union-find
 
 ## Backtracking
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -138,4 +138,5 @@ This is a **continually updated, open source** project.
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium |
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium |
