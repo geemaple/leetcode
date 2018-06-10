@@ -138,3 +138,4 @@ This is a **continually updated, open source** project.
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium |
