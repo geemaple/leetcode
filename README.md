@@ -13,6 +13,7 @@ This is a **continually updated, open source** project.
 
 # Tags
 - [Leetcode](#leetcode)
+- [Reference](#reference)
 - [Tags](#tags)
     - [Array](#array)
     - [String](#string)
@@ -26,6 +27,7 @@ This is a **continually updated, open source** project.
     - [Topological Sort](#topological-sort)
     - [Hash Table](#hash-table)
     - [Dynamic Programming](#dynamic-programming)
+    - [Greedy](#greedy)
 
 ## Array
 
@@ -143,3 +145,8 @@ This is a **continually updated, open source** project.
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
 | 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
+
+## Greedy
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
+| 45.jump-game-ii | [python](./leetcode/45.jump-game-ii.py) | O(N) | Hard |
