@@ -155,4 +155,5 @@ This is a **continually updated, open source** project.
 ## Union Find
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(K) | Hard | K = len(positions)
+| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
+| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | Locked, BFS/DFS | E = len(edges)
