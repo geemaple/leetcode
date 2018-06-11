@@ -150,3 +150,4 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 45.jump-game-ii | [python](./leetcode/45.jump-game-ii.py) | O(N) | Hard |
+| 55.jump-game | [python](./leetcode/55.jump-game.py) | O(N) | Medium |
