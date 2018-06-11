@@ -151,3 +151,8 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 45.jump-game-ii | [python](./leetcode/45.jump-game-ii.py) | O(N) | Hard |
 | 55.jump-game | [python](./leetcode/55.jump-game.py) | O(N) | Medium |
+
+## Union Find
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
+| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(K) | Hard | K = len(positions)
