@@ -28,6 +28,7 @@ This is a **continually updated, open source** project.
     - [Hash Table](#hash-table)
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
+    - [Union Find](#union-find)
 
 ## Array
 
@@ -155,5 +156,6 @@ This is a **continually updated, open source** project.
 ## Union Find
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
 | 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | Locked, BFS/DFS | E = len(edges)
+| 300.longest-increasing-subsequence | [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium | | TODO:follow-up
+| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
