@@ -122,7 +122,7 @@ This is a **continually updated, open source** project.
 | 47.permutations-ii | [python](./leetcode/47.permutations-ii.py) | ??? | Medium | DFS |
 | 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
-| 78.subsets | [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation
+| 78.subsets | [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | TODO: bit-manipulation
 | 90.subsets-ii | [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
@@ -146,6 +146,8 @@ This is a **continually updated, open source** project.
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
 | 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
+| 300.longest-increasing-subsequence | [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | TODO:follow-up
+| 354.russian-doll-envelopes | [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Time Limit Exceeded
 
 ## Greedy
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -157,5 +159,4 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | Locked, BFS/DFS | E = len(edges)
-| 300.longest-increasing-subsequence | [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium | | TODO:follow-up
 | 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
