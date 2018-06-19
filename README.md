@@ -15,6 +15,7 @@ This is a **continually updated, open source** project.
 - [Leetcode](#leetcode)
 - [Reference](#reference)
 - [Tags](#tags)
+    - [Bit Manipulation](#bit-manipulation)
     - [Array](#array)
     - [String](#string)
     - [Two Pointers](#two-pointers)
@@ -29,6 +30,12 @@ This is a **continually updated, open source** project.
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
+
+## Bit Manipulation
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
+| 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy
+
 
 ## Array
 
@@ -137,7 +144,8 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 1.two-sum | [python](./leetcode/1.two-sum.py) | O(N) | Easy |
 | 170.two-sum-iii-data-structure-design | [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | Easy
-| 217.contains-duplicate.cpp | [cpp](./leetcode/217.contains-duplicate.cpp) | 
+| 217.contains-duplicate.cpp | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
+
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |

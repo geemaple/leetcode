@@ -7,7 +7,7 @@ public:
                 return true;
             }
 
-            set.insert(num)
+            set.insert(num);
         }
         return false;
     }
