@@ -137,6 +137,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 1.two-sum | [python](./leetcode/1.two-sum.py) | O(N) | Easy |
 | 170.two-sum-iii-data-structure-design | [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | Easy
+| 217.contains-duplicate.cpp | [cpp](./leetcode/217.contains-duplicate.cpp) | 
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
