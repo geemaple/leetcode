@@ -154,7 +154,7 @@ This is a **continually updated, open source** project.
 | 205.isomorphic-strings | [python](./leetcode/205.isomorphic-strings.py) [cpp](./leetcode/205.isomorphic-strings.cpp) | O(N) | Easy
 | 217.contains-duplicate.cpp | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp) | O(M + N) | Easy
-
+| 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.py) | O(M + N) | Easy
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
