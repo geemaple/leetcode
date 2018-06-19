@@ -35,7 +35,7 @@ This is a **continually updated, open source** project.
 ## Math
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-
+| 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | 
 
 ## Bit Manipulation
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
