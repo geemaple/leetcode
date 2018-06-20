@@ -1,5 +1,5 @@
 # Leetcode
-My personal leetcode answer in python<br/>
+My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
 
