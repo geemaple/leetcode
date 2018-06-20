@@ -155,8 +155,9 @@ This is a **continually updated, open source** project.
 | 217.contains-duplicate | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 219.contains-duplicate-ii | [cpp](./leetcode/219.contains-duplicate-ii.cpp) | O(N) | Easy
 | 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp) | O(M + N) | Easy
-| 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.py) | O(M * N) | Easy
-| 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.py) | O(M + N) | Easy
+| 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.cpp) | O(M * N) | Easy
+| 359.logger-rate-limiter | [cpp](./leetcode/359.logger-rate-limiter.cpp)
+| 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | O(M + N) | Easy
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
