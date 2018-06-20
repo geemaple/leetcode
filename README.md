@@ -159,7 +159,7 @@ This is a **continually updated, open source** project.
 | 249.group-shifted-strings | [cpp](./leetcode/249.group-shifted-strings.cpp) | O(N * K) | Medium
 | 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp) | O(M + N) | Easy
 | 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.cpp) | O(M * N) | Easy
-| 359.logger-rate-limiter | [cpp](./leetcode/359.logger-rate-limiter.cpp)
+| 359.logger-rate-limiter | [cpp](./leetcode/359.logger-rate-limiter.cpp) | O(1) | Easy | [amortized](https://stackoverflow.com/questions/200384/constant-amortized-time)
 | 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | O(M + N) | Easy
 | 652.find-duplicate-subtrees | [cpp](./leetcode/652.find-duplicate-subtrees.cpp) | O(N) | Medium
 | 771.jewels-and-stones | [cpp](./leetcode/771.jewels-and-stones.cpp) | O(M + N) | Easy
