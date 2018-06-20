@@ -151,9 +151,10 @@ This is a **continually updated, open source** project.
 | 1.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | Easy |
 | 170.two-sum-iii-data-structure-design | [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | Easy
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
-| 205.isomorphic-strings | [python](./leetcode/205.isomorphic-strings.py) [cpp](./leetcode/205.isomorphic-strings.cpp) | O(N) | Easy
+| 205.isomorphic-strings | [cpp](./leetcode/205.isomorphic-strings.cpp), [python](./leetcode/205.isomorphic-strings.py) | O(N) | Easy
 | 217.contains-duplicate | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp) | O(M + N) | Easy
+| 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.py) | O(M * N) | Easy
 | 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.py) | O(M + N) | Easy
 
 ## Dynamic Programming
