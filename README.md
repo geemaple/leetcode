@@ -58,7 +58,8 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 796.rotate-string | [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | Rabin-Karp Algorithm, KMP algorithm
+| 796.rotate-string | [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | TODO: Rabin-Karp Algorithm, KMP algorithm
+| 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy |
 
 ## Two Pointers
 
