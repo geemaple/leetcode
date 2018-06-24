@@ -28,6 +28,7 @@ This is a **continually updated, open source** project.
     - [Backtracking](#backtracking)
     - [Topological Sort](#topological-sort)
     - [Hash Table](#hash-table)
+    - [Heap](#heap)
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
@@ -169,6 +170,11 @@ This is a **continually updated, open source** project.
 | 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | O(M + N) | Easy
 | 652.find-duplicate-subtrees | [cpp](./leetcode/652.find-duplicate-subtrees.cpp) | O(N) | Medium
 | 771.jewels-and-stones | [cpp](./leetcode/771.jewels-and-stones.cpp) | O(M + N) | Easy
+
+## heap
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
+
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
