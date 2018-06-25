@@ -108,7 +108,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 4.median-of-two-sorted-arrays | [cpp](,/leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
+| 4.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
 | 98.validate-binary-search-tree | [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | Medium |
 | 104.maximum-depth-of-binary-tree | [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 | 110.balanced-binary-tree | [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
