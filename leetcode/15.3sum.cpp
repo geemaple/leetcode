@@ -1,11 +1,11 @@
 class Solution {
 private:
-    void twoSum(vector<int>& nums, int start, int first, vector<vector<int>> &res){
+    void twoSum(vector<int>& nums, int start, vector<vector<int>> &res){
         int left =  start + 1;
         int right = nums.size() - 1;
         
         while(left < right){
-            int candidate = first + nums[left] + nums[right];
+            int candidate = nums[start] + nums[left] + nums[right];
             if (candidate > 0)
             {
                 right -= 1;
@@ -17,7 +17,7 @@ private:
             else
             {
                 vector<int> answer;
-                answer.push_back(first);
+                answer.push_back(nums[start]);
                 answer.push_back(nums[left]);
                 answer.push_back(nums[right]);
                 res.push_back(answer);
@@ -53,7 +53,7 @@ public:
                 continue;
             }
             
-            twoSum(nums, i, nums[i], res);
+            twoSum(nums, i, res);
         }
         
         return res;

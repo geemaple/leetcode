@@ -67,7 +67,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 15.3sum | [cpp](./leetcode/15.3sum.cpp), [python](./leetcode/15.3sum.py) | O(N^2) | Medium | 
-| 16.3sum-closest | [python](./leetcode/16.3sum-closest.py) | O(N^2) | Medium |
+| 16.3sum-closest | [cpp](./leetcode/16.3sum-closest.cpp), [python](./leetcode/16.3sum-closest.py) | O(N^2) | Medium |
 | 18.4sum | [python](./leetcode/18.4sum.py) | O(N^3) | Medium |
 | 19.remove-nth-node-from-end-of-list | [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
 | 75.sort-colors | [python](./leetcode/75.sort-colors.py) | O(N) | Medium
