@@ -186,6 +186,7 @@ This is a **continually updated, open source** project.
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
 | 300.longest-increasing-subsequence | [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | TODO:follow-up
 | 354.russian-doll-envelopes | [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Time Limit Exceeded
+| 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
 
 ## Greedy
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
