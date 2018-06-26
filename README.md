@@ -83,7 +83,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 21.merge-two-sorted-lists | [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | Easy |
+| 21.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | Easy |
 | 25.reverse-nodes-in-k-group | [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | Hard |
 | 61.rotate-list | [python](./leetcode/61.rotate-list.py) | O(N) | Medium |
 | 86.partition-list | [python](./leetcode/86.partition-list.py) | O(N) | Medium |
