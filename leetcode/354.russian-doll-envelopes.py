@@ -1,3 +1,4 @@
+# O(N^2) Time Limit Exceeded
 class Solution(object):
     def maxEnvelopes(self, envelopes):
         """
@@ -8,22 +9,16 @@ class Solution(object):
             return 0
 
         envelopes.sort(key=lambda x: x[0])
-        table = [i for i in range(len(envelopes))]
-        table[0] = 1
+        table = []
+        table.append(1)
 
-        for i in range(len(envelopes)):
+        for i in range(1, len(envelopes)):
             
-            pre = i - 1
-            while pre >= 0 and (envelopes[i][0] <= envelopes[pre][0] or envelopes[i][1] <= envelopes[pre][1]):
-                pre -= 1
+            count = 1
+            for j in range(len(table)):
+                if (envelopes[i][0] > envelopes[j][0] and envelopes[i][1] > envelopes[j][1] and count < table[j] + 1):
+                    count = table[j] + 1
 
-            most = 0
-            height_i = envelopes[i][1]
-            for j in range(pre + 1):
-                height_j = envelopes[j][1]
-                if height_j < height_i:
-                    most = max(most, table[j])
-
-            table[i] = most + 1
+            table.append(count)
 
         return max(table)
