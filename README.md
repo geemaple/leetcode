@@ -140,7 +140,7 @@ This is a **continually updated, open source** project.
 | 78.subsets | [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | TODO: bit-manipulation
 | 90.subsets-ii | [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
-| 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS | dynamic-programming
+| 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 
 ## Topological Sort
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -198,5 +198,6 @@ This is a **continually updated, open source** project.
 ## Union Find
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | Hard
 | 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | Locked, BFS/DFS | E = len(edges)
 | 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
