@@ -22,6 +22,9 @@ private:
 public:
     // O(N * LogN)
     // Ref: https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+    // With some modification:
+    // 1. change first <if> in for-loop from < to <=
+    // 2. change binary search calling starting point from -1 to 1
     int lengthOfLIS(vector<int>& nums) {
         
         if (nums.size() == 0)

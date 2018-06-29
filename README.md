@@ -76,6 +76,7 @@ This is a **continually updated, open source** project.
 | 142.linked-list-cycle-ii | [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | Medium | linked-list
 | 160.intersection-of-two-linked-lists | [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | linked-list
 | 167.two-sum-ii-input-array-is-sorted | [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | Easy |
+| 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp) | O(N) / O(N * logN) | Medium | subarray
 | 283.move-zeroes | [python](./leetcode/283.move-zeroes.py) | O(N) | Easy
 
 
@@ -185,7 +186,7 @@ This is a **continually updated, open source** project.
 | 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
 | 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | follow-up is tricky
-| 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp) [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded
+| 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded
 | 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
 | 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
 
