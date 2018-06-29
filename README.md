@@ -184,7 +184,7 @@ This is a **continually updated, open source** project.
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
 | 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
-| 300.longest-increasing-subsequence | [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | TODO:follow-up
+| 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | follow-up is tricky
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp) [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded
 | 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
 | 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
