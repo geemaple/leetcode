@@ -2,8 +2,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
-🎉🎉🎉 Finished 100 questions on 2018-05-28
-🎉🎉🎉 Finished 150 questions on 2018-06-29
+🎉🎉🎉 Finished 100 questions on 2018-05-28<br/>
+🎉🎉🎉 Finished 150 questions on 2018-06-29<br/>
 
 # Reference
 - [kdn251/interviews](https://github.com/kdn251/interviews)
