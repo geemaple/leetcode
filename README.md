@@ -106,7 +106,7 @@ This is a **continually updated, open source** project.
 | 153.find-minimum-in-rotated-sorted-array | [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 278.first-bad-version | [python](./leetcode/278.first-bad-version.py) | O(logN) | Easy
-| 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp) | - | Hard | TODO: failed to compile using bfs? binary search what the fuck?
+| 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp) | O(M * N) | Hard | TODO:binary search
 
 ## Divide and Conquer
 
