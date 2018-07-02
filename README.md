@@ -101,6 +101,7 @@ This is a **continually updated, open source** project.
 ## Binary Search
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 34.search-for-a-range | [cpp](./leetcode/34.search-for-a-range.cpp) | Medium |
 | 74.search-a-2d-matrix | [python](./leetcode/74.search-a-2d-matrix.py) | Medium |
 | 153.find-minimum-in-rotated-sorted-array | [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
@@ -112,8 +113,8 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 4.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
 | 98.validate-binary-search-tree | [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | Medium |
-| 104.maximum-depth-of-binary-tree | [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | Easy
-| 110.balanced-binary-tree | [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
+| 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | Easy
+| 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
 | 215.kth-largest-element-in-an-array | [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) ~ O(N^2) | Medium | quick-select
 | 236.lowest-common-ancestor-of-a-binary-tree | [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
@@ -140,7 +141,7 @@ This is a **continually updated, open source** project.
 | 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
 | 78.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation / iterative
-| 90.subsets-ii | [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
+| 90.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 
@@ -195,11 +196,11 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 45.jump-game-ii | [python](./leetcode/45.jump-game-ii.py) | O(N) | Hard |
-| 55.jump-game | [python](./leetcode/55.jump-game.py) | O(N) | Medium |
+| 55.jump-game | [python](./leetcode/55.jump-game.py) | O(N) | Medium | dynamic-programming
 
 ## Union Find
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | Hard
-| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | Locked, BFS/DFS | E = len(edges)
-| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | Locked | N = len(positions) |
+| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | BFS/DFS | E = len(edges)
+| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | | N = len(positions) |
