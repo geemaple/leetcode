@@ -106,23 +106,24 @@ This is a **continually updated, open source** project.
 | 153.find-minimum-in-rotated-sorted-array | [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 278.first-bad-version | [python](./leetcode/278.first-bad-version.py) | O(logN) | Easy
+| 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp) | - | Hard | TODO: failed to compile using bfs? binary search what the fuck?
 
 ## Divide and Conquer
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 4.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard |
-| 98.validate-binary-search-tree | [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | Medium |
+| 98.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | Medium | | TODO: inorder-traversal |
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
 | 215.kth-largest-element-in-an-array | [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) ~ O(N^2) | Medium | quick-select
-| 236.lowest-common-ancestor-of-a-binary-tree | [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
+| 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
 ## Tree Traversal
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-
+| 102.binary-tree-level-order-traversal | [cpp](./leetcode/102.binary-tree-level-order-traversal.cpp) | O(N) | Medium |
 
 ## Graph Traversal
 
