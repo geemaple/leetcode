@@ -102,10 +102,11 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 34.search-for-a-range | [cpp](./leetcode/34.search-for-a-range.cpp) | Medium |
-| 74.search-a-2d-matrix | [python](./leetcode/74.search-a-2d-matrix.py) | Medium |
+| 74.search-a-2d-matrix | [cpp](./leetcode/74.search-a-2d-matrix.cpp),  [python](./leetcode/74.search-a-2d-matrix.py) | Medium |
 | 153.find-minimum-in-rotated-sorted-array | [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
-| 278.first-bad-version | [python](./leetcode/278.first-bad-version.py) | O(logN) | Easy
+| 162.find-peak-element | [cpp](./leetcode/162.find-peak-element.cpp) | O(logN) | Meidum
+| 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | Easy
 | 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp) | O(M * N) / O(N * LogN) | Hard |
 
 ## Divide and Conquer
@@ -124,6 +125,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 102.binary-tree-level-order-traversal | [cpp](./leetcode/102.binary-tree-level-order-traversal.cpp) | O(N) | Medium |
+| 107.binary-tree-level-order-traversal-ii | [cpp](./leetcode/107.binary-tree-level-order-traversal-ii.cpp) | O(N) | Easy |
 
 ## Graph Traversal
 
