@@ -1,3 +1,138 @@
+// Binary Search (M * logN + N * LogM)
+class Solution {
+private:
+    bool columnHasBlack(vector<vector<char>>& image, int col){
+        for (auto i = 0; i < image.size(); ++i)
+        {
+            if (image[i][col] == '1')
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    bool rowHasBlack(vector<vector<char>>& image, int row){
+        for (auto i = 0; i < image[row].size(); ++i)
+        {
+            if (image[row][i] == '1')
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    int searchLeft(vector<vector<char>>& image, int start, int end){
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            
+            if (columnHasBlack(image, mid))
+            {
+                end = mid;
+            }
+            else
+            {
+                start = mid;
+            }
+        }
+        
+        if (columnHasBlack(image, start))
+        {
+            return start;
+        }
+        
+        return end;
+    }
+    
+    int searchRight(vector<vector<char>>& image, int start, int end){
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            
+            if (columnHasBlack(image, mid))
+            {
+                start = mid;
+            }
+            else
+            {
+                end = mid;
+            }
+        }
+        
+        if (columnHasBlack(image, end))
+        {
+            return end;
+        }
+        
+        return start;
+    }
+    
+    int searchTop(vector<vector<char>>& image, int start, int end){
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            
+            if (rowHasBlack(image, mid))
+            {
+                end = mid;
+            }
+            else
+            {
+                start = mid;
+            }
+        }
+        
+        if (rowHasBlack(image, start))
+        {
+            return start;
+        }
+        
+        return end;
+    }
+    
+    int searchBottom(vector<vector<char>>& image, int start, int end){
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            
+            if (rowHasBlack(image, mid))
+            {
+                start = mid;
+            }
+            else
+            {
+                end = mid;
+            }
+        }
+        
+        if (rowHasBlack(image, end))
+        {
+            return end;
+        }
+        
+        return start;
+    }
+public:
+    int minArea(vector<vector<char>>& image, int x, int y) {
+        
+        if (image.size() == 0)
+        {
+            return 0;
+        }
+        
+        int row = (int)image.size();
+        int column = (int)image[0].size();
+        
+        int left = searchLeft(image, 0, y);
+        int right = searchRight(image, y, column - 1);
+        
+        int top = searchTop(image, 0, x);
+        int bottom = searchBottom(image, x, row - 1);
+        
+        return (right - left + 1) * (bottom - top + 1);
+    }
+};
+
 #define DIRECTIONS (8)
 struct pair_hash
 {
@@ -10,14 +145,14 @@ struct pair_hash
     }
 };
 
-class Solution {
+// BFS O(M * N)
+class Solution2 {
 private:
     // clock wise
     int moveX[DIRECTIONS] = {-1, -1, 0, 1, 1, 1, 0, -1};
     int moveY[DIRECTIONS] = {0, 1, 1, 1, 0, -1, -1, -1};
     
 public:
-    // BFS O(M * N)
     int minArea(vector<vector<char>>& image, int x, int y) {
         
         if (image.size() == 0)
