@@ -1,40 +1,33 @@
 class Solution {
-private:
-    void twoSum(vector<int>& nums, int first, int second, int target, vector<vector<int>> &result){
-        
-        int left = second + 1;
-        int right = nums.size() - 1;
-        
-        while (left < right) {
-            int candidate = nums[first] + nums[second] + nums[left] + nums[right];
+    void twoSum(vector<int>& nums, int first, int second, int target, vector<vector<int>> &result)
+    {
+        int start = second + 1;
+        int end = nums.size() - 1;
+        while (start < end) {
             
-            if (candidate < target)
+            int tmp = nums[first] + nums[second] + nums[start] + nums[end];
+            if (tmp == target)
             {
-                left += 1;
+                result.push_back(vector<int>{nums[first], nums[second], nums[start], nums[end]});
+                
+                while (start < end && nums[start + 1] == nums[start]) {
+                    start += 1;
+                }
+                
+                while (start < end && nums[end - 1] == nums[end]) {
+                    end -= 1;
+                }
+                
+                start += 1;
+                end -= 1;
             }
-            else if (candidate > target)
+            else if (tmp > target)
             {
-                right -= 1;
+                end -= 1;
             }
             else
             {
-                vector<int> answer;
-                answer.push_back(nums[first]);
-                answer.push_back(nums[second]);
-                answer.push_back(nums[left]);
-                answer.push_back(nums[right]);
-                result.push_back(answer);
-                
-                while(left < right && nums[left + 1] == nums[left]){
-                    left += 1;
-                }
-                
-                while(left < right && nums[right - 1] == nums[right]){
-                    right -= 1;
-                }
-                
-                left += 1;
-                right -= 1;
+                start += 1;
             }
         }
     }
@@ -45,18 +38,19 @@ public:
             vector<vector<int>>();
         }
         
-        vector<vector<int>> res;
         sort(nums.begin(), nums.end());
+        vector<vector<int>> res;
         
         for (auto i = 0; i < nums.size(); ++i)
         {
-            if (i > 0 && nums[i] == nums[i - 1]) {
+            if (i > 0 && nums[i] == nums[i - 1])
+            {
                 continue;
             }
-            
             for (auto j = i + 1; j < nums.size(); ++j)
             {
-                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                if (j > i + 1 && nums[j] == nums[j - 1])
+                {
                     continue;
                 }
                 
