@@ -26,7 +26,6 @@ This is a **continually updated, open source** project.
     - [Tree Traversal](#tree-traversal)
     - [Graph Traversal](#graph-traversal)
     - [Backtracking](#backtracking)
-    - [Topological Sort](#topological-sort)
     - [Hash Table](#hash-table)
     - [heap](#heap)
     - [Dynamic Programming](#dynamic-programming)
@@ -59,7 +58,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 796.rotate-string | [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | TODO: Rabin-Karp Algorithm, KMP algorithm
+| 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | TODO: Rabin-Karp Algorithm, KMP algorithm
 | 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy |
 
 ## Two Pointers
@@ -101,9 +100,10 @@ This is a **continually updated, open source** project.
 ## Binary Search
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 33.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp) | O(logN) | Medium
+| 33.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp) | O(logN) | Medium | TODO: Later
 | 34.search-for-a-range | [cpp](./leetcode/34.search-for-a-range.cpp) | Medium |
 | 74.search-a-2d-matrix | [cpp](./leetcode/74.search-a-2d-matrix.cpp),  [python](./leetcode/74.search-a-2d-matrix.py) | O(logN) | Medium | N = row * column
+| 81.search-in-rotated-sorted-array-ii | [cpp](./leetcode/81.search-in-rotated-sorted-array-ii.cpp) | O(logN) ~ O(N) | Medium | TODO: Later
 | 153.find-minimum-in-rotated-sorted-array | [cpp](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [cpp](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 162.find-peak-element | [cpp](./leetcode/162.find-peak-element.cpp) | O(logN) | Meidum
@@ -135,6 +135,8 @@ This is a **continually updated, open source** project.
 | 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
 | 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(M x N) | Medium | BFS/DFS | union-find
 | 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp) | O(V + E) | Medium |
+| 210.course-schedule-ii | [cpp](./leetcode/210.course-schedule-ii.cpp) | O(V + E) | Medium | topological-sort
+| 444.sequence-reconstruction | [cpp](./leetcode.444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | Medium | topological-sort
 
 ## Backtracking
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -149,11 +151,6 @@ This is a **continually updated, open source** project.
 | 90.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
-
-## Topological Sort
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 444.sequence-reconstruction | [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | Medium | BFS/DFS |
 
 ## Hash Table
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
