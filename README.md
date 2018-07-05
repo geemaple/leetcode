@@ -5,11 +5,9 @@ This is a **continually updated, open source** project.
 🎉🎉🎉 Finished 100 questions on 2018-05-28<br/>
 🎉🎉🎉 Finished 150 questions on 2018-06-29<br/>
 
-# Reference
-- [kdn251/interviews](https://github.com/kdn251/interviews)
-- [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode)
-- [hiredintech](https://www.hiredintech.com/)
-- [highscalability](http://highscalability.com/)
+# [References](./learning/README.md)
+
+☝️Hey!!!, its clickable. references are moved💦
 
 # Tags
 - [Leetcode](#leetcode)

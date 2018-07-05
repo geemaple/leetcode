@@ -1,7 +1,21 @@
 # Learning
 
-- [基础算法]
+-  [书籍推荐/Recommend Books]
+    - 《算法技术手册》/ Algorithms in a Nutshell
+    - 《STL源码剖析》/ The Annotated STL Sources
 
+- [参考/Links]
+    - [小刀客笔记/A Chinese Written Blog](https://wdxtub.com/interview/)
+    - [kdn251/interviews](https://github.com/kdn251/interviews)
+    - [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode)
+    - [hiredintech](https://www.hiredintech.com/)
+    - [highscalability](http://highscalability.com/)
+
+- [视频/Videos]:
+    - [凸包](https://www.youtube.com/watch?v=0HZaRu5IupM)
+    - [Voronoi图](https://www.youtube.com/watch?v=7eCrHAv6sYY)
+
+- [个人拙笔/Self Wrote Articles]
     - [树的BFS和DFS](https://mp.weixin.qq.com/s?__biz=MzI1NjA4ODU4NQ==&mid=2247483684&idx=1&sn=9bcd93a18734984fa196f0545cc5a54a&chksm=ea2d4e42dd5ac75447d31cf7f0a072929130c431b95a6225d508ebc43ece2cf6adfc91c9b498#rd)
 
     - [二分查找Binary Search](https://mp.weixin.qq.com/s?__biz=MzI1NjA4ODU4NQ==&mid=2247483703&idx=1&sn=22bc49e70eb89b25b76ae9697af93d2d&chksm=ea2d4e51dd5ac747d00f88060a7dd3b00778f8022d2f490779c9f979928ea6f16ced517eeae8#rd)
