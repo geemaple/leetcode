@@ -186,6 +186,7 @@ This is a **continually updated, open source** project.
 | 63.unique-paths-ii | [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | Medium | Coordinates
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
 | 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
+| 91.decode-ways | [cpp](./leetcode/91.decode-ways.cpp) | O(N) | Medium |
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
 | 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | follow-up is tricky
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded
