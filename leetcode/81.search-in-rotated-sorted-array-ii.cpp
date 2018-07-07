@@ -13,7 +13,37 @@ public:
         while (start + 1 < end) {
             int mid = start + (end - start) / 2;
             
-            //TODO: Tonight
+            if (nums[mid] == target)
+            {
+                return true;
+            }
+
+            if (nums[mid] < nums[end])
+            {
+                if (nums[mid] < target && target <= nums[end])
+                {
+                    start = mid;
+                }
+                else
+                {
+                    end = mid;
+                }
+            }
+            else if (nums[mid] > nums[end])
+            {
+                if (nums[end] < target && target < nums[mid])
+                {
+                    end = mid;
+                }
+                else
+                {
+                    start = mid;
+                }
+            }
+            else
+            {
+                end -= 1;
+            }
         }
         
         if (nums[start] == target || nums[end] == target)

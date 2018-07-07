@@ -98,10 +98,10 @@ This is a **continually updated, open source** project.
 ## Binary Search
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 33.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp) | O(logN) | Medium | TODO: Later
+| 33.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | Medium |
 | 34.search-for-a-range | [cpp](./leetcode/34.search-for-a-range.cpp) | Medium |
 | 74.search-a-2d-matrix | [cpp](./leetcode/74.search-a-2d-matrix.cpp),  [python](./leetcode/74.search-a-2d-matrix.py) | O(logN) | Medium | N = row * column
-| 81.search-in-rotated-sorted-array-ii | [cpp](./leetcode/81.search-in-rotated-sorted-array-ii.cpp) | O(logN) ~ O(N) | Medium | TODO: Later
+| 81.search-in-rotated-sorted-array-ii | [cpp](./leetcode/81.search-in-rotated-sorted-array-ii.cpp), [python](./leetcode/81.search-in-rotated-sorted-array-ii.py | O(logN) ~ O(N) | Medium |
 | 153.find-minimum-in-rotated-sorted-array | [cpp](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | Medium
 | 154.find-minimum-in-rotated-sorted-array-ii | [cpp](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | Hard
 | 162.find-peak-element | [cpp](./leetcode/162.find-peak-element.cpp) | O(logN) | Meidum
@@ -185,8 +185,8 @@ This is a **continually updated, open source** project.
 | 62.unique-paths | [python](./leetcode/62.unique-paths.py) | O(M * N) | Medium | Coordinates
 | 63.unique-paths-ii | [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | Medium | Coordinates
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
-| 70.climbing-stairs | [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
-| 91.decode-ways | [cpp](./leetcode/91.decode-ways.cpp) | O(N) | Medium |
+| 70.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
+| 91.decode-ways | [cpp](./leetcode/91.decode-ways.cpp) | O(N) | Medium  | conditional-climbing-stairs
 | 120.triangle | [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
 | 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | follow-up is tricky
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded

@@ -2,23 +2,21 @@ class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         
-        unordered_map<char, char> map_s;
-        unordered_map<char, char> map_t;
+        vector<int> mapS(256, 0);
+        vector<int> mapT(256, 0);
+    
         for (auto i = 0; i < s.size(); ++i){
-                        
-            char char_s = s[i];
-            char char_t = t[i];
             
-            if (map_s.count(char_s) > 0 && map_s[char_s] != char_t){
+            if (mapS[s[i]] != 0 && mapS[s[i]] != t[i]) {
                 return false;
             }
             
-            if (map_t.count(char_t) > 0 && map_t[char_t] != char_s){
+            if (mapT[t[i]] != 0 && mapT[t[i]] != s[i]) {
                 return false;
             }
-            
-            map_s.insert(make_pair(char_s, char_t));
-            map_t.insert(make_pair(char_t, char_s));
+         
+            mapS[s[i]] = t[i];
+            mapT[t[i]] = s[i];
         }
         
         return true;

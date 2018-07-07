@@ -16,8 +16,33 @@ public:
             {
                 return mid;
             }
-            
-            // TODO: tonight
+
+            if (nums[mid] < nums[end])
+            {
+                if (nums[mid] < target && target <= nums[end])
+                {
+                    start = mid;
+                }
+                else
+                {
+                    end = mid;
+                }
+            }
+            else if(nums[mid] > nums[end])
+            {
+                if (target > nums[end] && target < nums[mid])
+                {
+                    end = mid;
+                }
+                else
+                {
+                    start = mid;
+                }
+            }
+            else
+            {
+                // nothing here
+            }
         }
         
         if (nums[start] == target)
