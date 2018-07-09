@@ -1,5 +1,8 @@
 # Learning
 
+- [软件推荐/Recommend software]
+    - [Anki](https://apps.ankiweb.net/)
+
 -  [书籍推荐/Recommend Books]
     - 《算法技术手册》/ Algorithms in a Nutshell
     - 《STL源码剖析》/ The Annotated STL Sources
@@ -22,4 +25,5 @@
 
     - [树的3种DFS遍历](https://mp.weixin.qq.com/s?__biz=MzI1NjA4ODU4NQ==&mid=2247483704&idx=1&sn=e21e36e5c485e91ad92e13b66b544863&chksm=ea2d4e5edd5ac7486e0f24cfc9bab54c5c802d7a8ae3c9fc13e7312b2430bcf012a78895487e#rd)
 
-    
+- [其他]
+    - [湾区论坛](https://wanqu.io/)
