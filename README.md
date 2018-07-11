@@ -15,8 +15,7 @@ This is a **continually updated, open source** project.
 - [Tags](#tags)
     - [Math](#math)
     - [Bit Manipulation](#bit-manipulation)
-    - [Array](#array)
-    - [String](#string)
+    - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
     - [Binary Search](#binary-search)
@@ -42,7 +41,7 @@ This is a **continually updated, open source** project.
 | 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy
 
 
-## Array
+## Array and String
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
@@ -52,11 +51,7 @@ This is a **continually updated, open source** project.
 | 349.intersection-of-two-arrays | [python](./leetcode/349.intersection-of-two-arrays.py) | O(N + M) | Easy
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 560.subarray-sum-equals-k | [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | Medium
-
-## String
-
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
+| 724.find-pivot-index | [cpp](./leetcode/724.find-pivot-index.cpp) | O(N) | Easy
 | 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | TODO: Rabin-Karp Algorithm, KMP algorithm
 | 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy |
 
