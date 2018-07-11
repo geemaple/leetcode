@@ -2,17 +2,17 @@ class Solution {
 public:
     int jump(vector<int>& nums) {
         
-        int cur_end = 0;
-        int cur_farthest = 0;
+        int current = 0;
+        int furthest = 0;
         int jumps = 0;
         
         for (auto i = 0; i < nums.size() - 1; ++i)
         {
-            cur_farthest = max(cur_farthest, i + nums[i]);
+            furthest = max(furthest, i + nums[i]);
             
-            if (i == cur_end)
+            if (i == current)
             {
-                cur_end = cur_farthest;
+                current = furthest;
                 jumps += 1;
             }
         }

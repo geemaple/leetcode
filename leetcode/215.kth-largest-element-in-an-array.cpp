@@ -1,50 +1,50 @@
 class Solution {
 private:
     int partition(vector<int>& nums, int start, int end){
-        int select = start + rand() % (end - start + 1);
-        int tmp = nums[select];
-        nums[select] = nums[end];
+        int index = rand() % (end - start + 1) + start;
+        int tmp = nums[index];
+        nums[index] = nums[end];
         nums[end] = tmp;
         
-        int k = start;
+        int pos = start;
         for (auto i = start; i < end; ++i)
         {
             if (nums[i] <= nums[end])
             {
-                int tmp = nums[i];
-                nums[i] = nums[k];
-                nums[k] = tmp;
-                k += 1;
+                int tmp = nums[pos];
+                nums[pos] = nums[i];
+                nums[i] = tmp;
+                pos += 1;
             }
         }
         
-        tmp = nums[k];
-        nums[k] = nums[end];
+        tmp = nums[pos];
+        nums[pos] = nums[end];
         nums[end] = tmp;
         
-        return k;
+        return pos;
     }
+    
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        
         int start = 0;
-        int end = int(nums.size() - 1);
-        k = int(nums.size() - k);
-        
-        while(start < end){
+        int end = nums.size() - 1;
+        k = nums.size() - k;
+        while (start < end) {
             
             int pos = partition(nums, start, end);
-            if (pos == k)
-            {
-                break;
-            }
-            else if(pos > k)
+            
+            if (pos > k)
             {
                 end = pos - 1;
             }
-            else
+            else if(pos < k)
             {
                 start = pos + 1;
+            }
+            else
+            {
+                break;
             }
         }
         
