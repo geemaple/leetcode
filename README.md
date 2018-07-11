@@ -46,6 +46,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 53.maximum-subarray | [python](./leetcode/53.maximum-subarray.py) | O(N) | Easy 
+| 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 88.merge-sorted-array | [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | Easy |
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
 | 349.intersection-of-two-arrays | [python](./leetcode/349.intersection-of-two-arrays.py) | O(N + M) | Easy
