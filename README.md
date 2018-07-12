@@ -50,9 +50,7 @@ This is a **continually updated, open source** project.
 | 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 88.merge-sorted-array | [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | Easy |
 | 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
-| 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp | O(N) | Easy
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
-| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp) | O(N) | Easy | string
 | 349.intersection-of-two-arrays | [python](./leetcode/349.intersection-of-two-arrays.py) | O(N + M) | Easy
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(M * N) | Medium
@@ -71,15 +69,17 @@ This is a **continually updated, open source** project.
 | 16.3sum-closest | [cpp](./leetcode/16.3sum-closest.cpp), [python](./leetcode/16.3sum-closest.py) | O(N^2) | Medium |
 | 18.4sum | [cpp](./leetcode/18.4sum.cpp), [python](./leetcode/18.4sum.py) | O(N^3) | Medium |
 | 19.remove-nth-node-from-end-of-list | [cpp](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
+| 27.remove-element | [cpp](./leetcode/27.remove-element.cpp) | O(N) | Easy
 | 75.sort-colors | [cpp](./leetcode/75.sort-colors.cpp) [python](./leetcode/75.sort-colors.py) | O(N) | Medium | counting-sort
 | 76.minimum-window-substring | [cpp](./leetcode/76.minimum-window-substring.cpp) | O(N) | Hard
 | 125.valid-palindrome | [python](./leetcode/125.valid-palindrome.py) | O(N) | Easy
 | 141.linked-list-cycle | [python](./leetcode/141.linked-list-cycle.py) | O(N) | Easy | linked-list
 | 142.linked-list-cycle-ii | [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | Medium | linked-list
 | 160.intersection-of-two-linked-lists | [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | linked-list
-| 167.two-sum-ii-input-array-is-sorted | [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | Easy |
+| 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | Easy |
 | 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp) | O(N) / O(N * logN) | Medium | subarray
 | 283.move-zeroes | [python](./leetcode/283.move-zeroes.py) | O(N) | Easy
+| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp) | O(N) | Easy | string
 
 
 ## Linked List
