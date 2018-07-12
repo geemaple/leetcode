@@ -50,6 +50,7 @@ This is a **continually updated, open source** project.
 | 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 88.merge-sorted-array | [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | Easy |
 | 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
+| 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp | O(N) | Easy
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
 | 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp) | O(N) | Easy | string
 | 349.intersection-of-two-arrays | [python](./leetcode/349.intersection-of-two-arrays.py) | O(N + M) | Easy
