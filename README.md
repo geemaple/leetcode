@@ -78,7 +78,7 @@ This is a **continually updated, open source** project.
 | 142.linked-list-cycle-ii | [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | Medium | linked-list
 | 160.intersection-of-two-linked-lists | [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | linked-list
 | 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | Easy |
-| 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp) | O(N) / O(N * logN) | Medium | subarray
+| 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp) | O(N) | Medium |
 | 283.move-zeroes | [python](./leetcode/283.move-zeroes.py) | O(N) | Easy
 | 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp) | O(N) | Easy | string
 
