@@ -5,52 +5,60 @@ public:
         unordered_map<int, vector<int>> graph;
         unordered_map<int, int> indegree;
         unordered_set<int> nodes;
-        for (auto seq: seqs){
-            for (auto i = 0; i < seq.size(); ++i)
+        for (auto i = 0; i < seqs.size(); ++i)
+        {
+            vector<int> seq = seqs[i];
+            for (auto j = 0; j < seq.size(); ++j)
             {
-                nodes.insert(seq[i]);
-                
-                if (i + 1 < seq.size())
+                nodes.insert(seq[j]);
+                if (j + 1 < seq.size())
                 {
-                    graph[seq[i]].push_back(seq[i + 1]);
-                    indegree[seq[i + 1]] += 1;
+                    graph[seq[j]].push_back(seq[j + 1]);
+                    indegree[seq[j + 1]] += 1;
                 }
             }
         }
         
-        vector<int> res;
-        queue<int> starts;
+        if (org.size() != nodes.size())
+        {
+            return false;
+        }
+        
+        queue<int> q;
         for (auto it = nodes.begin(); it != nodes.end(); ++it)
         {
             if (indegree.count(*it) == 0)
             {
-                starts.push(*it);
+                q.push(*it);
             }
         }
         
-        while (!starts.empty()) {
-            
-            if (starts.size() > 1)
+        vector<int> res;
+        while (!q.empty()) {
+            if (q.size() > 1)
             {
                 return false;
             }
             
-            int num = starts.front();
-            starts.pop();
-            res.push_back(num);
+            int node = q.front();
+            q.pop();
+            res.push_back(node);
             
-            vector<int> nodes = graph[num];
-            for (auto i = 0; i < nodes.size(); ++i)
+            for (auto i = 0; i < graph[node].size(); ++i)
             {
-                indegree[nodes[i]] -= 1;
-                if (indegree[nodes[i]] == 0)
+                int neighbor = graph[node][i];
+                if (indegree.count(neighbor) > 0)
                 {
-                    starts.push(nodes[i]);
-                    indegree.erase(nodes[i]);
+                    indegree[neighbor] -= 1;
+                    if (indegree[neighbor] == 0)
+                    {
+                        indegree.erase(neighbor);
+                        q.push(neighbor);
+                    }
                 }
             }
         }
         
-        return indegree.empty() ? (res == org) : false;
+        return indegree.empty() ? org == res: false;
     }
 };
