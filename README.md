@@ -49,6 +49,7 @@ This is a **continually updated, open source** project.
 | 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
 | 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 88.merge-sorted-array | [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | Easy |
+| 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
 | 349.intersection-of-two-arrays | [python](./leetcode/349.intersection-of-two-arrays.py) | O(N + M) | Easy
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
