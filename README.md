@@ -203,7 +203,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 45.jump-game-ii | [cpp](./leetcode/45.jump-game-ii.cpp), [python](./leetcode/45.jump-game-ii.py) | O(N) | Hard |
-| 55.jump-game | [python](./leetcode/55.jump-game.py) | O(N) | Medium | dynamic-programming
+| 55.jump-game | [cpp](./leetcode/55.jump-game.cpp), [python](./leetcode/55.jump-game.py) | O(N) | Medium | dynamic-programming
 
 ## Union Find
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
