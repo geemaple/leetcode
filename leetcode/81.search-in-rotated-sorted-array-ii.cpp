@@ -8,7 +8,7 @@ public:
         }
         
         int start = 0;
-        int end = nums.size() - 1;
+        int end = (int)nums.size() - 1;
         
         while (start + 1 < end) {
             int mid = start + (end - start) / 2;
@@ -17,10 +17,10 @@ public:
             {
                 return true;
             }
-
+            
             if (nums[mid] < nums[end])
             {
-                if (nums[mid] < target && target <= nums[end])
+                if (target > nums[mid] && target <= nums[end])
                 {
                     start = mid;
                 }
@@ -31,7 +31,7 @@ public:
             }
             else if (nums[mid] > nums[end])
             {
-                if (nums[end] < target && target < nums[mid])
+                if (target >= nums[start] && target < nums[mid])
                 {
                     end = mid;
                 }
@@ -50,7 +50,7 @@ public:
         {
             return true;
         }
-
+        
         return false;
     }
 };

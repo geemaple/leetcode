@@ -1,30 +1,26 @@
 class Solution {
 public:
     bool sequenceReconstruction(vector<int>& org, vector<vector<int>>& seqs) {
-        
         unordered_map<int, vector<int>> graph;
         unordered_map<int, int> indegree;
         unordered_set<int> nodes;
+        
         for (auto i = 0; i < seqs.size(); ++i)
         {
-            vector<int> seq = seqs[i];
-            for (auto j = 0; j < seq.size(); ++j)
+            vector<int> sequence = seqs[i];
+            for (auto j = 0; j < sequence.size(); ++j)
             {
-                nodes.insert(seq[j]);
-                if (j + 1 < seq.size())
+                nodes.insert(sequence[j]);
+                if (j > 0)
                 {
-                    graph[seq[j]].push_back(seq[j + 1]);
-                    indegree[seq[j + 1]] += 1;
+                    indegree[sequence[j]] += 1;
+                    graph[sequence[j - 1]].push_back(sequence[j]);
                 }
             }
         }
         
-        if (org.size() != nodes.size())
-        {
-            return false;
-        }
-        
         queue<int> q;
+        vector<int> res;
         for (auto it = nodes.begin(); it != nodes.end(); ++it)
         {
             if (indegree.count(*it) == 0)
@@ -33,8 +29,8 @@ public:
             }
         }
         
-        vector<int> res;
         while (!q.empty()) {
+            
             if (q.size() > 1)
             {
                 return false;
@@ -44,21 +40,18 @@ public:
             q.pop();
             res.push_back(node);
             
-            for (auto i = 0; i < graph[node].size(); ++i)
+            vector<int> neighbors = graph[node];
+            for (auto i = 0; i < neighbors.size(); ++i)
             {
-                int neighbor = graph[node][i];
-                if (indegree.count(neighbor) > 0)
+                indegree[neighbors[i]] -= 1;
+                if (indegree[neighbors[i]] == 0)
                 {
-                    indegree[neighbor] -= 1;
-                    if (indegree[neighbor] == 0)
-                    {
-                        indegree.erase(neighbor);
-                        q.push(neighbor);
-                    }
+                    indegree.erase(neighbors[i]);
+                    q.push(neighbors[i]);
                 }
             }
         }
         
-        return indegree.empty() ? org == res: false;
+        return indegree.empty() ? res == org: false;
     }
 };
