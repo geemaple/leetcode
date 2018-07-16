@@ -7,11 +7,9 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
-        
         if (root == NULL)
         {
             return vector<int>();
@@ -22,7 +20,7 @@ public:
         s.push(root);
         
         while (!s.empty()) {
-            TreeNode* node = s.top();
+            TreeNode *node = s.top();
             s.pop();
             
             res.push_back(node->val);
