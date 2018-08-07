@@ -80,7 +80,10 @@ This is a **continually updated, open source** project.
 | 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | Easy |
 | 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp) | O(N) | Medium |
 | 283.move-zeroes | [python](./leetcode/283.move-zeroes.py) | O(N) | Easy
-| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp) | O(N) | Easy | string
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| --------------| -------| --------|
+| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | O(N) | O(1) | Easy | string
 
 
 ## Linked List
