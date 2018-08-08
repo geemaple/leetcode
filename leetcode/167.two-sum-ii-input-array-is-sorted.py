@@ -7,14 +7,16 @@ class Solution(object):
         """
         left = 0
         right = len(numbers) - 1
-        while (left < right):
-            if numbers[left] + numbers[right] == target:
-                return [left + 1, right + 1]
+        res = []
 
-            if numbers[left] + numbers[right] > target:
-                right -= 1
-
+        while(left < right):
             if numbers[left] + numbers[right] < target:
                 left += 1
+            elif numbers[left] + numbers[right] > target:
+                right -= 1
+            else:
+                res.append(left + 1)
+                res.append(right + 1)
+                break
 
-        return [None, None]
+        return res
