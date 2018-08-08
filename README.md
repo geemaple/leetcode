@@ -84,8 +84,8 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| --------------| -------| --------|
 | 283.move-zeroes | [cpp](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | O(N) | O(1) | Easy
-| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | O(N) | O(1) | Easy | string
-
+| 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | O(N) | O(1) | Easy
+| 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp), [python](./leetcode/349.intersection-of-two-arrays.py) | O(K * logK), k = max(M, N) | O(1) | Easy | hash, binary-search
 
 ## Linked List
 

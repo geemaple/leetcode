@@ -17,3 +17,49 @@ public:
         return res;
     }
 };
+
+// two-pointers
+class Solution2 {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
+    {
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(), nums2.end());
+        
+        vector<int> res;
+        
+        int left = 0;
+        int right = 0;
+        
+        while(left < nums1.size() && right < nums2.size())
+        {
+            if (nums1[left] > nums2[right])
+            {
+                right++;
+            }
+            else if(nums1[left] < nums2[right])
+            {
+                left++;
+            }
+            else
+            {
+                res.push_back(nums1[left]);
+                
+                while(left + 1 < nums1.size() && nums1[left] == nums1[left + 1]){
+                    left++;
+                }
+                
+                while(right + 1 < nums2.size() && nums2[right] == nums2[right + 1]){
+                    right++;
+                }
+                
+                left++;
+                right++;
+            }
+            
+        }
+        
+        return res;
+    }
+};
+
