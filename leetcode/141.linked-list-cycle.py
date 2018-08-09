@@ -10,16 +10,14 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-
         slow = head
-        quick = head
+        fast = head
 
-        # if slow run in Loop, quick is faster than slow
-        # if we think slow is still, quick is move 1 step a time
-        while quick is not None and quick.next is not None:
+        while(fast is not None and fast.next is not None):
             slow = slow.next
-            quick = quick.next.next
-            if quick == slow:
-                return True
+            fast = fast.next.next
 
+            if slow == fast:
+                return True
+        
         return False
