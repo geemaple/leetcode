@@ -81,6 +81,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| --------------| -------| --------|
+| 026.remove-duplicates-from-sorted-array | [cpp](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python](./leetcode/26.remove-duplicates-from-sorted-array.py) | O(N) | O(1) | Easy
 | 027.remove-element | [cpp](./leetcode/27.remove-element.cpp), [python](./leetcode/27.remove-element.py) | O(N) | O(1) | Easy
 | 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | O(1) | Easy |
 | 283.move-zeroes | [cpp](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | O(N) | O(1) | Easy
