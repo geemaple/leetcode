@@ -2,22 +2,26 @@
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
+        
+        int result = INT_MAX;
         int sum = 0;
-        int start = 0;
-        int res = INT_MAX;
-        for (auto i = 0; i < nums.size(); ++i)
+
+        int i = 0;
+        for(int j = 0; j < nums.size(); ++j)
         {
-            sum += nums[i];
-            while (sum >= s) {
-                res = min(res, i - start + 1);
-                sum -= nums[start];
-                start += 1;
+            sum += nums[j];
+            while(sum >= s)
+            {
+                result = min(result, j - i + 1);
+                sum -= nums[i];
+                i++;
             }
         }
-        
-        return res == INT_MAX ? 0 : res;
+
+        return result == INT_MAX ? 0: result;
     }
 };
+
 
 class Solution2 {
 public:
