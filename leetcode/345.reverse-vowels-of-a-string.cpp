@@ -2,28 +2,32 @@ class Solution {
 public:
     string reverseVowels(string s) {
         
-        int left = 0;
-        int right = (int)(s.size() - 1);
+        int start = 0;
+        int end = s.size() - 1;
         unordered_set<char> vowels({'a', 'e', 'i', 'o', 'u'});
-        
-        while (left < right) {
-            
-            while (left < right and vowels.count(tolower(s[left])) == 0) {
-                left++;
+
+        while(start < end)
+        {
+            while(start < end && vowels.count(tolower(s[start])) == 0)
+            {
+                start++;
             }
-            
-            while (left < right and vowels.count(tolower(s[right])) == 0) {
-                right--;
+
+            while(start < end && vowels.count(tolower(s[end])) == 0)
+            {
+                end--;
             }
-            
-            char tmp = s[left];
-            s[left] = s[right];
-            s[right] = tmp;
-            
-            left++;
-            right--;
+
+            if (start < end){
+                char tmp = s[start];
+                s[start] = s[end];
+                s[end] = tmp;
+            }
+
+            start++;
+            end--;
         }
-        
+
         return s;
     }
 };
