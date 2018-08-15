@@ -4,30 +4,18 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        
-        if s is None:
-            return 0
-
-        aSet = set()
-        count = 0
+        char_set = set()
+        ans = 0
         start = 0
-        end = 0
-
-        for i in range(len(s)):
-            end = i
-            if s[end] in aSet:
-                count = max(count, end - start)
-
+        for end in range(len(s)):
+            if s[end] in char_set:
+                ans = max(ans, end - start)
                 while(s[start] != s[end]):
-                    aSet.remove(s[start])
+                    char_set.remove(s[start])
                     start += 1
-
                 start += 1
-
             else:
-                aSet.add(s[end])
+                char_set.add(s[end])
 
-        end = len(s) # end won't eqaul to len(s) in range
-        count = max(count, end - start)
-
-        return count
+        ans = max(ans, len(s) - start)
+        return ans

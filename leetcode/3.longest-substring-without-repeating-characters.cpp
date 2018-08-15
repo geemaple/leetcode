@@ -3,33 +3,30 @@ public:
     int lengthOfLongestSubstring(string s) {
         
         unordered_set<char> set;
-        int res = 0;
-        int start = 0;
-        int end = 0;
-        for(; end < s.size(); ++end){
-            
-            if (set.count(s[end]) > 0){
-                if (res < end - start){
-                    res = end - start;
+        int ans = 0;
+        int i  = 0;
+        for (int j = 0; j < s.size(); ++j)
+        {
+            if (set.count(s[j]) > 0)
+            {
+                ans = max(ans, j - i);
+                
+                while(s[i] != s[j])
+                {
+                    set.erase(s[i]);
+                    i++;
                 }
                 
-                while(s[start] != s[end]){
-                    set.erase(s[start]);
-                    start += 1;
-                }
-                
-                start += 1;
+                i++;
             }
             else
             {
-                set.insert(s[end]);
+                set.insert(s[j]);
             }
         }
         
-        if (res < end - start){
-            res = end - start;
-        }
+        ans = max(ans, (int)set.size());
         
-        return res;
+        return ans;
     }
 };
