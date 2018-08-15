@@ -1,46 +1,53 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        
-        if (s.size() < t.size()){
+
+        if (t.size() < s.size())
+        {
             return "";
         }
-        
+
         unordered_map<char, int> map;
         int missing = t.size();
-        
-        for (auto i = 0; i < t.size(); ++i) {
+        for(int i = 0; i < t.size(); ++i)
+        {
             map[t[i]] += 1;
         }
-        
-        pair<int, int> res = make_pair(1, INT_MAX);
-        
-        int start = 0;
-        for (auto end = 0; end < s.size(); ++end){
-            
-            if (map.count(s[end]) > 0){
-                if (map[s[end]] > 0) {
-                    missing -= 1;
+
+        pair<int, int>ans = make_pair(0, INT_MAX);
+
+        int i = 0;
+        for(int j = 0; j < s.size(); ++j)
+        {
+            if (map.count(s[j]) > 0)
+            {
+                if (map[s[j]] > 0)
+                {
+                    missing--;
                 }
-                map[s[end]] -= 1;
+                map[s[j]] -= 1;
             }
-            
-            while (missing == 0){
-                if (res.second - res.first > end + 1 - start){
-                    res = make_pair(start, end + 1);
+
+            while (missing == 0)
+            {
+                if (ans.second - ans.first > j - i + 1)
+                {
+                    ans = make_pair(i, j + 1);
                 }
-                
+
                 // remove start
-                if (map.count(s[start]) > 0) {
-                    if (map[s[start]] == 0) {
+                if (map.count(s[i]) > 0)
+                {
+                    if (map[s[i]] == 0)
+                    {
                         missing += 1;
                     }
-                    map[s[start]] += 1;
+                    map[s[i]] += 1;
                 }
-                start += 1;
+                i++;
             }
         }
-        
-        return (res.second != INT_MAX)? s.substr(res.first, res.second - res.first): "";
+
+        return (ans.second != INT_MAX)? s.substr(ans.first, ans.second - ans.first) : "";
     }
 };
