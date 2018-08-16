@@ -4,9 +4,10 @@ bool isBadVersion(int version);
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int start = 0;
+        int start = 1;
         int end = n;
-        while (start + 1 < end) {
+        while (start + 1 < end)
+        {
             int mid = start + (end - start) / 2;
             if (isBadVersion(mid))
             {
@@ -16,13 +17,8 @@ public:
             {
                 start = mid;
             }
-        }
-        
-        if (isBadVersion(start))
-        {
-            return start;
-        }
-        
-        return end;
+        } 
+
+        return isBadVersion(start) ? start : end;
     }
 };
