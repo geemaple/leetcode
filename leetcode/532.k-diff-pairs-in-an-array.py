@@ -5,25 +5,27 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        nums.sort()
         
-        res = 0
-        left = 0
-        right = 0
+        if nums is None:
+            return 0
 
-        while (right < len(nums)):
+        nums.sort()
+        start = 0
+        ans = 0
 
-            while(left < right and nums[right] - nums[left] >= k):
-                
-                if (nums[right] - nums[left] == k):
-                    res += 1
+        while start < len(nums):
+            end = start + 1
 
-                    while(left + 1 < len(nums) and nums[left] == nums[left + 1]):
-                        left += 1
+            while(end < len(nums) and nums[end] - nums[start] < k):
+                end += 1
 
-                left += 1
+            if (end < len(nums) and nums[end] - nums[start] == k):
+                ans += 1
 
-            right = max(left, right)
-            right += 1
-                    
-        return res
+                #remove duplicate
+                while(start + 1 < len(nums) and nums[start + 1] == nums[start]):
+                    start += 1
+
+            start += 1
+
+        return ans

@@ -2,28 +2,28 @@ class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
         sort(nums.begin(), nums.end());
-        int res = 0;
-        int left = 0;
-
-        for (int right = 0; right < nums.size(); ++right)
+        int ans = 0;
+        for (int i = 0; i < nums.size(); ++i)
         {
-            while (left < right && nums[right] - nums[left] >= k)
+            int j = i + 1;
+            
+            while(j < nums.size() && nums[j] - nums[i] < k)
             {
-                if (nums[right] - nums[left] == k)
-                {
-                    res++;
-                    while(left + 1 < nums.size() && nums[left + 1] == nums[left])
-                    {
-                        left++;
-                    }
-                }
-
-                left++;
+                j++;
             }
-
-            right = max(left, right);
+            
+            if (j < nums.size() && nums[j] - nums[i] == k)
+            {
+                ans += 1;
+                
+                // remove duplicate
+                while(i + 1 < nums.size() && nums[i + 1] == nums[i])
+                {
+                    i++;
+                }
+            }
         }
-
-        return res;
+        
+        return ans;
     }
 };
