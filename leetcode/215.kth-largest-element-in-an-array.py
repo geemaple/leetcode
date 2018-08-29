@@ -6,33 +6,30 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        
         start = 0
         end = len(nums) - 1
         k = len(nums) - k
 
-        while (start <= end):
-            pos = self.partition(nums, start, end)
-
-            if k == pos:
-                break
-            if (pos < k):
-                start = pos + 1
+        while(start < end):
+            mid = self.partition(nums, start, end)
+            if mid < k:
+                start = mid + 1
+            elif mid > k:
+                end = mid - 1
             else:
-                end = pos - 1
-                
+                break
+
         return nums[k]
-
+        
     def partition(self, nums, start, end):
-        index = randint(start, end)
-
-        nums[end], nums[index] = nums[index], nums[end]
+        k = random.randint(start, end)
+        nums[k], nums[end] = nums[end], nums[k]
 
         k = start
-        for i in range(start, end):
-            if nums[i] <= nums[end]:
-                nums[i], nums[k] = nums[k], nums[i]
+        for i in range(start, end + 1):
+            if nums[i] < nums[end]:
+                nums[k], nums[i] = nums[i], nums[k]
                 k += 1
 
-        nums[end], nums[k] = nums[k], nums[end]
+        nums[k], nums[end] = nums[end], nums[k]
         return k

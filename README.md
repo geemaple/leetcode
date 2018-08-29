@@ -14,6 +14,7 @@ This is a **continually updated, open source** project.
 - [References](#references)
 - [Tags](#tags)
     - [Math](#math)
+    - [Sort](#sort)
     - [Bit Manipulation](#bit-manipulation)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
@@ -34,6 +35,11 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp) | O(1) | Easy
+
+## Sort
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) | O(1) | Medium | quick-select, 
 
 ## Bit Manipulation
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -143,7 +149,6 @@ This is a **continually updated, open source** project.
 | 98.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | Medium | | TODO: inorder-traversal |
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | Easy
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
-| 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) ~ O(N^2) | Medium | quick-select
 | 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
 ## Tree Traversal
