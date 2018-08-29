@@ -4,28 +4,22 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        res = 0
+        j = 0
+        k = 2
+        count_map = dict()
 
-        if s is None:
-            return 0
+        for i in range(len(s)):
+            while (j < len(s) and (len(count_map) < k or (len(count_map) == k and s[j] in count_map))):
+                count_map[s[j]] = count_map.get(s[j], 0) + 1
+                j += 1
 
-        count_map = {}
-        count = 0
-        start = 0
-        ans = 0
+            res = max(res, j - i)
 
-        for end in range(len(s)):
-            if (count_map.get(s[end], 0) == 0):
-                count += 1
-            count_map[s[end]] = count_map.get(s[end], 0) + 1
+            if s[i] in count_map:
+                count_map[s[i]] -= 1
+                if count_map[s[i]] == 0:
+                    del count_map[s[i]]
 
-            while (count > 2):
-                count_map[s[start]] -= 1
+        return res      
 
-                if count_map[s[start]] == 0:
-                    count -= 1
-
-                start += 1
-
-            ans = max(ans, end - start + 1)
-
-        return ans

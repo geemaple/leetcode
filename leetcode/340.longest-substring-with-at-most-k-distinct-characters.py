@@ -5,23 +5,20 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        
-        ans = 0
-        count = 0
-        count_map = {}
-        start = 0
+        res = 0
+        j = 0
+        count_map = dict()
 
         for i in range(len(s)):
-            if (count_map.get(s[i], 0) == 0):
-                count += 1
-            count_map[s[i]] = count_map.get(s[i], 0) + 1
+            while (j < len(s) and (len(count_map) < k or (len(count_map) == k and s[j] in count_map))):
+                count_map[s[j]] = count_map.get(s[j], 0) + 1
+                j += 1
 
-            while (count > k):
-                count_map[s[start]] -= 1
-                if count_map[s[start]] == 0:
-                    count -= 1
-                start += 1
+            res = max(res, j - i)
 
-            ans = max(ans, i - start + 1)
+            if s[i] in count_map:
+                count_map[s[i]] -= 1
+                if count_map[s[i]] == 0:
+                    del count_map[s[i]]
 
-        return ans
+        return res
