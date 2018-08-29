@@ -3,22 +3,23 @@ class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
         
-        int result = INT_MAX;
+        int res = INT_MAX;
+        int j = 0;
         int sum = 0;
-
-        int i = 0;
-        for(int j = 0; j < nums.size(); ++j)
+        for (int i = 0; i < nums.size(); ++i)
         {
-            sum += nums[j];
-            while(sum >= s)
-            {
-                result = min(result, j - i + 1);
-                sum -= nums[i];
-                i++;
+            while (j < nums.size() && sum < s){
+                sum += nums[j++];
             }
+            
+            if (sum >= s){
+                res = min(res, j - i);
+            }
+            
+            sum -= nums[i];
         }
-
-        return result == INT_MAX ? 0: result;
+        
+        return (res == INT_MAX) ? 0 : res;
     }
 };
 

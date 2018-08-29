@@ -2,52 +2,53 @@ class Solution {
 public:
     string minWindow(string s, string t) {
 
-        if (t.size() < s.size())
-        {
+        if (s.size() < t.size()){
             return "";
         }
+        unordered_map<char, int> count_map;
+        int remains = t.size();
+        int j = 0;
+        int start = 0;
+        int end = INT_MAX;
 
-        unordered_map<char, int> map;
-        int missing = t.size();
-        for(int i = 0; i < t.size(); ++i)
-        {
-            map[t[i]] += 1;
-        }
+        for (auto c : t){
+            count_map[c] ++;
+         }
 
-        pair<int, int>ans = make_pair(0, INT_MAX);
+        for (int i = 0; i < s.size(); ++i){
 
-        int i = 0;
-        for(int j = 0; j < s.size(); ++j)
-        {
-            if (map.count(s[j]) > 0)
+            while (j < s.size() && remains > 0)
             {
-                if (map[s[j]] > 0)
+                if (count_map.count(s[j]) > 0)
                 {
-                    missing--;
-                }
-                map[s[j]] -= 1;
-            }
-
-            while (missing == 0)
-            {
-                if (ans.second - ans.first > j - i + 1)
-                {
-                    ans = make_pair(i, j + 1);
-                }
-
-                // remove start
-                if (map.count(s[i]) > 0)
-                {
-                    if (map[s[i]] == 0)
+                    count_map[s[j]] -= 1;
+                    if (count_map[s[j]] >= 0)
                     {
-                        missing += 1;
+                        remains --;
                     }
-                    map[s[i]] += 1;
                 }
-                i++;
+
+                j++;
+            }
+
+            if (remains == 0 && end - start > j - i)
+            {
+                start = i;
+                end = j;
+            }
+
+            if (count_map.count(s[i]) > 0)
+            {
+                count_map[s[i]] += 1;
+                if (count_map[s[i]] > 0)
+                {
+                    remains ++;
+                }
             }
         }
 
-        return (ans.second != INT_MAX)? s.substr(ans.first, ans.second - ans.first) : "";
+        return (end == INT_MAX) ? "" : s.substr(start, end - start);
+
     }
 };
+  

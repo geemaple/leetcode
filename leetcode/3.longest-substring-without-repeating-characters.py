@@ -4,18 +4,18 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        char_set = set()
-        ans = 0
-        start = 0
-        for end in range(len(s)):
-            if s[end] in char_set:
-                ans = max(ans, end - start)
-                while(s[start] != s[end]):
-                    char_set.remove(s[start])
-                    start += 1
-                start += 1
-            else:
-                char_set.add(s[end])
+        
+        res = 0
+        j = 0
+        unique_set = set()
 
-        ans = max(ans, len(s) - start)
-        return ans
+        for i in range(len(s)):
+            while(j < len(s) and s[j] not in unique_set):
+                unique_set.add(s[j])
+                j += 1
+
+            res = max(res, j - i)
+
+            unique_set.remove(s[i])
+
+        return res

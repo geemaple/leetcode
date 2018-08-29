@@ -1,22 +1,23 @@
 class Solution(object):
     def minSubArrayLen(self, s, nums):
         """
-        :type s: int
-        :type nums: List[int]
-        :rtype: int
-        """
-        if nums is None:
-            return 0
-
+            :type s: int
+            :type nums: List[int]
+            :rtype: int
+            """
+        
+        j = 0
         res = float('inf')
         sums = 0
-        start = 0
-        for end in range(len(nums)):
-            sums += nums[end]
-
-            while (sums >= s):
-                res = min(res, end - start + 1)
-                sums -= nums[start]
-                start += 1
-
-        return res if res != float('inf') else 0
+        
+        for i in range(len(nums)):
+            while (j < len(nums) and sums < s):
+                sums += nums[j]
+                j += 1
+            
+            if (sums >= s):
+                res = min(res, j - i)
+            
+            sums -= nums[i]
+        
+        return 0 if res == float('inf') else res
