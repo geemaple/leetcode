@@ -1,4 +1,4 @@
-# Leetcode
+# Algorithm
 My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
@@ -9,12 +9,8 @@ This is a **continually updated, open source** project.
 
 ☝️Hey!!!, its clickable. references are moved💦
 
-# Tags
 - [Leetcode](#leetcode)
-- [References](#references)
-- [Tags](#tags)
     - [Math](#math)
-    - [Sort](#sort)
     - [Bit Manipulation](#bit-manipulation)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
@@ -25,21 +21,21 @@ This is a **continually updated, open source** project.
     - [Graph Traversal](#graph-traversal)
     - [Backtracking](#backtracking)
     - [Hash Table](#hash-table)
-    - [heap](#heap)
+    - [Heap](#heap)
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
+    - [Other](#other)
+
+- [Lintcode](#lintcode)
+
+# Leetcode
 
 ## Math
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp) | O(1) | Easy
-
-## Sort
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) | O(1) | Medium | quick-select, 
 
 ## Bit Manipulation
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -238,3 +234,14 @@ This is a **continually updated, open source** project.
 | 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | Hard
 | 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | BFS/DFS | E = len(edges)
 | 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | | N = len(positions) |
+
+## Other
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) | O(1) | Medium | quick-select, best = O(N), worst = O(N^2)
+
+# Lintcode
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 543.kth-largest-in-n-arrays | [cpp](./lintcode/543.kth-largest-in-n-arrays.cpp), [python](./lintcode/543.kth-largest-in-n-arrays.py) | O(M * N * LogK) | O(K) | Easy |
