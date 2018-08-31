@@ -1,71 +1,60 @@
-# O(N) N = len(positions)
-class Solution(object):
-    def numIslands2(self, m, n, positions):
-        """
-        :type m: int
-        :type n: int
-        :type positions: List[List[int]]
-        :rtype: List[int]
-        """
-
-        if positions is None or len(positions) == 0:
-            return []
-
-        count = 0
-        uf = UnionFind(m * n)
-        islands = set()
-        results = []
-
-        # top, left, bottom, right
-        x_move = [-1, 0, 1, 0]
-        y_move = [0, -1, 0, 1]
-
-
-        for point in positions:
-            x = point[0]
-            y = point[1]
-
-            if (x, y) not in islands:
-                count += 1
-                islands.add((x, y))
-
-                # check top, left, bottom, right
-                for i in range(4):
-                    neighbor_x = x_move[i] + x
-                    neighbor_y = y_move[i] + y
-
-                    # check boundry
-                    if 0 <= neighbor_x < m and 0 <= neighbor_y < n and (neighbor_x, neighbor_y) in islands:
-                        point = self.flatten_pos(x, y, n)
-                        neighbor = self.flatten_pos(neighbor_x, neighbor_y, n)
-                        if uf.union(point, neighbor):
-                            count -= 1
-
-            results.append(count)
-
-        return results
-
-    def flatten_pos(self, x, y, column):
-        return x * column + y
-
-
 class UnionFind(object):
-    def __init__(self, count):
-        self.table = [i for i in range(count)]
-
-    def find(self, x):
-        if self.table[x] == x:
-            return x
+    def __init__(self):
+        self.graph = {}
+    
+    def add(self, node):
+        self.graph[node] = node
+    
+    def find(self, node):
+        if self.graph[node] == node:
+            return node
         
-        self.table[x] = self.find(self.table[x])
-        return self.table[x]
-
-    def union(self, x, y):
-        super_x = self.find(x)
-        super_y = self.find(y)
-
-        if super_x != super_y:
-            self.table[super_x] = self.table[super_y]
+        self.graph[node] = self.find(self.graph[node])
+        return self.graph[node]
+    
+    def connect(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.graph[root_a] = root_b
             return True
         
         return False
+
+DIRECTIONS = [[0, 1],[-1, 0],[0, -1],[1, 0]]
+
+class Solution(object):
+    def numIslands2(self, m, n, positions):
+        """
+            :type m: int
+            :type n: int
+            :type positions: List[List[int]]
+            :rtype: List[int]
+            """
+        
+        islands = set()
+        uf = UnionFind()
+        size = 0
+        res = []
+        
+        for pos in positions:
+            x = pos[0]
+            y = pos[1]
+            
+            if (x, y) not in islands:
+                islands.add((x, y))
+                uf.add((x, y))
+                size += 1
+                
+                for direction in DIRECTIONS:
+                    new_x = x + direction[0]
+                    new_y = y + direction[1]
+                    
+                    if (0 <= new_x < m and 0 <= new_y < n):
+                        if (new_x, new_y) in islands:
+                            if (uf.connect((x, y), (new_x, new_y))):
+                                size -= 1
+            
+        res.append(size)
+        
+                                    return res

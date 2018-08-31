@@ -230,11 +230,11 @@ This is a **continually updated, open source** project.
 | 55.jump-game | [cpp](./leetcode/55.jump-game.cpp), [python](./leetcode/55.jump-game.py) | O(N) | Medium | dynamic-programming
 
 ## Union Find
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | Hard
-| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | Medium | BFS/DFS | E = len(edges)
-| 305.number-of-islands-ii | [python](./leetcode/305.number-of-islands-ii.py) | O(N) | Hard | | N = len(positions) |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | - | Hard
+| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | - | Medium | BFS/DFS | E = len(edges)
+| 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N) | O(M * N) | Hard | | N = len(positions) |
 
 ## Other
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
