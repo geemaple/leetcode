@@ -233,8 +233,8 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | O(N) | - | Hard
-| 261.graph-valid-tree | [python](./leetcode/261.graph-valid-tree.py) | O(E) | - | Medium | BFS/DFS | E = len(edges)
-| 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N) | O(M * N) | Hard | | N = len(positions) |
+| 261.graph-valid-tree | [cpp](./leetcode/261.graph-valid-tree.cpp), [python](./leetcode/261.graph-valid-tree.py) | O(N), N = len(edges) | O(N) | Medium | BFS/DFS | 
+| 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N), N = len(positions) | O(M * N) | Hard | | 
 
 ## Other
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |

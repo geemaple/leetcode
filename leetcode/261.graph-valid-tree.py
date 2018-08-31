@@ -1,5 +1,28 @@
+class UnionFind:
+    def __init__(self, n):
+        self.size = n
+        self.graph = {}
 
-# O(E) E = len(edges)
+        for i in range(n):
+            self.graph[i] = i
+    
+    def find(self, node):
+        if self.graph[node] == node:
+            return node
+
+        self.graph[node] = self.find(self.graph[node])
+        return self.graph[node]
+
+    def union(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.size -= 1
+            self.graph[root_a] = root_b
+
+    def all_connected(self):
+        return self.size == 1
+
 class Solution(object):
     def validTree(self, n, edges):
         """
@@ -7,38 +30,12 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: bool
         """
+        
+        if n - 1 != len(edges):
+            return False
+
         uf = UnionFind(n)
+        for e in edges:
+            uf.union(e[0], e[1])
 
-        for pair in edges:
-            x = pair[0]
-            y = pair[1]
-
-            if not uf.union(x, y):
-                # has circle
-                return False
-
-        return uf.count == 1
-
-
-class UnionFind(object):
-    def __init__(self, n):
-        self.table = [i for i in range(n)]
-        self.count = n
-
-    def find(self, x):
-        if self.table[x] == x:
-            return x
-
-        self.table[x] = self.find(self.table[x])
-        return self.table[x]
-
-    def union(self, x, y):
-        super_x = self.find(x)
-        super_y = self.find(y)
-
-        if super_x != super_y:
-            self.table[super_x] = super_y
-            self.count -= 1
-            return True
-
-        return False
+        return uf.all_connected()
