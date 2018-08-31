@@ -57,4 +57,4 @@ class Solution(object):
             
         res.append(size)
         
-                                    return res
+    return res
