@@ -242,6 +242,8 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | <= (N * L) | Medium | - | L = len(word), N = number of words |
+| 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | <= O(N * L) | Medium | DFS | L = len(word), N = number of words
+
 ## Other
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
