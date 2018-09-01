@@ -25,6 +25,7 @@ This is a **continually updated, open source** project.
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
+    - [Trie](#trie)
     - [Other](#other)
 
 - [Lintcode](#lintcode)
@@ -237,6 +238,10 @@ This is a **continually updated, open source** project.
 | 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N) | O(M * N) | Hard | | N = len(positions)
 | 721.accounts-merge | [cpp](./leetcode/721.accounts-merge.cpp), [python](./leetcode/721.accounts-merge.py) | O(M * N) | O(M * N) | Medium |
 
+## Trie
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | <= (N * L) | Medium | - | L = len(word), N = number of words |
 ## Other
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
