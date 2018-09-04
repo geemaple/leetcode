@@ -183,7 +183,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 79.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(M * N * K * K) | O(M * N) | Medium | DFS |
+| 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(M * N * L * L) | O(M * N) | Medium | DFS | L = length of words
 
 ## Hash Table
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -247,6 +247,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | <= (N * L) | Medium | - | L = len(word), N = number of words |
 | 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | <= O(N * L) | Medium | DFS | L = len(word), N = number of words
+| 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(M * N), O(K * L)) | HARD | DFS | K = number of words, L = avg length of words
 
 ## Other
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
