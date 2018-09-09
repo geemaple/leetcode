@@ -26,3 +26,4 @@
 - [个人拙笔/Self Wrote Articles]
     
     - [一对好基友，深度优先vs.广度优先搜索](https://mp.weixin.qq.com/s/_ZT69BUcw9cmXTBPaSjEnw)
+    - [树的三种DFS策略(前序、中序、后序)遍历](https://mp.weixin.qq.com/s/Uab-UBKR5UfWrDKdAgyeIg)
