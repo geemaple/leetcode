@@ -63,6 +63,9 @@ This is a **continually updated, open source** project.
 | 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | string | TODO: Rabin-Karp Algorithm, KMP algorithm
 | 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy | string |
 
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice |
 
 ## Two Pointers
 
