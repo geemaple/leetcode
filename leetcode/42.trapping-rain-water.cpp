@@ -1,5 +1,51 @@
-//scan twice
+// two pointers
 class Solution {
+public:
+    int trap(vector<int>& height) {
+
+        int size = height.size();
+        if (size < 3)
+        {
+            return 0;
+        }
+
+        int left = 0;
+        int right = size - 1;
+        int left_max = height[left];
+        int right_max = height[right];
+
+        int result = 0;
+        while(left <= right)
+        {
+            if (left_max < right_max)
+            {
+                if (height[left] < left_max)
+                {
+                    result +=  (left_max - height[left]);
+                }
+
+                left_max = max(left_max, height[left]);
+                left++;
+            }
+            else
+            {
+                if (height[right] < right_max)
+                {
+                    result += (right_max - height[right]);
+                }
+
+                right_max = max(right_max, height[right]);
+                right--;
+            }
+        }
+        
+        return result;
+    }
+};
+
+
+//scan twice
+class Solution2 {
 public:
     int trap(vector<int>& height) {
 
