@@ -217,6 +217,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 23.merge-k-sorted-lists | [cpp](./leetcode/23.merge-k-sorted-lists.cpp) | O(N * LogK) | - | Hard | TODO: merge-sort, bottom-up
 | 378.kth-smallest-element-in-a-sorted-matrix | [cpp](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | O((K + M) * LogM) | O(M) | Medium | TODO: binary-search, O(N) solution |
+| 407.trapping-rain-water-ii | [cpp](./leetcode/407.trapping-rain-water-ii.cpp), [python](./leetcode/407.trapping-rain-water-ii.py) | O(M * N * Log(M + N)) | O(M + N) | Hard | |
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
