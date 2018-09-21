@@ -11,6 +11,7 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
     - [Math](#math)
+    - [String](#string)
     - [Bit Manipulation](#bit-manipulation)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
@@ -46,7 +47,6 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy
 
-
 ## Array and String
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -69,6 +69,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | 
+| 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 
 ## Two Pointers
 
