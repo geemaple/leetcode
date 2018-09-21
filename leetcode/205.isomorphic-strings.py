@@ -5,18 +5,22 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+    
+        if s is None or t is None or len(s) != len(t):
+            return False
 
-        table_s = {}
-        table_t = {}
+        left_to_right = {}
+        right_to_left = {}
+
         for i in range(len(s)):
-            
-            if s[i] in table_s and table_s[s[i]] != t[i]:
-                return False
-            
-            if t[i] in table_t and table_t[t[i]] != s[i]:
+            if s[i] not in left_to_right:
+                left_to_right[s[i]] = t[i]
+            elif left_to_right[s[i]] != t[i]:
                 return False
 
-            table_s[s[i]] = t[i]
-            table_t[t[i]] = s[i]
-
+            if t[i] not in right_to_left:
+                right_to_left[t[i]] = s[i]
+            elif right_to_left[t[i]] != s[i]:
+                return False
+        
         return True
