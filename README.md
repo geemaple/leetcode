@@ -11,7 +11,6 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
     - [Math](#math)
-    - [String](#string)
     - [Bit Manipulation](#bit-manipulation)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
@@ -70,6 +69,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | 
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
+| 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | HARD | L = avg word length
 
 ## Two Pointers
 
