@@ -36,7 +36,10 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
-| 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp) | O(1) | Easy
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
 
 ## Bit Manipulation
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
