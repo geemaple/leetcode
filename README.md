@@ -35,6 +35,7 @@ This is a **continually updated, open source** project.
 ## Math
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
+| 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | O(1) | Easy
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
