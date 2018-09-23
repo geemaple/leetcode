@@ -1,28 +1,30 @@
 class ValidWordAbbr {
 private:
-    unordered_map<string, unordered_set<string>> map;
-    string abbreivate(string s){
-        
-        int start = 1;
-        int end = s.size() - 2;
-        
-        int count = end - start + 1;
-        
-        return s.front() + to_string(count) + s.back();
+    unordered_map<string, unordered_set<string>> wordMap;
+
+    string abbreviate(string &word)
+    {
+        int size = word.size();
+        if (size < 3)
+        {
+            return word;
+        }
+
+        return word.front() + to_string(size - 2) + word.back();
     }
+
 public:
-    // O(N)
     ValidWordAbbr(vector<string> dictionary) {
-        for (auto s: dictionary){
-            string abbr = abbreivate(s);
-            map[abbr].insert(s);
+        for (auto word: dictionary)
+        {
+            string abbr = abbreviate(word);
+            wordMap[abbr].insert(word);
         }
     }
     
-    // O(1)
     bool isUnique(string word) {
-        string abbr = abbreivate(word);
-        return map[abbr].count(word) == map[abbr].size();
+        string abbr = abbreviate(word);
+        return wordMap[abbr].count(word) == wordMap[abbr].size();
     }
 };
 
