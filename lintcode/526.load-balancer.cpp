@@ -13,6 +13,12 @@ public:
      */
     void add(int server_id) {
         // write your code here
+
+        if (serverMapping.count(server_id) > 0)
+        {
+            return;
+        }
+
         list.push_back(server_id);
         serverMapping[server_id] = list.size() - 1;
     }
@@ -23,6 +29,12 @@ public:
      */
     void remove(int server_id) {
         // write your code here
+
+        if (serverMapping.count(server_id) == 0)
+        {
+            return;
+        }
+
         int index = serverMapping[server_id];
         serverMapping.erase(server_id);
         

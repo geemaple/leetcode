@@ -10,6 +10,10 @@ class LoadBalancer:
     """
     def add(self, server_id):
         # write your code here
+
+        if server_id in self.mapping:
+            return
+
         self.list.append(server_id)
         self.mapping[server_id] = len(self.list) - 1
 
@@ -19,6 +23,10 @@ class LoadBalancer:
     """
     def remove(self, server_id):
         # write your code here
+
+        if server_id not in self.mapping:
+            return
+
         index = self.mapping[server_id]
         del self.mapping[server_id]
 
