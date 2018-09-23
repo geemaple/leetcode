@@ -70,6 +70,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | 
+| 56.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort |
 | 157.read-n-characters-given-read4 | [cpp](./leetcode/157.read-n-characters-given-read4.cpp), [python](./leetcode/157.read-n-characters-given-read4.py) | O(N) | O(1) | Easy | String
 | 161.one-edit-distance | [cpp](./leetcode/161.one-edit-distance.cpp), [python](./leetcode/161.one-edit-distance.py) | O(N) | O(1) | Medium | String |
 | 163.missing-ranges | [cpp](./leetcode/163.missing-ranges.cpp), [python](./leetcode/163.missing-ranges.py) | O(N) | O(1) | Medium | Array | Mind int overflow
