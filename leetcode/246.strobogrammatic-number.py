@@ -1,11 +1,9 @@
-class Solution:
-    """
-    @param num: a string
-    @return: true if a number is strobogrammatic or false
-    """
+class Solution(object):
     def isStrobogrammatic(self, num):
-        # write your code here
-
+        """
+        :type num: str
+        :rtype: bool
+        """
         if num is None or len(num) == 0:
             return True
 

@@ -239,6 +239,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | [python](./leetcode/128.longest-consecutive-sequence.py) | O(N) | O(N) | Hard | Union-find
 | 205.isomorphic-strings | [cpp](./leetcode/205.isomorphic-strings.cpp), [python](./leetcode/205.isomorphic-strings.py) | O(N) | O(N) | Easy
+| 246.strobogrammatic-number | [cpp](./leetcode/246.strobogrammatic-number.cpp), [python](./leetcode/246.strobogrammatic-number.py) | O(N) | O(1) | Easy |
 | 288.unique-word-abbreviation | [cpp](./leetcode/288.unique-word-abbreviation.cpp), [python](./leetcode/288.unique-word-abbreviation.py) | O(1) | O(N) | Medium
 | 387.first-unique-character-in-a-string | [cpp](./leetcode/387.first-unique-character-in-a-string.cpp), [python](./leetcode/387.first-unique-character-in-a-string.py) | O(N) | O(N) | Easy
 | 438.find-all-anagrams-in-a-string | [cpp](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | O(N) | O(N) | Easy
@@ -310,4 +311,3 @@ This is a **continually updated, open source** project.
 | 590.connecting-graph-ii | [cpp](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | O(1) | O(N) | Medium | union-find
 | 591.connecting-graph-iii | [cpp](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | O(1) | O(N) | Medium | union-find
 | 629.minimum-spanning-tree | [cpp](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | O(N * logN) | O(N) | Hard | union-find, Kruskal | Prim
-| 644.strobogrammatic-number | [cpp](./lintcode/644.strobogrammatic-number.cpp), [python](./lintcode/644.strobogrammatic-number.py) | O(N) | O(1) | Easy | Hash |

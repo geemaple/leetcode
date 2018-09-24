@@ -1,10 +1,6 @@
 class Solution {
 public:
-    /**
-     * @param num: a string
-     * @return: true if a number is strobogrammatic or false
-     */
-    bool isStrobogrammatic(string &num) {
+    bool isStrobogrammatic(string num) {
         // write your code here
         unordered_map<char, char> mirrorMap;
         mirrorMap['1'] = '1';
