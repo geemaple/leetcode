@@ -2,8 +2,9 @@
 My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
-🎉🎉🎉 Finished 100 questions on 2018-05-28<br/>
-🎉🎉🎉 Finished 150 questions on 2018-06-29<br/>
+🎉🎉🎉 Finished 100/808 questions on 2018-05-28<br/>
+🎉🎉🎉 Finished 150/824 questions on 2018-06-29<br/>
+🎑🎑🎑 Finished 200/905 questions on 2018-09-24<br/>
 
 # [References](./learning/README.md)
 
@@ -182,6 +183,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 156.binary-tree-upside-down | [cpp](./leetcode/156.binary-tree-upside-down.cpp), [python](./leetcode/156.binary-tree-upside-down.py) | O(V) | O(1) | Medium
+| 366.find-leaves-of-binary-tree | [cpp](./leetcode/366.find-leaves-of-binary-tree.cpp), [python](./leetcode/366.find-leaves-of-binary-tree.py) | O(V) | O(V) | Medium
 | 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 538.convert-bst-to-greater-tree | [cpp](./leetcode/538.convert-bst-to-greater-tree.cpp), [python](./leetcode/538.convert-bst-to-greater-tree.py) | O(V) | O(1) | Easy 
 
