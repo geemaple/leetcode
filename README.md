@@ -2,6 +2,17 @@
 My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
+📢📢📢 Add S SS SSS notations to level algorithm monsters
+
+```
+notations = {
+    S-- : S
+    S++ : SS
+    SSS : SSS
+}
+```
+
+# Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
 🎉🎉🎉 Finished 150 / 824 questions on 2018-06-29<br/>
 🎑🎑🎑 Finished 200 / 905 questions on 2018-09-24<br/> 
@@ -174,7 +185,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | HARD | DFS | N = length of input
+| 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | HARD/SSS | DFS | N = length of input
 
 ## Tree Traversal
 
@@ -218,7 +229,7 @@ This is a **continually updated, open source** project.
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
 | 78.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation / iterative
 | 90.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
-| 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS+DFS |
+| 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS + DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
@@ -250,7 +261,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp) | [python](./leetcode/128.longest-consecutive-sequence.py) | O(N) | O(N) | Hard | Union-find
+| 128.longest-consecutive-sequence | [cpp](./leetcode/128.longest-consecutive-sequence.cpp), [python](./leetcode/128.longest-consecutive-sequence.py) | O(N) | O(N) | Hard | Union-find
 | 205.isomorphic-strings | [cpp](./leetcode/205.isomorphic-strings.cpp), [python](./leetcode/205.isomorphic-strings.py) | O(N) | O(N) | Easy
 | 246.strobogrammatic-number | [cpp](./leetcode/246.strobogrammatic-number.cpp), [python](./leetcode/246.strobogrammatic-number.py) | O(N) | O(1) | Easy |
 | 288.unique-word-abbreviation | [cpp](./leetcode/288.unique-word-abbreviation.cpp), [python](./leetcode/288.unique-word-abbreviation.py) | O(1) | O(N) | Medium
@@ -284,7 +295,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 91.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium  | conditional-climbing-stairs
+| 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | conditional-climbing-stairs
 
 ## Greedy
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -303,7 +314,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | <= (N * L) | Medium | - | L = len(word), N = number of words |
-| 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | <= O(N * L) | Medium | DFS | L = len(word), N = number of words
+| 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | <= O(N * L) | Medium/S-- | DFS | L = len(word), N = number of words
 | 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(M * N), O(K * L)) | HARD | DFS | K = number of words, L = avg length of words
 | 677.map-sum-pairs | [cpp](./leetcode/677.map-sum-pairs.cpp), [python](./leetcode/677.map-sum-pairs.py) | O(L), O(KL) | O(N * L) | Medium | | L = length of input, k = number of items found|
 
