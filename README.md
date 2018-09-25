@@ -170,6 +170,12 @@ This is a **continually updated, open source** project.
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | Easy
 | 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
+
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | HARD | DFS | N = length of input
+
 ## Tree Traversal
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
