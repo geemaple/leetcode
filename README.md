@@ -217,6 +217,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 17.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium | Time in [3 ^ N, 4 ^ N]
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(M * N * L * L) | O(M * N) | Medium | DFS | L = length of words
 
 ## Hash Table
