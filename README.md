@@ -54,6 +54,7 @@ notations = {
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 48.rotate-image | [cpp](./leetcode/48.rotate-image.cpp), [python](./leetcode/48.rotate-image.py) | O(M * N) | O(1) | Medium/S++
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
 
 ## Bit Manipulation
