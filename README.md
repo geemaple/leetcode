@@ -69,7 +69,6 @@ notations = {
 | 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
 | 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
-| 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | Medium
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 485.max-consecutive-ones | [cpp](./leetcode/485.max-consecutive-ones.cpp) | O(N) | Easy
 | 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(M * N) | Medium
@@ -88,6 +87,7 @@ notations = {
 | 157.read-n-characters-given-read4 | [cpp](./leetcode/157.read-n-characters-given-read4.cpp), [python](./leetcode/157.read-n-characters-given-read4.py) | O(N) | O(1) | Easy | String
 | 161.one-edit-distance | [cpp](./leetcode/161.one-edit-distance.cpp), [python](./leetcode/161.one-edit-distance.py) | O(N) | O(1) | Medium | String |
 | 163.missing-ranges | [cpp](./leetcode/163.missing-ranges.cpp), [python](./leetcode/163.missing-ranges.py) | O(N) | O(1) | Medium | Array | Mind int overflow
+| 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | O(1) | Medium
 | 271.encode-and-decode-strings | [cpp](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | O(N) | O(1) | Easy | String | N = count of chars
 | 277.find-the-celebrity | [cpp](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | O(N) | O(1) | Medium |
 | 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(N) | O(K) | Easy | Queue(Circular array) |

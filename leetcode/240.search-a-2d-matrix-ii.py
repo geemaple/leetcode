@@ -5,28 +5,22 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        
-        if matrix is None:
+        if matrix is None or len(matrix) == 0:
             return False
 
-        row = len(matrix)
-        if row == 0:
-            return False
+        m = len(matrix)
+        n = len(matrix[0])
 
-        column = len(matrix[0])
-        if column == 0:
-            return False
+        row = 0
+        col = n - 1
 
-        x = 0
-        y = column - 1
-
-        while(x < row and y >= 0):
-            if matrix[x][y] == target:
+        while(row < m and col >= 0):
+            if matrix[row][col] > target:
+                col -= 1
+            elif matrix[row][col] < target:
+                row += 1
+            else:
                 return True
 
-            if matrix[x][y] > target:
-                y -= 1
-            else:
-                x += 1
-
         return False
+        

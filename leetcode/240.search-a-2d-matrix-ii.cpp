@@ -1,39 +1,34 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        if (matrix.size() == 0)
+        
+        int m = matrix.size();
+        if (m == 0)
         {
             return false;
         }
-        
-        int row = matrix.size();
-        int column = matrix[0].size();
-        if (column == 0)
+
+        int n = matrix[0].size();
+
+        int row = 0;
+        int col = n - 1;
+
+        while(row < m && col >= 0)
         {
-            return false;
-        }
-        
-        // start from top right
-        int x = 0;
-        int y = column - 1;
-        
-        while (x < row && y >= 0) {
-            
-            if (matrix[x][y] == target)
+            if (matrix[row][col] > target)
             {
-                return true;
+                col --;
             }
-            
-            if (matrix[x][y] > target)
+            else if (matrix[row][col] < target)
             {
-                y -= 1;
+                row ++;
             }
             else
             {
-                x += 1;
+                return true;
             }
         }
-        
+
         return false;
     }
 };
