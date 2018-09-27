@@ -339,3 +339,4 @@ notations = {
 | 590.connecting-graph-ii | [cpp](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | O(1) | O(N) | Medium | union-find
 | 591.connecting-graph-iii | [cpp](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | O(1) | O(N) | Medium | union-find
 | 629.minimum-spanning-tree | [cpp](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | O(N * logN) | O(N) | Hard | union-find, Kruskal | Prim
+| 652.factorization | [cpp](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | O(N) | O(LogN) | Medium/S++ | N = input number
