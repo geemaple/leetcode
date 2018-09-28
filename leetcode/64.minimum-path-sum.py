@@ -1,30 +1,29 @@
+# f(x) = min(num[x] + f(left), num[x] + f(top))
 class Solution(object):
     def minPathSum(self, grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
-        
-        if grid is None or len(grid) == 0 or len(grid[0]) == 0:
+        if grid is None or len(grid) == 0:
             return 0
 
-        row = len(grid)
-        column = len(grid[0])
+        m = len(grid)
+        n = len(grid[0])
+        table = [[0 for _ in range(n)] for _ in range(m)]
 
-        table = [[0 for j in range(column)] for i in range(row)]
+        for j in range(n):
+            table[0][j] = grid[0][j]
+            if j - 1 >= 0:
+                table[0][j] += table[0][j - 1]
 
-        table[0][0] = grid[0][0]
+        for i in range(1, m):
+            for j in range(n):
+                value = table[i - 1][j] + grid[i][j]
 
-        # the 1st row
-        for j in range(1, column):
-            table[0][j] = table[0][j - 1] + grid[0][j]
+                if j - 1 >= 0:
+                    value = min(value, table[i][j - 1] + grid[i][j])
 
-        # the 1st column
-        for i in range(1, row):
-            table[i][0] = table[i - 1][0] + grid[i][0]
-
-        for i in range(1, row):
-            for j in range(1, column):
-                table[i][j] = min(table[i - 1][j], table[i][j - 1]) + grid[i][j]
+                table[i][j] = value
 
         return table[-1][-1]
