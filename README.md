@@ -4,9 +4,8 @@ This is a **continually updated, open source** project.
 
 📢📢📢 
 
-Add **@** before question number **means** you may check **discussion** for alternative (usually better) answer
-
-Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
+1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
+2. Add **dollar($)** before question number **means** you may check **discussion** for alternative (usually better) answer
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -307,7 +306,7 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | 45.jump-game-ii | [cpp](./leetcode/45.jump-game-ii.cpp), [python](./leetcode/45.jump-game-ii.py) | O(N) | O(1) | Hard |
 | 055.jump-game | [cpp](./leetcode/55.jump-game.cpp), [python](./leetcode/55.jump-game.py) | O(N) | O(1) | Medium | dynamic-programming
 | 122.best-time-to-buy-and-sell-stock-ii | [cpp](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | O(N) | O(1) | Easy
-| @406.queue-reconstruction-by-height | [cpp](./leetcode/406.queue-reconstruction-by-height.cpp), [python](./leetcode/406.queue-reconstruction-by-height.py) | O(N^2) | O(1) | Medium/S++ | Sort Multiple Keys
+| $406.queue-reconstruction-by-height | [cpp](./leetcode/406.queue-reconstruction-by-height.cpp), [python](./leetcode/406.queue-reconstruction-by-height.py) | O(N^2) | O(1) | Medium/S++ | Sort Multiple Keys
 
 ## Union Find
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
