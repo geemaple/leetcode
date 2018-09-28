@@ -18,7 +18,6 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
     - [Math](#math)
-    - [Bit Manipulation](#bit-manipulation)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
@@ -41,11 +40,6 @@ This is a **continually updated, open source** project.
 # Leetcode
 
 ## Math
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | O(1) | Medium | N = length of results
-| 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | O(1) | Easy
-| 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -59,10 +53,12 @@ This is a **continually updated, open source** project.
 | 415.add-strings | [cpp](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O(N) | O(1) | Easy |
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
 
-## Bit Manipulation
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy
+| 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | Medium | N = length of results
+| 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | Easy
+| 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy | bits
+| 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 
 ## Array and String
 
