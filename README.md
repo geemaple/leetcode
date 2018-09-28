@@ -52,7 +52,7 @@ This is a **continually updated, open source** project.
 | 002.add-two-numbers | [cpp](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | O(N) | O(1) | Medium/S--
 | 043.multiply-strings | [cpp](./leetcode/43.multiply-strings.cpp), [python](./leetcode/43.multiply-strings.py) | O(M*N) | O(M+N)  | Medium/S++
 | 048.rotate-image | [cpp](./leetcode/48.rotate-image.cpp), [python](./leetcode/48.rotate-image.py) | O(M * N) | O(1) | Medium/S++
-| 50.powx-n | [cpp](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | O(logN) | O(1) | Medium/S++
+| 050.powx-n | [cpp](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | O(logN) | O(1) | Medium/S++
 | 067.add-binary | [cpp](./leetcode/67.add-binary,cpp), [python](./leetcode/67.add-binary.py) | O(N) | O(1) | Easy |
 | 311.sparse-matrix-multiplication | [cpp](./leetcode/311.sparse-matrix-multiplication.cpp), [python](./leetcode/311.sparse-matrix-multiplication.py) | O(N^3) | O(N^2) | Medium/S-- | 
 | 415.add-strings | [cpp](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O(N) | O(1) | Easy |
@@ -298,6 +298,7 @@ This is a **continually updated, open source** project.
 | 062.unique-paths | [cpp](./leetcode/62.unique-paths.cpp), [python](./leetcode/62.unique-paths.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | conditional-climbing-stairs
+| 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy | Sequence
 | 322.coin-change | [cpp](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O(L*N) | O(N) | Medium | N = amount, L = len(coins)
 
 ## Greedy
