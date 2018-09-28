@@ -1,5 +1,49 @@
-# f(i) = max(1, table[j] + 1 if nums[i] > nums[j])
+# O(N * logN)
+# https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
 class Solution(object):
+    def lengthOfLIS(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        res = []
+        for n in nums:
+            index = self.binary_search(res, n)
+            if index == -1:
+                res.append(n)
+            else:
+                res[index] = n
+
+        return len(res)
+
+    def binary_search(self, nums, target):
+        #find element no less than target
+
+        if len(nums) == 0:
+            return -1
+
+        start = 0
+        end = len(nums) - 1
+
+        while(start + 1 < end):
+            mid = start + (end - start) / 2
+            if nums[mid] < target:
+                start = mid
+            else:
+                end = mid
+
+        if nums[start] >= target:
+            return start
+
+        if nums[end] >= target:
+            return end
+
+        return -1
+
+
+# f(i) = max(1, table[j] + 1 if nums[i] > nums[j])
+# O(N^2)
+class Solution2(object):
     def lengthOfLIS(self, nums):
         """
         :type nums: List[int]

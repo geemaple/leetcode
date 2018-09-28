@@ -1,5 +1,23 @@
 // O(N * logN)
-// when ever found bigger one 
+// http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        vector<int> table;
+        for(auto i = 0; i < nums.size(); ++i)
+        {
+            auto it = lower_bound(res.begin(), res.end(), nums[i]);
+            if (it == res.end())
+            {
+                res.push_back(nums[i])
+            }
+            else
+            {
+                *it = num[i];
+            }
+        }
+
+    }
 
 // f(i) = max(1, table[j] + 1 if nums[i] > nums[j])
 // O(N^2)
