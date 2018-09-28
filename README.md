@@ -289,7 +289,6 @@ This is a **continually updated, open source** project.
 | 64.minimum-path-sum | [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | Medium | Coordinates
 | 70.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
 | 120.triangle | [cpp](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
-| 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium |  | follow-up is tricky
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N^2) | Hard | TODO: Python Version Time Limit Exceeded
 | 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
 | 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
@@ -300,6 +299,7 @@ This is a **continually updated, open source** project.
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | Dividing
 | 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy/S-- | Sequence
+| $300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium/SSS | binary-search |
 | 322.coin-change | [cpp](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O(L*N) | O(N) | Medium | N = amount, L = len(coins)
 
 ## Greedy
