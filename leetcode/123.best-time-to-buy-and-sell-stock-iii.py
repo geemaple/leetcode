@@ -40,7 +40,7 @@ class Solution(object):
                 value = float('-inf')
                 if j % 2 == 1:  # 1, 3, 5
                     value = table[i - 1][j]
-                    if i - 2 >=0 and j > 1 and table[i - 1][j - 1] != float('-inf'):
+                    if i - 2 >= 0 and j > 1 and table[i - 1][j - 1] != float('-inf'):
                         value = max(value, table[i - 1][j - 1] + prices[i - 1] - prices[i - 2])
                 else:
                     value = table[i - 1][j - 1]

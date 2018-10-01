@@ -93,7 +93,7 @@ This is a **continually updated, open source** project.
 | 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(N) | O(K) | Easy | Queue(Circular array) |
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
-| 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | HARD | L = avg word length
+| 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
 | 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy
 
 
@@ -110,12 +110,12 @@ This is a **continually updated, open source** project.
 | 088.merge-sorted-array | [cpp](./leetcode/88.merge-sorted-array.cpp), [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | O(1) | Easy |
 | 125.valid-palindrome | [cpp](./leetcode/125.valid-palindrome.cpp), [python](./leetcode/125.valid-palindrome.py) | O(N) | O(1) | Easy
 | 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy
-| 159.longest-substring-with-at-most-two-distinct-characters | [cpp](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | O(N) | O(N) | HARD |
+| 159.longest-substring-with-at-most-two-distinct-characters | [cpp](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | O(N) | O(N) | Hard |
 | 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | O(1) | Easy |
 | 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp), [python](./leetcode/209.minimum-size-subarray-sum.py) | O(N) | O(1) | Medium |
-| 234.palindrome-linked-list | [cpp](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | O(N) | O(1) | Easy | | maybe harder
+| 234.palindrome-linked-list | [cpp](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | O(N) | O(1) | Easy | | maybe Harder
 | 283.move-zeroes | [cpp](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | O(N) | O(1) | Easy
-| 340.longest-substring-with-at-most-k-distinct-characters | [cpp](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.cpp), [python](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.py) | O(N) | O(N) | HARD |
+| 340.longest-substring-with-at-most-k-distinct-characters | [cpp](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.cpp), [python](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.py) | O(N) | O(N) | Hard |
 | 344.reverse-string | [cpp](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | O(N) | O(1) | Easy
 | 345.reverse-vowels-of-a-string | [cpp](./leetcode/345.reverse-vowels-of-a-string.cpp), [python](./leetcode/345.reverse-vowels-of-a-string.py) | O(N) | O(1) | Easy
 | 349.intersection-of-two-arrays | [cpp](./leetcode/349.intersection-of-two-arrays.cpp), [python](./leetcode/349.intersection-of-two-arrays.py) | O(K * logK), k = max(M, N) | O(1) | Easy | hash, binary-search
@@ -187,7 +187,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | HARD/SSS | DFS | N = length of input
+| 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | Hard/SSS | DFS | N = length of input
 
 ## Tree Traversal
 
@@ -283,6 +283,9 @@ This is a **continually updated, open source** project.
 | 20.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy
 
 ## Dynamic Programming
+
+> PS: Some problem could optimize space using circular array, it not that Hard, just mod every index against the size.
+
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 70.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
@@ -296,13 +299,14 @@ This is a **continually updated, open source** project.
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | Dividing
+| 188.best-time-to-buy-and-sell-stock-iv | [cpp](./leetcode/188.best-time-to-buy-and-sell-stock-iv.cpp), [python](./leetcode/188.best-time-to-buy-and-sell-stock-iv.py) | O(N*K) | O(N * K) | Hard/SSS
 | 198.house-robber | [cpp](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O(N) | O(N) | Easy | Sequence
 | 121.best-time-to-buy-and-sell-stock | [cpp](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | O(N) | O(1) | Easy | Coordinates
 | 123.best-time-to-buy-and-sell-stock-iii | [cpp](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | O(N) | O(N) | Hard/SSS 
 | 213.house-robber-ii | [cpp](./leetcode/213.house-robber-ii.cpp), [python](./leetcode/213.house-robber-ii.py) | O(N) | O(N) | Medium/S-- | Sequence
 | 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy/S-- | Sequence
 | 265.paint-house-ii | [cpp](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | O(M * N) | O(M * N) | Hard | Sequence
-| $300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N^2) | Medium/SSS | Coordinates | binary-search |
+| $300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N*logN) | O(N) | Medium/SSS | Coordinates | binary-search |
 | 322.coin-change | [cpp](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O(L*N) | O(N) | Medium | N = amount, L = len(coins)
 | 338.counting-bits | [cpp](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | O(N) | O(1) | Medium/S-- | Bit-manipulation
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N*logN) | O(N) | Hard/S-- | Coordinates |
@@ -328,7 +332,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | O(N * L) | Medium | - | L = len(word), N = number of words |
 | 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | O(N * L) | Medium/S-- | DFS | L = len(word), N = count(words)
-| 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(M * N), O(K * L)) | HARD | DFS | K = number of words, L = avg length of words
+| 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(M * N), O(K * L)) | Hard | DFS | K = number of words, L = avg length of words
 | 425.word-squares | [cpp](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | O(2^N) | O(NL) | Hard/SSS | DFS Pruning | | L = len(word), N = count(word)
 | 677.map-sum-pairs | [cpp](./leetcode/677.map-sum-pairs.cpp), [python](./leetcode/677.map-sum-pairs.py) | O(L), O(KL) | O(N * L) | Medium | | L = length of input, k = number of items found|
 
