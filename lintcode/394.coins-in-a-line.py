@@ -15,4 +15,6 @@ class Solution:
         table = [False for _ in range(n + 1)]
 
         for i in range(3, n + 1):
-            table[i] = not table[i - 1]
+            table[i] = not table[i - 1] or not table[i - 2]
+
+        return table[-1]
