@@ -15,7 +15,7 @@ class Solution:
             for w in range(m, -1, -1):
                 value = table[w]
 
-                if w - A[i] >= 0:
+                if w - A[i] >= 0 and table[w - A[i]] != -1:
                     value = max(value, table[w - A[i]] + V[i])
 
                 table[w] = value
