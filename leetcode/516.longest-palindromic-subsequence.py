@@ -1,4 +1,5 @@
-# f[i][j] = max(f[i - 1][j], f[i][j - 1], f[i + 1][j - 1] + 2 where s[i] == s[j])
+# f[i][j] = max(f[i - 1][j], f[i][j - 1]) where s[i] != s[j])
+# f[i][j] = f[i + 1][j - 1] + 2) where s[i] == s[j]
 
 class Solution(object):
     def longestPalindromeSubseq(self, s):
