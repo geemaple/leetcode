@@ -298,6 +298,7 @@ This is a **continually updated, open source** project.
 | 062.unique-paths | [cpp](./leetcode/62.unique-paths.cpp), [python](./leetcode/62.unique-paths.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
+| 087.scramble-string | [cpp](./leetcode/87.scramble-string.cpp), [python](./leetcode/87.scramble-string.py) | O(N^4) | O(N^3) | Hard/SSS | Range
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | Partition
 | 132.palindrome-partitioning-ii | [cpp](./leetcode/132.palindrome-partitioning-ii.cpp), [python](./leetcode/132.palindrome-partitioning-ii.py) | O(N^2) | O(N^2) | Hard | Partition
 | 188.best-time-to-buy-and-sell-stock-iv | [cpp](./leetcode/188.best-time-to-buy-and-sell-stock-iv.cpp), [python](./leetcode/188.best-time-to-buy-and-sell-stock-iv.py) | O(N*K) | O(N * K) | Hard/SSS
@@ -354,7 +355,7 @@ This is a **continually updated, open source** project.
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
 | 394.coins-in-a-line | [cpp](./lintcode/394.coins-in-a-line.cpp), [python](./lintcode/394.coins-in-a-line.py) | O(N) | O(N) | Medium | dynamic-programming |
-| 396.coins-in-a-line-iii | [cpp](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | O(N^2) | O(N^2) | Hard | dynamic-programming |
+| 396.coins-in-a-line-iii | [cpp](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | O(N^2) | O(N^2) | Hard/SSS | dynamic-programming |
 | 437.copy-books | [cpp](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O(K * N^2) | O(NK) | Hard/SSS | dynamic-programming / binary-search |
 | 440.backpack-iii |[cpp](./lintcode/440.backpack-iii.cpp), [python](./lintcode/440.backpack-iii.py) | O(M * N) | O(M) | Hard/SSS | dynamic-programming
 | 465.kth-smallest-sum-in-two-sorted-arrays | [cpp](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.cpp), [python](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.py) | O((K + N) * LogN) | O(N) | Hard | heap | N = B.size()
@@ -364,5 +365,5 @@ This is a **continually updated, open source** project.
 | 589.connecting-graph | [cpp](./lintcode/589.connecting-graph.cpp), [python](./lintcode/589.connecting-graph.py) | O(1) | O(N) | Medium | union-find
 | 590.connecting-graph-ii | [cpp](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | O(1) | O(N) | Medium | union-find
 | 591.connecting-graph-iii | [cpp](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | O(1) | O(N) | Medium | union-find
-| 629.minimum-spanning-tree | [cpp](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | O(N * logN) | O(N) | Hard | union-find, Kruskal | Prim
+| 629.minimum-spanning-tree | [cpp](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | O(N * logN) | O(N) | Hard | union-find | Prim, Kruskal
 | 652.factorization | [cpp](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | O(N) | O(LogN) | Medium/S++ | N = input number
