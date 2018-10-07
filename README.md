@@ -295,6 +295,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 010.regular-expression-matching | [cpp](./leetcode/10.regular-expression-matching.cpp), [python](./leetcode/10.regular-expression-matching.py) | O(MN) | O(MN) | Hard/S++ | Sequence
 | 062.unique-paths | [cpp](./leetcode/62.unique-paths.cpp), [python](./leetcode/62.unique-paths.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
