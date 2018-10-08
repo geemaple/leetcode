@@ -1,29 +1,28 @@
 class ConnectingGraph {
 private:
-    vector<int> graph;
+    vector<int> table;
 public:
     /*
-     * @param n: An integer
-     */ConnectingGraph(int n) {
-         // do intialization if necessary
-         graph.resize(n + 1);
-         for (int i = 1; i < n + 1; ++i)
-         {
-             graph[i] = i;
-         }
-     }
-    
-    int find(int node){
-        
-        if (graph[node] == node)
+    * @param n: An integer
+    */ConnectingGraph(int n) {
+        // do intialization if necessary
+        for (auto i = 0; i <= n; ++i)
         {
-            return node;
+            table.push_back(i);
+        }
+    }
+
+
+    int find(int a){
+        if (a == table[a])
+        {
+            return a;
         }
         
-        graph[node] = find(graph[node]);
-        return graph[node];
+        table[a] = find(table[a]);
+        return table[a];
     }
-    
+
     /*
      * @param a: An integer
      * @param b: An integer
@@ -31,12 +30,15 @@ public:
      */
     void connect(int a, int b) {
         // write your code here
-        int a_root = find(a);
-        int b_root = find(b);
+        int root_a = find(a);
+        int root_b = find(b);
         
-        graph[a_root] = b_root;
+        if (root_a != root_b)
+        {
+            table[root_a] = root_b;
+        }
     }
-    
+
     /*
      * @param a: An integer
      * @param b: An integer
@@ -44,6 +46,8 @@ public:
      */
     bool query(int a, int b) {
         // write your code here
-        return find(a) == find(b);
+        int root_a = find(a);
+        int root_b = find(b);
+        return root_a == root_b;
     }
 };
