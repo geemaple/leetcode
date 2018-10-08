@@ -321,6 +321,7 @@ This is a **continually updated, open source** project.
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N*logN) | O(N) | Hard/S-- | Coordinates |
 | $361.bomb-enemy | [cpp](./leetcode/361.bomb-enemy.cpp), [python](./leetcode/361.bomb-enemy.py) | O(M * N) | O(M * N) | Medium/S++ | Coordinates
 | 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | backpack-vi(Lintcode)
+| 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
 
 ## Greedy
