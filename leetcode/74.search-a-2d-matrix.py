@@ -6,34 +6,24 @@ class Solution(object):
         :rtype: bool
         """
         
-        if matrix is None:
+        if matrix is None or len(matrix) == 0 or len(matrix[0]) == 0:
             return False
 
         row = len(matrix)
-        if row == 0:
-            return False
-
-        column = len(matrix[0])
-        if column == 0:
-            return False
+        col = len(matrix[0])
 
         start = 0
-        end = row * column - 1
+        end = row * col - 1
 
         while(start + 1 < end):
             mid = start + (end - start) / 2
-            if matrix[mid / column][mid % column] == target:
-                return True
-
-            if matrix[mid / column][mid % column] > target:
-                end = mid
-            else:
-                start = mid
+            val = matrix[mid / col][mid % col]
         
-        if matrix[start / column][start % column] == target:
-            return True
-
-        if matrix[end / column][end % column] == target:
-            return True
-
-        return False
+            if val > target:
+                end = mid
+            elif val < target:
+                start = mid
+            else:
+                return True
+        
+        return (matrix[start / col][start % col] == target or matrix[end / col][end % col] == target)
