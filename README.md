@@ -229,8 +229,8 @@ This is a **continually updated, open source** project.
 | 47.permutations-ii | [python](./leetcode/47.permutations-ii.py) | ??? | Medium | DFS |
 | 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
-| 78.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium | DFS | bit-manipulation / iterative
-| 90.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium | DFS |  bit-manipulation
+| 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium/S-- | DFS | bit-manipulation / iterative
+| 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium/S++ | DFS
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS + DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 

@@ -7,10 +7,10 @@ class Solution(object):
         results = []
         visted = []
         sorted_nums = sorted(nums)
-        self.helper(sorted_nums, visted, results, 0)
+        self.dfs(sorted_nums, visted, results, 0)
         return results
         
-    def helper(self, nums, visted, results, start):
+    def dfs(self, nums, visted, results, start):
 
         results.append(list(visted))
 
@@ -20,5 +20,5 @@ class Solution(object):
                 continue
 
             visted.append(nums[i])
-            self.helper(nums, visted, results, i + 1)
+            self.dfs(nums, visted, results, i + 1)
             visted.pop()
