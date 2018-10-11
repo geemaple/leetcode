@@ -10,14 +10,11 @@ class Solution(object):
         while(start + 1 < end):
             mid = start + (end - start) / 2
 
-            if nums[mid] == nums[end]:
-                end -= 1
-            elif nums[mid] > nums[end]:
+            if nums[mid] > nums[end]:
                 start = mid
-            else:
+            elif nums[mid] < nums[end]:
                 end = mid
+            else:
+                end -= 1
 
-        if nums[start] > nums[end]:
-            return nums[end]
-        else:
-            return nums[start]
+        return min(nums[start], nums[end])

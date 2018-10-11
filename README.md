@@ -284,7 +284,7 @@ This is a **continually updated, open source** project.
 
 ## Dynamic Programming
 
-> PS: Some problem could optimize space using circular array, it not that Hard, just mod every index against the size(2D: row, col, diagonal)
+> PS: Often space could be optimized using circular array, it not that hard, just mod every new and old indexes against the size(For 2D: row, col, diagonal)
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
