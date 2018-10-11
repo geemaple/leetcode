@@ -284,7 +284,7 @@ This is a **continually updated, open source** project.
 
 ## Dynamic Programming
 
-> PS: Some problem could optimize space using circular array, it not that Hard, just mod every index against the size.
+> PS: Some problem could optimize space using circular array, it not that Hard, just mod every index against the size(2D: row, col, diagonal)
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
@@ -366,6 +366,7 @@ This is a **continually updated, open source** project.
 | 396.coins-in-a-line-iii | [cpp](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | O(N^2) | O(N^2) | Hard/SSS | dynamic-programming |
 | 437.copy-books | [cpp](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O(K * N^2) | O(NK) | Hard/SSS | dynamic-programming / binary-search |
 | 440.backpack-iii |[cpp](./lintcode/440.backpack-iii.cpp), [python](./lintcode/440.backpack-iii.py) | O(M * N) | O(M) | Hard/SSS | dynamic-programming
+| 447.search-in-a-big-sorted-array | [cpp](./lintcode/447.search-in-a-big-sorted-array.cpp), [python](./lintcode/447.search-in-a-big-sorted-array.py) | O(LogK) | O(1) | binary-search | Medium/S++
 | 465.kth-smallest-sum-in-two-sorted-arrays | [cpp](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.cpp), [python](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.py) | O((K + N) * LogN) | O(N) | Hard | heap | N = B.size()
 | 543.kth-largest-in-n-arrays | [cpp](./lintcode/543.kth-largest-in-n-arrays.cpp), [python](./lintcode/543.kth-largest-in-n-arrays.py) | O(M * N * LogK) | O(K) | Easy | heap |
 | 526.load-balancer | [cpp](./lintcode/526.load-balancer.cpp), [python](./lintcode/526.load-balancer.py) | O(1) | O(N) | Medium | Hash + Array
