@@ -154,14 +154,11 @@ This is a **continually updated, open source** project.
 | 328.odd-even-linked-list | [python](./leetcode/328.odd-even-linked-list.py) | O(N) | Medium
 
 ## Binary Search
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp) | O(M * N) / O(N * LogN) | Hard/SSS |
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 029.divide-two-integers | [cpp](./leetcode/29.divide-two-integers.cpp), [python](./leetcode/29.divide-two-integers.py) | O(logN) | O(1) | Medium/S++ | Math
-| [$033.search-in-rotated-sorted-array]((https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14435/Clever-idea-making-it-simple)) | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | O(1) | Medium/S++ |
+| $033.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | O(1) | Medium/S++ |
 | 034.find-first-and-last-position-of-element-in-sorted-array | [cpp](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(LogN) | O(1) | Medium |
 | 069.sqrtx | [cpp](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | O(logN) | O(1) | Easy | | | Newton
 | 074.search-a-2d-matrix | [cpp](./leetcode/74.search-a-2d-matrix.cpp),  [python](./leetcode/74.search-a-2d-matrix.py) | O(logN) | O(1) | Medium | N = row * col
@@ -170,6 +167,7 @@ This is a **continually updated, open source** project.
 | 154.find-minimum-in-rotated-sorted-array-ii | [cpp](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | O(1) | Hard
 | 162.find-peak-element | [cpp](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O(logN) | O(1) | Medium
 | 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Easy
+| 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O(M * N) / O(N * LogN) | Hard/SSS | //TBD
 | 374.guess-number-higher-or-lower | [cpp](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(LogN) | O(1) | Easy
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy
 | 852.peak-index-in-a-mountain-array | [cpp](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O(logN) | O(1) | Easy | | Golden-section search |
@@ -363,6 +361,7 @@ This is a **continually updated, open source** project.
 | 081.find-median-from-data-stream | [cpp](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | O(N * LogN) | O(N) | Hard | Heap |
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
+| 183.wood-cut | [cpp](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | O(N * LogN) | O(1) | Medium/S-- | binary-search
 | 394.coins-in-a-line | [cpp](./lintcode/394.coins-in-a-line.cpp), [python](./lintcode/394.coins-in-a-line.py) | O(N) | O(N) | Medium | dynamic-programming |
 | 396.coins-in-a-line-iii | [cpp](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | O(N^2) | O(N^2) | Hard/SSS | dynamic-programming |
 | 437.copy-books | [cpp](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O(K * N^2) | O(NK) | Hard/SSS | dynamic-programming / binary-search |
