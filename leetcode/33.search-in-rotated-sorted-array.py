@@ -38,4 +38,4 @@ class Solution(object):
         if nums[end] == target:
             return end
 
-        return -1;
+        return -1

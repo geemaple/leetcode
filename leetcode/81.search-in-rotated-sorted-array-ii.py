@@ -33,10 +33,4 @@ class Solution(object):
             else:
                 end -= 1
 
-        if nums[start] == target:
-            return True
-
-        if nums[end] == target:
-            return True
-
-        return False;
+        return (nums[start] == target or nums[end] == target)

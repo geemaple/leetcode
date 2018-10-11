@@ -46,11 +46,6 @@ public:
             }
         }
         
-        if (nums[start] == target || nums[end] == target)
-        {
-            return true;
-        }
-        
-        return false;
+        return (nums[start] == target || nums[end] == target);
     }
 };
