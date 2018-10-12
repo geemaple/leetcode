@@ -1,110 +1,11 @@
 // Binary Search (M * logN + N * LogM)
 class Solution {
-    int getLeft(vector<vector<char>>& image, int startX, int endX, int startY, int endY)
+private:
+    bool checkRow(vector<vector<char>> &image, int row, int leftBound, int rightBound)
     {
-        int start = startX;
-        int end = endX;
-        
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (checkColumn(image, mid, startY, endY))
-            {
-                end = mid;
-            }
-            else
-            {
-                start = mid;
-            }
-        }
-        
-        if (checkColumn(image, start, startY, endY))
+        for(auto j = leftBound; j <= rightBound; ++j)
         {
-            return start;
-        }
-        
-        return end;
-    }
-    
-    int getRight(vector<vector<char>>& image, int startX, int endX, int startY, int endY)
-    {
-        int start = startX;
-        int end = endX;
-        
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (checkColumn(image, mid, startY, endY))
-            {
-                start = mid;
-            }
-            else
-            {
-                end = mid;
-            }
-        }
-        
-        if (checkColumn(image, end, startY, endY))
-        {
-            return end;
-        }
-        
-        return start;
-    }
-    
-    int getTop(vector<vector<char>>& image, int startX, int endX, int startY, int endY)
-    {
-        int start = startY;
-        int end = endY;
-        
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (checkRow(image, mid, startX, endX))
-            {
-                end = mid;
-            }
-            else
-            {
-                start = mid;
-            }
-        }
-        
-        if (checkRow(image, start, startX, endX))
-        {
-            return start;
-        }
-        
-        return end;
-    }
-    
-    int getBottom(vector<vector<char>>& image, int startX, int endX, int startY, int endY)
-    {
-        int start = startY;
-        int end = endY;
-        
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (checkRow(image, mid, startX, endX))
-            {
-                start = mid;
-            }
-            else
-            {
-                end = mid;
-            }
-        }
-        
-        if (checkRow(image, end, startX, endX))
-        {
-            return end;
-        }
-        
-        return start;
-    }
-    
-    bool checkColumn(vector<vector<char>>& image, int column, int start, int end)
-    {
-        for (auto i = start; i <= end; ++i)
-        {
-            if (image[i][column] == '1')
+            if (image[row][j] == '1')
             {
                 return true;
             }
@@ -113,11 +14,54 @@ class Solution {
         return false;
     }
     
-    bool checkRow(vector<vector<char>>& image, int row, int start, int end)
+    int searchTop(vector<vector<char>> &image, int x, int y)
     {
-        for (auto i = start; i <= end; ++i)
+        int start = 0;
+        int end = x;
+        
+        while(start + 1 < end)
         {
-            if (image[row][i] == '1')
+            int mid = start + (end - start) / 2;
+            if (checkRow(image, mid, 0, image[0].size() - 1))
+            {
+                end = mid;
+            }
+            else
+            {
+                start = mid;
+            }
+        }
+        
+        return checkRow(image, start, 0, image[0].size() - 1) ? start : end;
+    }
+    
+    int searchBottom(vector<vector<char>> &image, int x, int y)
+    {
+        int start = x;
+        int end = image.size() - 1;
+        
+        while(start + 1 < end)
+        {
+            int mid = start + (end - start) / 2;
+            if (checkRow(image, mid, 0, image[0].size() - 1))
+            {
+                start = mid;
+            }
+            else
+            {
+                end = mid;
+            }
+        }
+        
+        return checkRow(image, end, 0, image[0].size() - 1) ? end : start;
+    }
+    
+    
+    bool checkColomn(vector<vector<char>> &image, int col, int topBoundry, int bottomBoundry)
+    {
+        for(auto i = topBoundry; i <= bottomBoundry; ++i)
+        {
+            if (image[i][col] == '1')
             {
                 return true;
             }
@@ -125,14 +69,58 @@ class Solution {
         
         return false;
     }
+    
+    int searchLeft(vector<vector<char>> &image, int x, int y, int topBoundry, int bottomBoundry)
+    {
+        int start = 0;
+        int end = y;
+        
+        while(start + 1 < end)
+        {
+            int mid = start + (end - start) / 2;
+            if (checkColomn(image, mid, topBoundry, bottomBoundry))
+            {
+                end = mid;
+            }
+            else
+            {
+                start = mid;
+            }
+        }
+        
+        return checkColomn(image, start, topBoundry, bottomBoundry) ? start: end;
+    }
+    
+    int searchRight(vector<vector<char>> &image, int x, int y, int topBoundry, int bottomBoundry)
+    {
+        int start = y;
+        int end = image[0].size() - 1;
+        
+        while(start + 1 < end)
+        {
+            int mid = start + (end - start) / 2;
+            if (checkColomn(image, mid, topBoundry, bottomBoundry))
+            {
+                start = mid;
+            }
+            else
+            {
+                end = mid;
+            }
+        }
+        
+        return checkColomn(image, end, topBoundry, bottomBoundry) ? end: start;
+    }
+    
 public:
     int minArea(vector<vector<char>>& image, int x, int y) {
-        int left = getLeft(image, 0, y, 0, (int)image.size() - 1);
-        int right = getRight(image, y, (int)image[0].size() - 1, 0, (int)image.size() - 1);
-        int top = getTop(image, left, right, 0, x);
-        int bottom = getBottom(image, left, right, x, (int)image.size() - 1);
+        int top = searchTop(image, x, y);
+        int bottom = searchBottom(image, x, y);
         
-        return (right - left + 1) * (bottom - top + 1);
+        int left = searchLeft(image, x, y, top, bottom);
+        int right = searchRight(image, x, y, top, bottom);
+        
+        return (bottom - top + 1) * (right - left + 1);
     }
 };
 

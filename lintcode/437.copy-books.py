@@ -36,3 +36,49 @@ class Solution:
                 table[t][i] = value
 
         return table[-1][-1]
+
+# binary-search
+# NLogA A = possible answer
+class Solution2:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+    def copyBooks(self, pages, k):
+        # write your code here
+        
+        start = 0
+        end = 0
+        
+        for work in pages:
+            start = max(start, work)
+            end += work
+            
+        while (start + 1 < end):
+            mid = start + (end - start) // 2
+            
+            if self.canFinish(pages, mid, k):
+                end = mid
+            else:
+                start = mid
+                
+        return start if self.canFinish(pages, start, k) else end
+        
+        
+    def canFinish(self, pages, minutes, people):
+        headcount = 0
+        unit = minutes
+        i = 0
+        
+        while i < len(pages):
+            
+            while(i + 1 < len(pages) and unit - pages[i] >= pages[i + 1]):
+                unit -= pages[i]
+                i += 1
+                
+            headcount += 1    
+            unit = minutes
+            i += 1
+        
+        return headcount <= people

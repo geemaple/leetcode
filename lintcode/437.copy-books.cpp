@@ -47,3 +47,65 @@ public:
         return table[k][m];
     }
 };
+
+// binary-search
+// O(NLogA) A = possible answer
+class Solution2 {
+private:
+    bool canFinish(vector<int> &pages, int minutes, int people)
+    {
+        int headcount = 0;
+        int unit = minutes;
+        int i = 0;
+        
+        while(i < pages.size())
+        {
+            headcount++;
+            
+            while(i + 1 < pages.size() && unit - pages[i] >= pages[i + 1])
+            {
+                unit -= pages[i];
+                i++;
+            }
+            
+            unit = minutes;
+            i++;
+        }
+        
+        return headcount <= people;
+    }
+public:
+    /**
+     * @param pages: an array of integers
+     * @param k: An integer
+     * @return: an integer
+     */
+    int copyBooks(vector<int> &pages, int k) {
+        // write your code here
+        
+        int start = 0;
+        int end = 0;
+        
+        for (auto i = 0; i < pages.size(); ++i)
+        {
+            start = max(start, pages[i]);
+            end += pages[i];
+        }
+        
+        while(start + 1 < end)
+        {
+            int mid = start + (end - start) / 2;
+            
+            if(canFinish(pages, mid, k))
+            {
+                end =  mid;
+            }
+            else
+            {
+                start = mid;
+            }
+        }
+        
+        return canFinish(pages, start, k) ? start: end;
+    }
+};
