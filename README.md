@@ -6,7 +6,7 @@ This is a **continually updated, open source** project.
 
 1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 2. Add **dollar($)** before question number **means** you may check **discussion** for alternative (usually better) answer
-3. Add runtime grades: Perfect(>=90%) Awesome(>=70) Great(>=50%) Cool(>=30%) Bad(0 ~ 30%)
+3. Add runtime grades: **Perfect**(>=90%) **Awesome**(>=70) **Great**(>=50%) **Cool**(>=30%) **Bad**(0 ~ 30%)
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
