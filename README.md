@@ -6,6 +6,7 @@ This is a **continually updated, open source** project.
 
 1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 2. Add **dollar($)** before question number **means** you may check **discussion** for alternative (usually better) answer
+3. Add runtime grades: Perfect(>=90%) Awesome(>=70) Great(>=50%) Cool(>=30%) Bad(0 ~ 30%)
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -292,7 +293,7 @@ This is a **continually updated, open source** project.
 | 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
 | 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 010.regular-expression-matching | [cpp](./leetcode/10.regular-expression-matching.cpp), [python](./leetcode/10.regular-expression-matching.py) | O(MN) | O(MN) | Hard/S++ | Sequence
 | 044.wildcard-matching | [cpp](./leetcode/44.wildcard-matching.cpp), [python](./leetcode/44.wildcard-matching.py) | O(MN) | O(MN) | Hard | Sequence
@@ -313,7 +314,7 @@ This is a **continually updated, open source** project.
 | 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy/S-- | Sequence
 | 265.paint-house-ii | [cpp](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | O(M * N) | O(M * N) | Hard | Sequence
 | 279.perfect-squares | [cpp](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O(N ^ 1.5) | O(N) | Medium | Partition
-| $300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N*logN) | O(N) | Medium/SSS | Coordinates | binary-search |
+| 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N*logN) | O(N) | Medium/SSS | Binary-search / DP | Perfect
 | 312.burst-balloons | [cpp](./leetcode/312.burst-balloons.cpp), [python](./leetcode/312.burst-balloons.py) | O(N^3) | O(N^2) | Hard/S-- | Range
 | 322.coin-change | [cpp](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O(L*N) | O(N) | Medium | N = amount, L = len(coins)
 | 338.counting-bits | [cpp](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | O(N) | O(1) | Medium/S-- | Bit-manipulation
@@ -357,7 +358,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 077.longest-common-subsequence | [cpp](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | O(M*N) | O(M*N) | dynamic-programming |
+| 077.longest-common-subsequence | [cpp](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | O(M*N) | O(M*N) | Medium | dynamic-programming |
 | 081.find-median-from-data-stream | [cpp](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | O(N * LogN) | O(N) | Hard | Heap |
 | 089.k-sum | [cpp](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | O(NKT) | O(NKT) | Hard | dynamic-programming
 | 91.minimum-adjustment-cost | [cpp](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | O((100^2)N) | O(100N) | Medium | dynamic-programming
