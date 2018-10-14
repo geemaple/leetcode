@@ -17,4 +17,4 @@ class Solution(object):
             else:
                 return mid
 
-        return start if (end * end > x) else end        
+        return end if (end * end <= x) else start        

@@ -1,27 +1,29 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        long start = 0;
-        long end = x;
-
+        
+        if (x < 2)
+        {
+            return x;
+        }
+        
+        long long start = 0;
+        long long end = x / 2;
+        
         while(start + 1 < end)
         {
-            long mid = start + (end - start) / 2;
-
+            long long mid = start + (end - start) / 2;
             if (mid * mid > x)
             {
                 end = mid;
             }
-            else if (mid * mid < x)
+            else
             {
                 start = mid;
             }
-            else
-            {
-                return (int)mid;
-            }
         }
-
-        return (int)((end * end > x) ? start : end);
+        
+        return (end * end <= x) ? end : start;
+        
     }
 };

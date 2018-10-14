@@ -15,18 +15,12 @@ class Solution(object):
         while(start + 1 < end):
             mid = start + (end - start) / 2
             res = guess(mid)
-            if res > 0:
-                start = mid
-            elif res < 0:
+            if res < 0:
                 end = mid
+            elif res > 0:
+                start = mid
             else:
                 return mid
-
-        if guess(start) == 0:
-            return start
-
-        if guess(end) == 0:
-            return end
         
-        return -1
+        return start if guess(start) == 0 else end
 
