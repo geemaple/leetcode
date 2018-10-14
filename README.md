@@ -6,7 +6,7 @@ This is a **continually updated, open source** project.
 
 1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 2. Add **dollar($)** before question number **means** you may check **discussion** for alternative (usually better) answer
-3. Add runtime grades: **Perfect**(>=95%) **Awesome**(>=80) **Great**(>=70%) **Cool**(>=50%) **Bad**(<50%)
+3. Add **C++** runtime grades: **Perfect**(>=95%) **Awesome**(>=80) **Great**(>=70%) **Cool**(>=50%) **Bad**(<50%) 
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -303,6 +303,7 @@ This is a **continually updated, open source** project.
 | 121.best-time-to-buy-and-sell-stock | [cpp](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | O(N) | O(1) | Easy | Coordinates
 | 123.best-time-to-buy-and-sell-stock-iii | [cpp](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | O(N) | O(N) | Hard/SSS 
 | 213.house-robber-ii | [cpp](./leetcode/213.house-robber-ii.cpp), [python](./leetcode/213.house-robber-ii.py) | O(N) | O(1) | Medium/S-- | Sequence | Perfect
+| 221.maximal-square | [cpp](./leetcode/221.maximal-square.cpp), [python](./leetcode/221.maximal-square.py) | O(MN) | O(MN) | Medium/S-- | Coordinates TODO: Space optimized | Perfect
 | 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy/S-- | Sequence
 | 265.paint-house-ii | [cpp](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | O(M * N) | O(M * N) | Hard | Sequence
 | 279.perfect-squares | [cpp](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O(N ^ 1.5) | O(N) | Medium | Partition
