@@ -8,7 +8,7 @@ class Solution(object):
         """
         res = []
         for n in nums:
-            index = self.binary_search(res, n)
+            index = self.binary_search(res, n) # use bisect.bisect_left to reduce more runtime
             if index == -1:
                 res.append(n)
             else:

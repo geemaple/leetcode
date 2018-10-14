@@ -2,41 +2,46 @@ class Solution {
 public:
     bool isOneEditDistance(string s, string t) {
         
-        int diff = int(s.size()) - int(t.size());
+        int size_s = (int)(s.size());
+        int size_t = (int)(t.size());
         
-        if (abs(diff) > 1)
+        if (size_s == size_t) //replace
         {
-            return false;
-        }
-        
-        if (abs(diff) == 0)
-        {
-            int count = 0;
+            int diff = 0;
             for(auto i = 0; i < s.size(); ++i)
             {
                 if (s[i] != t[i])
                 {
-                    count ++;
+                    if (++diff > 1)
+                    {
+                        break;
+                    }
                 }
             }
             
-            return count == 1;
+            return diff == 1;
         }
         
-        if (abs(diff) == 1)
+        if (abs(size_s - size_t) == 1) //delete or insert
         {
-            string small = diff > 0 ? t: s;
-            string large = diff < 0 ? t: s;
-            
-            for(auto i = 0; i < small.size(); ++i)
+            string& small = size_s > size_t ? t: s;
+            string& large = size_s < size_t ? t: s;
+            int diff = 0;
+       
+            for (auto i = 0; i < large.size(); ++i)
             {
-                if (small[i] != large[i])
+                if (i - diff >= small.size() || small[i - diff] != large[i])
                 {
-                    return small.substr(i, small.size() - i) == large.substr(i + 1, large.size() - i - 1);
+                    if (++diff > 1)
+                    {
+                        break;
+                    }
                 }
             }
+            
+            return diff == 1;
         }
         
-        return true;
+        return false;
     }
 };

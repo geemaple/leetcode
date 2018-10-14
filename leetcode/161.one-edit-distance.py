@@ -5,25 +5,28 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        diff = len(s) - len(t)
 
-        if abs(diff) > 1:
-            return False
-
-        if abs(diff) == 0:
-            count = 0
+        if len(s) - len(t) == 0:
+            diff = 0
             for i in range(len(s)):
                 if s[i] != t[i]:
-                    count += 1
+                    diff += 1
+                    if diff > 1:
+                        break
             
-            return count == 1
+            return diff == 1
 
-        if abs(diff) == 1:
-            small = t if diff > 0 else s
-            large = t if diff < 0 else s
+        if abs(len(s) - len(t)) == 1:
+            small = t if len(s) > len(t) else s
+            large = t if len(s) < len(t) else s
 
-            for i in range(len(small)):
-                if small[i] != large[i]:
-                    return small[i:] == large[i + 1:]
-
-        return True
+            diff = 0
+            for i in range(len(large)):
+                if i - diff >= len(small) or small[i - diff] != large[i]:
+                    diff += 1
+                    if diff > 1:
+                        break
+                        
+            return diff == 1
+        
+        return False
