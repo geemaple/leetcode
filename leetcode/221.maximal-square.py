@@ -11,18 +11,20 @@ class Solution(object):
         m = len(matrix)
         n = len(matrix[0])
         
-        table = [[0 for _ in range(n)] for _ in range(m)]
+        k = 2
+        table = [[0 for _ in range(n)] for _ in range(k)]
         result = 0
         
         for i in range(m):
             for j in range(n):
                 
                 if i == 0 or j == 0:
-                    table[i][j] = 1 if matrix[i][j] == '1' else 0
-                    
+                    table[i % k][j] = 1 if matrix[i][j] == '1' else 0
                 elif matrix[i][j] == '1':
-                    table[i][j] = 1 + min([table[i - 1][j], table[i][j - 1], table[i - 1][j - 1]])
+                    table[i % k][j] = 1 + min(table[(i - 1) % k][j], table[i % k][j - 1], table[(i - 1) % k][j - 1])
+                else:
+                    table[i % k][j] = 0 # this is important when using circular array
                 
-                result = max(result, table[i][j])
+                result = max(result, table[i % k][j])
                 
         return result ** 2
