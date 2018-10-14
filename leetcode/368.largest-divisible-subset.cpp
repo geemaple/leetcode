@@ -1,38 +1,47 @@
+// f[i] = max(f[j] + 1) where nums[i] % nums[j] == 0
 class Solution {
 public:
     vector<int> largestDivisibleSubset(vector<int>& nums) {
         
-        if (nums.size() == 0){
+        if (nums.size() == 0)
+        {
             return vector<int>();
         }
         
+        int size = nums.size();
         sort(nums.begin(), nums.end());
         
-        vector<vector<int>> table;
-        table.push_back(vector<int>{nums[0]});
+        vector<int> table(size, 1);
+        vector<int> ans(size, -1);
+        int index = 0;
+        int longest = 1;
         
-        
-        for (auto i = 1; i < nums.size(); ++i){
-    
-            vector<int> candidate{nums[i]};
-            for (auto j = 0; j < table.size(); ++j){
-                if (nums[i] % nums[j] == 0 && candidate.size() < table[j].size() + 1){
-                    candidate = table[j];
-                    candidate.push_back(nums[i]);
+        for(auto i = 1; i < size; ++i)
+        {
+            for (auto j = 0; j < i; j++)
+            {
+                if (nums[i] % nums[j] == 0 && table[j] + 1 > table[i])
+                {
+                    table[i] = table[j] + 1;
+                    ans[i] = j;
+ 
                 }
             }
             
-            table.push_back(candidate);
-        }
-        
-        // find the longest
-        int answer = 0;
-        for (auto i = 1; i < table.size(); ++i){
-            if (table[answer].size() < table[i].size()){
-                answer = i;
+            if (table[i] > longest)
+            {
+                longest = table[i];
+                index = i;
             }
         }
         
-        return table[answer];
+        vector<int> result;
+        while(index != -1)
+        {
+            result.push_back(nums[index]);
+            index = ans[index];
+        }
+        
+        return result;
     }
 };

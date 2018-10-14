@@ -6,7 +6,7 @@ This is a **continually updated, open source** project.
 
 1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 2. Add **dollar($)** before question number **means** you may check **discussion** for alternative (usually better) answer
-3. Add runtime grades: **Perfect**(>=90%) **Awesome**(>=70) **Great**(>=50%) **Cool**(>=30%) **Bad**(0 ~ 30%)
+3. Add runtime grades: **Perfect**(>=95%) **Awesome**(>=80) **Great**(>=70%) **Cool**(>=50%) **Bad**(<50%)
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -312,12 +312,10 @@ This is a **continually updated, open source** project.
 | 338.counting-bits | [cpp](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | O(N) | O(1) | Medium/S-- | Bit-manipulation
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N*logN) | O(N) | Hard/S-- | Coordinates |
 | $361.bomb-enemy | [cpp](./leetcode/361.bomb-enemy.cpp), [python](./leetcode/361.bomb-enemy.py) | O(M * N) | O(M * N) | Medium/S++ | Coordinates
+| $368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp), [python](./leetcode/368.largest-divisible-subset.py) | O(N^2) | O(N) | Medium/S++ | Awesome |
 | 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | backpack-vi(Lintcode)
 | 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
-
-| 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
-| 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
 
 ## Greedy
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
