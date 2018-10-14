@@ -299,10 +299,10 @@ This is a **continually updated, open source** project.
 | 120.triangle | [cpp](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O(N^2) | O(N) | Medium | Coordinates | Perfect
 | 132.palindrome-partitioning-ii | [cpp](./leetcode/132.palindrome-partitioning-ii.cpp), [python](./leetcode/132.palindrome-partitioning-ii.py) | O(N^2) | O(N^2) | Hard | Partition
 | 188.best-time-to-buy-and-sell-stock-iv | [cpp](./leetcode/188.best-time-to-buy-and-sell-stock-iv.cpp), [python](./leetcode/188.best-time-to-buy-and-sell-stock-iv.py) | O(N*K) | O(N * K) | Hard/SSS
-| 198.house-robber | [cpp](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O(N) | O(N) | Easy | Sequence
+| 198.house-robber | [cpp](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O(N) | O(1) | Easy | Sequence | Perfect
 | 121.best-time-to-buy-and-sell-stock | [cpp](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | O(N) | O(1) | Easy | Coordinates
 | 123.best-time-to-buy-and-sell-stock-iii | [cpp](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | O(N) | O(N) | Hard/SSS 
-| 213.house-robber-ii | [cpp](./leetcode/213.house-robber-ii.cpp), [python](./leetcode/213.house-robber-ii.py) | O(N) | O(N) | Medium/S-- | Sequence
+| 213.house-robber-ii | [cpp](./leetcode/213.house-robber-ii.cpp), [python](./leetcode/213.house-robber-ii.py) | O(N) | O(1) | Medium/S-- | Sequence | Perfect
 | 256.paint-house | [cpp](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | O(N) | O(N) | Easy/S-- | Sequence
 | 265.paint-house-ii | [cpp](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | O(M * N) | O(M * N) | Hard | Sequence
 | 279.perfect-squares | [cpp](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O(N ^ 1.5) | O(N) | Medium | Partition
@@ -312,8 +312,8 @@ This is a **continually updated, open source** project.
 | 338.counting-bits | [cpp](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | O(N) | O(1) | Medium/S-- | Bit-manipulation
 | 354.russian-doll-envelopes | [cpp](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | O(N*logN) | O(N) | Hard/S-- | Coordinates |
 | $361.bomb-enemy | [cpp](./leetcode/361.bomb-enemy.cpp), [python](./leetcode/361.bomb-enemy.py) | O(M * N) | O(M * N) | Medium/S++ | Coordinates
-| $368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp), [python](./leetcode/368.largest-divisible-subset.py) | O(N^2) | O(N) | Medium/S++ | Awesome |
-| 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | backpack-vi(Lintcode)
+| $368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp), [python](./leetcode/368.largest-divisible-subset.py) | O(N^2) | O(N) | Medium/S++ | Coordinates | Awesome
+| 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | Backpack
 | 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
 
