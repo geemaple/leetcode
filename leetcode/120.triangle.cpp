@@ -1,21 +1,19 @@
+//for each node f[parent] = min(f[left-child], f[right-child]) + val
 class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
-        
-        // width and height is the same
-        int size = (int)triangle.size();
+        int size = (int)(triangle.size());
         vector<int> table(size, 0);
         
-        // initialization
-        for (auto i = 0; i < triangle[size - 1].size(); ++i)
+        // init
+        for (auto j = 0; j < size; ++j)
         {
-            table[i] = triangle[size - 1][i];
+            table[j] = triangle[size - 1][j];
         }
         
-        //from bottom to up
-        for (auto i = size - 2; i >= 0; --i)
+        for(auto i = size - 2; i >= 0; --i)
         {
-            for (auto j = 0; j < triangle[i].size(); ++j)
+            for(auto j = 0; j <= i; ++j)
             {
                 table[j] = min(table[j], table[j + 1]) + triangle[i][j];
             }

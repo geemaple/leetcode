@@ -283,16 +283,6 @@ This is a **continually updated, open source** project.
 | 20.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy
 
 ## Dynamic Programming
-
-> PS: Often space could be optimized using circular array, it not that hard, just mod every new and old indexes against the size(For 2D: row, col, diagonal)
-
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 70.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | Easy | Coordinates
-| 120.triangle | [cpp](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O(N^2) | Medium | Coordinates
-| 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
-| 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
-
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 010.regular-expression-matching | [cpp](./leetcode/10.regular-expression-matching.cpp), [python](./leetcode/10.regular-expression-matching.py) | O(MN) | O(MN) | Hard/S++ | Sequence
@@ -300,11 +290,13 @@ This is a **continually updated, open source** project.
 | 062.unique-paths | [cpp](./leetcode/62.unique-paths.cpp), [python](./leetcode/62.unique-paths.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
+| 070.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | O(1) | Easy | Coordinates | Perfect
 | 072.edit-distance | [cpp](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | O(MN) | O(MN) | Hard/S-- | Sequence
 | 087.scramble-string | [cpp](./leetcode/87.scramble-string.cpp), [python](./leetcode/87.scramble-string.py) | O(N^4) | O(N^3) | Hard/SSS | Range
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | Partition
 | 097.interleaving-string | [cpp](./leetcode/97.interleaving-string.cpp), [python](./leetcode/97.interleaving-string.py) | O(MN) | O(MN) | Hard/S-- | Sequence
 | 115.distinct-subsequences | [cpp](./leetcode/115.distinct-subsequences.cpp), [python](./leetcode/115.distinct-subsequences.py) | O(MN) | O(MN) | Hard/S-- | Sequence
+| 120.triangle | [cpp](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O(N^2) | O(N) | Medium | Coordinates | Perfect
 | 132.palindrome-partitioning-ii | [cpp](./leetcode/132.palindrome-partitioning-ii.cpp), [python](./leetcode/132.palindrome-partitioning-ii.py) | O(N^2) | O(N^2) | Hard | Partition
 | 188.best-time-to-buy-and-sell-stock-iv | [cpp](./leetcode/188.best-time-to-buy-and-sell-stock-iv.cpp), [python](./leetcode/188.best-time-to-buy-and-sell-stock-iv.py) | O(N*K) | O(N * K) | Hard/SSS
 | 198.house-robber | [cpp](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O(N) | O(N) | Easy | Sequence
@@ -323,6 +315,9 @@ This is a **continually updated, open source** project.
 | 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | backpack-vi(Lintcode)
 | 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
+
+| 368.largest-divisible-subset | [cpp](./leetcode/368.largest-divisible-subset.cpp) | O(N^2) | Medium |
+| 403.frog-jump | [cpp](./leetcode/403.frog-jump.cpp) | O(N^2) | Hard
 
 ## Greedy
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
