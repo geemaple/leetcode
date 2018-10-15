@@ -81,7 +81,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | 
+| 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
 | 056.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort | N = number of intervals
 | 057.insert-interval | [cpp](./leetcode/57.insert-interval.cpp), [python](./leetcode/57.insert-interval.py) | O(N) | O(1) | Hard | Sort | N = number of intervals
 | 157.read-n-characters-given-read4 | [cpp](./leetcode/157.read-n-characters-given-read4.cpp), [python](./leetcode/157.read-n-characters-given-read4.py) | O(N) | O(1) | Easy | String

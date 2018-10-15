@@ -18,13 +18,11 @@ class Solution(object):
         result = 0
         while left <= right:
             if left_max < right_max:
-                if left_max > height[left]:
-                    result += (left_max - height[left])
+                result += max(0, left_max - height[left])
                 left_max = max(left_max, height[left])
                 left += 1
             else:
-                if right_max > height[right]:
-                    result += (right_max - height[right])
+                result += max(0, right_max - height[right])
                 right_max = max(right_max, height[right])
                 right -=1
 
