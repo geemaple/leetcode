@@ -284,6 +284,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 20.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy
 | 155.min-stack | [cpp](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | O(1) | O(N) | Easy | | Cool
+| 394.decode-string | [cpp](./leetcode/394.decode-string.cpp), [python](./leetcode/394.decode-string.py) | O(N) | O(N) | Medium | | Perfect
 
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
