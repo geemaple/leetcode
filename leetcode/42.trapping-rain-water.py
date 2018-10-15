@@ -1,5 +1,5 @@
 
-# two pointers
+# two pointers beats 71%
 class Solution(object):
     def trap(self, height):
         """
@@ -29,7 +29,7 @@ class Solution(object):
         return result
 
 
-#scan twice
+#scan twice beats 100%
 class Solution2(object):
     def trap(self, height):
         """
