@@ -278,12 +278,14 @@ This is a **continually updated, open source** project.
 | 295.find-median-from-data-stream | [cpp](./leetcode/295.find-median-from-data-stream.cpp), [python](./leetcode/295.find-median-from-data-stream.py) | O(NLogN) | O(N) | Medium | | Bad
 | 378.kth-smallest-element-in-a-sorted-matrix | [cpp](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | O((K + M) * LogM) | O(M) | Medium | TODO: binary-search, O(N) solution |
 | 407.trapping-rain-water-ii | [cpp](./leetcode/407.trapping-rain-water-ii.cpp), [python](./leetcode/407.trapping-rain-water-ii.py) | O(M * N * Log(M + N)) | O(M + N) | Hard/SSS | | Bad
+| 654.maximum-binary-tree | [cpp](./leetcode/654.maximum-binary-tree.cpp), [python](./leetcode.654.maximum-binary-tree.py) | O(N) | O(N) | Hard/SSS || Perfect
 
 ## Stack
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 020.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy
-| 084.largest-rectangle-in-histogram | [cpp](./leetcode/84.largest-rectangle-in-histogram.cpp), [python](./leetcode/84.largest-rectangle-in-histogram.py) | O(N) | O(N) | Hard || Perfect
+| 084.largest-rectangle-in-histogram | [cpp](./leetcode/84.largest-rectangle-in-histogram.cpp), [python](./leetcode/84.largest-rectangle-in-histogram.py) | O(N) | O(N) | Hard/S++ || Perfect
+| 085.maximal-rectangle | [cpp](./leetcode/85.maximal-rectangle.cpp), [python](./leetcode/85.maximal-rectangle.py) | O(MN) | O(N) | Hard/SSS || Perfect
 | 155.min-stack | [cpp](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | O(1) | O(N) | Easy | | Cool
 | 394.decode-string | [cpp](./leetcode/394.decode-string.cpp), [python](./leetcode/394.decode-string.py) | O(N) | O(N) | Medium | | Perfect
 
