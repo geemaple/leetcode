@@ -12,6 +12,7 @@ This is a **continually updated, open source** project.
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
 🎉🎉🎉 Finished 150 / 824 questions on 2018-06-29<br/>
 🎑🎑🎑 Finished 200 / 905 questions on 2018-09-24<br/> 
+🎉🎉🎉 Finished 250 / 917 questions on 2018-10-15<br/>
 
 # [References](./learning/README.md)
 
