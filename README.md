@@ -370,6 +370,7 @@ This is a **continually updated, open source** project.
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
 | 183.wood-cut | [cpp](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | O(N * LogN) | O(1) | Medium/S-- | binary-search
+| 390.find-peak-element-ii | [cpp](./lintcode/390.find-peak-element-ii.cpp), [python](./lintcode/390.find-peak-element-ii.py) | O(M + N) | O(1) | Hard/SSS | binary-search
 | 391.number-of-airplanes-in-the-sky | [cpp](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python](./lintcode/391.number-of-airplanes-in-the-sky.py) | O(NlogN) | O(N) | Medium | sweep-line |
 | 394.coins-in-a-line | [cpp](./lintcode/394.coins-in-a-line.cpp), [python](./lintcode/394.coins-in-a-line.py) | O(N) | O(N) | Medium | dynamic-programming |
 | 396.coins-in-a-line-iii | [cpp](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | O(N^2) | O(N^2) | Hard/SSS | dynamic-programming |
