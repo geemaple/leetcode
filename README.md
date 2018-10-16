@@ -31,6 +31,7 @@ This is a **continually updated, open source** project.
     - [Hash Table](#hash-table)
     - [Heap](#heap)
     - [Stack](#stack)
+    - [Sweep Line](#sweep-line)
     - [Dynamic Programming](#dynamic-programming)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
@@ -293,6 +294,11 @@ This is a **continually updated, open source** project.
 | 394.decode-string | [cpp](./leetcode/394.decode-string.cpp), [python](./leetcode/394.decode-string.py) | O(N) | O(N) | Medium | | Perfect
 | 654.maximum-binary-tree | [cpp](./leetcode/654.maximum-binary-tree.cpp), [python](./leetcode.654.maximum-binary-tree.py) | O(N) | O(N) | Hard/SSS || Perfect
 
+## Sweep Line
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| $253.meeting-rooms-ii | [cpp](./leetcode/253.meeting-rooms-ii.cpp), [python](./leetcode/253.meeting-rooms-ii.py) | O(NlogN) | O(N) | Medium || Perfect
+
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -367,7 +373,7 @@ This is a **continually updated, open source** project.
 | 077.longest-common-subsequence | [cpp](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | O(M*N) | O(M*N) | Medium | dynamic-programming |
 | 081.find-median-from-data-stream | [cpp](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | O(N * LogN) | O(N) | Hard | Heap |
 | 089.k-sum | [cpp](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | O(NKT) | O(NKT) | Hard | dynamic-programming
-| 91.minimum-adjustment-cost | [cpp](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | O((100^2)N) | O(100N) | Medium | dynamic-programming
+| 091.minimum-adjustment-cost | [cpp](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | O((100^2)N) | O(100N) | Medium | dynamic-programming
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
 | 183.wood-cut | [cpp](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | O(N * LogN) | O(1) | Medium/S-- | binary-search
