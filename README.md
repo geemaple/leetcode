@@ -358,8 +358,9 @@ This is a **continually updated, open source** project.
 | -----------| ------------| ---------------| -------| --------|
 | 175.combine-two-tables | [sql](./leetcode/175.combine-two-tables.sql) | Easy | SQL |
 
-
 # Lintcode
+
+> Below are Lintcode questions that worth trying 
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -381,6 +382,7 @@ This is a **continually updated, open source** project.
 | 543.kth-largest-in-n-arrays | [cpp](./lintcode/543.kth-largest-in-n-arrays.cpp), [python](./lintcode/543.kth-largest-in-n-arrays.py) | O(M * N * LogK) | O(K) | Easy | heap |
 | 526.load-balancer | [cpp](./lintcode/526.load-balancer.cpp), [python](./lintcode/526.load-balancer.py) | O(1) | O(N) | Medium | Hash + Array
 | 563.backpack-v | [cpp](./lintcode/563.backpack-v.cpp), [python](./lintcode/563.backpack-v.py) | O(M*N) | O(M) | Medium | dynamic-programming
+| 586.sqrtx-ii | [cpp](./lintcode/586.sqrtx-ii.cpp), [python](./lintcode/586.sqrtx-ii.py) | O(logN) | O(N) | Medium | binary-search
 | 589.connecting-graph | [cpp](./lintcode/589.connecting-graph.cpp), [python](./lintcode/589.connecting-graph.py) | O(1) | O(N) | Medium | union-find
 | 590.connecting-graph-ii | [cpp](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | O(1) | O(N) | Medium | union-find
 | 591.connecting-graph-iii | [cpp](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | O(1) | O(N) | Medium | union-find
