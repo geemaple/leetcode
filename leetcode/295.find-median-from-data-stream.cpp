@@ -1,8 +1,8 @@
 class MedianFinder {
     
 private:
-    priority_queue<int, vector<int>, less<int>> leftHeap; // big heap
-    priority_queue<int, vector<int>, greater<int>> rightHeap; // small heap
+    priority_queue<int, vector<int>, less<int>> lo; // big heap
+    priority_queue<int, vector<int>, greater<int>> hi; // small heap
 public:
     /** initialize your data structure here. */
     MedianFinder() {
@@ -10,35 +10,27 @@ public:
     }
     
     void addNum(int num) {
-        if (leftHeap.size() <= rightHeap.size())
+
+        lo.push(num);
+
+        hi.push(lo.top());
+        lo.pop();
+
+        if (lo.size() < hi.size())
         {
-            leftHeap.push(num);
-        }
-        else
-        {
-            rightHeap.push(num);
-        }
-        
-        if (rightHeap.size() > 0 && leftHeap.top() > rightHeap.top()) {
-            int left = leftHeap.top();
-            leftHeap.pop();
-            
-            int right = rightHeap.top();
-            rightHeap.pop();
-            
-            leftHeap.push(right);
-            rightHeap.push(left);
+            lo.push(hi.top());
+            hi.pop();
         }
     }
     
     double findMedian() {
-        if (leftHeap.size() > rightHeap.size())
+        if (lo.size() > hi.size())
         {
-            return leftHeap.top();
+            return lo.top();
         }
         else
         {
-            double sum = leftHeap.top() + rightHeap.top();
+            double sum = lo.top() + hi.top();
             return sum / 2;
         }
     }
