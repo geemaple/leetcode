@@ -33,10 +33,12 @@ This is a **continually updated, open source** project.
     - [Stack](#stack)
     - [Sweep Line](#sweep-line)
     - [Dynamic Programming](#dynamic-programming)
+    - [Red Black Tree](#red-black-tree)
     - [Greedy](#greedy)
     - [Union Find](#union-find)
     - [Trie](#trie)
     - [Other](#other)
+    
 
 - [Lintcode](#lintcode)
 
@@ -334,6 +336,15 @@ This is a **continually updated, open source** project.
 | 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | Backpack
 | 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
+
+
+## Red Black Tree
+
+> Since python got no built-in AVL data-structure, these questions written in python may perform worse
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| $683.k-empty-slots | [cpp](./leetcode/683.k-empty-slots.cpp), [python](./leetcode/683.k-empty-slots.py) | O(NLogN) | O(N) | Hard/SSS | | Bad
 
 ## Greedy
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
