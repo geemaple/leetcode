@@ -192,10 +192,10 @@ This is a **continually updated, open source** project.
 | 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | Medium
 
 
-
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | Hard/SSS | DFS | N = length of input
+| 687.longest-univalue-path | [cpp](./leetcode/687.longest-univalue-path.cpp), [python](./leetcode/687.longest-univalue-path.py) | O(N) | O(1) | Easy/S++ | | Perfect
 
 ## Tree Traversal
 
@@ -344,7 +344,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| $683.k-empty-slots | [cpp](./leetcode/683.k-empty-slots.cpp), [python](./leetcode/683.k-empty-slots.py) | O(NLogN) | O(N) | Hard/SSS | | Bad
+| $683.k-empty-slots | [cpp](./leetcode/683.k-empty-slots.cpp), [python](./leetcode/683.k-empty-slots.py) | O(NLogN) | O(N) | Hard/SSS | Min Queue | Bad
 
 ## Greedy
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
