@@ -7,39 +7,46 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+// inorder traversal
 class Solution {
+private:    
+    TreeNode* prev = NULL;
+    
+    bool validate(TreeNode* node) {
+        if (node == NULL) return true;
+        if (!validate(node->left)) return false;
+        if (prev != NULL && prev->val >= node->val) return false;
+        prev = node;
+        return validate(node->right);
+    }
+    
+public:
+    bool isValidBST(TreeNode* root) {
+        return validate(root);
+    }
+};
+
+// divide and conquer
+class Solution2 {
 private:
-    bool isValidBST(TreeNode *node, TreeNode *minNode, TreeNode *maxNode){
-        if (node == NULL)
+    bool helper(TreeNode* cur, TreeNode* minNode, TreeNode* maxNode)
+    {
+        if (cur == NULL)
         {
             return true;
         }
         
-        if ((minNode && node->val <= minNode->val) || (maxNode && node->val >= maxNode->val))
+        if ((minNode && minNode->val >= cur->val) || (maxNode && maxNode->val <= cur->val))
         {
             return false;
         }
         
-        return isValidBST(node->left, minNode, node) && isValidBST(node->right, node, maxNode);
-    }
-    
-    bool validate(TreeNode* node, TreeNode* &prev) {
-        if (node == NULL) return true;
-        if (!validate(node->left, prev)) return false;
-        if (prev != NULL && prev->val >= node->val) return false;
-        prev = node;
-        return validate(node->right, prev);
+        return helper(cur->left, minNode, cur) && helper(cur->right, cur, maxNode);
     }
     
 public:
-    // inorder traversal
     bool isValidBST(TreeNode* root) {
-        TreeNode* prev = NULL;
-        return validate(root, prev);
-    }
-    
-    // divide and conquer
-    bool isValidBST2(TreeNode* root) {
-        return isValidBST(root, NULL, NULL);
+        return helper(root, NULL, NULL);
     }
 };

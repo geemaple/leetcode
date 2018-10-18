@@ -5,31 +5,46 @@
 #         self.left = None
 #         self.right = None
 
-# Your runtime beats 31 % of python submissions
+
 class Solution(object):
+    def __init__(self):
+        self.pre = None
+    
     def isValidBST(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        low = float('-inf')
-        high = float('inf')
-        return self.helper(root, low, high)
+        return self.helper(root)
 
-    def helper(self, node, low , high):
+    def helper(self, cur):
 
-        if node is None:
+        if cur is None:
             return True
 
-        if node.val <= low or node.val >= high:
+        if not self.helper(cur.left):
             return False
 
-        left = self.helper(node.left, low, node.val)
-        if not left:
-            return left
+        if (self.pre is not None and self.pre.val >= cur.val):
+            return False
+        self.pre = cur
 
-        right = self.helper(node.right, node.val, high)
-        if not right:
-            return right
+        return self.helper(cur.right)
 
-        return True
+class Solution2(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        return self.helper(root, None, None)
+
+    def helper(self, cur, low , high):
+
+        if cur is None:
+            return True
+
+        if (low is not None and low.val >= cur.val) or (high is not None and high.val <= cur.val):
+            return False
+
+        return self.helper(cur.left, low, cur) and self.helper(cur.right, cur, high)
