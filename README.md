@@ -339,7 +339,7 @@ This is a **continually updated, open source** project.
 | 265.paint-house-ii | [cpp](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | O(M * N) | O(M * N) | Hard | Sequence
 | 276.paint-fence | [cpp](./leetcode/276.paint-fence.cpp), [python](./leetcode/276.paint-fence.py) | O(N) | O(1) | Easy/SSS | | Perfect
 | 279.perfect-squares | [cpp](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O(N ^ 1.5) | O(N) | Medium | Partition
-| 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(N*logN) | O(N) | Medium/SSS | Binary-search / DP | Perfect
+| 300.longest-increasing-subsequence | [cpp](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O(NlogN) | O(N) | Medium/SSS | Binary-search / DP | Perfect
 | 312.burst-balloons | [cpp](./leetcode/312.burst-balloons.cpp), [python](./leetcode/312.burst-balloons.py) | O(N^3) | O(N^2) | Hard/S-- | Range
 | 322.coin-change | [cpp](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O(L*N) | O(N) | Medium | N = amount, L = len(coins)
 | 338.counting-bits | [cpp](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | O(N) | O(1) | Medium/S-- | Bit-manipulation

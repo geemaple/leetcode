@@ -10,9 +10,9 @@ class Solution(object):
         res = 1
         i = 0
         for j in range(1, len(nums)):
-            if nums[j] > nums[j - 1]:
-                res = max(res, j - i + 1)
-            else:
+            if nums[j] <= nums[j - 1]:
                 i = j
+            
+            res = max(res, j - i + 1)
                 
         return res
