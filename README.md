@@ -300,10 +300,10 @@ This is a **continually updated, open source** project.
 ## Stack
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 020.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy
+| 020.valid-parentheses | [cpp](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O(N) | O(N) | Easy | | Perfect
 | 084.largest-rectangle-in-histogram | [cpp](./leetcode/84.largest-rectangle-in-histogram.cpp), [python](./leetcode/84.largest-rectangle-in-histogram.py) | O(N) | O(N) | Hard/S++ || Perfect
 | 085.maximal-rectangle | [cpp](./leetcode/85.maximal-rectangle.cpp), [python](./leetcode/85.maximal-rectangle.py) | O(MN) | O(N) | Hard/SSS || Perfect
-| 155.min-stack | [cpp](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | O(1) | O(N) | Easy | | Cool
+| 155.min-stack | [cpp](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | O(1) | O(N) | Easy/S-- | | Cool
 | 394.decode-string | [cpp](./leetcode/394.decode-string.cpp), [python](./leetcode/394.decode-string.py) | O(N) | O(N) | Medium | | Perfect
 | 654.maximum-binary-tree | [cpp](./leetcode/654.maximum-binary-tree.cpp), [python](./leetcode.654.maximum-binary-tree.py) | O(N) | O(N) | Hard/SSS || Perfect
 

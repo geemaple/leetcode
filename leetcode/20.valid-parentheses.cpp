@@ -1,33 +1,29 @@
 class Solution {
 public:
     bool isValid(string s) {
-        stack<char> sstack;
-        unordered_map<char, char> pairs;
-        pairs[')'] = '(';
-        pairs[']'] = '[';
-        pairs['}'] = '{';
-
-        for (auto c : s){
-            if (pairs.count(c) == 0)
+        unordered_map<char, char> matching;
+        matching['}'] = '{';
+        matching[')'] = '(';
+        matching[']'] = '[';
+        
+        stack<char> st;
+        
+        for (auto c: s)
+        {
+            if (matching.count(c) == 0)
             {
-                sstack.push(c);
+                st.push(c);
             }
             else
             {
-                if (sstack.empty())
+                if (st.empty() || matching[c] != st.top())
                 {
                     return false;
                 }
-
-                char candidate = sstack.top();
-                sstack.pop();
-                if (candidate != pairs[c])
-                {
-                    return false;
-                }
+                st.pop();
             }
         }
-
-        return sstack.empty();
+        
+        return st.empty();   
     }
 };
