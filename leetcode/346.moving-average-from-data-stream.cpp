@@ -1,32 +1,27 @@
 class MovingAverage {
-
 private:
-    vector<int> presum;
+    deque<int> dq;
     int size;
-    int id;
+    int sum;
 public:
     /** Initialize your data structure here. */
-    MovingAverage(int size) : presum(size + 1, 0) {
-        this->id = 0;
+    MovingAverage(int size) {
         this->size = size;
+        this->sum = 0;
     }
     
-    int mode(int index)
-    {
-        return index % (size + 1);
-    }
-
     double next(int val) {
-        id++;
-        presum[mode(id)] = (presum[mode(id - 1)] + val);
-        if (id <= size)
+        
+        dq.push_back(val);
+        sum += val;
+        
+        if (dq.size() > size)
         {
-            return double(presum[mode(id)]) / id;
+            sum -= dq.front();
+            dq.pop_front();
         }
-        else
-        {
-            return double(presum[mode(id)] - presum[mode(id - size)]) / size;
-        }
+        
+        return double(sum) / dq.size();
     }
 };
 

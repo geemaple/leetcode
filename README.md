@@ -30,6 +30,7 @@ This is a **continually updated, open source** project.
     - [Graph Traversal](#graph-traversal)
     - [Backtracking](#backtracking)
     - [Hash Table](#hash-table)
+    - [Queue](#queue)
     - [Heap](#heap)
     - [Stack](#stack)
     - [Sweep Line](#sweep-line)
@@ -102,7 +103,6 @@ This is a **continually updated, open source** project.
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | O(1) | Medium
 | 271.encode-and-decode-strings | [cpp](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | O(N) | O(1) | Easy | String | N = count of chars
 | 277.find-the-celebrity | [cpp](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | O(N) | O(1) | Medium |
-| 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(N) | O(K) | Easy | Queue(Circular array) |
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
@@ -227,11 +227,11 @@ This is a **continually updated, open source** project.
 
 ## Graph Traversal
 
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
 | 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(M x N) | Medium | BFS/DFS | union-find
-| 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp) | O(V + E) | Medium |
+| 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp), [python](./leetcode/207.course-schedule.py) | O(V + E) | O(V + E) | Medium | | Perfect
 | 210.course-schedule-ii | [cpp](./leetcode/210.course-schedule-ii.cpp) | O(V + E) | Medium | topological-sort
 | 444.sequence-reconstruction | [cpp](./leetcode.444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | Medium | topological-sort
 
@@ -284,6 +284,11 @@ This is a **continually updated, open source** project.
 | 288.unique-word-abbreviation | [cpp](./leetcode/288.unique-word-abbreviation.cpp), [python](./leetcode/288.unique-word-abbreviation.py) | O(1) | O(N) | Medium
 | 387.first-unique-character-in-a-string | [cpp](./leetcode/387.first-unique-character-in-a-string.cpp), [python](./leetcode/387.first-unique-character-in-a-string.py) | O(N) | O(N) | Easy
 | 438.find-all-anagrams-in-a-string | [cpp](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | O(N) | O(N) | Easy
+
+## queue
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Node   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(1) | O(N) | Easy | | Perfect 
 
 ## Heap
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
