@@ -19,14 +19,9 @@ class Solution(object):
             return 0
 
         left = self.helper(node.left)
-        if left == -1:
-            return -1
-
         right = self.helper(node.right)
-        if right == -1:
+
+        if left == -1 or right == -1:
             return -1
 
-        if abs(left - right) > 1:
-            return -1
-
-        return max(left, right) + 1
+        return -1 if abs(left - right) > 1 else max(left, right) + 1

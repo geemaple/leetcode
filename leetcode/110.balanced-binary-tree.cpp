@@ -24,12 +24,7 @@ private:
             return -1;
         }
         
-        if (abs(left - right) > 1)
-        {
-            return -1;
-        }
-        
-        return max(left, right) + 1;
+        return  abs(left - right) > 1 ? -1 : max(left, right) + 1;
     }
 public:
     bool isBalanced(TreeNode* root) {
