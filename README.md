@@ -20,6 +20,7 @@ This is a **continually updated, open source** project.
 
 - [Leetcode](#leetcode)
     - [Math](#math)
+    - [Bit](#bit)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
@@ -62,8 +63,14 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| --------------| -------| --------|
 | 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | Medium | N = length of results
 | 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | Easy
-| 136.single-number | [cpp](./leetcode/136.single-number.cpp) | O(N) | Easy | bits
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
+
+## Bit
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 136.single-number | [cpp](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O(N) | O(1) | Easy | xor | Perfect
+| 318.maximum-product-of-word-lengths | [cpp](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O(N^2) | O(N) | Medium/S++ | bit-mask | Great
+| 393.utf-8-validation | [cpp](./leetcode/393.utf-8-validation.cpp), [python](./leetcode/393.utf-8-validation.py) | O(N) |O(1) | Medium/S-- | | Perfect
 
 ## Array and String
 
@@ -83,7 +90,7 @@ This is a **continually updated, open source** project.
 | 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | string | TODO: Rabin-Karp Algorithm, KMP algorithm
 | 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy | string |
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade    |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
 | 056.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort | N = number of intervals
@@ -310,7 +317,7 @@ This is a **continually updated, open source** project.
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 070.climbing-stairs | [cpp](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O(N) | O(1) | Easy | Coordinates | Perfect
-| 072.edit-distance | [cpp](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | O(MN) | O(MN) | Hard/S-- | Sequence
+| 072.edit-distance | [cpp](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | O(MN) | O(N) | Hard/S-- | Sequence || Perfect
 | 087.scramble-string | [cpp](./leetcode/87.scramble-string.cpp), [python](./leetcode/87.scramble-string.py) | O(N^4) | O(N^3) | Hard/SSS | Range
 | 091.decode-ways | [cpp](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O(N) | O(N) | Medium/S++ | Partition
 | 097.interleaving-string | [cpp](./leetcode/97.interleaving-string.cpp), [python](./leetcode/97.interleaving-string.py) | O(MN) | O(MN) | Hard/S-- | Sequence
