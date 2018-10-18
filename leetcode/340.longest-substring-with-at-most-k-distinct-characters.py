@@ -6,19 +6,20 @@ class Solution(object):
         :rtype: int
         """
         res = 0
-        j = 0
-        count_map = dict()
+        i = 0
+        count_map = {}
 
-        for i in range(len(s)):
-            while (j < len(s) and (len(count_map) < k or (len(count_map) == k and s[j] in count_map))):
-                count_map[s[j]] = count_map.get(s[j], 0) + 1
-                j += 1
+        for j in range(len(s)):
 
-            res = max(res, j - i)
+            count_map[s[j]] = count_map.get(s[j], 0) + 1
 
-            if s[i] in count_map:
+            while len(count_map) > k:
                 count_map[s[i]] -= 1
                 if count_map[s[i]] == 0:
                     del count_map[s[i]]
+
+                i += 1
+
+            res = max(res, j - i + 1)
 
         return res
