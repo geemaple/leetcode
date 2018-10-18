@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: int
         """
         
-        k = 0
-        for i in range(len(nums)):
-            if (k == 0 or nums[i] != nums[k - 1]):
-                nums[k] = nums[i]
-                k += 1
+        i = 0
+        for j in range(len(nums)):
+            if (i == 0 or nums[i - 1] < nums[j]):
+                nums[i] = nums[j]
+                i += 1
 
-        return k
+        return i
