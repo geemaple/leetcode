@@ -5,21 +5,19 @@ public:
         {
             return 0;
         }
-
+        
+        int longest = 1;
         int i = 0;
-        int res = 1;
-        for(auto j = 1; j < nums.size(); ++j)
+        for (auto j = 1; j < nums.size(); ++j)
         {
-            if(nums[j] > nums[j - 1])
-            {
-                res = max(res, j - i + 1);
-            }
-            else
+            if (nums[j] <= nums[j - 1])
             {
                 i = j;
             }
+            
+            longest = max(longest, j - i + 1);
         }
-
-        return res;
+        
+        return longest;
     }
 };

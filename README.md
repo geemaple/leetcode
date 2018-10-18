@@ -77,7 +77,6 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 53.maximum-subarray | [python](./leetcode/53.maximum-subarray.py) | O(N) | Easy 
 | 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
 | 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
 | 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
@@ -106,7 +105,7 @@ This is a **continually updated, open source** project.
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
-| 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy
+| 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy || Perfect
 
 
 ## Two Pointers
@@ -318,6 +317,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 010.regular-expression-matching | [cpp](./leetcode/10.regular-expression-matching.cpp), [python](./leetcode/10.regular-expression-matching.py) | O(MN) | O(MN) | Hard/S++ | Sequence
 | 044.wildcard-matching | [cpp](./leetcode/44.wildcard-matching.cpp), [python](./leetcode/44.wildcard-matching.py) | O(MN) | O(MN) | Hard | Sequence
+| 053.maximum-subarray | [cpp](./leetcode/53.maximum-subarray.cpp), [python](./leetcode/53.maximum-subarray.py) | O(N) | O(1) | Easy | | Perfect
 | 062.unique-paths | [cpp](./leetcode/62.unique-paths.cpp), [python](./leetcode/62.unique-paths.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 063.unique-paths-ii | [cpp](./leetcode/63.unique-paths-ii.cpp), [python](./leetcode/63.unique-paths-ii.py) | O(M * N) | O(M * N) | Medium | Coordinates
 | 064.minimum-path-sum | [cpp](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O(M * N) | O(M * N) | Medium | Coordinates
