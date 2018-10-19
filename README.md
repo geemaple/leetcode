@@ -206,6 +206,7 @@ This is a **continually updated, open source** project.
 | 94.binary-tree-inorder-traversal | [cpp](./leetcode/94.binary-tree-inorder-traversal.cpp) | O(N) | Medium |
 | 102.binary-tree-level-order-traversal | [cpp](./leetcode/102.binary-tree-level-order-traversal.cpp) | O(N) | Medium |
 | 107.binary-tree-level-order-traversal-ii | [cpp](./leetcode/107.binary-tree-level-order-traversal-ii.cpp) | O(N) | Easy |
+| 114.flatten-binary-tree-to-linked-list | [cpp](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O(N) | O(1) | Medium || Cool
 | 130.surrounded-regions | [cpp](./leetcode/130.surrounded-regions.cpp), [python](./leetcode/130.surrounded-regions.py) | O(M * N) | O(M & N) | Medium | BFS
 | 144.binary-tree-preorder-traversal | [cpp](./leetcode/144.binary-tree-preorder-traversal.cpp) | O(N) | Medium
 | 156.binary-tree-upside-down | [cpp](./leetcode/156.binary-tree-upside-down.cpp), [python](./leetcode/156.binary-tree-upside-down.py) | O(V) | O(1) | Medium
