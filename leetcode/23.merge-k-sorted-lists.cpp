@@ -6,40 +6,39 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
-private:
-    static bool greater(ListNode *left, ListNode *right){
-        return left->val > right -> val;
+
+struct cmp {
+    bool operator()(const ListNode* a, const ListNode* b) {
+        return a->val > b->val;
     }
-    
+};
+
+class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        vector<ListNode *> list;
-        ListNode head(0);
-        ListNode *cur = &head;
+        priority_queue<ListNode*, vector<ListNode*>, cmp> heap;
         
-        for(auto i = 0; i < lists.size(); ++i){
-            ListNode *node = lists[i];
-            if (node != NULL){
-                list.push_back(node);
+        for(auto i = 0; i < lists.size(); ++i)
+        {
+            if (lists[i])
+            {
+                heap.push(lists[i]);
             }
         }
         
-        make_heap(list.begin(), list.end(), greater);
-        
-        while(!list.empty()){
-            
-            ListNode *node = list.front();
-            pop_heap(list.begin(), list.end(), greater);
-            list.pop_back();
-            
-            cur->next = node;
-            if (node->next){
-                list.push_back(node->next);
-                push_heap(list.begin(), list.end(), greater);
-            }
-            
+        ListNode head(0);
+        ListNode *cur = &head;
+        while(!heap.empty())
+        {
+            ListNode *neighbor = heap.top();
+            heap.pop();
+            cur->next = neighbor;
             cur = cur->next;
+            
+            if (neighbor->next)
+            {
+                heap.push(neighbor->next);
+            }
         }
         
         return head.next;

@@ -285,7 +285,7 @@ This is a **continually updated, open source** project.
 ## Heap
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 23.merge-k-sorted-lists | [cpp](./leetcode/23.merge-k-sorted-lists.cpp) | O(N * LogK) | - | Hard | TODO: merge-sort, bottom-up
+| $023.merge-k-sorted-lists | [cpp](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | O(N * LogK) | O(K) | Hard | | Perfect
 | 295.find-median-from-data-stream | [cpp](./leetcode/295.find-median-from-data-stream.cpp), [python](./leetcode/295.find-median-from-data-stream.py) | O(NLogN) | O(N) | Medium | | Cool
 | 378.kth-smallest-element-in-a-sorted-matrix | [cpp](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | O((K + M) * LogM) | O(M) | Medium | TODO: binary-search, O(N) solution |
 | 407.trapping-rain-water-ii | [cpp](./leetcode/407.trapping-rain-water-ii.cpp), [python](./leetcode/407.trapping-rain-water-ii.py) | O(M * N * Log(M + N)) | O(M + N) | Hard/SSS | | Bad
