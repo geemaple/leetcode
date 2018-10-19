@@ -16,23 +16,22 @@ public:
         }
         
         vector<int> res;
-        stack<TreeNode *> s;
-        TreeNode *node = root;
+        stack<TreeNode *> st;
+        TreeNode *cur = root;
         
-        while (!s.empty() || node) {
+        while (!st.empty() || cur) {
             
-            if (node)
+            while(cur)
             {
-                s.push(node);
-                node = node->left;
+                st.push(cur);
+                cur = cur->left;
             }
-            else
-            {
-                node = s.top();
-                s.pop();
-                res.push_back(node->val);
-                node = node->right;
-            }
+
+            cur = st.top();
+            st.pop();
+            res.push_back(cur->val);
+
+            cur = cur->right;
         }
         
         return res;
