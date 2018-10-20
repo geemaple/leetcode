@@ -215,6 +215,7 @@ This is a **continually updated, open source** project.
 | 257.binary-tree-paths | [cpp](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O(N) | O(1) | Easy || Perfect
 | 285.inorder-successor-in-bst | [cpp](./leetcode/285.inorder-successor-in-bst.cpp), [python](./leetcode/285.inorder-successor-in-bst.py) | O(H) | O(1) | Medium | BST | H = height of the tree
 | 286.walls-and-gates | [cpp](./leetcode/286.walls-and-gates.cpp), [python](./leetcode/286.walls-and-gates.py) | O(M * N) | O(M * N) | Medium | BFS
+| 297.serialize-and-deserialize-binary-tree | [cpp](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O(N) | O(N) | Hard || Cool
 | 314.binary-tree-vertical-order-traversal | [cpp](./leetcode/314.binary-tree-vertical-order-traversal.cpp), [python](./leetcode/314.binary-tree-vertical-order-traversal.py) | O(V) | O(V) | Medium
 | 366.find-leaves-of-binary-tree | [cpp](./leetcode/366.find-leaves-of-binary-tree.cpp), [python](./leetcode/366.find-leaves-of-binary-tree.py) | O(V) | O(V) | Medium
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [cpp](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O(N) | O(1) | Medium || Perfect
