@@ -57,3 +57,43 @@ public:
         return uf.allConnnected();
     }
 };
+
+
+class Solution2 {
+public:
+    bool validTree(int n, vector<pair<int, int>>& edges) {
+        // write your code here
+        if (n != edges.size() + 1)
+        {
+            return false;
+        }
+        
+        unordered_map<int, vector<int>> graph;
+        for (auto i = 0; i < edges.size(); ++i)
+        {
+            graph[edges[i].first].push_back(edges[i].second);
+            graph[edges[i].second].push_back(edges[i].first);
+        }
+        
+        unordered_set<int> visted;
+        queue<int> q;
+        q.push(0);
+        
+        while(!q.empty())
+        {
+            int tmp = q.front();
+            q.pop();
+            visted.insert(tmp);
+            
+            for (auto neighbor: graph[tmp])
+            {
+                if (visted.count(neighbor) == 0)
+                {
+                    q.push(neighbor);
+                }
+            }
+        }
+        
+        return visted.size() == n;
+    }
+};

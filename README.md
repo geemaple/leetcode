@@ -220,7 +220,6 @@ This is a **continually updated, open source** project.
 | 314.binary-tree-vertical-order-traversal | [cpp](./leetcode/314.binary-tree-vertical-order-traversal.cpp), [python](./leetcode/314.binary-tree-vertical-order-traversal.py) | O(V) | O(V) | Medium
 | 366.find-leaves-of-binary-tree | [cpp](./leetcode/366.find-leaves-of-binary-tree.cpp), [python](./leetcode/366.find-leaves-of-binary-tree.py) | O(V) | O(V) | Medium
 | 426.convert-binary-search-tree-to-sorted-doubly-linked-list | [cpp](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O(N) | O(1) | Medium || Perfect
-| 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 538.convert-bst-to-greater-tree | [cpp](./leetcode/538.convert-bst-to-greater-tree.cpp), [python](./leetcode/538.convert-bst-to-greater-tree.py) | O(V) | O(1) | Easy 
 
 ## Graph Traversal
@@ -228,9 +227,11 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
+| 133.clone-graph | [cpp](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | O(V + E) | O(N) | Medium || Great
 | 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(M x N) | Medium | BFS/DFS | union-find
 | 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp), [python](./leetcode/207.course-schedule.py) | O(V + E) | O(V + E) | Medium | | Perfect
 | 210.course-schedule-ii | [cpp](./leetcode/210.course-schedule-ii.cpp) | O(V + E) | Medium | topological-sort
+| 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 444.sequence-reconstruction | [cpp](./leetcode.444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | Medium | topological-sort
 
 ## Backtracking
@@ -367,9 +368,9 @@ This is a **continually updated, open source** project.
 | $406.queue-reconstruction-by-height | [cpp](./leetcode/406.queue-reconstruction-by-height.cpp), [python](./leetcode/406.queue-reconstruction-by-height.py) | O(N^2) | O(1) | Medium/S++ | Sort Multiple Keys
 
 ## Union Find
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 261.graph-valid-tree | [cpp](./leetcode/261.graph-valid-tree.cpp), [python](./leetcode/261.graph-valid-tree.py) | O(N) | O(N) | Medium | BFS/DFS | | N = len(edges)
+| 261.graph-valid-tree | [cpp](./leetcode/261.graph-valid-tree.cpp), [python](./leetcode/261.graph-valid-tree.py) | O(E) | O(N) | Medium | BFS/DFS | Perfect
 | 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N) | O(M * N) | Hard | | N = len(positions)
 | 721.accounts-merge | [cpp](./leetcode/721.accounts-merge.cpp), [python](./leetcode/721.accounts-merge.py) | O(M * N) | O(M * N) | Medium |
 

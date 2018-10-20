@@ -39,3 +39,32 @@ class Solution(object):
             uf.union(e[0], e[1])
 
         return uf.all_connected()
+
+
+class Solution2(object):
+    def validTree(self, n, edges):
+        """
+        :type n: int
+        :type edges: List[List[int]]
+        :rtype: bool
+        """
+        if n != 1 + len(edges):
+            return False
+        
+        graph = {i : [] for i in range(n)}
+        for i in range(len(edges)):
+            graph[edges[i][0]].append(edges[i][1])
+            graph[edges[i][1]].append(edges[i][0])
+            
+        visted = set()
+        queue = [0]
+        
+        while len(queue) > 0:
+            tmp = queue.pop(0)
+            visted.add(tmp)
+            
+            for neighbor in graph[tmp]:
+                if neighbor not in visted:
+                    queue.append(neighbor)
+                    
+        return len(visted) == n
