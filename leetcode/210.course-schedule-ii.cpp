@@ -1,41 +1,46 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) {
+        
         unordered_map<int, vector<int>> graph;
-        unordered_map<int, int> indegree;
-        for (auto course: prerequisites)
+        unordered_map<int, int>indegree;
+        for (auto i = 0; i < prerequisites.size(); ++i)
         {
-            graph[course.second].push_back(course.first);
-            indegree[course.first] += 1;
+            indegree[prerequisites[i].first] ++;
+            graph[prerequisites[i].second].push_back(prerequisites[i].first);
         }
         
-        queue<int> starts;
-        vector<int> res;
+        queue<int> q;
         for (auto i = 0; i < numCourses; ++i)
         {
             if (indegree.count(i) == 0)
             {
-                starts.push(i);
+                q.push(i);
             }
         }
         
-        while (!starts.empty()) {
-            int course = starts.front();
-            starts.pop();
-            res.push_back(course);
+        vector<int> res;
+        
+        while (!q.empty())
+        {
+            int tmp = q.front();
+            q.pop();
             
-            vector<int> nodes = graph[course];
-            for (auto i = 0; i < nodes.size(); ++i)
+            res.push_back(tmp);
+            
+            for (auto neighbor : graph[tmp])
             {
-                indegree[nodes[i]] -= 1;
-                if (indegree[nodes[i]] == 0)
+                if (indegree.count(neighbor) > 0)
                 {
-                    starts.push(nodes[i]);
-                    indegree.erase(nodes[i]);
+                    indegree[neighbor] --;
+                    if (indegree[neighbor] == 0)
+                    {
+                        q.push(neighbor);
+                    }
                 }
             }
         }
         
-        return indegree.empty() ? res : vector<int>();
+        return res.size() == numCourses ? res : vector<int>();
     }
 };
