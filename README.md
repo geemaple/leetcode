@@ -237,8 +237,6 @@ This is a **continually updated, open source** project.
 ## Backtracking
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 39.combination-sum | [python](./leetcode/39.combination-sum.py) | ??? | Medium | DFS |
-| 40.combination-sum-ii | [python](./leetcode/40.combination-sum-ii.py) | ??? | Medium | DFS |
 | 46.permutations | [python](./leetcode/46.permutations.py) | ??? | Medium | DFS |
 | 47.permutations-ii | [python](./leetcode/47.permutations-ii.py) | ??? | Medium | DFS |
 | 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
@@ -250,7 +248,9 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 17.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium | Time in [3 ^ N, 4 ^ N]
+| 017.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium | Time in [3 ^ N, 4 ^ N]
+| 039.combination-sum | [cpp](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | O(N ^ K), k=target/min | O(K) | Medium | DFS | Perfect
+| 040.combination-sum-ii | [cpp](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O(2^K), k=target/min | O(K) | Medium | DFS || Perfect
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(M * N * L * L) | O(MN) | Medium | DFS | L = length of words
 
 ## Hash Table
