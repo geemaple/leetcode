@@ -78,3 +78,43 @@ class Solution(object):
                 end = mid
                 
         return end if self.checkCol(image, end, topBoundry, bottomBoundry) else start
+
+# BFS
+class Solution2(object):
+    def minArea(self, image, x, y):
+        """
+        :type image: List[List[str]]
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        top, bottom = x, x
+        left, right = y, y
+        
+        q = []
+        visited = set()
+        q.append((x, y))
+        visited.add((x, y))
+        
+        directions = [[0, -1], [-1, 0], [0, 1], [1, 0]]
+        
+        while len(q) > 0:
+            point = q.pop(0)
+            
+            top = min(top, point[0])
+            bottom = max(bottom, point[0])
+            left = min(left, point[1])
+            right = max(right, point[1])
+
+            for i in range(4):
+                new_x = point[0] + directions[i][0]
+                new_y = point[1] + directions[i][1]
+            
+                if (self.in_bound(image, new_x, new_y) and image[new_x][new_y] == '1') and (new_x, new_y) not in visited:
+                    visited.add((new_x, new_y))
+                    q.append((new_x, new_y))
+        
+        return (bottom - top + 1) * (right - left + 1)
+    
+    def in_bound(self, image, x, y):
+        return 0 <= x < len(image) and 0 <= y < len(image[x])
