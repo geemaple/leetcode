@@ -228,11 +228,11 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
 | 133.clone-graph | [cpp](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | O(V + E) | O(N) | Medium || Great
-| 200.number-of-islands | [python](./leetcode/200.number-of-islands.py) | O(M x N) | Medium | BFS/DFS | union-find
+| 200.number-of-islands | [cpp](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | O(MN) | O(MN) | Medium | BFS/DFS | union-find | Bad
 | 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp), [python](./leetcode/207.course-schedule.py) | O(V + E) | O(V + E) | Medium | | Perfect
 | 210.course-schedule-ii | [cpp](./leetcode/210.course-schedule-ii.cpp), [python](./leetcode/210.course-schedule-ii.py) | O(V + E) | O(V) | Medium | topological-sort | Awesome
 | 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
-| 444.sequence-reconstruction | [cpp](./leetcode.444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | Medium | topological-sort
+| 444.sequence-reconstruction | [cpp](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | O(V) | Medium | topological-sort || Bad
 
 ## Backtracking
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |

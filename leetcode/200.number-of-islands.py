@@ -31,7 +31,7 @@ class Solution(object):
             for j in range(column):
                 if grid[i][j] == '1':
                     # breadth first search and mark it with '0'
-                    self.bfs_search(grid, (i, j), visted)
+                    self.bfs(grid, (i, j), visted)
                     result += 1
 
         return result
@@ -48,7 +48,7 @@ class Solution(object):
         else:
             return False
 
-    def bfs_search(self, graph, point, visted):
+    def bfs(self, graph, point, visted):
         # direction = <top, left, bottom, right>
         directionX = [-1, 0, 1, 0]
         directionY = [0, -1, 0, 1]
@@ -65,16 +65,3 @@ class Solution(object):
 
                 if self.check(graph, neighbor, visted):
                     queue.append(neighbor)
-
-    def dfs_search(self, graph, point, visted):
-        # direction = <top, left, bottom, right>
-        directionX = [-1, 0, 1, 0]
-        directionY = [0, -1, 0, 1]
-
-        x, y = point
-        graph[x][y] = '0'
-        
-        for i in range(4):
-            neighbor = ((x + directionX[i]), (y + directionY[i]))
-            if self.check(graph, neighbor, visted):
-                self.dfs_search(graph, neighbor, visted)

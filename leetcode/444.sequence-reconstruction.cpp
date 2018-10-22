@@ -21,11 +21,11 @@ public:
         
         queue<int> q;
         vector<int> res;
-        for (auto it = nodes.begin(); it != nodes.end(); ++it)
+        for (auto n : nodes)
         {
-            if (indegree.count(*it) == 0)
+            if (indegree.count(n) == 0)
             {
-                q.push(*it);
+                q.push(n);
             }
         }
         
