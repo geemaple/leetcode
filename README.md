@@ -241,17 +241,17 @@ This is a **continually updated, open source** project.
 | 47.permutations-ii | [python](./leetcode/47.permutations-ii.py) | ??? | Medium | DFS |
 | 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
-| 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | Medium/S-- | DFS | bit-manipulation / iterative
-| 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | Medium/S++ | DFS
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS + DFS |
 | 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 017.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium | Time in [3 ^ N, 4 ^ N]
-| 039.combination-sum | [cpp](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | O(N ^ K), k=target/min | O(K) | Medium | DFS | Perfect
+| 017.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium ||
+| 039.combination-sum | [cpp](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | O(N^K), k=target/min | O(K) | Medium | DFS | Perfect
 | 040.combination-sum-ii | [cpp](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O(2^K), k=target/min | O(K) | Medium | DFS || Perfect
+| 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | O(N) | Medium/S-- | DFS/Bit | Perfect
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(M * N * L * L) | O(MN) | Medium | DFS | L = length of words
+| 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | O(N) | Medium/S++ | DFS | Perfect
 
 ## Hash Table
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |

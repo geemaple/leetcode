@@ -2,30 +2,25 @@
 // O(N * 2^N); O(2^N) solusions muliply each need O(N) to construct a array result
 class Solution {
 private:
-    void dfs(vector<int>& nums, int start, vector<int>& ans, vector<vector<int>>& results)
+    void helper(vector<int>& nums, int start, vector<int> &ans, vector<vector<int>>& res)
     {
-        results.push_back(ans);
-
+        res.push_back(ans);
+        
         for (auto i = start; i < nums.size(); ++i)
         {
             ans.push_back(nums[i]);
-            dfs(nums, i + 1, ans, results);
+            helper(nums, i + 1, ans, res);
             ans.pop_back();
         }
     }
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        
-        if (nums.size() == 0)
-        {
-            return vector<vector<int>>(1, vector<int>());
-        }
-
-        vector<vector<int>> results;
+        sort(nums.begin(), nums.end());
+        vector<vector<int>> res;
         vector<int> ans;
-        dfs(nums, 0, ans, results);
-
-        return results;
+        
+        helper(nums, 0, ans, res);
+        return res;
     }
 };
 
