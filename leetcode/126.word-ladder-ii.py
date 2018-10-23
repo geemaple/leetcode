@@ -31,7 +31,6 @@ class Solution(object):
         distance = distant_map.get(word, float('inf'))
         neighbors = self.get_neighbors(word, visted, distant_map)
     
-        print word, neighbors
         for neighbor in neighbors:
             if distant_map[neighbor] >= distance:
                 continue

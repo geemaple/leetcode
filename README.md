@@ -200,16 +200,16 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 94.binary-tree-inorder-traversal | [cpp](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O(N) | O(1) | Medium || Perfect
+| 94.binary-tree-inorder-traversal | [cpp](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O(N) | O(1) | Medium/S++ || Perfect
 | 102.binary-tree-level-order-traversal | [cpp](./leetcode/102.binary-tree-level-order-traversal.cpp), [python](./leetcode/102.binary-tree-level-order-traversal.py) | O(N) | O(H) | Medium | | Perfect
 | 103.binary-tree-zigzag-level-order-traversal | [cpp](./leetcode/103.binary-tree-zigzag-level-order-traversal.cpp), [python](./leetcode/103.binary-tree-zigzag-level-order-traversal.py) | O(N) | O(N) | Medium || Perfect
 | 107.binary-tree-level-order-traversal-ii | [cpp](./leetcode/107.binary-tree-level-order-traversal-ii.cpp), [python](./leetcode/107.binary-tree-level-order-traversal-ii.py) | O(N) | O(N) | Easy || Perfect
 | 114.flatten-binary-tree-to-linked-list | [cpp](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O(N) | O(1) | Medium || Cool
 | 130.surrounded-regions | [cpp](./leetcode/130.surrounded-regions.cpp), [python](./leetcode/130.surrounded-regions.py) | O(MN) | O(M & N) | Medium | BFS
-| 144.binary-tree-preorder-traversal | [cpp](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O(N) | O(1) | Medium || Perfect
-| 145.binary-tree-postorder-traversal | [cpp](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O(N) | O(1) | Hard || Perfect
+| 144.binary-tree-preorder-traversal | [cpp](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O(N) | O(1) | Medium/S-- || Perfect
+| 145.binary-tree-postorder-traversal | [cpp](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O(N) | O(1) | Hard/SSS || Perfect
 | 156.binary-tree-upside-down | [cpp](./leetcode/156.binary-tree-upside-down.cpp), [python](./leetcode/156.binary-tree-upside-down.py) | O(V) | O(1) | Medium
-| 173.binary-search-tree-iterator | [cpp](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O(1) | O(H) | Medium || Perfect
+| 173.binary-search-tree-iterator | [cpp](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O(1) | O(H) | Medium/S-- || Perfect
 | 257.binary-tree-paths | [cpp](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O(N) | O(1) | Easy || Perfect
 | 285.inorder-successor-in-bst | [cpp](./leetcode/285.inorder-successor-in-bst.cpp), [python](./leetcode/285.inorder-successor-in-bst.py) | O(H) | O(1) | Medium | BST | H = height of the tree
 | 286.walls-and-gates | [cpp](./leetcode/286.walls-and-gates.cpp), [python](./leetcode/286.walls-and-gates.py) | O(MN) | O(MN) | Medium | BFS
@@ -223,7 +223,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 127.word-ladder | [python](./leetcode/127.word-ladder.py) | O(N * L^2) | Medium | BFS |
+| 127.word-ladder | [cpp](./leetcode/127.word-ladder.cpp), [python](./leetcode/127.word-ladder.py) | O(N^2 * L^2) | O(N) | Medium/S++ | BFS | Bad |
 | 133.clone-graph | [cpp](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | O(V + E) | O(N) | Medium || Great
 | 200.number-of-islands | [cpp](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | O(MN) | O(MN) | Medium | BFS/DFS | union-find | Bad
 | 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp), [python](./leetcode/207.course-schedule.py) | O(V + E) | O(V + E) | Medium | | Perfect
@@ -232,9 +232,6 @@ This is a **continually updated, open source** project.
 | 444.sequence-reconstruction | [cpp](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | O(V) | Medium | topological-sort || Bad
 
 ## Backtracking
-| Problem    | Solution    | Time    | Difficulty    | Note   | Grade   |
-| -----------| ------------| --------| --------------| -------| --------|
-| 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS + DFS |
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -248,6 +245,7 @@ This is a **continually updated, open source** project.
 | 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | O(N) | Medium | DFS/Bit | Perfect
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(MN * L^2), L = length of words | O(MN) | Medium | DFS |
 | 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | O(N) | Medium/S-- | DFS | Perfect
+| 126.word-ladder-ii | [cpp](./leetcode/126.word-ladder-ii.cpp), [python](./leetcode/126.word-ladder-ii.py) | - | O(N) | Hard/SSS | DFS Pruning | Awesome
 | 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
 ## Hash Table
@@ -377,7 +375,7 @@ This is a **continually updated, open source** project.
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | O(N * L) | Medium | - | L = len(word), N = number of words |
 | 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | O(N * L) | Medium/S-- | DFS | L = len(word), N = count(words)
 | 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(MN), O(K * L)) | Hard | DFS | K = number of words, L = avg length of words
-| 425.word-squares | [cpp](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | O(2^N) | O(NL) | Hard/SSS | DFS Pruning | | L = len(word), N = count(word)
+| 425.word-squares | [cpp](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | O(-) | O(NL) | Hard/SSS | DFS Pruning | | L = len(word), N = count(word)
 | 677.map-sum-pairs | [cpp](./leetcode/677.map-sum-pairs.cpp), [python](./leetcode/677.map-sum-pairs.py) | O(L), O(KL) | O(N * L) | Medium | | L = length of input, k = number of items found|
 
 ## Other
