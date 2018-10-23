@@ -1,64 +1,48 @@
 class Solution(object):
+    def __init__(self):
+        self.is_palindrome = None
+
+    def pre_build(self, s):
+
+        size = len(s)
+        self.is_palindrome = [[False for _ in range(size)] for _ in range(size)]
+
+        for t in range(size):
+            i = j = t
+            while i >= 0 and j < size and s[i] == s[j]:
+                self.is_palindrome[i][j] = True
+                i -= 1
+                j += 1
+
+            i = t
+            j = t + 1
+            while i >= 0 and j < size and s[i] == s[j]:
+                self.is_palindrome[i][j] = True
+                i -= 1
+                j += 1
+
     def partition(self, s):
         """
         :type s: str
         :rtype: List[List[str]]
         """
 
-        if s is None:
-            return []    
-
+        self.pre_build(s)
         results = []
-        partitions = []
-        self.helper(s, partitions, results, 0)
+        ans = []
+        self.helper(s, 0, ans, results)
         return results
 
-    def helper(self, s, partitions, results, start):
+    def helper(self, s, start, ans, results):
         
         if start == len(s):
-            results.append(list(partitions))
+            results.append(list(ans))
 
         for i in range(start, len(s)):
-            sub = s[start: i + 1]
-            if not self.is_palindrome(sub):
+    
+            if not self.is_palindrome[start][i]:
                 continue
 
-            partitions.append(sub)
-            self.helper(s, partitions, results, i + 1)
-            partitions.pop()
-
-
-    def is_palindrome(self, part):
-        length = len(part)
-        if length <= 1:
-            return True
-        
-        for i in range(length):
-            if part[i] != part[length - 1 - i]:
-                return False
-
-        return True
-
-    # since is_palindrome func is called most,
-    # we can optimize this with a prebuit matrix
-    def build_matrix(self, s):
-
-        def expand(matrix, begin, end):
-            # A palindrome added the SAME char to both sides is aslo a valid palindrome
-            while (begin - 1 >= 0 and end + 1 <= size):
-                matrix[begin - 1][end + 1] = matrix[begin][end] & int(s[begin - 1] == s[end])
-                begin = begin - 1
-                end = end + 1
- 
-        size = len(s)
-        # (n + 1) * n
-        matrix = [[0 for _ in range(size + 1)] for _ in range(size)]
-
-        for i in range(size):
-            # s[i:i] = '' 
-            matrix[i][i] = 1
-            expand(matrix, i, i)
-            if i + 1 <= size:
-                # s[i: i + 1] = 'a single char' 
-                matrix[i][i + 1] = 1
-                expand(matrix, i, i + 1)
+            ans.append(s[start: i + 1])
+            self.helper(s, i + 1, ans, results)
+            ans.pop()

@@ -234,10 +234,8 @@ This is a **continually updated, open source** project.
 ## Backtracking
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 51.n-queens | [python](./leetcode/51.n-queens.py) | ??? | Hard | DFS |
 | 52.n-queens-ii | [python](./leetcode/52.n-queens-ii.py) | ??? | Hard | DFS |
 | 126.word-ladder-ii | [python](./leetcode/126.word-ladder-ii.py) | O((V+E) * L^2) | Hard | BFS + DFS |
-| 131.palindrome-partitioning | [python](./leetcode/131.palindrome-partitioning.py) | ??? | Medium | DFS
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -246,9 +244,11 @@ This is a **continually updated, open source** project.
 | 040.combination-sum-ii | [cpp](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O(2^K), k=target/min | O(K) | Medium/S-- | DFS  | Perfect
 | 046.permutations | [cpp](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O(N * N!) | O(N) | Medium | DFS | Perfect
 | 047.permutations-ii | [cpp](./leetcode/47.permutations-ii.cpp), [python](./leetcode/47.permutations-ii.py) | O(N * N!) | O(N) | Medium/S++ | DFS | Perfect
+| 051.n-queens | [cpp](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | O(N^N) | O(N) | Hard | DFS | | Awesome
 | 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | O(N) | Medium | DFS/Bit | Perfect
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(MN * L^2), L = length of words | O(MN) | Medium | DFS |
 | 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | O(N) | Medium/S-- | DFS | Perfect
+| 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
 ## Hash Table
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
