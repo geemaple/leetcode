@@ -72,21 +72,6 @@ This is a **continually updated, open source** project.
 
 ## Array and String
 
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
-| 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
-| 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
-| 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
-| 485.max-consecutive-ones | [cpp](./leetcode/485.max-consecutive-ones.cpp) | O(N) | Easy
-| 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(MN) | Medium
-| 560.subarray-sum-equals-k | [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | Medium
-| 561.array-partition-i | [cpp](./leetcode/561.array-partition-i.cpp) | O(N * logN) | Easy
-| 724.find-pivot-index | [cpp](./leetcode/724.find-pivot-index.cpp) | O(N) | Easy
-| 747.largest-number-at-least-twice-of-others | [cpp](./leetcode/747.largest-number-at-least-twice-of-others) | O(N) |Easy
-| 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | string | TODO: Rabin-Karp Algorithm, KMP algorithm
-| 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy | string |
-
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
@@ -104,6 +89,20 @@ This is a **continually updated, open source** project.
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
 | 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy || Perfect
 
+| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
+| -----------| ------------| --------| --------------| -------| --------|
+| 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
+| 66.plus-one | [cpp](./leetcode/66.plus-one.cpp) | O(N) | Easy
+| 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp) | O(N^2) | Easy
+| 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
+| 485.max-consecutive-ones | [cpp](./leetcode/485.max-consecutive-ones.cpp) | O(N) | Easy
+| 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(MN) | Medium
+| 560.subarray-sum-equals-k | [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | Medium
+| 561.array-partition-i | [cpp](./leetcode/561.array-partition-i.cpp) | O(N * logN) | Easy
+| 724.find-pivot-index | [cpp](./leetcode/724.find-pivot-index.cpp) | O(N) | Easy
+| 747.largest-number-at-least-twice-of-others | [cpp](./leetcode/747.largest-number-at-least-twice-of-others) | O(N) |Easy
+| 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N^2) | Easy | string | TODO: Rabin-Karp Algorithm, KMP algorithm
+| 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy | string |
 
 ## Two Pointers
 
@@ -146,10 +145,13 @@ This is a **continually updated, open source** project.
 
 ## Linked List
 
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 025.reverse-nodes-in-k-group | [cpp](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | O(1) | Hard/S-- | | Perfect
+
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
 | 21.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | Easy |
-| 25.reverse-nodes-in-k-group | [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | Hard |
 | 61.rotate-list | [python](./leetcode/61.rotate-list.py) | O(N) | Medium |
 | 86.partition-list | [python](./leetcode/86.partition-list.py) | O(N) | Medium |
 | 92.reverse-linked-list-ii | [python](./leetcode/92.reverse-linked-list-ii.py) | O(N) | Medium |
@@ -189,7 +191,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 4.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M + N)) | Hard 
-| 098.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | O(1) | Medium | Cool
+| 098.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | O(1) | Medium || Cool
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | O(1) | Medium || Perfect
