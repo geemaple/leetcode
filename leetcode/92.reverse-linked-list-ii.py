@@ -37,5 +37,3 @@ class Solution(object):
             
 
         return new_head.next
-        
-        

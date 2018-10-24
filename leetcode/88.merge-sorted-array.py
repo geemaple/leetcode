@@ -7,22 +7,19 @@ class Solution(object):
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
         """
-
-        k = m + n - 1
         left = m - 1
         right = n - 1
-
-        while (left >= 0 and right >= 0):
-            if (nums1[left] < nums2[right]):
-                nums1[k] = nums2[right]
-                right -= 1
-            else:
-                nums1[k] = nums1[left]
+        cur = len(nums1) - 1
+        
+        while left >= 0 or right >= 0:
+            left_val = nums1[left] if left >= 0 else float('-inf')
+            right_val = nums2[right] if right >= 0 else float('-inf')
+            
+            if (left_val > right_val):
+                nums1[cur] = left_val
                 left -= 1
-
-            k -= 1
-
-        while (right >= 0):
-            nums1[k] = nums2[right]
-            right -= 1
-            k -= 1
+            else:
+                nums1[cur] = right_val
+                right -= 1
+                
+            cur -= 1

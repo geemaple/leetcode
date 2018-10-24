@@ -16,13 +16,13 @@ private:
             return min(nums1[start1], nums2[start2]);
         }
         
-        int left = numeric_limits<int>::max();
+        int left = INT_MAX;
         if (start1 + kth / 2 - 1 < nums1.size())
         {
             left = nums1[start1 + kth / 2 - 1];
         }
         
-        int right = numeric_limits<int>::max();
+        int right = INT_MAX;
         if (start2 + kth / 2 - 1 < nums2.size())
         {
             right = nums2[start2 + kth / 2 - 1];
