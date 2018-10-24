@@ -87,6 +87,7 @@ This is a **continually updated, open source** project.
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
+| 560.subarray-sum-equals-k | [cpp](./leetcode/560.subarray-sum-equals-k.cpp), [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | O(N) | Medium || Great
 | 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy || Perfect
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
@@ -97,7 +98,6 @@ This is a **continually updated, open source** project.
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 485.max-consecutive-ones | [cpp](./leetcode/485.max-consecutive-ones.cpp) | O(N) | Easy
 | 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(MN) | Medium
-| 560.subarray-sum-equals-k | [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | Medium
 | 561.array-partition-i | [cpp](./leetcode/561.array-partition-i.cpp) | O(N * logN) | Easy
 | 724.find-pivot-index | [cpp](./leetcode/724.find-pivot-index.cpp) | O(N) | Easy
 | 747.largest-number-at-least-twice-of-others | [cpp](./leetcode/747.largest-number-at-least-twice-of-others) | O(N) |Easy
@@ -191,7 +191,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(M+N)) | O(1) |Hard/S++ | | Perfect
+| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(K)) | O(1) |Hard/SSS | binary-search | Perfect
 | 098.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | O(1) | Medium || Cool
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | O(1) | Easy || Perfect
@@ -399,6 +399,7 @@ This is a **continually updated, open source** project.
 | 091.minimum-adjustment-cost | [cpp](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | O((100^2)N) | O(100N) | Medium | dynamic-programming
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
+| 139.subarray-sum-closest | [cpp](./lintcode/139.subarray-sum-closest.cpp), [python](./lintcode/139.subarray-sum-closest.py) | O(NlogN) | O(N) | Medium | Subarray 
 | 183.wood-cut | [cpp](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | O(N * LogN) | O(1) | Medium/S-- | binary-search
 | 390.find-peak-element-ii | [cpp](./lintcode/390.find-peak-element-ii.cpp), [python](./lintcode/390.find-peak-element-ii.py) | O(M + N) | O(1) | Hard/SSS | binary-search
 | 391.number-of-airplanes-in-the-sky | [cpp](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python](./lintcode/391.number-of-airplanes-in-the-sky.py) | O(NlogN) | O(N) | Medium | sweep-line |

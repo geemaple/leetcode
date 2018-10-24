@@ -8,17 +8,16 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        count_map = {0: 1}
-        result = 0
-        total = 0
-
-        for num in nums:
-            total += num
-            num_to_check = total - k
-            result += count_map.get(num_to_check, 0)
-            count_map[total] = count_map.get(total, 0) + 1
-
-        return result
+        count_map = {k: 1}
+        count = 0
+        prefix_sum = 0
+        
+        for i in range(len(nums)):
+            prefix_sum += nums[i]
+            count += count_map.get(prefix_sum, 0)
+            count_map[prefix_sum + k] = count_map.get(prefix_sum + k, 0) + 1
+                
+        return count
 
 
 # ✘ Time Limit Exceeded
