@@ -64,6 +64,7 @@ This is a **continually updated, open source** project.
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
 
 ## Bit
+
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 136.single-number | [cpp](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O(N) | O(1) | Easy | xor | Perfect
@@ -116,8 +117,6 @@ This is a **continually updated, open source** project.
 | 076.minimum-window-substring | [cpp](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | O(N) | O(N) | Hard
 | 088.merge-sorted-array | [cpp](./leetcode/88.merge-sorted-array.cpp), [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | O(1) | Easy | | Perfect
 | 125.valid-palindrome | [cpp](./leetcode/125.valid-palindrome.cpp), [python](./leetcode/125.valid-palindrome.py) | O(N) | O(1) | Easy || Perfect
-| 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy || perfect
-| 142.linked-list-cycle-ii | [cpp](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | O(1) | Medium || Perfect
 | 159.longest-substring-with-at-most-two-distinct-characters | [cpp](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | O(N) | O(N) | Hard |
 | 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | O(1) | Easy || Perfect
 | 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp), [python](./leetcode/209.minimum-size-subarray-sum.py) | O(N) | O(1) | Medium |
@@ -138,10 +137,11 @@ This is a **continually updated, open source** project.
 | 18.4sum | [cpp](./leetcode/18.4sum.cpp), [python](./leetcode/18.4sum.py) | O(N^3) | Medium |
 | 19.remove-nth-node-from-end-of-list | [cpp](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
 | 75.sort-colors | [cpp](./leetcode/75.sort-colors.cpp) [python](./leetcode/75.sort-colors.py) | O(N) | Medium | counting-sort
-| 160.intersection-of-two-linked-lists | [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | linked-list
 
 
 ## Linked List
+
+> There actually no algorithm in linked list, but is really tricky to get it right
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -149,7 +149,10 @@ This is a **continually updated, open source** project.
 | 025.reverse-nodes-in-k-group | [cpp](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | O(1) | Hard/S-- | | Perfect
 | 086.partition-list | [cpp](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | O(N) | O(1) | Medium || Perfect
 | 092.reverse-linked-list-ii | [cpp](./leetcode/92.reverse-linked-list-ii.cpp), [python](./leetcode/92.reverse-linked-list-ii.py) | O(N) | O(1) | Medium || Perfect
-| 206.reverse-linked-list | [cpp](./leetcode/206.reverse-linked-list.cpp), [python](./leetcode/206.reverse-linked-list.py) | O(N) | O(1) | Easy || Perfect
+| 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy || perfect
+| 142.linked-list-cycle-ii | [cpp](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | O(1) | Medium/S++ || Perfect
+| 160.intersection-of-two-linked-lists | [cpp](./leetcode/160.intersection-of-two-linked-lists.cpp), [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | two-pointers | Perfect
+| 206.reverse-linked-list | [cpp](./leetcode/206.reverse-linked-list.cpp), [python](./leetcode/206.reverse-linked-list.py) | O(N) | O(1) | Easy/S++ || Perfect
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
