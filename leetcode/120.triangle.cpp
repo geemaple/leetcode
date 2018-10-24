@@ -2,6 +2,12 @@
 class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
+
+        if (triangle.size() == 0 || triangle[0].size() == 0)
+        {
+            return 0;
+        }
+
         int size = (int)(triangle.size());
         vector<int> table(size, 0);
         

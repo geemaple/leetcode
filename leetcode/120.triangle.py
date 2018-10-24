@@ -5,23 +5,23 @@
 # (3, 0), (3, 1), (3, 2), (3, 3)
 
 # DP bottom-up O(N^2)
-# for each node f[parent] = min(f[left-child], f[right-child]) + val
+# f[i][j] = min(f[i + 1][j], f[i + 1][i + 1]) + triangle[i][j]
 class Solution(object):
     def minimumTotal(self, triangle):
         """
         :type triangle: List[List[int]]
         :rtype: int
         """
+        if len(triangle) == 0 or len(triangle[0]) == 0:
+            return 0
+        
         size = len(triangle)
-        table = [0 for _ in range(size)]
+        table = triangle[-1][:]
         
-        for j in range(size):
-            table[j] = triangle[size - 1][j]
-            
         for i in range(size - 2, -1, -1):
-            for j in range(i + 1):
+            for j in range(len(triangle[i])):
                 table[j] = min(table[j], table[j + 1]) + triangle[i][j]
-        
+                
         return table[0]
         
 
