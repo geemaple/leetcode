@@ -141,7 +141,7 @@ This is a **continually updated, open source** project.
 
 ## Linked List
 
-> There actually no algorithm in linked list, but is really tricky to get it right
+> There is actually no algorithm in linked list question, but is really tricky to get one right
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
