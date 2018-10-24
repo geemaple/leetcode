@@ -119,7 +119,7 @@ This is a **continually updated, open source** project.
 | 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy || perfect
 | 142.linked-list-cycle-ii | [cpp](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | O(1) | Medium || Perfect
 | 159.longest-substring-with-at-most-two-distinct-characters | [cpp](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | O(N) | O(N) | Hard |
-| 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | O(1) | Easy |
+| 167.two-sum-ii-input-array-is-sorted | [cpp](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O(N) | O(1) | Easy || Perfect
 | 209.minimum-size-subarray-sum | [cpp](./leetcode/209.minimum-size-subarray-sum.cpp), [python](./leetcode/209.minimum-size-subarray-sum.py) | O(N) | O(1) | Medium |
 | 234.palindrome-linked-list | [cpp](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | O(N) | O(1) | Easy | | maybe Harder
 | 283.move-zeroes | [cpp](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | O(N) | O(1) | Easy || Perfect
@@ -250,12 +250,12 @@ This is a **continually updated, open source** project.
 | 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
 ## Hash Table
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 1.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | Easy |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 001.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | O(N) | Easy || Perfect
 | 36.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp) | O(N ^ 2) | Medium | array-indexes
 | 49.group-anagrams | [cpp](./leetcode/49.group-anagrams.cpp) | O(N * k * Logk) | Medium
-| 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | Easy
+| 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | O(N) | Easy || Awesome
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 217.contains-duplicate | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 219.contains-duplicate-ii | [cpp](./leetcode/219.contains-duplicate-ii.cpp) | O(N) | Easy

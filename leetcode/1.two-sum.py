@@ -5,14 +5,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        num_map = {}
-
+        table = {}
+        
         for i in range(len(nums)):
-            num = nums[i]
-
-            if target - num in num_map:
-                return [num_map[target - num], i]
-
-            num_map[num] = i
-
-        return [None, None]
+            
+            if nums[i] in table:
+                return [table[nums[i]], i]
+            
+            table[target - nums[i]] = i

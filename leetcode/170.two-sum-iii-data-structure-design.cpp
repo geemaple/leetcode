@@ -1,7 +1,6 @@
 class TwoSum {
 private:
-    vector<int> list;
-    
+    unordered_map<int, int> table;
 public:
     /** Initialize your data structure here. */
     TwoSum() {
@@ -10,31 +9,21 @@ public:
     
     /** Add the number to an internal data structure.. */
     void add(int number) {
-        list.push_back(number);
+        table[number]++;
     }
     
     /** Find if there exists any pair of numbers which sum is equal to the value. */
     bool find(int value) {
-        
-        bool res = false;
-        unordered_set<int> set;
-        for (int i = 0; i < list.size(); ++i){
-            int another = value - list[i];
-            if (set.count(another) > 0){
+    
+        for (auto it: table){
+            
+            int count = table[value - it.first];
+            if (count > 1 || (count == 1 && it.first != value - it.first))
+            {
                 return true;
             }
-            
-            set.insert(list[i]);
         }
         
-        
-        return res;
+        return false;
     }
 };
-
-/**
- * Your TwoSum object will be instantiated and called as such:
- * TwoSum obj = new TwoSum();
- * obj.add(number);
- * bool param_2 = obj.find(value);
- */
