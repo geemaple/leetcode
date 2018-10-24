@@ -11,28 +11,24 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        
         head = ListNode(0)
         cur = head
-
-        while l1 is not None and l2 is not None:
-            if l1.val > l2.val:
-                cur.next = l2
-                cur = cur.next
-
-                l2 = l2.next
-
+        
+        left = l1
+        right = l2
+        
+        while (left is not None or right is not None):
+            left_val = left.val if left is not None else float('inf')
+            right_val = right.val if right is not None else float('inf')
+            
+            if (left_val < right_val):
+                cur.next = left
+                left = left.next
             else:
-                cur.next = l1
-                cur = cur.next
-
-                l1 = l1.next
-
-        rest = l1 if l1 is not None else l2
-        while (rest is not None):
-            cur.next = rest
+                cur.next = right
+                right = right.next
+                
             cur = cur.next
-
-            rest = rest.next
-
+            
         return head.next
+        

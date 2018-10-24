@@ -147,19 +147,19 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 021.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | O(1) | Easy || Perfect
 | 025.reverse-nodes-in-k-group | [cpp](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | O(1) | Hard/S-- | | Perfect
+| 086.partition-list | [cpp](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | O(N) | O(1) | Medium || Perfect
+| 206.reverse-linked-list | [cpp](./leetcode/206.reverse-linked-list.cpp), [python](./leetcode/206.reverse-linked-list.py) | O(N) | O(1) | Easy || Perfect
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 21.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | Easy |
-| 61.rotate-list | [python](./leetcode/61.rotate-list.py) | O(N) | Medium |
-| 86.partition-list | [python](./leetcode/86.partition-list.py) | O(N) | Medium |
 | 92.reverse-linked-list-ii | [python](./leetcode/92.reverse-linked-list-ii.py) | O(N) | Medium |
+| 61.rotate-list | [python](./leetcode/61.rotate-list.py) | O(N) | Medium |
 | 138.copy-list-with-random-pointer | [python](./leetcode/138.copy-list-with-random-pointer.py) | O(N) | Medium
 | 143.reorder-list | [python](./leetcode/143.reorder-list.py) | O(N) | Medium |
 | 148.sort-list | [python](./leetcode/148.sort-list.py) | O(N * logN) | Medium |
 | 203.remove-linked-list-elements | [python](./leetcode/203.remove-linked-list-elements.py) | O(N) | Easy
-| 206.reverse-linked-list | [python](./leetcode/206.reverse-linked-list.py) | O(N) | Easy |
 | 237.delete-node-in-a-linked-list | [python](./leetcode/237.delete-node-in-a-linked-list.py) | O(1) | Easy
 | 328.odd-even-linked-list | [python](./leetcode/328.odd-even-linked-list.py) | O(N) | Medium
 
