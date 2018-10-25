@@ -13,17 +13,18 @@ class Solution(object):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
-            new_target = target - nums[i]
-
-            self.twoSum(nums, i + 1, len(nums) - 1, new_target, results)
+            self.twoSum(nums, i + 1, nums[i], 0, results)
             
         return results
 
-    def twoSum(self, nums, left, right, target, results):
+    def twoSum(self, nums, left, one, target, results):
         
+        right = len(nums) - 1
+
         while(left < right):
-            if nums[left] + nums[right] == target:
-                results.append([-target, nums[left], nums[right]])
+            val = one + nums[left] + nums[right]
+            if val == target:
+                results.append([one, nums[left], nums[right]])
                 left += 1
                 right -= 1
 
@@ -33,7 +34,7 @@ class Solution(object):
                 while(left < right and nums[left] == nums[left - 1]):
                         left += 1
          
-            elif nums[left] + nums[right] < target:
+            elif val < target:
                 left += 1
             else:
                 right -= 1
