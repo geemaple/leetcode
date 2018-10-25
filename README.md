@@ -114,10 +114,12 @@ This is a **continually updated, open source** project.
 | 015.3sum | [cpp](./leetcode/15.3sum.cpp), [python](./leetcode/15.3sum.py) | O(N^2) | O(1) | Medium/S++ | | Awesome
 | 016.3sum-closest | [cpp](./leetcode/16.3sum-closest.cpp), [python](./leetcode/16.3sum-closest.py) | O(N^2) | O(1) | Medium || Cool
 | 018.4sum | [cpp](./leetcode/18.4sum.cpp), [python](./leetcode/18.4sum.py) | O(N^3) | O(1) | Medium || Awesome
+| 019.remove-nth-node-from-end-of-list | [cpp](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | O(1) | Medium || Perfect
 | 026.remove-duplicates-from-sorted-array | [cpp](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python](./leetcode/26.remove-duplicates-from-sorted-array.py) | O(N) | O(1) | Easy || Perfect
 | 027.remove-element | [cpp](./leetcode/27.remove-element.cpp), [python](./leetcode/27.remove-element.py) | O(N) | O(1) | Easy
 | 028.implement-strstr | [cpp](./leetcode/28.implement-strstr.cpp), [python](./leetcode/28.implement-strstr.py) | O(M + N) | O(1) | Easy | Pattern Searching | KMP
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(1) | Hard | Two Pointers | 
+| 075.sort-colors | [cpp](./leetcode/75.sort-colors.cpp) [python](./leetcode/75.sort-colors.py) | O(N) | O(1) | Medium | counting-sort || Perfect
 | 076.minimum-window-substring | [cpp](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | O(N) | O(N) | Hard
 | 088.merge-sorted-array | [cpp](./leetcode/88.merge-sorted-array.cpp), [python](./leetcode/88.merge-sorted-array.py) | O(N + M) | O(1) | Easy | | Perfect
 | 125.valid-palindrome | [cpp](./leetcode/125.valid-palindrome.cpp), [python](./leetcode/125.valid-palindrome.py) | O(N) | O(1) | Easy || Perfect
@@ -132,13 +134,6 @@ This is a **continually updated, open source** project.
 | 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.cpp), [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(K * logK), k = max(M, N) | O(1) | Easy | hash, binary-search
 | 532.k-diff-pairs-in-an-array | [cpp](./leetcode/532.k-diff-pairs-in-an-array.cpp), [python](./leetcode/532.k-diff-pairs-in-an-array.py) | O(N * logN) | O(1) | Easy | Hash |
 | 844.backspace-string-compare | [cpp](./leetcode/844.backspace-string-compare.cpp), [python](./leetcode/844.backspace-string-compare.py) | O(N) | O(1) | Easy | stack
-
-## Two Pointers(legacy)
-| Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
-| -----------| ------------| --------| --------------| -------| --------|
-| 19.remove-nth-node-from-end-of-list | [cpp](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | O(N) | Medium
-| 75.sort-colors | [cpp](./leetcode/75.sort-colors.cpp) [python](./leetcode/75.sort-colors.py) | O(N) | Medium | counting-sort
-
 
 ## Linked List
 
@@ -402,6 +397,7 @@ This is a **continually updated, open source** project.
 | 092.backpack | [cpp](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | O(M*N) | O(M) | Medium | dynamic-programming
 | 125.backpack-ii | [cpp](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | O(M*N) | O(M) | Medium/S++ | dynamic-programming
 | 139.subarray-sum-closest | [cpp](./lintcode/139.subarray-sum-closest.cpp), [python](./lintcode/139.subarray-sum-closest.py) | O(NlogN) | O(N) | Medium | Subarray 
+| 144.interleaving-positive-and-negative-numbers | [cpp](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python](./lintcode/144.interleaving-positive-and-negative-numbers.py) | O(N) | O(1) | Medium | two-pointers
 | 183.wood-cut | [cpp](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | O(N * LogN) | O(1) | Medium/S-- | binary-search
 | 382.triangle-count | [cpp](./lintcode/382.triangle-count.cpp), [python](./lintcode/382.triangle-count.py) | O(N^2) | O(1) | Medium | two-pointers
 | 390.find-peak-element-ii | [cpp](./lintcode/390.find-peak-element-ii.cpp), [python](./lintcode/390.find-peak-element-ii.py) | O(M + N) | O(1) | Hard/SSS | binary-search

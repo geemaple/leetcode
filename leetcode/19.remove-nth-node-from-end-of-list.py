@@ -11,23 +11,22 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        if head is None:
-            return None
-
-        new_head = ListNode(0)
-        new_head.next = head
-
-
+        newHead = ListNode(0)
+        newHead.next = head
+        
         count = 0
-        current = new_head
-        while(head is not None):
-            count += 1
-            head = head.next
+        fast = newHead
+        slow = newHead
+        
+        while (fast):
+            fast = fast.next
             if count > n:
-                current = current.next
-
-        node = current.next
-        current.next = node.next
-        del node
-
-        return new_head.next
+                slow = slow.next
+            count += 1
+            
+        tmp = slow.next
+        slow.next = slow.next.next
+        del tmp
+        
+        return newHead.next
+            

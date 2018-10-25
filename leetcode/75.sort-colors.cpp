@@ -5,6 +5,7 @@ public:
     void sortColors(vector<int>& nums) {
         int countings[number_of_colors] = {0};
         vector<int> tmp(nums.size(), 0);
+        
         for (auto i = 0; i < nums.size(); ++i)
         {
             countings[nums[i]] += 1;
@@ -30,32 +31,34 @@ public:
 };
 
 class Solution2 {
+private:
+    void swap(vector<int>& nums, int i, int j)
+    {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp; 
+    }
+    
 public:
     void sortColors(vector<int>& nums) {
-        
-        int start = 0;
-        int end = nums.size() - 1;
-        int index = 0;
-        
-        while (index <= end) {
-            
-            if (nums[index] < 1)
+        int k = 0;
+        for (auto i = 0; i < nums.size(); ++i)
+        {
+            if (nums[i] == 0)
             {
-                int tmp = nums[index];
-                nums[index] = nums[start];
-                nums[start] = tmp;
-                start += 1;
+                swap(nums, k, i);
+                k ++;
             }
-            else if(nums[index] > 1)
-            {
-                int tmp = nums[index];
-                nums[index] = nums[end];
-                nums[end] = tmp;
-                end -= 1;
-                continue;
-            }
-            
-            index += 1;
         }
+        
+        for (auto i = k; i < nums.size(); ++i)
+        {
+            if (nums[i] == 1)
+            {
+                swap(nums, k, i);
+                k ++;
+            }
+        }
+        
     }
 };
