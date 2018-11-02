@@ -6,19 +6,14 @@ class Solution(object):
         :rtype: float
         """
         count = len(nums1) + len(nums2)
-        if count == 0:
-            return 0.0
-        
-        if count % 2 == 0:
-            res = self.findKth(count / 2, nums1, 0, nums2, 0)
-            res += self.findKth(count / 2 + 1, nums1, 0, nums2, 0)
-            return float(res / 2.0)
+        if (count % 2 == 1):
+            return self.find_kth_num(nums1, 0, nums2, 0, (count + 1) // 2)
         else:
-            res = self.findKth((count + 1) / 2, nums1, 0, nums2, 0)
-            return float(res)
+            mid = count // 2
+            return (self.find_kth_num(nums1, 0, nums2, 0, mid) + self.find_kth_num(nums1, 0, nums2, 0, mid + 1)) / 2.0
         
-    def findKth(self, k, nums1, start1, nums2, start2):
         
+    def find_kth_num(self, nums1, start1, nums2, start2, k):
         if start1 >= len(nums1):
             return nums2[start2 + k - 1]
         
@@ -29,11 +24,11 @@ class Solution(object):
             return min(nums1[start1], nums2[start2])
         
         half = k // 2
-        val1 = nums1[half + start1 - 1] if half + start1 - 1 < len(nums1) else float('inf')
-        val2 = nums2[half + start2 - 1] if half + start2 - 1 < len(nums2) else float('inf')
+        left_half = nums1[start1 + half - 1] if start1 + half - 1 < len(nums1) else float('inf')
+        right_half = nums2[start2 + half - 1] if start2 + half - 1 < len(nums2) else float('inf')
         
-        if val1 < val2:
-            return self.findKth(k - half, nums1, start1 + half, nums2, start2)
+        if left_half <= right_half:
+            return self.find_kth_num(nums1, start1 + half, nums2, start2, k - half)
         else:
-            return self.findKth(k - half, nums1, start1, nums2, start2 + half)
-            
+            return self.find_kth_num(nums1, start1, nums2, start2 + half, k - half)
+        

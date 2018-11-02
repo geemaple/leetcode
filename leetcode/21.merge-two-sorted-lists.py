@@ -11,17 +11,16 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        left = l1
+        right = l2
         head = ListNode(0)
         cur = head
         
-        left = l1
-        right = l2
-        
-        while (left is not None or right is not None):
+        while left is not None or right is not None:
             left_val = left.val if left is not None else float('inf')
             right_val = right.val if right is not None else float('inf')
             
-            if (left_val < right_val):
+            if left_val <= right_val:
                 cur.next = left
                 left = left.next
             else:
@@ -31,4 +30,3 @@ class Solution(object):
             cur = cur.next
             
         return head.next
-        

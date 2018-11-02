@@ -52,6 +52,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 002.add-two-numbers | [cpp](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | O(N) | O(1) | Medium/S--
 | 007.reverse-integer | [cpp](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | O(L) | O(1) | Easy/S--
+| 009.palindrome-number | [python](./leetcode/9.palindrome-number.py) | O(N) | O(1) | Easy | 
 | 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | Medium | N = length of results
 | 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | Easy
 | 043.multiply-strings | [cpp](./leetcode/43.multiply-strings.cpp), [python](./leetcode/43.multiply-strings.py) | O(M*N) | O(M+N)  | Medium/S++
@@ -59,6 +60,7 @@ This is a **continually updated, open source** project.
 | 050.powx-n | [cpp](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | O(logN) | O(1) | Medium/S++
 | 067.add-binary | [cpp](./leetcode/67.add-binary,cpp), [python](./leetcode/67.add-binary.py) | O(N) | O(1) | Easy |
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
+| 273.integer-to-english-words | [python](./leetcode/273.integer-to-english-words.py) | O(N) | O(N) | Hard
 | 311.sparse-matrix-multiplication | [cpp](./leetcode/311.sparse-matrix-multiplication.cpp), [python](./leetcode/311.sparse-matrix-multiplication.py) | O(N^3) | O(N^2) | Medium/S-- | 
 | 415.add-strings | [cpp](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O(N) | O(1) | Easy |
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
@@ -70,14 +72,17 @@ This is a **continually updated, open source** project.
 | 136.single-number | [cpp](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O(N) | O(1) | Easy | xor | Perfect
 | 318.maximum-product-of-word-lengths | [cpp](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O(N^2) | O(N) | Medium/S++ | mask | Great
 | 393.utf-8-validation | [cpp](./leetcode/393.utf-8-validation.cpp), [python](./leetcode/393.utf-8-validation.py) | O(N) |O(1) | Medium/S-- | | Perfect
+| 751.ip-to-cidr | [python](./leetcode/751.ip-to-cidr.py) | O(N) | O(1) | Easy/SSS
 
 ## Array and String
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 041.first-missing-positive | [python](./leetcode/41.first-missing-positive.py) | O(N) | O(1) | Hard
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
 | 056.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort | N = number of intervals
 | 057.insert-interval | [cpp](./leetcode/57.insert-interval.cpp), [python](./leetcode/57.insert-interval.py) | O(N) | O(1) | Hard | Sort | N = number of intervals
+| 068.text-justification | [python](./leetcode/68.text-justification.py) | O(N) | O(N) | Hard |
 | 118.pascals-triangle | [cpp](./leetcode/118.pascals-triangle.cpp), [python](./leetcode/118.pascals-triangle.py) | O(N^2) | O(1) | Easy || Perfect
 | 119.pascals-triangle-ii | [cpp](./leetcode/119.pascals-triangle-ii.cpp), [python](./leetcode/119.pascals-triangle-ii.py) | O(N^2) | O(1) | Easy || Perfect
 | 157.read-n-characters-given-read4 | [cpp](./leetcode/157.read-n-characters-given-read4.cpp), [python](./leetcode/157.read-n-characters-given-read4.py) | O(N) | O(1) | Easy | String
@@ -91,6 +96,7 @@ This is a **continually updated, open source** project.
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
 | 560.subarray-sum-equals-k | [cpp](./leetcode/560.subarray-sum-equals-k.cpp), [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | O(N) | Medium || Great
+| 657.robot-return-to-origin | [python](./leetcode/657.robot-return-to-origin.py) | O(N) | O(1) | Easy
 | 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy || Perfect
 | 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N) | O(1) | Easy | string | | Awesome
 
@@ -192,6 +198,7 @@ This is a **continually updated, open source** project.
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | O(1) | Medium || Perfect
+| 273.integer-to-english-words | [python](./leetcode/273.integer-to-english-words.py) | O(N) | O(N) | Hard
 | 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | Hard/SSS | DFS | N = length of input
 | 687.longest-univalue-path | [cpp](./leetcode/687.longest-univalue-path.cpp), [python](./leetcode/687.longest-univalue-path.py) | O(N) | O(1) | Easy/S++ || Perfect
 
@@ -227,6 +234,7 @@ This is a **continually updated, open source** project.
 | 200.number-of-islands | [cpp](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | O(MN) | O(MN) | Medium | BFS/DFS | union-find | Bad
 | 207.course-schedule | [cpp](./leetcode/207.course-schedule.cpp), [python](./leetcode/207.course-schedule.py) | O(V + E) | O(V + E) | Medium | | Perfect
 | 210.course-schedule-ii | [cpp](./leetcode/210.course-schedule-ii.cpp), [python](./leetcode/210.course-schedule-ii.py) | O(V + E) | O(V) | Medium | topological-sort | Awesome
+| 269.alien-dictionary | [python](./leetcode/269.alien-dictionary.py) | O(V + E) | O(V + E) | Hard 
 | 323.number-of-connected-components-in-an-undirected-graph | [cpp](./leetcode/323.number-of-connected-components-in-an-undirected-graph.cpp), [python](./leetcode/323.number-of-connected-components-in-an-undirected-graph.py) | O(V+E) | O(V+E) | Medium | union-find | Bad
 | 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 444.sequence-reconstruction | [cpp](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | O(V) | Medium | topological-sort || Bad
@@ -368,7 +376,8 @@ This is a **continually updated, open source** project.
 | 261.graph-valid-tree | [cpp](./leetcode/261.graph-valid-tree.cpp), [python](./leetcode/261.graph-valid-tree.py) | O(E) | O(N) | Medium | BFS/DFS | Perfect
 | 305.number-of-islands-ii | [cpp](./leetcode/305.number-of-islands-ii.cpp), [python](./leetcode/305.number-of-islands-ii.py) | O(N) | O(MN) | Hard | | N = len(positions)
 | 721.accounts-merge | [cpp](./leetcode/721.accounts-merge.cpp), [python](./leetcode/721.accounts-merge.py) | O(MN) | O(MN) | Medium |
-
+| 924.minimize-malware-spread | [python](./leetcode/924.minimize-malware-spread.py) | O(N^2) | O(N) | Hard | TODO | Bad
+ 
 ## Trie
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
