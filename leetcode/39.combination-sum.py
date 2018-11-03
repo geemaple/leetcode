@@ -5,23 +5,27 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
-
-        results = []
-        visted = []
-        sorted_candidates = sorted(candidates)
-        self.helper(sorted_candidates, visted, results, 0, target)
-        return results
-
-    def helper(self, candidates, visted, results, start, target):
-
-        summation = sum(visted)
-        if summation == target:
-            results.append(list(visted))
-        elif summation > target:
+        res = []
+        ans = []
+        candidates.sort()
+        self.helper(candidates, 0, target, ans, 0, res)
+        
+        return res
+        
+    def helper(self, candidates, start, target, ans, total, res):
+        if total == target:
+            res.append(list(ans))
             return
-
+            
         for i in range(start, len(candidates)):
-            visted.append(candidates[i])
-            self.helper(candidates, visted, results, i, target)
-            visted.pop()
-
+            
+            number = candidates[i]
+            
+            if total + number <= target:
+                ans.append(number)
+                total += number
+                
+                self.helper(candidates, i, target, ans, total, res)
+                
+                total -= number
+                ans.pop()
