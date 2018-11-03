@@ -5,17 +5,12 @@ class Solution(object):
         :type amount: int
         :rtype: int
         """
-        table = [float('inf')] * (amount + 1)
+        table = [float('inf') for i in range(amount + 1)]
         table[0] = 0
-
-        for i in range(1, amount + 1):
-
-            value = float('inf')
-            for j in range(len(coins)):
-                pre = i - coins[j]
-                if pre >= 0 and table[pre] + 1 < value:
-                    value = table[pre] + 1
-
-            table[i] = value
-
-        return -1 if table[amount] == float('inf') else table[amount]
+            
+        for t in range(1, amount + 1):
+            for c in coins:
+                if t - c >= 0 and table[t - c] + 1 < table[t]:
+                    table[t] = table[t - c] + 1
+                    
+        return table[amount] if table[amount] != float('inf') else -1
