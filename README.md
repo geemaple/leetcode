@@ -95,6 +95,7 @@ This is a **continually updated, open source** project.
 | 271.encode-and-decode-strings | [cpp](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | O(N) | O(1) | Easy | String | N = count of chars
 | 277.find-the-celebrity | [cpp](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | O(N) | O(1) | Medium |
 | 280.wiggle-sort | [python](./leetcode/280.wiggle-sort.py) | O(N) | O(1) | Medium
+| $324.wiggle-sort-ii | [python](./leetcode/324.wiggle-sort-ii.py) | O(NLogN) | O(N) | Medium | Follow up
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
@@ -243,6 +244,7 @@ This is a **continually updated, open source** project.
 | 323.number-of-connected-components-in-an-undirected-graph | [cpp](./leetcode/323.number-of-connected-components-in-an-undirected-graph.cpp), [python](./leetcode/323.number-of-connected-components-in-an-undirected-graph.py) | O(V+E) | O(V+E) | Medium | union-find | Bad
 | 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 444.sequence-reconstruction | [cpp](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | O(V) | Medium | topological-sort || Bad
+| 773.sliding-puzzle | [python](./leetcode/773.sliding-puzzle.py) | O(V + E) | O(N) | Hard/SSS |
 
 ## Backtracking
 
@@ -324,6 +326,7 @@ This is a **continually updated, open source** project.
 ## Dynamic Programming
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 005.longest-palindromic-substring | [python](./leetcode/5.longest-palindromic-substring.py) | O(N^2) | O(1) | Medium
 | 010.regular-expression-matching | [cpp](./leetcode/10.regular-expression-matching.cpp), [python](./leetcode/10.regular-expression-matching.py) | O(MN) | O(MN) | Hard/S++ | Sequence
 | 044.wildcard-matching | [cpp](./leetcode/44.wildcard-matching.cpp), [python](./leetcode/44.wildcard-matching.py) | O(MN) | O(MN) | Hard | Sequence
 | 053.maximum-subarray | [cpp](./leetcode/53.maximum-subarray.cpp), [python](./leetcode/53.maximum-subarray.py) | O(N) | O(1) | Easy | | Perfect
@@ -358,6 +361,7 @@ This is a **continually updated, open source** project.
 | 377.combination-sum-iv | [cpp](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | O(M*N) | O(N) | Medium | Backpack
 | 474.ones-and-zeroes | [cpp](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O(LMN) | O(LMN) | Medium | Sequence |
 | 516.longest-palindromic-subsequence | [cpp](./leetcode/516.longest-palindromic-subsequence.cpp), [python](./leetcode/516.longest-palindromic-subsequence.py) | O(N^2) | O(N^2) | Medium |
+| 787.cheapest-flights-within-k-stops | [python](./leetcode/787.cheapest-flights-within-k-stops.py) | O(K * E) | O(N) | Hard/SSS |
 
 
 ## Red Black Tree
