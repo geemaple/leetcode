@@ -245,6 +245,7 @@ This is a **continually updated, open source** project.
 | 433.minimum-genetic-mutation | [cpp](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | O(V + E) | O(N) | Medium | | |
 | 444.sequence-reconstruction | [cpp](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | O(V+E) | O(V) | Medium | topological-sort || Bad
 | 773.sliding-puzzle | [python](./leetcode/773.sliding-puzzle.py) | O(V + E) | O(N) | Hard/SSS |
+| 815.bus-routes | [python](./leetcode/815.bus-routes.py) | O(V + E) | O(N) | Hard/SSS |
 
 ## Backtracking
 
@@ -394,6 +395,7 @@ This is a **continually updated, open source** project.
 | 208.implement-trie-prefix-tree | [cpp](./leetcode/208.implement-trie-prefix-tree.cpp), [python](./leetcode/208.implement-trie-prefix-tree.py) | O(L) | O(N * L) | Medium | - | L = len(word), N = number of words |
 | 211.add-and-search-word-data-structure-design | [cpp](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python](./leetcode/211.add-and-search-word-data-structure-design.py) | add = O(L), find >=  O(L) | O(N * L) | Medium/S-- | DFS | L = len(word), N = count(words)
 | 212.word-search-ii | [cpp](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | O(M * N * L * L) | MAX(O(MN), O(K * L)) | Hard | DFS | K = number of words, L = avg length of words
+| 336.palindrome-pairs | [python](./leetcode/336.palindrome-pairs.py) | O(N * L^2) | O(N) | Hard/SSS
 | 425.word-squares | [cpp](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | O(-) | O(NL) | Hard/SSS | DFS Pruning | | L = len(word), N = count(word)
 | 677.map-sum-pairs | [cpp](./leetcode/677.map-sum-pairs.cpp), [python](./leetcode/677.map-sum-pairs.py) | O(L), O(KL) | O(N * L) | Medium | | L = length of input, k = number of items found|
 
