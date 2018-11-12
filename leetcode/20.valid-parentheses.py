@@ -4,15 +4,17 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        
         stack = []
-        pairs = {')': '(', '}': '{', ']': '['}
-
-        for c in s:
-            if c in pairs:
-                if len(stack) == 0 or pairs[c] != stack.pop():
-                    return False
+        mapping = {')':'(', '}':'{', ']':'['}
+        
+        for l in s:
+            if l not in mapping:
+                stack.append(l)
             else:
-                stack.append(c)
-
+                if len(stack) == 0 or stack[-1] != mapping[l]:
+                    return False
+                
+                stack.pop()
+                
         return len(stack) == 0
+            
