@@ -62,6 +62,8 @@ This is a **continually updated, open source** project.
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 273.integer-to-english-words | [python](./leetcode/273.integer-to-english-words.py) | O(N) | O(N) | Hard
 | 311.sparse-matrix-multiplication | [cpp](./leetcode/311.sparse-matrix-multiplication.cpp), [python](./leetcode/311.sparse-matrix-multiplication.py) | O(N^3) | O(N^2) | Medium/S-- | 
+| 326.power-of-three | [python](./leetcode/326.power-of-three.py) | O(1) | O(1) | Easy/S++
+| 342.power-of-four | [python](./leetcode/342.power-of-four.py) | O(1) | O(1) | Easy/S++
 | 415.add-strings | [cpp](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O(N) | O(1) | Easy |
 | 829.consecutive-numbers-sum | [python](./leetcode/829.consecutive-numbers-sum.py) | O(sqrt(N)) | O(1) | Hard
 | 836.rectangle-overlap | [cpp](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | O(1) | O(1) | Easy
@@ -71,6 +73,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 136.single-number | [cpp](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O(N) | O(1) | Easy | xor | Perfect
+| 231.power-of-two | [python](./leetcode/231.power-of-two.py) | O(1) | O(1) | Easy
 | 318.maximum-product-of-word-lengths | [cpp](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O(N^2) | O(N) | Medium/S++ | mask | Great
 | 393.utf-8-validation | [cpp](./leetcode/393.utf-8-validation.cpp), [python](./leetcode/393.utf-8-validation.py) | O(N) |O(1) | Medium/S-- | | Perfect
 | 751.ip-to-cidr | [python](./leetcode/751.ip-to-cidr.py) | O(N) | O(1) | Easy/SSS
@@ -98,12 +101,15 @@ This is a **continually updated, open source** project.
 | $324.wiggle-sort-ii | [python](./leetcode/324.wiggle-sort-ii.py) | O(NLogN) | O(N) | Medium | Follow up
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
+| 448.find-all-numbers-disappeared-in-an-array | [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O(N) | O(1) | Easy/SSS
+| 463.island-perimeter | [python](./leetcode/463.island-perimeter.py) | O(N) | O(1) | Easy/S++
 | 527.word-abbreviation | [cpp](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | O(N * L) | O(N) | Hard | L = avg word length
 | 560.subarray-sum-equals-k | [cpp](./leetcode/560.subarray-sum-equals-k.cpp), [python](./leetcode/560.subarray-sum-equals-k.py) | O(N) | O(N) | Medium || Great
 | 657.robot-return-to-origin | [python](./leetcode/657.robot-return-to-origin.py) | O(N) | O(1) | Easy
 | 674.longest-continuous-increasing-subsequence |[cpp](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | O(N) | O(1) | Easy || Perfect
 | 755.pour-water | [python](./leetcode/755.pour-water.py) | O(N^2) | O(1) | Medium/S-- 
 | 796.rotate-string | [cpp](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | O(N) | O(1) | Easy | string | | Awesome
+| 929.unique-email-addresses |[python](./leetcode/929.unique-email-addresses.py) | O(N) | O(N) | Easy |
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
@@ -115,6 +121,7 @@ This is a **continually updated, open source** project.
 | 561.array-partition-i | [cpp](./leetcode/561.array-partition-i.cpp) | O(N * logN) | Easy
 | 724.find-pivot-index | [cpp](./leetcode/724.find-pivot-index.cpp) | O(N) | Easy
 | 747.largest-number-at-least-twice-of-others | [cpp](./leetcode/747.largest-number-at-least-twice-of-others) | O(N) |Easy
+| 832.flipping-an-image | [python](./leetcode/832.flipping-an-image.py) | O(N) | O(N) | Easy
 | 859.buddy-strings | [cpp](./leetcode/859.buddy-strings.cpp) | O(N) | Easy | string |
 
 ## Two Pointers
@@ -282,6 +289,7 @@ This is a **continually updated, open source** project.
 | 454.4sum-ii | [cpp](./leetcode/454.4sum-ii.cpp) | O(N ^ 2) | Medium
 | 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | O(M + N) | Easy
 | 652.find-duplicate-subtrees | [cpp](./leetcode/652.find-duplicate-subtrees.cpp) | O(N) | Medium
+| 760.find-anagram-mappings | [python](./leetcode/760.find-anagram-mappings.py) | O(N) | O(N) | Easy
 | 771.jewels-and-stones | [cpp](./leetcode/771.jewels-and-stones.cpp) | O(M + N) | Easy
 
 
