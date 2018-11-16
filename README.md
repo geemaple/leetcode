@@ -21,6 +21,7 @@ This is a **continually updated, open source** project.
 - [Leetcode](#leetcode)
     - [Math](#math)
     - [Bit](#bit)
+    - [Design](#design)
     - [Array and String](#array-and-string)
     - [Two Pointers](#two-pointers)
     - [Linked List](#linked-list)
@@ -78,6 +79,12 @@ This is a **continually updated, open source** project.
 | 393.utf-8-validation | [cpp](./leetcode/393.utf-8-validation.cpp), [python](./leetcode/393.utf-8-validation.py) | O(N) |O(1) | Medium/S-- | | Perfect
 | 751.ip-to-cidr | [python](./leetcode/751.ip-to-cidr.py) | O(N) | O(1) | Easy/SSS
 
+## Design
+
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
+| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 535.encode-and-decode-tinyurl | [python](./leetcode/535.encode-and-decode-tinyurl.py) | O(1) | O(N) | Medium
+
 ## Array and String
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
@@ -94,11 +101,13 @@ This is a **continually updated, open source** project.
 | 161.one-edit-distance | [cpp](./leetcode/161.one-edit-distance.cpp), [python](./leetcode/161.one-edit-distance.py) | O(N) | O(1) | Medium | String | Perfect |
 | 163.missing-ranges | [cpp](./leetcode/163.missing-ranges.cpp), [python](./leetcode/163.missing-ranges.py) | O(N) | O(1) | Medium | Array | Mind int overflow
 | 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) | O(1) | Medium/S-- | quick-select | best = O(N), worst = O(N^2)
+| 228.summary-ranges |[python](./leetcode/228.summary-ranges.py) | O(N) | O(1) | Medium
 | 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | O(1) | Medium
 | 251.flatten-2d-vector | [python](./leetcode/251.flatten-2d-vector.py) | - | O(N) | Medium
 | 271.encode-and-decode-strings | [cpp](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | O(N) | O(1) | Easy | String | N = count of chars
 | 277.find-the-celebrity | [cpp](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | O(N) | O(1) | Medium |
 | 280.wiggle-sort | [python](./leetcode/280.wiggle-sort.py) | O(N) | O(1) | Medium
+| 289.game-of-life | [python](./leetcode/289.game-of-life.py) | O(MN) | O(1) | Medium
 | $324.wiggle-sort-ii | [python](./leetcode/324.wiggle-sort-ii.py) | O(NLogN) | O(N) | Medium | Follow up
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
@@ -259,6 +268,7 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 017.letter-combinations-of-a-phone-number | [cpp](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | O(2 ^ N) | O(N) | Medium ||
+| 022.generate-parentheses | [python](./leetcode/22.generate-parentheses.py) | O(ans) | O(N) | Medium
 | 039.combination-sum | [cpp](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | O(N^K), k=target/min | O(K) | Medium | DFS | Perfect
 | 040.combination-sum-ii | [cpp](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O(2^K), k=target/min | O(K) | Medium/S-- | DFS  | Perfect
 | 046.permutations | [cpp](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O(N * N!) | O(N) | Medium | DFS | Perfect
@@ -326,6 +336,7 @@ This is a **continually updated, open source** project.
 | 341.flatten-nested-list-iterator | [python](./leetcode/341.flatten-nested-list-iterator.py) | - | O(N) | Medium/S++
 | 394.decode-string | [cpp](./leetcode/394.decode-string.cpp), [python](./leetcode/394.decode-string.py) | O(N) | O(N) | Medium | | Perfect
 | 654.maximum-binary-tree | [cpp](./leetcode/654.maximum-binary-tree.cpp), [python](./leetcode.654.maximum-binary-tree.py) | O(N) | O(N) | Hard/SSS || Perfect
+| 739.daily-temperatures | [python](./leetcode/739.daily-temperatures.py) | O(N) | O(N) | Medium
 
 ## Sweep Line
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |

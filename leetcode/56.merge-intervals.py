@@ -10,26 +10,14 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
-        
-        intervals.sort(key = lambda inter: inter.start)
+        intervals.sort(key=lambda x: x.start)
         res = []
-
-        if intervals is None or len(intervals) == 0:
-            return res
-
-        start = intervals[0].start
-        end = intervals[0].end
-
-        for i in range(1, len(intervals)):
-            if end >= intervals[i].start:
-                end = max(end, intervals[i].end)
+        
+        for i in range(1, len(intervals) + 1):
+            if i == len(intervals) or intervals[i].start > intervals[i - 1].end:
+                res.append(intervals[i - 1])
             else:
-                ans = Interval(start, end)
-                res.append(ans)
-                start = intervals[i].start
-                end = intervals[i].end
-
-        ans = Interval(start, end)
-        res.append(ans)
-
+                intervals[i].start = min(intervals[i].start, intervals[i - 1].start)
+                intervals[i].end = max(intervals[i].end, intervals[i - 1].end)
+                
         return res
