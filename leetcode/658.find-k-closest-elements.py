@@ -1,3 +1,4 @@
+# log(N - K) and O(1)
 class Solution(object):
     def findClosestElements(self, arr, k, x):
         """
@@ -6,41 +7,44 @@ class Solution(object):
         :type x: int
         :rtype: List[int]
         """
-        size = len(arr)
-        target = self.searchClosest(arr, x)
         
-        start = target
-        end = target
-        for i in range(1, k):
-            if start - 1 < 0 and end + 1 >= size:
-                break
-                
-            if start - 1 >= 0 and end + 1 < size:
-                if abs(arr[start - 1] - x) <= abs(arr[end + 1] - x):
-                    start -= 1
-                else:
-                    end += 1
-                    
-            elif start - 1 >= 0:
-                start -= 1
-                
-            else:
-                end += 1
+        if k >= len(arr):
+            return arr
         
-        return arr[start: end + 1]
-        
-        
-    def searchClosest(self, nums, target):
         start = 0
-        end = len(nums) - 1
-        
-        while(start + 1 < end):
+        end = len(arr) - k
+
+        while start < end:
+            
             mid = start + (end - start) // 2
             
-            if (nums[mid] < target):
-                start = mid
-            else:
+            if abs(arr[mid] - x) <= abs(arr[mid + k] - x):
                 end = mid
-                
-        return start if abs(nums[start] - target) < abs(nums[end] - target) else end
-            
+            else:
+                start = mid + 1
+
+        return arr[start: start + k]
+
+# O(N) and O(1)
+class Solution1(object):
+    def findClosestElements(self, arr, k, x):
+        """
+        :type arr: List[int]
+        :type k: int
+        :type x: int
+        :rtype: List[int]
+        """
+        
+        if k >= len(arr):
+            return arr
+        
+        start = 0
+        end = len(arr) - 1
+
+        while end - start + 1 > k:
+            if abs(arr[start] - x) <= abs(arr[end] - x):
+                end -= 1
+            else:
+                start += 1
+
+        return arr[start: end + 1]

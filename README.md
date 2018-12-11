@@ -206,7 +206,7 @@ This is a **continually updated, open source** project.
 | 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O(MLogN + NLogM) | O(1) | Hard/SSS || Perfect
 | 367.valid-perfect-square | [cpp](./leetcode/367.valid-perfect-square.cpp), [python](./leetcode/367.valid-perfect-square.py) | O(LogN) | O(1) | Easy || Perfect
 | 374.guess-number-higher-or-lower | [cpp](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(LogN) | O(1) | Easy | | Perfect
-| $658.find-k-closest-elements | [cpp](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O(LogN) | O(1) | Medium/S-- | | Perfect
+| $658.find-k-closest-elements | [cpp](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | Log(N - K) | O(1) | Medium/S++ | | Awesome
 | 702.search-in-a-sorted-array-of-unknown-size | [cpp](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | O(LogN) | O(1) | Medium | | Perfect
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | | Perfect 
 | 852.peak-index-in-a-mountain-array | [cpp](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O(logN) | O(1) | Easy | Golden-section search |
