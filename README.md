@@ -3,7 +3,8 @@ My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
 📢📢📢 
-Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
+1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
+2. Add **C++** runtime grades: **Perfect**(>=95%) **Awesome**(>=80) **Great**(>=70%) **Cool**(>=50%) **Bad**(<50%) 
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -106,6 +107,7 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | 280.wiggle-sort | [python](./leetcode/280.wiggle-sort.py) | O(N) | O(1) | Medium
 | 289.game-of-life | [python](./leetcode/289.game-of-life.py) | O(MN) | O(1) | Medium
 | $324.wiggle-sort-ii | [python](./leetcode/324.wiggle-sort-ii.py) | O(NLogN) | O(N) | Medium | Follow up
+| 370.range-addition | [cpp](./leetcode/370.range-addition.cpp), [python](./leetcode/370.range-addition.py) | O(N + K) | O(1) | Medium | Array | Perfect |
 | 388.longest-absolute-file-path | [cpp](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | O(N) | O(N) | Medium | String |
 | 408.valid-word-abbreviation | [cpp](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | O(N) | O(1) | Easy
 | 448.find-all-numbers-disappeared-in-an-array | [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O(N) | O(1) | Easy/SSS
