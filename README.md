@@ -87,6 +87,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 031.next-permutation | [cpp](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py)| O(N) | O(1) | Medium | Array | Great
 | 041.first-missing-positive | [python](./leetcode/41.first-missing-positive.py) | O(N) | O(1) | Hard
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
 | 056.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort | N = number of intervals
