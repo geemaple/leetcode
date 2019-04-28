@@ -317,6 +317,7 @@ This is a **continually updated, open source** project.
 ## queue
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Node   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
+| 239.sliding-window-maximum | [cpp](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | O(N) | O(N) | Hard | | Great 
 | 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(1) | O(N) | Easy | | Perfect 
 
 ## Heap
