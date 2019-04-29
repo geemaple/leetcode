@@ -291,6 +291,7 @@ This is a **continually updated, open source** project.
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 217.contains-duplicate | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 219.contains-duplicate-ii | [cpp](./leetcode/219.contains-duplicate-ii.cpp) | O(N) | Easy
+| 242.valid-anagram | [cpp](./leetcode/242.valid-anagram.cpp), [python](./leetcode/242.valid-anagram.py) | O(N) | O(1) | Easy || Perfect
 | 249.group-shifted-strings | [cpp](./leetcode/249.group-shifted-strings.cpp) | O(N * K) | Medium
 | 347.top-k-frequent-elements | [cpp](./leetcode/347.top-k-frequent-elements.cpp) | O(N * LogN) | Medium | TODO: quick-sort, bucket-sort
 | 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.cpp) | O(MN) | Easy
