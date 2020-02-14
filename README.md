@@ -49,7 +49,7 @@ This is a **continually updated, open source** project.
 
 ## Math
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    | Grade   |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 002.add-two-numbers | [cpp](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | O(N) | O(1) | Medium/S--
 | 007.reverse-integer | [cpp](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | O(L) | O(1) | Easy/S--
