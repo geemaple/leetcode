@@ -11,7 +11,8 @@ This is a **continually updated, open source** project.
 🎉🎉🎉 Finished 150 / 824 questions on 2018-06-29<br/>
 🎑🎑🎑 Finished 200 / 905 questions on 2018-09-24<br/> 
 🎉🎉🎉 Finished 250 / 917 questions on 2018-10-15<br/>
-🚑🏥🛌 Several Months has passed. Lets do it again<br/>
+🚑🏥🛌 Black out. 2019 has passed. Lets do it again<br/>
+💘💘💘 Finished 281 / 929 questions on 2020-02-14<br/>
 
 # [References](./learning/README.md)
 
@@ -48,16 +49,16 @@ This is a **continually updated, open source** project.
 
 ## Math
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 002.add-two-numbers | [cpp](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | O(N) | O(1) | Medium/S--
 | 007.reverse-integer | [cpp](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | O(L) | O(1) | Easy/S--
+| 008.string-to-integer-atoi | [cpp](./leetcode/8.string-to-integer-atoi.cpp) | O(N) | O(1) | Medium/S-- | Overflow Check | Awesome
 | 009.palindrome-number | [python](./leetcode/9.palindrome-number.py) | O(N) | O(1) | Easy | 
 | 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | Medium | N = length of results
 | 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | Easy
 | 043.multiply-strings | [cpp](./leetcode/43.multiply-strings.cpp), [python](./leetcode/43.multiply-strings.py) | O(M*N) | O(M+N)  | Medium/S++
 | 048.rotate-image | [cpp](./leetcode/48.rotate-image.cpp), [python](./leetcode/48.rotate-image.py) | O(MN) | O(1) | Medium/S++
-| 050.powx-n | [cpp](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | O(logN) | O(1) | Medium/S++
 | 067.add-binary | [cpp](./leetcode/67.add-binary,cpp), [python](./leetcode/67.add-binary.py) | O(N) | O(1) | Easy |
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 273.integer-to-english-words | [python](./leetcode/273.integer-to-english-words.py) | O(N) | O(N) | Hard
@@ -91,6 +92,7 @@ This is a **continually updated, open source** project.
 | 031.next-permutation | [cpp](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py)| O(N) | O(1) | Medium | Array | Great
 | 041.first-missing-positive | [python](./leetcode/41.first-missing-positive.py) | O(N) | O(1) | Hard
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
+| 054.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | [python](./leetcode/54.spiral-matrix.py) | O(N) | O(1) | Medium || Perfect
 | 056.merge-intervals | [cpp](./leetcode/56.merge-intervals.cpp), [python](./leetcode/56.merge-intervals.py) | O(N * logN) | O(1) | Medium | Sort | N = number of intervals
 | 057.insert-interval | [cpp](./leetcode/57.insert-interval.cpp), [python](./leetcode/57.insert-interval.py) | O(N) | O(1) | Hard | Sort | N = number of intervals
 | 066.plus-one | [cpp](./leetcode/66.plus-one.cpp), [python](./leetcode/66.plus-one.py) | O(N) | O(1) | Easy
@@ -102,7 +104,7 @@ This is a **continually updated, open source** project.
 | 163.missing-ranges | [cpp](./leetcode/163.missing-ranges.cpp), [python](./leetcode/163.missing-ranges.py) | O(N) | O(1) | Medium | Array | Mind int overflow
 | 215.kth-largest-element-in-an-array | [cpp](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O(N) | O(1) | Medium/S-- | quick-select | best = O(N), worst = O(N^2)
 | 228.summary-ranges |[python](./leetcode/228.summary-ranges.py) | O(N) | O(1) | Medium
-| 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(N + M) | O(1) | Medium
+| 240.search-a-2d-matrix-ii | [cpp](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O(M + N) | O(1) | Medium
 | 251.flatten-2d-vector | [python](./leetcode/251.flatten-2d-vector.py) | - | O(N) | Medium
 | 271.encode-and-decode-strings | [cpp](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | O(N) | O(1) | Easy | String | N = count of chars
 | 277.find-the-celebrity | [cpp](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | O(N) | O(1) | Medium |
@@ -124,7 +126,6 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
-| 54.spiral-matrix | [cpp](./leetcode/54.spiral-matrix.cpp) | O(N) | Medium
 | 350.intersection-of-two-arrays-ii | [python](./leetcode/350.intersection-of-two-arrays-ii.py) | O(N * logN) | Easy
 | 485.max-consecutive-ones | [cpp](./leetcode/485.max-consecutive-ones.cpp) | O(N) | Easy
 | 498.diagonal-traverse | [cpp](./leetcode/498.diagonal-traverse.cpp) | O(MN) | Medium
@@ -196,6 +197,7 @@ This is a **continually updated, open source** project.
 | 029.divide-two-integers | [cpp](./leetcode/29.divide-two-integers.cpp), [python](./leetcode/29.divide-two-integers.py) | O(logN) | O(1) | Medium/S++ | Math
 | $033.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | O(1) | Medium/S++ | | Perfect
 | 034.find-first-and-last-position-of-element-in-sorted-array | [cpp](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(LogN) | O(1) | Medium | | Perfect
+| 050.powx-n | [cpp](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | O(logN) | O(1) | Medium/S++
 | $069.sqrtx | [cpp](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | O(logN) | O(1) | Easy | | Perfect
 | 074.search-a-2d-matrix | [cpp](./leetcode/74.search-a-2d-matrix.cpp),  [python](./leetcode/74.search-a-2d-matrix.py) | O(logN) | O(1) | Medium | N = row * col
 | 081.search-in-rotated-sorted-array-ii | [cpp](./leetcode/81.search-in-rotated-sorted-array-ii.cpp), [python](./leetcode/81.search-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | O(1) | Medium/S++ |

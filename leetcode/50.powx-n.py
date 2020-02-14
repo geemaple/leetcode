@@ -1,5 +1,37 @@
-# O(N) Recursive
 class Solution(object):
+    def myPow(self, x, n):
+        """
+        :type x: float
+        :type n: int
+        :rtype: float
+        """
+        if n == 0:
+            return 1.0
+        
+        postive = n > 0
+        n = abs(n)
+
+        count = 0
+        res = 1
+
+        step = 1
+        tmp = x
+        
+        while count < n:
+            if count + step > n:
+                step = 1
+                tmp = x
+                
+            res = res * tmp
+            count += step
+            
+            step = step * 2
+            tmp = tmp * tmp
+            
+        return res if postive else 1/res
+        
+# O(logN) Non Recursive
+class Solution2(object):
    def myPow(self, x, n):
         """
         :type x: float
@@ -22,8 +54,8 @@ class Solution(object):
 
         return ans
 
-# O(N) Recursive
-class Solution2(object):
+# O(logN) Recursive
+class Solution3(object):
     def recursivePow(self, x, n):
         if n == 0:
             return 1.0
@@ -46,22 +78,3 @@ class Solution2(object):
             n = - n
         
         return self.recursivePow(x, n)
-
-# O(N)
-class Solution3(object):
-    def myPow(self, x, n):
-        """
-        :type x: float
-        :type n: int
-        :rtype: float
-        """
-        if n < 0:
-            x = 1 / x
-            n = - n
-        
-        ans = 1
-
-        for _ in range(n):
-            ans = ans * x
-
-        return ans
