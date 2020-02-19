@@ -89,7 +89,7 @@ This is a **continually updated, open source** project.
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 014.longest-common-prefix | [cpp](./leetcode/14.longest-common-prefix.cpp), [python](./leetcode/14.longest-common-prefix.py) | O(S) | O(1) | Easy-- | Trie | Perfect |
+| 014.longest-common-prefix | [cpp](./leetcode/14.longest-common-prefix.cpp), [python](./leetcode/14.longest-common-prefix.py) | O(S) | O(1) | Easy/S-- | Trie | Perfect |
 | 031.next-permutation | [cpp](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py)| O(N) | O(1) | Medium | Array | Great
 | 041.first-missing-positive | [python](./leetcode/41.first-missing-positive.py) | O(N) | O(1) | Hard
 | 042.trapping-rain-water | [cpp](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | O(N) | O(N) | Hard | Scan Twice | Perfect | 
