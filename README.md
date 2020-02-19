@@ -53,7 +53,7 @@ This is a **continually updated, open source** project.
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 002.add-two-numbers | [cpp](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | O(N) | O(1) | Medium/S--
 | 007.reverse-integer | [cpp](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | O(L) | O(1) | Easy/S--
-| 008.string-to-integer-atoi | [cpp](./leetcode/8.string-to-integer-atoi.cpp) | O(N) | O(1) | Medium/S-- | Overflow Check | Awesome
+| 008.string-to-integer-atoi | [cpp](./leetcode/8.string-to-integer-atoi.cpp),  [python](./leetcode/8.string-to-integer-atoi.py) | O(N) | O(1) | Medium/S-- | Overflow Check | Awesome
 | 009.palindrome-number | [python](./leetcode/9.palindrome-number.py) | O(N) | O(1) | Easy | 
 | 012.integer-to-roman | [cpp](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | O(N) | Medium | N = length of results
 | 013.roman-to-integer | [cpp](./leetcode/13.roman-to-integer.cpp), [python](./leetcode/13.roman-to-integer.py) | O(N) | Easy
