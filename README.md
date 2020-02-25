@@ -320,10 +320,11 @@ This is a **continually updated, open source** project.
 | 438.find-all-anagrams-in-a-string | [cpp](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | O(N) | O(N) | Easy
 
 ## queue
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Node   | Grade   |
-| -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 239.sliding-window-maximum | [cpp](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | O(N) | O(N) | Hard | | Great 
-| 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(1) | O(N) | Easy | | Perfect 
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Grade   | Node   |
+| -----------| ------------| --------| ---------| ---------------| --------| -------|
+| 239.sliding-window-maximum | [cpp](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | O(N) | O(N) | Hard | Great 
+| 346.moving-average-from-data-stream | [cpp](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | O(1) | O(N) | Easy | Perfect 
+| 933.number-of-recent-calls | [cpp](./leetcode/933.number-of-recent-calls.cpp), [python](./leetcode/933.number-of-recent-calls.py) | O(Inputs) | O(1) | Easy | Perfect | [Fast I/O for Competitive Programming](https://www.geeksforgeeks.org/fast-io-for-competitive-programming/)
 
 ## Heap
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
