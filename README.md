@@ -170,16 +170,17 @@ This is a **continually updated, open source** project.
 
 > There is actually no algorithm in linked list question, but is really tricky to get one right
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
-| -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 021.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | O(1) | Easy || Perfect
-| 025.reverse-nodes-in-k-group | [cpp](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | O(1) | Hard/S-- | | Perfect
-| 086.partition-list | [cpp](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | O(N) | O(1) | Medium || Perfect
-| 092.reverse-linked-list-ii | [cpp](./leetcode/92.reverse-linked-list-ii.cpp), [python](./leetcode/92.reverse-linked-list-ii.py) | O(N) | O(1) | Medium || Perfect
-| 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy || perfect
-| 142.linked-list-cycle-ii | [cpp](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | O(1) | Medium/S++ || Perfect
-| 160.intersection-of-two-linked-lists | [cpp](./leetcode/160.intersection-of-two-linked-lists.cpp), [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | two-pointers | Perfect
-| 206.reverse-linked-list | [cpp](./leetcode/206.reverse-linked-list.cpp), [python](./leetcode/206.reverse-linked-list.py) | O(N) | O(1) | Easy/S++ || Perfect
+| Problem    | Solution    | Time    | Space    |  Difficulty    |Grade   | Note   | 
+| -----------| ------------| --------| ---------| ---------------| --------| -------|
+| 021.merge-two-sorted-lists | [cpp](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | O(N) | O(1) | Easy | Perfect
+| 024.swap-nodes-in-pairs | [cpp](./leetcode/24.swap-nodes-in-pairs.cpp), [python](./leetcode/24.swap-nodes-in-pairs.py) | O(N) | O(1) | Medium | Great
+| 025.reverse-nodes-in-k-group | [cpp](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | O(N) | O(1) | Hard/S-- | Perfect
+| 086.partition-list | [cpp](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | O(N) | O(1) | Medium | Perfect
+| 092.reverse-linked-list-ii | [cpp](./leetcode/92.reverse-linked-list-ii.cpp), [python](./leetcode/92.reverse-linked-list-ii.py) | O(N) | O(1) | Medium | Perfect
+| 141.linked-list-cycle | [cpp](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O(N) | O(1) | Easy | perfect
+| 142.linked-list-cycle-ii | [cpp](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O(N) | O(1) | Medium/S++ | Perfect
+| 160.intersection-of-two-linked-lists | [cpp](./leetcode/160.intersection-of-two-linked-lists.cpp), [python](./leetcode/160.intersection-of-two-linked-lists.py) | O(N + M) | Easy | Perfect | two-pointers
+| 206.reverse-linked-list | [cpp](./leetcode/206.reverse-linked-list.cpp), [python](./leetcode/206.reverse-linked-list.py) | O(N) | O(1) | Easy/S++ | Perfect
 
 | Problem    | Solution    | Time    | Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| --------------| -------| --------|
