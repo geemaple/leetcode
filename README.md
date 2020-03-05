@@ -290,20 +290,20 @@ This is a **continually updated, open source** project.
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Grade   | Note   |
 | -----------| ------------| --------| ---------| ---------------| --------| -------|
 | 001.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | O(N) | Easy || Perfect
-| 030.substring-with-concatenation-of-all-words | [cpp](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | O(MN) | O(M) | Hard/SSS | Cool | Study O(N)
-| 36.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp) | O(N ^ 2) | Medium | array-indexes
+| 030.substring-with-concatenation-of-all-words | [cpp](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | O(MN) | O(M) | Hard/SSS | Cool | TODO O(N)
+| 36.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp) | O(N ^ 2) | Medium ||| array-indexes
 | 49.group-anagrams | [cpp](./leetcode/49.group-anagrams.cpp) | O(N * k * Logk) | Medium
-| 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | O(N) | Easy || Awesome
+| 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | O(N) | Easy | Awesome
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
 | 217.contains-duplicate | [cpp](./leetcode/217.contains-duplicate.cpp) | O(N) | Easy
 | 219.contains-duplicate-ii | [cpp](./leetcode/219.contains-duplicate-ii.cpp) | O(N) | Easy
-| 242.valid-anagram | [cpp](./leetcode/242.valid-anagram.cpp), [python](./leetcode/242.valid-anagram.py) | O(N) | O(1) | Easy || Perfect
+| 242.valid-anagram | [cpp](./leetcode/242.valid-anagram.cpp), [python](./leetcode/242.valid-anagram.py) | O(N) | O(1) | Easy | Perfect
 | 249.group-shifted-strings | [cpp](./leetcode/249.group-shifted-strings.cpp) | O(N * K) | Medium
-| 347.top-k-frequent-elements | [cpp](./leetcode/347.top-k-frequent-elements.cpp) | O(N * LogN) | Medium | TODO: quick-sort, bucket-sort
+| 347.top-k-frequent-elements | [cpp](./leetcode/347.top-k-frequent-elements.cpp) | O(N * LogN) | Medium ||| TODO: quick-sort, bucket-sort
 | 350.intersection-of-two-arrays-ii | [cpp](./leetcode/350.intersection-of-two-arrays-ii.cpp) | O(MN) | Easy
-| 359.logger-rate-limiter | [cpp](./leetcode/359.logger-rate-limiter.cpp) | O(1) | Easy | [amortized](https://stackoverflow.com/questions/200384/constant-amortized-time)
+| 359.logger-rate-limiter | [cpp](./leetcode/359.logger-rate-limiter.cpp) | O(1) | Easy ||| [amortized](https://stackoverflow.com/questions/200384/constant-amortized-time)
 | 380.insert-delete-getrandom-o1 | [cpp](./leetcode/380.insert-delete-getrandom-o1.cpp) | O(1) | Medium
-| 447.number-of-boomerangs | [cpp](./leetcode/447.number-of-boomerangs.cpp), [python](./leetcode/447.number-of-boomerangs.py) | O(N^2) | O(N) | Easy | | Cool |
+| 447.number-of-boomerangs | [cpp](./leetcode/447.number-of-boomerangs.cpp), [python](./leetcode/447.number-of-boomerangs.py) | O(N^2) | O(N) | Easy | Cool |
 | 454.4sum-ii | [cpp](./leetcode/454.4sum-ii.cpp) | O(N ^ 2) | Medium
 | 599.minimum-index-sum-of-two-lists | [cpp](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | O(M + N) | Easy
 | 652.find-duplicate-subtrees | [cpp](./leetcode/652.find-duplicate-subtrees.cpp) | O(N) | Medium
