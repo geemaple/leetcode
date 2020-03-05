@@ -287,9 +287,10 @@ This is a **continually updated, open source** project.
 | 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
 ## Hash Table
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
-| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| Problem    | Solution    | Time    | Space    |  Difficulty    | Grade   | Note   |
+| -----------| ------------| --------| ---------| ---------------| --------| -------|
 | 001.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | O(N) | Easy || Perfect
+| 030.substring-with-concatenation-of-all-words | [cpp](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | O(MN) | O(M) | Hard/SSS | Cool | Study O(N)
 | 36.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp) | O(N ^ 2) | Medium | array-indexes
 | 49.group-anagrams | [cpp](./leetcode/49.group-anagrams.cpp) | O(N * k * Logk) | Medium
 | 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | O(N) | Easy || Awesome
