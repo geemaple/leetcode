@@ -1,5 +1,39 @@
+#
+# [78] Subsets
+#
+# https://leetcode.com/problems/subsets/description/
+#
+# algorithms
+# Medium (47.99%)
+# Total Accepted:    282.2K
+# Total Submissions: 587.3K
+# Testcase Example:  '[1,2,3]'
+#
+# Given a set of distinct integers, nums, return all possible subsets (the
+# power set).
+# 
+# Note: The solution set must not contain duplicate subsets.
+# 
+# Example:
+# 
+# 
+# Input: nums = [1,2,3]
+# Output:
+# [
+# ⁠ [3],
+# [1],
+# [2],
+# [1,2,3],
+# [1,3],
+# [2,3],
+# [1,2],
+# []
+# ]
+# 
+#
+
 # backtracing
-# O(N * 2^N); O(2^N) solusions muliply each need O(N) to construct a array result
+# O(N * 2^N); O(2^N) solusions multiply each need O(N) to construct a array result
 class Solution(object):
     def subsets(self, nums):
         """
@@ -7,19 +41,17 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         results = []
-        visted = []
-        sorted_nums = sorted(nums)
-        self.dfs(sorted_nums, visted, results, 0)
+        tmp = []
+        self.helper(sorted(nums), tmp, 0, results)
         return results
 
-    def dfs(self, nums, visted, results, start):
-
-        results.append(list(visted))
+    def helper(self, nums, tmp, start, results):
+        results.append(tmp[:]) # another copy results.append(list(tmp))
 
         for i in range(start, len(nums)):
-            visted.append(nums[i])
-            self.dfs(nums, visted, results, i + 1)
-            visted.pop()
+            tmp.append(nums[i])
+            self.helper(nums, tmp, i + 1, results)
+            tmp.pop()
 
 # bit manipulation
 # O(N * 2^N)
@@ -61,7 +93,7 @@ class Solution2(object):
 # for 1 [[], [1]]
 # for 2 [[], [1], [2], [1, 2]]
 # for 3 [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]] 
-class Solution(object):
+class Solution3(object):
     def subsets(self, nums):
         """
         :type nums: List[int]

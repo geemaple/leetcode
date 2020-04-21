@@ -1,3 +1,36 @@
+#
+# [90] Subsets II
+#
+# https://leetcode.com/problems/subsets-ii/description/
+#
+# algorithms
+# Medium (39.90%)
+# Total Accepted:    168.4K
+# Total Submissions: 421.6K
+# Testcase Example:  '[1,2,2]'
+#
+# Given a collection of integers that might contain duplicates, nums, return
+# all possible subsets (the power set).
+# 
+# Note: The solution set must not contain duplicate subsets.
+# 
+# Example:
+# 
+# 
+# Input: [1,2,2]
+# Output:
+# [
+# ⁠ [2],
+# ⁠ [1],
+# ⁠ [1,2,2],
+# ⁠ [2,2],
+# ⁠ [1,2],
+# ⁠ []
+# ]
+# 
+# 
+#
+
 class Solution(object):
     def subsetsWithDup(self, nums):
         """
@@ -5,20 +38,17 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         results = []
-        visted = []
-        sorted_nums = sorted(nums)
-        self.dfs(sorted_nums, visted, results, 0)
+        tmp = []
+        self.helper(sorted(nums), tmp, 0, results)
         return results
-        
-    def dfs(self, nums, visted, results, start):
 
-        results.append(list(visted))
+    def helper(self, nums, tmp, start, results):
+        results.append(tmp[:])
 
         for i in range(start, len(nums)):
-            
             if i > start and nums[i] == nums[i - 1]:
                 continue
-
-            visted.append(nums[i])
-            self.dfs(nums, visted, results, i + 1)
-            visted.pop()
+            else:
+                tmp.append(nums[i])
+                self.helper(nums, tmp, i + 1, results)
+                tmp.pop()

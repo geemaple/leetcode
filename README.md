@@ -3,8 +3,7 @@ My personal leetcode answers<br/>
 This is a **continually updated, open source** project.
 
 📢📢📢 
-1. Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
-2. Add **C++** runtime top percentage
+Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 
 # Milestone
 🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
@@ -280,9 +279,9 @@ This is a **continually updated, open source** project.
 | 047.permutations-ii | [cpp](./leetcode/47.permutations-ii.cpp), [python](./leetcode/47.permutations-ii.py) | O(N * N!) | O(N) | Medium/S++ | DFS | Perfect
 | 051.n-queens | [cpp](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | O(N^N) | O(N) | Hard | DFS | Awesome
 | 052.n-queens-ii | [cpp](./leetcode/52.n-queens-ii.cpp), [python](./leetcode/52.n-queens-ii.py) | O(N^N) | O(N) | Hard | DFS | Perfect
-| 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | O(N) | Medium | DFS/Bit | Perfect
+| 078.subsets | [cpp](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | O(N * 2^N) | O(N) | Medium | DFS/Iteration/Bit |
 | 079.word-search | [cpp](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O(MN * L^2), L = length of words | O(MN) | Medium | DFS |
-| 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | O(N) | Medium/S-- | DFS | Perfect
+| 090.subsets-ii | [cpp](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | O(N * 2^N) | O(N) | Medium(S++) | DFS | TODO: Iteration
 | 126.word-ladder-ii | [cpp](./leetcode/126.word-ladder-ii.cpp), [python](./leetcode/126.word-ladder-ii.py) | - | O(N) | Hard/SSS | DFS Pruning | Awesome
 | 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
