@@ -31,6 +31,8 @@
 # 
 #
 
+# refer to 78.subset
+# 24 ms, faster than 72.15%
 class Solution(object):
     def subsetsWithDup(self, nums):
         """
@@ -52,3 +54,22 @@ class Solution(object):
                 tmp.append(nums[i])
                 self.helper(nums, tmp, i + 1, results)
                 tmp.pop()
+
+# refer to 78.subset
+# 28 ms, faster than 42.58%
+class Solution3(object):
+    def subsetsWithDup(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        results = [[]]
+        size = len(nums)
+        sort_nums = sorted(nums)
+        for i in range(size):
+            if i == 0 or sort_nums[i] != sort_nums[i - 1]:
+                l = len(results)
+            
+            for j in range(len(results) - l, len(results)):
+                tmp = results[j] + [sort_nums[i]]
+                results.append(tmp)

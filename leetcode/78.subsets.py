@@ -34,6 +34,7 @@
 
 # backtracing
 # O(N * 2^N); O(2^N) solusions multiply each need O(N) to construct a array result
+# 20 ms, faster than 71.68%
 class Solution(object):
     def subsets(self, nums):
         """
@@ -93,6 +94,8 @@ class Solution2(object):
 # for 1 [[], [1]]
 # for 2 [[], [1], [2], [1, 2]]
 # for 3 [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]] 
+#
+# 24 ms, faster than 39.46%
 class Solution3(object):
     def subsets(self, nums):
         """
@@ -103,7 +106,7 @@ class Solution3(object):
         size = len(nums)
         for i in range(size):
             for j in range(len(results)):
-                results.append(list(results[j]))
-                results[-1].append(nums[i])
+                tmp = results[j] + [nums[i]]
+                results.append(tmp)
 
         return results
