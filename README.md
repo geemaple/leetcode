@@ -193,8 +193,8 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 
 ## Binary Search
 
-| Problem    | Solution    | Time    | Space    |  Difficulty    | Top%   | Note   |
-| -----------| ------------| --------| ---------| ---------------| -------| --------|
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Statistic    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ------------- | ---------|
 | 029.divide-two-integers | [cpp](./leetcode/29.divide-two-integers.cpp), [python](./leetcode/29.divide-two-integers.py) | O(logN) | O(1) | Medium/S++ | Math
 | $033.search-in-rotated-sorted-array | [cpp](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | O(1) | Medium/S++ | | Perfect
 | 034.find-first-and-last-position-of-element-in-sorted-array | [cpp](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(LogN) | O(1) | Medium | | Perfect
@@ -214,6 +214,7 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | 702.search-in-a-sorted-array-of-unknown-size | [cpp](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | O(LogN) | O(1) | Medium | | Perfect
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | | Perfect 
 | 852.peak-index-in-a-mountain-array | [cpp](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O(logN) | O(1) | Easy | Golden-section search |
+| 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
 
 ## Divide and Conquer
 
