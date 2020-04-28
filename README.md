@@ -193,6 +193,11 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 
 ## Binary Search
 
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ---------|
+| 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
+
+
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Statistic    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ------------- | ---------|
 | 029.divide-two-integers | [cpp](./leetcode/29.divide-two-integers.cpp), [python](./leetcode/29.divide-two-integers.py) | O(logN) | O(1) | Medium/S++ | Math
