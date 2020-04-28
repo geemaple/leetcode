@@ -195,8 +195,8 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
+| 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | TODO: missing one template
 | 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
-
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Statistic    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ------------- | ---------|
@@ -217,7 +217,6 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | 374.guess-number-higher-or-lower | [cpp](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(LogN) | O(1) | Easy | | Perfect
 | 658.find-k-closest-elements | [cpp](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | Log(N - K) | O(1) | Medium/SSS | | Awesome
 | 702.search-in-a-sorted-array-of-unknown-size | [cpp](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | O(LogN) | O(1) | Medium | | Perfect
-| 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | | Perfect 
 | 852.peak-index-in-a-mountain-array | [cpp](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O(logN) | O(1) | Easy | Golden-section search |
 | 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
 
