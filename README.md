@@ -86,6 +86,10 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 
 ## Array and String
 
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ---------|
+| 169.majority-element | [cpp](./leetcode/169.majority-element.cpp), [python](./leetcode/169.majority-element.py) | O(N) | O(1) | Easy | Boyer–Moore majority vote algorithm |
+
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 | 014.longest-common-prefix | [cpp](./leetcode/14.longest-common-prefix.cpp), [python](./leetcode/14.longest-common-prefix.py) | O(S) | O(1) | Easy/S-- | Trie | Perfect |
