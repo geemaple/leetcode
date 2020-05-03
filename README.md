@@ -1,6 +1,10 @@
-# Algorithm
-我个人的力扣答案(My personal leetcode answers)<br/>
-这是一个 **持续更新的** 开源项目(This is a **continually updated** open source project)
+# 算法/Algorithm
+
+我个人的力扣答案
+这是一个 **持续更新的** 开源项目
+
+My personal leetcode answers<br/>
+This is a **continually updated** open source project
 
 - [Leetcode](#leetcode)
     - [Math](#math)
