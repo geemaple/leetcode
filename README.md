@@ -89,6 +89,8 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
 | 169.majority-element | [cpp](./leetcode/169.majority-element.cpp), [python](./leetcode/169.majority-element.py) | O(N) | O(1) | Easy | Boyer–Moore majority vote algorithm |
+| 229.majority-element-ii | [cpp](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | O(N) | O(1) | Medium | Boyer–Moore majority vote algorithm |
+
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
