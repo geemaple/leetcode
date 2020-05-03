@@ -1,21 +1,6 @@
 # Algorithm
-My personal leetcode answers<br/>
-This is a **continually updated, open source** project.
-
-📢📢📢 
-Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
-
-# Milestone
-🎉🎉🎉 Finished 100 / 808 questions on 2018-05-28<br/>
-🎉🎉🎉 Finished 150 / 824 questions on 2018-06-29<br/>
-🎑🎑🎑 Finished 200 / 905 questions on 2018-09-24<br/> 
-🎉🎉🎉 Finished 250 / 917 questions on 2018-10-15<br/>
-🚑🏥🛌 Black out. 2019 has passed. Lets do it again<br/>
-💘💘💘 Finished 281 / 929 questions on 2020-02-14<br/>
-
-# [References](./learning/README.md)
-
-☝️Hey!!!, its clickable. references are moved💦
+我个人的力扣答案(My personal leetcode answers)<br/>
+这是一个 **持续更新的** 开源项目(This is a **continually updated** open source project)
 
 - [Leetcode](#leetcode)
     - [Math](#math)
@@ -41,7 +26,6 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
     - [Trie](#trie)
     - [Other](#other)
     
-
 - [Lintcode](#lintcode)
 
 # Leetcode
@@ -484,3 +468,27 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 | 618.search-graph-nodes | [cpp](./lintcode/618.search-graph-nodes.cpp), [python](./lintcode/618.search-graph-nodes.py) | O(V + E) | O(V) | Medium | tree-traversal
 | 629.minimum-spanning-tree | [cpp](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | O(N * logN) | O(N) | Hard | union-find | Prim, Kruskal
 | 652.factorization | [cpp](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | O(N) | O(LogN) | Medium/S++ | N = input number
+
+- [软件推荐/Recommend software]
+    - [Anki](https://apps.ankiweb.net/)
+    - [Leetcode-cli](https://github.com/skygragon/leetcode-cli)
+
+- [书籍推荐/Recommend Books]
+    - 《算法技术手册》/ Algorithms in a Nutshell
+    - 《STL源码剖析》/ The Annotated STL Sources
+    - 《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition
+    - 《数学之美》(A chinese version book by Doctor Wujun)
+    - 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
+
+- [博客/Podcasts]
+    - [Teahour#94 - 与 Hawstein 和左程云聊算法和数据结构](https://teahour.fm/94)
+
+- [我的文章/My Articles]
+    - [知乎答题](https://www.zhihu.com/question/31092580/answer/432178498)
+    - [知乎结题报告](https://zhuanlan.zhihu.com/c_1238829343842582528)
+    - [一对好基友，深度优先vs.广度优先搜索](https://mp.weixin.qq.com/s/_ZT69BUcw9cmXTBPaSjEnw)
+    - [树的三种DFS策略(前序、中序、后序)遍历](https://mp.weixin.qq.com/s/Uab-UBKR5UfWrDKdAgyeIg)
+
+- [其他链接/Other Links]
+    - [小刀客笔记/A Chinese Written Blog](https://wdxtub.com/interview/)
+    - [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode-Solutions)
