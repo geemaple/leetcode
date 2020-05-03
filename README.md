@@ -47,6 +47,10 @@ Add **S--** **S++** **SSS** notations to further **level** algorithm monsters
 # Leetcode
 
 ## Math
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ---------|
+| 263.ugly-number | [cpp](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O(1) | O(1) | Easy | O(T) = O(LogN), N <= 2^31, O(T) = 32
+
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
