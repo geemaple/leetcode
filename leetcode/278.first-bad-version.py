@@ -41,8 +41,27 @@
 # @return a bool
 # def isBadVersion(version):
 
-# start < end mid值偏左，所以start要加1
+# start + 1 < end, 最终剩余2个, 结束要start，end各判断一遍
 class Solution(object):
+    def firstBadVersion(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        start = 0
+        end = n
+        while (start + 1 < end):
+            mid = start + (end - start) / 2
+
+            if isBadVersion(mid):
+                end = mid
+            else:
+                start = mid
+
+        return start if isBadVersion(start) else end
+
+# start < end mid值偏左，所以start要加1
+class Solution2(object):
     def firstBadVersion(self, n):
         """
         :type n: int
@@ -60,24 +79,3 @@ class Solution(object):
                 start = mid + 1
 
         return start
-        
-
-
-# start + 1 < end, 最终剩余2个, 结束要start，end各判断一遍
-class Solution2(object):
-    def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        start = 0
-        end = n
-        while (start + 1 < end):
-            mid = start + (end - start) / 2
-
-            if isBadVersion(mid):
-                end = mid
-            else:
-                start = mid
-
-        return start if isBadVersion(start) else end

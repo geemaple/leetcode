@@ -41,6 +41,7 @@ public:
         int size = (int)nums.size();
 
         for (int& n : nums) {
+            // 判断顺序很重要
             if (candidate1 == n) {
                 count1 ++;
             } else if (candidate2 == n) {

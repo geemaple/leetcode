@@ -41,6 +41,7 @@ class Solution(object):
         count2 = 0
         
         for n in nums:
+            # 判断顺序很重要
             if candidate1 == n:
                 count1 += 1
             elif candidate2 == n:

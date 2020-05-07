@@ -194,6 +194,7 @@ This is a **continually updated** open source project
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | TODO: missing one template
+| 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Easy | [3 template](https://leetcode.com/problems/binary-search/discuss/205763/Share-Three-Common-Templates-For-Binary-Search)
 | 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Statistic    |  Note    |
@@ -209,7 +210,6 @@ This is a **continually updated** open source project
 | 154.find-minimum-in-rotated-sorted-array-ii | [cpp](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O(logN) ~ O(N) | O(1) | Hard
 | 162.find-peak-element | [cpp](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O(logN) | O(1) | Medium | | Perfect
 | 270.closest-binary-search-tree-value | [cpp](./leetcode/270.closest-binary-search-tree-value.cpp), [python](./leetcode/270.closest-binary-search-tree-value.py) | O(LogN) | O(1) | Easy | | Perfect
-| 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Easy | 80.53% | [3 template](https://leetcode.com/problems/binary-search/discuss/205763/Share-Three-Common-Templates-For-Binary-Search)
 | 302.smallest-rectangle-enclosing-black-pixels | [cpp](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O(MLogN + NLogM) | O(1) | Hard/SSS || Perfect
 | 367.valid-perfect-square | [cpp](./leetcode/367.valid-perfect-square.cpp), [python](./leetcode/367.valid-perfect-square.py) | O(LogN) | O(1) | Easy || Perfect
 | 374.guess-number-higher-or-lower | [cpp](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(LogN) | O(1) | Easy | | Perfect

@@ -39,8 +39,26 @@
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 
-// start < end mid值偏左，所以start要加1
+// start + 1 < end, 最终剩余2个, 结束要start，end各判断一遍
 class Solution {
+public:
+    int firstBadVersion(int n) {
+        int start = 1;
+        int end = n;
+        while (start + 1 < end) {
+            int mid = start + (end - start) / 2;
+            if (isBadVersion(mid)) {
+                end = mid;
+            } else {
+                start = mid;
+            }
+        }
+        return isBadVersion(start) ? start : end;
+    }
+};
+
+// start < end mid值偏左，所以start要加1
+class Solution2 {
 public:
     int firstBadVersion(int n) {
         int start = 1;
@@ -56,23 +74,5 @@ public:
         }
 
         return start;
-    }
-};
-
-// start + 1 < end, 最终剩余2个, 结束要start，end各判断一遍
-class Solution2 {
-public:
-    int firstBadVersion(int n) {
-        int start = 1;
-        int end = n;
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (isBadVersion(mid)) {
-                end = mid;
-            } else {
-                start = mid;
-            }
-        }
-        return isBadVersion(start) ? start : end;
     }
 };
