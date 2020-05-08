@@ -193,6 +193,7 @@ This is a **continually updated** open source project
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
+| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(N)) | O(1) | | TODO: CPP, find kth solution
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | TODO: missing one template
 | 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Easy | [3 template](https://leetcode.com/problems/binary-search/discuss/205763/Share-Three-Common-Templates-For-Binary-Search)
 | 1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp | [cpp](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | O(logN) | O(1) | Easy | |
@@ -222,7 +223,6 @@ This is a **continually updated** open source project
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
-| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(K)) | O(1) |Hard/SSS | binary-search | Perfect
 | 098.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | O(1) | Medium || Cool
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | O(1) | Easy || Perfect
@@ -490,8 +490,11 @@ This is a **continually updated** open source project
 - [我的文章/My Articles]
     - [知乎答题](https://www.zhihu.com/question/31092580/answer/432178498)
     - [知乎结题报告](https://zhuanlan.zhihu.com/c_1238829343842582528)
+    - [C++算法排序中常用cmp的三种实现](https://mp.weixin.qq.com/s/Ws3iqKMF5z2fbvaseTETtQ)
     - [一对好基友，深度优先vs.广度优先搜索](https://mp.weixin.qq.com/s/_ZT69BUcw9cmXTBPaSjEnw)
     - [树的三种DFS策略(前序、中序、后序)遍历](https://mp.weixin.qq.com/s/Uab-UBKR5UfWrDKdAgyeIg)
+    - [二分查找算法，竟然16年之后才有人写对？](https://mp.weixin.qq.com/s/WSVYJxCYg5FtI5Z1JJNysA)
+    - [Boyer-Moore大多数选择算法](https://mp.weixin.qq.com/s/sf0T35bIZzNML10WmgcN0g)
 
 - [其他链接/Other Links]
     - [小刀客笔记/A Chinese Written Blog](https://wdxtub.com/interview/)
