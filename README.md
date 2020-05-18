@@ -224,13 +224,14 @@ This is a **continually updated** open source project
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
 | 098.validate-binary-search-tree | [cpp](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O(N) | O(1) | Medium ||
+| 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | O(1) | Medium ||
+
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Note   | Grade   |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
 
 | 104.maximum-depth-of-binary-tree | [cpp](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O(N) | O(1) | Easy || Perfect
 | 110.balanced-binary-tree | [cpp](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O(N) | O(1) | Easy || Perfect
-| 236.lowest-common-ancestor-of-a-binary-tree | [cpp](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O(N) | O(1) | Medium || Perfect
 | 273.integer-to-english-words | [python](./leetcode/273.integer-to-english-words.py) | O(N) | O(N) | Hard
 | 282.expression-add-operators | [cpp](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | O(2 ^ N) | O(N) | Hard/SSS | DFS | N = length of input
 | 687.longest-univalue-path | [cpp](./leetcode/687.longest-univalue-path.cpp), [python](./leetcode/687.longest-univalue-path.py) | O(N) | O(1) | Easy/S++ || Perfect
