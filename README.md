@@ -193,7 +193,7 @@ This is a **continually updated** open source project
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
-| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(N)) | O(1) | | TODO: CPP, find kth solution
+| 004.median-of-two-sorted-arrays | [cpp](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O(log(N)) | O(1) | | TODO: find kth solution
 | 278.first-bad-version | [cpp](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Easy | [3 template](https://leetcode.com/problems/binary-search/discuss/205763/Share-Three-Common-Templates-For-Binary-Search)
 | 658.find-k-closest-elements | [cpp](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | Log(N - K) | O(1) | Medium
 | 704.binary-search | [cpp](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Easy | TODO: missing one template
