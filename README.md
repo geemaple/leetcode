@@ -6,27 +6,27 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project
 
 ## 软件推荐/Recommend software
-    - [Anki](https://apps.ankiweb.net/)
-    - [Leetcode-cli](https://github.com/skygragon/leetcode-cli)
+- [Anki](https://apps.ankiweb.net/)
+- [Leetcode-cli](https://github.com/skygragon/leetcode-cli)
 
 ## 书籍推荐/Recommend Books
-    - 《算法技术手册》/ Algorithms in a Nutshell
-    - 《STL源码剖析》/ The Annotated STL Sources
-    - 《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition
-    - 《数学之美》(A chinese version book by Doctor Wujun)
-    - 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
+- 《算法技术手册》/ Algorithms in a Nutshell
+- 《STL源码剖析》/ The Annotated STL Sources
+- 《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition
+- 《数学之美》(A chinese version book by Doctor Wujun)
+- 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
 
 ## 博客/Podcasts
-    - [Teahour#94 - 与 Hawstein 和左程云聊算法和数据结构](https://teahour.fm/94)
+- [Teahour#94 - 与 Hawstein 和左程云聊算法和数据结构](https://teahour.fm/94)
 
 ## 我的文章/My Articles
-    - [知乎答题](https://www.zhihu.com/question/31092580/answer/432178498)
-    - [知乎结题报告](https://zhuanlan.zhihu.com/leetcode-report)
-    - [算法总结](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1342753535058034688&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
+- [知乎答题](https://www.zhihu.com/question/31092580/answer/432178498)
+- [知乎结题报告](https://zhuanlan.zhihu.com/leetcode-report)
+- [算法总结](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1342753535058034688&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
 
 ## 其他链接/Other Links
-    - [小刀客笔记/A Chinese Written Blog](https://wdxtub.com/interview/)
-    - [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode-Solutions)
+- [小刀客笔记/A Chinese Written Blog](https://wdxtub.com/interview/)
+- [kamyu104/LeetCode](https://github.com/kamyu104/LeetCode-Solutions)
 
 - [Leetcode](#leetcode)
     - [Math](#math)
