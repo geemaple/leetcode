@@ -1,20 +1,19 @@
 # 算法/Algorithm
-
 我个人的力扣答案
 这是一个 **持续更新的** 开源项目
 My personal leetcode answers<br/>
 This is a **continually updated** open source project
 
-## 我的文章/My Articles
-- [知乎答案](https://www.zhihu.com/question/31092580/answer/432178498)
+## 文章/Articles
 - [知乎结题报告](https://zhuanlan.zhihu.com/leetcode-report)
+- [知乎答案](https://www.zhihu.com/question/31092580/answer/432178498)
 - [算法总结](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1342753535058034688&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
 
-## 软件推荐/Recommend software
-- [Anki](https://apps.ankiweb.net/)
-- [Leetcode-cli](https://github.com/skygragon/leetcode-cli)
+## 软件/Softwares
+- Anki(https://apps.ankiweb.net/)
+- Leetcode-cli(https://github.com/skygragon/leetcode-cli)
 
-## 书籍推荐/Recommend Books
+## 书籍/Books
 - 《算法技术手册》/ Algorithms in a Nutshell
 - 《STL源码剖析》/ The Annotated STL Sources
 - 《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition
