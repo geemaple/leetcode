@@ -1,5 +1,5 @@
 # 算法/Algorithm
-我个人的力扣答案
+我个人的力扣答案, [公众号:GeekBro](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
 这是一个 **持续更新的** 开源项目
 My personal leetcode answers<br/>
 This is a **continually updated** open source project
@@ -7,7 +7,6 @@ This is a **continually updated** open source project
 ## 文章/Articles
 - [知乎结题报告](https://zhuanlan.zhihu.com/leetcode-report)
 - [知乎答案](https://www.zhihu.com/question/31092580/answer/432178498)
-- [算法总结](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1342753535058034688&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
 
 ## 软件/Softwares
 - Anki(https://apps.ankiweb.net/)
