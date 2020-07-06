@@ -5,11 +5,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        table = {}
-        
+        map = dict()
         for i in range(len(nums)):
-            
-            if nums[i] in table:
-                return [table[nums[i]], i]
-            
-            table[target - nums[i]] = i
+            val = target - nums[i]
+            if val in map:
+                return [map[val], i]
+            else:
+                map[nums[i]] = i

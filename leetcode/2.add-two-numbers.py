@@ -11,26 +11,19 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        cur1 = l1
-        cur2 = l2
-        root = ListNode(0)
-        cur = root
-        addOn = 0
-
-        while (cur1 is not None or cur2 is not None or addOn > 0):
-            digit1 = cur1.val if cur1 is not None else 0
-            digit2 = cur2.val if cur2 is not None else 0
-
-            number = digit1 + digit2 + addOn
-            addOn = number // 10
-            cur.next = ListNode(number % 10)
-
-            if cur1:
-                cur1 = cur1.next
-
-            if cur2:
-                cur2 = cur2.next
-
-            cur = cur.next
-
-        return root.next
+        pre = head = ListNode()
+        addition = 0
+        
+        while (l1 is not None or l2 is not None or addition > 0):
+            num1 = 0 if l1 is None else l1.val
+            num2 = 0 if l2 is None else l2.val
+            
+            total = num1 + num2 + addition
+            addition = total // 10
+            pre.next = ListNode(val = total % 10)
+            
+            pre = pre.next
+            l1 = None if l1 is None else l1.next
+            l2 = None if l2 is None else l2.next
+            
+        return head.next

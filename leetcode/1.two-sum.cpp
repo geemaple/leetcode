@@ -5,13 +5,14 @@ public:
         vector<int> res;
         for (auto i = 0; i < nums.size(); ++i){
             int num = target - nums[i];
-            if (map.count(num) > 0){
-                res.push_back(map[num]);
-                res.push_back(i);
+            if (map.find(num) != map.end()){
+                res = {map[num], i};
                 return res;
             }
 
             map.insert(make_pair(nums[i], i));
         }
+
+        return res;
     }
 };
