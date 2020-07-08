@@ -4,18 +4,40 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        
+        left = 0
+        visited = set()
         res = 0
-        j = 0
-        unique_set = set()
-
+        
         for i in range(len(s)):
-            while(j < len(s) and s[j] not in unique_set):
-                unique_set.add(s[j])
-                j += 1
 
-            res = max(res, j - i)
+            while (s[i] in visited):
+                visited.remove(s[left])
+                left +=1
+                
+            visited.add(s[i])
+            
+            if i - left + 1 > res:
+                res = i - left + 1
+                
+        return res
 
-            unique_set.remove(s[i])
-
+class Solution2(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        left = 0
+        visited = dict()
+        res = 0
+        
+        for i in range(len(s)):
+            if (s[i] in visited):
+                left = max(left, visited[s[i]] + 1)
+                
+            visited[s[i]] = i
+            
+            if i - left + 1 > res:
+                res = i - left + 1
+                
         return res
