@@ -81,7 +81,40 @@
  * Thefore INT_MIN (−231) is returned.
  * 
  */
+
 class Solution {
+public:
+    int myAtoi(string str) {
+        int res = 0;
+        int sign = 1;
+        
+        for (int i = 0; i < str.size(); i++) {
+            if (str[i] == ' ') {
+                continue;
+            }
+            
+            if (str[i] == '+' || str[i] == '-') {
+                sign = str[i++] == '-' ? -1 : 1;
+            }
+            
+            while (str[i] >= '0' && str[i] <= '9') {
+                int digit = (str[i] - '0') * sign;
+                
+                if (res > INT_MAX / 10 || (res == INT_MAX / 10 && digit > 7)) return INT_MAX;
+                if (res < INT_MIN / 10 || (res == INT_MIN / 10 && digit < -8)) return INT_MIN;
+                    
+                res = res * 10 + digit;
+                i++;
+            }
+            
+            break;
+        }
+        
+        return res;
+    }
+};
+
+class Solution2 {
 public:
     int myAtoi(string str) {
         int sign = 1;

@@ -81,17 +81,13 @@
 # Thefore INT_MIN (−231) is returned.
 # 
 #
-class Solution(object):
-    def myAtoi(self, str):
-        """
-        :type str: str
-        :rtype: int
-        """
+class Solution:
+    def myAtoi(self, str: str) -> int:
         int_max = 2 ** 31 - 1
         int_min = -2 ** 31
 
         sign = 1
-        num = 0
+        res = 0
         i = 0
 
         while i < len(str):
@@ -100,22 +96,20 @@ class Solution(object):
                 i += 1
                 continue
 
-        
             if str[i] == '+' or str[i] == '-':
                 sign = -1 if str[i] == '-' else 1
                 i += 1
-                continue
-
-            base = int_max // 10
-            remain = int_max % 10
 
             while i < len(str) and str[i].isdigit():
-                if num > base or (num == base and int(str[i]) > remain):
-                    return int_max if sign > 0 else int_min
+                digit = int(str[i])  * sign
+                res = res * 10 + digit
 
-                num = num * 10 + int(str[i])
+                if res >= int_max:
+                    return int_max
+                if res <= int_min:
+                    return int_min
                 i += 1
             
-            return sign * num
+            break
 
-        return sign * num
+        return res

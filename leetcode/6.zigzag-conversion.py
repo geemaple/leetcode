@@ -55,6 +55,32 @@ class Solution:
         if numRows < 2 or numRows >= len(s):
             return s
         
+        rows = ['' for i in range(numRows)]
+        
+        i = 0
+        while (i < len(s)):
+            n = 0
+            while n < numRows and i < len(s):
+                # 垂直向下｜
+                rows[n] += s[i]
+                i += 1
+                n += 1
+            
+            n = numRows - 2
+            while n > 0 and i < len(s):
+                # 斜向上 /
+                rows[n] += s[i]
+                i += 1
+                n -= 1
+                    
+        return ''.join(rows)
+
+class Solution2:
+    def convert(self, s: str, numRows: int) -> str:
+        
+        if numRows < 2 or numRows >= len(s):
+            return s
+        
         base = (numRows - 1) * 2
         res = ''
         
