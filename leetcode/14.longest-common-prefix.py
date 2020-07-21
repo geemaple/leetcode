@@ -34,21 +34,18 @@
 # All given inputs are in lowercase letters a-z.
 # 
 #
-class Solution(object):
-    def longestCommonPrefix(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: str
-        """
-        if len(strs) == 0:
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        
+        if len(strs) == 0 or len(strs[0]) == 0:
             return ''
-
-        i = 0
-        while i < len(strs[0]):
-            for word in strs[1:]:
-                if i >= len(word) or word[i] != strs[0][i]:
-                    return strs[0][0:i]
-
-            i += 1
-
-        return strs[0][0:i]
+        
+        res = ''
+        for i in range(len(strs[0])):
+            for j in range(1, len(strs)):
+               if i >= len(strs[j]) or strs[j][i] != strs[0][i]:
+                    return res
+                
+            res += strs[0][i]
+            
+        return res
