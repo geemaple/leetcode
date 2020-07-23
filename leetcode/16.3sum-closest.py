@@ -1,26 +1,58 @@
-# Your runtime beats 7.47 % of python submissions
-class Solution(object):
-    def threeSumClosest(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        result = None
+class Solution:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        res = float('inf')
         nums.sort()
-        
-        for i in range(len(nums)):
+
+        for i in range(len(nums) - 2):            
+            a = nums[i]
             left = i + 1
             right = len(nums) - 1
-
-            while (left < right):
-                tmp = nums[left] + nums[right] + nums[i]
-                if result is None or abs(tmp - target) < abs(target - result):
-                    result = tmp
-
-                if tmp > target:
+            
+            while left < right:
+                threeSum = a + nums[left] + nums[right]
+                if abs(threeSum - target) < abs(res - target):
+                    res = threeSum
+                    
+                if threeSum == target:
+                    break
+                elif threeSum > target:
                     right -= 1
                 else:
                     left += 1
+                    
+        return res
 
-        return result
+
+class Solution2:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        closest = float('inf')
+        nums.sort()
+
+        for i in range(len(nums) - 2):
+            
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            
+            a = nums[i]
+            left = i + 1
+            right = len(nums) - 1
+            
+            while left < right:
+
+                threeSum = a + nums[left] + nums[right]
+                
+                if abs(threeSum - target) < abs(closest - target):
+                    closest = threeSum
+                    
+                if threeSum == target:
+                    break
+                elif threeSum > target:
+                    while (left < right and nums[right] == nums[right - 1]): #remove duplicate
+                      right -= 1
+                    right -= 1
+                else:
+                    while (left < right and nums[left] == nums[left + 1]): #remove duplicate
+                      left += 1
+                    left += 1
+                    
+        return closest
