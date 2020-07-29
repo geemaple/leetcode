@@ -1,4 +1,35 @@
-class Solution:
+from collections import deque
+class Solution:    
+    def letterCombinations(self, digits: str) -> List[str]:    
+        
+        if len(digits) == 0:
+            return []
+        
+        digitToLetter = {
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz',
+        }
+        
+        ans = deque()
+        ans.append('')
+        
+        for i in range(len(digits)):
+            num = digits[i]
+            while len(ans) > 0 and len(ans[0]) == i: 
+                prefix = ans.popleft()
+                for letter in digitToLetter[num]:
+                    ans.append(prefix + letter)
+                    
+        return list(ans)
+                    
+
+class Solution2:
 
     digitToLetter = {
         '2': 'abc',
