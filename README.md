@@ -7,7 +7,7 @@ My personal leetcode answers
 
 ## 文章/Articles
 - [知乎结题报告](https://zhuanlan.zhihu.com/leetcode-report)
-- [知乎回答](https://www.zhihu.com/question/31092580/answer/432178498)
+- [公众号解题报告](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1416970062002601985&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
 
 ## 软件/Softwares
 - Anki(https://apps.ankiweb.net/)
