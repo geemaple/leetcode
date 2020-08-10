@@ -1,30 +1,26 @@
-MAX_INT = 2 ** 31 - 1
-MIN_INT = - 2 ** 31
-class Solution(object):
-    def divide(self, dividend, divisor):
-        """
-        :type dividend: int
-        :type divisor: int
-        :rtype: int
-        """
+MAX_INT = 2147483647
+MIN_INT = -2147483648
+
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+
         if dividend == MIN_INT and divisor == -1:
             return MAX_INT
 
+        res = 0
         minus = (dividend > 0) ^ (divisor > 0)
 
-        number = abs(dividend)
-        div = abs(divisor)
+        dividend = abs(dividend)
+        divisor = abs(divisor)
+        
+        while dividend >= divisor:
+            tmp = divisor
+            scale = 1
+            while (dividend >= (tmp << 1)):
+                tmp = tmp << 1
+                scale = scale << 1
+                
+            res += scale
+            dividend -= tmp
 
-        ans = 0
-        while (number >= div):
-            tmp = div
-            mul = 1
-
-            while(number >= (tmp << 1)):
-                tmp <<= 1
-                mul <<= 1
-
-            number -= tmp
-            ans += mul
-
-        return -ans if minus else ans
+        return -res if minus > 0 else res

@@ -1,13 +1,9 @@
 # Rabin-Karp
 k_buckets = 131
 k_characters = 256
-class Solution(object):
-    def strStr(self, haystack, needle):
-        """
-        :type haystack: str
-        :type needle: str
-        :rtype: int
-        """
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        
         m = len(haystack)
         n = len(needle)
 
@@ -29,46 +25,36 @@ class Solution(object):
             target = (target * k_characters + ord(needle[i])) % k_buckets
 
         for i in range(m - n + 1):
+            index = i
             if tmp == target:
-                match = True
                 for j in range(n):
                     if haystack[i + j] != needle[j]:
-                        match = False
+                        index = -1
                         break
 
-                if match:
-                    return i
+                if index == i:
+                    return index
 
             if i < m - n:
-                tmp = (tmp - ord(haystack[i]) * high + ord(haystack[i + n])) % k_buckets
-                if tmp < 0:
-                    tmp += k_buckets
+                tmp = ((tmp - ord(haystack[i]) * high) * k_characters  + ord(haystack[i + n])) % k_buckets
 
         return -1
 
-class Solution2(object):
-    def strStr(self, haystack, needle):
-        """
-        :type haystack: str
-        :type needle: str
-        :rtype: int
-        """
-        m = len(haystack)
-        n = len(needle)
-
-        if n == 0:
-            return 0
-
-        if n > m:
+class Solution2:
+    def strStr(self, haystack: str, needle: str) -> int:
+        
+        if len(needle) > len(haystack):
             return -1
-
-        for i in range(m - n + 1):
-            for j in range(n):
-                match = True
-                if haystack[i + j] != needle[j]:
-                    match = False
+        
+        index = 0
+        for i in range(len(haystack) - len(needle) + 1):
+            index = i
+            for j in range(len(needle)):
+                if needle[j] != haystack[i + j]:
+                    index = -1
                     break
-
-            if match:
-                return i
-        return -1
+            
+            if index == i:
+                break
+            
+        return index
