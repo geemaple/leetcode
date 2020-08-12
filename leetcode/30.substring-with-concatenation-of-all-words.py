@@ -38,37 +38,82 @@
 # 
 # 
 #
-import collections
-class Solution(object):
-    def findSubstring(self, s, words):
-        """
-        :type s: str
-        :type words: List[str]
-        :rtype: List[int]
-        """
+from collections import Counter
+class Solution:
+    def findSubstring(self, s: str, words: List[str]) -> List[int]:
+        
         if len(s) == 0 or len(words) == 0 or len(words[0]) == 0:
             return []
-
-        word_len = len(words[0])
-        substring_len = len(words) * word_len
-
-        res = []
-        word_count = collections.Counter()
+        
+        words_count = Counter()
         for word in words:
-            word_count[word] += 1
-
-        for i in range(len(s) - substring_len + 1):
-            substring = s[i: i + substring_len]
-
-            check_count = collections.Counter()
-            for j in range(0, len(substring), word_len):
-                test_word = substring[j: j + word_len]
-                if test_word not in word_count or check_count[test_word] > word_count[test_word]:
-                    break
+            words_count[word] += 1
+            
+        res = []
+        word_length = len(words[0])
+        sub_length = len(words) * word_length
+        
+        for i in range(word_length):
+            left = i
+            check_count = Counter()
+            count = 0
+            
+            for j in range(i, len(s) - word_length + 1, word_length):
+                in_word = s[j: j + word_length]
+  
+                if in_word in words_count:
+                    check_count[in_word] += 1
+                    
+                    if check_count[in_word] <= words_count[in_word]:
+                        count += 1
+                    else:
+                        while check_count[in_word] > words_count[in_word]:
+                            out_word = s[left: left + word_length]
+                            check_count[out_word] -= 1
+                            
+                            if check_count[out_word] < words_count[out_word]:
+                                count -= 1
+                            left += word_length
+                        
+                    if count == len(words):
+                        res.append(left)
+                        out_word = s[left: left + word_length]
+                        check_count[out_word] -= 1
+                        count -= 1
+                        left += word_length
                 else:
-                    check_count[test_word] += 1
+                    check_count = Counter()
+                    left = j + word_length
+                    count = 0
+                
+        return res
 
-            if check_count == word_count:
+from collections import Counter
+class Solution2:
+    def findSubstring(self, s: str, words: List[str]) -> List[int]:
+        
+        if len(s) == 0 or len(words) == 0 or len(words[0]) == 0:
+            return []
+        
+        words_count = Counter()
+        for word in words:
+            words_count[word] += 1
+            
+        res = []
+        word_length = len(words[0])
+        sub_length = len(words) * word_length
+
+        for i in range(len(s) - sub_length + 1):
+            check_count = Counter()
+            
+            for j in range(i, i + sub_length, word_length):
+                word = s[j : j + word_length]          
+                if word in words_count:
+                    check_count[word] += 1
+                else:
+                    break
+
+            if check_count == words_count:
                 res.append(i)
-
+            
         return res
