@@ -29,33 +29,33 @@
 #
 
 # O(N)
-class Solution(object):
-    def nextPermutation(self, nums):
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
         """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
+        Do not return anything, modify nums in-place instead.
         """
+        
         start = len(nums) - 2
         while start >= 0:
             if nums[start] < nums[start + 1]:
                 break
             start -= 1
-                
+
         if start < 0:
             self.reverse(nums, 0, len(nums) - 1)
-            return
-                
-        end = len(nums) - 1
-        while end > start:
-            if nums[end] > nums[start]:
-                break
-            end -= 1
-                
-        nums[start], nums[end] = nums[end], nums[start]
-        self.reverse(nums, start + 1, len(nums) - 1)
+        else:
+            bigger = 0
+            for i in range(start + 1, len(nums)):
+                if nums[start] >= nums[i]:
+                    break
+                    
+                bigger = i
+
+            nums[start], nums[bigger] = nums[bigger], nums[start]
+            self.reverse(nums, start + 1, len(nums) - 1)
     
-    def reverse(self, nums, start, end):
-        while(start < end):
+    def reverse(self, nums: List[int], start: int, end: int) -> None:
+        while start < end:
             nums[start], nums[end] = nums[end], nums[start]
             start += 1
             end -= 1
