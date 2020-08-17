@@ -1,41 +1,27 @@
-class Solution(object):
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-
-        if nums is None or len(nums) == 0:
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        
+        if len(nums) == 0:
             return -1
-
-        start = 0
-        end = len(nums) - 1
-
-        while(start + 1 < end):
-            mid = start + (end - start) / 2
-
-            if target == nums[mid]:
+        
+        left = 0
+        right = len(nums) - 1
+        
+        while left <= right:
+            mid = left + (right - left) // 2
+            
+            if nums[mid] == target:
                 return mid
-
-            if nums[mid] < nums[end]:
-                if nums[mid] < target and target <= nums[end]:
-                    start = mid
+            
+            if nums[mid] >= nums[left]:
+                if target > nums[mid] or target < nums[left]:
+                    left = mid + 1
                 else:
-                    end = mid
-
-            elif nums[mid] > nums[end]:
-                if nums[end] < target and target < nums[mid]:
-                    end = mid
-                else:
-                    start = mid
+                    right = mid - 1
             else:
-                pass
-
-        if nums[start] == target:
-            return start
-
-        if nums[end] == target:
-            return end
-
+                if target < nums[mid] or target >= nums[left]:
+                    right = mid - 1
+                else:
+                    left = mid + 1
+                    
         return -1
