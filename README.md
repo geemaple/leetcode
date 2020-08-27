@@ -94,6 +94,7 @@ My personal leetcode answers
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
 | -----------| ------------| --------| ---------| -------------- | ---------|
+| 038.count-and-say | [python](./leetcode/38.count-and-say.py) | N/A | O(1) | Easy |
 | 169.majority-element | [cpp](./leetcode/169.majority-element.cpp), [python](./leetcode/169.majority-element.py) | O(N) | O(1) | Easy | Boyer–Moore majority vote algorithm |
 | 229.majority-element-ii | [cpp](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | O(N) | O(1) | Medium | Boyer–Moore majority vote algorithm |
 
@@ -290,6 +291,10 @@ My personal leetcode answers
 | 815.bus-routes | [python](./leetcode/815.bus-routes.py) | O(V + E) | O(N) | Hard/SSS |
 
 ## Backtracking
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ---------|
+| 037.sudoku-solver | [python](./leetcode/37.sudoku-solver.py) | O(2 ^ N) | O(N) | Medium | N = black count
+
 
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Tag    | Note    |
 | -----------| ------------| --------| ---------| ---------------| -------| --------|
@@ -308,11 +313,15 @@ My personal leetcode answers
 | 131.palindrome-partitioning | [cpp](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | O(2^N) | O(N) | Medium | DFS | Perfect
 
 ## Hash Table
+| Problem    | Solution    | Time    | Space    |  Difficulty    |  Note    |
+| -----------| ------------| --------| ---------| -------------- | ---------|
+| 036.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | O(N ^ 2) | O(N ^ 2) | Medium | array-indexes
+
+
 | Problem    | Solution    | Time    | Space    |  Difficulty    | Grade   | Note   |
 | -----------| ------------| --------| ---------| ---------------| --------| -------|
 | 001.two-sum | [cpp](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | O(N) | O(N) | Easy || Perfect
 | 030.substring-with-concatenation-of-all-words | [cpp](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | O(MN) | O(M) | Hard/SSS | Cool | TODO O(N)
-| 36.valid-sudoku | [cpp](./leetcode/36.valid-sudoku.cpp) | O(N ^ 2) | Medium ||| array-indexes
 | 49.group-anagrams | [cpp](./leetcode/49.group-anagrams.cpp) | O(N * k * Logk) | Medium
 | 170.two-sum-iii-data-structure-design | [cpp](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | O(N) | O(N) | Easy | Awesome
 | 202.happy-number | [cpp](./leetcode/202.happy-number.cpp), [python](./leetcode/202.happy-number.py) | O(N) | Easy
