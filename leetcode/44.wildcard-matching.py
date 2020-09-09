@@ -1,38 +1,24 @@
-# f[i][j] = f[i - 1][j - 1] where s[i - 1] == p[j - 1] or p[j - 1] == '?' case where p[j - 1] != '*'
+# f[i][j] = f[i - 1][j - 1] where s[i - 1] == p[j - 1] or p[j - 1] == '?'
 # f[i][j] = f[i][j - 1] or f[i - 1][j] case where p[j - 1] == '*'
 
-class Solution(object):
-    def isMatch(self, s, p):
-        """
-        :type s: str
-        :type p: str
-        :rtype: bool
-        """
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
         
         m = len(s)
         n = len(p)
-        table = [[False for _ in range(n + 1)] for _ in range(m + 1)]
-
-        for i in range(m + 1):
-            for j in range(n + 1):
-                if i == 0 and j == 0:
-                    table[i][j] = True
-                    continue
-
-                if j == 0:
-                    table[i][j] = False
-                    continue
-
-                if p[j - 1] != '*':
-                    
-                    if i - 1 >= 0 and (p[j - 1] == '?' or p[j - 1] == s[i - 1]):
-                        table[i][j] = table[i - 1][j - 1]
-
-                else:
-                    
-                    table[i][j] = table[i][j - 1]
-
-                    if i - 1 >= 0:
-                        table[i][j] = table[i][j] or table[i - 1][j]
-
-        return table[m][n]
+        
+        dp = [[False for i in range(n + 1)] for j in range(m + 1)]
+        dp[0][0] = True # 初始化
+        
+        for i in range(1, n + 1):
+            if p[i - 1] == '*': 
+                dp[0][i] = dp[0][i - 1] # 第一行初始化
+        
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):            
+                if (p[j - 1] == '?' or s[i - 1] == p[j - 1]): #条件2 + 1
+                    dp[i][j] = dp[i - 1][j - 1]
+                elif p[j - 1] == '*': # 条件3
+                    dp[i][j] = dp[i][j - 1] or dp[i - 1][j]
+                
+        return dp[m][n]
