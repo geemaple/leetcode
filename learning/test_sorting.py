@@ -11,14 +11,14 @@ all_sortings.insert(0, ('built_in', sorted))
 test_cases = {}
 
 def input_tests(count):
-    test_reault = range(count)
+    test_reault = list(range(count))
     if count not in test_cases:
         test_case = test_reault[:]
         random.shuffle(test_case)
         test_cases[count] = test_case
 
-        print '\n', '=' * 50
-        print 'input inversions = %d' % inversions(test_case)
+        print('\n', '=' * 50)
+        print('input inversions = %d' % inversions(test_case))
 
     return test_cases[count][:], test_reault
 
@@ -32,7 +32,7 @@ def sizeof_fmt(num, suffix=''):
             return "%d%s%s" % (num, unit, suffix)
         num /= 1000
 
-    return num;
+    return num
 
 def general_test(sort_name, sort_func, count=10):
     test_case, test_reault = input_tests(count)
@@ -40,8 +40,7 @@ def general_test(sort_name, sort_func, count=10):
     now = time.time()
     result = sort_func(test_case)
 
-    print '\ninputs = %4s %15s execute %10fms' % \
-      (sizeof_fmt(count), sort_name, (time.time() - now) * 1000),
+    print('\ninputs = %4s %15s execute %10fms' % (sizeof_fmt(count), sort_name, (time.time() - now) * 1000),)
 
     if result is not None:
         test_case = result
