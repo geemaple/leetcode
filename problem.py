@@ -147,10 +147,8 @@ if __name__ == '__main__':
         problem = parse_leetcode(response.text, lang)
     elif 'lintcode' in url:
         numbers = re.findall(r'\d+', url)
-        if len(numbers) == 0:
-          exit(0)
-
-        problem = parse_lintcode(numbers[0], lang)
+        if len(numbers) > 0:
+            problem = parse_lintcode(numbers[0], lang)
     else:
         exit(1)  
     
