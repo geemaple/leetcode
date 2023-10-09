@@ -173,7 +173,7 @@ def update_readme(file_name):
             "```",
             "pip install -r requirements.txt",
             "python problem.py <leetcode/lintcode> -l java|cpp|python(default)",
-            "# 例如(For Example):",
+            "# 例如(e.g.):",
             "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
             "```"
@@ -205,10 +205,9 @@ def update_readme(file_name):
         solved_problems = table_content(f, ['leetcode', 'lintcode'], categories)
           
         title2(f, "进度/Progress")
-        paragraph(f, [f'Total sovled **{solved_problems}**'])
-
-        f.write(f"\n Last updated: {datetime.datetime.now()}\n")
-
+        paragraph(f, [
+            f'Total sovled **{solved_problems}**',
+            f'\n Auto updated at: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'])
 
 if __name__ == "__main__":
     update_readme("README.md")

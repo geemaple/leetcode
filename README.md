@@ -12,7 +12,7 @@ This is a **continually updated** open source project
 ```
 pip install -r requirements.txt
 python problem.py <leetcode/lintcode> -l java|cpp|python(default)
-# 例如(For Example):
+# 例如(e.g.):
 python problem.py https://leetcode.com/problems/online-stock-span/
 python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
@@ -386,5 +386,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
+ Auto updated at: 2023-10-10 01:23:18
 
- Last updated: 2023-10-10 01:17:07.824119
