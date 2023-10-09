@@ -18,6 +18,7 @@ import collections
 LANGUAGE = {
     'cpp': 'c++',
     'py': 'python',
+    'java': 'java'
 }
 
 class Solution:
@@ -113,8 +114,8 @@ def table_content(f, directories, categories):
                 code = link_mark(lang, path)
                 solution_set[solution.name].append(code)
     
-    title2(f, "进度/Progress")
-    paragraph(f, [f'Total sovled **{len(solution_set)}**'])
+
+    solved_problems = len(solution_set)
     
     for category in categories:
         headers = ['Problem', 'Solution', 'Time', 'Space', 'Ref']
@@ -141,6 +142,7 @@ def table_content(f, directories, categories):
             table_row(f, row) 
             del solution_set[solution.name]
 
+    return solved_problems
 
 def link_mark(content, link):
     return f"[{content}]({link})"
@@ -155,7 +157,7 @@ def update_readme(file_name):
         title1(f, "算法/Algorithm")
         paragraph(f, [
             "我个人的力扣答案, ```#公众号:GeekPal```<br/>",
-            "这是一个持续更新的开源项目",
+            "这是一个持续更新的开源项目<br/>",
             "<br/>",
             "My personal leetcode answers<br/>",
             "This is a **continually updated** open source project",
@@ -170,9 +172,9 @@ def update_readme(file_name):
         paragraph(f, [
             "```",
             "pip install -r requirements.txt",
-            "python problem.py <leetcode/lintcode> -l java|cpp|python",
+            "python problem.py <leetcode/lintcode> -l java|cpp|python(default)",
             "# 例如(For Example):",
-            "python problem.py https://leetcode.com/problems/online-stock-span/ #python is default here",
+            "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
             "```"
         ])
@@ -200,8 +202,11 @@ def update_readme(file_name):
         title2(f, link_mark('Category', 'category'))
         bullet(f, [tag_mark(c) for c in categories])
 
-        table_content(f, ['leetcode', 'lintcode'], categories)
+        solved_problems = table_content(f, ['leetcode', 'lintcode'], categories)
           
+        title2(f, "进度/Progress")
+        paragraph(f, [f'Total sovled **{solved_problems}**'])
+
         f.write(f"\n Last updated: {datetime.datetime.now()}\n")
 
 
