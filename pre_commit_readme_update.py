@@ -99,14 +99,14 @@ def table_content(f, directories, categories):
                 category_match = re.search(r"Category: (.+)", text)
                 time_match = re.search(r"Time: (.+)", text)
                 space_match = re.search(r"Space: (.+)", text)
-                link_match = re.search(r"Link: (.+)", text)
+                link_match = re.search(r"Ref: (.+)", text)
                 
                 category = category_match.group(1) if category_match else 'other'
                 time = time_match.group(1) if time_match else '-'
                 space = space_match.group(1) if space_match else '-'
-                link = link_match.group(1) if link_match else '-'                
+                ref = link_match.group(1) if link_match else '-'                
 
-                solution = Solution(source, number, name, category, time, space, link)
+                solution = Solution(source, number, name, category, time, space, ref)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
@@ -154,22 +154,33 @@ def update_readme(file_name):
         
         title1(f, "算法/Algorithm")
         paragraph(f, [
-            "我个人的力扣答案, ```#公众号:GeekPal```",
+            "我个人的力扣答案, ```#公众号:GeekPal```<br/>",
             "这是一个持续更新的开源项目",
             "<br/>",
-            "My personal leetcode answers",
+            "My personal leetcode answers<br/>",
             "This is a **continually updated** open source project",
+        ])
+
+        title2(f, "软件/Softwares")
+        bullet(f, [
+            link_mark('Anki', 'https://apps.ankiweb.net/')
+        ])
+
+        title2(f, '脚本/Script')
+        paragraph(f, [
+            "```",
+            "pip install -r requirements.txt",
+            "python problem.py <leetcode/lintcode> -l java",
+            "# 例如/For Example",
+            "python problem.py https://leetcode.com/problems/online-stock-span/",
+            "python problem.py https://www.lintcode.com/problem/92 -l cpp",
+            "```"
         ])
 
         title2(f, "文章/Articles")
         bullet(f, [
             link_mark('博客结题报告', 'http://geemaple.github.io/'),
             link_mark('公众号解题报告', 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1416970062002601985&__biz=MzI1NjA4ODU4NQ==#wechat_redirect')
-        ])
-    
-        title2(f, "软件/Softwares")
-        bullet(f, [
-            link_mark('Anki', 'https://apps.ankiweb.net/')
         ])
 
         title2(f, "书籍/Books")

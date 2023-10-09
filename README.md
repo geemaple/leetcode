@@ -1,16 +1,25 @@
 # 算法/Algorithm
-我个人的力扣答案, ```#公众号:GeekPal```
+我个人的力扣答案, ```#公众号:GeekPal```<br/>
 这是一个持续更新的开源项目
 <br/>
-My personal leetcode answers
+My personal leetcode answers<br/>
 This is a **continually updated** open source project
+
+## 软件/Softwares
+- [Anki](https://apps.ankiweb.net/)
+
+## 脚本/Script
+```
+pip install -r requirements.txt
+python problem.py <leetcode/lintcode> -l java
+# 例如/For Example
+python problem.py https://leetcode.com/problems/online-stock-span/
+python problem.py https://www.lintcode.com/problem/92 -l cpp
+```
 
 ## 文章/Articles
 - [博客结题报告](http://geemaple.github.io/)
 - [公众号解题报告](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1416970062002601985&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
-
-## 软件/Softwares
-- [Anki](https://apps.ankiweb.net/)
 
 ## 书籍/Books
 - 《算法技术手册》/ Algorithms in a Nutshell
@@ -378,4 +387,4 @@ Total sovled **307**
 | [lintcode-629.minimum-spanning-tree](https://www.lintcode.com/problem/629) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | - | - | - |
 | [lintcode-652.factorization](https://www.lintcode.com/problem/652) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | - | - | - |
 
- Last updated: 2023-10-09 21:29:50.304551
+ Last updated: 2023-10-10 01:10:31.830962
