@@ -11,9 +11,9 @@ This is a **continually updated** open source project
 ## 脚本/Script
 ```
 pip install -r requirements.txt
-python problem.py <leetcode/lintcode> -l java
-# 例如/For Example
-python problem.py https://leetcode.com/problems/online-stock-span/
+python problem.py <leetcode/lintcode> -l java|cpp|python
+# 例如(For Example):
+python problem.py https://leetcode.com/problems/online-stock-span/ #python is default here
 python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
 
@@ -387,4 +387,4 @@ Total sovled **307**
 | [lintcode-629.minimum-spanning-tree](https://www.lintcode.com/problem/629) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | - | - | - |
 | [lintcode-652.factorization](https://www.lintcode.com/problem/652) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | - | - | - |
 
- Last updated: 2023-10-10 01:10:31.830962
+ Last updated: 2023-10-10 01:12:27.556025

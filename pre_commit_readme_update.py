@@ -170,9 +170,9 @@ def update_readme(file_name):
         paragraph(f, [
             "```",
             "pip install -r requirements.txt",
-            "python problem.py <leetcode/lintcode> -l java",
-            "# 例如/For Example",
-            "python problem.py https://leetcode.com/problems/online-stock-span/",
+            "python problem.py <leetcode/lintcode> -l java|cpp|python",
+            "# 例如(For Example):",
+            "python problem.py https://leetcode.com/problems/online-stock-span/ #python is default here",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
             "```"
         ])
