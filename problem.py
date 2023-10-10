@@ -3,6 +3,7 @@
 # Space: -
 # Ref: -
 
+from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -41,9 +42,12 @@ class Problem:
         self.companies = ''
 
     @property
+    def question_name(self) -> str:
+        return '-'.join(self.title.lower().split())
+
+    @property
     def file_name(self) -> str:
-        hyphen_title = '-'.join(self.title.lower().split())
-        return f'{self.number}.{hyphen_title}.{EXTENTION[lang]}'
+        return f'{self.number}.{self.question_name}.{EXTENTION[self.lang]}'
 
     def write_comments(self, f, content):
         for c in content:
@@ -64,7 +68,11 @@ class Problem:
         self.write_comments(file, self.content.split('\n'))
         self.write_code(file, self.editorData)
 
-def parse_leetcode(text, lang):
+def parse_leetcode(url, lang, translate):
+    session = requests.session()
+    response = session.get(url)
+    text = response.text
+
     soup = BeautifulSoup(text, 'html.parser')
 
     problem = soup.find('script', type='application/json')
@@ -76,35 +84,60 @@ def parse_leetcode(text, lang):
     problem = Problem('leetcode', lang)
 
     for data in query:
-        
-        # print('\n', data['queryKey'])
         if 'questionTitle' in data['queryKey']:
             problem.number = data['state']['data']['question']['questionFrontendId']
             problem.title = data['state']['data']['question']['title']
             
         elif 'questionContent' in data['queryKey']:
-            content = BeautifulSoup(data['state']['data']['question']['content'], 'html.parser')
+            if len(problem.content) == 0:
+                content = BeautifulSoup(data['state']['data']['question']['content'], 'html.parser')
+                problem.content = content.text
+
+        elif translate and 'questionTranslations' in data['queryKey']:
+            content = BeautifulSoup(data['state']['data']['question']['translatedContent'], 'html.parser')
             problem.content = content.text
             
         elif 'singleQuestionTopicTags' in data['queryKey']:
           problem.tags = [tag['name'] for tag in data['state']['data']['question']['topicTags']]
 
-        elif 'questionEditorData' in data['queryKey']:
-            editorData = data['state']['data']['question']['codeSnippets']
-            for code in editorData:
-                if code['langSlug'].lower() == lang.lower():
-                    problem.editorData = code['code']
         elif 'questionInterviewOptions' in data['queryKey']:
             companies = data['state']['data']['interviewed']['companies']
             problem.companies = [c['name'] for c in companies]
-        # else:
-            # print(data['state']['data'])
+        else:
+            print(data['queryKey'][0])
+
+
+    graphql = urlparse(url)._replace(path="/graphql/").geturl()
+
+    headers = {
+        'Referer': url,
+    }
+
+    json_data = {
+        'query': '\n    query questionEditorData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    codeSnippets {\n      lang\n      langSlug\n      code\n    }\n    envInfo\n    enableRunCode\n    hasFrontendPreview\n    frontendPreviews\n  }\n}\n    ',
+        'variables': {
+            'titleSlug': problem.question_name,
+        },
+        'operationName': 'questionEditorData',
+    }
+
+    response = session.post(graphql, headers=headers, json=json_data)
+    state = response.json()
+    editorData = state['data']['question']['codeSnippets']
+    for code in editorData:
+        if code['langSlug'].lower() == lang.lower():
+            problem.editorData = code['code']
 
     return problem
 
-def parse_lintcode(number, lang):
+def parse_lintcode(url, lang, translate):
 
-    url = f'https://c1.lintcode.com/v2/api/problems/{numbers[0]}/?lang=2'
+    numbers = re.findall(r'\d+', url)
+    if len(numbers) == 0:
+        return
+
+    number = numbers[0]
+    url = f'https://c1.lintcode.com/v2/api/problems/{number}/?lang={1 if translate else 2}'
     response = requests.get(url)
 
     query = json.loads(response.text)
@@ -112,13 +145,13 @@ def parse_lintcode(number, lang):
     problem = Problem('lintcode', lang)
 
     problem.number = number
-    problem.title = data['title']
+    problem.title = data['unique_name']
 
-    description = data['description']
-    example = data['example']
+    description = data['description'].replace('. ', '.\n')
+    example = data['example'] 
     notice = data["new_notice"] if data["new_notice"] is not None else data['notice']
 
-    problem.content = f'{description}\n{example}\n{notice}'
+    problem.content = f'{description}\n\n{example}\n\n{notice}'
 
     tags = data['tags']
     problem.tags = [t["name"] for t in tags]
@@ -137,25 +170,24 @@ def parse_lintcode(number, lang):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser("coder")
     parser.add_argument("url", help="leetcode/lintcode url", type=str)
-    parser.add_argument("-l", "--lang", help="coding language python or cpp", required=False, type=str, default='python')
+    parser.add_argument("-l", "--lang", help="coding language: python, cpp or java", required=False, type=str, default='python')
+    parser.add_argument("-f", "--force", help="to force overwriting existing files", required=False, action='store_true')
+    parser.add_argument("-t", "--translate", help="to get transtale version result", required=False, action='store_true')
     args = parser.parse_args()
-    url, lang = args.url, args.lang
 
     problem = None
-    if 'leetcode' in url:
-        response = requests.get(url.replace('cn', 'com'))
-        problem = parse_leetcode(response.text, lang)
-    elif 'lintcode' in url:
-        numbers = re.findall(r'\d+', url)
-        if len(numbers) > 0:
-            problem = parse_lintcode(numbers[0], lang)
+    if 'leetcode' in args.url:
+        problem = parse_leetcode(args.url, args.lang, args.translate)
+    elif 'lintcode' in args.url:
+        problem = parse_lintcode(args.url, args.lang, args.translate)
     else:
         exit(1)  
     
     if problem is not None:
         path = os.path.join(f'./{problem.source}', problem.file_name)
-        if not os.path.exists(path):
+        if args.force or not os.path.exists(path):
             with open(path, 'w') as f:
                 problem.write(f)
         else:
-            print(f'{path} already exist')
+            print(f'{path} already exists. But you can use -f/--force option to overwrite')
+

@@ -30,47 +30,45 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## [Category](category)
 - [Math](#math)
-- [Bit](#bit)
+- [Bit Manipulation](#bit-manipulation)
 - [Design](#design)
-- [Array and String](#array-and-string)
 - [Two Pointers](#two-pointers)
 - [Linked List](#linked-list)
 - [Binary Search](#binary-search)
 - [Divide and Conquer](#divide-and-conquer)
-- [Tree Traversal](#tree-traversal)
-- [Graph Traversal](#graph-traversal)
+- [Depth-First Search](#depth-first-search)
+- [Breadth-First Search](#breadth-first-search)
 - [Backtracking](#backtracking)
 - [Hash Table](#hash-table)
 - [Queue](#queue)
 - [Heap](#heap)
 - [Stack](#stack)
 - [Sweep Line](#sweep-line)
-- [GreedyDynamic Programming](#greedydynamic-programming)
-- [Red Black Tree](#red-black-tree)
 - [Greedy](#greedy)
+- [Dynamic Programming](#dynamic-programming)
+- [Binary Search Tree](#binary-search-tree)
 - [Union Find](#union-find)
 - [Trie](#trie)
 - [Other](#other)
 
 ## Math
-## Bit
+## Bit Manipulation
 ## Design
-## Array and String
 ## Two Pointers
 ## Linked List
 ## Binary Search
 ## Divide and Conquer
-## Tree Traversal
-## Graph Traversal
+## Depth-First Search
+## Breadth-First Search
 ## Backtracking
 ## Hash Table
 ## Queue
 ## Heap
 ## Stack
 ## Sweep Line
-## GreedyDynamic Programming
-## Red Black Tree
 ## Greedy
+## Dynamic Programming
+## Binary Search Tree
 ## Union Find
 ## Trie
 ## Other
@@ -386,5 +384,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
- Auto updated at: 2023-10-10 01:46:25
+Auto updated at: **2023-10-10 09:45:29**
 
