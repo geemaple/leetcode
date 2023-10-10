@@ -168,11 +168,11 @@ def parse_lintcode(url, lang, translate):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser("coder")
+    parser = argparse.ArgumentParser("problem")
     parser.add_argument("url", help="leetcode/lintcode url", type=str)
-    parser.add_argument("-l", "--lang", help="coding language: python, cpp or java", required=False, type=str, default='python')
-    parser.add_argument("-f", "--force", help="to force overwriting existing files", required=False, action='store_true')
-    parser.add_argument("-t", "--translate", help="to get transtale version result", required=False, action='store_true')
+    parser.add_argument("-l", "--lang", help="coding language: python(default), cpp or java", required=False, type=str, default='python')
+    parser.add_argument("-f", "--force", help="overwrite existing files", required=False, action='store_true')
+    parser.add_argument("-t", "--translate", help="get transtaled version content", required=False, action='store_true')
     args = parser.parse_args()
 
     problem = None
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     elif 'lintcode' in args.url:
         problem = parse_lintcode(args.url, args.lang, args.translate)
     else:
-        exit(1)  
+        parser.print_help()
     
     if problem is not None:
         path = os.path.join(f'./{problem.source}', problem.file_name)
