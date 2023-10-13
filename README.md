@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Ref |
 | ---- | ---- | ---- | ---- | ---- |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - |
-| [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | - |
+| [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | https://youtu.be/oxWpJtUGG_0 |
 ## Divide and Conquer
 ## Depth-First Search
 ## Breadth-First Search
@@ -386,5 +386,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
-Auto updated at: **2023-10-13 10:48:56**
+Auto updated at: **2023-10-13 12:42:27**
 
