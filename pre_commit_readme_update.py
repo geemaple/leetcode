@@ -59,7 +59,7 @@ class Solution:
     @property
     def link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return f'https://leetcode.com/problems/{self.name}/description/'
+            return f'https://leetcode.com/problems/{self.problem}/description/'
         if self.source.lower() == 'lintcode':
             return f'https://www.lintcode.com/problem/{self.number}'
         else:
@@ -141,8 +141,6 @@ def table_content(f, directories, categories):
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
                 code = link_mark(lang, path)
                 solution_set[solution.name].append(code)
-
-                print(category)
 
     solved_problems = len(solution_set)
     
