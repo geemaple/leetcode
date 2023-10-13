@@ -192,7 +192,9 @@ def update_readme(file_name):
 
         title2(f, "软件/Softwares")
         bullet(f, [
-            link_mark('Anki', 'https://apps.ankiweb.net/')
+            link_mark('Anki', 'https://apps.ankiweb.net/'),
+            link_mark('Tldraw', 'https://www.tldraw.com/'),
+            link_mark('OBS', 'https://www.tldraw.com/')
         ])
 
         title2(f, '脚本/Script')

@@ -7,6 +7,8 @@ This is a **continually updated** open source project
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
+- [Tldraw](https://www.tldraw.com/)
+- [OBS](https://www.tldraw.com/)
 
 ## 脚本/Script
 ```
@@ -386,5 +388,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
-Auto updated at: **2023-10-13 12:42:27**
+Auto updated at: **2023-10-13 12:47:26**
 
