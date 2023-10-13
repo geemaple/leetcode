@@ -1,94 +1,55 @@
+//  Category: Array, Binary Search
+//  Time: O(logN)
+//  Space: O(1)
+//  Ref: -
+
+//  Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+//  If target is not found in the array, return [-1, -1].
+//  You must write an algorithm with O(log n) runtime complexity.
+//   
+//  Example 1:
+//  Input: nums = [5,7,7,8,8,10], target = 8
+//  Output: [3,4]
+//  Example 2:
+//  Input: nums = [5,7,7,8,8,10], target = 6
+//  Output: [-1,-1]
+//  Example 3:
+//  Input: nums = [], target = 0
+//  Output: [-1,-1]
+//  
+//   
+//  Constraints:
+//  
+//  0 <= nums.length <= 105
+//  -109 <= nums[i] <= 109
+//  nums is a non-decreasing array.
+//  -109 <= target <= 109
+//  
+//  
+
 class Solution {
-
-private:
-    int searchHead(vector<int>& nums, int target)
-    {
-        if (nums.size() == 0)
-        {
-            return -1;
-        }
-
-        int start = 0;
-        int end = nums.size() - 1;
-
-        while(start + 1 < end)
-        {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] > target)
-            {
-                end = mid;
-            }
-            else if (nums[mid] < target)
-            {
-                start = mid;
-            }
-            else
-            {
-                end = mid;
-            }
-        }
-
-        if (nums[start] == target)
-        {
-            return start;
-        }
-
-        if (nums[end] == target)
-        {
-            return end;
-        }
-
-        return -1;
-    }
-
-    int searchTail(vector<int>& nums, int target)
-    {
-        if (nums.size() == 0)
-        {
-            return -1;
-        }
-        
-        int start = 0;
-        int end = nums.size() - 1;
-
-        while(start + 1 < end)
-        {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] > target)
-            {
-                end = mid;
-            }
-            else if (nums[mid] < target)
-            {
-                start = mid;
-            }
-            else
-            {
-                start = mid;
-            }
-        }
-
-        if (nums[end] == target)
-        {
-            return end;
-        }
-
-        if (nums[start] == target)
-        {
-            return start;
-        }
-
-        return -1;
-    }
-
-
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        vector<int> res;
+        int first = lower_bound(nums, target);
+        if (first == nums.size() || nums[first] != target) {
+            return vector<int>{-1, -1};
+        }
+        int last = lower_bound(nums, target + 1) - 1;
+        return vector<int>{first, last};
+    }
 
-        res.push_back(searchHead(nums, target));
-        res.push_back(searchTail(nums, target));
+    int lower_bound(vector<int>& nums, int target) {
+        int start = 0;
+        int end = nums.size();
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] < target) {
+                start = mid + 1;
+            } else {
+                end = mid;
+            }
+        }
 
-        return res;   
+        return start;
     }
 };

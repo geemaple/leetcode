@@ -15,6 +15,7 @@ import re
 import datetime
 import collections
 
+TAG_ARRAY = 'Array'
 TAG_BIT = 'Bit Manipulation'
 TAG_MATH = 'Math'
 TAG_GREEDY = 'Greedy'
@@ -96,8 +97,9 @@ def table_header(f, headers):
     table_row(f, seperator)
 
 def search_tag(tags):
-    for tag in tags.split(', '):
-        if any(ext.lower() in tag.lower() for ext in ['Array', 'String']):
+    tags = tags.split(', ')
+    for tag in tags:
+        if any(ext.lower() in tag.lower() for ext in [TAG_ARRAY]):
             continue
 
         if any(ext.lower() in tag.lower() for ext in ['DP', 'Backpack', TAG_DP]):

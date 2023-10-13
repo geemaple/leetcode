@@ -104,7 +104,9 @@ def parse_leetcode(url, lang, translate):
             companies = data['state']['data']['interviewed']['companies']
             problem.companies = [c['name'] for c in companies]
         else:
-            print(data['queryKey'][0])
+            # print(data['queryKey'][0])
+            pass
+            
 
 
     graphql = urlparse(url)._replace(path="/graphql/").geturl()
@@ -123,7 +125,7 @@ def parse_leetcode(url, lang, translate):
 
     response = session.post(graphql, headers=headers, json=json_data)
     state = response.json()
-    editorData = state['data']['question']['codeSnippets']
+    editorData = state['data']['question']['codeSnippets'] or []
     for code in editorData:
         if code['langSlug'].lower() == lang.lower():
             problem.editorData = code['code']
@@ -188,6 +190,7 @@ if __name__ == '__main__':
         if args.force or not os.path.exists(path):
             with open(path, 'w') as f:
                 problem.write(f)
+            print(f'{path} download success')
         else:
             print(f'{path} already exists. But you can use -f/--force option to overwrite')
 

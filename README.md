@@ -57,6 +57,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Two Pointers
 ## Linked List
 ## Binary Search
+| Problem | Solution | Time | Space | Ref |
+| ---- | ---- | ---- | ---- | ---- |
+| [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/leetcode-34.find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - |
+| [leetcode-704.binary-search](https://leetcode.com/problems/leetcode-704.binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | - |
 ## Divide and Conquer
 ## Depth-First Search
 ## Breadth-First Search
@@ -106,7 +110,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-30.substring-with-concatenation-of-all-words](https://leetcode.com/problems/leetcode-30.substring-with-concatenation-of-all-words/description/) | [c++](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | - | - | - |
 | [leetcode-31.next-permutation](https://leetcode.com/problems/leetcode-31.next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py) | - | - | - |
 | [leetcode-33.search-in-rotated-sorted-array](https://leetcode.com/problems/leetcode-33.search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | - | - | - |
-| [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/leetcode-34.find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | - | - | - |
 | [leetcode-36.valid-sudoku](https://leetcode.com/problems/leetcode-36.valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | - | - | - |
 | [leetcode-37.sudoku-solver](https://leetcode.com/problems/leetcode-37.sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | - | - | - |
 | [leetcode-38.count-and-say](https://leetcode.com/problems/leetcode-38.count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | - | - | - |
@@ -325,7 +328,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-683.k-empty-slots](https://leetcode.com/problems/leetcode-683.k-empty-slots/description/) | [c++](./leetcode/683.k-empty-slots.cpp), [python](./leetcode/683.k-empty-slots.py) | - | - | - |
 | [leetcode-687.longest-univalue-path](https://leetcode.com/problems/leetcode-687.longest-univalue-path/description/) | [c++](./leetcode/687.longest-univalue-path.cpp), [python](./leetcode/687.longest-univalue-path.py) | - | - | - |
 | [leetcode-702.search-in-a-sorted-array-of-unknown-size](https://leetcode.com/problems/leetcode-702.search-in-a-sorted-array-of-unknown-size/description/) | [c++](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | - | - | - |
-| [leetcode-704.binary-search](https://leetcode.com/problems/leetcode-704.binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | - | - | - |
 | [leetcode-721.accounts-merge](https://leetcode.com/problems/leetcode-721.accounts-merge/description/) | [c++](./leetcode/721.accounts-merge.cpp), [python](./leetcode/721.accounts-merge.py) | - | - | - |
 | [leetcode-724.find-pivot-index](https://leetcode.com/problems/leetcode-724.find-pivot-index/description/) | [c++](./leetcode/724.find-pivot-index.cpp) | - | - | - |
 | [leetcode-739.daily-temperatures](https://leetcode.com/problems/leetcode-739.daily-temperatures/description/) | [python](./leetcode/739.daily-temperatures.py) | - | - | - |
@@ -384,5 +386,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
-Auto updated at: **2023-10-10 09:59:56**
+Auto updated at: **2023-10-13 10:13:29**
 
