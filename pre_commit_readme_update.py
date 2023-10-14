@@ -161,13 +161,14 @@ def table_content(f, directories, categories):
             if solution.name not in solution_set:
                 continue
 
+            solution_ref = link_mark('Youtube', solution.note) if solution.note.contains('youtu.be') or solution.note.contains('youtube') else '-'
             content = [
                 link_mark(solution.name, solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
-                solution.ref,
-                solution.note]
+                solution.ref
+                ]
    
             row = ' | '.join([cell for cell in content])
             table_row(f, row) 
