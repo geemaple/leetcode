@@ -34,12 +34,12 @@
 # @return a bool
 # def isBadVersion(version):
 
-# The isBadVersion API is already defined for you.
-# def isBadVersion(version: int) -> bool:
-
-class Solution:
-    def firstBadVersion(self, n: int) -> int:
-        
+class Solution(object):
+    def firstBadVersion(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
         start = 0
         end = n + 1 # 由于一定有一个结果，所以=n, =n+1都可以
 
@@ -51,5 +51,3 @@ class Solution:
                 start = mid + 1
 
         return start
-
-        

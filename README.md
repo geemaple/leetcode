@@ -62,8 +62,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Ref |
 | ---- | ---- | ---- | ---- | ---- |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - |
-| [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | - | - | - |
+| [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O(logN) | O(1) | - |
 | [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | - |
+| [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(logN) | O(1) | - |
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | https://youtu.be/oxWpJtUGG_0 |
 ## Divide and Conquer
 ## Depth-First Search
@@ -289,7 +290,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-367.valid-perfect-square](https://leetcode.com/problems/valid-perfect-square/description/) | [c++](./leetcode/367.valid-perfect-square.cpp), [python](./leetcode/367.valid-perfect-square.py) | - | - | - |
 | [leetcode-368.largest-divisible-subset](https://leetcode.com/problems/largest-divisible-subset/description/) | [c++](./leetcode/368.largest-divisible-subset.cpp), [python](./leetcode/368.largest-divisible-subset.py) | - | - | - |
 | [leetcode-370.range-addition](https://leetcode.com/problems/range-addition/description/) | [c++](./leetcode/370.range-addition.cpp), [python](./leetcode/370.range-addition.py) | - | - | - |
-| [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | - | - | - |
 | [leetcode-377.combination-sum-iv](https://leetcode.com/problems/combination-sum-iv/description/) | [c++](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | - | - | - |
 | [leetcode-378.kth-smallest-element-in-a-sorted-matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | - | - | - |
 | [leetcode-380.insert-delete-getrandom-o1](https://leetcode.com/problems/insert-delete-getrandom-o1/description/) | [c++](./leetcode/380.insert-delete-getrandom-o1.cpp) | - | - | - |
@@ -389,5 +389,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-14 10:00:19**
+Auto updated at: **2023-10-14 10:56:25**
 
