@@ -62,6 +62,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Ref |
 | ---- | ---- | ---- | ---- | ---- |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - |
+| [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | - | - | - |
 | [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | - |
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | https://youtu.be/oxWpJtUGG_0 |
 ## Divide and Conquer
@@ -386,7 +387,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-629.minimum-spanning-tree](https://www.lintcode.com/problem/629) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | - | - | - |
 | [lintcode-652.factorization](https://www.lintcode.com/problem/652) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | - | - | - |
 ## 进度/Progress
-Total sovled **307**
+Total sovled **308**
 
-Auto updated at: **2023-10-14 09:40:00**
+Auto updated at: **2023-10-14 10:00:19**
 
