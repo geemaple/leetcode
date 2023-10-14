@@ -59,14 +59,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Two Pointers
 ## Linked List
 ## Binary Search
-| Problem | Solution | Time | Space | Ref | Note |
+| Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - | - |
-| [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O(logN) | O(1) | - | - |
-| [leetcode-153.find-minimum-in-rotated-sorted-array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | O(1) | https://youtu.be/GsecRZC5to4 | - |
-| [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | - | - |
-| [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(logN) | O(1) | - | - |
-| [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | https://youtu.be/oxWpJtUGG_0 | - |
+| [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | std::lower_bound | - |
+| [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O(logN) | O(1) | std::lower_bound | - |
+| [leetcode-153.find-minimum-in-rotated-sorted-array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | O(1) | Rotated | https://youtu.be/GsecRZC5to4 |
+| [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Range | - |
+| [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(logN) | O(1) | Standard | - |
+| [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Standard | https://youtu.be/oxWpJtUGG_0 |
 ## Divide and Conquer
 ## Depth-First Search
 ## Breadth-First Search
@@ -82,7 +82,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Union Find
 ## Trie
 ## Other
-| Problem | Solution | Time | Space | Ref | Note |
+| Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-1.two-sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | - | - | - | - |
 | [leetcode-2.add-two-numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | - | - | - | - |
@@ -118,7 +118,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-33.search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | - | - | - | - |
 | [leetcode-36.valid-sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | - | - | - | - |
 | [leetcode-37.sudoku-solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | - | - | - | - |
-| [leetcode-38.count-and-say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | - | - | - | - |
+| [leetcode-38.count-and-say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | - | - | Each term of the sequence of integers will be represented as a | - |
 | [leetcode-39.combination-sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | - | - | - | - |
 | [leetcode-40.combination-sum-ii](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | - | - | - | - |
 | [leetcode-41.first-missing-positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | - | - | - | - |
@@ -227,7 +227,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-219.contains-duplicate-ii](https://leetcode.com/problems/contains-duplicate-ii/description/) | [c++](./leetcode/219.contains-duplicate-ii.cpp) | - | - | - | - |
 | [leetcode-221.maximal-square](https://leetcode.com/problems/maximal-square/description/) | [c++](./leetcode/221.maximal-square.cpp), [python](./leetcode/221.maximal-square.py) | - | - | - | - |
 | [leetcode-228.summary-ranges](https://leetcode.com/problems/summary-ranges/description/) | [python](./leetcode/228.summary-ranges.py) | - | - | - | - |
-| [leetcode-229.majority-element-ii](https://leetcode.com/problems/majority-element-ii/description/) | [c++](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | - | - | - | - |
+| [leetcode-229.majority-element-ii](https://leetcode.com/problems/majority-element-ii/description/) | [c++](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | - | - | The algorithm should run in linear time and in O(1) space. | - |
 | [leetcode-231.power-of-two](https://leetcode.com/problems/power-of-two/description/) | [python](./leetcode/231.power-of-two.py) | - | - | - | - |
 | [leetcode-234.palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list/description/) | [c++](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | - | - | - | - |
 | [leetcode-236.lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | - | - | - | - |
@@ -389,5 +389,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-14 12:57:59**
+Auto updated at: **2023-10-14 13:08:16**
 

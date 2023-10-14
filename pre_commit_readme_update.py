@@ -148,7 +148,7 @@ def table_content(f, directories, categories):
     solved_problems = len(solution_set)
     
     for category in categories:
-        headers = ['Problem', 'Solution', 'Time', 'Space', 'Ref', 'Note']
+        headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
         title2(f, category)
 
         hyphen_tag = "-".join(category.lower().split())
@@ -161,14 +161,13 @@ def table_content(f, directories, categories):
             if solution.name not in solution_set:
                 continue
 
-            solution_ref = link_mark('Youtube', solution.note) if any(site.lower() in solution.note.lower() for site in ['Youtube', 'youtu.be']) else '-'
             content = [
                 link_mark(solution.name, solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
+                solution.note,
                 solution.ref,
-                solution_ref
                 ]
    
             row = ' | '.join([cell for cell in content])
