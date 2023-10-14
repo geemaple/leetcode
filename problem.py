@@ -63,7 +63,8 @@ class Problem:
             f'Category: {", ".join(self.tags)}',
             f'Time: -',
             f'Space: -',
-            f'Ref: -'
+            f'Ref: -',
+            f'Note: -',
             ])
         self.write_comments(file, self.content.split('\n'))
         self.write_code(file, self.editorData)

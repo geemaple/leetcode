@@ -39,7 +39,7 @@ LANGUAGE = {
 }
 
 class Solution:
-    def __init__(self, source, number, problem, category, time, space, ref) -> None:
+    def __init__(self, source, number, problem, category, time, space, ref, note) -> None:
         self.source = source
         self.number = number
         self.problem = problem
@@ -47,6 +47,7 @@ class Solution:
         self.time = time
         self.space = space
         self.ref = ref
+        self.note = note
         
     @property
     def tag(self) -> str:
@@ -92,7 +93,7 @@ def table_row(f, content):
 
 def table_header(f, headers):
     header_mark = ' | '.join(headers)
-    seperator = ' | '.join(['----' for _ in range(len(headers))])
+    seperator = ' | '.join(['-----' for _ in range(len(headers))])
     table_row(f, header_mark)
     table_row(f, seperator)
 
@@ -129,13 +130,15 @@ def table_content(f, directories, categories):
                 time_match = re.search(r"Time: (.+)", text)
                 space_match = re.search(r"Space: (.+)", text)
                 link_match = re.search(r"Ref: (.+)", text)
+                note_match = re.search(r"Note: (.+)", text)
                 
                 category = search_tag(category_match.group(1)) if category_match else TAG_OTHER
                 time = time_match.group(1) if time_match else '-'
                 space = space_match.group(1) if space_match else '-'
                 ref = link_match.group(1) if link_match else '-'                
+                note = note_match.group(1) if note_match else '-'
 
-                solution = Solution(source, number, name, category, time, space, ref)
+                solution = Solution(source, number, name, category, time, space, ref, note)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
@@ -145,7 +148,7 @@ def table_content(f, directories, categories):
     solved_problems = len(solution_set)
     
     for category in categories:
-        headers = ['Problem', 'Solution', 'Time', 'Space', 'Ref']
+        headers = ['Problem', 'Solution', 'Time', 'Space', 'Ref', 'Note']
         title2(f, category)
 
         hyphen_tag = "-".join(category.lower().split())
@@ -163,7 +166,8 @@ def table_content(f, directories, categories):
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
-                solution.ref]
+                solution.ref,
+                solution.note]
    
             row = ' | '.join([cell for cell in content])
             table_row(f, row) 
