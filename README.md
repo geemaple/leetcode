@@ -62,6 +62,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Ref |
 | ---- | ---- | ---- | ---- | ---- |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | - |
+| [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | - |
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | https://youtu.be/oxWpJtUGG_0 |
 ## Divide and Conquer
 ## Depth-First Search
@@ -247,7 +248,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-273.integer-to-english-words](https://leetcode.com/problems/integer-to-english-words/description/) | [python](./leetcode/273.integer-to-english-words.py) | - | - | - |
 | [leetcode-276.paint-fence](https://leetcode.com/problems/paint-fence/description/) | [c++](./leetcode/276.paint-fence.cpp), [python](./leetcode/276.paint-fence.py) | - | - | - |
 | [leetcode-277.find-the-celebrity](https://leetcode.com/problems/find-the-celebrity/description/) | [c++](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | - | - | - |
-| [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | - | - | - |
 | [leetcode-279.perfect-squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | - | - | - |
 | [leetcode-280.wiggle-sort](https://leetcode.com/problems/wiggle-sort/description/) | [python](./leetcode/280.wiggle-sort.py) | - | - | - |
 | [leetcode-282.expression-add-operators](https://leetcode.com/problems/expression-add-operators/description/) | [c++](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | - | - | - |
@@ -388,5 +388,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **307**
 
-Auto updated at: **2023-10-13 12:47:26**
+Auto updated at: **2023-10-14 09:40:00**
 
