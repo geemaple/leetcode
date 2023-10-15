@@ -61,6 +61,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [leetcode-33.search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O(logN) | O(1) | Rotated | - |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O(logN) | O(1) | std::lower_bound | - |
 | [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O(logN) | O(1) | std::lower_bound | - |
 | [leetcode-153.find-minimum-in-rotated-sorted-array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O(logN) | O(1) | Rotated | https://youtu.be/GsecRZC5to4 |
@@ -117,7 +118,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-29.divide-two-integers](https://leetcode.com/problems/divide-two-integers/description/) | [c++](./leetcode/29.divide-two-integers.cpp), [python](./leetcode/29.divide-two-integers.py) | - | - | - | - |
 | [leetcode-30.substring-with-concatenation-of-all-words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | [c++](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | - | - | - | - |
 | [leetcode-31.next-permutation](https://leetcode.com/problems/next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py) | - | - | - | - |
-| [leetcode-33.search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | - | - | - | - |
 | [leetcode-36.valid-sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | - | - | - | - |
 | [leetcode-37.sudoku-solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | - | - | - | - |
 | [leetcode-38.count-and-say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | - | - | Each term of the sequence of integers will be represented as a | - |
@@ -389,5 +389,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-15 08:27:10**
+Auto updated at: **2023-10-15 14:53:00**
 
