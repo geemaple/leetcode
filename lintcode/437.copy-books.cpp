@@ -1,5 +1,44 @@
-// f(k)(i) = min(max(f(k - 1)(j), rest) where 0 <= j <= i)
-// O(K * N^2)
+//  Category: Binary Search, Dynamic Programming/DP, Binary Search on Answer, Partition DP
+//  Time: O(N*logP)
+//  Space: O(1)
+//  Ref: -
+//  Note: Answer | DP
+
+//  Given `n` books and the `i-th` book has `pages[i]` pages.
+//  There are `k` persons to copy these books.
+//  
+//  These books list in a row and each person can claim a continous range of books.
+//  For example, one copier can copy the books from `i-th` to `j-th` continously, but he can not copy the 1st book, 2nd book and 4th book (without 3rd book).
+//  
+//  They start copying books at the same time and they all cost 1 minute to copy 1 page of a book.
+//  What's the best strategy to assign books so that the slowest copier can finish at earliest time? 
+//  
+//  Return the shortest time that the slowest copier spends.
+//  
+//  ---
+//  
+//  **Example 1:**
+//  
+//  ```
+//  Input: pages = [3, 2, 4], k = 2
+//  Output: 5
+//  Explanation: 
+//      First person spends 5 minutes to copy book 1 and book 2.
+//      Second person spends 4 minutes to copy book 3.
+//  ```
+//  
+//  **Example 2:**
+//  
+//  ```
+//  Input: pages = [3, 2, 4], k = 3
+//  Output: 4
+//  Explanation: Each person copies one of the books.
+//  ```
+//  
+//  The sum of book pages is less than or equal to 2147483647
+
+#include <numeric>
+
 class Solution {
 public:
     /**
@@ -9,103 +48,37 @@ public:
      */
     int copyBooks(vector<int> &pages, int k) {
         // write your code here
-        if (pages.size() == 0)
-        {
+        if (pages.size() == 0) {
             return 0;
         }
-        
-        int m = pages.size();
-        if (k > m)
-        {
-            k = m;
-        }
-        
-        vector<vector<int>> table(k + 1, vector<int>(m + 1, INT_MAX));
-        table[0][0] = 0;
-        
-        for (auto t = 1; t <= k; ++t)
-        {
-            table[t][0] = 0;
-            
-            for (auto i = 1; i <=m; ++i)
-            {
-                int value = INT_MAX;
-                int rest = 0;
-                for (auto j = i; j >= 0; j--){
-                    int time = max(table[t - 1][j], rest);
-                    value = min(value, time);
-                    if (j - 1 >= 0)
-                    {
-                        rest += pages[j - 1];
-                    }
-                }
-                
-                table[t][i] = value;
-            }
-        }
-        
-        return table[k][m];
-    }
-};
 
-// binary-search
-// O(NLogA) A = possible answer
-class Solution2 {
-private:
-    bool canFinish(vector<int> &pages, int minutes, int people)
-    {
-        int headcount = 0;
-        int unit = minutes;
-        int i = 0;
-        
-        while(i < pages.size())
-        {
-            headcount++;
-            
-            while(i + 1 < pages.size() && unit - pages[i] >= pages[i + 1])
-            {
-                unit -= pages[i];
-                i++;
-            }
-            
-            unit = minutes;
-            i++;
-        }
-        
-        return headcount <= people;
-    }
-public:
-    /**
-     * @param pages: an array of integers
-     * @param k: An integer
-     * @return: an integer
-     */
-    int copyBooks(vector<int> &pages, int k) {
-        // write your code here
-        
-        int start = 0;
-        int end = 0;
-        
-        for (auto i = 0; i < pages.size(); ++i)
-        {
-            start = max(start, pages[i]);
-            end += pages[i];
-        }
-        
-        while(start + 1 < end)
-        {
+        int start = *std::max_element(pages.begin(), pages.end());
+        int end = std::accumulate(pages.begin(), pages.end(), 0);
+
+        while (start < end) {
             int mid = start + (end - start) / 2;
-            
-            if(canFinish(pages, mid, k))
-            {
-                end =  mid;
-            }
-            else
-            {
-                start = mid;
+            if (can_finish(pages, mid, k)) {
+                end = mid;
+            } else {
+                start = mid + 1;
             }
         }
-        
-        return canFinish(pages, start, k) ? start: end;
+        return start;
+    }
+
+    bool can_finish(vector<int> &pages, int minutes, int k) {
+        int work = 0;
+        int people = 1;
+
+        for (auto &p : pages) {
+            if (work + p > minutes) {
+                work = p;
+                people += 1;
+            } else {
+                work += p;
+            }
+        }
+
+        return people <= k;
     }
 };

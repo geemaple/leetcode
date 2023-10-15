@@ -39,15 +39,39 @@ LANGUAGE = {
 }
 
 class Solution:
-    def __init__(self, source, number, problem, category, time, space, ref, note) -> None:
+    def __init__(self, source, number, problem, category, time, space, note, ref) -> None:
         self.source = source
         self.number = number
         self.problem = problem
-        self.category = category
-        self.time = time
-        self.space = space
+        self.category = self.markdown_escape(category)
+        self.time = self.markdown_escape(time)
+        self.space = self.markdown_escape(space)
+        self.note = self.markdown_escape(note)
         self.ref = ref
-        self.note = note
+
+    def markdown_escape(self, content) -> str:
+        escape_table = {
+            '\\': '\\',
+            '`': '\\`',
+            '*': '\\*',
+            '_': '\\_',
+            '{': '\\{',
+            '}': '\\}',
+            '[': '\\[',
+            ']': '\\]',
+            '(': '\\(',
+            ')': '\\)',
+            '#': '\\#',
+            '+': '\\+',
+            '-': '\\-',
+            '.': '\\.',
+            '!': '\\!',
+            '|': '\\|',
+        }
+
+        escaped_text = content.translate({ord(key): value for key, value in escape_table.items()})
+        return escaped_text
+  
         
     @property
     def tag(self) -> str:
@@ -88,14 +112,13 @@ def title1(f, conent):
 def title2(f, conent):
     f.write('## ' + str(conent) + "\n")
 
-def table_row(f, content):
+def table_row(f, contents):
+    content = ' | '.join([str(content) for content in contents])
     f.write("| " + content + " |" + "\n")
 
 def table_header(f, headers):
-    header_mark = ' | '.join(headers)
-    seperator = ' | '.join(['-----' for _ in range(len(headers))])
-    table_row(f, header_mark)
-    table_row(f, seperator)
+    table_row(f, headers)
+    table_row(f, ['-----'] * len(headers))
 
 def search_tag(tags):
     tags = tags.split(', ')
@@ -138,7 +161,7 @@ def table_content(f, directories, categories):
                 ref = link_match.group(1) if link_match else '-'                
                 note = note_match.group(1) if note_match else '-'
 
-                solution = Solution(source, number, name, category, time, space, ref, note)
+                solution = Solution(source, number, name, category, time, space, note, ref)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
@@ -161,7 +184,7 @@ def table_content(f, directories, categories):
             if solution.name not in solution_set:
                 continue
 
-            content = [
+            contents = [
                 link_mark(solution.name, solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
@@ -170,8 +193,7 @@ def table_content(f, directories, categories):
                 solution.ref,
                 ]
    
-            row = ' | '.join([cell for cell in content])
-            table_row(f, row) 
+            table_row(f, contents) 
             del solution_set[solution.name]
 
     return solved_problems

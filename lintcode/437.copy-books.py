@@ -1,84 +1,81 @@
-# f(k)(i) = min(max(f(k - 1)(j), rest) where 0 <= j <= i)
-# O(k * N^2) Time Limit Exceeded
+#  Category: Binary Search, Dynamic Programming/DP, Binary Search on Answer, Partition DP
+#  Time: O(N*logP)
+#  Space: O(1)
+#  Ref: -
+#  Note: Answer | DP
+
+#  Given `n` books and the `i-th` book has `pages[i]` pages.
+#  There are `k` persons to copy these books.
+#  
+#  These books list in a row and each person can claim a continous range of books.
+#  For example, one copier can copy the books from `i-th` to `j-th` continously, but he can not copy the 1st book, 2nd book and 4th book (without 3rd book).
+#  
+#  They start copying books at the same time and they all cost 1 minute to copy 1 page of a book.
+#  What's the best strategy to assign books so that the slowest copier can finish at earliest time? 
+#  
+#  Return the shortest time that the slowest copier spends.
+#  
+#  ---
+#  
+#  **Example 1:**
+#  
+#  ```
+#  Input: pages = [3, 2, 4], k = 2
+#  Output: 5
+#  Explanation: 
+#      First person spends 5 minutes to copy book 1 and book 2.
+#      Second person spends 4 minutes to copy book 3.
+#  ```
+#  
+#  **Example 2:**
+#  
+#  ```
+#  Input: pages = [3, 2, 4], k = 3
+#  Output: 4
+#  Explanation: Each person copies one of the books.
+#  ```
+#  
+#  The sum of book pages is less than or equal to 2147483647
+
+from typing import (
+    List,
+)
+
 class Solution:
     """
     @param pages: an array of integers
     @param k: An integer
     @return: an integer
     """
-    def copyBooks(self, pages, k):
+    def copy_books(self, pages: List[int], k: int) -> int:
         # write your code here
-        if pages is None or len(pages) == 0:
+
+        if len(pages) == 0:
             return 0
 
-        m = len(pages)
+        start = max(pages)
+        end = sum(pages)
 
-        if k > m:
-            k = m
-
-        table = [[float('inf') for _ in range(m + 1)] for _ in range(k + 1)]
-
-        table[0][0] = 0
-
-        for t in range(1, k + 1):
-
-            table[t][0] = 0
-
-            for i in range(1, m + 1):
-                value = float('inf') 
-                rest = 0
-                for j in range(i, -1, -1):
-                    time = max(table[t - 1][j], rest)
-                    value = min(value, time)
-                    if j - 1 >= 0:
-                        rest += pages[j - 1]
-
-                table[t][i] = value
-
-        return table[-1][-1]
-
-# binary-search
-# NLogA A = possible answer
-class Solution2:
-    """
-    @param pages: an array of integers
-    @param k: An integer
-    @return: an integer
-    """
-    def copyBooks(self, pages, k):
-        # write your code here
-        
-        start = 0
-        end = 0
-        
-        for work in pages:
-            start = max(start, work)
-            end += work
-            
-        while (start + 1 < end):
+        while start < end:
             mid = start + (end - start) // 2
-            
-            if self.canFinish(pages, mid, k):
+
+            if self.can_finish(pages, mid, k):
                 end = mid
             else:
-                start = mid
-                
-        return start if self.canFinish(pages, start, k) else end
+                start = mid + 1
+
+        return start
+
+
+    def can_finish(self, pages: List[int], minutes: int, k: int) -> bool:
         
-        
-    def canFinish(self, pages, minutes, people):
-        headcount = 0
-        unit = minutes
-        i = 0
-        
-        while i < len(pages):
-            
-            while(i + 1 < len(pages) and unit - pages[i] >= pages[i + 1]):
-                unit -= pages[i]
-                i += 1
-                
-            headcount += 1    
-            unit = minutes
-            i += 1
-        
-        return headcount <= people
+        work = 0
+        people = 1
+        for i in range(len(pages)):
+            if work + pages[i] > minutes:
+                work = pages[i]
+                people += 1
+            else:
+                work += pages[i]
+
+        return people <= k
