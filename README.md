@@ -67,6 +67,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O(logN) | O(1) | Range | - |
 | [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O(logN) | O(1) | Standard | - |
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O(logN) | O(1) | Standard | https://youtu.be/oxWpJtUGG_0 |
+| [leetcode-852.peak-index-in-a-mountain-array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O(logN) | O(1) | Mountain | - |
 ## Divide and Conquer
 ## Depth-First Search
 ## Breadth-First Search
@@ -347,7 +348,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-832.flipping-an-image](https://leetcode.com/problems/flipping-an-image/description/) | [python](./leetcode/832.flipping-an-image.py) | - | - | - | - |
 | [leetcode-836.rectangle-overlap](https://leetcode.com/problems/rectangle-overlap/description/) | [c++](./leetcode/836.rectangle-overlap.cpp), [python](./leetcode/836.rectangle-overlap.py) | - | - | - | - |
 | [leetcode-844.backspace-string-compare](https://leetcode.com/problems/backspace-string-compare/description/) | [c++](./leetcode/844.backspace-string-compare.cpp), [python](./leetcode/844.backspace-string-compare.py) | - | - | - | - |
-| [leetcode-852.peak-index-in-a-mountain-array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | - | - | - | - |
 | [leetcode-859.buddy-strings](https://leetcode.com/problems/buddy-strings/description/) | [c++](./leetcode/859.buddy-strings.cpp) | - | - | - | - |
 | [leetcode-924.minimize-malware-spread](https://leetcode.com/problems/minimize-malware-spread/description/) | [python](./leetcode/924.minimize-malware-spread.py) | - | - | - | - |
 | [leetcode-928.minimize-malware-spread-ii](https://leetcode.com/problems/minimize-malware-spread-ii/description/) | [python](./leetcode/928.minimize-malware-spread-ii.py) | - | - | - | - |
@@ -389,5 +389,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-14 13:08:16**
+Auto updated at: **2023-10-15 08:17:44**
 
