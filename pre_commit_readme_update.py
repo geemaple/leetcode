@@ -184,13 +184,15 @@ def table_content(f, directories, categories):
             if solution.name not in solution_set:
                 continue
 
+            ref_link = link_mark('Video', solution.ref) if re.search(r'(youtube\.com|youtu\.be)', solution.ref) else '-'
+
             contents = [
                 link_mark(solution.name, solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
                 solution.note,
-                solution.ref,
+                ref_link,
                 ]
    
             table_row(f, contents) 
