@@ -15,22 +15,30 @@ import re
 import datetime
 import collections
 
-TAG_ARRAY = 'Array'
-TAG_BIT = 'Bit Manipulation'
 TAG_MATH = 'Math'
+TAG_BIT = 'Bit Manipulation'
+TAG_SIM = 'Simulation'
+TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
-TAG_HASH = 'Hash Table'
-TAG_DESIGN = 'Design'
-TAG_DFS = 'Depth-First Search'
+TAG_STR = 'String'
+TAG_TP = 'Two Pointers'
 TAG_BFS = 'Breadth-First Search'
+TAG_BT = 'Backtracking'
+TAG_DFS = 'Depth-First Search'
+TAG_DC = 'Divide and Conquer'
 TAG_BINARY_SEARCH = 'Binary Search'
 TAG_BINARY_SEARCH_TREE = 'Binary Search Tree'
-TAG_UNION_FIND = 'Union Find'
 TAG_LINKED_LIST = 'Linked List'
+TAG_HASH = 'Hash Table'
+TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 
-TAG_OTHER = 'Other'
+CATEGORY_OTHER = 'Other'
+
+CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_STR, TAG_TP, TAG_LINKED_LIST, 
+              TAG_BINARY_SEARCH, TAG_BFS, TAG_DFS, TAG_DC, TAG_BT, TAG_HASH, 
+              TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, TAG_UNION_FIND, TAG_TRIE]
 
 LANGUAGE = {
     'cpp': 'c++',
@@ -123,13 +131,12 @@ def table_header(f, headers):
 def search_tag(tags):
     tags = tags.split(', ')
     for tag in tags:
-        if any(ext.lower() in tag.lower() for ext in [TAG_ARRAY]):
-            continue
 
-        if any(ext.lower() in tag.lower() for ext in ['DP', 'Backpack', TAG_DP]):
-            return TAG_DP
-        else:
-            return tag
+        for c in CATEGORIES:
+            if c.lower() in tag.lower():
+                return c
+
+    return CATEGORY_OTHER
     
 def table_content(f, directories, categories):
     
@@ -155,7 +162,7 @@ def table_content(f, directories, categories):
                 link_match = re.search(r"Ref: (.+)", text)
                 note_match = re.search(r"Note: (.+)", text)
                 
-                category = search_tag(category_match.group(1)) if category_match else TAG_OTHER
+                category = search_tag(category_match.group(1)) if category_match else CATEGORY_OTHER
                 time = time_match.group(1) if time_match else '-'
                 space = space_match.group(1) if space_match else '-'
                 ref = link_match.group(1) if link_match else '-'                
@@ -251,12 +258,9 @@ def update_readme(file_name):
             "《数学之美》(A chinese version book by Doctor Wujun)",
             "《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)"
         ])
-
-        categories = [TAG_MATH, TAG_BIT, TAG_DESIGN, "Two Pointers", TAG_LINKED_LIST,
-                      TAG_BINARY_SEARCH, "Divide and Conquer", TAG_DFS, TAG_BFS,
-                      "Backtracking", TAG_HASH, "Queue", "Heap", "Stack", "Sweep Line", TAG_GREEDY,
-                      TAG_DP, TAG_BINARY_SEARCH_TREE, TAG_UNION_FIND, TAG_TRIE, TAG_OTHER]
       
+        categories = CATEGORIES + [CATEGORY_OTHER]
+
         title2(f, link_mark('Category', 'category'))
         bullet(f, [tag_mark(c) for c in categories])
 

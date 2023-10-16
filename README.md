@@ -33,19 +33,17 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## [Category](category)
 - [Math](#math)
 - [Bit Manipulation](#bit-manipulation)
+- [Simulation](#simulation)
 - [Design](#design)
+- [String](#string)
 - [Two Pointers](#two-pointers)
 - [Linked List](#linked-list)
 - [Binary Search](#binary-search)
-- [Divide and Conquer](#divide-and-conquer)
-- [Depth-First Search](#depth-first-search)
 - [Breadth-First Search](#breadth-first-search)
+- [Depth-First Search](#depth-first-search)
+- [Divide and Conquer](#divide-and-conquer)
 - [Backtracking](#backtracking)
 - [Hash Table](#hash-table)
-- [Queue](#queue)
-- [Heap](#heap)
-- [Stack](#stack)
-- [Sweep Line](#sweep-line)
 - [Greedy](#greedy)
 - [Dynamic Programming](#dynamic-programming)
 - [Binary Search Tree](#binary-search-tree)
@@ -55,7 +53,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 ## Bit Manipulation
+## Simulation
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [lintcode-39.recover-rotated-sorted-array](https://www.lintcode.com/problem/39) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 ## Design
+## String
 ## Two Pointers
 ## Linked List
 ## Binary Search
@@ -71,15 +74,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard | [Video](https://youtu.be/oxWpJtUGG_0) |
 | [leetcode-852.peak-index-in-a-mountain-array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
 | [lintcode-437.copy-books](https://www.lintcode.com/problem/437) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
-## Divide and Conquer
-## Depth-First Search
 ## Breadth-First Search
+## Depth-First Search
+## Divide and Conquer
 ## Backtracking
 ## Hash Table
-## Queue
-## Heap
-## Stack
-## Sweep Line
 ## Greedy
 ## Dynamic Programming
 ## Binary Search Tree
@@ -356,7 +355,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-933.number-of-recent-calls](https://leetcode.com/problems/number-of-recent-calls/description/) | [c++](./leetcode/933.number-of-recent-calls.cpp), [python](./leetcode/933.number-of-recent-calls.py) | \- | \- | \- | - |
 | [leetcode-1150.check-if-a-number-is-majority-element-in-a-sorted-array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/description/) | [c++](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | \- | \- | \- | - |
 | [lintcode-31.partition-array](https://www.lintcode.com/problem/31) | [python](./lintcode/31.partition-array.py) | \- | \- | \- | - |
-| [lintcode-39.recover-rotated-sorted-array](https://www.lintcode.com/problem/39) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | \- | \- | \- | - |
 | [lintcode-77.longest-common-subsequence](https://www.lintcode.com/problem/77) | [c++](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | \- | \- | \- | - |
 | [lintcode-81.find-median-from-data-stream](https://www.lintcode.com/problem/81) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | \- | \- | \- | - |
 | [lintcode-89.k-sum](https://www.lintcode.com/problem/89) | [c++](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | \- | \- | \- | - |
@@ -389,5 +387,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-16 16:05:01**
+Auto updated at: **2023-10-16 17:46:59**
 
