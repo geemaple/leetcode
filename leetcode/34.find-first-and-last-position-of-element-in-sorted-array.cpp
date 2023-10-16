@@ -1,7 +1,7 @@
 //  Category: Array, Binary Search
 //  Time: O(logN)
 //  Space: O(1)
-//  Ref: -
+//  Ref: https://youtu.be/y6OT8heV-30
 //  Note: std::lower_bound
 
 //  Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
