@@ -239,8 +239,8 @@ def update_readme(file_name):
 
         title2(f, "文章/Articles")
         bullet(f, [
-            link_mark('博客结题报告', 'http://geemaple.github.io/'),
-            link_mark('公众号解题报告', 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1416970062002601985&__biz=MzI1NjA4ODU4NQ==#wechat_redirect')
+            link_mark('Blog博客', 'http://geemaple.github.io/category/#Algobase'),
+            link_mark('Youtube频道', 'https://www.youtube.com/@GeekPal')
         ])
 
         title2(f, "书籍/Books")

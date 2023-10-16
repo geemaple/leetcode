@@ -20,8 +20,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
 
 ## 文章/Articles
-- [博客结题报告](http://geemaple.github.io/)
-- [公众号解题报告](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1416970062002601985&__biz=MzI1NjA4ODU4NQ==#wechat_redirect)
+- [Blog博客](http://geemaple.github.io/category/#Algobase)
+- [Youtube频道](https://www.youtube.com/@GeekPal)
 
 ## 书籍/Books
 - 《算法技术手册》/ Algorithms in a Nutshell
@@ -389,5 +389,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **308**
 
-Auto updated at: **2023-10-16 15:52:53**
+Auto updated at: **2023-10-16 16:05:01**
 
