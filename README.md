@@ -59,6 +59,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-39.recover-rotated-sorted-array](https://www.lintcode.com/problem/39) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 ## Design
 ## String
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [lintcode-1790.rotate-string-ii](https://www.lintcode.com/problem/1790) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 ## Two Pointers
 ## Linked List
 ## Binary Search
@@ -385,7 +388,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-629.minimum-spanning-tree](https://www.lintcode.com/problem/629) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | \- | \- | \- | - |
 | [lintcode-652.factorization](https://www.lintcode.com/problem/652) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
 ## 进度/Progress
-Total sovled **308**
+Total sovled **309**
 
-Auto updated at: **2023-10-16 17:46:59**
+Auto updated at: **2023-10-16 19:03:59**
 
