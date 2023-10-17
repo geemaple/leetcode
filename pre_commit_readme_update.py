@@ -87,7 +87,7 @@ class Solution:
     
     @property
     def name(self) -> str:
-        return f'{self.source}-{self.number}.{self.problem}'
+        return f'{self.source}-{self.number}. {self.problem}'
 
     @property
     def link(self) -> str:
@@ -168,7 +168,8 @@ def table_content(f, directories, categories):
                 ref = link_match.group(1) if link_match else '-'                
                 note = note_match.group(1) if note_match else '-'
 
-                solution = Solution(source, number, name, category, time, space, note, ref)
+                problem = ' '.join(name.split('-'))
+                solution = Solution(source, number, problem, category, time, space, note, ref)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
@@ -194,7 +195,7 @@ def table_content(f, directories, categories):
             ref_link = link_mark('Video', solution.ref) if re.search(r'(youtube\.com|youtu\.be)', solution.ref) else '-'
 
             contents = [
-                link_mark(solution.name, solution.link),
+                link_mark(solution.name.title(), solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
