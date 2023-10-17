@@ -47,10 +47,10 @@ LANGUAGE = {
 }
 
 class Solution:
-    def __init__(self, source, number, problem, category, time, space, note, ref) -> None:
+    def __init__(self, source, number, name, category, time, space, note, ref) -> None:
         self.source = source
         self.number = number
-        self.problem = problem
+        self.name = name
         self.category = self.markdown_escape(category)
         self.time = self.markdown_escape(time)
         self.space = self.markdown_escape(space)
@@ -86,15 +86,16 @@ class Solution:
         return "-".join(self.category.lower().split())
     
     @property
-    def name(self) -> str:
-        return f'{self.source}-{self.number}. {self.problem}'
+    def title(self) -> str:
+        problem = ' '.join(self.name.split('-')) 
+        return f'{self.source}-{self.number}. {problem}'.title()
 
     @property
     def link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return f'https://leetcode.com/problems/{self.problem}/description/'
+            return f'https://leetcode.com/problems/{self.name}/description/'
         if self.source.lower() == 'lintcode':
-            return f'https://www.lintcode.com/problem/{self.number}'
+            return f'https://www.lintcode.com/problem/{self.name}'
         else:
             return f'#'
 
@@ -168,8 +169,7 @@ def table_content(f, directories, categories):
                 ref = link_match.group(1) if link_match else '-'                
                 note = note_match.group(1) if note_match else '-'
 
-                problem = ' '.join(name.split('-'))
-                solution = Solution(source, number, problem, category, time, space, note, ref)
+                solution = Solution(source, number, name, category, time, space, note, ref)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
@@ -195,7 +195,7 @@ def table_content(f, directories, categories):
             ref_link = link_mark('Video', solution.ref) if re.search(r'(youtube\.com|youtu\.be)', solution.ref) else '-'
 
             contents = [
-                link_mark(solution.name.title(), solution.link),
+                link_mark(solution.title, solution.link),
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
