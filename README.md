@@ -70,8 +70,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-33.search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated | - |
 | [leetcode-34.find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound | [Video](https://youtu.be/y6OT8heV-30) |
 | [leetcode-35.search-insert-position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
+| [leetcode-74.search-a-2d-matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix | - |
 | [leetcode-153.find-minimum-in-rotated-sorted-array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated | [Video](https://youtu.be/GsecRZC5to4) |
 | [leetcode-162.find-peak-element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain | - |
+| [leetcode-240.search-a-2d-matrix-ii](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [leetcode-278.first-bad-version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range | - |
 | [leetcode-374.guess-number-higher-or-lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O\(logN\) | O\(1\) | Standard | - |
 | [leetcode-704.binary-search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard | [Video](https://youtu.be/oxWpJtUGG_0) |
@@ -153,7 +155,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-69.sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | \- | \- | \- | - |
 | [leetcode-70.climbing-stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | \- | \- | \- | - |
 | [leetcode-72.edit-distance](https://leetcode.com/problems/edit-distance/description/) | [c++](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | \- | \- | \- | - |
-| [leetcode-74.search-a-2d-matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | \- | \- | \- | - |
 | [leetcode-75.sort-colors](https://leetcode.com/problems/sort-colors/description/) | [c++](./leetcode/75.sort-colors.cpp), [python](./leetcode/75.sort-colors.py) | \- | \- | \- | - |
 | [leetcode-76.minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/description/) | [c++](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | \- | \- | \- | - |
 | [leetcode-78.subsets](https://leetcode.com/problems/subsets/description/) | [c++](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | \- | \- | \- | - |
@@ -237,7 +238,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-236.lowest-common-ancestor-of-a-binary-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | \- | \- | \- | - |
 | [leetcode-237.delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [python](./leetcode/237.delete-node-in-a-linked-list.py) | \- | \- | \- | - |
 | [leetcode-239.sliding-window-maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | \- | \- | \- | - |
-| [leetcode-240.search-a-2d-matrix-ii](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | \- | \- | \- | - |
 | [leetcode-242.valid-anagram](https://leetcode.com/problems/valid-anagram/description/) | [c++](./leetcode/242.valid-anagram.cpp), [python](./leetcode/242.valid-anagram.py) | \- | \- | \- | - |
 | [leetcode-246.strobogrammatic-number](https://leetcode.com/problems/strobogrammatic-number/description/) | [c++](./leetcode/246.strobogrammatic-number.cpp), [python](./leetcode/246.strobogrammatic-number.py) | \- | \- | \- | - |
 | [leetcode-249.group-shifted-strings](https://leetcode.com/problems/group-shifted-strings/description/) | [c++](./leetcode/249.group-shifted-strings.cpp) | \- | \- | \- | - |
@@ -390,5 +390,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 进度/Progress
 Total sovled **309**
 
-Auto updated at: **2023-10-16 19:03:59**
+Auto updated at: **2023-10-17 10:57:04**
 
