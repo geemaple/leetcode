@@ -1,3 +1,9 @@
+//  Category: Binary Search on Answer, Binary Search
+//  Time: O(N * logM + M * logN)
+//  Space: O(1)
+//  Ref: -
+//  Note: Range
+
 // Binary Search (M * logN + N * LogM)
 class Solution {
 private:

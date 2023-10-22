@@ -91,13 +91,20 @@ class Solution:
         return f'{self.source}-{self.number}. {problem}'.title()
 
     @property
-    def link(self) -> str:
+    def problem_link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return f'https://leetcode.com/problems/{self.name}/description/'
+            return link_mark(self.title, f'https://leetcode.com/problems/{self.name}/description/')
         if self.source.lower() == 'lintcode':
-            return f'https://www.lintcode.com/problem/{self.name}'
+            return link_mark(self.title, f'https://www.lintcode.com/problem/{self.name}')
         else:
             return f'#'
+        
+    @property
+    def ref_link(self) -> str:
+        if re.search(r'(youtube\.com|youtu\.be)', self.ref):
+            return link_mark('Video', self.ref)
+        else:
+            return f'-'
 
     def __repr__(self) -> str:
         return f'{self.name} {self.category} {self.time} {self.space} {self.ref}'
@@ -182,25 +189,24 @@ def table_content(f, directories, categories):
         headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
         title2(f, category)
 
-        hyphen_tag = "-".join(category.lower().split())
-        if len(category_set[hyphen_tag]) == 0:
+        category_tag = "-".join(category.lower().split())
+        if len(category_set[category_tag]) == 0:
             continue
 
         table_header(f, headers)
-        for solution in category_set[hyphen_tag]:
+        for solution in category_set[category_tag]:
 
             if solution.name not in solution_set:
                 continue
 
-            ref_link = link_mark('Video', solution.ref) if re.search(r'(youtube\.com|youtu\.be)', solution.ref) else '-'
 
             contents = [
-                link_mark(solution.title, solution.link),
+                solution.problem_link,
                 ', '.join(solution_set[solution.name]),
                 solution.time,
                 solution.space,
                 solution.note,
-                ref_link,
+                solution.ref_link,
                 ]
    
             table_row(f, contents) 
@@ -212,8 +218,8 @@ def link_mark(content, link):
     return f"[{content}]({link})"
 
 def tag_mark(content):
-    hyphen_tag = "-".join(content.lower().split())
-    return f"[{content}](#{hyphen_tag})"
+    category_tag = "-".join(content.lower().split())
+    return f"[{content}](#{category_tag})"
 
 def update_readme(file_name):
     with open(file_name, "w") as f:
