@@ -206,7 +206,7 @@ def table_content(f, directories, categories):
 
             contents = [
                 solution.problem_link,
-                ', '.join(solution_set[solution.name]),
+                ', '.join(solution_set[solution.key]),
                 solution.time,
                 solution.space,
                 solution.note,
@@ -214,7 +214,7 @@ def table_content(f, directories, categories):
                 ]
    
             table_row(f, contents) 
-            del solution_set[solution.name]
+            del solution_set[solution.key]
 
     return solved_problems
 
