@@ -200,7 +200,7 @@ def table_content(f, directories, categories):
         table_header(f, headers)
         for solution in category_set[category_tag]:
 
-            if solution.name not in solution_set:
+            if solution.key not in solution_set:
                 continue
 
 
