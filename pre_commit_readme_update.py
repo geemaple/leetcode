@@ -91,6 +91,10 @@ class Solution:
         return f'{self.source}-{self.number}. {problem}'.title()
 
     @property
+    def key(self) -> str:
+        return f'{self.source}-{self.name}'
+
+    @property
     def problem_link(self) -> str:
         if self.source.lower() == 'leetcode':
             return link_mark(self.title, f'https://leetcode.com/problems/{self.name}/description/')
@@ -181,7 +185,7 @@ def table_content(f, directories, categories):
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
                 code = link_mark(lang, path)
-                solution_set[solution.name].append(code)
+                solution_set[solution.key].append(code)
 
     solved_problems = len(solution_set)
     
