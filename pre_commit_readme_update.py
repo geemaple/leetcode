@@ -88,7 +88,7 @@ class Solution:
     
     @property
     def title(self) -> str:
-        problem = ' '.join(self.name.split('-')) 
+        problem = self.name.replace('-', ' ')
         return f'{self.source}-{self.number}. {problem}'.title()
 
     @property
@@ -205,9 +205,11 @@ def table_content(f, directories, categories):
             if solution.key not in solution_set:
                 continue
 
+            codes = ', '.join(solution_set[solution.key])
+
             contents = [
                 solution.problem_link,
-                ', '.join(solution_set[solution.key]),
+                codes,
                 solution.time,
                 solution.space,
                 solution.note,
@@ -218,8 +220,9 @@ def table_content(f, directories, categories):
             del solution_set[solution.key]
 
     for key, val in statistic_set.items():
-        if len(val) > 2:
-            print(f'{key}: {val}')
+        source = set(val)
+        if len(source) > 2:
+            print(f"{key.replace('-', ' ').title()}: {val}")
 
     return len(statistic_set)
 
