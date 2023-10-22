@@ -47,10 +47,11 @@ LANGUAGE = {
 }
 
 class Solution:
-    def __init__(self, source, number, name, category, time, space, note, ref) -> None:
+    def __init__(self, source, number, name, extension, category, time, space, note, ref) -> None:
         self.source = source
         self.number = number
         self.name = name
+        self.extension = extension
         self.category = self.markdown_escape(category)
         self.time = self.markdown_escape(time)
         self.space = self.markdown_escape(space)
@@ -111,10 +112,10 @@ class Solution:
             return f'-'
 
     def __repr__(self) -> str:
-        return f'{self.name} {self.category} {self.time} {self.space} {self.ref}'
+        return f'{self.source}-{self.number}({self.extension})'
 
     def __str__(self) -> str:
-        return f'{self.name} {self.category} {self.time} {self.space} {self.ref}'
+        return f'{self.source}-{self.number}({self.extension})'
 
 def paragraph(f, content):
     for line in content:
@@ -154,6 +155,7 @@ def table_content(f, directories, categories):
     
     category_set = collections.defaultdict(list)
     solution_set = collections.defaultdict(list)
+    statistic_set = collections.defaultdict(list)
 
     for source in directories:
         files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
@@ -180,14 +182,14 @@ def table_content(f, directories, categories):
                 ref = link_match.group(1) if link_match else '-'                
                 note = note_match.group(1) if note_match else '-'
 
-                solution = Solution(source, number, name, category, time, space, note, ref)
+                solution = Solution(source, number, name, extension, category, time, space, note, ref)
                 category_set[solution.tag].append(solution)
 
                 lang = LANGUAGE[extension] if extension in LANGUAGE else extension
                 code = link_mark(lang, path)
                 solution_set[solution.key].append(code)
+                statistic_set[solution.name].append(solution)
 
-    solved_problems = len(solution_set)
     
     for category in categories:
         headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
@@ -203,7 +205,6 @@ def table_content(f, directories, categories):
             if solution.key not in solution_set:
                 continue
 
-
             contents = [
                 solution.problem_link,
                 ', '.join(solution_set[solution.key]),
@@ -216,7 +217,11 @@ def table_content(f, directories, categories):
             table_row(f, contents) 
             del solution_set[solution.key]
 
-    return solved_problems
+    for key, val in statistic_set.items():
+        if len(val) > 2:
+            print(f'{key}: {val}')
+
+    return len(statistic_set)
 
 def link_mark(content, link):
     return f"[{content}]({link})"

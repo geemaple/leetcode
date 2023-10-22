@@ -389,7 +389,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-629. Minimum Spanning Tree](https://www.lintcode.com/problem/minimum-spanning-tree) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | \- | \- | \- | - |
 | [Lintcode-652. Factorization](https://www.lintcode.com/problem/factorization) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
 ## 进度/Progress
-Total sovled **310**
+Total sovled **308**
 
-Auto updated at: **2023-10-22 23:53:32**
+Auto updated at: **2023-10-23 00:26:07**
 
