@@ -46,19 +46,9 @@ LANGUAGE = {
     'java': 'java'
 }
 
-class Solution:
-    def __init__(self, source, number, name, extension, category, time, space, note, ref) -> None:
-        self.source = source
-        self.number = number
-        self.name = name
-        self.extension = extension
-        self.category = self.markdown_escape(category)
-        self.time = self.markdown_escape(time)
-        self.space = self.markdown_escape(space)
-        self.note = self.markdown_escape(note)
-        self.ref = ref
-
-    def markdown_escape(self, content) -> str:
+class Markdown:
+    @staticmethod 
+    def escape(content) -> str:
         escape_table = {
             '\\': '\\',
             '`': '\\`',
@@ -80,7 +70,133 @@ class Solution:
 
         escaped_text = content.translate({ord(key): value for key, value in escape_table.items()})
         return escaped_text
-  
+
+    @staticmethod 
+    def paragraph(f, content):
+        for line in content:
+            f.write(str(line) + "\n")
+        f.write("\n")
+
+    @staticmethod 
+    def bullet(f, content):
+        for line in content:
+            f.write("- " + str(line) + "\n")
+        f.write("\n")
+
+    @staticmethod 
+    def title1(f, conent):
+        f.write('# ' + str(conent) + "\n")
+
+    @staticmethod 
+    def title2(f, conent):
+        f.write('## ' + str(conent) + "\n")
+
+    @staticmethod
+    def table_row(f, contents):
+        content = ' | '.join([str(content) for content in contents])
+        f.write("| " + content + " |" + "\n")
+
+    @staticmethod
+    def table_header(f, headers):
+        Markdown.table_row(f, headers)
+        Markdown.table_row(f, ['-----'] * len(headers))
+    
+    @staticmethod 
+    def table_content(f, directories, categories):
+        
+        def search_tag(tags):
+            tags = tags.split(', ')
+            for tag in tags:
+
+                for c in CATEGORIES:
+                    if c.lower() in tag.lower():
+                        return c
+
+            return CATEGORY_OTHER
+
+        category_set = collections.defaultdict(list)
+        solution_set = collections.defaultdict(list)
+
+        for source in directories:
+            files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
+            for file_name in files:
+                first_dot = file_name.find('.')
+                last_dot = file_name.rfind('.')
+                name = file_name[first_dot + 1: last_dot]
+                extension = file_name[last_dot + 1: ]
+                number = file_name[: first_dot]
+                
+                path = os.path.join(f'./{source}/{file_name}')
+
+                with open(path, 'r') as code:
+                    text = code.read()
+                    category_match = re.search(r"Category: (.+)", text)
+                    time_match = re.search(r"Time: (.+)", text)
+                    space_match = re.search(r"Space: (.+)", text)
+                    link_match = re.search(r"Ref: (.+)", text)
+                    note_match = re.search(r"Note: (.+)", text)
+                    
+                    category = search_tag(category_match.group(1)) if category_match else CATEGORY_OTHER
+                    time = time_match.group(1) if time_match else '-'
+                    space = space_match.group(1) if space_match else '-'
+                    ref = link_match.group(1) if link_match else '-'                
+                    note = note_match.group(1) if note_match else '-'
+
+                    solution = Solution(source, number, name, extension, category, time, space, note, ref)
+                    category_set[solution.tag].append(solution)
+
+                    lang = LANGUAGE[extension] if extension in LANGUAGE else extension
+                    code = Markdown.link(lang, path)
+                    solution_set[solution.key].append(code)
+        
+        for category in categories:
+            headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
+            Markdown.title2(f, category)
+
+            category_tag = "-".join(category.lower().split())
+            if len(category_set[category_tag]) == 0:
+                continue
+
+            Markdown.table_header(f, headers)
+            for solution in category_set[category_tag]:
+
+                if solution.key not in solution_set:
+                    continue
+
+                codes = ', '.join(solution_set[solution.key])
+
+                contents = [
+                    solution.problem_link,
+                    codes,
+                    solution.time,
+                    solution.space,
+                    solution.note,
+                    solution.ref_link,
+                    ]
+    
+                Markdown.table_row(f, contents) 
+                del solution_set[solution.key]
+    
+    @staticmethod
+    def link(content, link):
+        return f"[{content}]({link})"
+
+    @staticmethod
+    def tag(content):
+        category_tag = "-".join(content.lower().split())
+        return f"[{content}](#{category_tag})"
+
+class Solution:
+    def __init__(self, source, number, name, extension, category, time, space, note, ref) -> None:
+        self.source = source
+        self.number = number
+        self.name = name
+        self.extension = extension
+        self.category = category
+        self.time = Markdown.escape(time)
+        self.space = Markdown.escape(space)
+        self.note = Markdown.escape(note)
+        self.ref = ref  
         
     @property
     def tag(self) -> str:
@@ -98,16 +214,16 @@ class Solution:
     @property
     def problem_link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return link_mark(self.title, f'https://leetcode.com/problems/{self.name}/description/')
+            return Markdown.link(self.title, f'https://leetcode.com/problems/{self.name}/description/')
         if self.source.lower() == 'lintcode':
-            return link_mark(self.title, f'https://www.lintcode.com/problem/{self.name}')
+            return Markdown.link(self.title, f'https://www.lintcode.com/problem/{self.name}')
         else:
             return f'#'
         
     @property
     def ref_link(self) -> str:
         if re.search(r'(youtube\.com|youtu\.be)', self.ref):
-            return link_mark('Video', self.ref)
+            return Markdown.link('Video', self.ref)
         else:
             return f'-'
 
@@ -117,127 +233,33 @@ class Solution:
     def __str__(self) -> str:
         return f'{self.source}-{self.number}({self.extension})'
 
-def paragraph(f, content):
-    for line in content:
-        f.write(str(line) + "\n")
-    f.write("\n")
+    @staticmethod
+    def statistic(directories) -> int:
+        statistic_set = collections.defaultdict(list)
 
-def bullet(f, content):
-    for line in content:
-        f.write("- " + str(line) + "\n")
-    f.write("\n")
-
-def title1(f, conent):
-    f.write('# ' + str(conent) + "\n")
-
-def title2(f, conent):
-    f.write('## ' + str(conent) + "\n")
-
-def table_row(f, contents):
-    content = ' | '.join([str(content) for content in contents])
-    f.write("| " + content + " |" + "\n")
-
-def table_header(f, headers):
-    table_row(f, headers)
-    table_row(f, ['-----'] * len(headers))
-
-def search_tag(tags):
-    tags = tags.split(', ')
-    for tag in tags:
-
-        for c in CATEGORIES:
-            if c.lower() in tag.lower():
-                return c
-
-    return CATEGORY_OTHER
-    
-def table_content(f, directories, categories):
-    
-    category_set = collections.defaultdict(list)
-    solution_set = collections.defaultdict(list)
-    statistic_set = collections.defaultdict(list)
-
-    for source in directories:
-        files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
-        for file_name in files:
-            first_dot = file_name.find('.')
-            last_dot = file_name.rfind('.')
-            name = file_name[first_dot + 1: last_dot]
-            extension = file_name[last_dot + 1: ]
-            number = file_name[: first_dot]
-            
-            path = os.path.join(f'./{source}/{file_name}')
-
-            with open(path, 'r') as code:
-                text = code.read()
-                category_match = re.search(r"Category: (.+)", text)
-                time_match = re.search(r"Time: (.+)", text)
-                space_match = re.search(r"Space: (.+)", text)
-                link_match = re.search(r"Ref: (.+)", text)
-                note_match = re.search(r"Note: (.+)", text)
-                
-                category = search_tag(category_match.group(1)) if category_match else CATEGORY_OTHER
-                time = time_match.group(1) if time_match else '-'
-                space = space_match.group(1) if space_match else '-'
-                ref = link_match.group(1) if link_match else '-'                
-                note = note_match.group(1) if note_match else '-'
-
-                solution = Solution(source, number, name, extension, category, time, space, note, ref)
-                category_set[solution.tag].append(solution)
-
-                lang = LANGUAGE[extension] if extension in LANGUAGE else extension
-                code = link_mark(lang, path)
-                solution_set[solution.key].append(code)
+        for source in directories:
+            files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
+            for file_name in files:
+                first_dot = file_name.find('.')
+                last_dot = file_name.rfind('.')
+                name = file_name[first_dot + 1: last_dot]
+                extension = file_name[last_dot + 1: ]
+                number = file_name[: first_dot]
+                solution = Solution(source, number, name, extension, '-', '-', '-', '-', '-')
                 statistic_set[solution.name].append(solution)
 
-    
-    for category in categories:
-        headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
-        title2(f, category)
+        for key, val in statistic_set.items():
+            source = set(val)
+            if len(source) > 2:
+                print(f"{key.replace('-', ' ').title()}: {val}")
 
-        category_tag = "-".join(category.lower().split())
-        if len(category_set[category_tag]) == 0:
-            continue
+        return len(statistic_set)
 
-        table_header(f, headers)
-        for solution in category_set[category_tag]:
-
-            if solution.key not in solution_set:
-                continue
-
-            codes = ', '.join(solution_set[solution.key])
-
-            contents = [
-                solution.problem_link,
-                codes,
-                solution.time,
-                solution.space,
-                solution.note,
-                solution.ref_link,
-                ]
-   
-            table_row(f, contents) 
-            del solution_set[solution.key]
-
-    for key, val in statistic_set.items():
-        source = set(val)
-        if len(source) > 2:
-            print(f"{key.replace('-', ' ').title()}: {val}")
-
-    return len(statistic_set)
-
-def link_mark(content, link):
-    return f"[{content}]({link})"
-
-def tag_mark(content):
-    category_tag = "-".join(content.lower().split())
-    return f"[{content}](#{category_tag})"
-
-def update_readme(file_name):
-    with open(file_name, "w") as f:
+if __name__ == "__main__":
+   with open("README.md", "w") as f:
         
-        title1(f, "算法/Algorithm")
-        paragraph(f, [
+        Markdown.title1(f, "算法/Algorithm")
+        Markdown.paragraph(f, [
             "我个人的力扣答案, ```#公众号:GeekPal```<br/>",
             "这是一个持续更新的开源项目<br/>",
             "<br/>",
@@ -245,15 +267,15 @@ def update_readme(file_name):
             "This is a **continually updated** open source project",
         ])
 
-        title2(f, "软件/Softwares")
-        bullet(f, [
-            link_mark('Anki', 'https://apps.ankiweb.net/'),
-            link_mark('Tldraw', 'https://www.tldraw.com/'),
-            link_mark('OBS', 'https://www.tldraw.com/')
+        Markdown.title2(f, "软件/Softwares")
+        Markdown.bullet(f, [
+            Markdown.link('Anki', 'https://apps.ankiweb.net/'),
+            Markdown.link('Tldraw', 'https://www.tldraw.com/'),
+            Markdown.link('OBS', 'https://www.tldraw.com/')
         ])
 
-        title2(f, '脚本/Script')
-        paragraph(f, [
+        Markdown.title2(f, '脚本/Script')
+        Markdown.paragraph(f, [
             "```",
             "pip install -r requirements.txt",
             "python problem.py <leetcode/lintcode> -l java|cpp|python(default)",
@@ -263,14 +285,14 @@ def update_readme(file_name):
             "```"
         ])
 
-        title2(f, "文章/Articles")
-        bullet(f, [
-            link_mark('Blog博客', 'http://geemaple.github.io/category/#Algobase'),
-            link_mark('Youtube频道', 'https://www.youtube.com/@GeekPal')
+        Markdown.title2(f, "文章/Articles")
+        Markdown.bullet(f, [
+            Markdown.link('Blog博客', 'http://geemaple.github.io/category/#Algobase'),
+            Markdown.link('Youtube频道', 'https://www.youtube.com/@GeekPal')
         ])
 
-        title2(f, "书籍/Books")
-        bullet(f, [
+        Markdown.title2(f, "书籍/Books")
+        Markdown.bullet(f, [
             "《算法技术手册》/ Algorithms in a Nutshell",
             "《STL源码剖析》/ The Annotated STL Sources",
             "《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition",
@@ -280,15 +302,11 @@ def update_readme(file_name):
       
         categories = CATEGORIES + [CATEGORY_OTHER]
 
-        title2(f, link_mark('Category', 'category'))
-        bullet(f, [tag_mark(c) for c in categories])
-
-        solved_problems = table_content(f, ['leetcode', 'lintcode'], categories)
+        Markdown.title2(f, Markdown.link('Category', 'category'))
+        Markdown.bullet(f, [Markdown.tag(c) for c in categories])
+        Markdown.table_content(f, ['leetcode', 'lintcode'], categories)
           
-        title2(f, "进度/Progress")
-        paragraph(f, [
-            f'Total sovled **{solved_problems}**\n',
+        Markdown.title2(f, "进度/Progress")
+        Markdown.paragraph(f, [
+            f"Total sovled **{Solution.statistic(['leetcode', 'lintcode'])}**\n",
             f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])
-
-if __name__ == "__main__":
-    update_readme("README.md")
