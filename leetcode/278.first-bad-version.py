@@ -1,7 +1,7 @@
 #  Category: Binary Search, Interactive
 #  Time: O(logN)
 #  Space: O(1)
-#  Ref: -
+#  Ref: https://youtu.be/xNzBpfqzYSg
 #  Note: Range
 
 #  You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
