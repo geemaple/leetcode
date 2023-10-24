@@ -40,11 +40,15 @@ CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_STR, TAG_TP, TAG_LINKE
               TAG_BINARY_SEARCH, TAG_BFS, TAG_DFS, TAG_DC, TAG_BT, TAG_HASH, 
               TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, TAG_UNION_FIND, TAG_TRIE]
 
+ALL_CATEGORIES = CATEGORIES + [CATEGORY_OTHER]
+
 LANGUAGE = {
     'cpp': 'c++',
     'py': 'python',
     'java': 'java'
 }
+
+SUB_DIRECTORIES = ['leetcode', 'lintcode']
 
 class Markdown:
     @staticmethod 
@@ -184,7 +188,7 @@ class Markdown:
     @staticmethod
     def tag(content):
         category_tag = "-".join(content.lower().split())
-        return f"[{content}](#{category_tag})"
+        return Markdown.link(content, f'#{category_tag}')
 
 class Solution:
     def __init__(self, source, number, name, extension, category, time, space, note, ref) -> None:
@@ -300,13 +304,11 @@ if __name__ == "__main__":
             "《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)"
         ])
       
-        categories = CATEGORIES + [CATEGORY_OTHER]
-
         Markdown.title2(f, Markdown.link('Category', 'category'))
-        Markdown.bullet(f, [Markdown.tag(c) for c in categories])
-        Markdown.table_content(f, ['leetcode', 'lintcode'], categories)
+        Markdown.bullet(f, [Markdown.tag(c) for c in ALL_CATEGORIES])
+        Markdown.table_content(f, SUB_DIRECTORIES, ALL_CATEGORIES)
           
         Markdown.title2(f, "进度/Progress")
         Markdown.paragraph(f, [
-            f"Total sovled **{Solution.statistic(['leetcode', 'lintcode'])}**\n",
+            f"Total sovled **{Solution.statistic(SUB_DIRECTORIES)}**\n",
             f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])
