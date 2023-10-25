@@ -1,44 +1,68 @@
+//  Category: Tree, Depth-First Search, String, Backtracking, Binary Tree
+//  Time: O(N)
+//  Space: O(Height)
+//  Ref: -
+//  Note: -
+
+//  Given the root of a binary tree, return all root-to-leaf paths in any order.
+//  A leaf is a node with no children.
+//   
+//  Example 1:
+//  
+//  
+//  Input: root = [1,2,3,null,5]
+//  Output: ["1->2->5","1->3"]
+//  
+//  Example 2:
+//  
+//  Input: root = [1]
+//  Output: ["1"]
+//  
+//   
+//  Constraints:
+//  
+//  The number of nodes in the tree is in the range [1, 100].
+//  -100 <= Node.val <= 100
+//  
+//  
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
 class Solution {
-private:
-    void dfs(TreeNode * cur, string path, vector<string>& ans)
-    {
-        path += to_string(cur->val);
-        
-        if (cur->left == NULL && cur->right == NULL)
-        {
-            ans.push_back(path);
-            return;
-        }
-        
-        if (cur->left)
-        {
-            dfs(cur->left, path + "->", ans);
-        }
-        
-        if (cur->right)
-        {
-            dfs(cur->right, path + "->", ans);
-        }
-    }
 public:
     vector<string> binaryTreePaths(TreeNode* root) {
-        if (root == NULL)
-        {
-            return vector<string>();
+        if (root == nullptr) {
+            return vector<string>{};
         }
-        
-        vector<string> ans;
-        dfs(root, "", ans);
-        
-        return ans;        
+
+        vector<string> results;
+        string path = "";
+        helper(root, path, results);
+        return results;
+    }
+
+    void helper(TreeNode* node, string path, vector<string> &results) {
+        path += to_string(node->val);
+        if (node->left == nullptr and node->right == nullptr) {
+            results.push_back(path);
+            return;
+        }
+
+        if (node->left) {
+            helper(node->left, path + "->", results);
+        }
+
+        if (node->right) {
+            helper(node->right, path + "->", results);
+        }
     }
 };

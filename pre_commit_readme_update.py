@@ -36,11 +36,9 @@ TAG_TRIE = 'Trie'
 
 CATEGORY_OTHER = 'Other'
 
-CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_STR, TAG_TP, TAG_LINKED_LIST, 
-              TAG_BINARY_SEARCH, TAG_BFS, TAG_DFS, TAG_DC, TAG_BT, TAG_HASH, 
-              TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, TAG_UNION_FIND, TAG_TRIE]
-
-ALL_CATEGORIES = CATEGORIES + [CATEGORY_OTHER]
+ALL_CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_TP, TAG_LINKED_LIST, TAG_BINARY_SEARCH,
+                  TAG_BFS, TAG_BT, TAG_DC, TAG_DFS, TAG_HASH, TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, 
+                  TAG_UNION_FIND, TAG_TRIE, TAG_STR] + [CATEGORY_OTHER]
 
 LANGUAGE = {
     'cpp': 'c++',
@@ -109,14 +107,16 @@ class Markdown:
     def table_content(f, directories, categories):
         
         def search_tag(tags):
+            size = len(ALL_CATEGORIES)
+            index = size - 1
             tags = tags.split(', ')
             for tag in tags:
-
-                for c in CATEGORIES:
+                for i in range(size):
+                    c = ALL_CATEGORIES[i]
                     if c.lower() in tag.lower():
-                        return c
+                        index = min(i, index)
 
-            return CATEGORY_OTHER
+            return ALL_CATEGORIES[index]
 
         category_set = collections.defaultdict(list)
         solution_set = collections.defaultdict(list)
