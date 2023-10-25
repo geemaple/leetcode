@@ -80,8 +80,8 @@ class Markdown:
         f.write("\n")
 
     @staticmethod
-    def code(f, content):
-        f.write("```\n")
+    def code(f, content, lang="shell"):
+        f.write(f"```{lang}\n")
         for line in content:
             f.write(str(line) + "\n")
         f.write("```\n\n")
@@ -278,7 +278,7 @@ if __name__ == "__main__":
         
         Markdown.title1(f, "算法/Algorithm")
         Markdown.paragraph(f, [
-            "我个人的力扣答案, ```#公众号:GeekPal```",
+            "我个人的力扣答案, **#公众号:GeekPal**",
             "这是一个持续更新的开源项目",
             "",
             "My personal leetcode answers",
@@ -295,7 +295,7 @@ if __name__ == "__main__":
         Markdown.title2(f, '脚本/Script')
         Markdown.code(f, [
             "pip install -r requirements.txt",
-            "python problem.py <leetcode/lintcode> -l java|cpp|python(default)",
+            "python problem.py <leetcode/lintcode> [-l java|cpp|python(default)] [-t]",
             "# 例如(e.g.):",
             "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",

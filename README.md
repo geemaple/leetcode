@@ -1,5 +1,5 @@
 # 算法/Algorithm
-我个人的力扣答案, ```#公众号:GeekPal```<br/>
+我个人的力扣答案, **#公众号:GeekPal**<br/>
 这是一个持续更新的开源项目<br/>
 <br/>
 My personal leetcode answers<br/>
@@ -11,9 +11,9 @@ This is a **continually updated** open source project<br/>
 - [OBS](https://www.tldraw.com/)
 
 ## 脚本/Script
-```
+```shell
 pip install -r requirements.txt
-python problem.py <leetcode/lintcode> -l java|cpp|python(default)
+python problem.py <leetcode/lintcode> [-l java|cpp|python(default)] [-t]
 # 例如(e.g.):
 python problem.py https://leetcode.com/problems/online-stock-span/
 python problem.py https://www.lintcode.com/problem/92 -l cpp
@@ -405,5 +405,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **308**<br/>
 🟢 means: related question have done<br/>
 🔴 means: related question have checked, but some blocked by VIP<br/>
-Auto updated at: **2023-10-25 23:20:33**<br/>
+Auto updated at: **2023-10-25 23:39:03**<br/>
 

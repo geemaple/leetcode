@@ -10,6 +10,7 @@ import json
 import os
 import argparse
 import re
+import sys
 
 COMMENT = {
     'python': '# ',
@@ -170,8 +171,16 @@ def parse_lintcode(url, lang, translate):
     return problem
 
 
+class Parser(argparse.ArgumentParser):
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+        sys.stderr.write('\n例如(e.g.):\n')
+        sys.stderr.write('python problem.py https://leetcode.com/problems/online-stock-span/ -l python')
+        sys.exit(2)
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser("problem")
+    parser = Parser("problem")
     parser.add_argument("url", help="leetcode/lintcode url", type=str)
     parser.add_argument("-l", "--lang", help="coding language: python(default), cpp or java", required=False, type=str, default='python')
     parser.add_argument("-f", "--force", help="overwrite existing files", required=False, action='store_true')
