@@ -76,8 +76,15 @@ class Markdown:
     @staticmethod 
     def paragraph(f, content):
         for line in content:
-            f.write(str(line) + "\n")
+            f.write(str(line) + "<br/>\n")
         f.write("\n")
+
+    @staticmethod
+    def code(f, content):
+        f.write("```\n")
+        for line in content:
+            f.write(str(line) + "\n")
+        f.write("```\n\n")
 
     @staticmethod 
     def bullet(f, content):
@@ -103,6 +110,10 @@ class Markdown:
         Markdown.table_row(f, headers)
         Markdown.table_row(f, ['-----'] * len(headers))
     
+    @staticmethod
+    def table_footer(f):
+        f.write("\n")
+
     @staticmethod 
     def table_content(f, directories, categories):
         
@@ -181,6 +192,8 @@ class Markdown:
     
                 Markdown.table_row(f, contents) 
                 del solution_set[solution.key]
+
+            Markdown.table_footer(f)
     
     @staticmethod
     def link(content, link):
@@ -265,10 +278,10 @@ if __name__ == "__main__":
         
         Markdown.title1(f, "算法/Algorithm")
         Markdown.paragraph(f, [
-            "我个人的力扣答案, ```#公众号:GeekPal```<br/>",
-            "这是一个持续更新的开源项目<br/>",
-            "<br/>",
-            "My personal leetcode answers<br/>",
+            "我个人的力扣答案, ```#公众号:GeekPal```",
+            "这是一个持续更新的开源项目",
+            "",
+            "My personal leetcode answers",
             "This is a **continually updated** open source project",
         ])
 
@@ -280,14 +293,12 @@ if __name__ == "__main__":
         ])
 
         Markdown.title2(f, '脚本/Script')
-        Markdown.paragraph(f, [
-            "```",
+        Markdown.code(f, [
             "pip install -r requirements.txt",
             "python problem.py <leetcode/lintcode> -l java|cpp|python(default)",
             "# 例如(e.g.):",
             "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
-            "```"
         ])
 
         Markdown.title2(f, "文章/Articles")
@@ -309,7 +320,9 @@ if __name__ == "__main__":
         Markdown.bullet(f, [Markdown.tag(c) for c in ALL_CATEGORIES])
         Markdown.table_content(f, SUB_DIRECTORIES, ALL_CATEGORIES)
           
-        Markdown.title2(f, "进度/Progress")
+        Markdown.title2(f, "其他/Other")
         Markdown.paragraph(f, [
-            f"Total sovled **{Solution.statistic(SUB_DIRECTORIES)}**\n",
+            f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
+            f"🟢 means: related question have done",
+            f"🔴 means: related question have checked, but some blocked by VIP",
             f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])
