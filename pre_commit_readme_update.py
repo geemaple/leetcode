@@ -278,7 +278,7 @@ if __name__ == "__main__":
         
         Markdown.title1(f, "算法/Algorithm")
         Markdown.paragraph(f, [
-            "我个人的力扣答案, **#公众号:GeekPal**",
+            "我个人的力扣答案, **公众号:GeekPal**",
             "这是一个持续更新的开源项目",
             "",
             "My personal leetcode answers",
@@ -323,6 +323,6 @@ if __name__ == "__main__":
         Markdown.title2(f, "其他/Other")
         Markdown.paragraph(f, [
             f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
-            f"🟢 means: related question have done",
-            f"🔴 means: related question have checked, but some blocked by VIP",
+            f"🟢 means: related questions have done",
+            f"🔴 means: related questions have done, except some blocked by VIP",
             f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])

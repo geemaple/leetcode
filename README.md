@@ -1,5 +1,5 @@
 # 算法/Algorithm
-我个人的力扣答案, **#公众号:GeekPal**<br/>
+我个人的力扣答案, **公众号:GeekPal**<br/>
 这是一个持续更新的开源项目<br/>
 <br/>
 My personal leetcode answers<br/>
@@ -64,8 +64,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-704. Binary Search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard 🔴 | [Video](https://youtu.be/oxWpJtUGG_0) |
-| [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound 🟢 | [Video](https://youtu.be/y6OT8heV-30) |
+| [Leetcode-704. Binary Search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard | [Video](https://youtu.be/oxWpJtUGG_0) |
+| [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound | [Video](https://youtu.be/y6OT8heV-30) |
 | [Leetcode-153. Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated 🟢 | [Video](https://youtu.be/GsecRZC5to4) |
 | [Leetcode-154. Find Minimum In Rotated Sorted Array Ii](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated 🟢 | - |
 | [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain | - |
@@ -74,7 +74,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-852. Peak Index In A Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
 | [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix | - |
 | [Leetcode-240. Search A 2D Matrix Ii](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
-| [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated 🟢 | - |
+| [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated 🔴 | - |
 | [Leetcode-81. Search In Rotated Sorted Array Ii](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/81.search-in-rotated-sorted-array-ii.cpp), [python](./leetcode/81.search-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated 🟢 | - |
 | [Leetcode-35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
 | [Leetcode-302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/) | [c++](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Range | - |
@@ -403,7 +403,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## 其他/Other
 Total sovled: **308**<br/>
-🟢 means: related question have done<br/>
-🔴 means: related question have checked, but some blocked by VIP<br/>
-Auto updated at: **2023-10-25 23:39:03**<br/>
+🟢 means: related questions have done<br/>
+🔴 means: related questions have done, except some blocked by VIP<br/>
+Auto updated at: **2023-10-25 23:52:06**<br/>
 
