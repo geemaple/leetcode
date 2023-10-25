@@ -1,5 +1,5 @@
 #  Category: Array, Binary Search
-#  Time: O(logN) ~ O(1)
+#  Time: O(logN) ~ O(N)
 #  Space: O(1)
 #  Ref: -
 #  Note: Rotated 🟢
