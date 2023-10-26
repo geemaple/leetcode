@@ -216,7 +216,7 @@ class Solution:
         self.space = Markdown.escape(space)
         self.note = Markdown.escape(note)
         self.ref = ref  
-        self.roman_rex = re.compile(r"(?:(?<=\W)|^)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", re.IGNORECASE)
+        self.roman_rex = re.compile(r"M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", re.IGNORECASE)
 
     @property
     def tag(self) -> str:
