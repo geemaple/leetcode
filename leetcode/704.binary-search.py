@@ -30,12 +30,7 @@
 #  
 
 class Solution(object):
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+    def search(self, nums: List[int], target: int) -> int:
 
         start = 0
         end = len(nums)

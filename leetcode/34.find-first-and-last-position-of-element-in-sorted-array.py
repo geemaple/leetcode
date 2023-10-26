@@ -2,7 +2,7 @@
 #  Time: O(logN)
 #  Space: O(1)
 #  Ref: https://youtu.be/y6OT8heV-30
-#  Note: std::lower_bound
+#  Note: std::lower_bound 🟢
 
 #  Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
 #  If target is not found in the array, return [-1, -1].
@@ -28,49 +28,8 @@
 #  
 #  
 
-class Solution(object):
-    def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        return [self.search(nums, target, False), self.search(nums, target, True)]
-
-        
-    def search(self, nums, target, find_last):
-        start = 0
-        end = len(nums) - 1
-
-        while start <= end:
-
-            mid = start + (end - start) // 2
-
-            if nums[mid] == target:
-                if find_last:
-                    if mid < end and nums[mid + 1] == target:
-                        start = mid + 1
-                    else:
-                        return mid
-                else:
-                    if mid > 0 and nums[mid - 1] == target:
-                        end = mid - 1
-                    else:
-                        return mid
-
-            elif nums[mid] < target:
-                start = mid + 1
-            else:
-                end = mid - 1
-
-
-class Solution(object):
-    def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
 
         first = self.lower_bound(nums, target)
         if first == len(nums) or nums[first] != target:

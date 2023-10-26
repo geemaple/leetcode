@@ -28,14 +28,8 @@
 #  Follow up: This problem is similar to Search in Rotated Sorted Array, but nums may contain duplicates. Would this affect the runtime complexity? How and why?
 #  
 
-class Solution(object):
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: bool
-        """
-
+class Solution:
+    def search(self, nums: List[int], target: int) -> bool:
         start = 0
         end = len(nums) - 1
         while start < end:

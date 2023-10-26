@@ -13,19 +13,15 @@ import re
 import sys
 
 COMMENT = {
+    'python3': '# ',
     'python': '# ',
     'cpp': '// ',
     'java': '// '
 }
 
 EXTENTION = {
+    'python3': 'py',
     'python': 'py',
-    'cpp': 'cpp',
-    'java': 'java'
-}
-
-lintcode_lang_params = {
-    'python': 'python3',
     'cpp': 'cpp',
     'java': 'java'
 }
@@ -162,7 +158,7 @@ def parse_lintcode(url, lang, translate):
 
     problem.companies = data['company_tags']
 
-    url = f'https://apiv1.lintcode.com/new/api/problems/{number}/reset/?scene=1&language={lintcode_lang_params[lang]}'
+    url = f'https://apiv1.lintcode.com/new/api/problems/{number}/reset/?scene=1&language={lang}'
     response = requests.get(url)
     query = json.loads(response.text)
     data = query['data']
@@ -182,7 +178,7 @@ class Parser(argparse.ArgumentParser):
 if __name__ == '__main__':
     parser = Parser("problem")
     parser.add_argument("url", help="leetcode/lintcode url", type=str)
-    parser.add_argument("-l", "--lang", help="coding language: python(default), cpp or java", required=False, type=str, default='python')
+    parser.add_argument("-l", "--lang", help="coding language: python(default), cpp or java", required=False, type=str, default='python3')
     parser.add_argument("-f", "--force", help="overwrite existing files", required=False, action='store_true')
     parser.add_argument("-t", "--translate", help="get transtaled version content", required=False, action='store_true')
     args = parser.parse_args()
