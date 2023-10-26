@@ -21,6 +21,7 @@ TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
+TAG_ARY = 'Array'
 TAG_STR = 'String'
 TAG_TP = 'Two Pointers'
 TAG_BFS = 'Breadth-First Search'
@@ -38,7 +39,7 @@ CATEGORY_OTHER = 'Other'
 
 ALL_CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_TP, TAG_LINKED_LIST, TAG_BINARY_SEARCH,
                   TAG_BFS, TAG_BT, TAG_DC, TAG_DFS, TAG_HASH, TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, 
-                  TAG_UNION_FIND, TAG_TRIE, TAG_STR] + [CATEGORY_OTHER]
+                  TAG_UNION_FIND, TAG_TRIE, TAG_STR, TAG_ARY] + [CATEGORY_OTHER]
 
 LANGUAGE = {
     'cpp': 'c++',
@@ -323,6 +324,4 @@ if __name__ == "__main__":
         Markdown.title2(f, "其他/Other")
         Markdown.paragraph(f, [
             f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
-            f"🟢 means: related questions have done",
-            f"🔴 means: related questions have done, except some blocked by VIP",
             f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])
