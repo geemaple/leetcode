@@ -216,7 +216,8 @@ class Solution:
         self.space = Markdown.escape(space)
         self.note = Markdown.escape(note)
         self.ref = ref  
-        
+        self.roman_rex = re.compile(r"(?:(?<=\W)|^)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", re.IGNORECASE)
+
     @property
     def tag(self) -> str:
         return "-".join(self.category.lower().split())
@@ -224,7 +225,8 @@ class Solution:
     @property
     def title(self) -> str:
         problem = self.name.replace('-', ' ')
-        return f'{self.source}-{self.number}. {problem}'.title()
+        orginal_title = f'{self.source}-{self.number}. {problem}'.title()
+        return re.sub(self.roman_rex, lambda x: x.group(0).upper(), orginal_title)
 
     @property
     def key(self) -> str:
