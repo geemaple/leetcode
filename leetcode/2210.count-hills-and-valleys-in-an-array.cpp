@@ -1,5 +1,5 @@
 //  Category: Array
-//  Time: O(N^2)
+//  Time: O(N)
 //  Space: O(1)
 //  Ref: -
 //  Note: -
@@ -45,34 +45,23 @@
 class Solution {
 public:
     int countHillValley(vector<int>& nums) {
-        int hill = 0;
-        int valley = 0;
+        int count = 0;
+        int left = 0;
 
         for (int i = 1; i < nums.size() - 1; i++) {
-            if (nums[i] == nums[i - 1]) {
+            if (nums[i] == nums[i + 1]) {
                 continue;
             }
 
-            int left = i - 1;
             int right = i + 1;
-
-            while (left > 0 && nums[left] == nums[i]) {
-                left --;
+            if ((nums[i] > nums[left] && nums[i] > nums[right]) ||
+                nums[i] < nums[left] && nums[i] < nums[right]) {
+                count ++;
             }
 
-            while (right < nums.size() - 1 && nums[right] == nums[i]) {
-                right ++;
-            }
-
-            if (nums[i] > nums[left] && nums[i] > nums[right]) {
-                hill ++;
-            }
-
-            if (nums[i] < nums[left] && nums[i] < nums[right]) {
-                valley ++;
-            }
+            left = i;
         }
 
-        return hill + valley;
+        return count;
     }
 };

@@ -1,5 +1,5 @@
 #  Category: Array
-#  Time: O(N^2)
+#  Time: O(N)
 #  Space: O(1)
 #  Ref: -
 #  Note: -
@@ -44,27 +44,17 @@
 
 class Solution:
     def countHillValley(self, nums: List[int]) -> int:
-        hill = 0
-        valley = 0
-
+        count = 0
+        left = 0
         for i in range(1, len(nums) - 1):
-            
-            if nums[i] == nums[i - 1]:
+            if nums[i] == nums[i + 1]:
                 continue
 
-            left = i - 1
             right = i + 1
+            if (nums[i] > nums[left] and nums[i] > nums[right]) or\
+                (nums[i] < nums[left] and nums[i] < nums[right]):
+                count += 1
 
-            while (left > 0 and nums[left] == nums[i]):
-                left -= 1
+            left = i
 
-            while (right < len(nums) - 1 and nums[right] == nums[i]):
-                right += 1
-
-            if nums[i] > nums[left] and nums[i] > nums[right]:
-                hill += 1
-
-            if nums[i] < nums[left] and nums[i] < nums[right]:
-                valley += 1
-
-        return hill + valley
+        return count
