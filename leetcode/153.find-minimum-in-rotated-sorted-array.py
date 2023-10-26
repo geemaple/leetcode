@@ -2,7 +2,7 @@
 #  Time: O(logN)
 #  Space: O(1)
 #  Ref: https://youtu.be/GsecRZC5to4
-#  Note: Rotated ;
+#  Note: Rotated;
 
 #  Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
 #  

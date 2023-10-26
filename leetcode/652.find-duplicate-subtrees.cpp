@@ -16,7 +16,7 @@ private:
             return "#";
         }
         
-        string s = to_string(node->val) + "(" + postOrderTraverse(res, map, node->left) + "," + postOrderTraverse(res, map, node->right) + ")" ;
+        string s = to_string(node->val) + "(" + postOrderTraverse(res, map, node->left) + "," + postOrderTraverse(res, map, node->right) + ")";
         if (map[s] == 1){
             res.push_back(node);
         }

@@ -34,7 +34,7 @@ public:
             res.push_back(newInterval);
         }
 
-        for (int i = st ; i < intervals.size(); ++i)
+        for (int i = st; i < intervals.size(); ++i)
         {
             if (res.back().end >= intervals[i].start)
             {
