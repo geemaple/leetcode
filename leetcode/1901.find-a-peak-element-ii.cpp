@@ -2,7 +2,7 @@
 //  Time: O(N * logM)
 //  Space: O(1)
 //  Ref: -
-//  Note: 2D Mountain
+//  Note: 2D Mountain;
 
 //  A peak element in a 2D grid is an element that is strictly greater than all of its adjacent neighbors to the left, right, top, and bottom.
 //  Given a 0-indexed m x n matrix mat where no two adjacent cells are equal, find any peak element mat[i][j] and return the length 2 array [i,j].
