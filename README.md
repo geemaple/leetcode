@@ -35,9 +35,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Bit Manipulation](#bit-manipulation)
 - [Simulation](#simulation)
 - [Design](#design)
-- [Two Pointers](#two-pointers)
 - [Linked List](#linked-list)
 - [Binary Search](#binary-search)
+- [Two Pointers](#two-pointers)
 - [Breadth-First Search](#breadth-first-search)
 - [Backtracking](#backtracking)
 - [Divide and Conquer](#divide-and-conquer)
@@ -60,11 +60,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
 ## Design
-## Two Pointers
-| Problem | Solution | Time | Space | Note | Ref |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
-
 ## Linked List
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
@@ -72,6 +67,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-704. Binary Search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard; | [Video](https://youtu.be/oxWpJtUGG_0) |
 | [Leetcode-1901. Find A Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/description/) | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python](./leetcode/1901.find-a-peak-element-ii.py) | O\(N \* logM\) | O\(1\) | 2D Mountain; | - |
 | [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound; | [Video](https://youtu.be/y6OT8heV-30) |
+| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 | [Leetcode-153. Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | [Video](https://youtu.be/GsecRZC5to4) |
 | [Leetcode-154. Find Minimum In Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated; | - |
 | [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | - |
@@ -88,6 +84,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 | [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Leetcode\-302 | - |
 
+## Two Pointers
 ## Breadth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -414,5 +411,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## 其他/Other
 Total sovled: **311**<br/>
-Auto updated at: **2023-10-27 11:06:20**<br/>
+Auto updated at: **2023-10-27 11:09:45**<br/>
 
