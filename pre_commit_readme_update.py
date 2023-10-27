@@ -174,7 +174,7 @@ class Markdown:
                 continue
 
             Markdown.table_header(f, headers)
-            sorted_solutions = sorted(category_set[category_tag], key=lambda s: (s.source, s.name, s.number))
+            sorted_solutions = sorted(category_set[category_tag], key=lambda s: (s.source, s.note, s.name, s.number))
             for solution in sorted_solutions:
 
                 if solution.key not in solution_set:
