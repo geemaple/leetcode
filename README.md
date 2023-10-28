@@ -107,6 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(N\) | InOrder | - |
 | [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(N\) | PostOrder | - |
 | [Leetcode-144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O\(N\) | O\(N\) | PreOrder | - |
+| [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O\(N\) | O\(1\) | Recursion | - |
 
 ## Hash Table
 ## Greedy
@@ -142,7 +143,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) | [python](./leetcode/269.alien-dictionary.py) | \- | \- | \- | - |
 | [Leetcode-561. Array Partition I](https://leetcode.com/problems/array-partition-i/description/) | [c++](./leetcode/561.array-partition-i.cpp) | \- | \- | \- | - |
 | [Leetcode-844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/) | [c++](./leetcode/844.backspace-string-compare.cpp), [python](./leetcode/844.backspace-string-compare.py) | \- | \- | \- | - |
-| [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | \- | \- | \- | - |
 | [Leetcode-121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [c++](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | \- | \- | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | \- | \- | \- | - |
 | [Leetcode-123. Best Time To Buy And Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) | [c++](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | \- | \- | \- | - |
@@ -416,5 +416,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-28 23:55:00**<br/>
+Auto updated at: **2023-10-29 00:17:39**<br/>
 
