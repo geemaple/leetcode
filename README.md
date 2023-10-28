@@ -414,5 +414,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## 其他/Other
 Total sovled: **312**<br/>
-Auto updated at: **2023-10-28 19:45:07**<br/>
+PS: semicolon(;) after each note means related questions are checked<br/>
+<br/>
+Auto updated at: **2023-10-28 19:54:22**<br/>
 

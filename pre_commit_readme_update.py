@@ -327,4 +327,6 @@ if __name__ == "__main__":
         Markdown.title2(f, "其他/Other")
         Markdown.paragraph(f, [
             f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
-            f'Auto updated at: **{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}**'])
+            f"PS: semicolon(;) after each note means related questions are checked",
+            f"",
+            f"Auto updated at: **{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"])
