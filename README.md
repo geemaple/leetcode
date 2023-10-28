@@ -9,6 +9,7 @@ This is a **continually updated** open source project<br/>
 - [Anki](https://apps.ankiweb.net/)
 - [Tldraw](https://www.tldraw.com/)
 - [OBS](https://www.tldraw.com/)
+- [Leetcode中英网站切换](https://greasyfork.org/en/scripts/478450-leetcode-cn-en-site-switcher)
 
 ## 脚本/Script
 ```shell
@@ -31,7 +32,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
 
 ## [Category](category)
-- [Math](#math)
 - [Bit Manipulation](#bit-manipulation)
 - [Simulation](#simulation)
 - [Design](#design)
@@ -52,7 +52,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Array](#array)
 - [Other](#other)
 
-## Math
 ## Bit Manipulation
 ## Simulation
 | Problem | Solution | Time | Space | Note | Ref |
@@ -106,6 +105,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Hash Table
 ## Greedy
 ## Dynamic Programming
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+
 ## Binary Search Tree
 ## Union Find
 ## Trie
@@ -410,6 +413,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-598. Zombie In Matrix](https://www.lintcode.com/problem/zombie-in-matrix) | [c++](./lintcode/598.zombie-in-matrix.cpp), [python](./lintcode/598.zombie-in-matrix.py) | \- | \- | \- | - |
 
 ## 其他/Other
-Total sovled: **311**<br/>
-Auto updated at: **2023-10-28 09:26:31**<br/>
+Total sovled: **312**<br/>
+Auto updated at: **2023-10-28 19:45:07**<br/>
 

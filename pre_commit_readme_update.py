@@ -37,7 +37,7 @@ TAG_TRIE = 'Trie'
 
 CATEGORY_OTHER = 'Other'
 
-ALL_CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_LINKED_LIST, TAG_BINARY_SEARCH, TAG_TP,
+ALL_CATEGORIES = [TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_LINKED_LIST, TAG_BINARY_SEARCH, TAG_TP,
                   TAG_BFS, TAG_BT, TAG_DC, TAG_DFS, TAG_HASH, TAG_GREEDY, TAG_DP, TAG_BINARY_SEARCH_TREE, 
                   TAG_UNION_FIND, TAG_TRIE, TAG_STR, TAG_ARY] + [CATEGORY_OTHER]
 
@@ -292,7 +292,8 @@ if __name__ == "__main__":
         Markdown.bullet(f, [
             Markdown.link('Anki', 'https://apps.ankiweb.net/'),
             Markdown.link('Tldraw', 'https://www.tldraw.com/'),
-            Markdown.link('OBS', 'https://www.tldraw.com/')
+            Markdown.link('OBS', 'https://www.tldraw.com/'),
+            Markdown.link('Leetcode中英网站切换', 'https://greasyfork.org/en/scripts/478450-leetcode-cn-en-site-switcher'),
         ])
 
         Markdown.title2(f, '脚本/Script')
