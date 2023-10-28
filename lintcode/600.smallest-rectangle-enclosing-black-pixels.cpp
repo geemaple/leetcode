@@ -1,8 +1,8 @@
 //  Category: Binary Search on Answer, Binary Search
 //  Time: O(N * logM + M * logN)
 //  Space: O(1)
-//  Ref: -
-//  Note: Leetcode-302
+//  Ref: Leetcode-302
+//  Note: Graph
 
 //  An image is represented by a binary matrix with `0` as a white pixel and `1` as a black pixel.
 //  The black pixels are connected, i.e., there is only one black region.
