@@ -1,54 +1,85 @@
-/*
- * @lc app=leetcode id=322 lang=cpp
- *
- * [322] Coin Change
- *
- * https://leetcode.com/problems/coin-change/description/
- *
- * algorithms
- * Medium (27.95%)
- * Total Accepted:    261.6K
- * Total Submissions: 810K
- * Testcase Example:  '[1,2,5]\n11'
- *
- * You are given coins of different denominations and a total amount of money
- * amount. Write a function to compute the fewest number of coins that you need
- * to make up that amount. If that amount of money cannot be made up by any
- * combination of the coins, return -1.
- * 
- * Example 1:
- * 
- * 
- * Input: coins = [1, 2, 5], amount = 11
- * Output: 3 
- * Explanation: 11 = 5 + 5 + 1
- * 
- * Example 2:
- * 
- * 
- * Input: coins = [2], amount = 3
- * Output: -1
- * 
- * 
- * Note:
- * You may assume that you have an infinite number of each kind of coin.
- * 
- */
+//  Category: Breadth-First Search, Array, Dynamic Programming
+//  Time: O(K * N)
+//  Space: O(N)
+//  Ref: https://youtu.be/EjMjlFjLRiM
+//  Note: Index
+
+//  You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+//  Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+//  You may assume that you have an infinite number of each kind of coin.
+//   
+//  Example 1:
+//  
+//  Input: coins = [1,2,5], amount = 11
+//  Output: 3
+//  Explanation: 11 = 5 + 5 + 1
+//  
+//  Example 2:
+//  
+//  Input: coins = [2], amount = 3
+//  Output: -1
+//  
+//  Example 3:
+//  
+//  Input: coins = [1], amount = 0
+//  Output: 0
+//  
+//   
+//  Constraints:
+//  
+//  1 <= coins.length <= 12
+//  1 <= coins[i] <= 231 - 1
+//  0 <= amount <= 104
+//  
+//  
+
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        vector<int> table(amount + 1, INT_MAX);
-        table[0] = 0;
-        
-        for (auto i = 1; i <= amount; ++i) {
-            for (auto j = 0; j < coins.size(); ++j) {
-                int pre = i - coins[j];
-                if (pre >= 0 && table[pre] != INT_MAX && table[pre] + 1 < table[i]) {
-                    table[i] = table[pre] + 1;
+        vector<int> dp(amount + 1, INT_MAX);
+        dp[0] = 0;
+        for (int i = 1; i < amount + 1; i++) {
+            for (auto c : coins) {
+                if (i >= c && dp[i - c] < INT_MAX) {
+                    dp[i] = min(dp[i], dp[i - c] + 1);
                 }
             }
         }
-        
-        return table[amount] < INT_MAX ? table[amount] : -1;
+
+        return dp[amount] == INT_MAX ? -1: dp[amount];
+    }
+};
+
+
+class Solution {
+    unordered_map<int, int> cache;
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        int res = helper(coins, amount);
+        return res == INT_MAX ? -1 : res;
+    }
+
+    int helper(vector<int>& coins, int amount) {
+        if (cache.find(amount) != cache.end()) {
+            return cache[amount];
+        }
+
+        if (amount == 0) {
+            cache[amount] = 0;
+            return 0;
+        }
+
+        int count = INT_MAX;
+        for (auto c : coins) {
+            if (amount >= c) {
+                int test = helper(coins, amount - c);
+                if (test < INT_MAX) {
+                    count = min(count, helper(coins, amount - c) + 1);
+                }
+            }
+        }
+
+        cache[amount] = count;
+        return count;
     }
 };

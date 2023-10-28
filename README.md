@@ -87,6 +87,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Breadth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 
 ## Backtracking
@@ -161,7 +162,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | \- | \- | \- | - |
 | [Leetcode-133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [c++](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | \- | \- | \- | - |
 | [Leetcode-270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/description/) | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python](./leetcode/270.closest-binary-search-tree-value.py) | \- | \- | \- | - |
-| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | \- | \- | \- | - |
 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | \- | \- | \- | - |
 | [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | \- | \- | \- | - |
 | [Leetcode-377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/description/) | [c++](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | \- | \- | \- | - |
@@ -416,5 +416,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-28 19:54:22**<br/>
+Auto updated at: **2023-10-28 23:52:37**<br/>
 
