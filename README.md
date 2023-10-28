@@ -38,13 +38,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Linked List](#linked-list)
 - [Binary Search](#binary-search)
 - [Two Pointers](#two-pointers)
+- [Dynamic Programming](#dynamic-programming)
 - [Breadth-First Search](#breadth-first-search)
 - [Backtracking](#backtracking)
 - [Divide and Conquer](#divide-and-conquer)
 - [Depth-First Search](#depth-first-search)
 - [Hash Table](#hash-table)
 - [Greedy](#greedy)
-- [Dynamic Programming](#dynamic-programming)
 - [Binary Search Tree](#binary-search-tree)
 - [Union Find](#union-find)
 - [Trie](#trie)
@@ -84,10 +84,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Graph | - |
 
 ## Two Pointers
+## Dynamic Programming
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
+
 ## Breadth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 
 ## Backtracking
@@ -105,11 +110,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 ## Greedy
-## Dynamic Programming
-| Problem | Solution | Time | Space | Note | Ref |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
-
 ## Binary Search Tree
 ## Union Find
 ## Trie
@@ -416,5 +416,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-28 23:52:37**<br/>
+Auto updated at: **2023-10-28 23:55:00**<br/>
 
