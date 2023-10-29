@@ -1,6 +1,6 @@
 #  Category: Binary Search Tree, Linked List, Binary Tree, Divide and Conquer
-#  Time: -
-#  Space: -
+#  Time: O(N)
+#  Space: O(1)
 #  Ref: -
 #  Note: BST | Leetcode-426
 
@@ -68,4 +68,28 @@ class Solution:
     """
     def treeToDoublyList(self, root):
         # Write your code here.
-        # TODO:
+
+        node = root
+        stack = []
+        head = None
+        last = None
+
+        while len(stack) > 0 or node:
+            while node:
+                stack.append(node)
+                node = node.left
+
+            node = stack.pop()
+            if head is None:
+                head = node
+
+            if last:
+                last.right = node
+                node.left = last
+            last = node
+
+            node = node.right
+
+        head.left = last
+        last.right = head
+        return head

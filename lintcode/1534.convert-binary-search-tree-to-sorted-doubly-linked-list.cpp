@@ -1,6 +1,6 @@
 //  Category: Binary Search Tree, Linked List, Binary Tree, Divide and Conquer
-//  Time: -
-//  Space: -
+//  Time: O(N)
+//  Space: O(1)
 //  Ref: -
 //  Note: BST | Leetcode-426
 
@@ -66,6 +66,19 @@
  * }
  */
 
+/**
+ * Definition of TreeNode:
+ * class TreeNode {
+ * public:
+ *     int val;
+ *     TreeNode *left, *right;
+ *     TreeNode(int val) {
+ *         this->val = val;
+ *         this->left = this->right = NULL;
+ *     }
+ * }
+ */
+
 class Solution {
 public:
     /**
@@ -74,6 +87,33 @@ public:
      */
     TreeNode * treeToDoublyList(TreeNode * root) {
         // Write your code here.
-        //TODO:
+        TreeNode *head = nullptr;
+        TreeNode *last = nullptr;
+        TreeNode *node = root;
+        stack<TreeNode *> st;
+
+        while (st.size() > 0 || node) {
+            while (node) {
+                st.push(node);
+                node = node->left;
+            }
+
+            node = st.top();
+            st.pop();
+
+            if (head == nullptr) {
+                head = node;
+            }
+
+            if (last) {
+                last->right = node;
+                node->left = last;
+            }
+            last = node;
+            node = node->right;
+        }
+        head->left = last;
+        last->right = head;
+        return head;
     }
 };
