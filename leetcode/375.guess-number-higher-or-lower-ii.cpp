@@ -63,6 +63,19 @@
 class Solution {
 public:
     int getMoneyAmount(int n) {
-        //TODO: 难度有点高，感觉全是坑，2分->策略->数学->DP->For->Index，沉淀一题啊，明天再写
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));
+
+        for (auto diff = 2; diff < n + 1; diff++) {
+            for (auto i = 1; i < n + 2 - diff; i++ ) {
+                int j = i - 1 + diff;
+                dp[i][j] = INT_MAX;
+                for (auto k = i; k < j; k++) {
+                    int cost = max(dp[i][k - 1], dp[k + 1][j]) + k;
+                    dp[i][j] = min(dp[i][j], cost);
+                }
+            }
+        }
+
+        return dp[1][n];
     }
 };
