@@ -1,6 +1,6 @@
 #  Category: Stack, Tree, Depth-First Search, Binary Tree
 #  Time: O(N)
-#  Space: O(N)
+#  Space: O(Height)
 #  Ref: -
 #  Note: PreOrder
 

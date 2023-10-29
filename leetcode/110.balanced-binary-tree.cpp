@@ -1,6 +1,6 @@
 //  Category: Tree, Depth-First Search, Binary Tree
 //  Time: O(N)
-//  Space: O(1)
+//  Space: O(Height)
 //  Ref: -
 //  Note: Recursion
 
