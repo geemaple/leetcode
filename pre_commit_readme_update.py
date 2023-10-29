@@ -125,7 +125,7 @@ class Markdown:
             for tag in tags:
                 for i in range(size):
                     c = ALL_CATEGORIES[i]
-                    if c.lower() in tag.lower():
+                    if c.strip().lower() == tag.strip().lower():
                         index = min(i, index)
 
             return ALL_CATEGORIES[index]
