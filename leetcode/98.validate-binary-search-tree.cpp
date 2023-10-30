@@ -67,17 +67,17 @@ public:
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
-        stack<TreeNode *> stack;
+        stack<TreeNode *> st;
         TreeNode* node = root;
         TreeNode* v = nullptr;
-        while (stack.size() > 0 || node) {
+        while (st.size() > 0 || node) {
             while (node) {
-                stack.push(node);
+                st.push(node);
                 node = node->left;
             }
 
-            node = stack.top();
-            stack.pop();
+            node = st.top();
+            st.pop();
             if (v && v->val >= node->val) {
                 return false;
             }

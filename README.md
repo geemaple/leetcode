@@ -62,6 +62,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Linked List
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(1\) | BST \| Leetcode\-426 | - |
 
 ## Binary Search
@@ -204,7 +205,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | \- | \- | \- | - |
 | [Leetcode-387. First Unique Character In A String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python](./leetcode/387.first-unique-character-in-a-string.py) | \- | \- | \- | - |
 | [Leetcode-251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/description/) | [python](./leetcode/251.flatten-2d-vector.py) | \- | \- | \- | - |
-| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | \- | \- | \- | - |
 | [Leetcode-341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) | [python](./leetcode/341.flatten-nested-list-iterator.py) | \- | \- | \- | - |
 | [Leetcode-832. Flipping An Image](https://leetcode.com/problems/flipping-an-image/description/) | [python](./leetcode/832.flipping-an-image.py) | \- | \- | \- | - |
 | [Leetcode-403. Frog Jump](https://leetcode.com/problems/frog-jump/description/) | [c++](./leetcode/403.frog-jump.cpp) | \- | \- | \- | - |
@@ -420,5 +420,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-29 11:53:57**<br/>
+Auto updated at: **2023-10-30 15:00:29**<br/>
 

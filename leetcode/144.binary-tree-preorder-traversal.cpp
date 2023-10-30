@@ -71,20 +71,20 @@ public:
         } 
 
         vector<int> results;
-        stack<TreeNode *> stack;
-        stack.push(root);
+        stack<TreeNode *> st;
+        st.push(root);
 
-        while (stack.size() > 0) {
-            TreeNode *node = stack.top();
-            stack.pop();
+        while (st.size() > 0) {
+            TreeNode *node = st.top();
+            st.pop();
             results.push_back(node->val);
 
             if (node->right) {
-                stack.push(node->right);
+                st.push(node->right);
             }
 
             if (node->left) {
-                stack.push(node->left);
+                st.push(node->left);
             }
         }
         

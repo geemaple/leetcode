@@ -66,22 +66,22 @@ public:
     vector<int> postorderTraversal(TreeNode* root) {
         vector<int> results;
         TreeNode *node = root;
-        stack<TreeNode *> stack;
+        stack<TreeNode *> st;
         TreeNode *last = nullptr;
 
-        while (node || !stack.empty()) {
+        while (node || !st.empty()) {
             while (node) {
-                stack.push(node);
+                st.push(node);
                 node = node->left;
             }
 
-            TreeNode *peak = stack.top();
+            TreeNode *peak = st.top();
             if (peak->right && last != peak->right) {
                 node = peak->right;
             } else {
                 results.push_back(peak->val);
                 last = peak;
-                stack.pop();
+                st.pop();
             }
         }
 

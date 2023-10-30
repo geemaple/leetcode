@@ -67,16 +67,16 @@ public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> results;
         TreeNode *node = root;
-        stack<TreeNode *> stack;
+        stack<TreeNode *> st;
 
-        while (node || !stack.empty()) {
+        while (node || !st.empty()) {
             while (node) {
-                stack.push(node);
+                st.push(node);
                 node = node->left;
             }
 
-            node = stack.top();
-            stack.pop();
+            node = st.top();
+            st.pop();
             results.push_back(node->val);
             node = node->right;
         }
