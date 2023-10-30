@@ -35,7 +35,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Bit Manipulation](#bit-manipulation)
 - [Simulation](#simulation)
 - [Design](#design)
-- [Linked List](#linked-list)
 - [Binary Search](#binary-search)
 - [Two Pointers](#two-pointers)
 - [Dynamic Programming](#dynamic-programming)
@@ -48,6 +47,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Binary Search Tree](#binary-search-tree)
 - [Union Find](#union-find)
 - [Trie](#trie)
+- [Linked List](#linked-list)
 - [String](#string)
 - [Array](#array)
 - [Other](#other)
@@ -59,12 +59,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
 ## Design
-## Linked List
-| Problem | Solution | Time | Space | Note | Ref |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
-| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(1\) | BST \| Leetcode\-426 | - |
-
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -106,6 +100,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
 
 ## Divide and Conquer
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(1\) | BST \| Leetcode\-426 | - |
+
 ## Depth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -113,6 +111,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(Height\) | InOrder | - |
 | [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(Height\) | PostOrder | - |
 | [Leetcode-144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O\(N\) | O\(Height\) | PreOrder | - |
+| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 | [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 | [Leetcode-236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 
@@ -121,6 +120,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search Tree
 ## Union Find
 ## Trie
+## Linked List
 ## String
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -420,5 +420,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-30 15:00:29**<br/>
+Auto updated at: **2023-10-30 15:02:43**<br/>
 
