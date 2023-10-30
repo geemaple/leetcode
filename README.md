@@ -122,6 +122,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Hash Table
 ## Greedy
 ## Binary Search Tree
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | O\(Height\) | O\(1\) | BST \| Leetcode\-285 | - |
+
 ## Union Find
 ## Trie
 ## Linked List
@@ -423,5 +427,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **312**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-30 15:43:02**<br/>
+Auto updated at: **2023-10-30 16:39:06**<br/>
 
