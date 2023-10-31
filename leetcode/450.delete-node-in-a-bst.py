@@ -77,3 +77,58 @@ class Solution:
             return node.right
         
         return node
+    
+class Solution:
+    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+
+        if not root:
+            return root
+
+        parent = None
+        curr = root
+
+        while curr:
+            if key == curr.val:
+                break
+            parent = curr
+
+            if key < curr.val:
+                curr = curr.left
+            else:
+                curr = curr.right
+
+        if not curr:
+            return root  # Key not found, nothing to delete
+
+        if not curr.left:  # Node has no left child
+            if not parent:
+                return curr.right
+            if parent.left == curr:
+                parent.left = curr.right
+            else:
+                parent.right = curr.right
+            return root
+
+        if not curr.right:  # Node has no right child
+            if not parent:
+                return curr.left
+            if parent.left == curr:
+                parent.left = curr.left
+            else:
+                parent.right = curr.left
+            return root
+
+        # Node has two children, find the inorder successor (smallest node in the right subtree)
+        successor_parent = curr
+        successor = curr.right
+        while successor.left:
+            successor_parent = successor
+            successor = successor.left
+
+        curr.val = successor.val
+        if successor_parent.left == successor:
+            successor_parent.left = successor.right
+        else:
+            successor_parent.right = successor.right
+
+        return root
