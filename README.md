@@ -107,6 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(1\) | BST \| Leetcode\-426 | - |
+| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
 
 ## Depth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
@@ -424,8 +425,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-598. Zombie In Matrix](https://www.lintcode.com/problem/zombie-in-matrix) | [c++](./lintcode/598.zombie-in-matrix.cpp), [python](./lintcode/598.zombie-in-matrix.py) | \- | \- | \- | - |
 
 ## 其他/Other
-Total sovled: **312**<br/>
+Total sovled: **313**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-10-30 16:39:06**<br/>
+Auto updated at: **2023-10-31 17:11:15**<br/>
 
