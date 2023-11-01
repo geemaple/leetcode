@@ -6,6 +6,7 @@
     "unordered_map": "cpp",
     "vector": "cpp",
     "random": "cpp",
-    "limits": "cpp"
+    "limits": "cpp",
+    "ios": "cpp"
   }
 }

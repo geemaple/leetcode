@@ -1,8 +1,8 @@
 //  Category: Tree, Binary Search Tree, Binary Tree
-//  Time: -
-//  Space: -
+//  Time: O(Height)
+//  Space: O(Height)
 //  Ref: -
-//  Note: -
+//  Note: Delete
 
 //  Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
 //  Basically, the deletion can be divided into two stages:
@@ -57,7 +57,48 @@
  * };
  */
 
-//TODO:
+class Solution {
+public:
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        return helper(root, key);
+    }
+
+    TreeNode* helper(TreeNode* node, int key) {
+        if (node == nullptr) {
+            return node;
+        }
+
+        if (key < node->val) {
+            node->left = helper(node->left, key);
+        } else if (key > node->val) {
+            node->right = helper(node->right, key);
+        } else {
+            if (node->left == nullptr) {
+                TreeNode *right = node->right;
+                delete(node);
+                return right;
+            }
+
+            if (node->right == nullptr) {
+                TreeNode *left = node->left;
+                delete(node);
+                return left;
+            }
+
+            TreeNode *rightMin = node->right;
+            while (rightMin->left) {
+                rightMin = rightMin->left;
+            }
+
+            rightMin->left = node->left;
+            TreeNode *new_root = node->right;
+            delete(node); 
+            return new_root;
+        }
+
+        return node;
+    }
+};
 
 class Solution {
 public:

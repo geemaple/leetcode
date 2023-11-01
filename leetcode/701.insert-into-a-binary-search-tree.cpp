@@ -1,8 +1,8 @@
 //  Category: Tree, Binary Search Tree, Binary Tree
-//  Time: -
-//  Space: -
+//  Time: O(Height)
+//  Space: O(Height)
 //  Ref: -
-//  Note: -
+//  Note: Insert
 
 //  You are given the root node of a binary search tree (BST) and a value to insert into the tree. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
 //  Notice that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion. You can return any of them.
@@ -50,6 +50,48 @@
 class Solution {
 public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
-        //TODO:
+        if (root == nullptr) {
+            return new TreeNode(val);
+        }
+
+        TreeNode* node = root;
+        while (node) {
+            if (val < node->val) {
+                if (node->left == nullptr) {
+                    node->left = new TreeNode(val);
+                    break;
+                }
+                node = node->left;
+            } else {
+                if (node->right == nullptr) {
+                    node->right = new TreeNode(val);
+                    break;
+                }
+                node = node->right;
+            }
+        }
+
+        return root;
+    }
+};
+
+class Solution {
+public:
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+        return helper(root, val);
+    }
+
+    TreeNode* helper(TreeNode* node, int val) {
+        if (node == nullptr) {
+            return new TreeNode(val);
+        }
+
+        if (val < node->val) {
+            node->left = helper(node->left, val);
+        } else {
+            node->right = helper(node->right, val);
+        }
+
+        return node;
     }
 };
