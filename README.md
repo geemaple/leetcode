@@ -66,9 +66,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 | [Leetcode-2468. Split Message Based On Limit](https://leetcode.com/problems/split-message-based-on-limit/description/) | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python](./leetcode/2468.split-message-based-on-limit.py) | logN \+ K | O\(1\) | Answer \| Bruteforce | - |
-| [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix | - |
+| [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Graph \| Leetcode\-302 | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix; | - |
 | [Leetcode-852. Peak Index In A Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
 | [Leetcode-1901. Find A Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/description/) | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python](./leetcode/1901.find-a-peak-element-ii.py) | O\(N \* logM\) | O\(1\) | Mountain; | - |
 | [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | [Video](https://youtu.be/bexO0N9eP1I) |
@@ -84,8 +86,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
 | [Leetcode-35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
 | [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound; | [Video](https://youtu.be/y6OT8heV-30) |
-| [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
-| [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Graph \| Leetcode\-302 | - |
 
 ## Two Pointers
 ## Greedy
@@ -161,6 +161,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
 | [Leetcode-269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) | [python](./leetcode/269.alien-dictionary.py) | \- | \- | \- | - |
 | [Leetcode-561. Array Partition I](https://leetcode.com/problems/array-partition-i/description/) | [c++](./leetcode/561.array-partition-i.cpp) | \- | \- | \- | - |
+| [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [c++](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | \- | \- | \- | - |
+| [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [c++](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | \- | \- | \- | - |
+| [Lintcode-440. Backpack III](https://www.lintcode.com/problem/backpack-iii) | [c++](./lintcode/440.backpack-iii.cpp), [python](./lintcode/440.backpack-iii.py) | \- | \- | \- | - |
+| [Lintcode-563. Backpack V](https://www.lintcode.com/problem/backpack-v) | [c++](./lintcode/563.backpack-v.cpp), [python](./lintcode/563.backpack-v.py) | \- | \- | \- | - |
 | [Leetcode-844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/) | [c++](./leetcode/844.backspace-string-compare.cpp), [python](./leetcode/844.backspace-string-compare.py) | \- | \- | \- | - |
 | [Leetcode-121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [c++](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | \- | \- | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | \- | \- | \- | - |
@@ -180,10 +184,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | \- | \- | \- | - |
 | [Leetcode-133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [c++](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | \- | \- | \- | - |
 | [Leetcode-270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/description/) | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python](./leetcode/270.closest-binary-search-tree-value.py) | \- | \- | \- | - |
+| [Lintcode-394. Coins In A Line](https://www.lintcode.com/problem/coins-in-a-line) | [c++](./lintcode/394.coins-in-a-line.cpp), [python](./lintcode/394.coins-in-a-line.py) | \- | \- | \- | - |
+| [Lintcode-396. Coins In A Line III](https://www.lintcode.com/problem/coins-in-a-line-iii) | [c++](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | \- | \- | \- | - |
 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | \- | \- | \- | - |
 | [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | \- | \- | \- | - |
 | [Leetcode-377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/description/) | [c++](./leetcode/377.combination-sum-iv.cpp), [python](./leetcode/377.combination-sum-iv.py) | \- | \- | \- | - |
 | [Leetcode-175. Combine Two Tables](https://leetcode.com/problems/combine-two-tables/description/) | [sql](./leetcode/175.combine-two-tables.sql) | \- | \- | \- | - |
+| [Lintcode-589. Connecting Graph](https://www.lintcode.com/problem/connecting-graph) | [c++](./lintcode/589.connecting-graph.cpp), [python](./lintcode/589.connecting-graph.py) | \- | \- | \- | - |
+| [Lintcode-590. Connecting Graph II](https://www.lintcode.com/problem/connecting-graph-ii) | [c++](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | \- | \- | \- | - |
+| [Lintcode-591. Connecting Graph III](https://www.lintcode.com/problem/connecting-graph-iii) | [c++](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | \- | \- | \- | - |
 | [Leetcode-829. Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/description/) | [python](./leetcode/829.consecutive-numbers-sum.py) | \- | \- | \- | - |
 | [Leetcode-11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | [python](./leetcode/11.container-with-most-water.py) | \- | \- | \- | - |
 | [Leetcode-217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | [c++](./leetcode/217.contains-duplicate.cpp) | \- | \- | \- | - |
@@ -205,12 +214,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-271. Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/description/) | [c++](./leetcode/271.encode-and-decode-strings.cpp), [python](./leetcode/271.encode-and-decode-strings.py) | \- | \- | \- | - |
 | [Leetcode-535. Encode And Decode Tinyurl](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) | [python](./leetcode/535.encode-and-decode-tinyurl.py) | \- | \- | \- | - |
 | [Leetcode-282. Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/) | [c++](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | \- | \- | \- | - |
+| [Lintcode-652. Factorization](https://www.lintcode.com/problem/factorization) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
 | [Leetcode-438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | \- | \- | \- | - |
 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | \- | \- | \- | - |
 | [Leetcode-760. Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/description/) | [python](./leetcode/760.find-anagram-mappings.py) | \- | \- | \- | - |
 | [Leetcode-652. Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) | [c++](./leetcode/652.find-duplicate-subtrees.cpp) | \- | \- | \- | - |
 | [Leetcode-366. Find Leaves Of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/description/) | [c++](./leetcode/366.find-leaves-of-binary-tree.cpp), [python](./leetcode/366.find-leaves-of-binary-tree.py) | \- | \- | \- | - |
 | [Leetcode-295. Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | [c++](./leetcode/295.find-median-from-data-stream.cpp), [python](./leetcode/295.find-median-from-data-stream.py) | \- | \- | \- | - |
+| [Lintcode-81. Find Median From Data Stream](https://www.lintcode.com/problem/find-median-from-data-stream) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | \- | \- | \- | - |
+| [Lintcode-390. Find Peak Element II](https://www.lintcode.com/problem/find-peak-element-ii) | [c++](./lintcode/390.find-peak-element-ii.cpp), [python](./lintcode/390.find-peak-element-ii.py) | \- | \- | \- | - |
 | [Leetcode-724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/) | [c++](./leetcode/724.find-pivot-index.cpp) | \- | \- | \- | - |
 | [Leetcode-277. Find The Celebrity](https://leetcode.com/problems/find-the-celebrity/description/) | [c++](./leetcode/277.find-the-celebrity.cpp), [python](./leetcode/277.find-the-celebrity.py) | \- | \- | \- | - |
 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | \- | \- | \- | - |
@@ -234,6 +246,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | [c++](./leetcode/57.insert-interval.cpp), [python](./leetcode/57.insert-interval.py) | \- | \- | \- | - |
 | [Leetcode-273. Integer To English Words](https://leetcode.com/problems/integer-to-english-words/description/) | [python](./leetcode/273.integer-to-english-words.py) | \- | \- | \- | - |
 | [Leetcode-12. Integer To Roman](https://leetcode.com/problems/integer-to-roman/description/) | [c++](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | \- | \- | \- | - |
+| [Lintcode-144. Interleaving Positive And Negative Numbers](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers) | [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python](./lintcode/144.interleaving-positive-and-negative-numbers.py) | \- | \- | \- | - |
 | [Leetcode-97. Interleaving String](https://leetcode.com/problems/interleaving-string/description/) | [c++](./leetcode/97.interleaving-string.cpp), [python](./leetcode/97.interleaving-string.py) | \- | \- | \- | - |
 | [Leetcode-349. Intersection Of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/) | [c++](./leetcode/349.intersection-of-two-arrays.cpp), [python](./leetcode/349.intersection-of-two-arrays.py) | \- | \- | \- | - |
 | [Leetcode-350. Intersection Of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | [c++](./leetcode/350.intersection-of-two-arrays-ii.cpp), [python](./leetcode/350.intersection-of-two-arrays-ii.py) | \- | \- | \- | - |
@@ -246,17 +259,23 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | [c++](./leetcode/45.jump-game-ii.cpp), [python](./leetcode/45.jump-game-ii.py) | \- | \- | \- | - |
 | [Leetcode-532. K Diff Pairs In An Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/) | [c++](./leetcode/532.k-diff-pairs-in-an-array.cpp), [python](./leetcode/532.k-diff-pairs-in-an-array.py) | \- | \- | \- | - |
 | [Leetcode-683. K Empty Slots](https://leetcode.com/problems/k-empty-slots/description/) | [c++](./leetcode/683.k-empty-slots.cpp), [python](./leetcode/683.k-empty-slots.py) | \- | \- | \- | - |
+| [Lintcode-89. K Sum](https://www.lintcode.com/problem/k-sum) | [c++](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | \- | \- | \- | - |
+| [Lintcode-611. Knight Shortest Path](https://www.lintcode.com/problem/knight-shortest-path) | [c++](./lintcode/611.knight-shortest-path.cpp), [python](./lintcode/611.knight-shortest-path.py) | \- | \- | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | \- | \- | \- | - |
+| [Lintcode-543. Kth Largest In N Arrays](https://www.lintcode.com/problem/kth-largest-in-n-arrays) | [c++](./lintcode/543.kth-largest-in-n-arrays.cpp), [python](./lintcode/543.kth-largest-in-n-arrays.py) | \- | \- | \- | - |
 | [Leetcode-378. Kth Smallest Element In A Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | \- | \- | \- | - |
+| [Lintcode-465. Kth Smallest Sum In Two Sorted Arrays](https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays) | [c++](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.cpp), [python](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.py) | \- | \- | \- | - |
 | [Leetcode-368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/) | [c++](./leetcode/368.largest-divisible-subset.cpp), [python](./leetcode/368.largest-divisible-subset.py) | \- | \- | \- | - |
 | [Leetcode-747. Largest Number At Least Twice Of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/) | [c++](./leetcode/747.largest-number-at-least-twice-of-others.cpp) | \- | \- | \- | - |
 | [Leetcode-84. Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | [c++](./leetcode/84.largest-rectangle-in-histogram.cpp), [python](./leetcode/84.largest-rectangle-in-histogram.py) | \- | \- | \- | - |
 | [Leetcode-17. Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | [c++](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python](./leetcode/17.letter-combinations-of-a-phone-number.py) | \- | \- | \- | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | \- | \- | \- | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | \- | \- | \- | - |
+| [Lintcode-526. Load Balancer](https://www.lintcode.com/problem/load-balancer) | [c++](./lintcode/526.load-balancer.cpp), [python](./lintcode/526.load-balancer.py) | \- | \- | \- | - |
 | [Leetcode-359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/description/) | [c++](./leetcode/359.logger-rate-limiter.cpp) | \- | \- | \- | - |
 | [Leetcode-388. Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/description/) | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python](./leetcode/388.longest-absolute-file-path.py) | \- | \- | \- | - |
 | [Leetcode-14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | [c++](./leetcode/14.longest-common-prefix.cpp), [python](./leetcode/14.longest-common-prefix.py) | \- | \- | \- | - |
+| [Lintcode-77. Longest Common Subsequence](https://www.lintcode.com/problem/longest-common-subsequence) | [c++](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | \- | \- | \- | - |
 | [Leetcode-128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | [c++](./leetcode/128.longest-consecutive-sequence.cpp), [python](./leetcode/128.longest-consecutive-sequence.py) | \- | \- | \- | - |
 | [Leetcode-674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python](./leetcode/674.longest-continuous-increasing-subsequence.py) | \- | \- | \- | - |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | \- | \- | \- | - |
@@ -283,10 +302,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-155. Min Stack](https://leetcode.com/problems/min-stack/description/) | [c++](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | \- | \- | \- | - |
 | [Leetcode-924. Minimize Malware Spread](https://leetcode.com/problems/minimize-malware-spread/description/) | [python](./leetcode/924.minimize-malware-spread.py) | \- | \- | \- | - |
 | [Leetcode-928. Minimize Malware Spread II](https://leetcode.com/problems/minimize-malware-spread-ii/description/) | [python](./leetcode/928.minimize-malware-spread-ii.py) | \- | \- | \- | - |
+| [Lintcode-91. Minimum Adjustment Cost](https://www.lintcode.com/problem/minimum-adjustment-cost) | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | \- | \- | \- | - |
 | [Leetcode-433. Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/description/) | [c++](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | \- | \- | \- | - |
 | [Leetcode-599. Minimum Index Sum Of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/) | [c++](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | \- | \- | \- | - |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | \- | \- | \- | - |
 | [Leetcode-209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python](./leetcode/209.minimum-size-subarray-sum.py) | \- | \- | \- | - |
+| [Lintcode-629. Minimum Spanning Tree](https://www.lintcode.com/problem/minimum-spanning-tree) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | \- | \- | \- | - |
 | [Leetcode-76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | [c++](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | \- | \- | \- | - |
 | [Leetcode-163. Missing Ranges](https://leetcode.com/problems/missing-ranges/description/) | [c++](./leetcode/163.missing-ranges.cpp), [python](./leetcode/163.missing-ranges.py) | \- | \- | \- | - |
 | [Leetcode-283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | [c++](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | \- | \- | \- | - |
@@ -295,6 +316,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-51. N Queens](https://leetcode.com/problems/n-queens/description/) | [c++](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | \- | \- | \- | - |
 | [Leetcode-52. N Queens II](https://leetcode.com/problems/n-queens-ii/description/) | [c++](./leetcode/52.n-queens-ii.cpp), [python](./leetcode/52.n-queens-ii.py) | \- | \- | \- | - |
 | [Leetcode-31. Next Permutation](https://leetcode.com/problems/next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py) | \- | \- | \- | - |
+| [Lintcode-391. Number Of Airplanes In The Sky](https://www.lintcode.com/problem/number-of-airplanes-in-the-sky) | [c++](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python](./lintcode/391.number-of-airplanes-in-the-sky.py) | \- | \- | \- | - |
 | [Leetcode-447. Number Of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/description/) | [c++](./leetcode/447.number-of-boomerangs.cpp), [python](./leetcode/447.number-of-boomerangs.py) | \- | \- | \- | - |
 | [Leetcode-323. Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/) | [c++](./leetcode/323.number-of-connected-components-in-an-undirected-graph.cpp), [python](./leetcode/323.number-of-connected-components-in-an-undirected-graph.py) | \- | \- | \- | - |
 | [Leetcode-200. Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | [c++](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | \- | \- | \- | - |
@@ -311,6 +333,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/) | [python](./leetcode/336.palindrome-pairs.py) | \- | \- | \- | - |
 | [Leetcode-131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | [c++](./leetcode/131.palindrome-partitioning.cpp), [python](./leetcode/131.palindrome-partitioning.py) | \- | \- | \- | - |
 | [Leetcode-132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/description/) | [c++](./leetcode/132.palindrome-partitioning-ii.cpp), [python](./leetcode/132.palindrome-partitioning-ii.py) | \- | \- | \- | - |
+| [Lintcode-31. Partition Array](https://www.lintcode.com/problem/partition-array) | [python](./lintcode/31.partition-array.py) | \- | \- | \- | - |
 | [Leetcode-86. Partition List](https://leetcode.com/problems/partition-list/description/) | [c++](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | \- | \- | \- | - |
 | [Leetcode-118. Pascals Triangle](https://leetcode.com/problems/pascals-triangle/description/) | [c++](./leetcode/118.pascals-triangle.cpp), [python](./leetcode/118.pascals-triangle.py) | \- | \- | \- | - |
 | [Leetcode-119. Pascals Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | [c++](./leetcode/119.pascals-triangle-ii.cpp), [python](./leetcode/119.pascals-triangle-ii.py) | \- | \- | \- | - |
@@ -346,6 +369,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-796. Rotate String](https://leetcode.com/problems/rotate-string/description/) | [c++](./leetcode/796.rotate-string.cpp), [python](./leetcode/796.rotate-string.py) | \- | \- | \- | - |
 | [Leetcode-354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python](./leetcode/354.russian-doll-envelopes.py) | \- | \- | \- | - |
 | [Leetcode-87. Scramble String](https://leetcode.com/problems/scramble-string/description/) | [c++](./leetcode/87.scramble-string.cpp), [python](./leetcode/87.scramble-string.py) | \- | \- | \- | - |
+| [Lintcode-618. Search Graph Nodes](https://www.lintcode.com/problem/search-graph-nodes) | [c++](./lintcode/618.search-graph-nodes.cpp), [python](./lintcode/618.search-graph-nodes.py) | \- | \- | \- | - |
+| [Lintcode-447. Search In A Big Sorted Array](https://www.lintcode.com/problem/search-in-a-big-sorted-array) | [c++](./lintcode/447.search-in-a-big-sorted-array.cpp), [python](./lintcode/447.search-in-a-big-sorted-array.py) | \- | \- | \- | - |
 | [Leetcode-702. Search In A Sorted Array Of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/) | [c++](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | \- | \- | \- | - |
 | [Leetcode-444. Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/description/) | [c++](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | \- | \- | \- | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | \- | \- | \- | - |
@@ -357,8 +382,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/description/) | [c++](./leetcode/311.sparse-matrix-multiplication.cpp), [python](./leetcode/311.sparse-matrix-multiplication.py) | \- | \- | \- | - |
 | [Leetcode-54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | [c++](./leetcode/54.spiral-matrix.cpp), [python](./leetcode/54.spiral-matrix.py) | \- | \- | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | \- | \- | \- | - |
+| [Lintcode-586. Sqrtx II](https://www.lintcode.com/problem/sqrtx-ii) | [c++](./lintcode/586.sqrtx-ii.cpp), [python](./lintcode/586.sqrtx-ii.py) | \- | \- | \- | - |
 | [Leetcode-8. String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi/description/) | [c++](./leetcode/8.string-to-integer-atoi.cpp), [python](./leetcode/8.string-to-integer-atoi.py) | \- | \- | \- | - |
 | [Leetcode-246. Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/description/) | [c++](./leetcode/246.strobogrammatic-number.cpp), [python](./leetcode/246.strobogrammatic-number.py) | \- | \- | \- | - |
+| [Lintcode-139. Subarray Sum Closest](https://www.lintcode.com/problem/subarray-sum-closest) | [c++](./lintcode/139.subarray-sum-closest.cpp), [python](./lintcode/139.subarray-sum-closest.py) | \- | \- | \- | - |
 | [Leetcode-560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) | [c++](./leetcode/560.subarray-sum-equals-k.cpp), [python](./leetcode/560.subarray-sum-equals-k.py) | \- | \- | \- | - |
 | [Leetcode-30. Substring With Concatenation Of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | [c++](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | \- | \- | \- | - |
 | [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | \- | \- | \- | - |
@@ -370,6 +397,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | [c++](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | \- | \- | \- | - |
 | [Leetcode-407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [c++](./leetcode/407.trapping-rain-water-ii.cpp), [python](./leetcode/407.trapping-rain-water-ii.py) | \- | \- | \- | - |
 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | \- | \- | \- | - |
+| [Lintcode-382. Triangle Count](https://www.lintcode.com/problem/triangle-count) | [c++](./lintcode/382.triangle-count.cpp), [python](./lintcode/382.triangle-count.py) | \- | \- | \- | - |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | \- | \- | \- | - |
 | [Leetcode-170. Two Sum Iii Data Structure Design](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/) | [c++](./leetcode/170.two-sum-iii-data-structure-design.cpp), [python](./leetcode/170.two-sum-iii-data-structure-design.py) | \- | \- | \- | - |
@@ -389,6 +417,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-280. Wiggle Sort](https://leetcode.com/problems/wiggle-sort/description/) | [python](./leetcode/280.wiggle-sort.py) | \- | \- | \- | - |
 | [Leetcode-324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) | [python](./leetcode/324.wiggle-sort-ii.py) | \- | \- | \- | - |
 | [Leetcode-44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/) | [c++](./leetcode/44.wildcard-matching.cpp), [python](./leetcode/44.wildcard-matching.py) | \- | \- | \- | - |
+| [Lintcode-183. Wood Cut](https://www.lintcode.com/problem/wood-cut) | [c++](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | \- | \- | \- | - |
 | [Leetcode-527. Word Abbreviation](https://leetcode.com/problems/word-abbreviation/description/) | [c++](./leetcode/527.word-abbreviation.cpp), [python](./leetcode/527.word-abbreviation.py) | \- | \- | \- | - |
 | [Leetcode-127. Word Ladder](https://leetcode.com/problems/word-ladder/description/) | [c++](./leetcode/127.word-ladder.cpp), [python](./leetcode/127.word-ladder.py) | \- | \- | \- | - |
 | [Leetcode-126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | [c++](./leetcode/126.word-ladder-ii.cpp), [python](./leetcode/126.word-ladder-ii.py) | \- | \- | \- | - |
@@ -396,40 +425,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-212. Word Search II](https://leetcode.com/problems/word-search-ii/description/) | [c++](./leetcode/212.word-search-ii.cpp), [python](./leetcode/212.word-search-ii.py) | \- | \- | \- | - |
 | [Leetcode-425. Word Squares](https://leetcode.com/problems/word-squares/description/) | [c++](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | \- | \- | \- | - |
 | [Leetcode-6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [python](./leetcode/6.zigzag-conversion.py) | \- | \- | \- | - |
-| [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [c++](./lintcode/92.backpack.cpp), [python](./lintcode/92.backpack.py) | \- | \- | \- | - |
-| [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [c++](./lintcode/125.backpack-ii.cpp), [python](./lintcode/125.backpack-ii.py) | \- | \- | \- | - |
-| [Lintcode-440. Backpack III](https://www.lintcode.com/problem/backpack-iii) | [c++](./lintcode/440.backpack-iii.cpp), [python](./lintcode/440.backpack-iii.py) | \- | \- | \- | - |
-| [Lintcode-563. Backpack V](https://www.lintcode.com/problem/backpack-v) | [c++](./lintcode/563.backpack-v.cpp), [python](./lintcode/563.backpack-v.py) | \- | \- | \- | - |
-| [Lintcode-394. Coins In A Line](https://www.lintcode.com/problem/coins-in-a-line) | [c++](./lintcode/394.coins-in-a-line.cpp), [python](./lintcode/394.coins-in-a-line.py) | \- | \- | \- | - |
-| [Lintcode-396. Coins In A Line III](https://www.lintcode.com/problem/coins-in-a-line-iii) | [c++](./lintcode/396.coins-in-a-line-iii.cpp), [python](./lintcode/396.coins-in-a-line-iii.py) | \- | \- | \- | - |
-| [Lintcode-589. Connecting Graph](https://www.lintcode.com/problem/connecting-graph) | [c++](./lintcode/589.connecting-graph.cpp), [python](./lintcode/589.connecting-graph.py) | \- | \- | \- | - |
-| [Lintcode-590. Connecting Graph II](https://www.lintcode.com/problem/connecting-graph-ii) | [c++](./lintcode/590.connecting-graph-ii.cpp), [python](./lintcode/590.connecting-graph-ii.py) | \- | \- | \- | - |
-| [Lintcode-591. Connecting Graph III](https://www.lintcode.com/problem/connecting-graph-iii) | [c++](./lintcode/591.connecting-graph-iii.cpp), [python](./lintcode/591.connecting-graph-iii.py) | \- | \- | \- | - |
-| [Lintcode-652. Factorization](https://www.lintcode.com/problem/factorization) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
-| [Lintcode-81. Find Median From Data Stream](https://www.lintcode.com/problem/find-median-from-data-stream) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | \- | \- | \- | - |
-| [Lintcode-390. Find Peak Element II](https://www.lintcode.com/problem/find-peak-element-ii) | [c++](./lintcode/390.find-peak-element-ii.cpp), [python](./lintcode/390.find-peak-element-ii.py) | \- | \- | \- | - |
-| [Lintcode-144. Interleaving Positive And Negative Numbers](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers) | [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python](./lintcode/144.interleaving-positive-and-negative-numbers.py) | \- | \- | \- | - |
-| [Lintcode-89. K Sum](https://www.lintcode.com/problem/k-sum) | [c++](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | \- | \- | \- | - |
-| [Lintcode-611. Knight Shortest Path](https://www.lintcode.com/problem/knight-shortest-path) | [c++](./lintcode/611.knight-shortest-path.cpp), [python](./lintcode/611.knight-shortest-path.py) | \- | \- | \- | - |
-| [Lintcode-543. Kth Largest In N Arrays](https://www.lintcode.com/problem/kth-largest-in-n-arrays) | [c++](./lintcode/543.kth-largest-in-n-arrays.cpp), [python](./lintcode/543.kth-largest-in-n-arrays.py) | \- | \- | \- | - |
-| [Lintcode-465. Kth Smallest Sum In Two Sorted Arrays](https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays) | [c++](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.cpp), [python](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.py) | \- | \- | \- | - |
-| [Lintcode-526. Load Balancer](https://www.lintcode.com/problem/load-balancer) | [c++](./lintcode/526.load-balancer.cpp), [python](./lintcode/526.load-balancer.py) | \- | \- | \- | - |
-| [Lintcode-77. Longest Common Subsequence](https://www.lintcode.com/problem/longest-common-subsequence) | [c++](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | \- | \- | \- | - |
-| [Lintcode-91. Minimum Adjustment Cost](https://www.lintcode.com/problem/minimum-adjustment-cost) | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | \- | \- | \- | - |
-| [Lintcode-629. Minimum Spanning Tree](https://www.lintcode.com/problem/minimum-spanning-tree) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | \- | \- | \- | - |
-| [Lintcode-391. Number Of Airplanes In The Sky](https://www.lintcode.com/problem/number-of-airplanes-in-the-sky) | [c++](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python](./lintcode/391.number-of-airplanes-in-the-sky.py) | \- | \- | \- | - |
-| [Lintcode-31. Partition Array](https://www.lintcode.com/problem/partition-array) | [python](./lintcode/31.partition-array.py) | \- | \- | \- | - |
-| [Lintcode-618. Search Graph Nodes](https://www.lintcode.com/problem/search-graph-nodes) | [c++](./lintcode/618.search-graph-nodes.cpp), [python](./lintcode/618.search-graph-nodes.py) | \- | \- | \- | - |
-| [Lintcode-447. Search In A Big Sorted Array](https://www.lintcode.com/problem/search-in-a-big-sorted-array) | [c++](./lintcode/447.search-in-a-big-sorted-array.cpp), [python](./lintcode/447.search-in-a-big-sorted-array.py) | \- | \- | \- | - |
-| [Lintcode-586. Sqrtx II](https://www.lintcode.com/problem/sqrtx-ii) | [c++](./lintcode/586.sqrtx-ii.cpp), [python](./lintcode/586.sqrtx-ii.py) | \- | \- | \- | - |
-| [Lintcode-139. Subarray Sum Closest](https://www.lintcode.com/problem/subarray-sum-closest) | [c++](./lintcode/139.subarray-sum-closest.cpp), [python](./lintcode/139.subarray-sum-closest.py) | \- | \- | \- | - |
-| [Lintcode-382. Triangle Count](https://www.lintcode.com/problem/triangle-count) | [c++](./lintcode/382.triangle-count.cpp), [python](./lintcode/382.triangle-count.py) | \- | \- | \- | - |
-| [Lintcode-183. Wood Cut](https://www.lintcode.com/problem/wood-cut) | [c++](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | \- | \- | \- | - |
 | [Lintcode-598. Zombie In Matrix](https://www.lintcode.com/problem/zombie-in-matrix) | [c++](./lintcode/598.zombie-in-matrix.cpp), [python](./lintcode/598.zombie-in-matrix.py) | \- | \- | \- | - |
 
 ## 其他/Other
 Total sovled: **316**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-11-01 19:19:55**<br/>
+Auto updated at: **2023-11-01 19:48:34**<br/>
 
