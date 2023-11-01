@@ -173,7 +173,7 @@ class Markdown:
                 continue
 
             Markdown.table_header(f, headers)
-            sorted_solutions = sorted(category_set[category_tag], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.name, s.source, s.number))
+            sorted_solutions = sorted(category_set[category_tag], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
             for solution in sorted_solutions:
                 if solution.key not in solution_set:
                     continue
