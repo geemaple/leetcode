@@ -1,7 +1,7 @@
 #  Category: Array, Binary Search
 #  Time: O(logN)
 #  Space: O(1)
-#  Ref: -
+#  Ref: https://youtu.be/bexO0N9eP1I
 #  Note: Mountain;
 
 #  A peak element is an element that is strictly greater than its neighbors.

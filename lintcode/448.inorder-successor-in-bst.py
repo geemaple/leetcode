@@ -2,7 +2,7 @@
 #  Time: O(Height)
 #  Space: O(1)
 #  Ref: -
-#  Note: BST | Leetcode-285
+#  Note: Successor | Leetcode-285
 
 #  Given a binary search tree ([See Definition](http://www.lintcode.com/problem/validate-binary-search-tree/ "BST")) and a node in it, find the in-order successor of that node in the BST.
 #  

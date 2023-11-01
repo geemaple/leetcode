@@ -66,11 +66,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-2468. Split Message Based On Limit](https://leetcode.com/problems/split-message-based-on-limit/description/) | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python](./leetcode/2468.split-message-based-on-limit.py) | logN \+ K | O\(1\) | Answer \| Bruteforce | - |
 | [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [Leetcode-852. Peak Index In A Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
 | [Leetcode-1901. Find A Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/description/) | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python](./leetcode/1901.find-a-peak-element-ii.py) | O\(N \* logM\) | O\(1\) | Mountain; | - |
-| [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | - |
+| [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | [Video](https://youtu.be/bexO0N9eP1I) |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 | [Leetcode-302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/) | [c++](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Range | - |
 | [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
@@ -127,7 +128,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | O\(Height\) | O\(Height\) | Delete | - |
 | [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | O\(Height\) | O\(Height\) | Insert | - |
-| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | O\(Height\) | O\(1\) | BST \| Leetcode\-285 | - |
+| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | O\(Height\) | O\(1\) | Successor \| Leetcode\-285 | - |
 
 ## Union Find
 ## Trie
@@ -427,8 +428,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-598. Zombie In Matrix](https://www.lintcode.com/problem/zombie-in-matrix) | [c++](./lintcode/598.zombie-in-matrix.cpp), [python](./lintcode/598.zombie-in-matrix.py) | \- | \- | \- | - |
 
 ## 其他/Other
-Total sovled: **315**<br/>
+Total sovled: **316**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-11-01 09:14:53**<br/>
+Auto updated at: **2023-11-01 19:19:55**<br/>
 
