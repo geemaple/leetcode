@@ -1,5 +1,5 @@
 #  Category: String, Binary Search
-#  Time: logN + K
+#  Time: O(logN + K)
 #  Space: O(1)
 #  Ref: -
 #  Note: Answer | Bruteforce
