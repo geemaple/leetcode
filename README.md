@@ -109,6 +109,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Breadth-First Search
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python](./leetcode/102.binary-tree-level-order-traversal.py) | O\(N\) | O\(Width\) | Level | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 
 ## Depth-First Search
@@ -221,7 +222,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-91. Decode Ways](https://leetcode.com/problems/decode-ways/description/) | [c++](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | \- | \- | \- | - |
 | [Leetcode-92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | [c++](./leetcode/92.reverse-linked-list-ii.cpp), [python](./leetcode/92.reverse-linked-list-ii.py) | \- | \- | \- | - |
 | [Leetcode-97. Interleaving String](https://leetcode.com/problems/interleaving-string/description/) | [c++](./leetcode/97.interleaving-string.cpp), [python](./leetcode/97.interleaving-string.py) | \- | \- | \- | - |
-| [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python](./leetcode/102.binary-tree-level-order-traversal.py) | \- | \- | \- | - |
 | [Leetcode-103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | [c++](./leetcode/103.binary-tree-zigzag-level-order-traversal.cpp), [python](./leetcode/103.binary-tree-zigzag-level-order-traversal.py) | \- | \- | \- | - |
 | [Leetcode-107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/) | [c++](./leetcode/107.binary-tree-level-order-traversal-ii.cpp), [python](./leetcode/107.binary-tree-level-order-traversal-ii.py) | \- | \- | \- | - |
 | [Leetcode-115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | [c++](./leetcode/115.distinct-subsequences.cpp), [python](./leetcode/115.distinct-subsequences.py) | \- | \- | \- | - |
@@ -431,5 +431,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **316**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2023-11-01 20:24:26**<br/>
+Auto updated at: **2023-11-02 09:06:12**<br/>
 
