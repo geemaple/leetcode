@@ -4,9 +4,9 @@
 <br/>
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
-Total sovled: **320**<br/>
 <br/>
-Auto updated at: **2024-06-25 17:46:24**<br/>
+Total sovled: **320**<br/>
+Auto updated at: **2024-06-25 17:59:05**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -26,7 +26,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## 链接/Links
 - [极客时间](https://github.com/geektime-geekbang/algorithm-1)
 - [LeetCode 101](https://github.com/changgyhub/leetcode_101)
-- 
 
 ## 书籍/Books
 - 《算法技术手册》/ Algorithms in a Nutshell

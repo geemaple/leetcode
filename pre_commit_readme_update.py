@@ -294,8 +294,8 @@ if __name__ == "__main__":
             "",
             "My personal leetcode answers",
             "This is a **continually updated** open source project",
-            f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
             "",
+            f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
             f"Auto updated at: **{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"
         ])
 
@@ -320,7 +320,6 @@ if __name__ == "__main__":
         Markdown.bullet(f, [
             Markdown.link('极客时间', 'https://github.com/geektime-geekbang/algorithm-1'),
             Markdown.link('LeetCode 101', 'https://github.com/changgyhub/leetcode_101'),
-            ""
         ])
 
         Markdown.title2(f, "书籍/Books")
