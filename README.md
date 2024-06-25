@@ -4,6 +4,9 @@
 <br/>
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
+Total sovled: **320**<br/>
+<br/>
+Auto updated at: **2024-06-25 17:02:47**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -448,10 +451,4 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-652. Factorization](https://www.lintcode.com/problem/factorization) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
 | [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | \- | \- | Each term of the sequence of integers will be represented as a | - |
 | [Leetcode-229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/) | [c++](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | \- | \- | The algorithm should run in linear time and in O\(1\) space\. | - |
-
-## 其他/Other
-Total sovled: **320**<br/>
-PS: semicolon(;) after each note means related questions are checked<br/>
-<br/>
-Auto updated at: **2024-06-25 16:53:20**<br/>
 

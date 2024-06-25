@@ -294,6 +294,9 @@ if __name__ == "__main__":
             "",
             "My personal leetcode answers",
             "This is a **continually updated** open source project",
+            f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
+            "",
+            f"Auto updated at: **{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"
         ])
 
         Markdown.title2(f, "软件/Softwares")
@@ -325,10 +328,3 @@ if __name__ == "__main__":
         Markdown.title2(f, Markdown.link('Category', 'category'))
         Markdown.bullet(f, [Markdown.tag(c) for c in ALL_CATEGORIES])
         Markdown.table_content(f, SUB_DIRECTORIES, ALL_CATEGORIES)
-          
-        Markdown.title2(f, "其他/Other")
-        Markdown.paragraph(f, [
-            f"Total sovled: **{Solution.statistic(SUB_DIRECTORIES)}**",
-            f"PS: semicolon(;) after each note means related questions are checked",
-            f"",
-            f"Auto updated at: **{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"])
