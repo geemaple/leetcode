@@ -94,6 +94,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Dynamic Programming
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/description/) | [c++](./leetcode/1575.count-all-possible-routes.cpp), [python](./leetcode/1575.count-all-possible-routes.py) | \- | \- | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
@@ -235,7 +236,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | [c++](./leetcode/115.distinct-subsequences.cpp), [python](./leetcode/115.distinct-subsequences.py) | \- | \- | \- | - |
 | [Leetcode-118. Pascals Triangle](https://leetcode.com/problems/pascals-triangle/description/) | [c++](./leetcode/118.pascals-triangle.cpp), [python](./leetcode/118.pascals-triangle.py) | \- | \- | \- | - |
 | [Leetcode-119. Pascals Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | [c++](./leetcode/119.pascals-triangle-ii.cpp), [python](./leetcode/119.pascals-triangle-ii.py) | \- | \- | \- | - |
-| [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | \- | \- | \- | - |
 | [Leetcode-121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [c++](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | \- | \- | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | \- | \- | \- | - |
 | [Leetcode-123. Best Time To Buy And Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) | [c++](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | \- | \- | \- | - |
@@ -294,7 +294,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) | [c++](./leetcode/253.meeting-rooms-ii.cpp), [python](./leetcode/253.meeting-rooms-ii.py) | \- | \- | \- | - |
 | [Leetcode-256. Paint House](https://leetcode.com/problems/paint-house/description/) | [c++](./leetcode/256.paint-house.cpp), [python](./leetcode/256.paint-house.py) | \- | \- | \- | - |
 | [Leetcode-261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/description/) | [c++](./leetcode/261.graph-valid-tree.cpp), [python](./leetcode/261.graph-valid-tree.py) | \- | \- | \- | - |
-| [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | \- | \- | \- | - |
+| [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
 | [Leetcode-265. Paint House II](https://leetcode.com/problems/paint-house-ii/description/) | [c++](./leetcode/265.paint-house-ii.cpp), [python](./leetcode/265.paint-house-ii.py) | \- | \- | \- | - |
 | [Leetcode-269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) | [python](./leetcode/269.alien-dictionary.py) | \- | \- | \- | - |
 | [Leetcode-270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/description/) | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python](./leetcode/270.closest-binary-search-tree-value.py) | \- | \- | \- | - |
@@ -438,5 +438,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 Total sovled: **320**<br/>
 PS: semicolon(;) after each note means related questions are checked<br/>
 <br/>
-Auto updated at: **2024-06-09 23:07:43**<br/>
+Auto updated at: **2024-06-25 11:34:45**<br/>
 

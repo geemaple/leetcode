@@ -1,6 +1,6 @@
 //  Category: Math
-//  Time: -
-//  Space: -
+//  Time: O(k)
+//  Space: O(1)
 //  Ref: -
 //  Note: -
 
