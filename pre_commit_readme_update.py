@@ -316,6 +316,13 @@ if __name__ == "__main__":
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
         ])
 
+        Markdown.title2(f, "链接/Links")
+        Markdown.bullet(f, [
+            Markdown.link('极客时间', 'https://github.com/geektime-geekbang/algorithm-1'),
+            Markdown.link('LeetCode 101', 'https://github.com/changgyhub/leetcode_101'),
+            ""
+        ])
+
         Markdown.title2(f, "书籍/Books")
         Markdown.bullet(f, [
             "《算法技术手册》/ Algorithms in a Nutshell",
@@ -323,8 +330,9 @@ if __name__ == "__main__":
             "《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition",
             "《数学之美》(A chinese version book by Doctor Wujun)",
             "《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)"
+            ""
         ])
-      
+
         Markdown.title2(f, Markdown.link('Category', 'category'))
         Markdown.bullet(f, [Markdown.tag(c) for c in ALL_CATEGORIES])
         Markdown.table_content(f, SUB_DIRECTORIES, ALL_CATEGORIES)
