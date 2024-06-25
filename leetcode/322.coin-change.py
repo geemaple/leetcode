@@ -1,4 +1,4 @@
-#  Category: Breadth-First Search, Array, Dynamic Programming
+#  Tag: Breadth-First Search, Array, Dynamic Programming
 #  Time: O(K * N)
 #  Space: O(N)
 #  Ref: https://youtu.be/EjMjlFjLRiM

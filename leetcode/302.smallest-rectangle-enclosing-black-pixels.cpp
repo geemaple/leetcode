@@ -1,4 +1,4 @@
-//  Category: Binary Search on Answer, Binary Search
+//  Tag: Binary Search on Answer, Binary Search
 //  Time: O(N * logM + M * logN)
 //  Space: O(1)
 //  Ref: -

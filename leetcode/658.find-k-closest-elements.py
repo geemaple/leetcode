@@ -1,4 +1,4 @@
-#  Category: Array, Two Pointers, Binary Search, Sorting, Sliding Window, Heap (Priority Queue)
+#  Tag: Array, Two Pointers, Binary Search, Sorting, Sliding Window, Heap (Priority Queue)
 #  Time: O(Log(N - K))
 #  Space: O(1)
 #  Ref: -

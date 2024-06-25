@@ -1,4 +1,4 @@
-#  Category: Binary Search, Dynamic Programming/DP, Binary Search on Answer, Partition DP
+#  Tag: Binary Search, Dynamic Programming/DP, Binary Search on Answer, Partition DP
 #  Time: O(N*logP)
 #  Space: O(1)
 #  Ref: -

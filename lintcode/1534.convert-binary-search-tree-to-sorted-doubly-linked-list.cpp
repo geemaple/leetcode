@@ -1,4 +1,4 @@
-//  Category: Binary Search Tree, Linked List, Binary Tree, Divide and Conquer
+//  Tag: Binary Search Tree, Linked List, Binary Tree, Divide and Conquer
 //  Time: O(N)
 //  Space: O(Height)
 //  Ref: -

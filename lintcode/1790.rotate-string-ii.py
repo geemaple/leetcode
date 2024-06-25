@@ -1,4 +1,4 @@
-#  Category: String
+#  Tag: String
 #  Time: O(N)
 #  Space: O(N)
 #  Ref: -

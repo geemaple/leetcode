@@ -1,4 +1,4 @@
-#  Category: Array, Dynamic Programming, Binary Search
+#  Tag: Array, Dynamic Programming, Binary Search
 #  Time: O(N*logN)
 #  Space: O(N)
 #  Ref: -

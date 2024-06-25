@@ -1,4 +1,4 @@
-#  Category: Tree, Depth-First Search, String, Backtracking, Binary Tree
+#  Tag: Tree, Depth-First Search, String, Backtracking, Binary Tree
 #  Time: O(N)
 #  Space: O(Height)
 #  Ref: -

@@ -1,4 +1,4 @@
-#  Category: Array
+#  Tag: Array
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -

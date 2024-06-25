@@ -57,7 +57,7 @@ class Problem:
 
     def write(self, file) -> None:
         self.write_comments(file, [
-            f'Category: {", ".join(self.tags)}',
+            f'Tag: {", ".join(self.tags)}',
             f'Time: -',
             f'Space: -',
             f'Ref: -',

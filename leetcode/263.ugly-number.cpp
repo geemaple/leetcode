@@ -1,4 +1,4 @@
-//  Category: Math
+//  Tag: Math
 //  Time: O(k)
 //  Space: O(1)
 //  Ref: -

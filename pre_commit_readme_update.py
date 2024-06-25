@@ -35,10 +35,14 @@ TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 
 CATEGORY_OTHER = 'Other'
+CATEGORY_UNKOWN = 'Unknown'
 
 ALL_CATEGORIES = [TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_TP, TAG_GREEDY, TAG_DP,
                   TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_HASH, TAG_BINARY_SEARCH_TREE, 
-                  TAG_UNION_FIND, TAG_TRIE, TAG_LINKED_LIST, TAG_STR, TAG_ARY] + [CATEGORY_OTHER]
+                  TAG_UNION_FIND, TAG_TRIE, TAG_LINKED_LIST] + [CATEGORY_OTHER, CATEGORY_UNKOWN]
+
+CATEGORY_HIDDEN = {TAG_ARY, TAG_STR}
+
 
 LANGUAGE = {
     'cpp': 'c++',
@@ -118,19 +122,19 @@ class Markdown:
     def table_content(f, directories, categories):
         
         def search_tag(tags):
-            size = len(ALL_CATEGORIES)
-            index = size - 1
-            tags = tags.split(', ')
-            for tag in tags:
-                for i in range(size):
-                    c = ALL_CATEGORIES[i]
-                    if c.strip().lower() == tag.strip().lower():
-                        index = min(i, index)
+            if tags == '-':
+                return {CATEGORY_UNKOWN.lower()}
 
-            return ALL_CATEGORIES[index]
+            categories = set()
+            for tag in tags.split(', '):
+                for c in ALL_CATEGORIES:
+                    if c.strip().lower() == tag.strip().lower():
+                        category = "-".join(tag.lower().split())
+                        categories.add(category)
+
+            return categories if len(categories) > 0 else {CATEGORY_OTHER.lower()}
 
         category_set = collections.defaultdict(list)
-        solution_set = collections.defaultdict(list)
 
         for source in directories:
             files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
@@ -145,35 +149,39 @@ class Markdown:
 
                 with open(path, 'r') as code:
                     text = code.read()
-                    category_match = re.search(r"Category: (.+)", text)
+                    tag_match = re.search(r"Tag: (.+)", text)
                     time_match = re.search(r"Time: (.+)", text)
                     space_match = re.search(r"Space: (.+)", text)
                     link_match = re.search(r"Ref: (.+)", text)
                     note_match = re.search(r"Note: (.+)", text)
                     
-                    category = search_tag(category_match.group(1)) if category_match else CATEGORY_OTHER
+                    tags = tag_match.group(1) if tag_match else '-'
                     time = time_match.group(1) if time_match else '-'
                     space = space_match.group(1) if space_match else '-'
                     ref = link_match.group(1) if link_match else '-'                
                     note = note_match.group(1) if note_match else '-'
 
-                    solution = Solution(source, number, name, extension, category, time, space, note, ref)
-                    category_set[solution.tag].append(solution)
-
-                    lang = LANGUAGE[extension] if extension in LANGUAGE else extension
-                    code = Markdown.link(lang, path)
-                    solution_set[solution.key].append(code)
+                    solution = Solution(path, source, number, name, extension, tags, time, space, note, ref)
+                    for category in search_tag(tags):
+                        category_set[category].append(solution)                                     
+        
         
         for category in categories:
+            
+            category_tag = "-".join(category.lower().split())
             headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
             Markdown.title2(f, category)
-
-            category_tag = "-".join(category.lower().split())
+            print(category, len(category_set[category_tag]))
             if len(category_set[category_tag]) == 0:
                 continue
-
+            
+            solution_set = collections.defaultdict(list)
+            for s in category_set[category_tag]:
+                solution_set[s.key].append(s.local_path)
+            
             Markdown.table_header(f, headers)
             sorted_solutions = sorted(category_set[category_tag], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
+            
             for solution in sorted_solutions:
                 if solution.key not in solution_set:
                     continue
@@ -204,7 +212,8 @@ class Markdown:
         return Markdown.link(content, f'#{category_tag}')
 
 class Solution:
-    def __init__(self, source, number, name, extension, category, time, space, note, ref) -> None:
+    def __init__(self, path, source, number, name, extension, category, time, space, note, ref) -> None:
+        self.path = path
         self.source = source
         self.number = number
         self.name = name
@@ -216,10 +225,6 @@ class Solution:
         self.ref = ref  
         self.roman_rex = re.compile(r"(?:(?<=\W)|^)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", re.IGNORECASE)
 
-    @property
-    def tag(self) -> str:
-        return "-".join(self.category.lower().split())
-    
     @property
     def title(self) -> str:
         problem = self.name.replace('-', ' ')
@@ -238,6 +243,11 @@ class Solution:
             return Markdown.link(self.title, f'https://www.lintcode.com/problem/{self.name}')
         else:
             return f'#'
+        
+    @property
+    def local_path(self) -> str:
+        lang = LANGUAGE[self.extension] if self.extension in LANGUAGE else self.extension
+        return Markdown.link(lang, self.path) 
         
     @property
     def ref_link(self) -> str:
@@ -264,7 +274,7 @@ class Solution:
                 name = file_name[first_dot + 1: last_dot]
                 extension = file_name[last_dot + 1: ]
                 number = file_name[: first_dot]
-                solution = Solution(source, number, name, extension, '-', '-', '-', '-', '-')
+                solution = Solution(file_name, source, number, name, extension, '-', '-', '-', '-', '-')
                 statistic_set[solution.name].append(solution)
 
         for key, val in statistic_set.items():
@@ -301,12 +311,6 @@ if __name__ == "__main__":
             "# 例如(e.g.):",
             "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
-        ])
-
-        Markdown.title2(f, "文章/Articles")
-        Markdown.bullet(f, [
-            Markdown.link('Blog博客', 'http://geemaple.github.io/category/#Algobase'),
-            Markdown.link('Youtube频道', 'https://www.youtube.com/@GeekPal')
         ])
 
         Markdown.title2(f, "书籍/Books")

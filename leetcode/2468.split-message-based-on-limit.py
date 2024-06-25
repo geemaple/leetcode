@@ -1,4 +1,4 @@
-#  Category: String, Binary Search
+#  Tag: String, Binary Search
 #  Time: O(logN + K)
 #  Space: O(1)
 #  Ref: -

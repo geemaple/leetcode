@@ -1,4 +1,4 @@
-#  Category: Array, Dynamic Programming
+#  Tag: Array, Dynamic Programming
 #  Time: O(N^2)
 #  Space: O(N)
 #  Ref: -

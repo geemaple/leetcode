@@ -1,4 +1,4 @@
-//  Category: Tree, Depth-First Search, Binary Tree
+//  Tag: Tree, Depth-First Search, Binary Tree
 //  Time: O(N)
 //  Space: O(Height)
 //  Ref: -

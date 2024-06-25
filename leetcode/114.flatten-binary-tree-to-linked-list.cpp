@@ -1,4 +1,4 @@
-//  Category: Stack, Tree, Depth-First Search, Linked List, Binary Tree
+//  Tag: Stack, Tree, Depth-First Search, Linked List, Binary Tree
 //  Time: O(N)
 //  Space: O(Height)
 //  Ref: -

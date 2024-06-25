@@ -1,4 +1,4 @@
-#  Category: Stack, String
+#  Tag: Stack, String
 #  Time: O(N)
 #  Space: O(N)
 #  Ref: -

@@ -1,4 +1,4 @@
-#  Category: Binary Tree, Divide and Conquer, Binary Search Tree, Depth First Search/DFS
+#  Tag: Binary Tree, Divide and Conquer, Binary Search Tree, Depth First Search/DFS
 #  Time: O(N)
 #  Space: O(Height)
 #  Ref: -

@@ -1,4 +1,4 @@
-//  Category: Array, Binary Search, Matrix
+//  Tag: Array, Binary Search, Matrix
 //  Time: O(N * logM)
 //  Space: O(1)
 //  Ref: -

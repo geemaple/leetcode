@@ -1,4 +1,4 @@
-//  Category: Tree, Breadth-First Search, Binary Tree
+//  Tag: Tree, Breadth-First Search, Binary Tree
 //  Time: O(N)
 //  Space: O(Width)
 //  Ref: -
