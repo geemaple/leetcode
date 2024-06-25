@@ -1,8 +1,8 @@
-#  Category: Array, Binary Search, Dynamic Programming
+#  Category: Array, Dynamic Programming, Binary Search
 #  Time: O(N*logN)
 #  Space: O(N)
 #  Ref: -
-#  Note: -
+#  Note: LIS | std::lower_bound
 
 #  Given an integer array nums, return the length of the longest strictly increasing subsequence.
 #   
