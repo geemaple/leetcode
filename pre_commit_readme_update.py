@@ -15,6 +15,7 @@ import re
 import datetime
 import collections
 
+TAG_MATCH = 'MATCH'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
@@ -22,6 +23,7 @@ TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
 TAG_ARY = 'Array'
 TAG_STR = 'String'
+TAG_STACK = 'Stack'
 TAG_TP = 'Two Pointers'
 TAG_BFS = 'Breadth-First Search'
 TAG_BT = 'Backtracking'
@@ -38,11 +40,11 @@ TAG_SEGMENT_TREE = 'Segment Tree'
 CATEGORY_OTHER = 'Other'
 CATEGORY_UNKOWN = 'Unknown'
 
-ALL_CATEGORIES = [TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_GREEDY, TAG_DP,
-                  TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_HASH, TAG_BINARY_SEARCH_TREE, 
+ALL_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_ARY, TAG_STR, TAG_STACK, TAG_BINARY_SEARCH, TAG_LINKED_LIST, 
+                  TAG_TP, TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_HASH, TAG_BINARY_SEARCH_TREE, 
                   TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE] + [CATEGORY_OTHER, CATEGORY_UNKOWN]
 
-CATEGORY_HIDDEN = {TAG_ARY, TAG_STR}
+DATA_STRUCTURES = {TAG_ARY, TAG_STR, TAG_STACK}
 
 
 LANGUAGE = {
@@ -126,14 +128,21 @@ class Markdown:
             if tags == '-':
                 return {CATEGORY_UNKOWN.lower()}
 
-            categories = set()
+            algorithm_categories = set()
+            data_sturcutre_categories = set()
             for tag in tags.split(', '):
                 for c in ALL_CATEGORIES:
                     if c.strip().lower() == tag.strip().lower():
                         category = "-".join(tag.lower().split())
-                        categories.add(category)
+                        if c in DATA_STRUCTURES:
+                            data_sturcutre_categories.add(category)
+                        else:
+                            algorithm_categories.add(category)
 
-            return categories if len(categories) > 0 else {CATEGORY_OTHER.lower()}
+            if len(algorithm_categories) > 0 or len(data_sturcutre_categories) > 0:
+                return algorithm_categories if len(algorithm_categories) > 0 else data_sturcutre_categories
+            else:
+                return {CATEGORY_OTHER.lower()}
 
         category_set = collections.defaultdict(list)
 

@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **326**<br/>
-Auto updated at: **2024-06-28 12:05:38**<br/>
+Total sovled: **327**<br/>
+Auto updated at: **2024-06-28 13:22:54**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -35,9 +35,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
 
 ## [Category](category)
+- [MATCH](#match)
 - [Bit Manipulation](#bit-manipulation)
 - [Simulation](#simulation)
 - [Design](#design)
+- [Array](#array)
+- [String](#string)
+- [Stack](#stack)
 - [Binary Search](#binary-search)
 - [Linked List](#linked-list)
 - [Two Pointers](#two-pointers)
@@ -55,6 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Other](#other)
 - [Unknown](#unknown)
 
+## MATCH
 ## Bit Manipulation
 ## Simulation
 | Problem | Solution | Time | Space | Note | Ref |
@@ -66,6 +71,23 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
+
+## Array
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-665. Non Decreasing Array](https://leetcode.com/problems/non-decreasing-array/description/) | [c++](./leetcode/665.non-decreasing-array.cpp), [python](./leetcode/665.non-decreasing-array.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-2210. Count Hills And Valleys In An Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/description/) | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
+
+## String
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
+| [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
+
+## Stack
+| Problem | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Binary Search
 | Problem | Solution | Time | Space | Note | Ref |
@@ -191,9 +213,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
-| [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
-| [Leetcode-2210. Count Hills And Valleys In An Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/description/) | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
-| [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Unknown
 | Problem | Solution | Time | Space | Note | Ref |
