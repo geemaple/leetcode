@@ -15,7 +15,7 @@ import re
 import datetime
 import collections
 
-TAG_MATCH = 'MATCH'
+TAG_MATCH = 'MATH'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
@@ -179,9 +179,8 @@ class Markdown:
         for category in categories:
             
             category_tag = "-".join(category.lower().split())
-            headers = ['Problem', 'Solution', 'Time', 'Space', 'Note', 'Ref']
+            headers = [f'Problem({len(category_set[category_tag])})', 'Solution', 'Time', 'Space', 'Note', 'Ref']
             Markdown.title2(f, category)
-            print(category, len(category_set[category_tag]))
             if len(category_set[category_tag]) == 0:
                 continue
             
