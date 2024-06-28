@@ -179,7 +179,6 @@ class Markdown:
         for category in categories:
             
             category_tag = "-".join(category.lower().split())
-            headers = [f'Problem({len(category_set[category_tag])})', 'Solution', 'Time', 'Space', 'Note', 'Ref']
             Markdown.title2(f, category)
             if len(category_set[category_tag]) == 0:
                 continue
@@ -188,7 +187,7 @@ class Markdown:
             for s in category_set[category_tag]:
                 solution_set[s.key].append(s.local_path)
             
-            Markdown.table_header(f, headers)
+            Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Time', 'Space', 'Note', 'Ref'])
             sorted_solutions = sorted(category_set[category_tag], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
             
             for solution in sorted_solutions:
