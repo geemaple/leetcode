@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **327**<br/>
-Auto updated at: **2024-06-29 11:49:47**<br/>
+Auto updated at: **2024-06-29 13:24:04**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -122,15 +122,19 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
 
 ## Linked List
-| Problem(2) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 
 ## Two Pointers
-| Problem(5) | Solution | Time | Space | Note | Ref |
+| Problem(7) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [c++](./leetcode/88.merge-sorted-array.cpp), [python](./leetcode/88.merge-sorted-array.py) | O\(M \+ N\) | O\(1\) | \- | - |
+| [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python](./leetcode/763.partition-labels.py) | O\(N\) | O\(N\) | \- | - |
@@ -194,8 +198,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Hash Table
-| Problem(2) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python](./leetcode/763.partition-labels.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-1224. Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency/description/) | [python](./leetcode/1224.maximum-equal-frequency.py) | \- | \- | \- | - |
 
@@ -219,7 +225,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 ## Unknown
-| Problem(271) | Solution | Time | Space | Note | Ref |
+| Problem(269) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -312,8 +318,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [c++](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | \- | \- | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | \- | \- | \- | - |
 | [Leetcode-138. Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | [python](./leetcode/138.copy-list-with-random-pointer.py) | \- | \- | \- | - |
-| [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | \- | \- | \- | - |
-| [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | \- | \- | \- | - |
 | [Leetcode-143. Reorder List](https://leetcode.com/problems/reorder-list/description/) | [python](./leetcode/143.reorder-list.py) | \- | \- | \- | - |
 | [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [python](./leetcode/148.sort-list.py) | \- | \- | \- | - |
 | [Leetcode-155. Min Stack](https://leetcode.com/problems/min-stack/description/) | [c++](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | \- | \- | \- | - |
