@@ -88,7 +88,6 @@ def parse_leetcode(url, lang, translate):
     response = session.post(graphql, headers=headers, json=question_title)
     data = response.json()
     problem.number = data["data"]["question"]["questionFrontendId"]
-    problem.title = data['data']['question']['title']
     print(problem.number, problem.title)
 
     question_content = {
