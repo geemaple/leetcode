@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **330**<br/>
-Auto updated at: **2024-06-30 18:38:27**<br/>
+Auto updated at: **2024-06-30 18:44:18**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -233,7 +233,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 ## Unknown
-| Problem(268) | Solution | Time | Space | Note | Ref |
+| Problem(267) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -394,7 +394,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/) | [python](./leetcode/328.odd-even-linked-list.py) | \- | \- | \- | - |
 | [Leetcode-336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/) | [python](./leetcode/336.palindrome-pairs.py) | \- | \- | \- | - |
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [c++](./leetcode/338.counting-bits.cpp), [python](./leetcode/338.counting-bits.py) | \- | \- | \- | - |
-| [Leetcode-340. Longest Substring With At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/) | [c++](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.cpp), [python](./leetcode/340.longest-substring-with-at-most-k-distinct-characters.py) | \- | \- | \- | - |
 | [Leetcode-341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) | [python](./leetcode/341.flatten-nested-list-iterator.py) | \- | \- | \- | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py) | \- | \- | \- | - |
 | [Leetcode-344. Reverse String](https://leetcode.com/problems/reverse-string/description/) | [c++](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | \- | \- | \- | - |
