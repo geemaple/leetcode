@@ -2,7 +2,7 @@
 //  Time: O(N)
 //  Space: O(K)
 //  Ref: -
-//  Note: -
+//  Note: Leetcode-340
 
 //  Given a string *S*, find the length of the longest substring *T* that contains at most k distinct characters.
 //  
