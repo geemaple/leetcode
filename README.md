@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **330**<br/>
-Auto updated at: **2024-06-30 18:44:18**<br/>
+Total sovled: **328**<br/>
+Auto updated at: **2024-07-01 12:10:57**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,8 +60,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Unknown](#unknown)
 
 ## MATH
-| Problem(3) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
@@ -96,8 +97,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Binary Search
-| Problem(24) | Solution | Time | Space | Note | Ref |
+| Problem(25) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
@@ -160,12 +162,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(7) | Solution | Time | Space | Note | Ref |
+| Problem(6) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
-| [Leetcode-1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/description/) | [c++](./leetcode/1575.count-all-possible-routes.cpp), [python](./leetcode/1575.count-all-possible-routes.py) | \- | \- | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
@@ -205,12 +206,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Hash Table
-| Problem(5) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python](./leetcode/763.partition-labels.py) | O\(N\) | O\(N\) | \- | - |
-| [Leetcode-1224. Maximum Equal Frequency](https://leetcode.com/problems/maximum-equal-frequency/description/) | [python](./leetcode/1224.maximum-equal-frequency.py) | \- | \- | \- | - |
 | [Leetcode-76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | [c++](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | O\(M\) | O\(N\) | Hash \+ TP | - |
 
 ## Binary Search Tree
@@ -233,7 +233,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 ## Unknown
-| Problem(267) | Solution | Time | Space | Note | Ref |
+| Problem(266) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -294,7 +294,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-66. Plus One](https://leetcode.com/problems/plus-one/description/) | [c++](./leetcode/66.plus-one.cpp), [python](./leetcode/66.plus-one.py) | \- | \- | \- | - |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | \- | \- | \- | - |
 | [Leetcode-68. Text Justification](https://leetcode.com/problems/text-justification/description/) | [python](./leetcode/68.text-justification.py) | \- | \- | \- | - |
-| [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | \- | \- | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | \- | \- | \- | - |
 | [Leetcode-72. Edit Distance](https://leetcode.com/problems/edit-distance/description/) | [c++](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | \- | \- | \- | - |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [c++](./leetcode/75.sort-colors.cpp), [python](./leetcode/75.sort-colors.py) | \- | \- | \- | - |
