@@ -25,6 +25,8 @@ TAG_ARY = 'Array'
 TAG_STR = 'String'
 TAG_STACK = 'Stack'
 TAG_TP = 'Two Pointers'
+TAG_SW = 'Sliding Window'
+TAG_SORT = 'Sorting'
 TAG_BFS = 'Breadth-First Search'
 TAG_BT = 'Backtracking'
 TAG_DFS = 'Depth-First Search'
@@ -32,20 +34,32 @@ TAG_DC = 'Divide and Conquer'
 TAG_BINARY_SEARCH = 'Binary Search'
 TAG_BINARY_SEARCH_TREE = 'Binary Search Tree'
 TAG_LINKED_LIST = 'Linked List'
+TAG_PQ = 'Priority Queue'
 TAG_HASH = 'Hash Table'
 TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 TAG_SEGMENT_TREE = 'Segment Tree'
+TAG_TREE = 'Tree'
 
 CATEGORY_OTHER = 'Other'
 CATEGORY_UNKOWN = 'Unknown'
 
-ALL_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_ARY, TAG_STR, TAG_STACK, TAG_BINARY_SEARCH, TAG_LINKED_LIST, 
-                  TAG_TP, TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_HASH, TAG_BINARY_SEARCH_TREE, 
-                  TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE] + [CATEGORY_OTHER, CATEGORY_UNKOWN]
+SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_SORT, TAG_GREEDY, 
+                  TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
-DATA_STRUCTURES = {TAG_ARY, TAG_STR, TAG_STACK}
+FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_STACK, TAG_TREE, TAG_HASH]
+ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER, CATEGORY_UNKOWN]
 
+TAG_IGNORE = r'-|Game Theory'
+
+TAG_REGEX = {
+    TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
+    TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
+    TAG_DP: r'Dynamic Programming|DP',
+    TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
+    TAG_ARY: r'Array|Matrix',
+    TAG_SORT: r'^Sort$|Sorting'
+}
 
 LANGUAGE = {
     'cpp': 'c++',
@@ -124,25 +138,27 @@ class Markdown:
     @staticmethod 
     def table_content(f, directories, categories):
         
-        def search_tag(tags):
-            if tags == '-':
-                return {CATEGORY_UNKOWN.lower()}
+        def search_tag(solution):
+            tags = solution.tags
+            match_all = set()
 
-            algorithm_categories = set()
-            data_sturcutre_categories = set()
             for tag in tags.split(', '):
-                for c in ALL_CATEGORIES:
-                    if c.strip().lower() == tag.strip().lower():
-                        category = "-".join(tag.lower().split())
-                        if c in DATA_STRUCTURES:
-                            data_sturcutre_categories.add(category)
-                        else:
-                            algorithm_categories.add(category)
+                match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, x), tag, re.IGNORECASE)])
+                if len(match_category) > 0:
+                    match_all.update(match_category)
+                elif not re.search(TAG_IGNORE, tag):
+                    print(solution)
 
-            if len(algorithm_categories) > 0 or len(data_sturcutre_categories) > 0:
-                return algorithm_categories if len(algorithm_categories) > 0 else data_sturcutre_categories
-            else:
-                return {CATEGORY_OTHER.lower()}
+            fold_category = set([x for x in match_all if x in FOLD_STRUCTURES])
+            show_category = match_all - fold_category
+
+            if len(show_category) > 0:
+                return set(show_category)
+
+            if len(fold_category) > 0:
+                return set(fold_category)
+
+            return {CATEGORY_OTHER}
 
         category_set = collections.defaultdict(list)
 
@@ -172,23 +188,22 @@ class Markdown:
                     note = note_match.group(1) if note_match else '-'
 
                     solution = Solution(path, source, number, name, extension, tags, time, space, note, ref)
-                    for category in search_tag(tags):
+                    for category in search_tag(solution):
                         category_set[category].append(solution)                                     
         
         
         for category in categories:
-            
-            category_tag = "-".join(category.lower().split())
+
             Markdown.title2(f, category)
-            if len(category_set[category_tag]) == 0:
+            if len(category_set[category]) == 0:
                 continue
             
             solution_set = collections.defaultdict(list)
-            for s in category_set[category_tag]:
+            for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
             
             Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Time', 'Space', 'Note', 'Ref'])
-            sorted_solutions = sorted(category_set[category_tag], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
+            sorted_solutions = sorted(category_set[category], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
             
             for solution in sorted_solutions:
                 if solution.key not in solution_set:
@@ -220,13 +235,13 @@ class Markdown:
         return Markdown.link(content, f'#{category_tag}')
 
 class Solution:
-    def __init__(self, path, source, number, name, extension, category, time, space, note, ref) -> None:
+    def __init__(self, path, source, number, name, extension, tags, time, space, note, ref) -> None:
         self.path = path
         self.source = source
         self.number = number
         self.name = name
         self.extension = extension
-        self.category = category
+        self.tags = tags
         self.time = Markdown.escape(time)
         self.space = Markdown.escape(space)
         self.note = Markdown.escape(note)
@@ -265,10 +280,10 @@ class Solution:
             return f'-'
 
     def __repr__(self) -> str:
-        return f'{self.source}-{self.number}({self.extension})'
+        return f'[{self.tags}] - {self.title}.{self.extension}'
 
     def __str__(self) -> str:
-        return f'{self.source}-{self.number}({self.extension})'
+        return self.__repr__()
 
     @staticmethod
     def statistic(directories) -> int:
@@ -341,5 +356,5 @@ if __name__ == "__main__":
         ])
 
         Markdown.title2(f, Markdown.link('Category', 'category'))
-        Markdown.bullet(f, [Markdown.tag(c) for c in ALL_CATEGORIES])
+        Markdown.bullet(f, [Markdown.tag(c) for c in SHOW_CATEGORIES])
         Markdown.table_content(f, SUB_DIRECTORIES, ALL_CATEGORIES)
