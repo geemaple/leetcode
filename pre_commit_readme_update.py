@@ -15,7 +15,7 @@ import re
 import datetime
 import collections
 
-TAG_MATCH = 'MATH'
+TAG_MATCH = 'Math'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
@@ -44,13 +44,13 @@ TAG_TREE = 'Tree'
 CATEGORY_OTHER = 'Other'
 CATEGORY_UNKOWN = 'Unknown'
 
-SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_SORT, TAG_GREEDY, 
+SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_GREEDY, 
                   TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
-FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_STACK, TAG_TREE, TAG_HASH]
+FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER, CATEGORY_UNKOWN]
 
-TAG_IGNORE = r'-|Game Theory'
+TAG_IGNORE = r'-|Iterator|Interactive'
 
 TAG_REGEX = {
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
@@ -194,10 +194,10 @@ class Markdown:
         
         for category in categories:
 
-            Markdown.title2(f, category)
             if len(category_set[category]) == 0:
                 continue
             
+            Markdown.title2(f, category)
             solution_set = collections.defaultdict(list)
             for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
