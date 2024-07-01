@@ -33,12 +33,11 @@ class Solution:
         start = 0
         end = len(nums) - 1
         while start < end:
-            mid = start + (end - start) // 2
-
             if nums[start] == nums[end]:
                 end -= 1
                 continue
-
+            
+            mid = start + (end - start) // 2
             if nums[mid] >= nums[start]:
                 if target >= nums[start] and target <= nums[mid]:
                     end = mid
