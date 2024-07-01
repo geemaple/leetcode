@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **328**<br/>
-Auto updated at: **2024-07-01 15:31:31**<br/>
+Total sovled: **329**<br/>
+Auto updated at: **2024-07-01 16:23:19**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -97,10 +97,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Binary Search
-| Problem(25) | Solution | Time | Space | Note | Ref |
+| Problem(26) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-540. Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) | [c++](./leetcode/540.single-element-in-a-sorted-array.cpp), [python](./leetcode/540.single-element-in-a-sorted-array.py) | O\(logN\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
 | [Leetcode-2468. Split Message Based On Limit](https://leetcode.com/problems/split-message-based-on-limit/description/) | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python](./leetcode/2468.split-message-based-on-limit.py) | O\(logN \+ K\) | O\(1\) | Answer \| Bruteforce | - |
