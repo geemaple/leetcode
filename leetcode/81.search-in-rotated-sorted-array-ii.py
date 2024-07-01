@@ -35,15 +35,12 @@ class Solution:
         while start < end:
             mid = start + (end - start) // 2
 
-            if nums[mid] == target:
-                return True
-
             if nums[start] == nums[end]:
                 end -= 1
                 continue
 
             if nums[mid] >= nums[start]:
-                if target >= nums[start] and target < nums[mid]:
+                if target >= nums[start] and target <= nums[mid]:
                     end = mid
                 else:
                     start = mid + 1

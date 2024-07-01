@@ -37,15 +37,10 @@ public:
 
         while (start < end) {
             int mid = start + (end - start) / 2;
-            if (nums[mid] == target) {
-                return true;
-            }
-
             if (nums[start] == nums[end]) {
                 end --;
                 continue;
             }
-
 
             if (nums[mid] >= nums[start]) {
                 if (target >= nums[start] && target <= nums[mid]) {
