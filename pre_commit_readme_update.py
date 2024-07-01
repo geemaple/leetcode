@@ -42,13 +42,12 @@ TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_TREE = 'Tree'
 
 CATEGORY_OTHER = 'Other'
-CATEGORY_UNKOWN = 'Unknown'
 
 SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_GREEDY, 
                   TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
 FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH]
-ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER, CATEGORY_UNKOWN]
+ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 
 TAG_IGNORE = r'-|Iterator|Interactive'
 
@@ -203,7 +202,7 @@ class Markdown:
                 solution_set[s.key].append(s.local_path)
             
             Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Time', 'Space', 'Note', 'Ref'])
-            sorted_solutions = sorted(category_set[category], key=lambda s: (re.findall(r"[a-zA-Z':\-\_]++", s.note)[0], s.source, int(s.number)))
+            sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, int(s.number)))
             
             for solution in sorted_solutions:
                 if solution.key not in solution_set:

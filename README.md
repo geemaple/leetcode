@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **329**<br/>
-Auto updated at: **2024-07-01 18:34:31**<br/>
+Total sovled: **330**<br/>
+Auto updated at: **2024-07-02 00:36:17**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -61,8 +61,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
-| [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+| [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
 
 ## Simulation
 | Problem(1) | Solution | Time | Space | Note | Ref |
@@ -76,49 +76,50 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Binary Search
-| Problem(33) | Solution | Time | Space | Note | Ref |
+| Problem(34) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
-| [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
-| [Leetcode-540. Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) | [c++](./leetcode/540.single-element-in-a-sorted-array.cpp), [python](./leetcode/540.single-element-in-a-sorted-array.py) | O\(logN\) | O\(1\) | \- | - |
-| [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
-| [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
-| [Leetcode-2468. Split Message Based On Limit](https://leetcode.com/problems/split-message-based-on-limit/description/) | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python](./leetcode/2468.split-message-based-on-limit.py) | O\(logN \+ K\) | O\(1\) | Answer \| Bruteforce | - |
-| [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
-| [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O\(N\) | O\(Height\) | BST | - |
-| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
-| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | O\(Height\) | O\(Height\) | Delete | - |
-| [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Graph \| Leetcode\-302 | - |
-| [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
-| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
-| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | O\(Height\) | O\(Height\) | Insert | - |
-| [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
-| [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix; | - |
-| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
-| [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | [Video](https://youtu.be/bexO0N9eP1I) |
-| [Leetcode-852. Peak Index In A Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
-| [Leetcode-1901. Find A Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/description/) | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python](./leetcode/1901.find-a-peak-element-ii.py) | O\(N \* logM\) | O\(1\) | Mountain; | - |
-| [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
-| [Leetcode-302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/) | [c++](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Range | - |
-| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
+| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | \- | \- | \- | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | - |
-| [Leetcode-81. Search In Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/81.search-in-rotated-sorted-array-ii.cpp), [python](./leetcode/81.search-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated; | - |
-| [Leetcode-153. Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | [Video](https://youtu.be/GsecRZC5to4) |
-| [Leetcode-154. Find Minimum In Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated; | - |
-| [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O\(logN\) | O\(1\) | Standard | - |
-| [Leetcode-704. Binary Search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard; | [Video](https://youtu.be/oxWpJtUGG_0) |
-| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | O\(Height\) | O\(1\) | Successor \| Leetcode\-285 | - |
 | [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound; | [Video](https://youtu.be/y6OT8heV-30) |
 | [Leetcode-35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
+| [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
+| [Leetcode-74. Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | [c++](./leetcode/74.search-a-2d-matrix.cpp), [python](./leetcode/74.search-a-2d-matrix.py) | O\(log\(m \* n\)\) | O\(1\) | Matrix; | - |
+| [Leetcode-81. Search In Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/81.search-in-rotated-sorted-array-ii.cpp), [python](./leetcode/81.search-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated; | - |
+| [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O\(N\) | O\(Height\) | BST | - |
+| [Leetcode-153. Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | [c++](./leetcode/153.find-minimum-in-rotated-sorted-array.cpp), [python](./leetcode/153.find-minimum-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | [Video](https://youtu.be/GsecRZC5to4) |
+| [Leetcode-154. Find Minimum In Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/) | [c++](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.cpp), [python](./leetcode/154.find-minimum-in-rotated-sorted-array-ii.py) | O\(logN\) ~ O\(N\) | O\(1\) | Rotated; | - |
+| [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | [Video](https://youtu.be/bexO0N9eP1I) |
+| [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
+| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
+| [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
+| [Leetcode-302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/) | [c++](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Range | - |
+| [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O\(logN\) | O\(1\) | Standard | - |
+| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | O\(Height\) | O\(Height\) | Delete | - |
+| [Leetcode-540. Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) | [c++](./leetcode/540.single-element-in-a-sorted-array.cpp), [python](./leetcode/540.single-element-in-a-sorted-array.py) | O\(logN\) | O\(1\) | \- | - |
+| [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
+| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | O\(Height\) | O\(Height\) | Insert | - |
+| [Leetcode-704. Binary Search](https://leetcode.com/problems/binary-search/description/) | [c++](./leetcode/704.binary-search.cpp), [python](./leetcode/704.binary-search.py) | O\(logN\) | O\(1\) | Standard; | [Video](https://youtu.be/oxWpJtUGG_0) |
+| [Leetcode-852. Peak Index In A Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python](./leetcode/852.peak-index-in-a-mountain-array.py) | O\(logN\) | O\(1\) | Mountain | - |
+| [Leetcode-1901. Find A Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii/description/) | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python](./leetcode/1901.find-a-peak-element-ii.py) | O\(N \* logM\) | O\(1\) | Mountain; | - |
+| [Leetcode-2468. Split Message Based On Limit](https://leetcode.com/problems/split-message-based-on-limit/description/) | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python](./leetcode/2468.split-message-based-on-limit.py) | O\(logN \+ K\) | O\(1\) | Answer \| Bruteforce | - |
 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
+| [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
+| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
+| [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
+| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | O\(Height\) | O\(1\) | Successor \| Leetcode\-285 | - |
+| [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Graph \| Leetcode\-302 | - |
+| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
 
 ## Linked List
 | Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
-| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 
 ## Two Pointers
 | Problem(11) | Solution | Time | Space | Note | Ref |
@@ -130,10 +131,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-524. Longest Word In Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | O\(N\*logN \+ M \* N\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python](./leetcode/633.sum-of-square-numbers.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 | [Leetcode-680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/) | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python](./leetcode/680.valid-palindrome-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python](./leetcode/763.partition-labels.py) | O\(N\) | O\(N\) | \- | - |
 | [Lintcode-386. Longest Substring With At Most K Distinct Characters](https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters) | [c++](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.cpp), [python](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.py) | O\(N\) | O\(K\) | Leetcode\-340 | - |
-| [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 
 ## Sliding Window
 | Problem(2) | Solution | Time | Space | Note | Ref |
@@ -144,12 +145,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Stack
 | Problem(6) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(Height\) | InOrder | - |
-| [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
-| [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(Height\) | PostOrder | - |
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
 | [Leetcode-144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O\(N\) | O\(Height\) | PreOrder | - |
+| [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(Height\) | PostOrder | - |
+| [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
+| [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Sorting
 | Problem(8) | Solution | Time | Space | Note | Ref |
@@ -181,11 +182,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
+| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
+| [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
-| [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
-| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
-| [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
 
 ## Backtracking
 | Problem(1) | Solution | Time | Space | Note | Ref |
@@ -193,34 +194,35 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
 
 ## Divide and Conquer
-| Problem(3) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
-| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
+| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | \- | \- | \- | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
+| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
 
 ## Breadth-First Search
 | Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python](./leetcode/102.binary-tree-level-order-traversal.py) | O\(N\) | O\(Width\) | Level | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
+| [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 
 ## Depth-First Search
 | Problem(11) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
-| [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O\(N\) | O\(Height\) | BST | - |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(Height\) | InOrder | - |
-| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
-| [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(Height\) | PostOrder | - |
-| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
-| [Leetcode-144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O\(N\) | O\(Height\) | PreOrder | - |
+| [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O\(N\) | O\(Height\) | BST | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 | [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python](./leetcode/110.balanced-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
+| [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | O\(N\) | O\(Height\) | PreOrder | - |
+| [Leetcode-144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python](./leetcode/144.binary-tree-preorder-traversal.py) | O\(N\) | O\(Height\) | PreOrder | - |
+| [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python](./leetcode/145.binary-tree-postorder-traversal.py) | O\(N\) | O\(Height\) | PostOrder | - |
 | [Leetcode-236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
+| [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
+| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
 
 ## Priority Queue
 | Problem(1) | Solution | Time | Space | Note | Ref |
@@ -249,7 +251,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
 | [Leetcode-3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python](./leetcode/3.longest-substring-without-repeating-characters.py) | \- | \- | \- | - |
-| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | \- | \- | \- | - |
+| [Leetcode-4. Median Of Two Sorted Arrays Bak](https://leetcode.com/problems/median-of-two-sorted-arrays-bak/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays-bak.cpp), [python](./leetcode/4.median-of-two-sorted-arrays-bak.py) | \- | \- | \- | - |
 | [Leetcode-5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | [python](./leetcode/5.longest-palindromic-substring.py) | \- | \- | \- | - |
 | [Leetcode-6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [python](./leetcode/6.zigzag-conversion.py) | \- | \- | \- | - |
 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | \- | \- | \- | - |
@@ -279,6 +281,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-31. Next Permutation](https://leetcode.com/problems/next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py) | \- | \- | \- | - |
 | [Leetcode-36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | \- | \- | \- | - |
 | [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | \- | \- | \- | - |
+| [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | \- | \- | Each term of the sequence of integers will be represented as a | - |
 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | \- | \- | \- | - |
 | [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | \- | \- | \- | - |
 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | \- | \- | \- | - |
@@ -366,6 +369,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/) | [c++](./leetcode/219.contains-duplicate-ii.cpp) | \- | \- | \- | - |
 | [Leetcode-221. Maximal Square](https://leetcode.com/problems/maximal-square/description/) | [c++](./leetcode/221.maximal-square.cpp), [python](./leetcode/221.maximal-square.py) | \- | \- | \- | - |
 | [Leetcode-228. Summary Ranges](https://leetcode.com/problems/summary-ranges/description/) | [python](./leetcode/228.summary-ranges.py) | \- | \- | \- | - |
+| [Leetcode-229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/) | [c++](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | \- | \- | The algorithm should run in linear time and in O\(1\) space\. | - |
 | [Leetcode-231. Power Of Two](https://leetcode.com/problems/power-of-two/description/) | [python](./leetcode/231.power-of-two.py) | \- | \- | \- | - |
 | [Leetcode-234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | [c++](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | \- | \- | \- | - |
 | [Leetcode-237. Delete Node In A Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [python](./leetcode/237.delete-node-in-a-linked-list.py) | \- | \- | \- | - |
@@ -510,6 +514,4 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-618. Search Graph Nodes](https://www.lintcode.com/problem/search-graph-nodes) | [c++](./lintcode/618.search-graph-nodes.cpp), [python](./lintcode/618.search-graph-nodes.py) | \- | \- | \- | - |
 | [Lintcode-629. Minimum Spanning Tree](https://www.lintcode.com/problem/minimum-spanning-tree) | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python](./lintcode/629.minimum-spanning-tree.py) | \- | \- | \- | - |
 | [Lintcode-652. Factorization](https://www.lintcode.com/problem/factorization) | [c++](./lintcode/652.factorization.cpp), [python](./lintcode/652.factorization.py) | \- | \- | \- | - |
-| [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | \- | \- | Each term of the sequence of integers will be represented as a | - |
-| [Leetcode-229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/) | [c++](./leetcode/229.majority-element-ii.cpp), [python](./leetcode/229.majority-element-ii.py) | \- | \- | The algorithm should run in linear time and in O\(1\) space\. | - |
 
