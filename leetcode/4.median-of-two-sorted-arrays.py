@@ -31,8 +31,33 @@
 #  
 #  
 
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        k = len(nums1) + len(nums2)
+        if (k % 2 == 1):
+            return self.find_kth_num(nums1, 0, nums2, 0, (k + 1) // 2)
+        else:
+            return (self.find_kth_num(nums1, 0, nums2, 0, k // 2) + self.find_kth_num(nums1, 0, nums2, 0, k // 2 + 1)) / 2.0
+        
+        
+    def find_kth_num(self, nums1, i, nums2, j, k):
+        if i == len(nums1):
+            return nums2[j + k - 1]
+        
+        if j == len(nums2):
+            return nums1[i + k - 1]
+        
+        if k == 1:
+            return min(nums1[i], nums2[j])
+        
+        left = nums1[i + k // 2 - 1] if i + k // 2 - 1 < len(nums1) else float('inf')
+        right = nums2[j + k // 2 - 1] if j + k // 2 - 1 < len(nums2) else float('inf')
+        
+        if left <= right:
+            return self.find_kth_num(nums1, i + k // 2, nums2, j, k - k // 2)
+        else:
+            return self.find_kth_num(nums1, i, nums2, j + k // 2, k - k // 2)
 
-# O(N)
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         k = len(nums1) + len(nums2)

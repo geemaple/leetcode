@@ -29,7 +29,44 @@
 //  1 <= m + n <= 2000
 //  -106 <= nums1[i], nums2[i] <= 106
 //  
-//  
+// 
+
+class Solution {
+private:
+    int kthNumber(vector<int>& nums1, int i, vector<int>& nums2, int j, int kth){
+        
+        if (i == nums1.size()) {
+            return nums2[j + kth - 1];
+        }
+        
+        if (j == nums2.size()) {
+            return nums1[i + kth - 1];
+        }
+        
+        if (kth == 1) {
+            return min(nums1[i], nums2[j]);
+        }
+        
+        int left = (i + kth / 2 - 1 < nums1.size()) ? nums1[i + kth / 2 - 1] : INT_MAX;
+        int right = (j + kth / 2 - 1 < nums2.size()) ? nums2[j + kth / 2 - 1] : INT_MAX;
+        
+        if (left < right){
+            return kthNumber(nums1, i + kth / 2, nums2, j, kth - kth / 2);
+        }else{
+            return kthNumber(nums1, i, nums2, j + kth / 2, kth - kth / 2);
+        }
+    }
+    
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        int k = nums1.size() + nums2.size();
+        if (k % 2 == 0){
+            return double(kthNumber(nums1, 0, nums2, 0, k / 2) + kthNumber(nums1, 0, nums2, 0, k / 2 + 1)) / 2.0;
+        }else{
+            return double(kthNumber(nums1, 0, nums2, 0, k / 2 + 1));
+        }
+    }
+};
 
 class Solution {
 public:
