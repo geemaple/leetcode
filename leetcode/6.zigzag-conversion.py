@@ -90,7 +90,6 @@ class Solution2:
             
             while(step < len(s)):
                 res += s[step]
-                print(res, step)
                 if base - last > 0:
                     step += base - last
                     last = base - last
