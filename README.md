@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **330**<br/>
-Auto updated at: **2024-07-02 13:59:03**<br/>
+Total sovled: **329**<br/>
+Auto updated at: **2024-07-02 15:38:13**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -78,7 +78,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Binary Search
 | Problem(34) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | \- | \- | \- | - |
+| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | - |
 | [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | O\(logN\) | O\(1\) | std::lower\_bound; | [Video](https://youtu.be/y6OT8heV-30) |
 | [Leetcode-35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | [c++](./leetcode/35.search-insert-position.cpp), [python](./leetcode/35.search-insert-position.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
@@ -196,7 +196,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Divide and Conquer
 | Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | \- | \- | \- | - |
+| [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
@@ -246,12 +246,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(266) | Solution | Time | Space | Note | Ref |
+| Problem(265) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
 | [Leetcode-3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python](./leetcode/3.longest-substring-without-repeating-characters.py) | \- | \- | \- | - |
-| [Leetcode-4. Median Of Two Sorted Arrays Bak](https://leetcode.com/problems/median-of-two-sorted-arrays-bak/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays-bak.cpp), [python](./leetcode/4.median-of-two-sorted-arrays-bak.py) | \- | \- | \- | - |
 | [Leetcode-5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | [python](./leetcode/5.longest-palindromic-substring.py) | \- | \- | \- | - |
 | [Leetcode-6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [python](./leetcode/6.zigzag-conversion.py) | \- | \- | \- | - |
 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | \- | \- | \- | - |

@@ -1,6 +1,6 @@
 #  Tag: Array, Binary Search, Divide and Conquer
-#  Time: -
-#  Space: -
+#  Time: O(log(min(M, N)))
+#  Space: O(1)
 #  Ref: -
 #  Note: -
 
@@ -30,6 +30,39 @@
 #  -106 <= nums1[i], nums2[i] <= 106
 #  
 #  
+
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        if len(nums1) > len(nums2):
+            return self.findMedianSortedArrays(nums2, nums1)
+            
+        m = len(nums1)
+        n = len(nums2)
+        
+        start = 0
+        end = m + 1
+        left1 = left2 = right1 = right2 = 0
+        
+        while (start < end):
+            mid = start + (end - start) // 2
+            left1 = nums1[mid - 1] if mid - 1 >= 0 else float('-inf')
+            right1 = nums1[mid] if mid < m else float('inf')
+            
+            rest = (m + n) // 2 - mid
+            left2 = nums2[rest - 1] if rest - 1 >= 0 else float('-inf')
+            right2 = nums2[rest] if rest < n else float('inf')
+
+            if left1 <= right2 and left2 <= right1:
+                break
+            elif left1 > right2:
+                end = mid
+            else:
+                start = mid + 1
+                
+        if (m + n) % 2 == 1:
+            return min(right1, right2)
+        else:
+            return (max(left1, left2) + min(right1, right2)) / 2.0
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:

@@ -1,6 +1,6 @@
 //  Tag: Array, Binary Search, Divide and Conquer
-//  Time: -
-//  Space: -
+//  Time: O(log(min(M, N)))
+//  Space: O(1)
 //  Ref: -
 //  Note: -
 
@@ -30,6 +30,47 @@
 //  -106 <= nums1[i], nums2[i] <= 106
 //  
 // 
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        
+        if (nums1.size() > nums2.size()) {
+            return findMedianSortedArrays(nums2, nums1);
+        }
+            
+        int m = nums1.size();
+        int n = nums2.size();
+        
+        int start = 0;
+        int end = m + 1;
+        int left1, left2, right1, right2;
+
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            left1 = mid - 1 >= 0 ? nums1[mid - 1] : INT_MIN;
+            right1 = mid < m ? nums1[mid]: INT_MAX;
+
+            int rest = (m + n) / 2 - mid;
+            left2 = rest - 1 >= 0 ? nums2[rest - 1] : INT_MIN;
+            right2 = rest < n ? nums2[rest] : INT_MAX;
+
+            if (left1 <= right2 && left2 <= right1) {
+                break;
+            } else if (left1 > right2) {
+                end = mid;
+            } else {
+                start = mid + 1;
+            }
+        } 
+
+        if ((m + n) % 2 == 1) {
+            return min(right1, right2);
+        } else {
+            return (max(left1, left2) + min(right1, right2)) / 2.0;
+        }
+    }
+};
 
 class Solution {
 private:
