@@ -8,6 +8,17 @@
     "random": "cpp",
     "limits": "cpp",
     "ios": "cpp",
-    "queue": "cpp"
+    "queue": "cpp",
+    "__bit_reference": "cpp",
+    "__node_handle": "cpp",
+    "array": "cpp",
+    "istream": "cpp",
+    "optional": "cpp",
+    "ostream": "cpp",
+    "sstream": "cpp",
+    "streambuf": "cpp",
+    "string_view": "cpp",
+    "tuple": "cpp",
+    "variant": "cpp"
   }
 }
