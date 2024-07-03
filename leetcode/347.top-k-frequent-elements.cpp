@@ -1,5 +1,5 @@
 //  Tag: Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect
-//  Time: O(N), O(Clog(C-K))
+//  Time: O(N), O(C*logK)
 //  Space: O(N)
 //  Ref: -
 //  Note: -
