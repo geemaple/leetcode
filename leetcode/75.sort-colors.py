@@ -1,43 +1,66 @@
-# counting sort
+#  Tag: Array, Two Pointers, Sorting
+#  Time: O(N)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
 
-number_of_colors = 3
-class Solution(object):
-    def sortColors(self, nums):
-        counting = [0 for i in range(number_of_colors)]
+#  Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+#  We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+#  You must solve this problem without using the library's sort function.
+#   
+#  Example 1:
+#  
+#  Input: nums = [2,0,2,1,1,0]
+#  Output: [0,0,1,1,2,2]
+#  
+#  Example 2:
+#  
+#  Input: nums = [2,0,1]
+#  Output: [0,1,2]
+#  
+#   
+#  Constraints:
+#  
+#  n == nums.length
+#  1 <= n <= 300
+#  nums[i] is either 0, 1, or 2.
+#  
+#   
+#  Follow up: Could you come up with a one-pass algorithm using only constant extra space?
+#  
 
-        for n in nums:
-            counting[n] += 1
-
-        for i in range(1, number_of_colors):
-            counting[i] += counting[i - 1]
-
-        tmp = [0 for i in range(len(nums))]
-        for i in range(len(nums)):
-            count = counting[nums[i]]
-            tmp[count - 1] = nums[i]
-            counting[nums[i]] -= 1
-
-        for i in range(len(nums)):
-            nums[i] = tmp[i]
-        
-
-# two loop
-class Solution2(object):
-    def sortColors(self, nums):
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
         """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
+        Do not return anything, modify nums in-place instead.
         """
-        k = 0
+        r = 0
+        b = len(nums) - 1
+        i = 0
+        while i <= b:
+            if nums[i] == 0:
+                nums[r], nums[i] = nums[i], nums[r]
+                r += 1
+                i += 1
+            elif nums[i] == 2:
+                nums[b], nums[i] = nums[i], nums[b]
+                b -= 1
+            else:
+                i += 1
+
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        r = 0
         for i in range(len(nums)):
             if nums[i] == 0:
-                nums[i], nums[k] = nums[k], nums[i]
-                k += 1
-                
-        for i in range(k, len(nums)):
+                nums[r], nums[i] = nums[i], nums[r]
+                r += 1
+
+        w = r
+        for i in range(r, len(nums)):
             if nums[i] == 1:
-                nums[i], nums[k] = nums[k], nums[i]
-                k += 1           
-            if nums[i] < 2:
-                nums[i], nums[start] = nums[start], nums[i]
-                start += 1        
+                nums[w], nums[i] = nums[i], nums[w]
+                w += 1
