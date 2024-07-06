@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **334**<br/>
-Auto updated at: **2024-07-06 12:09:47**<br/>
+Auto updated at: **2024-07-06 16:18:07**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -194,9 +194,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 
 ## Backtracking
-| Problem(4) | Solution | Time | Space | Note | Ref |
+| Problem(5) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-46. Permutations](https://leetcode.com/problems/permutations/description/) | [c++](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O\(N\!\) | O\(N\) | \- | - |
+| [Leetcode-51. N Queens](https://leetcode.com/problems/n-queens/description/) | [c++](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | O\(N\!\) | O\(N\) | \- | - |
 | [Leetcode-77. Combinations](https://leetcode.com/problems/combinations/description/) | [c++](./leetcode/77.combinations.cpp), [python](./leetcode/77.combinations.py) | O\(k \* C\(n, k\)\)  | O\(K\) | \- | - |
 | [Leetcode-79. Word Search](https://leetcode.com/problems/word-search/description/) | [c++](./leetcode/79.word-search.cpp), [python](./leetcode/79.word-search.py) | O\(MN\*4^L\) | O\(MN\) | \- | - |
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
@@ -271,7 +272,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(260) | Solution | Time | Space | Note | Ref |
+| Problem(259) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -317,7 +318,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-48. Rotate Image](https://leetcode.com/problems/rotate-image/description/) | [c++](./leetcode/48.rotate-image.cpp), [python](./leetcode/48.rotate-image.py) | \- | \- | \- | - |
 | [Leetcode-49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [c++](./leetcode/49.group-anagrams.cpp) | \- | \- | \- | - |
 | [Leetcode-50. Powx N](https://leetcode.com/problems/powx-n/description/) | [c++](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | \- | \- | \- | - |
-| [Leetcode-51. N Queens](https://leetcode.com/problems/n-queens/description/) | [c++](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | \- | \- | \- | - |
 | [Leetcode-52. N Queens II](https://leetcode.com/problems/n-queens-ii/description/) | [c++](./leetcode/52.n-queens-ii.cpp), [python](./leetcode/52.n-queens-ii.py) | \- | \- | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [c++](./leetcode/53.maximum-subarray.cpp), [python](./leetcode/53.maximum-subarray.py) | \- | \- | \- | - |
 | [Leetcode-54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | [c++](./leetcode/54.spiral-matrix.cpp), [python](./leetcode/54.spiral-matrix.py) | \- | \- | \- | - |
