@@ -40,13 +40,14 @@ TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_TREE = 'Tree'
+TAG_GRAPH = 'Graph'
 
 CATEGORY_OTHER = 'Other'
 
 SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_GREEDY, 
                   TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
-FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH]
+FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 
 TAG_IGNORE = r'-|Iterator|Interactive'
@@ -136,7 +137,7 @@ class Markdown:
 
     @staticmethod 
     def table_content(f, directories, categories):
-        
+        print('----table content----')
         def search_tag(solution):
             tags = solution.tags
             match_all = set()
@@ -146,7 +147,7 @@ class Markdown:
                 if len(match_category) > 0:
                     match_all.update(match_category)
                 elif not re.search(TAG_IGNORE, tag):
-                    print(solution)
+                    print(f'{tag}/[{solution.tags}] - {solution}')
 
             fold_category = set([x for x in match_all if x in FOLD_STRUCTURES])
             show_category = match_all - fold_category
@@ -279,7 +280,7 @@ class Solution:
             return f'-'
 
     def __repr__(self) -> str:
-        return f'[{self.tags}] - {self.title}.{self.extension}'
+        return f'{self.title}.{self.extension}'
 
     def __str__(self) -> str:
         return self.__repr__()
