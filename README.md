@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **333**<br/>
-Auto updated at: **2024-07-06 10:20:29**<br/>
+Total sovled: **334**<br/>
+Auto updated at: **2024-07-06 10:44:02**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -194,9 +194,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 
 ## Backtracking
-| Problem(2) | Solution | Time | Space | Note | Ref |
+| Problem(3) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-46. Permutations](https://leetcode.com/problems/permutations/description/) | [c++](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O\(N\!\) | O\(N\) | \- | - |
+| [Leetcode-77. Combinations](https://leetcode.com/problems/combinations/description/) | [c++](./leetcode/77.combinations.cpp), [python](./leetcode/77.combinations.py) | O\(k \* C\(n, k\)\)  | O\(K\) | \- | - |
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
 
 ## Divide and Conquer
