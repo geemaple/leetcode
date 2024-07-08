@@ -1,86 +1,122 @@
+//  Tag: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
+//  Time: O(MN)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  You are given an m x n matrix board containing letters 'X' and 'O', capture regions that are surrounded:
+//  
+//  Connect: A cell is connected to adjacent cells horizontally or vertically.
+//  Region: To form a region connect every 'O' cell.
+//  Surround: The region is surrounded with 'X' cells if you can connect the region with 'X' cells and none of the region cells are on the edge of the board.
+//  
+//  A surrounded region is captured by replacing all 'O's with 'X's in the input matrix board.
+//   
+//  Example 1:
+//  
+//  Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+//  Output: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
+//  Explanation:
+//  
+//  In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.
+//  
+//  Example 2:
+//  
+//  Input: board = [["X"]]
+//  Output: [["X"]]
+//  
+//   
+//  Constraints:
+//  
+//  m == board.length
+//  n == board[i].length
+//  1 <= m, n <= 200
+//  board[i][j] is 'X' or 'O'.
+//  
+//  
+
+//  Tag: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
+//  Time: O(MN)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  You are given an m x n matrix board containing letters 'X' and 'O', capture regions that are surrounded:
+//  
+//  Connect: A cell is connected to adjacent cells horizontally or vertically.
+//  Region: To form a region connect every 'O' cell.
+//  Surround: The region is surrounded with 'X' cells if you can connect the region with 'X' cells and none of the region cells are on the edge of the board.
+//  
+//  A surrounded region is captured by replacing all 'O's with 'X's in the input matrix board.
+//   
+//  Example 1:
+//  
+//  Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+//  Output: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
+//  Explanation:
+//  
+//  In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.
+//  
+//  Example 2:
+//  
+//  Input: board = [["X"]]
+//  Output: [["X"]]
+//  
+//   
+//  Constraints:
+//  
+//  m == board.length
+//  n == board[i].length
+//  1 <= m, n <= 200
+//  board[i][j] is 'X' or 'O'.
+//  
+//  
+
 class Solution {
-private:
-    int directions[4][2] = {{0, 1}, {-1, 0}, {0, -1}, {1, 0}};
-    
-    bool check(vector<vector<char>>& board, int x, int y)
-    {
-        return (x >= 0 && x < board.size() && y >= 0 && y < board[x].size());
-    }
-    
-    int convert_point(vector<vector<char>>& board, int x, int y)
-    {
-        return x * board[x].size() + y;
-    }
-    
-    void bfs(vector<vector<char>>& board, unordered_set<int> &visited, int x, int y)
-    {
-        
-        if (board[x][y] != 'O')
-        {
-            visited.insert(convert_point(board, x, y));
-            return;
-        }
-        
-
-        int candidate = convert_point(board, x, y);
-        if (visited.count(candidate) > 0)
-        {
-            return;
+public:
+    void solve(vector<vector<char>>& board) {
+        int m = board.size();
+        int n = board[0].size();
+ 
+        for (int i = 0; i < m; i++) {
+            dfs(board, i, 0);
+            dfs(board, i, n - 1);
         }
 
-        queue<pair<int, int>> q;
-        q.push(make_pair(x, y));
-        visited.insert(convert_point(board, x, y));
-        
-        while(!q.empty())
-        {
-            pair<int, int> point = q.front();
-            q.pop();
-            
-            for(auto i = 0; i < 4; ++i)
-            {
-                int new_x = point.first + directions[i][0];
-                int new_y = point.second + directions[i][1];
-                
-                int candidate = convert_point(board, new_x, new_y);
-                if (check(board, new_x, new_y) && visited.count(candidate) == 0 && board[new_x][new_y] == 'O')
-                {
-                    visited.insert(candidate);
-                    q.push(make_pair(new_x, new_y));
+        for (int j = 0; j < n; j++) {
+            dfs(board, 0, j);
+            dfs(board, m - 1, j);
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == 'O') {
+                    board[i][j] = 'X';
+                } else if (board[i][j] == 'T') {
+                    board[i][j] = 'O';
                 }
             }
         }
     }
-    
-public:
-    void solve(vector<vector<char>>& board) {
-        
-        if (board.size() == 0 || board[0].size() == 0)
-        {
+
+    void dfs(vector<vector<char>>& board, int i, int j) {
+        if (board[i][j] != 'O') {
             return;
         }
-        
-        unordered_set<int> visited;
-        
-        for (auto i = 0; i < board.size(); ++i)
-        {
-            bfs(board, visited, i, 0);
-            bfs(board, visited, i, board[i].size() - 1);
-        }
-        
-        for (auto j = 1; j < board[0].size() - 1; ++j)
-        {
-            bfs(board, visited, 0, j);
-            bfs(board, visited, board.size() - 1, j);
-        }
-        
-        for (auto i = 0; i < board.size(); ++i)
-        {
-            for (auto j = 0; j < board[i].size(); ++j)
-            {
-                if (board[i][j] == 'O' && visited.count(convert_point(board, i, j)) == 0)
-                {
-                    board[i][j] = 'X';
+
+        int directions[] = {-1, 0, 1, 0, -1};
+        stack<pair<int, int>> st;
+        st.push(make_pair(i, j));
+        while (!st.empty()) {
+            pair<int, int> p = st.top();
+            st.pop();
+            board[p.first][p.second] = 'T';
+
+            for (int k = 0; k < 4; k++) {
+                int dx = p.first + directions[k];
+                int dy = p.second + directions[k + 1];
+                if (dx >= 0 && dx < board.size() && dy >= 0 && dy < board[dx].size() && board[dx][dy] == 'O') {
+                    st.push(make_pair(dx, dy));
                 }
             }
         }

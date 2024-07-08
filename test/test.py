@@ -1,71 +1,44 @@
 from typing import List
 import collections
 class Solution:
-    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
+    def solve(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        m = len(board)
+        n = len(board[0])
 
-        node_distance = {}
-        for w in wordList:
-            node_distance[w] = 0
+        for i in range(m):
+            for j in range(n):
+                if i == 0 or i == m - 1 or j == 0 or j == n - 1:
+                    self.dfs(board, i, j)
 
-        if endWord not in node_distance:
-            return []
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] == '0':
+                    board[i][j] = 'X'
 
-        self.bfs(endWord, node_distance)
-        
-        res = []
-        self.dfs(node_distance, endWord, {beginWord}, [beginWord], res)
-            
-        return res
-        
-    def dfs(self, node_distance: dict, endWord: str, visited:set, tmp: List[str], res: List[List[str]]):
-        word = tmp[-1]
-        if word == endWord:
-            res.append(tmp.copy())
+    def dfs(self, board: List[List[str]], i: int, j: int):
+
+        if board[i][j] != 'O':
             return
-        
-        distance = node_distance.get(word, float('inf'))
-        for n in self.get_next(word, visited, node_distance):
-            if node_distance[n] >= distance:
-                continue
 
-            visited.add(n)
-            self.dfs(node_distance, endWord, visited, tmp + [n], res)
-            visited.remove(n)
+        directions = [-1, 0, 1, 0, -1]
+        stack = [(i, j)]
+        while len(stack) > 0:
+            x, y = stack.pop()
+            board[x][y] = 'T'
+            print(x, y)
 
+            for k in range(4):
+                dx = x + directions[k]
+                dy = y + directions[k + 1]
 
-    def bfs(self, endWord: str, node_distance: dict):
-        distance = 0
-        q = collections.deque([endWord])
-        visited = {endWord}
+                if 0 <= dx < len(board) and 0 <= dy < len(board[dx]) and board[dx][dy] == 'O':
+                    stack.append((dx, dy))
 
-        while len(q) > 0:
-            c = len(q)
-            for _ in range(c):
-                word = q.popleft()
-                node_distance[word] = distance
-
-                for n in self.get_next(word, visited, node_distance):
-                    visited.add(n)
-                    q.append(n)
-
-            distance += 1
-
-    def get_next(self, word: str, visited: set, node_distance: dict) -> List:
-        res = []
-        for i in range(len(word)):
-            for l in 'abcdefghijklmnopqrstuvwxyz':
-                if l == word[i]:
-                    continue
-
-                n = word[:i] + l + word[i + 1:]
-                if n not in node_distance or n in visited:
-                    continue
-
-                res.append(n)
-
-        return res
 
 s = Solution()
-t = ["hot","dot","dog","lot","log","cog"]
-res = s.findLadders('hit', 'cog', t)
-print(res)
+t = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+s.solve(t)
+print(t)
