@@ -1,4 +1,4 @@
-//  Tag: Tree, Depth-First Search, String, Backtracking, Binary Tree
+//  Tag: String, Backtracking, Tree, Depth-First Search, Binary Tree
 //  Time: O(N)
 //  Space: O(Height)
 //  Ref: -
@@ -40,29 +40,22 @@
 class Solution {
 public:
     vector<string> binaryTreePaths(TreeNode* root) {
-        if (root == nullptr) {
-            return vector<string>{};
-        }
-
-        vector<string> results;
-        string path = "";
-        helper(root, path, results);
-        return results;
+        vector<string> res;
+        dfs(root, to_string(root->val), res);
+        return res;
     }
 
-    void helper(TreeNode* node, string path, vector<string> &results) {
-        path += to_string(node->val);
-        if (node->left == nullptr and node->right == nullptr) {
-            results.push_back(path);
+    void dfs(TreeNode* node, string tmp, vector<string> &res) {
+        if (!node->left && !node->right) {
+            res.push_back(tmp);
             return;
         }
 
-        if (node->left) {
-            helper(node->left, path + "->", results);
-        }
-
-        if (node->right) {
-            helper(node->right, path + "->", results);
+        vector<TreeNode *> children = {node->left, node->right};
+        for (auto child: children) {
+            if (child) {
+                dfs(child, tmp + "->" + to_string(child->val), res);
+            }
         }
     }
 };
