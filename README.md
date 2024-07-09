@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **335**<br/>
-Auto updated at: **2024-07-09 10:43:51**<br/>
+Auto updated at: **2024-07-09 11:27:09**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -194,8 +194,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 
 ## Backtracking
-| Problem(7) | Solution | Time | Space | Note | Ref |
+| Problem(8) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O\(2^N\) | O\(N\) | \- | - |
 | [Leetcode-46. Permutations](https://leetcode.com/problems/permutations/description/) | [c++](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O\(N\!\) | O\(N\) | \- | - |
 | [Leetcode-47. Permutations II](https://leetcode.com/problems/permutations-ii/description/) | [c++](./leetcode/47.permutations-ii.cpp), [python](./leetcode/47.permutations-ii.py) | O\(N\!\) | O\(N\) | \- | - |
 | [Leetcode-51. N Queens](https://leetcode.com/problems/n-queens/description/) | [c++](./leetcode/51.n-queens.cpp), [python](./leetcode/51.n-queens.py) | O\(N\!\) | O\(N\) | \- | - |
@@ -280,7 +281,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(256) | Solution | Time | Space | Note | Ref |
+| Problem(255) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -316,7 +317,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | \- | \- | \- | - |
 | [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | \- | \- | Each term of the sequence of integers will be represented as a | - |
 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | \- | \- | \- | - |
-| [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | \- | \- | \- | - |
 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | \- | \- | \- | - |
 | [Leetcode-42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | [c++](./leetcode/42.trapping-rain-water.cpp), [python](./leetcode/42.trapping-rain-water.py) | \- | \- | \- | - |
 | [Leetcode-43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | [c++](./leetcode/43.multiply-strings.cpp), [python](./leetcode/43.multiply-strings.py) | \- | \- | \- | - |
