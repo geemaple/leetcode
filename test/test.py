@@ -1,44 +1,41 @@
 from typing import List
 import collections
 class Solution:
-    def solve(self, board: List[List[str]]) -> None:
-        """
-        Do not return anything, modify board in-place instead.
-        """
-        m = len(board)
-        n = len(board[0])
+    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        if n == 1:
+            return [0]
 
-        for i in range(m):
-            for j in range(n):
-                if i == 0 or i == m - 1 or j == 0 or j == n - 1:
-                    self.dfs(board, i, j)
+        graph = collections.defaultdict(list)
+        degree = collections.defaultdict(int)
+        for i, j in edges:
+            graph[i].append(j)
+            graph[j].append(i)
+            degree[i] += 1
+            degree[j] += 1
 
-        for i in range(m):
-            for j in range(n):
-                if board[i][j] == '0':
-                    board[i][j] = 'X'
+        q = collections.deque()
+        for node in range(n):
+            if degree[node] == 1:
+                q.append(node)
 
-    def dfs(self, board: List[List[str]], i: int, j: int):
+        remain = n
+        while len(q) > 0:
+            if remain <= 2:
+                break
+            size = len(q)
+            for _ in range(size):
+                cur = q.popleft()
+                for n in graph[cur]:
+                    degree[n] -= 1
+                    if degree[n] == 1:
+                        q.append(n)
 
-        if board[i][j] != 'O':
-            return
+            remain -= size
 
-        directions = [-1, 0, 1, 0, -1]
-        stack = [(i, j)]
-        while len(stack) > 0:
-            x, y = stack.pop()
-            board[x][y] = 'T'
-            print(x, y)
-
-            for k in range(4):
-                dx = x + directions[k]
-                dy = y + directions[k + 1]
-
-                if 0 <= dx < len(board) and 0 <= dy < len(board[dx]) and board[dx][dy] == 'O':
-                    stack.append((dx, dy))
+        return list(q)
 
 
 s = Solution()
-t = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
-s.solve(t)
-print(t)
+t = []
+res = s.findMinHeightTrees(3, [[0,1],[0,2]])
+print(res)

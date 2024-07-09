@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **335**<br/>
-Auto updated at: **2024-07-09 11:27:09**<br/>
+Total sovled: **336**<br/>
+Auto updated at: **2024-07-09 17:36:15**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -194,8 +194,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 
 ## Backtracking
-| Problem(8) | Solution | Time | Space | Note | Ref |
+| Problem(9) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [c++](./leetcode/37.sudoku-solver.cpp), [python](./leetcode/37.sudoku-solver.py) | O\(N^\(N^2\)\) | O\(N\) | \- | - |
 | [Leetcode-40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | [c++](./leetcode/40.combination-sum-ii.cpp), [python](./leetcode/40.combination-sum-ii.py) | O\(2^N\) | O\(N\) | \- | - |
 | [Leetcode-46. Permutations](https://leetcode.com/problems/permutations/description/) | [c++](./leetcode/46.permutations.cpp), [python](./leetcode/46.permutations.py) | O\(N\!\) | O\(N\) | \- | - |
 | [Leetcode-47. Permutations II](https://leetcode.com/problems/permutations-ii/description/) | [c++](./leetcode/47.permutations-ii.cpp), [python](./leetcode/47.permutations-ii.py) | O\(N\!\) | O\(N\) | \- | - |
@@ -216,13 +217,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
 
 ## Breadth-First Search
-| Problem(10) | Solution | Time | Space | Note | Ref |
+| Problem(11) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python](./leetcode/102.binary-tree-level-order-traversal.py) | O\(N\) | O\(Width\) | Level | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python](./leetcode/104.maximum-depth-of-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 | [Leetcode-126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | [c++](./leetcode/126.word-ladder-ii.cpp), [python](./leetcode/126.word-ladder-ii.py) | O\(\(N\*L\)^C\) | O\(N\) | \- | - |
 | [Leetcode-130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | [c++](./leetcode/130.surrounded-regions.cpp), [python](./leetcode/130.surrounded-regions.py) | O\(MN\) | O\(1\) | \- | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
+| [Leetcode-310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | [c++](./leetcode/310.minimum-height-trees.cpp), [python](./leetcode/310.minimum-height-trees.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/) | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python](./leetcode/417.pacific-atlantic-water-flow.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-547. Number Of Provinces](https://leetcode.com/problems/number-of-provinces/description/) | [c++](./leetcode/547.number-of-provinces.cpp), [python](./leetcode/547.number-of-provinces.py) | O\(N^2\) | O\(N\) | \- | - |
@@ -230,7 +232,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-934. Shortest Bridge](https://leetcode.com/problems/shortest-bridge/description/) | [c++](./leetcode/934.shortest-bridge.cpp), [python](./leetcode/934.shortest-bridge.py) | O\(N^2\) | O\(N^2\) | \- | - |
 
 ## Depth-First Search
-| Problem(16) | Solution | Time | Space | Note | Ref |
+| Problem(17) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(Height\) | InOrder | - |
 | [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | O\(N\) | O\(Height\) | BST | - |
@@ -243,6 +245,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | O\(N\) | O\(Height\) | Recursion | - |
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | O\(N\) | O\(Height\) | \- | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
+| [Leetcode-310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | [c++](./leetcode/310.minimum-height-trees.cpp), [python](./leetcode/310.minimum-height-trees.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/) | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python](./leetcode/417.pacific-atlantic-water-flow.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-547. Number Of Provinces](https://leetcode.com/problems/number-of-provinces/description/) | [c++](./leetcode/547.number-of-provinces.cpp), [python](./leetcode/547.number-of-provinces.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-695. Max Area Of Island](https://leetcode.com/problems/max-area-of-island/description/) | [c++](./leetcode/695.max-area-of-island.cpp), [python](./leetcode/695.max-area-of-island.py) | O\(MN\) | O\(MN\) | \- | - |
@@ -281,7 +284,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(255) | Solution | Time | Space | Note | Ref |
+| Problem(254) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -314,7 +317,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-30. Substring With Concatenation Of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | [c++](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python](./leetcode/30.substring-with-concatenation-of-all-words.py) | \- | \- | \- | - |
 | [Leetcode-31. Next Permutation](https://leetcode.com/problems/next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python](./leetcode/31.next-permutation.py) | \- | \- | \- | - |
 | [Leetcode-36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python](./leetcode/36.valid-sudoku.py) | \- | \- | \- | - |
-| [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [python](./leetcode/37.sudoku-solver.py) | \- | \- | \- | - |
 | [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python](./leetcode/38.count-and-say.py) | \- | \- | Each term of the sequence of integers will be represented as a | - |
 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python](./leetcode/39.combination-sum.py) | \- | \- | \- | - |
 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python](./leetcode/41.first-missing-positive.py) | \- | \- | \- | - |
