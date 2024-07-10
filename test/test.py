@@ -1,41 +1,26 @@
 from typing import List
 import collections
 class Solution:
-    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
-        if n == 1:
-            return [0]
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
+        m = len(matrix)
+        n = len(matrix[0])
 
-        graph = collections.defaultdict(list)
-        degree = collections.defaultdict(int)
-        for i, j in edges:
-            graph[i].append(j)
-            graph[j].append(i)
-            degree[i] += 1
-            degree[j] += 1
+        dp = [[0 for j in range(n)] for i in range(m)]
+        d = 0
+        for i in range(m):
+            for j in range(n):
+                if matrix[i][j] == '1':
+                    if i == 0 or j == 0:
+                        dp[i][j] = 1
+                    else:
+                        dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1
 
-        q = collections.deque()
-        for node in range(n):
-            if degree[node] == 1:
-                q.append(node)
-
-        remain = n
-        while len(q) > 0:
-            if remain <= 2:
-                break
-            size = len(q)
-            for _ in range(size):
-                cur = q.popleft()
-                for n in graph[cur]:
-                    degree[n] -= 1
-                    if degree[n] == 1:
-                        q.append(n)
-
-            remain -= size
-
-        return list(q)
+                    d = max(d, dp[i][j])
+        print(dp)
+        return d * d
 
 
 s = Solution()
-t = []
-res = s.findMinHeightTrees(3, [[0,1],[0,2]])
+t = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+res = s.maximalSquare(t)
 print(res)
