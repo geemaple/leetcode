@@ -58,8 +58,8 @@ public:
 
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++ ) {
-                if (nums[i] > nums[j]) {
-                    dp[i] = max(dp[i], dp[j] + 1);
+                if (nums[i] > nums[j] && dp[j] + 1 > dp[i]) {
+                    dp[i] = dp[j] + 1;
                 }
             }
         }
@@ -67,4 +67,3 @@ public:
         return *max_element(dp.begin(), dp.end());
     }
 };
-

@@ -68,7 +68,7 @@ class Solution:
 
         for i in range(1, n):
             for j in range(i):
-                if nums[i] > nums[j]:
-                    dp[i] = max(dp[i], dp[j] + 1)
+                if nums[i] > nums[j] and dp[j] + 1 > dp[i]:
+                    dp[i] = dp[j] + 1
 
         return max(dp)
