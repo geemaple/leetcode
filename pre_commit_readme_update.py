@@ -27,6 +27,8 @@ TAG_STACK = 'Stack'
 TAG_TP = 'Two Pointers'
 TAG_SW = 'Sliding Window'
 TAG_SORT = 'Sorting'
+TAG_QS = 'Quickselect'
+TAG_COUNT = 'Counting'
 TAG_BFS = 'Breadth-First Search'
 TAG_BT = 'Backtracking'
 TAG_DFS = 'Depth-First Search'
@@ -45,8 +47,8 @@ TAG_BFS_TS = 'Topological Sort'
 
 CATEGORY_OTHER = 'Other'
 
-SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_GREEDY, 
-                  TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
+SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT, TAG_QS,
+                  TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
 FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
@@ -59,7 +61,7 @@ TAG_REGEX = {
     TAG_DP: r'Dynamic Programming|DP|Memoization',
     TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
     TAG_ARY: r'Array|Matrix',
-    TAG_SORT: r'^Sort$|Sorting'
+    TAG_SORT: r'^Sort$|Sorting|Bucket Sort'
 }
 
 LANGUAGE = {
