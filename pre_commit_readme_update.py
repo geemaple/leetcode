@@ -41,11 +41,12 @@ TAG_TRIE = 'Trie'
 TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_TREE = 'Tree'
 TAG_GRAPH = 'Graph'
+TAG_BFS_TS = 'Topological Sort'
 
 CATEGORY_OTHER = 'Other'
 
 SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_GREEDY, 
-                  TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
+                  TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
 FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
@@ -55,7 +56,7 @@ TAG_IGNORE = r'-|Iterator|Interactive'
 TAG_REGEX = {
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
-    TAG_DP: r'Dynamic Programming|DP',
+    TAG_DP: r'Dynamic Programming|DP|Memoization',
     TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
     TAG_ARY: r'Array|Matrix',
     TAG_SORT: r'^Sort$|Sorting'
