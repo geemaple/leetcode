@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **339**<br/>
-Auto updated at: **2024-07-11 19:58:10**<br/>
+Auto updated at: **2024-07-11 21:08:12**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -81,7 +81,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Binary Search
-| Problem(34) | Solution | Time | Space | Note | Ref |
+| Problem(33) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python](./leetcode/33.search-in-rotated-sorted-array.py) | O\(logN\) | O\(1\) | Rotated; | - |
@@ -99,7 +99,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
-| [Leetcode-302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/description/) | [c++](./leetcode/302.smallest-rectangle-enclosing-black-pixels.cpp), [python](./leetcode/302.smallest-rectangle-enclosing-black-pixels.py) | O\(N \* logM \+ M \* logN\) | O\(1\) | Range | - |
 | [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python](./leetcode/374.guess-number-higher-or-lower.py) | O\(logN\) | O\(1\) | Standard | - |
 | [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | O\(Height\) | O\(Height\) | Delete | - |
 | [Leetcode-540. Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) | [c++](./leetcode/540.single-element-in-a-sorted-array.cpp), [python](./leetcode/540.single-element-in-a-sorted-array.py) | O\(logN\) | O\(1\) | \- | - |
@@ -324,7 +323,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(248) | Solution | Time | Space | Note | Ref |
+| Problem(245) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -453,7 +452,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-280. Wiggle Sort](https://leetcode.com/problems/wiggle-sort/description/) | [python](./leetcode/280.wiggle-sort.py) | \- | \- | \- | - |
 | [Leetcode-282. Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/) | [c++](./leetcode/282.expression-add-operators.cpp), [python](./leetcode/282.expression-add-operators.py) | \- | \- | \- | - |
 | [Leetcode-283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | [c++](./leetcode/283.move-zeroes.cpp), [python](./leetcode/283.move-zeroes.py) | \- | \- | \- | - |
-| [Leetcode-285. Inorder Successor In Bst](https://leetcode.com/problems/inorder-successor-in-bst/description/) | [c++](./leetcode/285.inorder-successor-in-bst.cpp), [python](./leetcode/285.inorder-successor-in-bst.py) | \- | \- | \- | - |
 | [Leetcode-286. Walls And Gates](https://leetcode.com/problems/walls-and-gates/description/) | [c++](./leetcode/286.walls-and-gates.cpp), [python](./leetcode/286.walls-and-gates.py) | \- | \- | \- | - |
 | [Leetcode-288. Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/description/) | [c++](./leetcode/288.unique-word-abbreviation.cpp), [python](./leetcode/288.unique-word-abbreviation.py) | \- | \- | \- | - |
 | [Leetcode-289. Game Of Life](https://leetcode.com/problems/game-of-life/description/) | [python](./leetcode/289.game-of-life.py) | \- | \- | \- | - |
@@ -495,7 +493,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) | [c++](./leetcode/408.valid-word-abbreviation.cpp), [python](./leetcode/408.valid-word-abbreviation.py) | \- | \- | \- | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | \- | \- | \- | - |
 | [Leetcode-425. Word Squares](https://leetcode.com/problems/word-squares/description/) | [c++](./leetcode/425.word-squares.cpp), [python](./leetcode/425.word-squares.py) | \- | \- | \- | - |
-| [Leetcode-426. Convert Binary Search Tree To Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/description/) | [c++](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./leetcode/426.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | \- | \- | \- | - |
 | [Leetcode-433. Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/description/) | [c++](./leetcode/433.minimum-genetic-mutation.cpp), [python](./leetcode/433.minimum-genetic-mutation.py) | \- | \- | \- | - |
 | [Leetcode-438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | \- | \- | \- | - |
 | [Leetcode-444. Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/description/) | [c++](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | \- | \- | \- | - |
@@ -545,7 +542,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-933. Number Of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | [c++](./leetcode/933.number-of-recent-calls.cpp), [python](./leetcode/933.number-of-recent-calls.py) | \- | \- | \- | - |
 | [Leetcode-1150. Check If A Number Is Majority Element In A Sorted Array](https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/description/) | [c++](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.cpp), [python](./leetcode/1150.check-if-a-number-is-majority-element-in-a-sorted-array.py) | \- | \- | \- | - |
 | [Lintcode-31. Partition Array](https://www.lintcode.com/problem/partition-array) | [python](./lintcode/31.partition-array.py) | \- | \- | \- | - |
-| [Lintcode-77. Longest Common Subsequence](https://www.lintcode.com/problem/longest-common-subsequence) | [c++](./lintcode/77.longest-common-subsequence.cpp), [python](./lintcode/77.longest-common-subsequence.py) | \- | \- | \- | - |
 | [Lintcode-81. Find Median From Data Stream](https://www.lintcode.com/problem/find-median-from-data-stream) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | \- | \- | \- | - |
 | [Lintcode-89. K Sum](https://www.lintcode.com/problem/k-sum) | [c++](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | \- | \- | \- | - |
 | [Lintcode-91. Minimum Adjustment Cost](https://www.lintcode.com/problem/minimum-adjustment-cost) | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | \- | \- | \- | - |
