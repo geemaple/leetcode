@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **338**<br/>
-Auto updated at: **2024-07-11 14:44:53**<br/>
+Auto updated at: **2024-07-11 15:14:42**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -185,10 +185,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python](./leetcode/3048.earliest-second-to-mark-indices-i.py) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(14) | Solution | Time | Space | Note | Ref |
+| Problem(15) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-91. Decode Ways](https://leetcode.com/problems/decode-ways/description/) | [c++](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python](./leetcode/120.triangle.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-198. House Robber](https://leetcode.com/problems/house-robber/description/) | [c++](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O\(N\) | O\(N\) | \- | - |
@@ -295,7 +296,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(249) | Solution | Time | Space | Note | Ref |
+| Problem(248) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -357,7 +358,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-86. Partition List](https://leetcode.com/problems/partition-list/description/) | [c++](./leetcode/86.partition-list.cpp), [python](./leetcode/86.partition-list.py) | \- | \- | \- | - |
 | [Leetcode-87. Scramble String](https://leetcode.com/problems/scramble-string/description/) | [c++](./leetcode/87.scramble-string.cpp), [python](./leetcode/87.scramble-string.py) | \- | \- | \- | - |
 | [Leetcode-90. Subsets II](https://leetcode.com/problems/subsets-ii/description/) | [c++](./leetcode/90.subsets-ii.cpp), [python](./leetcode/90.subsets-ii.py) | \- | \- | \- | - |
-| [Leetcode-91. Decode Ways](https://leetcode.com/problems/decode-ways/description/) | [c++](./leetcode/91.decode-ways.cpp), [python](./leetcode/91.decode-ways.py) | \- | \- | \- | - |
 | [Leetcode-92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | [c++](./leetcode/92.reverse-linked-list-ii.cpp), [python](./leetcode/92.reverse-linked-list-ii.py) | \- | \- | \- | - |
 | [Leetcode-97. Interleaving String](https://leetcode.com/problems/interleaving-string/description/) | [c++](./leetcode/97.interleaving-string.cpp), [python](./leetcode/97.interleaving-string.py) | \- | \- | \- | - |
 | [Leetcode-103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | [c++](./leetcode/103.binary-tree-zigzag-level-order-traversal.cpp), [python](./leetcode/103.binary-tree-zigzag-level-order-traversal.py) | \- | \- | \- | - |
