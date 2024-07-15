@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **339**<br/>
-Auto updated at: **2024-07-15 11:06:07**<br/>
+Total sovled: **340**<br/>
+Auto updated at: **2024-07-15 11:57:58**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -24,6 +24,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
 
 ## 链接/Links
+- [本人博客](https://blog.mogoal.com/category/#Algorithm)
 - [极客时间](https://github.com/geektime-geekbang/algorithm-1)
 - [LeetCode 101](https://github.com/changgyhub/leetcode_101)
 
@@ -193,7 +194,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(20) | Solution | Time | Space | Note | Ref |
+| Problem(21) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -215,6 +216,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [python](./lintcode/125.backpack-ii.py), [c++](./lintcode/125.backpack-ii.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 | [Lintcode-440. Backpack III](https://www.lintcode.com/problem/backpack-iii) | [c++](./lintcode/440.backpack-iii.cpp), [python](./lintcode/440.backpack-iii.py) | O\(N^2\) | O\(N^2\) | \- | - |
+| [Lintcode-562. Backpack IV](https://www.lintcode.com/problem/backpack-iv) | [c++](./lintcode/562.backpack-iv.cpp), [python](./lintcode/562.backpack-iv.py) | O\(N^2\) | O\(N^2\) | \- | - |
 
 ## Backtracking
 | Problem(9) | Solution | Time | Space | Note | Ref |

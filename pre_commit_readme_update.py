@@ -352,6 +352,7 @@ if __name__ == "__main__":
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
+            Markdown.link('本人博客', 'https://blog.mogoal.com/category/#Algorithm'),
             Markdown.link('极客时间', 'https://github.com/geektime-geekbang/algorithm-1'),
             Markdown.link('LeetCode 101', 'https://github.com/changgyhub/leetcode_101'),
         ])
