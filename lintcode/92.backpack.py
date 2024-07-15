@@ -1,6 +1,6 @@
 #  Tag: Backpack DP, Dynamic Programming/DP
-#  Time: -
-#  Space: -
+#  Time: O(N^2)
+#  Space: O(N^2)
 #  Ref: -
 #  Note: -
 

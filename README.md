@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **339**<br/>
-Auto updated at: **2024-07-15 10:44:48**<br/>
+Auto updated at: **2024-07-15 10:53:35**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -193,7 +193,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(18) | Solution | Time | Space | Note | Ref |
+| Problem(19) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -211,7 +211,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [python](./leetcode/542.01-matrix.py), [c++](./leetcode/542.01-matrix.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | [python](./leetcode/1143.longest-common-subsequence.py), [c++](./leetcode/1143.longest-common-subsequence.cpp) | O\(MN\) | O\(MN\) | \- | - |
-| [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [python](./lintcode/92.backpack.py), [c++](./lintcode/92.backpack.cpp) | \- | \- | \- | - |
+| [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [python](./lintcode/92.backpack.py), [c++](./lintcode/92.backpack.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
+| [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [python](./lintcode/125.backpack-ii.py), [c++](./lintcode/125.backpack-ii.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python](./lintcode/437.copy-books.py) | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 
 ## Backtracking
@@ -317,7 +318,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(244) | Solution | Time | Space | Note | Ref |
+| Problem(243) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -539,7 +540,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-81. Find Median From Data Stream](https://www.lintcode.com/problem/find-median-from-data-stream) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python](./lintcode/81.find-median-from-data-stream.py) | \- | \- | \- | - |
 | [Lintcode-89. K Sum](https://www.lintcode.com/problem/k-sum) | [c++](./lintcode/89.k-sum.cpp), [python](./lintcode/89.k-sum.py) | \- | \- | \- | - |
 | [Lintcode-91. Minimum Adjustment Cost](https://www.lintcode.com/problem/minimum-adjustment-cost) | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python](./lintcode/91.minimum-adjustment-cost.py) | \- | \- | \- | - |
-| [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [python](./lintcode/125.backpack-ii.py), [c++](./lintcode/125.backpack-ii.cpp) | \- | \- | \- | - |
 | [Lintcode-139. Subarray Sum Closest](https://www.lintcode.com/problem/subarray-sum-closest) | [c++](./lintcode/139.subarray-sum-closest.cpp), [python](./lintcode/139.subarray-sum-closest.py) | \- | \- | \- | - |
 | [Lintcode-144. Interleaving Positive And Negative Numbers](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers) | [python](./lintcode/144.interleaving-positive-and-negative-numbers.py), [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp) | \- | \- | \- | - |
 | [Lintcode-183. Wood Cut](https://www.lintcode.com/problem/wood-cut) | [c++](./lintcode/183.wood-cut.cpp), [python](./lintcode/183.wood-cut.py) | \- | \- | \- | - |
