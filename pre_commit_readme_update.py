@@ -28,7 +28,6 @@ TAG_STACK = 'Stack'
 TAG_TP = 'Two Pointers'
 TAG_SW = 'Sliding Window'
 TAG_SORT = 'Sorting'
-TAG_QS = 'Quickselect'
 TAG_COUNT = 'Counting'
 TAG_BFS = 'Breadth-First Search'
 TAG_BT = 'Backtracking'
@@ -48,7 +47,7 @@ TAG_BFS_TS = 'Topological Sort'
 
 CATEGORY_OTHER = 'Other'
 
-SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT, TAG_QS,
+SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT,
                   TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
 FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
@@ -216,9 +215,11 @@ class Solution:
 
         all_solution = []
         for source in directories:
-            files = sorted(os.listdir(source), key=lambda file: (int(file.split(".")[0]), file[file.rfind(".") + 1: ]))
             count = 0
-            for file_name in files:
+            for file_name in os.listdir(source):
+                if file_name.startswith('.'):
+                    continue
+
                 count += 1
                 first_dot = file_name.find('.')
                 last_dot = file_name.rfind('.')
