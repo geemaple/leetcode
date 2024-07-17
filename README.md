@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **342**<br/>
-Auto updated at: **2024-07-16 16:47:06**<br/>
+Auto updated at: **2024-07-17 10:28:33**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -68,7 +68,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
-| [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | \- | \- | \- | - |
+| [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 
 ## Simulation
 | Problem(1) | Solution | Time | Space | Note | Ref |
@@ -215,7 +215,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-474. Ones And Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/) | [c++](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O\(KMN\) | O\(MN\) | \- | - |
 | [Leetcode-542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [python](./leetcode/542.01-matrix.py), [c++](./leetcode/542.01-matrix.cpp) | O\(MN\) | O\(MN\) | \- | - |
-| [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | \- | \- | \- | - |
+| [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | [python](./leetcode/1143.longest-common-subsequence.py), [c++](./leetcode/1143.longest-common-subsequence.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [python](./lintcode/92.backpack.py), [c++](./lintcode/92.backpack.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
 | [Lintcode-125. Backpack II](https://www.lintcode.com/problem/backpack-ii) | [python](./lintcode/125.backpack-ii.py), [c++](./lintcode/125.backpack-ii.cpp) | O\(N^2\) | O\(N^2\) | \- | - |

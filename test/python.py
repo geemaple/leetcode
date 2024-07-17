@@ -1,23 +1,27 @@
 from typing import List
-import collections
+
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        n = len(s)
-        dp = [False for i in range(n + 1)]
-        dp[0] = True
+    def minSteps(self, n: int) -> int:
+        return self.helper(n, 1, 0)
+
+    def helper(self, n: int, screen: int, pasteboard: int):
+        if screen == n:
+            return 0
         
+        if screen > n:
+            return float('inf')
 
-        for l in range(1, n + 1):
-            for word in wordDict:
-                print(l, s[l - len(word): l])
-                if len(word) <= l and s[l - len(word): l] == word:
-                    dp[l] = dp[l] or dp[l - len(word)]
+        result = float('inf')
+        if pasteboard > 0:
+            result = self.helper(n, screen + pasteboard, pasteboard) + 1
 
- 
-        return dp[n]
+        if pasteboard < screen:
+            result = min(result, self.helper(n, screen, screen) + 1)
+
+        return result
 
 
 s = Solution()
 t = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
-res = s.wordBreak("leetcode", ["leet","code"])
+res = s.minSteps(6)
 print(res)
