@@ -32,12 +32,12 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int buy = INT_MAX;
+        int buy = INT_MIN;
         int sell = 0;
 
         for (int p: prices) {
-            buy = min(buy, p);
-            sell = max(sell, p - buy);
+            buy = max(buy, 0 - p);
+            sell = max(sell, p + buy);
         }
 
         return sell;
