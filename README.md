@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **342**<br/>
-Auto updated at: **2024-07-17 11:32:22**<br/>
+Auto updated at: **2024-07-17 12:10:07**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -195,7 +195,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(26) | Solution | Time | Space | Note | Ref |
+| Problem(27) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O\(MN\) | O\(MN\) | \- | - |
@@ -203,6 +203,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-72. Edit Distance](https://leetcode.com/problems/edit-distance/description/) | [c++](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-91. Decode Ways](https://leetcode.com/problems/decode-ways/description/) | [python](./leetcode/91.decode-ways.py), [c++](./leetcode/91.decode-ways.cpp) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [python](./leetcode/120.triangle.py), [c++](./leetcode/120.triangle.cpp) | O\(N^2\) | O\(N\) | \- | - |
+| [Leetcode-121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [c++](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py), [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-139. Word Break](https://leetcode.com/problems/word-break/description/) | [c++](./leetcode/139.word-break.cpp), [python](./leetcode/139.word-break.py) | O\(MN\) | O\(N\) | \- | - |
 | [Leetcode-198. House Robber](https://leetcode.com/problems/house-robber/description/) | [c++](./leetcode/198.house-robber.cpp), [python](./leetcode/198.house-robber.py) | O\(N\) | O\(N\) | \- | - |
@@ -327,7 +328,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(239) | Solution | Time | Space | Note | Ref |
+| Problem(238) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -394,7 +395,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | [python](./leetcode/115.distinct-subsequences.py), [c++](./leetcode/115.distinct-subsequences.cpp) | \- | \- | \- | - |
 | [Leetcode-118. Pascals Triangle](https://leetcode.com/problems/pascals-triangle/description/) | [python](./leetcode/118.pascals-triangle.py), [c++](./leetcode/118.pascals-triangle.cpp) | \- | \- | \- | - |
 | [Leetcode-119. Pascals Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | [python](./leetcode/119.pascals-triangle-ii.py), [c++](./leetcode/119.pascals-triangle-ii.cpp) | \- | \- | \- | - |
-| [Leetcode-121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [c++](./leetcode/121.best-time-to-buy-and-sell-stock.cpp), [python](./leetcode/121.best-time-to-buy-and-sell-stock.py) | \- | \- | \- | - |
 | [Leetcode-123. Best Time To Buy And Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) | [c++](./leetcode/123.best-time-to-buy-and-sell-stock-iii.cpp), [python](./leetcode/123.best-time-to-buy-and-sell-stock-iii.py) | \- | \- | \- | - |
 | [Leetcode-125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | [python](./leetcode/125.valid-palindrome.py), [c++](./leetcode/125.valid-palindrome.cpp) | \- | \- | \- | - |
 | [Leetcode-127. Word Ladder](https://leetcode.com/problems/word-ladder/description/) | [c++](./leetcode/127.word-ladder.cpp), [python](./leetcode/127.word-ladder.py) | \- | \- | \- | - |
