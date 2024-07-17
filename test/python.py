@@ -1,27 +1,27 @@
 from typing import List
 
 class Solution:
-    def minSteps(self, n: int) -> int:
-        return self.helper(n, 1, 0)
+    def isMatch(self, s: str, p: str) -> bool:
+        m = len(s)
+        n = len(p)
 
-    def helper(self, n: int, screen: int, pasteboard: int):
-        if screen == n:
-            return 0
+        dp = [[False for j in range(n + 1)] for i in range(m + 1)]
+        dp[0][0] = True
+
+        for i in range(1, m + 1):
+            for j in range(1, n + 1):
+                if s[i - 1] == p[j - 1] or p[j - 1] == '.':
+                    dp[i][j] = dp[i - 1][j - 1]
+                elif p[j - 1] == '*':
+                    if j - 2 >= 0 and (s[i - 1] == p[j - 2] or p[j - 2] == '.'):
+                        print('wow')
+                        dp[i][j] = dp[i][j] or dp[i - 1][j] or dp[i - 1][j - 1]
         
-        if screen > n:
-            return float('inf')
-
-        result = float('inf')
-        if pasteboard > 0:
-            result = self.helper(n, screen + pasteboard, pasteboard) + 1
-
-        if pasteboard < screen:
-            result = min(result, self.helper(n, screen, screen) + 1)
-
-        return result
+        print(dp)
+        return dp[m][n]
 
 
 s = Solution()
-t = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
-res = s.minSteps(6)
+
+res = s.isMatch('aa', 'a*')
 print(res)

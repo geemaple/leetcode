@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **342**<br/>
-Auto updated at: **2024-07-17 10:28:33**<br/>
+Auto updated at: **2024-07-17 11:32:22**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -195,8 +195,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(25) | Solution | Time | Space | Note | Ref |
+| Problem(26) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [c++](./leetcode/64.minimum-path-sum.cpp), [python](./leetcode/64.minimum-path-sum.py) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-72. Edit Distance](https://leetcode.com/problems/edit-distance/description/) | [c++](./leetcode/72.edit-distance.cpp), [python](./leetcode/72.edit-distance.py) | O\(MN\) | O\(MN\) | \- | - |
@@ -326,7 +327,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(240) | Solution | Time | Space | Note | Ref |
+| Problem(239) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -336,7 +337,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python](./leetcode/7.reverse-integer.py) | \- | \- | \- | - |
 | [Leetcode-8. String To Integer Atoi](https://leetcode.com/problems/string-to-integer-atoi/description/) | [c++](./leetcode/8.string-to-integer-atoi.cpp), [python](./leetcode/8.string-to-integer-atoi.py) | \- | \- | \- | - |
 | [Leetcode-9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [c++](./leetcode/9.palindrome-number.cpp), [python](./leetcode/9.palindrome-number.py) | \- | \- | \- | - |
-| [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | \- | \- | \- | - |
 | [Leetcode-11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | [python](./leetcode/11.container-with-most-water.py) | \- | \- | \- | - |
 | [Leetcode-12. Integer To Roman](https://leetcode.com/problems/integer-to-roman/description/) | [c++](./leetcode/12.integer-to-roman.cpp), [python](./leetcode/12.integer-to-roman.py) | \- | \- | \- | - |
 | [Leetcode-13. Roman To Integer](https://leetcode.com/problems/roman-to-integer/description/) | [python](./leetcode/13.roman-to-integer.py), [c++](./leetcode/13.roman-to-integer.cpp) | \- | \- | \- | - |
