@@ -1,27 +1,35 @@
-from typing import List
+def binary_search(dp, val):
+    left, right = 0, len(dp) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if dp[mid][1] < val:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return left
 
-class Solution:
-    def isMatch(self, s: str, p: str) -> bool:
-        m = len(s)
-        n = len(p)
+def max_length_of_pair_chain(pairs):
+    # Step 1: Sort the pairs by their first element
+    pairs.sort(key=lambda pair: pair[0])
 
-        dp = [[False for j in range(n + 1)] for i in range(m + 1)]
-        dp[0][0] = True
+    # Step 2: Initialize the dp array
+    dp = []
 
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if s[i - 1] == p[j - 1] or p[j - 1] == '.':
-                    dp[i][j] = dp[i - 1][j - 1]
-                elif p[j - 1] == '*':
-                    if j - 2 >= 0 and (s[i - 1] == p[j - 2] or p[j - 2] == '.'):
-                        print('wow')
-                        dp[i][j] = dp[i][j] or dp[i - 1][j] or dp[i - 1][j - 1]
-        
-        print(dp)
-        return dp[m][n]
+    # Step 3: Iterate over the pairs
+    for pair in pairs:
+        # Use binary search to find the correct position
+        i = binary_search(dp, pair[0])
+        # If i is equal to the length of dp, append the pair
+        if i == len(dp):
+            dp.append(pair)
+        else:
+            # Update the dp array if the current pair has a smaller second element
+            if dp[i][1] > pair[1]:
+                dp[i] = pair
 
+    # Step 5: The length of the dp array is the length of the longest chain
+    return len(dp)
 
-s = Solution()
-
-res = s.isMatch('aa', 'a*')
-print(res)
+# Test cases
+print(max_length_of_pair_chain([[1,2], [2,3], [3,4]]))  # Output: 2
+print(max_length_of_pair_chain([[1,2], [7,8], [4,5]]))  # Output: 3

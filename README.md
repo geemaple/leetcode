@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **345**<br/>
-Auto updated at: **2024-07-19 16:38:27**<br/>
+Total sovled: **346**<br/>
+Auto updated at: **2024-07-19 21:22:23**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -160,7 +160,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Sorting
-| Problem(12) | Solution | Time | Space | Note | Ref |
+| Problem(13) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [python](./leetcode/75.sort-colors.py), [c++](./leetcode/75.sort-colors.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [python](./leetcode/88.merge-sorted-array.py), [c++](./leetcode/88.merge-sorted-array.cpp) | O\(M \+ N\) | O\(1\) | \- | - |
@@ -172,6 +172,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-452. Minimum Number Of Arrows To Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) | [python](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.py), [c++](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.cpp) | O\(N\*logN\) | O\(1\) | \- | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-524. Longest Word In Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | O\(N\*logN \+ M \* N\) | O\(1\) | \- | - |
+| [Leetcode-646. Maximum Length Of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) | [python](./leetcode/646.maximum-length-of-pair-chain.py), [c++](./leetcode/646.maximum-length-of-pair-chain.cpp) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [python](./leetcode/658.find-k-closest-elements.py), [c++](./leetcode/658.find-k-closest-elements.cpp) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
@@ -183,7 +184,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
 
 ## Greedy
-| Problem(9) | Solution | Time | Space | Note | Ref |
+| Problem(10) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [python](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py), [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-135. Candy](https://leetcode.com/problems/candy/description/) | [python](./leetcode/135.candy.py), [c++](./leetcode/135.candy.cpp) | O\(N\) | O\(N\) | \- | - |
@@ -191,12 +192,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-452. Minimum Number Of Arrows To Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) | [python](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.py), [c++](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.cpp) | O\(N\*logN\) | O\(1\) | \- | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/) | [c++](./leetcode/605.can-place-flowers.cpp), [python](./leetcode/605.can-place-flowers.py) | O\(N\) | O\(N\) | \- | - |
+| [Leetcode-646. Maximum Length Of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) | [python](./leetcode/646.maximum-length-of-pair-chain.py), [c++](./leetcode/646.maximum-length-of-pair-chain.cpp) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/) | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python](./leetcode/680.valid-palindrome-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python](./leetcode/763.partition-labels.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(33) | Solution | Time | Space | Note | Ref |
+| Problem(34) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
@@ -224,6 +226,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-474. Ones And Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/) | [c++](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O\(KMN\) | O\(MN\) | \- | - |
 | [Leetcode-542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [python](./leetcode/542.01-matrix.py), [c++](./leetcode/542.01-matrix.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-583. Delete Operation For Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/) | [python](./leetcode/583.delete-operation-for-two-strings.py), [c++](./leetcode/583.delete-operation-for-two-strings.cpp) | O\(MN\) | O\(MN\) | \- | - |
+| [Leetcode-646. Maximum Length Of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) | [python](./leetcode/646.maximum-length-of-pair-chain.py), [c++](./leetcode/646.maximum-length-of-pair-chain.cpp) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | [python](./leetcode/1143.longest-common-subsequence.py), [c++](./leetcode/1143.longest-common-subsequence.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [python](./lintcode/92.backpack.py), [c++](./lintcode/92.backpack.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
