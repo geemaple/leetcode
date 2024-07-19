@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **344**<br/>
-Auto updated at: **2024-07-19 16:17:08**<br/>
+Total sovled: **345**<br/>
+Auto updated at: **2024-07-19 16:38:27**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -196,7 +196,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(32) | Solution | Time | Space | Note | Ref |
+| Problem(33) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
@@ -223,6 +223,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-474. Ones And Zeroes](https://leetcode.com/problems/ones-and-zeroes/description/) | [c++](./leetcode/474.ones-and-zeroes.cpp), [python](./leetcode/474.ones-and-zeroes.py) | O\(KMN\) | O\(MN\) | \- | - |
 | [Leetcode-542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [python](./leetcode/542.01-matrix.py), [c++](./leetcode/542.01-matrix.cpp) | O\(MN\) | O\(MN\) | \- | - |
+| [Leetcode-583. Delete Operation For Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/description/) | [python](./leetcode/583.delete-operation-for-two-strings.py), [c++](./leetcode/583.delete-operation-for-two-strings.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | [python](./leetcode/1143.longest-common-subsequence.py), [c++](./leetcode/1143.longest-common-subsequence.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Lintcode-92. Backpack](https://www.lintcode.com/problem/backpack) | [python](./lintcode/92.backpack.py), [c++](./lintcode/92.backpack.cpp) | O\(N^2\) | O\(N^2\) | \- | - |
