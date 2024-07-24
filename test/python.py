@@ -1,35 +1,18 @@
-def binary_search(dp, val):
-    left, right = 0, len(dp) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if dp[mid][1] < val:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return left
+from typing import List
+class Solution:
+    def maxProfit(self, prices: List[int], fee: int) -> int:
+        n = len(prices)
+        buy = [float('-inf') for i in range(n + 1)]
+        sell = [0 for i in range(n + 1)]
 
-def max_length_of_pair_chain(pairs):
-    # Step 1: Sort the pairs by their first element
-    pairs.sort(key=lambda pair: pair[0])
 
-    # Step 2: Initialize the dp array
-    dp = []
+        for i in range(1, n + 1):
+            for s in range(i):
+                buy[s + 1] = max(buy[s + 1], sell[s] - prices[i - 1])
+                sell[s + 1] = max(sell[s + 1], prices[i - 1] + buy[s] - fee)
 
-    # Step 3: Iterate over the pairs
-    for pair in pairs:
-        # Use binary search to find the correct position
-        i = binary_search(dp, pair[0])
-        # If i is equal to the length of dp, append the pair
-        if i == len(dp):
-            dp.append(pair)
-        else:
-            # Update the dp array if the current pair has a smaller second element
-            if dp[i][1] > pair[1]:
-                dp[i] = pair
-
-    # Step 5: The length of the dp array is the length of the longest chain
-    return len(dp)
-
-# Test cases
-print(max_length_of_pair_chain([[1,2], [2,3], [3,4]]))  # Output: 2
-print(max_length_of_pair_chain([[1,2], [7,8], [4,5]]))  # Output: 3
+        return max(sell)
+    
+s = Solution()
+res = s.maxProfit([1,3,2,8,4,9], 2)
+print(res)
