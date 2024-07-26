@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **353**<br/>
-Auto updated at: **2024-07-26 15:32:18**<br/>
+Total sovled: **354**<br/>
+Auto updated at: **2024-07-26 16:31:35**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,10 +60,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(12) | Solution | Time | Space | Note | Ref |
+| Problem(13) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description/) | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python](./leetcode/172.factorial-trailing-zeroes.py) | O\(log5\(n\)\) | O\(1\) | \- | - |
 | [Leetcode-204. Count Primes](https://leetcode.com/problems/count-primes/description/) | [c++](./leetcode/204.count-primes.cpp), [python](./leetcode/204.count-primes.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-241. Different Ways To Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python](./leetcode/241.different-ways-to-add-parentheses.py) | \- | \- | \- | - |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
