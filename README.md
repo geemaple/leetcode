@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **352**<br/>
-Auto updated at: **2024-07-26 15:13:20**<br/>
+Total sovled: **353**<br/>
+Auto updated at: **2024-07-26 15:32:18**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(11) | Solution | Time | Space | Note | Ref |
+| Problem(12) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -70,6 +70,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-343. Integer Break](https://leetcode.com/problems/integer-break/description/) | [c++](./leetcode/343.integer-break.cpp), [python](./leetcode/343.integer-break.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+| [Leetcode-504. Base 7](https://leetcode.com/problems/base-7/description/) | [python](./leetcode/504.base-7.py), [c++](./leetcode/504.base-7.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
