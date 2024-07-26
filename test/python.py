@@ -1,22 +1,22 @@
 from typing import List
 class Solution:
-    def maxCoins(self, nums: List[int]) -> int:
-        balloons = [1] + nums + [1]
-        n = len(balloons)
-        dp = [[0 for j in range(n)] for i in range(n)]
+    def countPrimes(self, n: int) -> int:
+        
+        if n <= 2:
+            return 0
 
-        for length in range(1, n - 1):
-            for l in range(1, n - length):
-                r = l + length - 1
-                for k in range(l, r + 1):
-                    p = balloons[l - 1] * balloons[k] + balloons[r + 1] + dp[l][k - 1] + dp[k + 1][r]
-                    if p > dp[l][r]:
-                        dp[l][r] = p
+        prime = [True for i in range(n)]
+        count = n // 2 - 1 # 去掉偶数 和 1 
+        for i in range(3, int(n ** 0.5) + 1, 2):
+            if prime[i]:
+                for j in range(i * i, n, 2 * i):  # step = 2倍的i
+                    if prime[j]:
+                        prime[j] = False
+                        count -= 1
 
-        print(dp)
-        return dp[1][n - 2]
+        return count + 1 # 加上2
 
 
 s = Solution()
-res = s.maxCoins([3,1,5,8])
+res = s.countPrimes(13)
 print(res)

@@ -16,7 +16,7 @@ import datetime
 import collections
 from functools import lru_cache
 
-TAG_MATCH = 'Math'
+TAG_MATH = 'Math'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
@@ -47,7 +47,7 @@ TAG_BFS_TS = 'Topological Sort'
 
 CATEGORY_OTHER = 'Other'
 
-SHOW_CATEGORIES = [TAG_MATCH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT,
+SHOW_CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT,
                   TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
 FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
@@ -61,7 +61,8 @@ TAG_REGEX = {
     TAG_DP: r'Dynamic Programming|DP|Memoization',
     TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
     TAG_ARY: r'Array|Matrix',
-    TAG_SORT: r'^Sort$|Sorting|Bucket Sort'
+    TAG_SORT: r'^Sort$|Sorting|Bucket Sort',
+    TAG_MATH: r'Math|Number Theory'
 }
 
 LANGUAGE = {
