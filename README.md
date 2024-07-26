@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **351**<br/>
-Auto updated at: **2024-07-25 16:56:37**<br/>
+Auto updated at: **2024-07-26 11:48:05**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -202,7 +202,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(38) | Solution | Time | Space | Note | Ref |
+| Problem(39) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
@@ -222,6 +222,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [python](./leetcode/300.longest-increasing-subsequence.py), [c++](./leetcode/300.longest-increasing-subsequence.cpp) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
 | [Leetcode-309. Best Time To Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) | [c++](./leetcode/309.best-time-to-buy-and-sell-stock-with-cooldown.cpp), [python](./leetcode/309.best-time-to-buy-and-sell-stock-with-cooldown.py) | O\(N\) | O\(N\) | \- | - |
+| [Leetcode-312. Burst Balloons](https://leetcode.com/problems/burst-balloons/description/) | [c++](./leetcode/312.burst-balloons.cpp), [python](./leetcode/312.burst-balloons.py) | O\(N^3\) | O\(N^2\) | \- | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
 | [Leetcode-343. Integer Break](https://leetcode.com/problems/integer-break/description/) | [c++](./leetcode/343.integer-break.cpp), [python](./leetcode/343.integer-break.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
@@ -349,7 +350,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(235) | Solution | Time | Space | Note | Ref |
+| Problem(234) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -478,7 +479,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-295. Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | [c++](./leetcode/295.find-median-from-data-stream.cpp), [python](./leetcode/295.find-median-from-data-stream.py) | \- | \- | \- | - |
 | [Leetcode-305. Number Of Islands II](https://leetcode.com/problems/number-of-islands-ii/description/) | [python](./leetcode/305.number-of-islands-ii.py), [c++](./leetcode/305.number-of-islands-ii.cpp) | \- | \- | \- | - |
 | [Leetcode-311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/description/) | [python](./leetcode/311.sparse-matrix-multiplication.py), [c++](./leetcode/311.sparse-matrix-multiplication.cpp) | \- | \- | \- | - |
-| [Leetcode-312. Burst Balloons](https://leetcode.com/problems/burst-balloons/description/) | [c++](./leetcode/312.burst-balloons.cpp), [python](./leetcode/312.burst-balloons.py) | \- | \- | \- | - |
 | [Leetcode-314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/) | [c++](./leetcode/314.binary-tree-vertical-order-traversal.cpp), [python](./leetcode/314.binary-tree-vertical-order-traversal.py) | \- | \- | \- | - |
 | [Leetcode-318. Maximum Product Of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | \- | \- | \- | - |
 | [Leetcode-323. Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/) | [python](./leetcode/323.number-of-connected-components-in-an-undirected-graph.py), [c++](./leetcode/323.number-of-connected-components-in-an-undirected-graph.cpp) | \- | \- | \- | - |
