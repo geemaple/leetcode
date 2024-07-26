@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **354**<br/>
-Auto updated at: **2024-07-26 16:31:35**<br/>
+Auto updated at: **2024-07-26 17:15:42**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(13) | Solution | Time | Space | Note | Ref |
+| Problem(14) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -71,14 +71,16 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-343. Integer Break](https://leetcode.com/problems/integer-break/description/) | [c++](./leetcode/343.integer-break.cpp), [python](./leetcode/343.integer-break.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+| [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-504. Base 7](https://leetcode.com/problems/base-7/description/) | [python](./leetcode/504.base-7.py), [c++](./leetcode/504.base-7.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Simulation
-| Problem(1) | Solution | Time | Space | Note | Ref |
+| Problem(2) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
 ## Design
@@ -353,7 +355,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(234) | Solution | Time | Space | Note | Ref |
+| Problem(233) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -514,7 +516,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-403. Frog Jump](https://leetcode.com/problems/frog-jump/description/) | [c++](./leetcode/403.frog-jump.cpp) | \- | \- | \- | - |
 | [Leetcode-407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/) | [python](./leetcode/407.trapping-rain-water-ii.py), [c++](./leetcode/407.trapping-rain-water-ii.cpp) | \- | \- | \- | - |
 | [Leetcode-408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) | [python](./leetcode/408.valid-word-abbreviation.py), [c++](./leetcode/408.valid-word-abbreviation.cpp) | \- | \- | \- | - |
-| [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | \- | \- | \- | - |
 | [Leetcode-425. Word Squares](https://leetcode.com/problems/word-squares/description/) | [python](./leetcode/425.word-squares.py), [c++](./leetcode/425.word-squares.cpp) | \- | \- | \- | - |
 | [Leetcode-433. Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/description/) | [python](./leetcode/433.minimum-genetic-mutation.py), [c++](./leetcode/433.minimum-genetic-mutation.cpp) | \- | \- | \- | - |
 | [Leetcode-438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | \- | \- | \- | - |
