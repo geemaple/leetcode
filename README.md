@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **355**<br/>
-Auto updated at: **2024-07-26 18:14:13**<br/>
+Total sovled: **356**<br/>
+Auto updated at: **2024-07-27 14:03:37**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(16) | Solution | Time | Space | Note | Ref |
+| Problem(17) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -75,6 +75,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-384. Shuffle An Array](https://leetcode.com/problems/shuffle-an-array/description/) | [python](./leetcode/384.shuffle-an-array.py), [c++](./leetcode/384.shuffle-an-array.cpp) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-504. Base 7](https://leetcode.com/problems/base-7/description/) | [python](./leetcode/504.base-7.py), [c++](./leetcode/504.base-7.cpp) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [python](./leetcode/528.random-pick-with-weight.py), [c++](./leetcode/528.random-pick-with-weight.cpp) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
@@ -92,7 +93,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Binary Search
-| Problem(33) | Solution | Time | Space | Note | Ref |
+| Problem(34) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [python](./leetcode/4.median-of-two-sorted-arrays.py), [c++](./leetcode/4.median-of-two-sorted-arrays.cpp) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [python](./leetcode/33.search-in-rotated-sorted-array.py), [c++](./leetcode/33.search-in-rotated-sorted-array.cpp) | O\(logN\) | O\(1\) | Rotated; | - |
@@ -112,6 +113,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [python](./leetcode/300.longest-increasing-subsequence.py), [c++](./leetcode/300.longest-increasing-subsequence.cpp) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
 | [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [python](./leetcode/374.guess-number-higher-or-lower.py), [c++](./leetcode/374.guess-number-higher-or-lower.cpp) | O\(logN\) | O\(1\) | Standard | - |
 | [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | O\(Height\) | O\(Height\) | Delete | - |
+| [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [python](./leetcode/528.random-pick-with-weight.py), [c++](./leetcode/528.random-pick-with-weight.cpp) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-540. Single Element In A Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) | [python](./leetcode/540.single-element-in-a-sorted-array.py), [c++](./leetcode/540.single-element-in-a-sorted-array.cpp) | O\(logN\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [python](./leetcode/658.find-k-closest-elements.py), [c++](./leetcode/658.find-k-closest-elements.cpp) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |

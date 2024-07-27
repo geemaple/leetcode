@@ -60,9 +60,9 @@ TAG_REGEX = {
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
     TAG_DP: r'Dynamic Programming|DP|Memoization',
     TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
-    TAG_ARY: r'Array|Matrix',
+    TAG_ARY: r'Array|Matrix|Prefix Sum',
     TAG_SORT: r'^Sort$|Sorting|Bucket Sort',
-    TAG_MATH: r'Math|Number Theory'
+    TAG_MATH: r'Math|Number Theory|Randomized'
 }
 
 LANGUAGE = {
