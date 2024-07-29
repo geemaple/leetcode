@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **359**<br/>
-Auto updated at: **2024-07-29 13:59:19**<br/>
+Total sovled: **360**<br/>
+Auto updated at: **2024-07-29 17:10:12**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(20) | Solution | Time | Space | Note | Ref |
+| Problem(21) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
@@ -77,6 +77,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/) | [c++](./leetcode/382.linked-list-random-node.cpp), [python](./leetcode/382.linked-list-random-node.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-384. Shuffle An Array](https://leetcode.com/problems/shuffle-an-array/description/) | [python](./leetcode/384.shuffle-an-array.py), [c++](./leetcode/384.shuffle-an-array.cpp) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-462. Minimum Moves To Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-504. Base 7](https://leetcode.com/problems/base-7/description/) | [python](./leetcode/504.base-7.py), [c++](./leetcode/504.base-7.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [python](./leetcode/528.random-pick-with-weight.py), [c++](./leetcode/528.random-pick-with-weight.cpp) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
@@ -181,7 +182,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Sorting
-| Problem(13) | Solution | Time | Space | Note | Ref |
+| Problem(14) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [python](./leetcode/75.sort-colors.py), [c++](./leetcode/75.sort-colors.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [python](./leetcode/88.merge-sorted-array.py), [c++](./leetcode/88.merge-sorted-array.cpp) | O\(M \+ N\) | O\(1\) | \- | - |
@@ -192,6 +193,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python](./leetcode/451.sort-characters-by-frequency.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-452. Minimum Number Of Arrows To Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/) | [python](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.py), [c++](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.cpp) | O\(N\*logN\) | O\(1\) | \- | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
+| [Leetcode-462. Minimum Moves To Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-524. Longest Word In Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | O\(N\*logN \+ M \* N\) | O\(1\) | \- | - |
 | [Leetcode-646. Maximum Length Of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/description/) | [python](./leetcode/646.maximum-length-of-pair-chain.py), [c++](./leetcode/646.maximum-length-of-pair-chain.cpp) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [python](./leetcode/658.find-k-closest-elements.py), [c++](./leetcode/658.find-k-closest-elements.cpp) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
