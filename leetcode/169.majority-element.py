@@ -1,78 +1,54 @@
-#
-# @lc app=leetcode id=169 lang=python
-#
-# [169] Majority Element
-#
-# https://leetcode.com/problems/majority-element/description/
-#
-# algorithms
-# Easy (56.44%)
-# Total Accepted:    542.5K
-# Total Submissions: 960.6K
-# Testcase Example:  '[3,2,3]'
-#
-# Given an array of size n, find the majority element. The majority element is
-# the element that appears more than ⌊ n/2 ⌋ times.
-# 
-# You may assume that the array is non-empty and the majority element always
-# exist in the array.
-# 
-# Example 1:
-# 
-# 
-# Input: [3,2,3]
-# Output: 3
-# 
-# Example 2:
-# 
-# 
-# Input: [2,2,1,1,1,2,2]
-# Output: 2
-# 
-# 
-#
-# O(N)
-class Solution(object):
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        candidate = 0
-        counter = 0
-        for val in nums:
-            if counter == 0:
-                candidate = val
+#  Tag: Array, Hash Table, Divide and Conquer, Sorting, Counting
+#  Time: O(N)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
 
-            if candidate == val:
-                counter += 1
+#  Given an array nums of size n, return the majority element.
+#  The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+#   
+#  Example 1:
+#  Input: nums = [3,2,3]
+#  Output: 3
+#  Example 2:
+#  Input: nums = [2,2,1,1,1,2,2]
+#  Output: 2
+#  
+#   
+#  Constraints:
+#  
+#  n == nums.length
+#  1 <= n <= 5 * 104
+#  -109 <= nums[i] <= 109
+#  
+#   
+#  Follow-up: Could you solve the problem in linear time and in O(1) space?
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        count = 0
+        res = 0
+        for x in nums:
+            if count == 0:
+                res = x
+
+            if x == res:
+                count += 1
             else:
-                counter -= 1
-
-        return candidate
-
-# O(NlogN)
+                count -= 1
+                
+        return res
+    
 from collections import Counter
-class Solution2(object):
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
         counter = Counter(nums)
         for key in counter:
             if counter[key] > len(nums)//2:
                 return key
-
-
-# O(NlogN)
-class Solution3(object):
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+            
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
         nums.sort()
         mid = len(nums)//2
         return nums[mid]
-        

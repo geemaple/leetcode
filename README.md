@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **360**<br/>
-Auto updated at: **2024-07-29 17:10:12**<br/>
+Auto updated at: **2024-07-29 17:39:19**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -182,10 +182,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Sorting
-| Problem(14) | Solution | Time | Space | Note | Ref |
+| Problem(15) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [python](./leetcode/75.sort-colors.py), [c++](./leetcode/75.sort-colors.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [python](./leetcode/88.merge-sorted-array.py), [c++](./leetcode/88.merge-sorted-array.cpp) | O\(M \+ N\) | O\(1\) | \- | - |
+| [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [python](./leetcode/215.kth-largest-element-in-an-array.py), [c++](./leetcode/215.kth-largest-element-in-an-array.cpp) | O\(N\) ～ O\(N^2\) | O\(1\) | QuickSelection | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [python](./leetcode/347.top-k-frequent-elements.py), [c++](./leetcode/347.top-k-frequent-elements.cpp) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [python](./leetcode/406.queue-reconstruction-by-height.py), [c++](./leetcode/406.queue-reconstruction-by-height.cpp) | O\(N \* logN\) | O\(1\) | \- | - |
@@ -200,8 +201,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
 ## Counting
-| Problem(3) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [python](./leetcode/347.top-k-frequent-elements.py), [c++](./leetcode/347.top-k-frequent-elements.cpp) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
 | [Leetcode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python](./leetcode/451.sort-characters-by-frequency.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | O\(logN\) | O\(1\) | std::lower\_bound | - |
@@ -280,10 +282,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-494. Target Sum](https://leetcode.com/problems/target-sum/description/) | [c++](./leetcode/494.target-sum.cpp), [python](./leetcode/494.target-sum.py) | O\(N \* Sum\) | O\(N \* Sum\) | \- | - |
 
 ## Divide and Conquer
-| Problem(8) | Solution | Time | Space | Note | Ref |
+| Problem(9) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [python](./leetcode/4.median-of-two-sorted-arrays.py), [c++](./leetcode/4.median-of-two-sorted-arrays.cpp) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
+| [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [python](./leetcode/215.kth-largest-element-in-an-array.py), [c++](./leetcode/215.kth-largest-element-in-an-array.cpp) | O\(N\) ～ O\(N^2\) | O\(1\) | QuickSelection | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [python](./leetcode/240.search-a-2d-matrix-ii.py), [c++](./leetcode/240.search-a-2d-matrix-ii.cpp) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [python](./leetcode/347.top-k-frequent-elements.py), [c++](./leetcode/347.top-k-frequent-elements.cpp) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
@@ -372,7 +375,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(231) | Solution | Time | Space | Note | Ref |
+| Problem(230) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -455,7 +458,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-160. Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | [c++](./leetcode/160.intersection-of-two-linked-lists.cpp), [python](./leetcode/160.intersection-of-two-linked-lists.py) | \- | \- | \- | - |
 | [Leetcode-161. One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/) | [c++](./leetcode/161.one-edit-distance.cpp), [python](./leetcode/161.one-edit-distance.py) | \- | \- | \- | - |
 | [Leetcode-163. Missing Ranges](https://leetcode.com/problems/missing-ranges/description/) | [python](./leetcode/163.missing-ranges.py), [c++](./leetcode/163.missing-ranges.cpp) | \- | \- | \- | - |
-| [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | \- | \- | \- | - |
 | [Leetcode-170. Two Sum Iii Data Structure Design](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/) | [python](./leetcode/170.two-sum-iii-data-structure-design.py), [c++](./leetcode/170.two-sum-iii-data-structure-design.cpp) | \- | \- | \- | - |
 | [Leetcode-175. Combine Two Tables](https://leetcode.com/problems/combine-two-tables/description/) | [sql](./leetcode/175.combine-two-tables.sql) | \- | \- | \- | - |
 | [Leetcode-200. Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | [c++](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | \- | \- | \- | - |
