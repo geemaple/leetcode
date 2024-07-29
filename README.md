@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **358**<br/>
-Auto updated at: **2024-07-29 13:02:08**<br/>
+Total sovled: **359**<br/>
+Auto updated at: **2024-07-29 13:59:19**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -358,8 +358,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [python](./leetcode/406.queue-reconstruction-by-height.py), [c++](./leetcode/406.queue-reconstruction-by-height.cpp) | O\(N \* logN\) | O\(1\) | \- | - |
 
 ## Array
-| Problem(2) | Solution | Time | Space | Note | Ref |
+| Problem(3) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-238. Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) | [python](./leetcode/238.product-of-array-except-self.py), [c++](./leetcode/238.product-of-array-except-self.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-665. Non Decreasing Array](https://leetcode.com/problems/non-decreasing-array/description/) | [python](./leetcode/665.non-decreasing-array.py), [c++](./leetcode/665.non-decreasing-array.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-2210. Count Hills And Valleys In An Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/description/) | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
 
