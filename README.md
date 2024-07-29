@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **361**<br/>
-Auto updated at: **2024-07-29 18:54:36**<br/>
+Auto updated at: **2024-07-29 19:18:15**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,13 +60,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(22) | Solution | Time | Space | Note | Ref |
+| Problem(23) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | [python](./leetcode/168.excel-sheet-column-title.py), [c++](./leetcode/168.excel-sheet-column-title.cpp) | O\(logN\) | O\(1\) | \- | - |
 | [Leetcode-172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description/) | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python](./leetcode/172.factorial-trailing-zeroes.py) | O\(log5\(n\)\) | O\(1\) | \- | - |
+| [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [python](./leetcode/202.happy-number.py), [c++](./leetcode/202.happy-number.cpp) | O\(S\) | O\(1\) | \- | - |
 | [Leetcode-204. Count Primes](https://leetcode.com/problems/count-primes/description/) | [c++](./leetcode/204.count-primes.cpp), [python](./leetcode/204.count-primes.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-241. Different Ways To Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python](./leetcode/241.different-ways-to-add-parentheses.py) | \- | \- | \- | - |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
@@ -151,13 +152,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | O\(N\) | O\(Height\) | BST \| Leetcode\-426 | - |
 
 ## Two Pointers
-| Problem(12) | Solution | Time | Space | Note | Ref |
+| Problem(13) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [python](./leetcode/75.sort-colors.py), [c++](./leetcode/75.sort-colors.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [python](./leetcode/88.merge-sorted-array.py), [c++](./leetcode/88.merge-sorted-array.cpp) | O\(M \+ N\) | O\(1\) | \- | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [python](./leetcode/202.happy-number.py), [c++](./leetcode/202.happy-number.cpp) | O\(S\) | O\(1\) | \- | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python](./leetcode/455.assign-cookies.py) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-524. Longest Word In Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | O\(N\*logN \+ M \* N\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
@@ -376,7 +378,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(230) | Solution | Time | Space | Note | Ref |
+| Problem(229) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -462,7 +464,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-170. Two Sum Iii Data Structure Design](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/) | [python](./leetcode/170.two-sum-iii-data-structure-design.py), [c++](./leetcode/170.two-sum-iii-data-structure-design.cpp) | \- | \- | \- | - |
 | [Leetcode-175. Combine Two Tables](https://leetcode.com/problems/combine-two-tables/description/) | [sql](./leetcode/175.combine-two-tables.sql) | \- | \- | \- | - |
 | [Leetcode-200. Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | [c++](./leetcode/200.number-of-islands.cpp), [python](./leetcode/200.number-of-islands.py) | \- | \- | \- | - |
-| [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [python](./leetcode/202.happy-number.py), [c++](./leetcode/202.happy-number.cpp) | \- | \- | \- | - |
 | [Leetcode-203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) | [python](./leetcode/203.remove-linked-list-elements.py) | \- | \- | \- | - |
 | [Leetcode-205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | [c++](./leetcode/205.isomorphic-strings.cpp), [python](./leetcode/205.isomorphic-strings.py) | \- | \- | \- | - |
 | [Leetcode-206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | [python](./leetcode/206.reverse-linked-list.py), [c++](./leetcode/206.reverse-linked-list.cpp) | \- | \- | \- | - |
