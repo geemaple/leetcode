@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **357**<br/>
-Auto updated at: **2024-07-27 15:59:37**<br/>
+Total sovled: **358**<br/>
+Auto updated at: **2024-07-29 13:02:08**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,10 +60,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(18) | Solution | Time | Space | Note | Ref |
+| Problem(20) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-168. Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | [python](./leetcode/168.excel-sheet-column-title.py), [c++](./leetcode/168.excel-sheet-column-title.cpp) | O\(logN\) | O\(1\) | \- | - |
 | [Leetcode-172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description/) | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python](./leetcode/172.factorial-trailing-zeroes.py) | O\(log5\(n\)\) | O\(1\) | \- | - |
 | [Leetcode-204. Count Primes](https://leetcode.com/problems/count-primes/description/) | [c++](./leetcode/204.count-primes.cpp), [python](./leetcode/204.count-primes.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-241. Different Ways To Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python](./leetcode/241.different-ways-to-add-parentheses.py) | \- | \- | \- | - |
@@ -81,9 +83,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | [c++](./leetcode/650.2-keys-keyboard.cpp), [python](./leetcode/650.2-keys-keyboard.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
-## Simulation
-| Problem(2) | Solution | Time | Space | Note | Ref |
+## Bit Manipulation
+| Problem(1) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
+
+## Simulation
+| Problem(3) | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python](./lintcode/39.recover-rotated-sorted-array.py) | O\(N\) | O\(1\) | Rotated | - |
 
@@ -361,7 +369,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(232) | Solution | Time | Space | Note | Ref |
+| Problem(231) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -412,7 +420,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) | [python](./leetcode/62.unique-paths.py), [c++](./leetcode/62.unique-paths.cpp) | \- | \- | \- | - |
 | [Leetcode-63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [python](./leetcode/63.unique-paths-ii.py), [c++](./leetcode/63.unique-paths-ii.cpp) | \- | \- | \- | - |
 | [Leetcode-66. Plus One](https://leetcode.com/problems/plus-one/description/) | [python](./leetcode/66.plus-one.py), [c++](./leetcode/66.plus-one.cpp) | \- | \- | \- | - |
-| [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | \- | \- | \- | - |
 | [Leetcode-68. Text Justification](https://leetcode.com/problems/text-justification/description/) | [python](./leetcode/68.text-justification.py) | \- | \- | \- | - |
 | [Leetcode-78. Subsets](https://leetcode.com/problems/subsets/description/) | [c++](./leetcode/78.subsets.cpp), [python](./leetcode/78.subsets.py) | \- | \- | \- | - |
 | [Leetcode-84. Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | [c++](./leetcode/84.largest-rectangle-in-histogram.cpp), [python](./leetcode/84.largest-rectangle-in-histogram.py) | \- | \- | \- | - |
