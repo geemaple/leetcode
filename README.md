@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **360**<br/>
-Auto updated at: **2024-07-29 17:39:19**<br/>
+Total sovled: **361**<br/>
+Auto updated at: **2024-07-29 18:54:36**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(21) | Solution | Time | Space | Note | Ref |
+| Problem(22) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
@@ -78,6 +78,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-384. Shuffle An Array](https://leetcode.com/problems/shuffle-an-array/description/) | [python](./leetcode/384.shuffle-an-array.py), [c++](./leetcode/384.shuffle-an-array.cpp) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python](./leetcode/415.add-strings.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-462. Minimum Moves To Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | O\(NlogN\) | O\(1\) | \- | - |
+| [Leetcode-470. Implement Rand10 Using Rand7](https://leetcode.com/problems/implement-rand10-using-rand7/description/) | [c++](./leetcode/470.implement-rand10-using-rand7.cpp), [python](./leetcode/470.implement-rand10-using-rand7.py) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-504. Base 7](https://leetcode.com/problems/base-7/description/) | [python](./leetcode/504.base-7.py), [c++](./leetcode/504.base-7.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [python](./leetcode/528.random-pick-with-weight.py), [c++](./leetcode/528.random-pick-with-weight.cpp) | O\(NlogN\) | O\(1\) | \- | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [python](./leetcode/633.sum-of-square-numbers.py), [c++](./leetcode/633.sum-of-square-numbers.cpp) | O\(N\) | O\(1\) | \- | - |
