@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **361**<br/>
-Auto updated at: **2024-07-29 19:18:15**<br/>
+Total sovled: **363**<br/>
+Auto updated at: **2024-07-30 17:56:16**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -87,9 +87,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(1) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
+| [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [python](./leetcode/461.hamming-distance.py), [c++](./leetcode/461.hamming-distance.cpp) | O\(1\) | O\(1\) | \- | - |
 
 ## Simulation
 | Problem(3) | Solution | Time | Space | Note | Ref |
@@ -285,11 +288,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-494. Target Sum](https://leetcode.com/problems/target-sum/description/) | [c++](./leetcode/494.target-sum.cpp), [python](./leetcode/494.target-sum.py) | O\(N \* Sum\) | O\(N \* Sum\) | \- | - |
 
 ## Divide and Conquer
-| Problem(9) | Solution | Time | Space | Note | Ref |
+| Problem(10) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [python](./leetcode/4.median-of-two-sorted-arrays.py), [c++](./leetcode/4.median-of-two-sorted-arrays.cpp) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [python](./leetcode/215.kth-largest-element-in-an-array.py), [c++](./leetcode/215.kth-largest-element-in-an-array.cpp) | O\(N\) ～ O\(N^2\) | O\(1\) | QuickSelection | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [python](./leetcode/240.search-a-2d-matrix-ii.py), [c++](./leetcode/240.search-a-2d-matrix-ii.cpp) | O\(m \* logN\) | O\(1\) | Matrix | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [python](./leetcode/347.top-k-frequent-elements.py), [c++](./leetcode/347.top-k-frequent-elements.cpp) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
@@ -378,7 +382,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(229) | Solution | Time | Space | Note | Ref |
+| Problem(228) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -450,7 +454,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | [python](./leetcode/131.palindrome-partitioning.py), [c++](./leetcode/131.palindrome-partitioning.cpp) | \- | \- | \- | - |
 | [Leetcode-132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/description/) | [c++](./leetcode/132.palindrome-partitioning-ii.cpp), [python](./leetcode/132.palindrome-partitioning-ii.py) | \- | \- | \- | - |
 | [Leetcode-133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [c++](./leetcode/133.clone-graph.cpp), [python](./leetcode/133.clone-graph.py) | \- | \- | \- | - |
-| [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | \- | \- | \- | - |
 | [Leetcode-138. Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | [python](./leetcode/138.copy-list-with-random-pointer.py) | \- | \- | \- | - |
 | [Leetcode-143. Reorder List](https://leetcode.com/problems/reorder-list/description/) | [python](./leetcode/143.reorder-list.py) | \- | \- | \- | - |
 | [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [python](./leetcode/148.sort-list.py) | \- | \- | \- | - |
