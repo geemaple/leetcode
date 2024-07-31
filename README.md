@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **366**<br/>
-Auto updated at: **2024-07-31 13:59:55**<br/>
+Total sovled: **367**<br/>
+Auto updated at: **2024-07-31 14:47:46**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -89,11 +89,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(10) | Solution | Time | Space | Note | Ref |
+| Problem(11) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-260. Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [python](./leetcode/260.single-number-iii.py), [c++](./leetcode/260.single-number-iii.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [python](./leetcode/268.missing-number.py), [c++](./leetcode/268.missing-number.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-318. Maximum Product Of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | O\(N\) | O\(1\) | \- | - |
