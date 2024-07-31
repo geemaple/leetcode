@@ -1,4 +1,4 @@
-#  Category: Array, Binary Search
+#  Tag: Array, Binary Search
 #  Time: O(logN) ~ O(N)
 #  Space: O(1)
 #  Ref: -
@@ -33,17 +33,13 @@ class Solution:
         start = 0
         end = len(nums) - 1
         while start < end:
-            mid = start + (end - start) // 2
-
-            if nums[mid] == target:
-                return True
-
             if nums[start] == nums[end]:
                 end -= 1
                 continue
-
+            
+            mid = start + (end - start) // 2
             if nums[mid] >= nums[start]:
-                if target >= nums[start] and target < nums[mid]:
+                if target >= nums[start] and target <= nums[mid]:
                     end = mid
                 else:
                     start = mid + 1

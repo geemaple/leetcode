@@ -1,4 +1,4 @@
-#  Category: Binary Search, Interactive
+#  Tag: Binary Search, Interactive
 #  Time: O(logN)
 #  Space: O(1)
 #  Ref: https://youtu.be/xNzBpfqzYSg

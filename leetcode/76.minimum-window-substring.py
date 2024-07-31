@@ -1,36 +1,70 @@
-class Solution(object):
-    def minWindow(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: str
-        """
-        if s is None or t is None or len(s) < len(t):
-            return ''
+#  Tag: Hash Table, String, Sliding Window
+#  Time: O(M)
+#  Space: O(N)
+#  Ref: -
+#  Note: Hash + TP
 
-        count_set = dict()
-        j = 0
-        start = 0
-        end = float('inf')
-        remains = len(t)
+#  Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
+#  The testcases will be generated such that the answer is unique.
+#   
+#  Example 1:
+#  
+#  Input: s = "ADOBECODEBANC", t = "ABC"
+#  Output: "BANC"
+#  Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+#  
+#  Example 2:
+#  
+#  Input: s = "a", t = "a"
+#  Output: "a"
+#  Explanation: The entire string s is the minimum window.
+#  
+#  Example 3:
+#  
+#  Input: s = "a", t = "aa"
+#  Output: ""
+#  Explanation: Both 'a's from t must be included in the window.
+#  Since the largest window of s only has one 'a', return empty string.
+#  
+#   
+#  Constraints:
+#  
+#  m == s.length
+#  n == t.length
+#  1 <= m, n <= 105
+#  s and t consist of uppercase and lowercase English letters.
+#  
+#   
+#  Follow up: Could you find an algorithm that runs in O(m + n) time?
+#  
 
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        table = {}
         for c in t:
-            count_set[c] = count_set.get(c, 0) + 1
+            table[c] = table.get(c, 0) + 1
 
-        for i in range(len(s)):
-            while(j < len(s) and remains > 0):
-                if s[j] in count_set:
-                    count_set[s[j]] -= 1
-                    if count_set[s[j]] >= 0:
-                        remains -= 1
-                j += 1
-            
-            if (remains == 0 and j - i < end - start):
-                start, end = i, j
+        counter = 0
+        l = 0
+        head = 0
+        length = len(s) + 1
 
-            if s[i] in count_set:
-                count_set[s[i]] += 1
-                if count_set[s[i]] > 0:
-                    remains += 1
+        for r in range(len(s)):
+            if s[r] in table:
+                if table[s[r]] > 0:
+                    counter += 1
+                table[s[r]] -= 1
 
-        return '' if end == float('inf') else s[start: end]
+            while counter == len(t):
+                if r - l + 1 < length:
+                    head = l
+                    length = r - l + 1
+
+                if s[l] in table:
+                    if table[s[l]] == 0:
+                        counter -= 1
+                    table[s[l]] += 1
+
+                l += 1
+
+        return "" if length > len(s) else s[head: head + length]

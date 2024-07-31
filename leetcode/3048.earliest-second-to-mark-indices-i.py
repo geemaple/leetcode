@@ -1,4 +1,4 @@
-#  Category: Binary Search, Greedy
+#  Tag: Binary Search, Greedy
 #  Time: O(M*logM)
 #  Space: O(M)
 #  Ref: -

@@ -1,32 +1,78 @@
-# f[i][w] = max(f[i - 1][w - k * A[i - 1]] + k * V[i - 1] where k >= 0)
-#         = max(f[i - 1][w], f[i - 1][w - A[i - 1]] + V[i - 1], f[i - 2][w - 2 * A[i - 1]] + 2 * V[i - 1] ...)
-#
-# suppose: w1 = w - A[i - 1] w1 is weight and also index
-# 
-#         = max(f[i - 1][w], f[i - 1][w1] + V[i - 1], f[i - 2][w1 - A[i - 1]] + 2 * V[i - 1], f[i - 2][w1 - 2 * A[i - 1]] + 3 * V[i - 1])
-#         = max(f[i - 1][w], max(f[i - 1][w1], f[i - 2][w1 - A[i - 1]] + V[i - 1], f[i - 2][w1 - 2 * A[i - 1]] + 2 * V[i - 1]... ) + V[i - 1])
-#         = max(f[i - 1][w], f[i][w1]+ v[i - 1])
-# f[i][w] = max(f[i - 1][w], f[i][w - A[i - 1]] + V[i - 1])
+#  Tag: Backpack DP, Dynamic Programming/DP
+#  Time: O(N^2)
+#  Space: O(N^2)
+#  Ref: -
+#  Note: -
+
+#  Given `n` kinds of items, and each kind of item has an infinite number available.
+#  The `i-th` item has size `A[i]` and value `V[i]`.
+#  
+#  Also given a backpack with size `m`.
+#  What is the maximum value you can put into the backpack?
+#  
+#  **Example 1:**
+#  
+#  ```
+#  Input: A = [2, 3, 5, 7], V = [1, 5, 2, 4], m = 10
+#  Output: 15
+#  Explanation: Put three item 1 (A[1] = 3, V[1] = 5) into backpack.
+#  ```
+#  
+#  **Example 2:**
+#  
+#  ```
+#  Input: A = [1, 2, 3], V = [1, 2, 3], m = 5
+#  Output: 5
+#  Explanation: Strategy is not unique. For example, put five item 0 (A[0] = 1, V[0] = 1) into backpack.
+#  ```
+#  
+#  1. You cannot divide item into small pieces.
+#  2. Total size of items you put into backpack can not exceed `m`.
+
+from typing import (
+    List,
+)
 
 class Solution:
     """
-    @param A: an integer array
-    @param V: an integer array
+    @param a: an integer array
+    @param v: an integer array
     @param m: An integer
     @return: an array
     """
-    def backPackIII(self, A, V, m):
+    def back_pack_i_i_i(self, a: List[int], v: List[int], m: int) -> int:
         # write your code here
-        table = [-1 for _ in range(m + 1)]
-        table[0] = 0
+        n = len(a)
+        dp = [[0 for j in range(m + 1)] for i in range(n + 1)]
 
-        for i in range(len(A)):
-            for w in range(m + 1):
-                value = table[w]
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                w = a[i - 1]
+                val = v[i - 1]
+                if j >= w:
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - w] + val)
+                else:
+                    dp[i][j] = dp[i - 1][j]
 
-                if (w - A[i] >= 0 and table[w - A[i]] != -1):
-                    value = max(value, table[w - A[i]] + V[i])
+        return dp[n][m]
+    
+class Solution:
+    """
+    @param a: an integer array
+    @param v: an integer array
+    @param m: An integer
+    @return: an array
+    """
+    def back_pack_i_i_i(self, a: List[int], v: List[int], m: int) -> int:
+        # write your code here
+        n = len(a)
+        dp = [0 for j in range(m + 1)]
 
-                table[w] = value
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                w = a[i - 1]
+                val = v[i - 1]
+                if j >= w:
+                    dp[j] = max(dp[j], dp[j - w] + val)
 
-        return max(table)
+        return dp[m]

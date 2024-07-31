@@ -1,4 +1,4 @@
-//  Category: Array, Binary Search
+//  Tag: Array, Binary Search
 //  Time: O(logN)
 //  Space: O(1)
 //  Ref: https://youtu.be/y6OT8heV-30

@@ -57,7 +57,7 @@ class Problem:
 
     def write(self, file) -> None:
         self.write_comments(file, [
-            f'Category: {", ".join(self.tags)}',
+            f'Tag: {", ".join(self.tags)}',
             f'Time: -',
             f'Space: -',
             f'Ref: -',
@@ -68,67 +68,83 @@ class Problem:
 
 def parse_leetcode(url, lang, translate):
     session = requests.session()
-    response = session.get(url)
-    text = response.text
-
-    soup = BeautifulSoup(text, 'html.parser')
-
-    problem = soup.find('script', type='application/json')
-
-    json_text = problem.contents[0] 
-
-    query = json.loads(json_text)['props']['pageProps']['dehydratedState']['queries']
 
     problem = Problem('leetcode', lang)
-
-    for data in query:
-        if 'questionTitle' in data['queryKey']:
-            problem.number = data['state']['data']['question']['questionFrontendId']
-            problem.title = data['state']['data']['question']['title']
-            
-        elif 'questionContent' in data['queryKey']:
-            if len(problem.content) == 0:
-                content = BeautifulSoup(data['state']['data']['question']['content'], 'html.parser')
-                problem.content = content.text
-
-        elif translate and 'questionTranslations' in data['queryKey']:
-            content = BeautifulSoup(data['state']['data']['question']['translatedContent'], 'html.parser')
-            problem.content = content.text
-            
-        elif 'singleQuestionTopicTags' in data['queryKey']:
-          problem.tags = [tag['name'] for tag in data['state']['data']['question']['topicTags']]
-
-        elif 'questionInterviewOptions' in data['queryKey']:
-            companies = data['state']['data']['interviewed']['companies']
-            problem.companies = [c['name'] for c in companies]
-        else:
-            # print(data['queryKey'][0])
-            pass
-            
-
-
+    problem.title = re.search(r"/problems/([\w-]+)/?", url).group(1)
+    
     graphql = urlparse(url)._replace(path="/graphql/").geturl()
-
     headers = {
         'Referer': url,
     }
 
-    json_data = {
+    question_title = {
+            "query":"\n    query questionTitle($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    title\n    titleSlug\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    categoryTitle\n  }\n}\n    ",
+            "variables":{
+                    "titleSlug": problem.question_name
+                },
+            "operationName":"questionTitle"
+        }
+    
+    response = session.post(graphql, headers=headers, json=question_title)
+    data = response.json()
+    problem.number = data["data"]["question"]["questionFrontendId"]
+    print(problem.number, problem.title)
+
+    question_content = {
+            "query": "\n    query questionContent($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    content\n    mysqlSchemas\n    dataSchemas\n  }\n}\n    ",
+            "variables": {
+                    "titleSlug": problem.question_name
+                },
+            "operationName":"questionContent"
+        }
+    response = session.post(graphql, headers=headers, json=question_content)
+    data = response.json()
+    soup = BeautifulSoup(data["data"]["question"]["content"], 'html.parser')
+    problem.content = soup.text
+  
+    question_topic = {
+            "query":"\n    query singleQuestionTopicTags($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    topicTags {\n      name\n      slug\n    }\n  }\n}\n    ",
+            "variables": {
+                    "titleSlug": problem.question_name
+                },
+            "operationName":"singleQuestionTopicTags"
+        }
+    response = session.post(graphql, headers=headers, json=question_topic)
+    data = response.json()
+    problem.tags =  [tag['name'] for tag in data['data']['question']['topicTags']]
+    print(problem.tags)
+
+    question_editor = {
         'query': '\n    query questionEditorData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    codeSnippets {\n      lang\n      langSlug\n      code\n    }\n    envInfo\n    enableRunCode\n    hasFrontendPreview\n    frontendPreviews\n  }\n}\n    ',
         'variables': {
-            'titleSlug': problem.question_name,
+            'titleSlug': problem.question_name
         },
         'operationName': 'questionEditorData',
     }
 
-    response = session.post(graphql, headers=headers, json=json_data)
+    response = session.post(graphql, headers=headers, json=question_editor)
     state = response.json()
     editorData = state['data']['question']['codeSnippets'] or []
     for code in editorData:
         if code['langSlug'].lower() == lang.lower():
             problem.editorData = code['code']
 
+    if translate:
+        question_translattion = {
+                "query":"\n    query questionTranslations($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    translatedTitle\n    translatedContent\n  }\n}\n    ",
+                "variables": {
+                        "titleSlug": problem.question_name
+                    },
+                "operationName":"questionTranslations"
+            }
+
+        response = session.post(graphql, headers=headers, json=question_translattion)
+        data = response.json()
+        soup = BeautifulSoup(data["data"]["question"]["translatedContent"], 'html.parser')
+        problem.content = soup.text
+    
     return problem
+
 
 def parse_lintcode(url, lang, translate):
 

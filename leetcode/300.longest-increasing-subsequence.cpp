@@ -1,55 +1,69 @@
-// O(N * logN)
-// http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+//  Tag: Array, Dynamic Programming, Binary Search
+//  Time: O(N*logN)
+//  Space: O(N)
+//  Ref: -
+//  Note: LIS | std::lower_bound
+
+//  Given an integer array nums, return the length of the longest strictly increasing subsequence.
+//   
+//  Example 1:
+//  
+//  Input: nums = [10,9,2,5,3,7,101,18]
+//  Output: 4
+//  Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+//  
+//  Example 2:
+//  
+//  Input: nums = [0,1,0,3,2,3]
+//  Output: 4
+//  
+//  Example 3:
+//  
+//  Input: nums = [7,7,7,7,7,7,7]
+//  Output: 1
+//  
+//   
+//  Constraints:
+//  
+//  1 <= nums.length <= 2500
+//  -104 <= nums[i] <= 104
+//  
+//   
+//  Follow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
+//  
+
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
-        vector<int> table;
-        for(auto i = 0; i < nums.size(); ++i)
-        {
-            auto it = lower_bound(table.begin(), table.end(), nums[i]);
-            if (it == table.end())
-            {
-                table.push_back(nums[i]);
-            }
-            else
-            {
-                *it = nums[i];
+        vector<int> res;
+        for (int n : nums) {
+            auto it = lower_bound(res.begin(), res.end(), n);
+            if (it == res.end()) {
+                res.push_back(n);
+            } else {
+                *it = n;
             }
         }
 
-        return table.size();
+        return res.size();
     }
 };
 
-// f(i) = max(1, f(j) + 1 if j < i and nums[j] < nums[i])
-// O(N ^ 2)
-class Solution2 {
+
+class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
-        
-        if (nums.size() == 0)
-        {
-            return 0;
-        }
-        
-        int m = nums.size();
-        vector<int> table(m, 0);
-        table[0] = 1;
-        
-        for(auto i = 1; i < m; ++i)
-        {
-            int value =  1;
-            for(auto j = 0; j < i; ++j)
-            {
-                if (nums[j] < nums[i])
-                {
-                    value = max(value, table[j] + 1);
+        int n = nums.size();
+        vector<int> dp(n, 1);
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++ ) {
+                if (nums[i] > nums[j] && dp[j] + 1 > dp[i]) {
+                    dp[i] = dp[j] + 1;
                 }
             }
-            table[i] = value;
         }
-        
-        return *max_element(table.begin(), table.end());
+
+        return *max_element(dp.begin(), dp.end());
     }
 };
-

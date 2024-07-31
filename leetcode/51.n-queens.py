@@ -1,63 +1,61 @@
-class Solution(object):
-    def solveNQueens(self, n):
-        """
-        :type n: int
-        :rtype: List[List[str]]
-        """
+#  Tag: Array, Backtracking
+#  Time: O(N!)
+#  Space: O(N)
+#  Ref: -
+#  Note: -
+
+#  The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+#  Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+#  Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
+#   
+#  Example 1:
+#  
+#  
+#  Input: n = 4
+#  Output: [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+#  Explanation: There exist two distinct solutions to the 4-queens puzzle as shown above
+#  
+#  Example 2:
+#  
+#  Input: n = 1
+#  Output: [["Q"]]
+#  
+#   
+#  Constraints:
+#  
+#  1 <= n <= 9
+#  
+#  
+
+class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+
+        res = []
+        tmp = [["." for i in range(n)] for j in range(n)]
+        vertical = set()
+        diagonal_pus = set()
+        diagonal_minus = set()
+
+        self.dfs(n, tmp, res, 0, vertical, diagonal_pus, diagonal_minus)
+
+        return res
+
         
-        if n <= 0:
-            return []
-
-        # if cols = [3, 2, 1, 0]
-        # cols[0] = 3 means 0th row, 3th colomn, (0, 3), (1, 2), (2, 1), (3, 0)
-
-        cols = []
-        results = []
-        self.helper(n, cols, results)
-        return results
-    
-    # dfs traversal
-    def helper(self, n, cols, results):
-        if len(cols) == n:
-            results.append(self.draw_chessbord(cols))
+    def dfs(self, n: int, tmp: list, res: list, k: int, vertical:set, diagonal_pus: set, diagonal_minus: set):
+        if k == n:
+            ans = ["".join(row) for row in tmp]
+            res.append(ans)
             return
 
-        for i in range(n):
-            if not self.is_valid(cols, i):
-                continue
-
-            cols.append(i)
-            self.helper(n, cols, results)
-            cols.pop()
-
-
-    def is_valid(self, cols, column):
-        row = len(cols)
-
-        # since index in cols is different, it is sure that each queen is not in the same row
-        for row_index in range(row):
-
-            # check if queue are in the same column
-            if cols[row_index] == column:
-                return False
-
-            # check if queun are in diagonal position
-            if row_index + cols[row_index] == row + column: 
-                return False
-
-            # mind the order of row minus column when subtraction
-            if row_index - cols[row_index] == row - column:
-                return False
-
-        return True
-
-    def draw_chessbord(self, cols):
-        size = len(cols)
-        chessboard = []
-        for row in range(size):
-            result = ''
-            for column in range(size):
-                result += 'Q' if column == cols[row] else '.'
-            chessboard.append(result)
-
-        return chessboard
+        for j in range(n):
+            if j not in vertical and (k + j) not in diagonal_pus and (k - j) not in diagonal_minus:
+                vertical.add(j)
+                diagonal_pus.add(k + j)
+                diagonal_minus.add(k - j)
+                tmp[k][j] = 'Q'
+                self.dfs(n, tmp, res, k + 1, vertical, diagonal_pus, diagonal_minus)
+                tmp[k][j] = '.'
+                vertical.remove(j)
+                diagonal_pus.remove(k + j)
+                diagonal_minus.remove(k - j)
+        

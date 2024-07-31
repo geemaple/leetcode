@@ -1,30 +1,52 @@
-# f[i][j] = (min(f[i - 1][j], f[i][j - 1], f[i - 1][j - 1]) + 1) if matrix[i][j] == 0 else 0
-class Solution(object):
-    def maximalSquare(self, matrix):
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
-        if matrix is None or len(matrix) == 0 or len(matrix[0]) == 0:
-            return 0
-            
+#  Tag: Array, Dynamic Programming, Matrix
+#  Time: O(MN)
+#  Space: O(MN)
+#  Ref: -
+#  Note: -
+
+#  Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+#   
+#  Example 1:
+#  
+#  
+#  Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+#  Output: 4
+#  
+#  Example 2:
+#  
+#  
+#  Input: matrix = [["0","1"],["1","0"]]
+#  Output: 1
+#  
+#  Example 3:
+#  
+#  Input: matrix = [["0"]]
+#  Output: 0
+#  
+#   
+#  Constraints:
+#  
+#  m == matrix.length
+#  n == matrix[i].length
+#  1 <= m, n <= 300
+#  matrix[i][j] is '0' or '1'.
+#  
+#  
+
+class Solution:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
         m = len(matrix)
         n = len(matrix[0])
-        
-        k = 2
-        table = [[0 for _ in range(n)] for _ in range(k)]
-        result = 0
-        
+
+        dp = [[0 for j in range(n)] for i in range(m)]
+        d = 0
         for i in range(m):
             for j in range(n):
-                
-                if i == 0 or j == 0:
-                    table[i % k][j] = 1 if matrix[i][j] == '1' else 0
-                elif matrix[i][j] == '1':
-                    table[i % k][j] = 1 + min(table[(i - 1) % k][j], table[i % k][j - 1], table[(i - 1) % k][j - 1])
-                else:
-                    table[i % k][j] = 0 # this is important when using circular array
-                
-                result = max(result, table[i % k][j])
-                
-        return result ** 2
+                if matrix[i][j] == '1':
+                    if i == 0 or j == 0:
+                        dp[i][j] = 1
+                    else:
+                        dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1
+
+                    d = max(d, dp[i][j])
+        return d * d

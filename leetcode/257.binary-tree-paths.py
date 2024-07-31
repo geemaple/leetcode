@@ -1,4 +1,4 @@
-#  Category: Tree, Depth-First Search, String, Backtracking, Binary Tree
+#  Tag: String, Backtracking, Tree, Depth-First Search, Binary Tree
 #  Time: O(N)
 #  Space: O(Height)
 #  Ref: -
@@ -27,30 +27,22 @@
 #  
 
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        if root is None:
-            return []
+        res = []
+        self.dfs(root, str(root.val), res)
+        return res
 
-        results = []
-        path = ''
-        self.helper(root, path, results)
-        return results
-    
-    def helper(self, node: Optional[TreeNode], path: str, results: List[str]):
-
-        path += str(node.val)
-
+    def dfs(self, node: TreeNode, tmp: list, res: list):
         if node.left is None and node.right is None:
-            results.append(path)
+            res.append(tmp)
             return
 
-        if node.left:
-            self.helper(node.left, path + '->', results)
-        if node.right:
-            self.helper(node.right, path + '->', results)
+        for child in [node.left, node.right]:
+            if child is not None:
+                self.dfs(child, tmp + "->" + str(child.val), res)

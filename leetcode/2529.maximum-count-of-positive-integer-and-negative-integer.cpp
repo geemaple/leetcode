@@ -1,4 +1,4 @@
-//  Category: Array, Binary Search, Counting
+//  Tag: Array, Binary Search, Counting
 //  Time: O(logN)
 //  Space: O(1)
 //  Ref: -

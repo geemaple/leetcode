@@ -1,72 +1,65 @@
-#
-# @lc app=leetcode id=338 lang=python
-#
-# [338] Counting Bits
-#
-# https://leetcode.com/problems/counting-bits/description/
-#
-# algorithms
-# Medium (63.30%)
-# Total Accepted:    167.6K
-# Total Submissions: 259.1K
-# Testcase Example:  '2'
-#
-# Given a non negative integer number num. For every numbers i in the range 0 ≤
-# i ≤ num calculate the number of 1's in their binary representation and return
-# them as an array.
-# 
-# Example 1:
-# 
-# 
-# Input: 2
-# Output: [0,1,1]
-# 
-# Example 2:
-# 
-# 
-# Input: 5
-# Output: [0,1,1,2,1,2]
-# 
-# 
-# Follow up:
-# 
-# 
-# It is very easy to come up with a solution with run time
-# O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a
-# single pass?
-# Space complexity should be O(n).
-# Can you do it like a boss? Do it without using any builtin function like
-# __builtin_popcount in c++ or in any other language.
-# 
-#
-class Solution(object):
-    def countBits(self, num):
-        """
-        :type num: int
-        :rtype: List[int]
-        """
-        
-        res = [0 for i in range(num + 1)]
+#  Tag: Dynamic Programming, Bit Manipulation
+#  Time: O(N)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
 
-        for i in range(1, num + 1):
-            res[i] = res[i & (i - 1)] + 1
+#  Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+#   
+#  Example 1:
+#  
+#  Input: n = 2
+#  Output: [0,1,1]
+#  Explanation:
+#  0 --> 0
+#  1 --> 1
+#  2 --> 10
+#  
+#  Example 2:
+#  
+#  Input: n = 5
+#  Output: [0,1,1,2,1,2]
+#  Explanation:
+#  0 --> 0
+#  1 --> 1
+#  2 --> 10
+#  3 --> 11
+#  4 --> 100
+#  5 --> 101
+#  
+#   
+#  Constraints:
+#  
+#  0 <= n <= 105
+#  
+#   
+#  Follow up:
+#  
+#  It is very easy to come up with a solution with a runtime of O(n log n). Can you do it in linear time O(n) and possibly in a single pass?
+#  Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
+#  
+#  
 
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        res = [0 for i in range(n + 1)]
+        for i in range(1, n + 1):
+            n = i
+            while n > 0:
+                res[i] += 1
+                n = n & (n - 1)
         return res
-
-# f(x) = f(x >> 1) + x % 2
-class Solution2(object):
-    def countBits(self, num):
-        """
-            :type num: int
-            :rtype: List[int]
-            """
-        table = []
-        
-        for i in range(num + 1):
-            table.append(i % 2)
-            pre = i >> 1
-            
-            if pre > 0:
-                table[i] += table[pre]
     
-    return table
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        dp = [0 for i in range(n + 1)]
+        for i in range(1, n + 1):
+            dp[i] = dp[i & (i - 1)] + 1  
+        return dp
+    
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        dp = [0 for i in range(n + 1)]
+        for i in range(1, n + 1):
+            dp[i] = dp[i >> 1] + (i & 1)  
+        return dp

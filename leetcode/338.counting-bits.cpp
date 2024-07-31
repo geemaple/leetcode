@@ -1,75 +1,78 @@
-/*
- * @lc app=leetcode id=338 lang=cpp
- *
- * [338] Counting Bits
- *
- * https://leetcode.com/problems/counting-bits/description/
- *
- * algorithms
- * Medium (63.30%)
- * Total Accepted:    167.6K
- * Total Submissions: 259.1K
- * Testcase Example:  '2'
- *
- * Given a non negative integer number num. For every numbers i in the range 0
- * ≤ i ≤ num calculate the number of 1's in their binary representation and
- * return them as an array.
- * 
- * Example 1:
- * 
- * 
- * Input: 2
- * Output: [0,1,1]
- * 
- * Example 2:
- * 
- * 
- * Input: 5
- * Output: [0,1,1,2,1,2]
- * 
- * 
- * Follow up:
- * 
- * 
- * It is very easy to come up with a solution with run time
- * O(n*sizeof(integer)). But can you do it in linear time O(n) /possibly in a
- * single pass?
- * Space complexity should be O(n).
- * Can you do it like a boss? Do it without using any builtin function like
- * __builtin_popcount in c++ or in any other language.
- * 
- */
+//  Tag: Dynamic Programming, Bit Manipulation
+//  Time: O(N)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+//   
+//  Example 1:
+//  
+//  Input: n = 2
+//  Output: [0,1,1]
+//  Explanation:
+//  0 --> 0
+//  1 --> 1
+//  2 --> 10
+//  
+//  Example 2:
+//  
+//  Input: n = 5
+//  Output: [0,1,1,2,1,2]
+//  Explanation:
+//  0 --> 0
+//  1 --> 1
+//  2 --> 10
+//  3 --> 11
+//  4 --> 100
+//  5 --> 101
+//  
+//   
+//  Constraints:
+//  
+//  0 <= n <= 105
+//  
+//   
+//  Follow up:
+//  
+//  It is very easy to come up with a solution with a runtime of O(n log n). Can you do it in linear time O(n) and possibly in a single pass?
+//  Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
+//  
+//  
+
 class Solution {
 public:
-    vector<int> countBits(int num) {
-        vector<int> res(num + 1, 0);
-        for (int i = 1; i < num + 1; i++) {
-            res[i] = res[i & (i - 1)] + 1;
+    vector<int> countBits(int n) {
+        vector<int> res(n + 1, 0);
+        for (int i = 1; i <= n; i++) {
+            int n = i;
+            while (n > 0) {
+                res[i] += 1;
+                n = n & (n - 1);
+            }
         }
-        
         return res;
     }
 };
 
-
-
-//f(x) = f(x >> 1) + x % 2
-class Solution2 {
+class Solution {
 public:
-    vector<int> countBits(int num) {
-        vector<int> table;
-        
-        for(auto i = 0; i <= num; ++i)
-        {
-            table.push_back(i % 2);
-            
-            int pre = i >> 1;
-            if (pre > 0)
-            {
-                table[i] += table[pre];
-            }
+    vector<int> countBits(int n) {
+        vector<int> dp(n + 1, 0);
+        for (int i = 1; i <= n; i++) {
+            dp[i] = dp[i & (i - 1)] + 1;
         }
-        
-        return table;
+        return dp;
+    }
+};
+
+class Solution {
+public:
+    vector<int> countBits(int n) {
+        vector<int> dp(n + 1, 0);
+        for (int i = 1; i <= n; i++) {
+            dp[i] = dp[i >> 1] + (i & 1);
+        }
+        return dp;
     }
 };

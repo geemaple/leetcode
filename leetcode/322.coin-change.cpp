@@ -1,4 +1,4 @@
-//  Category: Breadth-First Search, Array, Dynamic Programming
+//  Tag: Breadth-First Search, Array, Dynamic Programming
 //  Time: O(K * N)
 //  Space: O(N)
 //  Ref: https://youtu.be/EjMjlFjLRiM
@@ -81,5 +81,50 @@ public:
 
         cache[amount] = count;
         return count;
+    }
+};
+
+// backpack
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        int n = coins.size();
+        int m = amount;
+        vector<vector<int>> dp(n + 1, vector<int>(m + 1, INT_MAX));
+        dp[0][0] = 0;
+
+        for (int i = 1; i <= n; i++) {
+            int coin = coins[i - 1];
+            for (int j = 0; j <= m; j++) {
+                if (coin <= j && dp[i][j - coin] != INT_MAX) {
+                    dp[i][j] = min(dp[i - 1][j], dp[i][j - coin] + 1);
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+
+        return dp[n][m] == INT_MAX ? -1: dp[n][m];
+    }
+};
+
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        int n = coins.size();
+        int m = amount;
+        vector<int> dp(m + 1, INT_MAX);
+        dp[0] = 0;
+
+        for (int i = 1; i <= n; i++) {
+            int coin = coins[i - 1];
+            for (int j = coin; j <= m; j++) {
+                if (dp[j - coin] != INT_MAX) {
+                    dp[j] = min(dp[j], dp[j - coin] + 1);
+                }
+            }
+        }
+
+        return dp[m] == INT_MAX ? -1: dp[m];
     }
 };

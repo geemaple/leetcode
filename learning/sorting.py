@@ -1,8 +1,14 @@
 import random
+import inspect
+import time
 
 ###############
 # in palce sort
 ###############
+
+# build in 
+def built_in_sort(arrs):
+    arrs.sort()
 
 # bubble sort
 def bubble_sort(arrs):
@@ -130,3 +136,60 @@ def merge_sort(arrs):
         __merge(arrs, start, mid, end) # combine
 
     __divied(arrs, 0, len(arrs))
+
+######################
+# test cases
+######################
+
+current_module = inspect.getmodule(inspect.currentframe())
+all_sortings = inspect.getmembers(current_module, inspect.isfunction)
+
+test_cache = {}
+def inversions(arrs):
+    count = len(arrs)
+    return len([(i, j) for i in range(count) for j in range(i + 1, count) if arrs[i] > arrs[j]])
+
+def sizeof_fmt(num, suffix=''):
+    for unit in [' ','K','M','B']:
+        if abs(num) < 1000:
+            return "%d%s%s" % (num, unit, suffix)
+        num /= 1000
+
+    return num
+
+def general_test(sort_name, sort_func, count=10):
+
+    if count not in test_cache:
+        test_case = random.choices(range(count // 2), k=count)
+        test_cache[count] = (test_case, sorted(test_case))
+
+        print('\n', '=' * 50)
+
+    test_case, test_reasult = test_cache[count]
+    test_case = list(test_case)
+    inversion_pair = inversions(test_case)
+    now = time.time()
+    sort_func(test_case)
+    print('count=%3s inversions=%8d %15s execute: %10.2fms' % (sizeof_fmt(count), inversion_pair, sort_name, (time.time() - now) * 1000))
+    assert test_case == test_reasult
+
+if __name__ == "__main__":
+    for sort_name, sort_func in all_sortings:
+        general_test(sort_name, sort_func, 100)
+    for sort_name, sort_func in all_sortings:
+        general_test(sort_name, sort_func, 1000)
+    for sort_name, sort_func in all_sortings:
+        general_test(sort_name, sort_func, 10000)
+else:
+    import pytest
+    @pytest.mark.parametrize("sort_name, sort_func", all_sortings)
+    def test_correct(sort_name, sort_func):
+        general_test(sort_name, sort_func, 100)
+
+    @pytest.mark.parametrize("sort_name, sort_func", all_sortings)
+    def test_1k(sort_name, sort_func):
+        general_test(sort_name, sort_func, 1000)
+
+    @pytest.mark.parametrize("sort_name, sort_func", all_sortings)
+    def test_10k(sort_name, sort_func):
+        general_test(sort_name, sort_func, 10000)

@@ -1,4 +1,4 @@
-#  Category: Breadth-First Search, Array, Dynamic Programming
+#  Tag: Breadth-First Search, Array, Dynamic Programming
 #  Time: O(K * N)
 #  Space: O(N)
 #  Ref: https://youtu.be/EjMjlFjLRiM
@@ -67,3 +67,37 @@ class Solution:
 
         self.cache[amount] = count
         return count
+
+# backpack
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        
+        n = len(coins)
+        m = amount
+        dp = [[float('inf') for j in range(m + 1)] for i in range(n + 1)]
+
+        dp[0][0] = 0
+        for i in range(1, n + 1):
+            coin = coins[i - 1]
+            for j in range(m + 1):
+                if coin <= j:
+                    dp[i][j] = min(dp[i - 1][j], dp[i][j - coin] + 1)
+                else:
+                    dp[i][j] = dp[i - 1][j]
+
+        return -1 if dp[n][m] == float('inf') else dp[n][m]
+    
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        
+        n = len(coins)
+        m = amount
+        dp = [float('inf') for j in range(m + 1)]
+
+        dp[0] = 0
+        for i in range(1, n + 1):
+            coin = coins[i - 1]
+            for j in range(coin, m + 1):
+                dp[j] = min(dp[j], dp[j - coin] + 1)
+
+        return -1 if dp[m] == float('inf') else dp[m]

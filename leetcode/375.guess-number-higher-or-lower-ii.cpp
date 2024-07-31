@@ -1,4 +1,4 @@
-//  Category: Math, Dynamic Programming, Game Theory
+//  Tag: Math, Dynamic Programming, Game Theory
 //  Time: O(N^3)
 //  Space: O(N^2)
 //  Ref: -

@@ -1,27 +1,58 @@
+//  Tag: Math, String, Simulation
+//  Time: O(N)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  Given two non-negative integers, num1 and num2 represented as string, return the sum of num1 and num2 as a string.
+//  You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
+//   
+//  Example 1:
+//  
+//  Input: num1 = "11", num2 = "123"
+//  Output: "134"
+//  
+//  Example 2:
+//  
+//  Input: num1 = "456", num2 = "77"
+//  Output: "533"
+//  
+//  Example 3:
+//  
+//  Input: num1 = "0", num2 = "0"
+//  Output: "0"
+//  
+//   
+//  Constraints:
+//  
+//  1 <= num1.length, num2.length <= 104
+//  num1 and num2 consist of only digits.
+//  num1 and num2 don't have any leading zeros except for the zero itself.
+//  
+//  
+
 class Solution {
 public:
     string addStrings(string num1, string num2) {
-        
-        int size = max(num1.size(), num2.size());
-        int addons = 0;
+        int i = num1.size() - 1;
+        int j = num2.size() - 1;
+        int addition = 0;
+
         string res = "";
-        for(auto i = 0; i < size; ++i)
-        {
-            // warning: (num1.size() - 1 - i) is always >= 0 since size() is unsigned long
-            int digit1 = (i + 1 <= num1.size()) ? num1[num1.size() - 1 - i] - '0' : 0;
-            int digit2 = (i + 1 <= num2.size()) ? num2[num2.size() - 1 - i] - '0' : 0;
+
+        while (i >= 0 || j >= 0 || addition > 0) {
+            int l = i >= 0 ? num1[i] - '0' : 0;
+            int r = j >= 0 ? num2[j] - '0' : 0;
+
+            int digit = l + r + addition;
+            addition = digit / 10;
+            digit = digit % 10;
             
-            int number = digit1 + digit2 + addons;
-            addons = number / 10;
-            
-            res = to_string(number % 10) + res;
+            res = to_string(digit) + res;
+
+            i--;
+            j--;
         }
-        
-        if (addons > 0)
-        {
-            res = to_string(addons) + res;
-        }
-        
         return res;
     }
 };

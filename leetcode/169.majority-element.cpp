@@ -1,56 +1,74 @@
-/*
- * @lc app=leetcode id=169 lang=cpp
- *
- * [169] Majority Element
- *
- * https://leetcode.com/problems/majority-element/description/
- *
- * algorithms
- * Easy (55.91%)
- * Total Accepted:    542.6K
- * Total Submissions: 960.7K
- * Testcase Example:  '[3,2,3]'
- *
- * Given an array of size n, find the majority element. The majority element is
- * the element that appears more than ⌊ n/2 ⌋ times.
- * 
- * You may assume that the array is non-empty and the majority element always
- * exist in the array.
- * 
- * Example 1:
- * 
- * 
- * Input: [3,2,3]
- * Output: 3
- * 
- * Example 2:
- * 
- * 
- * Input: [2,2,1,1,1,2,2]
- * Output: 2
- * 
- * 
- */
-// O(N)
+//  Tag: Array, Hash Table, Divide and Conquer, Sorting, Counting
+//  Time: O(N)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  Given an array nums of size n, return the majority element.
+//  The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+//   
+//  Example 1:
+//  Input: nums = [3,2,3]
+//  Output: 3
+//  Example 2:
+//  Input: nums = [2,2,1,1,1,2,2]
+//  Output: 2
+//  
+//   
+//  Constraints:
+//  
+//  n == nums.length
+//  1 <= n <= 5 * 104
+//  -109 <= nums[i] <= 109
+//  
+//   
+//  Follow-up: Could you solve the problem in linear time and in O(1) space?
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int counter = 0;
-        int candidate = 0;
-
-        for (int i = 0; i < nums.size(); i++) {
-            
-            if (counter == 0) {
-                candidate = nums[i];
+        int res = 0;
+        int count = 0;
+        for (auto x: nums) {
+            if (count == 0) {
+                res = x;
             }
 
-            if (candidate == nums[i]) {
-                counter += 1;
+            if (res == x) {
+                count++;
             } else {
-                counter -= 1;
+                count--;
             }
         }
-        
-        return candidate;
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        unordered_map<int, int> counter;
+        for (auto x: nums) {
+            counter[x] += 1;
+        }
+
+        for (auto it = counter.begin(); it != counter.end(); it++) {
+            if (it->second > n / 2) {
+                return it->first;
+            }
+        }
+
+        return -1;
+    }
+};
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        sort(nums.begin(), nums.end());
+        return nums[n / 2];
     }
 };

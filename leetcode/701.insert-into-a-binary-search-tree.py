@@ -1,4 +1,4 @@
-#  Category: Tree, Binary Search Tree, Binary Tree
+#  Tag: Tree, Binary Search Tree, Binary Tree
 #  Time: O(Height)
 #  Space: O(Height)
 #  Ref: -

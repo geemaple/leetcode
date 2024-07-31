@@ -1,4 +1,4 @@
-//  Category: Array, Binary Search
+//  Tag: Array, Binary Search
 //  Time: O(logN) ~ O(N)
 //  Space: O(1)
 //  Ref: -
@@ -36,17 +36,13 @@ public:
         int end = nums.size() - 1;
 
         while (start < end) {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] == target) {
-                return true;
-            }
-
+            
             if (nums[start] == nums[end]) {
                 end --;
                 continue;
             }
 
-
+            int mid = start + (end - start) / 2;
             if (nums[mid] >= nums[start]) {
                 if (target >= nums[start] && target <= nums[mid]) {
                     end = mid;

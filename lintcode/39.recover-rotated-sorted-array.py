@@ -1,4 +1,4 @@
-#  Category: Array, Sort, Simulation
+#  Tag: Array, Sort, Simulation
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -
