@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **363**<br/>
-Auto updated at: **2024-07-31 12:41:29**<br/>
+Total sovled: **364**<br/>
+Auto updated at: **2024-07-31 12:57:56**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(24) | Solution | Time | Space | Note | Ref |
+| Problem(25) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
@@ -71,6 +71,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-204. Count Primes](https://leetcode.com/problems/count-primes/description/) | [c++](./leetcode/204.count-primes.cpp), [python](./leetcode/204.count-primes.py) | O\(NlogN\) | O\(N\) | \- | - |
 | [Leetcode-241. Different Ways To Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python](./leetcode/241.different-ways-to-add-parentheses.py) | \- | \- | \- | - |
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
+| [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [python](./leetcode/268.missing-number.py), [c++](./leetcode/268.missing-number.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-326. Power Of Three](https://leetcode.com/problems/power-of-three/description/) | [python](./leetcode/326.power-of-three.py), [c++](./leetcode/326.power-of-three.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
@@ -88,11 +89,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(7) | Solution | Time | Space | Note | Ref |
+| Problem(8) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [python](./leetcode/268.missing-number.py), [c++](./leetcode/268.missing-number.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-318. Maximum Product Of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O\(N^2\) | O\(N\) | \- | - |
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
@@ -112,7 +114,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python](./leetcode/297.serialize-and-deserialize-binary-tree.py) | O\(N\) | O\(N\) | Serialization | - |
 
 ## Binary Search
-| Problem(34) | Solution | Time | Space | Note | Ref |
+| Problem(35) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [python](./leetcode/4.median-of-two-sorted-arrays.py), [c++](./leetcode/4.median-of-two-sorted-arrays.cpp) | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [python](./leetcode/33.search-in-rotated-sorted-array.py), [c++](./leetcode/33.search-in-rotated-sorted-array.cpp) | O\(logN\) | O\(1\) | Rotated; | - |
@@ -128,6 +130,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [python](./leetcode/173.binary-search-tree-iterator.py), [c++](./leetcode/173.binary-search-tree-iterator.cpp) | O\(1\) | O\(Height\) | InOrder | - |
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [python](./leetcode/240.search-a-2d-matrix-ii.py), [c++](./leetcode/240.search-a-2d-matrix-ii.cpp) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [python](./leetcode/268.missing-number.py), [c++](./leetcode/268.missing-number.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [python](./leetcode/278.first-bad-version.py), [c++](./leetcode/278.first-bad-version.cpp) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [python](./leetcode/300.longest-increasing-subsequence.py), [c++](./leetcode/300.longest-increasing-subsequence.cpp) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
 | [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [python](./leetcode/374.guess-number-higher-or-lower.py), [c++](./leetcode/374.guess-number-higher-or-lower.cpp) | O\(logN\) | O\(1\) | Standard | - |
@@ -192,12 +195,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
 ## Sorting
-| Problem(15) | Solution | Time | Space | Note | Ref |
+| Problem(16) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [python](./leetcode/75.sort-colors.py), [c++](./leetcode/75.sort-colors.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [python](./leetcode/88.merge-sorted-array.py), [c++](./leetcode/88.merge-sorted-array.cpp) | O\(M \+ N\) | O\(1\) | \- | - |
 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [python](./leetcode/169.majority-element.py), [c++](./leetcode/169.majority-element.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [python](./leetcode/215.kth-largest-element-in-an-array.py), [c++](./leetcode/215.kth-largest-element-in-an-array.cpp) | O\(N\) ～ O\(N^2\) | O\(1\) | QuickSelection | - |
+| [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [python](./leetcode/268.missing-number.py), [c++](./leetcode/268.missing-number.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [python](./leetcode/347.top-k-frequent-elements.py), [c++](./leetcode/347.top-k-frequent-elements.cpp) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [python](./leetcode/406.queue-reconstruction-by-height.py), [c++](./leetcode/406.queue-reconstruction-by-height.cpp) | O\(N \* logN\) | O\(1\) | \- | - |
 | [Leetcode-435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/) | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python](./leetcode/435.non-overlapping-intervals.py) | O\(N \* logN\) | O\(1\) | \- | - |
