@@ -16,7 +16,7 @@ excerpt: "排列组合"
 
 给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-17.png)
+![图片说明](./images/leetcode-algorithm-17.png)
 
 示例:
 
@@ -45,7 +45,7 @@ Link：[https://leetcode.com/problems/letter-combinations-of-a-phone-number/](ht
 
 数字'3'对应的'def', 递归到下一层结束，拿到答案。
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-17.png)
+![草稿说明](./images/leetcode-sketch-algorithm-17.png)
 
 ```python
 class Solution:

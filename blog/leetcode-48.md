@@ -22,7 +22,7 @@ excerpt: "ZIV Hong"
 
 示例 1:
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-48-1.jpg)
+![图片说明](./images/leetcode-algorithm-48-1.jpg)
 
 ```
 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
@@ -31,7 +31,7 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
 
 示例 2:
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-48-2.jpg)
+![图片说明](./images/leetcode-algorithm-48-2.jpg)
 
 ```
 Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]

@@ -200,4 +200,4 @@ class Solution:
 
 难度爆炸，随便的草稿，不值得细看
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-10.png)
+![草稿说明](./images/leetcode-sketch-algorithm-10.png)

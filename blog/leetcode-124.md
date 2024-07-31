@@ -20,7 +20,7 @@ excerpt: "假如我年少有为"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-124-1.png) 
+![图片说明](./images/leetcode-algorithm-124-1.png) 
 
 ```
 输入：root = [1,2,3]
@@ -30,7 +30,7 @@ excerpt: "假如我年少有为"
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-124-2.png) 
+![图片说明](./images/leetcode-algorithm-124-2.png) 
 
 ```
 输入：root = [-10,9,20,null,null,15,7]

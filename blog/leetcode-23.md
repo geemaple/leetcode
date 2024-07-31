@@ -90,7 +90,7 @@ O(N*logK), 比较次数=树的高度为K
 
 > 如果1，2合并，再依次和3, 4...合并, 时间负责度就不一样了, 因为这样链表1和其他每个链表都比较1次
 
-![图片说明]({{site.static}}/images/leetcode-sketch-algorithm-23.jpg)
+![图片说明](./images/leetcode-sketch-algorithm-23.jpg)
 
 ```python
 # Definition for singly-linked list.

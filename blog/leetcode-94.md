@@ -16,7 +16,7 @@ excerpt: "一山不容二虎"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-94-1.jpg) 
+![图片说明](./images/leetcode-algorithm-94-1.jpg) 
 
 ```
 输入：root = [1,null,2,3]
@@ -39,7 +39,7 @@ excerpt: "一山不容二虎"
 
 示例 4：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-94-2.jpg) 
+![图片说明](./images/leetcode-algorithm-94-2.jpg) 
 
 ```
 输入：root = [1,2]
@@ -48,7 +48,7 @@ excerpt: "一山不容二虎"
 
 示例 5：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-94-3.jpg)
+![图片说明](./images/leetcode-algorithm-94-3.jpg)
 
 ```
 输入：root = [1,null,2]

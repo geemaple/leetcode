@@ -18,7 +18,7 @@ excerpt: "1914 WWI"
 2. 数字 1-9 在每一列只能出现一次。
 3. 数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-36.png)
+![图片说明](./images/leetcode-algorithm-36.png)
 
 上图是一个部分填充的有效的数独。
 
@@ -95,7 +95,7 @@ P类问题(Polynomial)，确定多项式时间问题，是可以通过计算机�
 
 NP类问题(Nondeterministic Polynomial), **非确定**多项式时间, 问题的答案能够在多项式时间内验证是否正确。很明显P属于NP。NP类问题求解通常是O(2^N), O(N!) ...
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-36.png)
+![草稿说明](./images/leetcode-sketch-algorithm-36.png)
 
 P=NP？是计算机领域诞生出的一个数学问题，科研普遍相信P=NP是成立的，但目前没有办法证明成立/不成立，这还是千禧年七大未解数学难题之一
 

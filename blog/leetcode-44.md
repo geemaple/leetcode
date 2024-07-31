@@ -181,7 +181,7 @@ match记录下一个该匹配字符的起始位置
 1. 该算法还是挺快的，若不是遇到相等或者'?'的情况，'*'会尽可能匹配更多的字符
 2. 一旦发现后面不能匹配, 回到记录点, 重复上述步骤
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-44.jpg)
+![草稿说明](./images/leetcode-sketch-algorithm-44.jpg)
 
 如上图第一排，相匹配的用线划掉, 直到i和j无法匹配, i和j回到上次*匹配点, 尝试匹配更多字符
 

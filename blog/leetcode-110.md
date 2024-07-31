@@ -20,7 +20,7 @@ excerpt: "愿你能有选择"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-110-1.jpg)
+![图片说明](./images/leetcode-algorithm-110-1.jpg)
 
 ```
 输入：root = [3,9,20,null,null,15,7]
@@ -29,7 +29,7 @@ excerpt: "愿你能有选择"
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-110-2.jpg)
+![图片说明](./images/leetcode-algorithm-110-2.jpg)
 
 ```
 输入：root = [1,2,2,3,3,null,null,4,4]

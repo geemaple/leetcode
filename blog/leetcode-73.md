@@ -18,7 +18,7 @@ excerpt: "教父"
 
 示例 1:
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-73-1.jpg)
+![图片说明](./images/leetcode-algorithm-73-1.jpg)
 
 ```
 输入: 
@@ -30,7 +30,7 @@ excerpt: "教父"
 
 示例 2:
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-73-2.jpg)
+![图片说明](./images/leetcode-algorithm-73-2.jpg)
 
 ```
 输入: 

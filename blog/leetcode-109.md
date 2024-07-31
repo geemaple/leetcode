@@ -16,7 +16,7 @@ excerpt: "刷出奇迹"
 
 本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-109.jpg)
+![图片说明](./images/leetcode-algorithm-109.jpg)
 
 示例:
 

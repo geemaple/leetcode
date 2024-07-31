@@ -26,7 +26,7 @@ t = t1 + t2 + ... + tm
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-97.jpg)
+![图片说明](./images/leetcode-algorithm-97.jpg)
 
 ```
 输入：s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"

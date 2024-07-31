@@ -21,11 +21,11 @@ excerpt: "权力游戏"
 数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
 空白格用 '.' 表示。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-36.png)
+![图片说明](./images/leetcode-algorithm-36.png)
 
 一个数独。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-37.png)
+![图片说明](./images/leetcode-algorithm-37.png)
 
 答案被标成红色。
 

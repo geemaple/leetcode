@@ -24,7 +24,7 @@ excerpt: "朋友圈"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-547-1.jpg)
+![图片说明](./images/leetcode-algorithm-547-1.jpg)
 
 ```
 输入：isConnected = [[1,1,0],[1,1,0],[0,0,1]]
@@ -33,7 +33,7 @@ excerpt: "朋友圈"
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-547-2.jpg)
+![图片说明](./images/leetcode-algorithm-547-2.jpg)
 
 ```
 输入：isConnected = [[1,0,0],[0,1,0],[0,0,1]]

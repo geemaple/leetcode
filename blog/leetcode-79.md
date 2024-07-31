@@ -19,7 +19,7 @@ excerpt: "Faded"
 
 示例:
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-79.jpg)
+![图片说明](./images/leetcode-algorithm-79.jpg)
 
 ```
 board =

@@ -25,7 +25,7 @@ excerpt: ""
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-142-1.png) 
+![图片说明](./images/leetcode-algorithm-142-1.png) 
 
 ```
 输入：head = [3,2,0,-4], pos = 1
@@ -35,7 +35,7 @@ excerpt: ""
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-142-2.png) 
+![图片说明](./images/leetcode-algorithm-142-2.png) 
 
 ```
 输入：head = [1,2], pos = 0
@@ -45,7 +45,7 @@ excerpt: ""
 
 示例 3：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-142-3.png) 
+![图片说明](./images/leetcode-algorithm-142-3.png) 
 
 ```
 输入：head = [1], pos = -1

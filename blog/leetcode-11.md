@@ -16,7 +16,7 @@ excerpt: "班达米尔湖"
 
 说明：你不能倾斜容器，且 n 的值至少为 2。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-11.png)
+![图片说明](./images/leetcode-algorithm-11.png)
 
 示例
 

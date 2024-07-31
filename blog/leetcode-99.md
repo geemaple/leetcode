@@ -19,7 +19,7 @@ excerpt: "选择"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-99-1.jpg)
+![图片说明](./images/leetcode-algorithm-99-1.jpg)
 
 ```
 输入：root = [1,3,null,null,2]
@@ -29,7 +29,7 @@ excerpt: "选择"
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-99-2.jpg)
+![图片说明](./images/leetcode-algorithm-99-2.jpg)
 
 ```
 输入：root = [3,1,4,null,null,2]

@@ -65,7 +65,7 @@ Link：[https://leetcode.com/problems/combination-sum/](https://leetcode.com/pro
 
 以[2, 3, 5]为例：
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-39.jpg)
+![草稿说明](./images/leetcode-sketch-algorithm-39.jpg)
 
 用数组ans记录临时答案:
 

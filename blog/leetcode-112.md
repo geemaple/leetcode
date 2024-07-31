@@ -18,7 +18,7 @@ excerpt: "一切都是最好的安排"
 
 示例1: 
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-112-1.jpg)
+![图片说明](./images/leetcode-algorithm-112-1.jpg)
 
 ```
 输入: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
@@ -27,7 +27,7 @@ excerpt: "一切都是最好的安排"
 
 示例2: 
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-112-2.jpg)
+![图片说明](./images/leetcode-algorithm-112-2.jpg)
 
 ```
 输入: root = [1,2,3], targetSum = 5

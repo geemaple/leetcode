@@ -29,7 +29,7 @@ struct Node {
 
 示例：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-116.jpg)
+![图片说明](./images/leetcode-algorithm-116.jpg)
 
 ```
 输入：root = [1,2,3,4,5,6,7]

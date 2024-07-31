@@ -16,7 +16,7 @@ excerpt: "KLV Changed my life"
  
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-130.png)
+![图片说明](./images/leetcode-algorithm-130.png)
 
 ```
 输入：board = [["X","X","X","X"],

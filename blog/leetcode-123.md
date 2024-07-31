@@ -109,7 +109,7 @@ class Solution:
 
 O(N)
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-123.png)
+![草稿说明](./images/leetcode-sketch-algorithm-123.png)
 
 每一个状态也可以什么都不做，那就保持愿状态不变
 

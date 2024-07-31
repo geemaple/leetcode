@@ -20,7 +20,7 @@ excerpt: ""
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-74-1.jpg)
+![图片说明](./images/leetcode-algorithm-74-1.jpg)
 
 ```
 输入：matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,50]], target = 3
@@ -29,7 +29,7 @@ excerpt: ""
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-74-2.jpg)
+![图片说明](./images/leetcode-algorithm-74-2.jpg)
 
 ```
 输入：matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,50]], target = 13

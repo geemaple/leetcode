@@ -20,7 +20,7 @@ excerpt: "飘向北方"
 
 示例1: 
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-114.jpg)
+![图片说明](./images/leetcode-algorithm-114.jpg)
 
 ```
 输入: root = [1,2,5,3,4,null,6]

@@ -51,7 +51,7 @@ O(2^N)
 
 ...
 
-![图片说明]({{site.static}}/images/leetcode-sketch-algorithm-22.jpg)
+![图片说明](./images/leetcode-sketch-algorithm-22.jpg)
 
 ```python
 class Solution:

@@ -10,7 +10,7 @@ excerpt: "Respect"
 * content
 {:toc}
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-59.png)
+![草稿说明](./images/leetcode-sketch-algorithm-59.png)
 
 *三里屯Apple导购员和他的工作搭档, Respect!!!​*
 

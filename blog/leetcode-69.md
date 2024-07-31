@@ -169,7 +169,7 @@ O(未知​), 总之迭代次数很少
 
 令f(x) = x^2 - target, 当f(x)无限接近0时，x就是target的平方根
 
-![草稿说明]({{site.static}}/images/leetcode-sketch-algorithm-69.png)
+![草稿说明](./images/leetcode-sketch-algorithm-69.png)
 
 从一个尝试值X0出发，然后以这个做方程的切线，与X轴交叉，得到新的值X1，以此类推
 

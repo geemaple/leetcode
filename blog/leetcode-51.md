@@ -14,7 +14,7 @@ excerpt: "1/3"
 
 n 皇后问题研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-51.png)
+![图片说明](./images/leetcode-algorithm-51.png)
 
 上图为 8 皇后问题的一种解法。
 

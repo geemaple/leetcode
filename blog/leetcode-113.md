@@ -18,7 +18,7 @@ excerpt: "刻在你心底的名字"
 
 示例1: 
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-113-1.jpg)
+![图片说明](./images/leetcode-algorithm-113-1.jpg)
 
 ```
       
@@ -28,7 +28,7 @@ excerpt: "刻在你心底的名字"
 
 示例2: 
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-113-2.jpg)
+![图片说明](./images/leetcode-algorithm-113-2.jpg)
 
 ```
 输入: root = [1,2,3], targetSum = 5

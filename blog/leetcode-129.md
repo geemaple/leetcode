@@ -22,7 +22,7 @@ excerpt: "世界的凛冬"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-129-1.png) 
+![图片说明](./images/leetcode-algorithm-129-1.png) 
 
 ```
 输入：root = [1,2,3]
@@ -35,7 +35,7 @@ excerpt: "世界的凛冬"
 
 示例 2：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-129-2.png) 
+![图片说明](./images/leetcode-algorithm-129-2.png) 
 
 ```
 输入：root = [4,9,0,5,1]

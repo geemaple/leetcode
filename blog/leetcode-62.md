@@ -18,7 +18,7 @@ excerpt: "高中数学"
 
 问总共有多少条不同的路径？
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-62.png)
+![图片说明](./images/leetcode-algorithm-62.png)
 
 例如，上图是一个7 x 3 的网格。有多少可能的路径？
 

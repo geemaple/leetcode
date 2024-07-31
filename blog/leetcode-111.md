@@ -20,7 +20,7 @@ excerpt: "钱包大战"
 
 示例 1：
 
-![图片说明]({{site.static}}/images/leetcode-algorithm-111.jpg)
+![图片说明](./images/leetcode-algorithm-111.jpg)
 
 ```
 输入：root = [3,9,20,null,null,15,7]
