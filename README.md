@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **364**<br/>
-Auto updated at: **2024-07-31 12:57:56**<br/>
+Total sovled: **365**<br/>
+Auto updated at: **2024-07-31 13:29:06**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -89,7 +89,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(8) | Solution | Time | Space | Note | Ref |
+| Problem(9) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
@@ -99,6 +99,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [python](./leetcode/461.hamming-distance.py), [c++](./leetcode/461.hamming-distance.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-693. Binary Number With Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/) | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python](./leetcode/693.binary-number-with-alternating-bits.py) | O\(1\) | O\(1\) | \- | - |
 
 ## Simulation
 | Problem(3) | Solution | Time | Space | Note | Ref |
