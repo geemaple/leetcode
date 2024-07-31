@@ -1,44 +1,49 @@
-# m row X n col
-# Quadrant 1 | Quadrant 2
-# --------------------->
-# Quadrant 4 | Quadrant 3
-# Q1: (x, y)
-# Q2: (y, m - 1 - x)
-# Q3: (m - 1 - x, n - 1 - y)
-# Q4: (n - 1 - y, x) in Q4
+#  Tag: Array, Math, Matrix
+#  Time: O(N^2)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
 
-# rotate +90 mirror up and down, and switch x and y
-# rotate -90 mirror left and right, and switch x and y
+#  You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+#  You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+#   
+#  Example 1:
+#  
+#  
+#  Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+#  Output: [[7,4,1],[8,5,2],[9,6,3]]
+#  
+#  Example 2:
+#  
+#  
+#  Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+#  Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+#  
+#   
+#  Constraints:
+#  
+#  n == matrix.length == matrix[i].length
+#  1 <= n <= 20
+#  -1000 <= matrix[i][j] <= 1000
+#  
+#  
 
-class Solution(object):
-    def rotate(self, matrix):
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
         """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
+        Do not return anything, modify matrix in-place instead.
         """
-        # mirror upside down matrix[::-1]
-        # zip switch x and y
-        matrix[:] = zip(*matrix[::-1])
+        n = len(matrix)
 
-class Solution2(object):
-    def rotate(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: void Do not return anything, modify matrix in-place instead.
-        """
-        if matrix is None or len(matrix) == 0:
-            return
-        
-        # mirror up and down
-        up = 0
-        down = len(matrix) - 1
-
-        while(up < down):
-            for j in range(len(matrix[0])):
-                matrix[up][j], matrix[down][j] = matrix[down][j], matrix[up][j]
-            up += 1
-            down -= 1
-
-        for i in range(len(matrix)):
-            for j in range(i + 1, len(matrix[i])):
+        for i in range(1, n):
+            for j in range(0, i):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+
+
+        for i in range(n):
+            l = 0
+            r = n - 1
+            while l < r:
+                matrix[i][l], matrix[i][r] = matrix[i][r], matrix[i][l]
+                l += 1
+                r -= 1

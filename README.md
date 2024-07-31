@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **367**<br/>
-Auto updated at: **2024-07-31 15:17:13**<br/>
+Auto updated at: **2024-07-31 16:02:46**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,8 +60,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(25) | Solution | Time | Space | Note | Ref |
+| Problem(26) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-48. Rotate Image](https://leetcode.com/problems/rotate-image/description/) | [python](./leetcode/48.rotate-image.py), [c++](./leetcode/48.rotate-image.cpp) | O\(N^2\) | O\(1\) | \- | - |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
 | [Leetcode-70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | [c++](./leetcode/70.climbing-stairs.cpp), [python](./leetcode/70.climbing-stairs.py) | O\(N\) | O\(1\) | \- | - |
@@ -400,7 +401,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
 
 ## Other
-| Problem(224) | Solution | Time | Space | Note | Ref |
+| Problem(223) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -439,7 +440,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | [python](./leetcode/43.multiply-strings.py), [c++](./leetcode/43.multiply-strings.cpp) | \- | \- | \- | - |
 | [Leetcode-44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/) | [python](./leetcode/44.wildcard-matching.py), [c++](./leetcode/44.wildcard-matching.cpp) | \- | \- | \- | - |
 | [Leetcode-45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | [c++](./leetcode/45.jump-game-ii.cpp), [python](./leetcode/45.jump-game-ii.py) | \- | \- | \- | - |
-| [Leetcode-48. Rotate Image](https://leetcode.com/problems/rotate-image/description/) | [python](./leetcode/48.rotate-image.py), [c++](./leetcode/48.rotate-image.cpp) | \- | \- | \- | - |
 | [Leetcode-49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [c++](./leetcode/49.group-anagrams.cpp) | \- | \- | \- | - |
 | [Leetcode-50. Powx N](https://leetcode.com/problems/powx-n/description/) | [c++](./leetcode/50.powx-n.cpp), [python](./leetcode/50.powx-n.py) | \- | \- | \- | - |
 | [Leetcode-52. N Queens II](https://leetcode.com/problems/n-queens-ii/description/) | [python](./leetcode/52.n-queens-ii.py), [c++](./leetcode/52.n-queens-ii.cpp) | \- | \- | \- | - |
