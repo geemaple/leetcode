@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **367**<br/>
-Auto updated at: **2024-07-31 14:47:46**<br/>
+Auto updated at: **2024-07-31 15:17:13**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -382,9 +382,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [python](./leetcode/406.queue-reconstruction-by-height.py), [c++](./leetcode/406.queue-reconstruction-by-height.cpp) | O\(N \* logN\) | O\(1\) | \- | - |
 
 ## Array
-| Problem(3) | Solution | Time | Space | Note | Ref |
+| Problem(4) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-238. Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) | [python](./leetcode/238.product-of-array-except-self.py), [c++](./leetcode/238.product-of-array-except-self.cpp) | O\(N\) | O\(1\) | \- | - |
+| [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-665. Non Decreasing Array](https://leetcode.com/problems/non-decreasing-array/description/) | [python](./leetcode/665.non-decreasing-array.py), [c++](./leetcode/665.non-decreasing-array.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-2210. Count Hills And Valleys In An Array](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/description/) | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
 
@@ -393,8 +394,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
+## Hash Table
+| Problem(1) | Solution | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
+
 ## Other
-| Problem(225) | Solution | Time | Space | Note | Ref |
+| Problem(224) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -552,7 +558,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python](./leetcode/438.find-all-anagrams-in-a-string.py) | \- | \- | \- | - |
 | [Leetcode-444. Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/description/) | [c++](./leetcode/444.sequence-reconstruction.cpp), [python](./leetcode/444.sequence-reconstruction.py) | \- | \- | \- | - |
 | [Leetcode-447. Number Of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/description/) | [c++](./leetcode/447.number-of-boomerangs.cpp), [python](./leetcode/447.number-of-boomerangs.py) | \- | \- | \- | - |
-| [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | \- | \- | \- | - |
 | [Leetcode-454. 4Sum II](https://leetcode.com/problems/4sum-ii/description/) | [c++](./leetcode/454.4sum-ii.cpp) | \- | \- | \- | - |
 | [Leetcode-463. Island Perimeter](https://leetcode.com/problems/island-perimeter/description/) | [python](./leetcode/463.island-perimeter.py) | \- | \- | \- | - |
 | [Leetcode-485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/description/) | [c++](./leetcode/485.max-consecutive-ones.cpp) | \- | \- | \- | - |
