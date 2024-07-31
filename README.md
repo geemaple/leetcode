@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **363**<br/>
-Auto updated at: **2024-07-31 12:20:50**<br/>
+Auto updated at: **2024-07-31 12:41:29**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -88,12 +88,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(6) | Solution | Time | Space | Note | Ref |
+| Problem(7) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-318. Maximum Product Of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python](./leetcode/318.maximum-product-of-word-lengths.py) | O\(N^2\) | O\(N\) | \- | - |
+| [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [python](./leetcode/461.hamming-distance.py), [c++](./leetcode/461.hamming-distance.cpp) | O\(1\) | O\(1\) | \- | - |
 
@@ -234,7 +235,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [python](./leetcode/3048.earliest-second-to-mark-indices-i.py), [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp) | O\(M\*logM\) | O\(M\) | \- | - |
 
 ## Dynamic Programming
-| Problem(39) | Solution | Time | Space | Note | Ref |
+| Problem(40) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | [python](./leetcode/10.regular-expression-matching.py), [c++](./leetcode/10.regular-expression-matching.cpp) | O\(MN\) | O\(MN\) | \- | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [python](./leetcode/53.maximum-subarray.py), [c++](./leetcode/53.maximum-subarray.cpp) | O\(N\) | O\(N\) | \- | - |
@@ -256,6 +257,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-309. Best Time To Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) | [c++](./leetcode/309.best-time-to-buy-and-sell-stock-with-cooldown.cpp), [python](./leetcode/309.best-time-to-buy-and-sell-stock-with-cooldown.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-312. Burst Balloons](https://leetcode.com/problems/burst-balloons/description/) | [c++](./leetcode/312.burst-balloons.cpp), [python](./leetcode/312.burst-balloons.py) | O\(N^3\) | O\(N^2\) | \- | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python](./leetcode/322.coin-change.py) | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
+| [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-343. Integer Break](https://leetcode.com/problems/integer-break/description/) | [c++](./leetcode/343.integer-break.cpp), [python](./leetcode/343.integer-break.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/description/) | [c++](./leetcode/376.wiggle-subsequence.cpp), [python](./leetcode/376.wiggle-subsequence.py) | O\(N\) | O\(N\) | \- | - |
@@ -385,7 +387,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(226) | Solution | Time | Space | Note | Ref |
+| Problem(225) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -515,7 +517,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/description/) | [python](./leetcode/324.wiggle-sort-ii.py) | \- | \- | \- | - |
 | [Leetcode-328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/) | [python](./leetcode/328.odd-even-linked-list.py) | \- | \- | \- | - |
 | [Leetcode-336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/) | [python](./leetcode/336.palindrome-pairs.py) | \- | \- | \- | - |
-| [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | \- | \- | \- | - |
 | [Leetcode-341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) | [python](./leetcode/341.flatten-nested-list-iterator.py) | \- | \- | \- | - |
 | [Leetcode-344. Reverse String](https://leetcode.com/problems/reverse-string/description/) | [c++](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | \- | \- | \- | - |
 | [Leetcode-345. Reverse Vowels Of A String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [c++](./leetcode/345.reverse-vowels-of-a-string.cpp), [python](./leetcode/345.reverse-vowels-of-a-string.py) | \- | \- | \- | - |
