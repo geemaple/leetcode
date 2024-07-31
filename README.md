@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **363**<br/>
-Auto updated at: **2024-07-30 17:56:16**<br/>
+Auto updated at: **2024-07-31 11:53:50**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -60,7 +60,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Segment Tree](#segment-tree)
 
 ## Math
-| Problem(23) | Solution | Time | Space | Note | Ref |
+| Problem(24) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-69. Sqrtx](https://leetcode.com/problems/sqrtx/description/) | [c++](./leetcode/69.sqrtx.cpp), [python](./leetcode/69.sqrtx.py) | N\(logN\) | O\(1\) | \- | - |
@@ -73,6 +73,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python](./leetcode/263.ugly-number.py) | O\(k\) | O\(1\) | \- | - |
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python](./leetcode/279.perfect-squares.py) | O\(n^\{3/2\}\) | O\(N\) | \- | - |
 | [Leetcode-326. Power Of Three](https://leetcode.com/problems/power-of-three/description/) | [python](./leetcode/326.power-of-three.py), [c++](./leetcode/326.power-of-three.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-343. Integer Break](https://leetcode.com/problems/integer-break/description/) | [c++](./leetcode/343.integer-break.cpp), [python](./leetcode/343.integer-break.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python](./leetcode/375.guess-number-higher-or-lower-ii.py) | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [Leetcode-382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/) | [c++](./leetcode/382.linked-list-random-node.cpp), [python](./leetcode/382.linked-list-random-node.py) | O\(N\) | O\(1\) | \- | - |
@@ -87,11 +88,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [python](./leetcode/932.beautiful-array.py), [c++](./leetcode/932.beautiful-array.cpp) | O\(N\) | O\(N\) | dp | - |
 
 ## Bit Manipulation
-| Problem(4) | Solution | Time | Space | Note | Ref |
+| Problem(5) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python](./leetcode/67.add-binary.py) | O\(M\+N\) | O\(1\) | \- | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python](./leetcode/136.single-number.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [python](./leetcode/190.reverse-bits.py), [c++](./leetcode/190.reverse-bits.cpp) | O\(1\) | O\(1\) | \- | - |
+| [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py), [c++](./leetcode/342.power-of-four.cpp) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [python](./leetcode/461.hamming-distance.py), [c++](./leetcode/461.hamming-distance.cpp) | O\(1\) | O\(1\) | \- | - |
 
 ## Simulation
@@ -382,7 +384,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python](./lintcode/1790.rotate-string-ii.py) | O\(N\) | O\(N\) | Simulation | - |
 
 ## Other
-| Problem(228) | Solution | Time | Space | Note | Ref |
+| Problem(227) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [python](./leetcode/1.two-sum.py), [c++](./leetcode/1.two-sum.cpp) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [python](./leetcode/2.add-two-numbers.py), [c++](./leetcode/2.add-two-numbers.cpp) | \- | \- | \- | - |
@@ -515,7 +517,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/) | [python](./leetcode/336.palindrome-pairs.py) | \- | \- | \- | - |
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [python](./leetcode/338.counting-bits.py), [c++](./leetcode/338.counting-bits.cpp) | \- | \- | \- | - |
 | [Leetcode-341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/) | [python](./leetcode/341.flatten-nested-list-iterator.py) | \- | \- | \- | - |
-| [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [python](./leetcode/342.power-of-four.py) | \- | \- | \- | - |
 | [Leetcode-344. Reverse String](https://leetcode.com/problems/reverse-string/description/) | [c++](./leetcode/344.reverse-string.cpp), [python](./leetcode/344.reverse-string.py) | \- | \- | \- | - |
 | [Leetcode-345. Reverse Vowels Of A String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [c++](./leetcode/345.reverse-vowels-of-a-string.cpp), [python](./leetcode/345.reverse-vowels-of-a-string.py) | \- | \- | \- | - |
 | [Leetcode-346. Moving Average From Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/description/) | [c++](./leetcode/346.moving-average-from-data-stream.cpp), [python](./leetcode/346.moving-average-from-data-stream.py) | \- | \- | \- | - |
