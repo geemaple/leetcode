@@ -184,7 +184,7 @@ class Markdown:
                 if solution.key not in solution_set:
                     continue
 
-                codes = ', '.join(solution_set[solution.key])
+                codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
                     solution.problem_link,
