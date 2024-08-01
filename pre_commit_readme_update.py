@@ -57,7 +57,7 @@ SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
 FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 TAG_MAP = {
-    TAG_MATH: [TAG_PROB],
+    TAG_MATH: [TAG_PROB, TAG_BIT, TAG_DP],
     TAG_STACK: [TAG_MONO_STACK],
     TAG_2P: [TAG_SWIN],
     TAG_SORT: [TAG_COUNT],
