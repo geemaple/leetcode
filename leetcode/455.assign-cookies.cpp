@@ -1,5 +1,5 @@
 //  Tag: Greedy, Array, Two Pointers, Sorting
-//  Time: O(N * logN)
+//  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: -
 //  Note: -

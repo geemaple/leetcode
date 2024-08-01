@@ -1,6 +1,6 @@
 #  Tag: Stack, Tree, Depth-First Search, Linked List, Binary Tree
 #  Time: O(N)
-#  Space: O(Height)
+#  Space: O(H)
 #  Ref: -
 #  Note: PreOrder
 

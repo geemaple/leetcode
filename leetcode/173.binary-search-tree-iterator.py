@@ -1,6 +1,6 @@
 #  Tag: Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator
 #  Time: O(1)
-#  Space: O(Height)
+#  Space: O(H)
 #  Ref: -
 #  Note: InOrder
 

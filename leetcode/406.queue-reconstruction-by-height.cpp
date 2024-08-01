@@ -1,5 +1,5 @@
 //  Tag: Array, Binary Indexed Tree, Segment Tree, Sorting
-//  Time: O(N * logN)
+//  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: -
 //  Note: -

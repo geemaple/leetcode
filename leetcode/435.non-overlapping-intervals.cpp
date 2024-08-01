@@ -1,5 +1,5 @@
 //  Tag: Greedy, Array, Dynamic Programming, Sorting
-//  Time: O(N * logN)
+//  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: -
 //  Note: -

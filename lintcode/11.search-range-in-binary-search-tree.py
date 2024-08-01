@@ -1,6 +1,6 @@
 #  Tag: Binary Tree, Divide and Conquer, Binary Search Tree, Depth First Search/DFS
 #  Time: O(N)
-#  Space: O(Height)
+#  Space: O(H)
 #  Ref: -
 #  Note: InOrder
 

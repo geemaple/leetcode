@@ -1,6 +1,6 @@
 #  Tag: Binary Search Tree, Linked List, Binary Tree, Divide and Conquer
 #  Time: O(N)
-#  Space: O(Height)
+#  Space: O(H)
 #  Ref: -
 #  Note: BST | Leetcode-426
 

@@ -1,6 +1,6 @@
 #  Tag: Binary Search, Greedy
-#  Time: O(M*logM)
-#  Space: O(M)
+#  Time: O(NlogN)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 

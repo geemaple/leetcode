@@ -1,5 +1,5 @@
 //  Tag: Math
-//  Time: O(log5(n))
+//  Time: O(logN)
 //  Space: O(1)
 //  Ref: -
 //  Note: -
