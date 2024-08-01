@@ -28,7 +28,7 @@ TAG_LINKED_LIST = 'Linked List'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
-TAG_HEAP = 'Priority Queue'
+TAG_HEAP = 'Heap'
 TAG_2P = 'Two Pointers'
 TAG_SWIN = 'Sliding Window'
 TAG_SORT = 'Sorting'
@@ -78,7 +78,7 @@ TAG_REGEX = {
     TAG_SORT: r'^Sort$|^Sorting$|Bucket Sort',
     TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
     TAG_QUEUE: r'^Queue$',
-    TAG_HEAP: r'Priority Queue',
+    TAG_HEAP: r'^Heap$|Priority Queue',
 
     FOLD_TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
@@ -197,7 +197,7 @@ class Markdown:
             for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
             
-            Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Time', 'Space', 'Note', 'Ref'])
+            Markdown.table_header(f, ['Tag', f'Problem({len(solution_set)})', 'Solution', 'Time', 'Space', 'Note', 'Ref'])
             sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, int(s.number)))
             
             for solution in sorted_solutions:
@@ -207,6 +207,7 @@ class Markdown:
                 codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
+                    category,
                     solution.problem_link,
                     codes,
                     solution.time,
