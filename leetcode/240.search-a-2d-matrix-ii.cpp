@@ -1,5 +1,5 @@
 //  Tag: Array, Binary Search, Divide and Conquer, Matrix
-//  Time: O(m * logN)
+//  Time: O(M + N)
 //  Space: O(1)
 //  Ref: -
 //  Note: Matrix
@@ -38,50 +38,21 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        // O(m * logN)
-        for (auto &row : matrix) {
-            int pos = lowerBound(row, target);
-            if (pos != row.size() && row[pos] == target) {
-                return true;
-            }
-        }
+        int m = matrix.size();
+        int n = matrix[0].size();
 
-        return false;
-    }
-
-    int lowerBound(vector<int> &arr, int target) {
-        int start = 0;
-        int end = arr.size();
-
-        while (start < end) {
-            int mid = start + (end - start) / 2;
-            if (arr[mid] >= target) {
-                end = mid;
-            } else {
-                start = mid + 1;
-            }
-        } 
-
-        return start;
-    }
-};
-
-class Solution {
-public:
-    bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        // O(m + n)
-        int m = matrix.size(), n = matrix[0].size();
-        int i = 0, j = n - 1;
+        int i = 0;
+        int j = n - 1;
 
         while (i < m && j >= 0) {
-            if (matrix[i][j] == target) {
+            if (target == matrix[i][j]) {
                 return true;
             }
 
-            if (matrix[i][j] > target) {
-                j --;
+            if (target > matrix[i][j]) {
+                i++;
             } else {
-                i ++;
+                j--;
             }
         }
 

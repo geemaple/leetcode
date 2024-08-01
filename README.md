@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **367**<br/>
-Auto updated at: **2024-07-31 16:53:12**<br/>
+Auto updated at: **2024-08-01 14:00:26**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -133,7 +133,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/) | [c++](./leetcode/162.find-peak-element.cpp), [python](./leetcode/162.find-peak-element.py) | O\(logN\) | O\(1\) | Mountain; | [Video](https://youtu.be/bexO0N9eP1I) |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
-| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(M \+ N\) | O\(1\) | Matrix | - |
 | [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [c++](./leetcode/268.missing-number.cpp), [python](./leetcode/268.missing-number.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python](./leetcode/278.first-bad-version.py) | O\(logN\) | O\(1\) | Range; | [Video](https://youtu.be/xNzBpfqzYSg) |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python](./leetcode/300.longest-increasing-subsequence.py) | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
@@ -308,7 +308,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python](./leetcode/169.majority-element.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [c++](./leetcode/190.reverse-bits.cpp), [python](./leetcode/190.reverse-bits.py) | O\(1\) | O\(1\) | \- | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | O\(N\) ～ O\(N^2\) | O\(1\) | QuickSelection | - |
-| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(m \* logN\) | O\(1\) | Matrix | - |
+| [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python](./leetcode/240.search-a-2d-matrix-ii.py) | O\(M \+ N\) | O\(1\) | Matrix | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python](./leetcode/347.top-k-frequent-elements.py) | O\(N\), O\(C\*logK\) | O\(N\) | \- | - |
 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [c++](./leetcode/932.beautiful-array.cpp), [python](./leetcode/932.beautiful-array.py) | O\(N\) | O\(N\) | dp | - |
 | [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | O\(N\) | O\(Height\) | InOrder | - |

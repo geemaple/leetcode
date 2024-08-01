@@ -1,5 +1,5 @@
 #  Tag: Array, Binary Search, Divide and Conquer, Matrix
-#  Time: O(m * logN)
+#  Time: O(M + N)
 #  Space: O(1)
 #  Ref: -
 #  Note: Matrix
@@ -37,52 +37,21 @@
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
-        # O(m * logN)
-        for row in matrix:
-            pos = self.lower_bound(row, target)
-            if pos != len(row) and row[pos] == target:
-                return True 
+        m = len(matrix)
+        n = len(matrix[0])
 
-        return False
-
-    def lower_bound(self, arr: List[int], target) -> int:
-        start = 0
-        end = len(arr)
-
-        while start < end:
-            mid = start + (end - start) // 2
-            if arr[mid] >= target:
-                end = mid
-            else:
-                start = mid + 1
-
-        return start
-
-class Solution(object):
-    def searchMatrix(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
-        # O(m + n)
-        m, n = len(matrix), len(matrix[0])
-        i, j = 0, n - 1
+        i = 0
+        j = n - 1
 
         while i < m and j >= 0:
-
-            if matrix[i][j] == target:
+            
+            if target == matrix[i][j]:
                 return True
-
-            if matrix[i][j] > target:
-                j -= 1
-            else:
+            
+            if target > matrix[i][j]:
                 i += 1
+            else:
+                j -= 1
 
         return False
     
