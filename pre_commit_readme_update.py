@@ -16,38 +16,39 @@ import datetime
 import collections
 from functools import lru_cache
 
+TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
-TAG_BINARY_SEARCH = 'Binary Search'
+TAG_BS = 'Binary Search'
 TAG_LINKED_LIST = 'Linked List'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
 TAG_HEAP = 'Priority Queue'
-TAG_TP = 'Two Pointers'
-TAG_SW = 'Sliding Window'
+TAG_2P = 'Two Pointers'
+TAG_SWIN = 'Sliding Window'
 TAG_SORT = 'Sorting'
 TAG_COUNT = 'Counting'
-TAG_QS = 'Quickselect'
+TAG_QSEL = 'Quickselect'
 TAG_DC = 'Divide and Conquer'
 TAG_BFS = 'Breadth-First Search'
-TAG_BFS_TS = 'Topological Sort'
 TAG_DFS = 'Depth-First Search'
-TAG_BT = 'Backtracking'
+TAG_TSORT = 'Topological Sort'
+TAG_BTRACK = 'Backtracking'
 TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 
-FOLD_TAG_MATH = 'Math'
 FOLD_TAG_ARY = 'Array'
 FOLD_TAG_STR = 'String'
 FOLD_TAG_HASH = 'Hash Table'
 FOLD_TAG_TREE = 'Tree'
 FOLD_TAG_GRAPH = 'Graph'
+FOLD_TAG_RECURSION = 'Recursion'
 
 CATEGORY_OTHER = 'Other'
 
@@ -55,23 +56,32 @@ ivars = globals()
 SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
 FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
+TAG_MAP = {
+    TAG_MATH: [TAG_PROB],
+    TAG_STACK: [TAG_MONO_STACK],
+    TAG_2P: [TAG_SWIN],
+    TAG_SORT: [TAG_COUNT],
+    TAG_BFS: [TAG_TSORT],
+    TAG_DFS: [TAG_BTRACK, TAG_TSORT],
+}
 
-TAG_IGNORE = r'-|Iterator|Interactive|Recursion|Enumeration'
+TAG_IGNORE = r'-'
 
 TAG_REGEX = {
-    FOLD_TAG_MATH: r'Math|Number Theory',
-    FOLD_TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
-    FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
-
-    TAG_BINARY_SEARCH: r'^Binary Search$|Binary Search on Answer',
-    TAG_TP: r'^Two Pointers$|Same Direction Two Pointers',
+    TAG_MATH: r'Math|Number Theory|Enumeration',
+    TAG_DESIGN: r'^Design$|Iterator',
+    TAG_BS: r'^Binary Search$|Binary Search on Answer',
+    TAG_2P: r'^Two Pointers$|Same Direction Two Pointers',
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
     TAG_DP: r'DP$|Dynamic Programming|Memoization',
     TAG_SORT: r'^Sort$|^Sorting$|Bucket Sort',
     TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
     TAG_QUEUE: r'^Queue$',
-    TAG_HEAP: r'Priority Queue'
+    TAG_HEAP: r'Priority Queue',
+
+    FOLD_TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
+    FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
 }
 
 LANGUAGE = {
@@ -160,8 +170,9 @@ class Markdown:
                 elif not re.search(TAG_IGNORE, tag):
                     print(f'{tag}/[{solution.tags}] - {solution}')
 
-            fold_category = set([x for x in match_all if x in FOLD_STRUCTURES])
-            show_category = match_all - fold_category
+            duplicates = {x for x in match_all if x in TAG_MAP and any(sub in match_all for sub in TAG_MAP[x])}
+            fold_category = set([x for x in (match_all - duplicates) if x in FOLD_STRUCTURES])
+            show_category = match_all - duplicates - fold_category
 
             if len(show_category) > 0:
                 return set(show_category)
