@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **369**<br/>
-Auto updated at: **2024-08-01 16:19:10**<br/>
+Auto updated at: **2024-08-01 16:36:50**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -191,7 +191,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 
 ## Stack
-| Problem(10) | Solution | Time | Space | Note | Ref |
+| Problem(11) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | [c++](./leetcode/20.valid-parentheses.cpp), [python](./leetcode/20.valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python](./leetcode/94.binary-tree-inorder-traversal.py) | O\(N\) | O\(Height\) | InOrder | - |
@@ -201,6 +201,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-155. Min Stack](https://leetcode.com/problems/min-stack/description/) | [c++](./leetcode/155.min-stack.cpp), [python](./leetcode/155.min-stack.py) | O\(1\) | O\(N\) | \- | - |
 | [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | O\(1\) | O\(Height\) | InOrder | - |
 | [Leetcode-232. Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python](./leetcode/232.implement-queue-using-stacks.py) | O\(\*1\) | O\(N\) | \- | - |
+| [Leetcode-739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | [c++](./leetcode/739.daily-temperatures.cpp), [python](./leetcode/739.daily-temperatures.py) | O\(N\) | O\(N\) | \- | - |
 | [Leetcode-769. Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/description/) | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python](./leetcode/769.max-chunks-to-make-sorted.py) | O\(N\) | O\(1\) | \- | - |
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | O\(N\) | O\(N\) | \- | - |
 
@@ -409,7 +410,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | O\(N\) | O\(1\) | \- | - |
 
 ## Other
-| Problem(221) | Solution | Time | Space | Note | Ref |
+| Problem(220) | Solution | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | \- | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | \- | \- | \- | - |
@@ -586,7 +587,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-702. Search In A Sorted Array Of Unknown Size](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/) | [c++](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | \- | \- | \- | - |
 | [Leetcode-721. Accounts Merge](https://leetcode.com/problems/accounts-merge/description/) | [c++](./leetcode/721.accounts-merge.cpp), [python](./leetcode/721.accounts-merge.py) | \- | \- | \- | - |
 | [Leetcode-724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/) | [c++](./leetcode/724.find-pivot-index.cpp) | \- | \- | \- | - |
-| [Leetcode-739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | [python](./leetcode/739.daily-temperatures.py) | \- | \- | \- | - |
 | [Leetcode-747. Largest Number At Least Twice Of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/) | [c++](./leetcode/747.largest-number-at-least-twice-of-others.cpp) | \- | \- | \- | - |
 | [Leetcode-751. Ip To Cidr](https://leetcode.com/problems/ip-to-cidr/description/) | [python](./leetcode/751.ip-to-cidr.py) | \- | \- | \- | - |
 | [Leetcode-755. Pour Water](https://leetcode.com/problems/pour-water/description/) | [python](./leetcode/755.pour-water.py) | \- | \- | \- | - |
