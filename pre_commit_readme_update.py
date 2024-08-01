@@ -16,62 +16,62 @@ import datetime
 import collections
 from functools import lru_cache
 
-TAG_MATH = 'Math'
-TAG_PB = 'Probability'
+TAG_PROB = 'Probability'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
-TAG_ARY = 'Array'
-TAG_STR = 'String'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
+TAG_HEAP = 'Priority Queue'
 TAG_TP = 'Two Pointers'
 TAG_SW = 'Sliding Window'
 TAG_SORT = 'Sorting'
-TAG_QS = 'Quickselect'
 TAG_COUNT = 'Counting'
-TAG_BFS = 'Breadth-First Search'
-TAG_BT = 'Backtracking'
-TAG_DFS = 'Depth-First Search'
+TAG_QS = 'Quickselect'
 TAG_DC = 'Divide and Conquer'
+TAG_BFS = 'Breadth-First Search'
+TAG_BFS_TS = 'Topological Sort'
+TAG_DFS = 'Depth-First Search'
+TAG_BT = 'Backtracking'
 TAG_BINARY_SEARCH = 'Binary Search'
-TAG_BINARY_SEARCH_TREE = 'Binary Search Tree'
 TAG_LINKED_LIST = 'Linked List'
-TAG_PQ = 'Priority Queue'
-TAG_HASH = 'Hash Table'
+TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
-TAG_SEGMENT_TREE = 'Segment Tree'
-TAG_TREE = 'Tree'
-TAG_GRAPH = 'Graph'
-TAG_BFS_TS = 'Topological Sort'
+
+FOLD_TAG_MATH = 'Math'
+FOLD_TAG_ARY = 'Array'
+FOLD_TAG_STR = 'String'
+FOLD_TAG_HASH = 'Hash Table'
+FOLD_TAG_TREE = 'Tree'
+FOLD_TAG_GRAPH = 'Graph'
 
 CATEGORY_OTHER = 'Other'
 
-SHOW_CATEGORIES = [TAG_PB, TAG_BIT, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, 
-                   TAG_SW, TAG_STACK, TAG_MONO_STACK, TAG_QUEUE, TAG_SORT, TAG_QS, TAG_COUNT, TAG_GREEDY, TAG_DP, TAG_BT, 
-                   TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
-
-FOLD_STRUCTURES = [TAG_MATH, TAG_SIM, TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
+ivars = globals()
+SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
+FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 
 TAG_IGNORE = r'-|Iterator|Interactive|Recursion|Enumeration'
 
 TAG_REGEX = {
+    FOLD_TAG_MATH: r'Math|Number Theory',
+    FOLD_TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
+    FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
+
     TAG_BINARY_SEARCH: r'^Binary Search$|Binary Search on Answer',
     TAG_TP: r'^Two Pointers$|Same Direction Two Pointers',
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
     TAG_DP: r'DP$|Dynamic Programming|Memoization',
-    TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
-    TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
     TAG_SORT: r'^Sort$|^Sorting$|Bucket Sort',
-    TAG_MATH: r'Math|Number Theory',
-    TAG_PB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
-    TAG_PQ: r'Priority Queue'
+    TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
+    TAG_QUEUE: r'^Queue$',
+    TAG_HEAP: r'Priority Queue'
 }
 
 LANGUAGE = {
