@@ -17,6 +17,7 @@ import collections
 from functools import lru_cache
 
 TAG_MATH = 'Math'
+TAG_PB = 'Probability'
 TAG_BIT = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
@@ -25,9 +26,12 @@ TAG_DP = 'Dynamic Programming'
 TAG_ARY = 'Array'
 TAG_STR = 'String'
 TAG_STACK = 'Stack'
+TAG_MONO_STACK = 'Monotonic Stack'
+TAG_QUEUE = 'Queue'
 TAG_TP = 'Two Pointers'
 TAG_SW = 'Sliding Window'
 TAG_SORT = 'Sorting'
+TAG_QS = 'Quickselect'
 TAG_COUNT = 'Counting'
 TAG_BFS = 'Breadth-First Search'
 TAG_BT = 'Backtracking'
@@ -47,22 +51,27 @@ TAG_BFS_TS = 'Topological Sort'
 
 CATEGORY_OTHER = 'Other'
 
-SHOW_CATEGORIES = [TAG_MATH, TAG_BIT, TAG_SIM, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, TAG_SW, TAG_STACK, TAG_SORT, TAG_COUNT,
-                  TAG_GREEDY, TAG_DP, TAG_BT, TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
+SHOW_CATEGORIES = [TAG_PB, TAG_BIT, TAG_DESIGN, TAG_BINARY_SEARCH, TAG_LINKED_LIST, TAG_TP, 
+                   TAG_SW, TAG_STACK, TAG_MONO_STACK, TAG_QUEUE, TAG_SORT, TAG_QS, TAG_COUNT, TAG_GREEDY, TAG_DP, TAG_BT, 
+                   TAG_DC, TAG_BFS, TAG_BFS_TS, TAG_DFS, TAG_PQ, TAG_UNION_FIND, TAG_TRIE, TAG_SEGMENT_TREE]
 
-FOLD_STRUCTURES = [TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
+FOLD_STRUCTURES = [TAG_MATH, TAG_SIM, TAG_ARY, TAG_STR, TAG_TREE, TAG_HASH, TAG_GRAPH]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 
-TAG_IGNORE = r'-|Iterator|Interactive'
+TAG_IGNORE = r'-|Iterator|Interactive|Recursion|Enumeration'
 
 TAG_REGEX = {
+    TAG_BINARY_SEARCH: r'^Binary Search$|Binary Search on Answer',
+    TAG_TP: r'^Two Pointers$|Same Direction Two Pointers',
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
-    TAG_DP: r'Dynamic Programming|DP|Memoization',
+    TAG_DP: r'DP$|Dynamic Programming|Memoization',
     TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
-    TAG_ARY: r'Array|Matrix|Prefix Sum',
-    TAG_SORT: r'^Sort$|Sorting|Bucket Sort',
-    TAG_MATH: r'Math|Number Theory|Randomized'
+    TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
+    TAG_SORT: r'^Sort$|^Sorting$|Bucket Sort',
+    TAG_MATH: r'Math|Number Theory',
+    TAG_PB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
+    TAG_PQ: r'Priority Queue'
 }
 
 LANGUAGE = {
@@ -145,7 +154,7 @@ class Markdown:
             match_all = set()
 
             for tag in tags.split(', '):
-                match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, x), tag, re.IGNORECASE)])
+                match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, rf"^{x}$"), tag, re.IGNORECASE)])
                 if len(match_category) > 0:
                     match_all.update(match_category)
                 elif not re.search(TAG_IGNORE, tag):
