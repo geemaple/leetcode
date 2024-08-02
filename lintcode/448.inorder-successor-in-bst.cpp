@@ -1,5 +1,5 @@
 //  Tag: Binary Tree, Binary Search Tree
-//  Time: O(Height)
+//  Time: O(H)
 //  Space: O(1)
 //  Ref: -
 //  Note: Successor | Leetcode-285

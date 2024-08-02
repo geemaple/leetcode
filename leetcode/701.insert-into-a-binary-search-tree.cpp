@@ -1,5 +1,5 @@
 //  Tag: Tree, Binary Search Tree, Binary Tree
-//  Time: O(Height)
+//  Time: O(H)
 //  Space: O(H)
 //  Ref: -
 //  Note: Insert

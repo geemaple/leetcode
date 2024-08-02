@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **369**<br/>
-Auto updated at: **2024-08-01 18:50:09**<br/>
+Auto updated at: **2024-08-02 19:18:13**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -212,8 +212,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | Binary Search | O\(N \* logM \+ M \* logN\) | O\(1\) | - |
 
 ## Linked List
-| Problem(5) | Solution | Tag | Time | Space | Ref |
+| Problem(6) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | Linked List | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Linked List | O\(N\) | O\(H\) | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python](./leetcode/141.linked-list-cycle.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python](./leetcode/142.linked-list-cycle-ii.py) | Linked List | O\(N\) | O\(1\) | - |
@@ -245,8 +246,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-232. Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python](./leetcode/232.implement-queue-using-stacks.py) | Queue | O\(\*1\) | O\(N\) | - |
 
 ## Heap
-| Problem(4) | Solution | Tag | Time | Space | Ref |
+| Problem(5) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | Heap | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | Heap | O\(N\) ～ O\(N^2\) | O\(1\) | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python](./leetcode/347.top-k-frequent-elements.py) | Heap | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python](./leetcode/451.sort-characters-by-frequency.py) | Heap | O\(N\) | O\(N\) | - |
@@ -307,9 +309,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python](./leetcode/347.top-k-frequent-elements.py) | Quickselect | O\(N\), O\(C\*logK\) | O\(N\) | - |
 
 ## Divide and Conquer
-| Problem(10) | Solution | Tag | Time | Space | Ref |
+| Problem(11) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python](./leetcode/4.median-of-two-sorted-arrays.py) | Divide and Conquer | O\(log\(min\(M, N\)\)\) | O\(1\) | - |
+| [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | Divide and Conquer | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [c++](./leetcode/53.maximum-subarray.cpp), [python](./leetcode/53.maximum-subarray.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python](./leetcode/169.majority-element.py) | Divide and Conquer | O\(N\) | O\(1\) | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [c++](./leetcode/190.reverse-bits.cpp), [python](./leetcode/190.reverse-bits.py) | Divide and Conquer | O\(1\) | O\(1\) | - |
@@ -412,12 +415,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 ## Tree
 | Problem(3) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | Tree | O\(Height\) | O\(H\) | - |
-| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | Tree | O\(Height\) | O\(H\) | - |
-| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | Tree | O\(Height\) | O\(1\) | - |
+| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | Tree | O\(H\) | O\(H\) | - |
+| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | Tree | O\(H\) | O\(H\) | - |
+| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | Tree | O\(H\) | O\(1\) | - |
 
 ## Other
-| Problem(220) | Solution | Tag | Time | Space | Ref |
+| Problem(219) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | Other | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
@@ -438,7 +441,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-19. Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python](./leetcode/19.remove-nth-node-from-end-of-list.py) | Other | \- | \- | - |
 | [Leetcode-21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [c++](./leetcode/21.merge-two-sorted-lists.cpp), [python](./leetcode/21.merge-two-sorted-lists.py) | Other | \- | \- | - |
 | [Leetcode-22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | [python](./leetcode/22.generate-parentheses.py) | Other | \- | \- | - |
-| [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | Other | \- | \- | - |
 | [Leetcode-24. Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [c++](./leetcode/24.swap-nodes-in-pairs.cpp), [python](./leetcode/24.swap-nodes-in-pairs.py) | Other | \- | \- | - |
 | [Leetcode-25. Reverse Nodes In K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | [c++](./leetcode/25.reverse-nodes-in-k-group.cpp), [python](./leetcode/25.reverse-nodes-in-k-group.py) | Other | \- | \- | - |
 | [Leetcode-26. Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [c++](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python](./leetcode/26.remove-duplicates-from-sorted-array.py) | Other | \- | \- | - |
