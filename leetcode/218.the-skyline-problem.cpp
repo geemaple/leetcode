@@ -53,7 +53,7 @@ public:
             if (heap.empty() || (i < n && buildings[i][0] <= heap.top().second)) {
                 // left
                 cur_x = buildings[i][0];
-                while (heap.empty() || (i < n && cur_x == buildings[i][0])) {
+                while (i < n && cur_x == buildings[i][0]) {
                     heap.emplace(buildings[i][2], buildings[i][1]);
                     i++;
                 }
