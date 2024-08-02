@@ -18,7 +18,7 @@ from functools import lru_cache
 
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
-TAG_BIT = 'Bit Manipulation'
+TAG_BIT_OP = 'Bit Manipulation'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
@@ -39,6 +39,11 @@ TAG_BFS = 'Breadth-First Search'
 TAG_DFS = 'Depth-First Search'
 TAG_TSORT = 'Topological Sort'
 TAG_BTRACK = 'Backtracking'
+TAG_LSWEEP = 'Line Sweep'
+TAG_SET = 'Set'
+TAG_ORDERED_SET = 'Ordered Set'
+TAG_BST = 'Binary Search Tree'
+TAG_BIT = 'Binary Indexed Tree'
 TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
@@ -57,18 +62,19 @@ SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
 FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 TAG_MAP = {
-    TAG_MATH: [TAG_PROB, TAG_BIT, TAG_DP],
+    TAG_MATH: [TAG_PROB, TAG_BIT_OP, TAG_DP],
     TAG_STACK: [TAG_MONO_STACK],
     TAG_2P: [TAG_SWIN],
     TAG_SORT: [TAG_COUNT],
     TAG_BFS: [TAG_TSORT],
     TAG_DFS: [TAG_BTRACK, TAG_TSORT],
+    TAG_SET: [TAG_ORDERED_SET],
 }
 
 TAG_IGNORE = r'-'
 
 TAG_REGEX = {
-    TAG_MATH: r'Math|Number Theory|Enumeration',
+    TAG_MATH: r'Math|Number Theory',
     TAG_DESIGN: r'^Design$|Iterator',
     TAG_BS: r'^Binary Search$|Binary Search on Answer',
     TAG_2P: r'^Two Pointers$|Same Direction Two Pointers',
@@ -79,8 +85,7 @@ TAG_REGEX = {
     TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
     TAG_QUEUE: r'^Queue$',
     TAG_HEAP: r'^Heap$|Priority Queue',
-
-    FOLD_TAG_TREE: r'^Tree$|Binary Indexed Tree|Binary Tree|Binary Search Tree',
+    FOLD_TAG_TREE: r'^Tree$|Binary Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
 }
 

@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **370**<br/>
-Auto updated at: **2024-08-02 21:40:47**<br/>
+Auto updated at: **2024-08-02 23:32:07**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -59,6 +59,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Depth-First Search](#depth-first-search)
 - [Topological Sort](#topological-sort)
 - [Backtracking](#backtracking)
+- [Line Sweep](#line-sweep)
+- [Set](#set)
+- [Ordered Set](#ordered-set)
+- [Binary Search Tree](#binary-search-tree)
+- [Binary Indexed Tree](#binary-indexed-tree)
 - [Segment Tree](#segment-tree)
 - [Union Find](#union-find)
 - [Trie](#trie)
@@ -379,6 +384,33 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python](./leetcode/257.binary-tree-paths.py) | Backtracking | O\(N\) | O\(H\) | - |
 | [Leetcode-494. Target Sum](https://leetcode.com/problems/target-sum/description/) | [c++](./leetcode/494.target-sum.cpp), [python](./leetcode/494.target-sum.py) | Backtracking | O\(N \* Sum\) | O\(N \* Sum\) | - |
 
+## Line Sweep
+| Problem(1) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python](./leetcode/218.the-skyline-problem.py) | Line Sweep | O\(NlogN\) | O\(N\) | - |
+
+## Ordered Set
+| Problem(1) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python](./leetcode/218.the-skyline-problem.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
+
+## Binary Search Tree
+| Problem(7) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python](./leetcode/98.validate-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
+| [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python](./leetcode/173.binary-search-tree-iterator.py) | Binary Search Tree | O\(1\) | O\(H\) | - |
+| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | Binary Search Tree | O\(H\) | O\(H\) | - |
+| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | Binary Search Tree | O\(H\) | O\(H\) | - |
+| [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python](./lintcode/11.search-range-in-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
+| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | Binary Search Tree | O\(H\) | O\(1\) | - |
+| [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
+
+## Binary Indexed Tree
+| Problem(2) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python](./leetcode/218.the-skyline-problem.py) | Binary Indexed Tree | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python](./leetcode/406.queue-reconstruction-by-height.py) | Binary Indexed Tree | O\(NlogN\) | O\(1\) | - |
+
 ## Segment Tree
 | Problem(2) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -414,13 +446,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Problem(1) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | Hash Table | O\(N\) | O\(1\) | - |
-
-## Tree
-| Problem(3) | Solution | Tag | Time | Space | Ref |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python](./leetcode/450.delete-node-in-a-bst.py) | Tree | O\(H\) | O\(H\) | - |
-| [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python](./leetcode/701.insert-into-a-binary-search-tree.py) | Tree | O\(H\) | O\(H\) | - |
-| [Lintcode-448. Inorder Successor In Bst](https://www.lintcode.com/problem/inorder-successor-in-bst) | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python](./lintcode/448.inorder-successor-in-bst.py) | Tree | O\(H\) | O\(1\) | - |
 
 ## Other
 | Problem(219) | Solution | Tag | Time | Space | Ref |
