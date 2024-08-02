@@ -68,8 +68,8 @@ public:
     }
 
     ListNode* merge2(ListNode *one, ListNode *other) {
-        ListNode *head = new ListNode();
-        ListNode *cur = head;
+        ListNode head = ListNode();
+        ListNode *cur = &head;
         while (one && other) {
             if (one->val <= other->val) {
                 cur->next = one;
@@ -82,8 +82,7 @@ public:
         }
 
         cur->next = one ? one : other;
-
-        return head->next;
+        return head.next;
     }
 };
 
@@ -107,7 +106,7 @@ public:
             }
         }
         
-        ListNode head(0);
+        ListNode head = ListNode();
         ListNode *cur = &head;
         while(!heap.empty())
         {
