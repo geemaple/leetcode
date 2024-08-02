@@ -40,7 +40,6 @@ TAG_DFS = 'Depth-First Search'
 TAG_TSORT = 'Topological Sort'
 TAG_BTRACK = 'Backtracking'
 TAG_LSWEEP = 'Line Sweep'
-TAG_SET = 'Set'
 TAG_ORDERED_SET = 'Ordered Set'
 TAG_BST = 'Binary Search Tree'
 TAG_BIT = 'Binary Indexed Tree'
@@ -51,6 +50,7 @@ TAG_TRIE = 'Trie'
 FOLD_TAG_ARY = 'Array'
 FOLD_TAG_STR = 'String'
 FOLD_TAG_HASH = 'Hash Table'
+FOLD_TAG_SET = 'Set'
 FOLD_TAG_TREE = 'Tree'
 FOLD_TAG_GRAPH = 'Graph'
 FOLD_TAG_RECURSION = 'Recursion'
@@ -68,7 +68,6 @@ TAG_MAP = {
     TAG_SORT: [TAG_COUNT],
     TAG_BFS: [TAG_TSORT],
     TAG_DFS: [TAG_BTRACK, TAG_TSORT],
-    TAG_SET: [TAG_ORDERED_SET],
 }
 
 TAG_IGNORE = r'-'
@@ -81,7 +80,7 @@ TAG_REGEX = {
     TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
     TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
     TAG_DP: r'DP$|Dynamic Programming|Memoization',
-    TAG_SORT: r'^Sort$|^Sorting$|Bucket Sort',
+    TAG_SORT: r'^Sort$|^Sorting$|Merge Sort|Bucket Sort',
     TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
     TAG_QUEUE: r'^Queue$',
     TAG_HEAP: r'^Heap$|Priority Queue',
