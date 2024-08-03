@@ -28,6 +28,7 @@ TAG_LINKED_LIST = 'Linked List'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
+TAG_MONO_QUEUE = 'Monotonic Queue'
 TAG_HEAP = 'Heap'
 TAG_2P = 'Two Pointers'
 TAG_SWIN = 'Sliding Window'
@@ -64,13 +65,14 @@ ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 TAG_MAP = {
     TAG_MATH: [TAG_PROB, TAG_BIT_OP, TAG_DP],
     TAG_STACK: [TAG_MONO_STACK],
+    TAG_QUEUE: [TAG_MONO_QUEUE],
     TAG_2P: [TAG_SWIN],
     TAG_SORT: [TAG_COUNT],
     TAG_BFS: [TAG_TSORT],
     TAG_DFS: [TAG_BTRACK, TAG_TSORT],
 }
 
-TAG_IGNORE = r'-'
+TAG_IGNORE = r'-|Interactive'
 
 TAG_REGEX = {
     TAG_MATH: r'Math|Number Theory',

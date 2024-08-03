@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **370**<br/>
-Auto updated at: **2024-08-02 23:35:00**<br/>
+Auto updated at: **2024-08-03 08:24:53**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -48,6 +48,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Stack](#stack)
 - [Monotonic Stack](#monotonic-stack)
 - [Queue](#queue)
+- [Monotonic Queue](#monotonic-queue)
 - [Heap](#heap)
 - [Two Pointers](#two-pointers)
 - [Sliding Window](#sliding-window)
@@ -249,12 +250,18 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-232. Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python](./leetcode/232.implement-queue-using-stacks.py) | Queue | O\(\*1\) | O\(N\) | - |
 
+## Monotonic Queue
+| Problem(1) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | Monotonic Queue | O\(N\) | O\(N\) | - |
+
 ## Heap
-| Problem(6) | Solution | Tag | Time | Space | Ref |
+| Problem(7) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python](./leetcode/23.merge-k-sorted-lists.py) | Heap | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python](./leetcode/215.kth-largest-element-in-an-array.py) | Heap | O\(N\) ～ O\(N^2\) | O\(1\) | - |
 | [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python](./leetcode/347.top-k-frequent-elements.py) | Heap | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python](./leetcode/451.sort-characters-by-frequency.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
@@ -276,9 +283,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-386. Longest Substring With At Most K Distinct Characters](https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters) | [c++](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.cpp), [python](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.py) | Two Pointers | O\(N\) | O\(K\) | - |
 
 ## Sliding Window
-| Problem(2) | Solution | Tag | Time | Space | Ref |
+| Problem(3) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | [c++](./leetcode/76.minimum-window-substring.cpp), [python](./leetcode/76.minimum-window-substring.py) | Sliding Window | O\(M\) | O\(N\) | - |
+| [Leetcode-239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python](./leetcode/658.find-k-closest-elements.py) | Sliding Window | O\(Log\(N \- K\)\) | O\(1\) | - |
 
 ## Sorting
@@ -448,7 +456,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | Hash Table | O\(N\) | O\(1\) | - |
 
 ## Other
-| Problem(219) | Solution | Tag | Time | Space | Ref |
+| Problem(218) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python](./leetcode/1.two-sum.py) | Other | \- | \- | - |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
@@ -545,7 +553,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-231. Power Of Two](https://leetcode.com/problems/power-of-two/description/) | [python](./leetcode/231.power-of-two.py) | Other | \- | \- | - |
 | [Leetcode-234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | [c++](./leetcode/234.palindrome-linked-list.cpp), [python](./leetcode/234.palindrome-linked-list.py) | Other | \- | \- | - |
 | [Leetcode-237. Delete Node In A Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [python](./leetcode/237.delete-node-in-a-linked-list.py) | Other | \- | \- | - |
-| [Leetcode-239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python](./leetcode/239.sliding-window-maximum.py) | Other | \- | \- | - |
 | [Leetcode-242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | [c++](./leetcode/242.valid-anagram.cpp), [python](./leetcode/242.valid-anagram.py) | Other | \- | \- | - |
 | [Leetcode-246. Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/description/) | [c++](./leetcode/246.strobogrammatic-number.cpp), [python](./leetcode/246.strobogrammatic-number.py) | Other | \- | \- | - |
 | [Leetcode-249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/description/) | [c++](./leetcode/249.group-shifted-strings.cpp) | Other | \- | \- | - |
