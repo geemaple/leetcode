@@ -25,6 +25,7 @@ TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
 TAG_BS = 'Binary Search'
 TAG_LINKED_LIST = 'Linked List'
+TAG_HASH = 'Hash Table'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
@@ -50,7 +51,6 @@ TAG_TRIE = 'Trie'
 
 FOLD_TAG_ARY = 'Array'
 FOLD_TAG_STR = 'String'
-FOLD_TAG_HASH = 'Hash Table'
 FOLD_TAG_SET = 'Set'
 FOLD_TAG_TREE = 'Tree'
 FOLD_TAG_GRAPH = 'Graph'
@@ -92,7 +92,7 @@ TAG_REGEX = {
 
 LANGUAGE = {
     'cpp': 'c++',
-    'py': 'python',
+    'py': 'python3',
     'java': 'java'
 }
 

@@ -1,47 +1,61 @@
-class Solution(object):
-    def longestConsecutive(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+#  Tag: Array, Hash Table, Union Find
+#  Time: O(N)
+#  Space: O(N)
+#  Ref: -
+#  Note: -
+
+#  Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+#  You must write an algorithm that runs in O(n) time.
+#   
+#  Example 1:
+#  
+#  Input: nums = [100,4,200,1,3,2]
+#  Output: 4
+#  Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+#  
+#  Example 2:
+#  
+#  Input: nums = [0,3,7,2,5,8,4,6,0,1]
+#  Output: 9
+#  
+#   
+#  Constraints:
+#  
+#  0 <= nums.length <= 105
+#  -109 <= nums[i] <= 109
+#  
+#  
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        cache = set(nums)
+        res = 0
+        while len(cache) > 0:
+            x = next(iter(cache))
+            cache.remove(x)
+            count = 1
+
+            b = x + 1
+            while b in cache:
+                cache.remove(b)
+                b += 1
+                count += 1
+
+            s = x - 1
+            while s in cache:
+                cache.remove(s)
+                s -= 1
+                count += 1
+
+            res = max(res, count)
+
+        return res
         
-        nums_set = set(nums)
-        ans = 0
-        for i in range(len(nums)):
 
-            if nums[i] in nums_set:
-                nums_set.remove(nums[i])
-                upper = lower = nums[i]
-
-                while (lower - 1 in nums_set):
-                    nums_set.remove(lower - 1)
-                    lower -= 1
-
-                while (upper + 1 in nums_set):
-                    nums_set.remove(upper + 1)
-                    upper += 1
-
-
-                ans = max(ans, upper - lower + 1)
-
-        return ans
-
-class UnionFind(object):
-    def __init__(self, count):
-
-        self.table = [0] * count
-        self.count = {}
-
-        for i in range(count):
-            self.table[i] = i
-            self.count[i] = 1
-
-    def find(self, a):
-        if self.table[a] == a:
-            return a
-
-        self.table[a] = self.find(self.table[a])
-        return self.table[a]
+class UnionFind:
+    def __init__(self, n):
+        self.table = [i for i in range(n)]
+        self.count = {i : 1 for i in range(n)}
 
     def connect(self, a, b):
         root_a = self.find(a)
@@ -51,32 +65,31 @@ class UnionFind(object):
             self.table[root_a] = root_b
             self.count[root_b] += self.count[root_a]
 
-    def max_group(self):
+    def find(self, x):
+        if self.table[x] == x:
+            return x
+
+        self.table[x] = self.find(self.table[x])
+        return self.table[x]
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+
+        n = len(nums)
+        idx = {}
+        for i in range(n):
+            idx[nums[i]] = i
+
+        uf = UnionFind(n)
+        for x in idx:
+            if x + 1 in idx:
+                uf.connect(idx[x], idx[x + 1])
+
         res = 0
-        for k, v in self.count.iteritems():
-            res = max(res, v)
+        for k in uf.count:
+            res = max(res, uf.count[k])
+
+        return res uf.count:
+            res = max(res, uf.count[k])
 
         return res
-
-
-class Solution2(object):
-    def longestConsecutive(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        mapping = {}
-        uf = UnionFind(len(nums))
-        for i in range(len(nums)):
-            mapping[nums[i]] = i
-
-        for i in range(len(nums)):
-            num = nums[i]
-
-            if mapping[num] != i:
-                continue
-
-            if num + 1 in mapping:
-                uf.connect(i, mapping[num + 1])
-
-        return uf.max_group()

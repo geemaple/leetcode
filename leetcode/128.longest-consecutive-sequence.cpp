@@ -1,105 +1,112 @@
+//  Tag: Array, Hash Table, Union Find
+//  Time: O(N)
+//  Space: O(N)
+//  Ref: -
+//  Note: -
+
+//  Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+//  You must write an algorithm that runs in O(n) time.
+//   
+//  Example 1:
+//  
+//  Input: nums = [100,4,200,1,3,2]
+//  Output: 4
+//  Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+//  
+//  Example 2:
+//  
+//  Input: nums = [0,3,7,2,5,8,4,6,0,1]
+//  Output: 9
+//  
+//   
+//  Constraints:
+//  
+//  0 <= nums.length <= 105
+//  -109 <= nums[i] <= 109
+//  
+//  
+
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        unordered_set<int> nums_set(nums.begin(), nums.end());
-        
-        int ans = 0;
-        
-        for (auto i = 0; i < nums.size(); ++i)
-        {
-            if (nums_set.count(nums[i]) > 0)
-            {
-                nums_set.erase(nums[i]);
-                int lower = nums[i];
-                int upper = nums[i];
-                
-                // scan lower
-                while(lower > INT_MIN && nums_set.count(lower - 1) > 0)
-                {
-                    nums_set.erase(lower - 1);
-                    lower--;
-                }
-                
-                // scan upper
-                while(upper < INT_MAX && nums_set.count(upper + 1) > 0)
-                {
-                    nums_set.erase(upper + 1);
-                    upper++;
-                }
-                
-                ans = max(ans, upper - lower + 1);
+        unordered_set<int> cache(nums.begin(), nums.end());
+        int res = 0;
+        while (!cache.empty()) {
+            int x = *(cache.begin());
+            cache.erase(x);
+            int count = 1;
+
+            int b = x + 1;
+            while (cache.count(b) > 0) {
+                cache.erase(b);
+                count += 1;
+                b += 1;
             }
+
+            int s = x - 1;
+            while (cache.count(s) > 0) {
+                cache.erase(s);
+                count += 1;
+                s -= 1;
+            }
+
+            res = max(res, count);
         }
-        
-        return ans;
+        return res;
     }
 };
 
-class UnoinFind {
-    vector<int> table;
-    unordered_map<int, int> count;
+class UnionFind {
+    std::vector<int> table; 
 public:
-    UnoinFind(int nums){
-        for (auto i = 0; i < nums; ++i)
-        {
+    std::vector<int> count;
+    UnionFind(int n) {
+        for (int i = 0; i < n; i++) {
             table.push_back(i);
-            count[i] = 1;
+            count.push_back(1);
         }
     }
 
-    int find(int a){
-        if (table[a] == a)
-        {
-            return a;
-        }
-
-        return table[a] = find(table[a]);
-    }
-
-    void connect(int a, int b){
+    void connect(int a, int b) {
         int root_a = find(a);
         int root_b = find(b);
-        if (root_a != root_b){
+        if (root_a != root_b) {
             table[root_a] = root_b;
             count[root_b] += count[root_a];
         }
     }
 
-    int maxGroup()
-    {
-        int ans = 0;
-        for (auto it : count)
-        {
-            ans = max(ans, it.second);
+    int find(int x) {
+        if (table[x] == x) {
+            return x;
         }
-        return ans;
+        table[x] = find(table[x]);
+        return table[x];
     }
 };
 
-class Solution2 {
+class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
+        int n = nums.size();
         unordered_map<int, int> mapping;
-        UnoinFind uf(nums.size());
-        for (auto i = 0; i < nums.size(); ++i)
-        {
+        for(int i = 0; i < n; i++) {
             mapping[nums[i]] = i;
         }
 
-        for (auto i = 0; i < nums.size(); ++i)
-        {
-            int num = nums[i];
-            if (mapping[num] != i)
-            {
-                continue;
-            }
-
-            if (mapping.count(num + 1) > 0)
-            {
-                uf.connect(i, mapping[num + 1]);
+        UnionFind uf = UnionFind(n);
+        for (auto it = mapping.begin(); it != mapping.end(); it++) {
+            int x = it->first;
+            if (mapping.count(x + 1) > 0) {
+                uf.connect(it->second, mapping[x + 1]);
             }
         }
 
-        return uf.maxGroup();
+        int res = 0;
+        for (auto x: uf.count) {
+            res = max(res, x);
+        }
+
+        return res;
     }
 };
