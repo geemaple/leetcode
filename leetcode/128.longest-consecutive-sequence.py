@@ -55,7 +55,7 @@ class Solution:
 class UnionFind:
     def __init__(self, n):
         self.table = [i for i in range(n)]
-        self.count = {i : 1 for i in range(n)}
+        self.count = [1 for i in range(n)]
 
     def connect(self, a, b):
         root_a = self.find(a)
@@ -86,10 +86,7 @@ class Solution:
                 uf.connect(idx[x], idx[x + 1])
 
         res = 0
-        for k in uf.count:
-            res = max(res, uf.count[k])
-
-        return res uf.count:
-            res = max(res, uf.count[k])
+        for x in uf.count:
+            res = max(res, x)
 
         return res
