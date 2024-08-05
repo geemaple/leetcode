@@ -1,18 +1,22 @@
 from typing import List
 class Solution:
-    def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
-        n = len(mat)
-        m = len(mat[0])
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        
+        n = len(nums)
+        res = [-1 for i in range(n)]
+        stack = []
+        nums = nums
 
-        if (m * n == r * c):
-            res = [[0 for j in range(c)] for i in range(r)]
-            for i in range(m * n):
-                res[i // c][i % c] = mat[i // m][i % m]
-            return res
-        else:
-            return mat
+        for i in range(n):
+            while len(stack) > 0 and nums[i] > nums[stack[-1]]:
+                j = stack[-1]
+                stack.pop()
+                res[j] = nums[i]
 
+            stack.append(i)
+
+        return res
 
 s = Solution()
-res = s.matrixReshape([[1,2],[3,4]], 1, 4)
+res = s.nextGreaterElements([3,2,1,2,4,5])
 print(res)

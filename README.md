@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **376**<br/>
-Auto updated at: **2024-08-05 11:28:48**<br/>
+Total sovled: **377**<br/>
+Auto updated at: **2024-08-05 12:35:45**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -268,8 +268,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python3](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | Stack | O\(N\) | O\(N\) | - |
 
 ## Monotonic Stack
-| Problem(2) | Solution | Tag | Time | Space | Ref |
+| Problem(3) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/) | [c++](./leetcode/503.next-greater-element-ii.cpp), [python3](./leetcode/503.next-greater-element-ii.py) | Monotonic Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | [c++](./leetcode/739.daily-temperatures.cpp), [python3](./leetcode/739.daily-temperatures.py) | Monotonic Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-769. Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/description/) | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
 
