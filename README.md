@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **379**<br/>
-Auto updated at: **2024-08-05 14:13:49**<br/>
+Total sovled: **380**<br/>
+Auto updated at: **2024-08-05 14:58:08**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -96,13 +96,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [c++](./leetcode/528.random-pick-with-weight.cpp), [python3](./leetcode/528.random-pick-with-weight.py) | Probability | O\(NlogN\) | O\(1\) | - |
 
 ## Bit Manipulation
-| Problem(11) | Solution | Tag | Time | Space | Ref |
+| Problem(12) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-136. Single Number](https://leetcode.com/problems/single-number/description/) | [c++](./leetcode/136.single-number.cpp), [python3](./leetcode/136.single-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [c++](./leetcode/190.reverse-bits.cpp), [python3](./leetcode/190.reverse-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 | [Leetcode-260. Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
+| [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-318. Maximum Product Of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/description/) | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python3](./leetcode/318.maximum-product-of-word-lengths.py) | Bit Manipulation | O\(N^2\) | O\(N\) | - |
 | [Leetcode-338. Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-342. Power Of Four](https://leetcode.com/problems/power-of-four/description/) | [c++](./leetcode/342.power-of-four.cpp), [python3](./leetcode/342.power-of-four.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -191,7 +192,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-562. Backpack IV](https://www.lintcode.com/problem/backpack-iv) | [c++](./lintcode/562.backpack-iv.cpp), [python3](./lintcode/562.backpack-iv.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | - |
 
 ## Binary Search
-| Problem(28) | Solution | Tag | Time | Space | Ref |
+| Problem(29) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python3](./leetcode/4.median-of-two-sorted-arrays.py) | Binary Search | O\(log\(min\(M, N\)\)\) | O\(1\) | - |
 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python3](./leetcode/33.search-in-rotated-sorted-array.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -207,6 +208,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python3](./leetcode/240.search-a-2d-matrix-ii.py) | Binary Search | O\(M \+ N\) | O\(1\) | - |
 | [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/) | [c++](./leetcode/278.first-bad-version.cpp), [python3](./leetcode/278.first-bad-version.py) | Binary Search | O\(logN\) | O\(1\) | [Video](https://youtu.be/xNzBpfqzYSg) |
+| [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python3](./leetcode/300.longest-increasing-subsequence.py) | Binary Search | O\(N\*logN\) | O\(N\) | - |
 | [Leetcode-374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description/) | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python3](./leetcode/374.guess-number-higher-or-lower.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-528. Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/description/) | [c++](./leetcode/528.random-pick-with-weight.cpp), [python3](./leetcode/528.random-pick-with-weight.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
@@ -300,7 +302,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
 
 ## Two Pointers
-| Problem(12) | Solution | Tag | Time | Space | Ref |
+| Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [c++](./leetcode/88.merge-sorted-array.cpp), [python3](./leetcode/88.merge-sorted-array.py) | Two Pointers | O\(M \+ N\) | O\(1\) | - |
@@ -308,6 +310,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python3](./leetcode/142.linked-list-cycle-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Two Pointers | O\(S\) | O\(1\) | - |
+| [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-455. Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-524. Longest Word In Dictionary Through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/description/) | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python3](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | Two Pointers | O\(N\*logN \+ M \* N\) | O\(1\) | - |
 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Two Pointers | O\(N\) | O\(1\) | - |
