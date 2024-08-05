@@ -15,7 +15,7 @@ public:
     /** Find if there exists any pair of numbers which sum is equal to the value. */
     bool find(int value) {
     
-        for (auto it: table){
+        for (auto it: table){ //:Fixme
             
             int count = table[value - it.first];
             if (count > 1 || (count == 1 && it.first != value - it.first))

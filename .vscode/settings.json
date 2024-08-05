@@ -19,6 +19,9 @@
     "streambuf": "cpp",
     "string_view": "cpp",
     "tuple": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "__hash_table": "cpp",
+    "iosfwd": "cpp",
+    "__split_buffer": "cpp"
   }
 }

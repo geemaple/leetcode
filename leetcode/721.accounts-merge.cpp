@@ -69,7 +69,7 @@ public:
 
         // answer
         vector<vector<string>> res;
-        for (auto it: merged)
+        for (auto it: merged) //:Fixme
         {
             res.push_back(vector<string>(it.second.begin(), it.second.end()));
         }

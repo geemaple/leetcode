@@ -47,8 +47,8 @@ public:
             }
 
             res = max(res, sameX + 1);
-            for (auto it: count) {
-                res = max(res, it.second + 1);
+            for (auto &[key, value]: count) {
+                res = max(res, value + 1);
             }
         }
 

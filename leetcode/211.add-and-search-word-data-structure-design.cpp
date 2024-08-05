@@ -3,7 +3,7 @@ public:
     ~TrieNode(){
         for(auto it: children)
         {
-            delete it.second;
+            delete it.second; //:Fixme
         }
     }
     
@@ -65,8 +65,8 @@ public:
         }
         else
         {
-            for (auto it: node->children)
-            {
+            for (auto it: node->children) //:Fixme
+            { 
                 bool result = search_dfs(it.second, word, index + 1);
                 if (result)
                 {

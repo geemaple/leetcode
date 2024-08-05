@@ -5,7 +5,7 @@ public:
     bool isWord;
     ~TrieNode(){
         for(auto it: children){
-            delete it.second;
+            delete it.second; //:Fixme
         }
     }
 };

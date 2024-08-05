@@ -61,7 +61,7 @@ public:
             }
 
             for(auto it: node->children){
-                q.push(it.second);
+                q.push(it.second); //:Fixme
             }
         }
 
