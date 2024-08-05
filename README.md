@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **374**<br/>
-Auto updated at: **2024-08-05 10:46:21**<br/>
+Total sovled: **375**<br/>
+Auto updated at: **2024-08-05 11:04:04**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -111,10 +111,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-693. Binary Number With Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/description/) | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 
 ## Simulation
-| Problem(3) | Solution | Tag | Time | Space | Ref |
+| Problem(4) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415. Add Strings](https://leetcode.com/problems/add-strings/description/) | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
+| [Leetcode-566. Reshape The Matrix](https://leetcode.com/problems/reshape-the-matrix/description/) | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
 | [Lintcode-39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/recover-rotated-sorted-array) | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Simulation | O\(N\) | O\(1\) | - |
 
 ## Design
