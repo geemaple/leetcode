@@ -2,7 +2,7 @@
 #  Time: O(NlogK)
 #  Space: O(N+K)
 #  Ref: -
-#  Note: K-Linked-List
+#  Note: K-Linked-List(dup)
 
 #  A super ugly number is a positive integer whose prime factors are in the array primes.
 #  Given an integer n and an array of integers primes, return the nth super ugly number.
