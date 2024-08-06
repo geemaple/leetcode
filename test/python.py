@@ -1,22 +1,25 @@
 from typing import List
+import heapq
 class Solution:
-    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+    def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
+        k = len(primes)
+        dp = [1 for i in range(n)]
+        heap = [x for x in primes]
+        heapq.heapify(heap)
+
+        for i in range(1, n):
+            dp[i] = heapq.heappop(heap)
+
+            tmp = float('inf')
+            for j in range(k): 
+                tmp = min(tmp, primes[j] * dp[i])
+
+            heapq.heappush(heap, tmp)
         
-        n = len(nums)
-        res = [-1 for i in range(n)]
-        stack = []
-        nums = nums
+        print(dp)
+        return dp[n - 1]
 
-        for i in range(n):
-            while len(stack) > 0 and nums[i] > nums[stack[-1]]:
-                j = stack[-1]
-                stack.pop()
-                res[j] = nums[i]
-
-            stack.append(i)
-
-        return res
 
 s = Solution()
-res = s.nextGreaterElements([3,2,1,2,4,5])
+res = s.nthSuperUglyNumber(15, [3,5,7,11,19,23,29,41,43,47])
 print(res)
