@@ -36,12 +36,20 @@ class SegmentTreeNode {
 public:
     int start, end, min;
     SegmentTreeNode *left, *right;
-    SegmentTreeNode(int start, int end, int min): start(start), end(end), min(min), left(nullptr), right(nullptr) {}   
+    ~SegmentTreeNode(){
+        delete left;
+        delete right;
+    }
+    SegmentTreeNode(int start, int end, int min): start(start), end(end), min(min), left(nullptr), right(nullptr) {} 
 };
 
 class SegmentTree {
 public:
     SegmentTreeNode *root;
+    ~SegmentTree(){
+        delete root;
+    }
+
     SegmentTree(vector<int> &a) {
         root = build(a, 0, a.size() - 1);
     }
@@ -64,7 +72,7 @@ public:
 
     int query(SegmentTreeNode *node, int start, int end) {
         if (!node) {
-            return -1;
+            return INT_MAX;
         }
 
         if (start == node->start && end == node->end) {
