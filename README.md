@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **385**<br/>
-Auto updated at: **2024-08-07 12:14:29**<br/>
+Total sovled: **386**<br/>
+Auto updated at: **2024-08-07 13:04:18**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -464,12 +464,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python3](./leetcode/406.queue-reconstruction-by-height.py) | Binary Indexed Tree | O\(NlogN\) | O\(1\) | - |
 
 ## Segment Tree
-| Problem(5) | Solution | Tag | Time | Space | Ref |
+| Problem(6) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Segment Tree | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-406. Queue Reconstruction By Height](https://leetcode.com/problems/queue-reconstruction-by-height/description/) | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python3](./leetcode/406.queue-reconstruction-by-height.py) | Segment Tree | O\(NlogN\) | O\(1\) | - |
 | [Lintcode-201. Segment Tree Build](https://www.lintcode.com/problem/segment-tree-build) | [c++](./lintcode/201.segment-tree-build.cpp), [python3](./lintcode/201.segment-tree-build.py) | Segment Tree | O\(N\) | O\(1\) | - |
 | [Lintcode-203. Segment Tree Modify](https://www.lintcode.com/problem/segment-tree-modify) | [c++](./lintcode/203.segment-tree-modify.cpp), [python3](./lintcode/203.segment-tree-modify.py) | Segment Tree | O\(logN\) | O\(1\) | - |
+| [Lintcode-205. Interval Minimum Number](https://www.lintcode.com/problem/interval-minimum-number) | [c++](./lintcode/205.interval-minimum-number.cpp), [python3](./lintcode/205.interval-minimum-number.py) | Segment Tree | O\(NlogN\) | O\(N\) | - |
 | [Lintcode-439. Segment Tree Build II](https://www.lintcode.com/problem/segment-tree-build-ii) | [c++](./lintcode/439.segment-tree-build-ii.cpp), [python3](./lintcode/439.segment-tree-build-ii.py) | Segment Tree | O\(N\) | O\(1\) | - |
 
 ## Union Find
