@@ -1,25 +1,27 @@
 from typing import List
 import heapq
 class Solution:
-    def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
-        k = len(primes)
-        dp = [1 for i in range(n)]
-        heap = [x for x in primes]
-        heapq.heapify(heap)
+    def countSubstrings(self, s: str) -> int:
+        n = len(s)
+        res = 0
+        for i in range(n):
+            res += self.expand(s, i, i)
+            res += self.expand(s, i, i + 1)
 
-        for i in range(1, n):
-            dp[i] = heapq.heappop(heap)
+        return res
 
-            tmp = float('inf')
-            for j in range(k): 
-                tmp = min(tmp, primes[j] * dp[i])
+    def expand(self, s: str, left: int, right: int) -> int:
+        count = 0
+        print(left, right)
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            count += 1
+            left -= 1
+            right += 1
 
-            heapq.heappush(heap, tmp)
+        return count        
         
-        print(dp)
-        return dp[n - 1]
 
 
 s = Solution()
-res = s.nthSuperUglyNumber(15, [3,5,7,11,19,23,29,41,43,47])
+res = s.countSubstrings("abc")
 print(res)
