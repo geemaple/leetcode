@@ -203,7 +203,7 @@ class Markdown:
             for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
             
-            Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Note' 'Time', 'Space', 'Ref'])
+            Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Ref'])
             sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, int(s.number)))
             
             for solution in sorted_solutions:
@@ -216,7 +216,6 @@ class Markdown:
                     solution.problem_link,
                     codes,
                     category,
-                    solution.note,
                     solution.time,
                     solution.space,
                     solution.ref_link,
