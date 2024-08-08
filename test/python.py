@@ -1,27 +1,39 @@
 from typing import List
 import heapq
 class Solution:
-    def countSubstrings(self, s: str) -> int:
+    def calculate(self, s: str) -> int:
         n = len(s)
-        res = 0
-        for i in range(n):
-            res += self.expand(s, i, i)
-            res += self.expand(s, i, i + 1)
+        i = 0
+        j = 0
+        numbers = []
+        ops = []
+        for j in range(n):
 
-        return res
 
-    def expand(self, s: str, left: int, right: int) -> int:
-        count = 0
-        print(left, right)
-        while left >= 0 and right < len(s) and s[left] == s[right]:
-            count += 1
-            left -= 1
-            right += 1
+            
+            if s[j] in ['+', '-', '*', '/']:
+                ops.append(s[j])
+                numbers.append(int(s[i:j].strip()))
+                i = j + 1
 
-        return count        
+            if len(numbers) - len(ops) == 1 and ops[-1] in ['*', '/']:
+                r = numbers.pop()
+                l = numbers.pop()
+                op = ops.pop()
+                if op == '*':
+                    numbers.append(l * r)
+                else:
+                    numbers.append(l // r)
+
+            
+        
+        numbers.append(int(s[i:].strip()))
+        
+
+        return 0     
         
 
 
 s = Solution()
-res = s.countSubstrings("abc")
+res = s.calculate("3+2*2")
 print(res)
