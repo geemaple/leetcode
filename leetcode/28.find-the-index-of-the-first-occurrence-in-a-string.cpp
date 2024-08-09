@@ -71,3 +71,51 @@ public:
         return next;
     }
 };
+
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int n = haystack.size();
+        int m = needle.size();
+        if (m > n) {
+            return -1;
+        }
+
+        int k_ascii = 256;
+        int k_buckets = 131;
+        int high_k = 1;
+        for (int i = 0; i < m - 1; i++) {
+            high_k = (high_k * k_ascii) % k_buckets;
+        }
+
+        int needle_hash = 0;
+        int test_hash = 0;
+        for (int i = 0; i < m; i++) {
+            test_hash = (test_hash * k_ascii + haystack[i]) % k_buckets;
+            needle_hash = (needle_hash * k_ascii + needle[i]) % k_buckets;
+        }
+
+        for (int i = 0; i <= n - m; i++) {
+            if (test_hash == needle_hash) {
+                bool found = true;
+                for (int j = 0; j < m; j++) {
+                    if (haystack[i + j] != needle[j]) {
+                        found = false;
+                        break;
+                    }
+                }
+
+                if (found) {
+                    return i;
+                }
+            }   
+
+            if (i + m < n){
+                test_hash = ((test_hash - haystack[i] * high_k) * k_ascii + haystack[i + m]) % k_buckets;
+                test_hash = test_hash >= 0 ? test_hash : test_hash + k_buckets;
+            }
+        }
+
+        return -1;
+    }
+};
