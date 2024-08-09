@@ -2,38 +2,38 @@ from typing import List
 import heapq
 class Solution:
     def calculate(self, s: str) -> int:
+        s = '+' +  s + '+'
         n = len(s)
-        i = 0
-        j = 0
-        numbers = []
-        ops = []
-        for j in range(n):
+        stack = []
+        num = 0
+        op = None
+        for i in range(n):
+            if s[i] == ' ':
+                continue
 
+            if s[i].isdigit():
+                num = num * 10 + int(s[i])
+            else:
+                if op == '+':
+                    stack.append(num)
+                elif op == '-':
+                    stack.append(-num)
+                elif op == '*':
+                    res = stack.pop() * num
+                    stack.append(res)
+                elif op == '/':
+                    left = stack.pop()
+                    sign = left // abs(left)
+                    res = abs(left) // num
+                    stack.append(sign * res)
+                
+                num = 0
+                op = s[i]
 
-            
-            if s[j] in ['+', '-', '*', '/']:
-                ops.append(s[j])
-                numbers.append(int(s[i:j].strip()))
-                i = j + 1
-
-            if len(numbers) - len(ops) == 1 and ops[-1] in ['*', '/']:
-                r = numbers.pop()
-                l = numbers.pop()
-                op = ops.pop()
-                if op == '*':
-                    numbers.append(l * r)
-                else:
-                    numbers.append(l // r)
-
-            
-        
-        numbers.append(int(s[i:].strip()))
-        
-
-        return 0     
+        return sum(stack)
         
 
 
 s = Solution()
-res = s.calculate("3+2*2")
+res = s.calculate("14 - 3 / 2")
 print(res)

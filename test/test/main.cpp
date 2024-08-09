@@ -7,32 +7,34 @@ using namespace std;
 
 class Solution {
 public:
-    vector<string> findItinerary(vector<vector<string>>& tickets) {
-        sort(tickets.begin(), tickets.end());
-        unordered_map<string, priority_queue<string, vector<string>, greater<string>>> graph;
-        for (auto t: tickets) {
-            graph[t[0]].push(t[1]);
-        }
+    int calculate(string s) {
+        s += '+';
+        int n = s.size();
+        int left = 0;
+        int right = 0;
+        char op = '+';
+        int num = 0;
 
-        vector<string> res;
-        stack<string> st;
-        st.push("JFK");
-        
-        while (!st.empty()) {
-            string cur = st.top();
-            if (graph[cur].empty()) {
-                res.push_back(cur);
-                st.pop();
+        for (auto i = 0; i < n; i++) {
+            if (s[i] == ' ') {
+                continue;
+            }
+            
+            if (isdigit(s[i])) {
+                num = num * 10 + s[i] - '0';
             } else {
-                auto& q = graph[cur];
-                string to = q.top();
-                q.pop();
-                st.push(to);
+                switch (op) {
+                    case '+': left = right; right = num; break;
+                    case '-': left = right; right = -num; break;
+                    case '*': right *= num; break;
+                    case '/': right /= num; break;
+                }
+                num = 0;
+                op = s[i];
             }
         }
-        
-        reverse(res.begin(), res.end());
-        return res;
+
+        return left + right;
     }
 };
 
@@ -40,9 +42,9 @@ int main(){
     Solution s;
     vector<vector<string>> grid = {{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}}; //{{"MUC","LHR"},{"JFK","MUC"},{"SFO","SJC"},{"LHR","SFO"}};
     
-    vector<string> res = s.findItinerary(grid);
-    for (auto x: res) {
-        cout << "(" << x << ") ";
-    }
-    cout << endl;
+    int res = s.calculate("2147483647");
+//    for (auto x: res) {
+//        cout << "(" << x << ") ";
+//    }
+    cout << res <<  endl;
 }
