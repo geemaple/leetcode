@@ -1,46 +1,32 @@
+
 import math
 class Solution:
-    """
-    @param s: the expression string
-    @return: the answer
-    """
-    def calculate(self, s: str) -> int:
-        return self.helper(s, 0)[0]
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        dp = [[False] * n for i in range(n)]
 
-    def helper(self, s: str, i: int) -> int:
-        left = 0
-        right = 0
-        num = 0
-        op = '+'
-        while i < len(s):
-            char = s[i]
-            if char.isdigit():
-                num = num * 10 + int(s[i])
+        start = 0
+        length = 0
+        for i in range(n):
+            dp[i][i] = True
 
-            if char == '(':
-                num, i = self.helper(s, i + 1)
+        for i in range(1, n):
+            if s[i] == s[i - 1]:
+                dp[i - 1][i] = True
+                start = i - 1
+                length = 2
 
-            if  (not char.isdigit() and char != ' ') or i == len(s) - 1:                
-                if op == '+':
-                    left += right
-                    right = num
-                elif op == '-':
-                    left += right
-                    right = -num
-                elif op == '*':
-                    right *= num
-                elif op == '/':
-                    right = math.trunc(right / num)
+        for l in range (3, n + 1):
+            for i in range(n + 1 - l):
+                j = i + l - 1
+                if s[i] == s[j] and dp[i + 1][j - 1]:
+                    dp[i][j] = True
+                    if length < j - i + 1:
+                        length = j - i + 1
+                        start = i
 
-                op = s[i]
-                num = 0
-        
-            if char == ')':
-                break
-            i += 1
-            
-        return left + right, i
-    
+        return s[start: start + length]
+
 s = Solution()
-res = s.calculate("2*(5+5*2)/3+(6/2+8)")
+res = s.longestPalindrome("aacabdkacaa")
 print(res)

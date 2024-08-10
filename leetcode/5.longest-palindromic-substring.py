@@ -1,61 +1,108 @@
+#  Tag: Two Pointers, String, Dynamic Programming
+#  Time: O(N)
+#  Space: O(N)
+#  Ref: -
+#  Note: -
+
+#  Given a string s, return the longest palindromic substring in s.
+#   
+#  Example 1:
+#  
+#  Input: s = "babad"
+#  Output: "bab"
+#  Explanation: "aba" is also a valid answer.
+#  
+#  Example 2:
+#  
+#  Input: s = "cbbd"
+#  Output: "bb"
+#  
+#   
+#  Constraints:
+#  
+#  1 <= s.length <= 1000
+#  s consist of only digits and English letters.
+#  
+#  
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        
-        if len(s) < 2:
-            return s
-        
-        start = 0
-        end = 0
-        
         n = len(s)
-        table = [[True if i == j else False for j in range(n)] for i in range(n)]
-        
-        for l in range(2, n + 1): # 从长度2到n遍历
-            for i in range(n - l + 1):
+        dp = [[False] * n for i in range(n)]
+
+        start = 0
+        length = 1
+        for i in range(n):
+            dp[i][i] = True
+
+        for i in range(1, n):
+            if s[i] == s[i - 1]:
+                dp[i - 1][i] = True
+                start = i - 1
+                length = 2
+
+        for l in range (3, n + 1):
+            for i in range(n + 1 - l):
                 j = i + l - 1
-                
-                if i + 1 > j - 1: # 如果子串为空
-                    table[i][j] = s[i] == s[j]
-                else:
-                    table[i][j] = s[i] == s[j] and table[i + 1][j - 1]
-''
-                if table[i][j] and j - i + 1 > end - start + 1:
-                    start = i
-                    end = j
-                        
-        return s[start : end + 1]
+                if s[i] == s[j] and dp[i + 1][j - 1]:
+                    dp[i][j] = True
+                    if length < j - i + 1:
+                        length = j - i + 1
+                        start = i
 
-class Solution2(object):
-    def longestPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        if len(s) == 0:
-            return ""
-        
-        longest = s[0]
-        
-        for t in range(len(s)):
-            i = t - 1
-            j = t + 1
-            while (i >= 0 and j < len(s) and s[i] == s[j]):
-                length = j - i + 1
-                if length > len(longest):
-                    longest = s[i : j + 1]
-                
-                i -= 1
-                j += 1
-                    
-            i = t - 1
-            j = t
-            
-            while (i >= 0 and j < len(s) and s[i] == s[j]):
-                length = j - i + 1
-                if length > len(longest):
-                    longest = s[i : j + 1]
-                i -= 1
-                j += 1
-                
-        return longest
+        return s[start: start + length]
+    
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        res = ''
+        for i in range(n):
+            tmp = self.expand(s, i, i)
+            if len(res) < len(tmp):
+                res = tmp
 
+            tmp = self.expand(s, i, i + 1)
+            if len(res) < len(tmp):
+                res = tmp
+        return res
+
+    def expand(self, s: str, left: int, right: int) -> str:
+        while left >= 0 and right < len(s):
+            if s[left] == s[right]:
+                left -= 1
+                right += 1
+            else:
+                break
+
+        return s[left + 1 : right]
+    
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        t = '#' + '#'.join(s) + '#'
+        n = len(t)
+        p = [0] * n
+        center = 0
+        right_r = 0
+
+        for i in range(n):
+            mirror_j = 2 * center - i
+
+            if i < right_r:
+                p[i] = min(right_r - i, p[mirror_j])
+
+            while (i + p[i] + 1 < n and i - p[i] - 1 >= 0 and t[i + p[i] + 1] == t[i - p[i] - 1 ]):
+                p[i]+= 1
+
+            if right_r < i + p[i]:
+                right_r = i + p[i]
+                center = i
+
+        max_center = 0 
+        max_r = 0
+        for i in range(n):
+            if p[i] > max_r:
+                max_r = p[i]
+                max_center = i
+
+        start = (max_center - max_r) // 2
+        return s[start: start + max_r]
