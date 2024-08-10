@@ -1,7 +1,35 @@
-#include <iostream>
-#include <stack>
-#include <string>
-using namespace std;
+//  Tag: Stack, String, Simulation
+//  Time: O(N)
+//  Space: O(1)
+//  Ref: -
+//  Note: Leetcode-772
+
+//  Implement a basic calculator to evaluate a simple expression string.
+//  
+//  
+//  The expression string contains only non-negative integers, `+`, `-`, `*`, `/` operators , open `(` and closing parentheses `)` and empty spaces .
+//  The integer division should truncate toward zero.
+//  
+//  You may assume that **the given expression is always valid**.
+//  All intermediate results will be in the range of `[-2147483648, 2147483647]`
+//  
+//  **Example 1:**
+//  ```
+//  Input："1 + 1"
+//  Output：2
+//  Explanation：1 + 1 = 2
+//  ```
+//  
+//  
+//  **Example 2:**
+//  ```
+//  Input：" 6-4 / 2 "
+//  Output：4
+//  Explanation：4/2=2，6-2=4
+//  ```
+//  
+//  Do not use the `eval` built-in library function.
+
 class Solution {
 public:
     /**
@@ -14,8 +42,8 @@ public:
     }
 
     pair<int, int> helper(string &s, int i) {
-        int left = 0;
-        int right = 0;
+        int left = 0; // stack except top
+        int right = 0; // stack top
         int num = 0;
         char op = '+';
         while (i < s.size()) {
@@ -50,12 +78,3 @@ public:
         return make_pair(left + right, i);
     }
 };
-
-// Example usage:
-int main() {
-    Solution sol;
-    std::string expression = "2*(5+5*2)/3+(6/2+8)";
-    int result = sol.calculate(expression);
-    std::cout << result << std::endl; // Output should be 21
-    return 0;
-}
