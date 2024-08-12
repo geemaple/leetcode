@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **393**<br/>
-Auto updated at: **2024-08-12 15:58:06**<br/>
+Auto updated at: **2024-08-12 16:45:10**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -233,7 +233,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python3](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | Binary Search | O\(N \* logM \+ M \* logN\) | O\(1\) | - |
 
 ## Linked List
-| Problem(14) | Solution | Tag | Time | Space | Ref |
+| Problem(15) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-19. Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [c++](./leetcode/21.merge-two-sorted-lists.cpp), [python3](./leetcode/21.merge-two-sorted-lists.py) | Linked List | O\(N\) | O\(1\) | - |
@@ -243,6 +243,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Linked List | O\(N\) | O\(H\) | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python3](./leetcode/142.linked-list-cycle-ii.py) | Linked List | O\(N\) | O\(1\) | - |
+| [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Linked List | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-160. Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | [c++](./leetcode/160.intersection-of-two-linked-lists.cpp), [python3](./leetcode/160.intersection-of-two-linked-lists.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | [c++](./leetcode/206.reverse-linked-list.cpp), [python3](./leetcode/206.reverse-linked-list.py) | Linked List | O\(N\) | O\(N\) | - |
 | [Leetcode-234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | [c++](./leetcode/234.palindrome-linked-list.cpp), [python3](./leetcode/234.palindrome-linked-list.py) | Linked List | O\(N\) | O\(1\) | - |
@@ -326,7 +327,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
 
 ## Two Pointers
-| Problem(21) | Solution | Tag | Time | Space | Ref |
+| Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | [c++](./leetcode/5.longest-palindromic-substring.cpp), [python3](./leetcode/5.longest-palindromic-substring.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-19. Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Two Pointers | O\(N\) | O\(1\) | - |
@@ -335,6 +336,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [c++](./leetcode/88.merge-sorted-array.cpp), [python3](./leetcode/88.merge-sorted-array.py) | Two Pointers | O\(M \+ N\) | O\(1\) | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python3](./leetcode/142.linked-list-cycle-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Two Pointers | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-160. Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | [c++](./leetcode/160.intersection-of-two-linked-lists.cpp), [python3](./leetcode/160.intersection-of-two-linked-lists.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-167. Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Two Pointers | O\(S\) | O\(1\) | - |
@@ -360,11 +362,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Sliding Window | O\(Log\(N \- K\)\) | O\(1\) | - |
 
 ## Sorting
-| Problem(18) | Solution | Tag | Time | Space | Ref |
+| Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Sorting | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) | [c++](./leetcode/88.merge-sorted-array.cpp), [python3](./leetcode/88.merge-sorted-array.py) | Sorting | O\(M \+ N\) | O\(1\) | - |
+| [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Sorting | O\(N\) ～ O\(N^2\) | O\(1\) | - |
 | [Leetcode-217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | [c++](./leetcode/217.contains-duplicate.cpp), [python3](./leetcode/217.contains-duplicate.py) | Sorting | O\(N\) | O\(N\) | - |
 | [Leetcode-242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | [c++](./leetcode/242.valid-anagram.cpp), [python3](./leetcode/242.valid-anagram.py) | Sorting | O\(N\) | O\(1\) | - |
@@ -397,11 +400,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Quickselect | O\(N\), O\(C\*logK\) | O\(N\) | - |
 
 ## Divide and Conquer
-| Problem(12) | Solution | Tag | Time | Space | Ref |
+| Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python3](./leetcode/4.median-of-two-sorted-arrays.py) | Divide and Conquer | O\(log\(min\(M, N\)\)\) | O\(1\) | - |
 | [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Divide and Conquer | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [c++](./leetcode/53.maximum-subarray.cpp), [python3](./leetcode/53.maximum-subarray.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
+| [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Divide and Conquer | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Divide and Conquer | O\(N\) | O\(1\) | - |
 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [c++](./leetcode/190.reverse-bits.cpp), [python3](./leetcode/190.reverse-bits.py) | Divide and Conquer | O\(1\) | O\(1\) | - |
 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Divide and Conquer | O\(N\) ～ O\(N^2\) | O\(1\) | - |
@@ -532,7 +536,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1790. Rotate String II](https://www.lintcode.com/problem/rotate-string-ii) | [c++](./lintcode/1790.rotate-string-ii.cpp), [python3](./lintcode/1790.rotate-string-ii.py) | String | O\(N\) | O\(N\) | - |
 
 ## Other
-| Problem(202) | Solution | Tag | Time | Space | Ref |
+| Problem(201) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | [Leetcode-6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | - |
@@ -595,7 +599,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-133. Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [c++](./leetcode/133.clone-graph.cpp), [python3](./leetcode/133.clone-graph.py) | Other | \- | \- | - |
 | [Leetcode-138. Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | [python3](./leetcode/138.copy-list-with-random-pointer.py) | Other | \- | \- | - |
 | [Leetcode-143. Reorder List](https://leetcode.com/problems/reorder-list/description/) | [python3](./leetcode/143.reorder-list.py) | Other | \- | \- | - |
-| [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [python3](./leetcode/148.sort-list.py) | Other | \- | \- | - |
 | [Leetcode-156. Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/description/) | [c++](./leetcode/156.binary-tree-upside-down.cpp), [python3](./leetcode/156.binary-tree-upside-down.py) | Other | \- | \- | - |
 | [Leetcode-157. Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/description/) | [c++](./leetcode/157.read-n-characters-given-read4.cpp), [python3](./leetcode/157.read-n-characters-given-read4.py) | Other | \- | \- | - |
 | [Leetcode-159. Longest Substring With At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/) | [c++](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python3](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | Other | \- | \- | - |
