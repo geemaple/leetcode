@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **392**<br/>
-Auto updated at: **2024-08-12 15:05:56**<br/>
+Total sovled: **393**<br/>
+Auto updated at: **2024-08-12 15:28:25**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -233,11 +233,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels) | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python3](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | Binary Search | O\(N \* logM \+ M \* logN\) | O\(1\) | - |
 
 ## Linked List
-| Problem(11) | Solution | Tag | Time | Space | Ref |
+| Problem(12) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [c++](./leetcode/21.merge-two-sorted-lists.cpp), [python3](./leetcode/21.merge-two-sorted-lists.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Linked List | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-24. Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [c++](./leetcode/24.swap-nodes-in-pairs.cpp), [python3](./leetcode/24.swap-nodes-in-pairs.py) | Linked List | O\(N\) | O\(1\) | - |
+| [Leetcode-83. Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | [c++](./leetcode/83.remove-duplicates-from-sorted-list.cpp), [python3](./leetcode/83.remove-duplicates-from-sorted-list.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Linked List | O\(N\) | O\(H\) | - |
 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | [c++](./leetcode/142.linked-list-cycle-ii.cpp), [python3](./leetcode/142.linked-list-cycle-ii.py) | Linked List | O\(N\) | O\(1\) | - |
