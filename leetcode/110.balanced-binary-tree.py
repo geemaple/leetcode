@@ -48,8 +48,8 @@ class Solution:
         left = self.helper(node.left)
         right = self.helper(node.right)
 
-        if left == -1 or right == -1:
+        if left == -1 or right == -1 or abs(left - right) > 1:
             return -1
 
-        return -1 if abs(left - right) > 1 else max(left, right) + 1
+        return max(left, right) + 1
         
