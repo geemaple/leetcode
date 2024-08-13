@@ -6,7 +6,7 @@ My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
 Total sovled: **393**<br/>
-Auto updated at: **2024-08-12 18:20:04**<br/>
+Auto updated at: **2024-08-13 17:15:16**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
