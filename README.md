@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **395**<br/>
-Auto updated at: **2024-08-13 18:17:40**<br/>
+Total sovled: **396**<br/>
+Auto updated at: **2024-08-13 18:31:03**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -417,8 +417,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python3](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 
 ## Breadth-First Search
-| Problem(12) | Solution | Tag | Time | Space | Ref |
+| Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python3](./leetcode/102.binary-tree-level-order-traversal.py) | Breadth-First Search | O\(N\) | O\(Width\) | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python3](./leetcode/104.maximum-depth-of-binary-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | [c++](./leetcode/126.word-ladder-ii.cpp), [python3](./leetcode/126.word-ladder-ii.py) | Breadth-First Search | O\(\(N\*L\)^C\) | O\(N\) | - |
@@ -433,10 +434,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-934. Shortest Bridge](https://leetcode.com/problems/shortest-bridge/description/) | [c++](./leetcode/934.shortest-bridge.cpp), [python3](./leetcode/934.shortest-bridge.py) | Breadth-First Search | O\(N^2\) | O\(N^2\) | - |
 
 ## Depth-First Search
-| Problem(18) | Solution | Tag | Time | Space | Ref |
+| Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python3](./leetcode/94.binary-tree-inorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
+| [Leetcode-101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python3](./leetcode/104.maximum-depth-of-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python3](./leetcode/110.balanced-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Depth-First Search | O\(N\) | O\(H\) | - |
