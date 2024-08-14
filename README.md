@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **399**<br/>
-Auto updated at: **2024-08-14 17:36:01**<br/>
+Total sovled: **400**<br/>
+Auto updated at: **2024-08-14 20:26:01**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -438,10 +438,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-934. Shortest Bridge](https://leetcode.com/problems/shortest-bridge/description/) | [c++](./leetcode/934.shortest-bridge.cpp), [python3](./leetcode/934.shortest-bridge.py) | Breadth-First Search | O\(N^2\) | O\(N^2\) | - |
 
 ## Depth-First Search
-| Problem(21) | Solution | Tag | Time | Space | Ref |
+| Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python3](./leetcode/94.binary-tree-inorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
+| [Leetcode-99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/description/) | [c++](./leetcode/99.recover-binary-search-tree.cpp), [python3](./leetcode/99.recover-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python3](./leetcode/104.maximum-depth-of-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | [c++](./leetcode/110.balanced-binary-tree.cpp), [python3](./leetcode/110.balanced-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
@@ -492,9 +493,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 
 ## Binary Search Tree
-| Problem(7) | Solution | Tag | Time | Space | Ref |
+| Problem(8) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
+| [Leetcode-99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/description/) | [c++](./leetcode/99.recover-binary-search-tree.cpp), [python3](./leetcode/99.recover-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 | [Leetcode-173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Binary Search Tree | O\(1\) | O\(H\) | - |
 | [Leetcode-450. Delete Node In A Bst](https://leetcode.com/problems/delete-node-in-a-bst/description/) | [c++](./leetcode/450.delete-node-in-a-bst.cpp), [python3](./leetcode/450.delete-node-in-a-bst.py) | Binary Search Tree | O\(H\) | O\(H\) | - |
 | [Leetcode-701. Insert Into A Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/) | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python3](./leetcode/701.insert-into-a-binary-search-tree.py) | Binary Search Tree | O\(H\) | O\(H\) | - |
