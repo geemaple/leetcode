@@ -1,60 +1,79 @@
-class TrieNode(object):
+#  Tag: Hash Table, String, Design, Trie
+#  Time: O(N)
+#  Space: O(L)
+#  Ref: -
+#  Note: -
+
+#  A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
+#  Implement the Trie class:
+#  
+#  Trie() Initializes the trie object.
+#  void insert(String word) Inserts the string word into the trie.
+#  boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise.
+#  boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise.
+#  
+#   
+#  Example 1:
+#  
+#  Input
+#  ["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+#  [[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+#  Output
+#  [null, null, true, false, true, null, true]
+#  
+#  Explanation
+#  Trie trie = new Trie();
+#  trie.insert("apple");
+#  trie.search("apple");   // return True
+#  trie.search("app");     // return False
+#  trie.startsWith("app"); // return True
+#  trie.insert("app");
+#  trie.search("app");     // return True
+#  
+#   
+#  Constraints:
+#  
+#  1 <= word.length, prefix.length <= 2000
+#  word and prefix consist only of lowercase English letters.
+#  At most 3 * 104 calls in total will be made to insert, search, and startsWith.
+#  
+#  
+
+class TrieNode:
     def __init__(self):
         self.is_word = False
         self.children = {}
 
-
-class Trie(object):
+class Trie:
 
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
         self.root = TrieNode()
-        
 
-    def insert(self, word):
-        """
-        Inserts a word into the trie.
-        :type word: str
-        :rtype: void
-        """
-        node = self.root
-        for c in word:
-            if c not in node.children:
-                node.children[c] = TrieNode()
+    def insert(self, word: str) -> None:
+        cur = self.root
+        for x in word:
+            if x not in cur.children:
+                cur.children[x] = TrieNode()
+            cur = cur.children[x]
+        cur.is_word = True
 
-            node = node.children[c]
-        node.is_word = True
-        
-    def search(self, word):
-        """
-        Returns if the word is in the trie.
-        :type word: str
-        :rtype: bool
-        """
-        node = self.root
-        for c in word:
-            if c not in node.children:
+    def search(self, word: str) -> bool:
+        cur = self.root
+        for x in word:
+            if x not in cur.children:
                 return False
-            node = node.children[c]
+            cur = cur.children[x]
 
-        return node.is_word
+        return cur.is_word
 
-    def startsWith(self, prefix):
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        :type prefix: str
-        :rtype: bool
-        """
-        node = self.root
-        for c in prefix:
-            if c not in node.children:
+    def startsWith(self, prefix: str) -> bool:
+        cur = self.root
+        for x in prefix:
+            if x not in cur.children:
                 return False
-            node = node.children[c]
+            cur = cur.children[x]
 
         return True
-
 
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
