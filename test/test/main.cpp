@@ -4,60 +4,49 @@
 #include <algorithm>
 using namespace std;
 
+/**
+ * Definition for a binary tree node.
+
+ */
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
 class Solution {
 public:
-    string longestPalindrome(string s) {
-        string t = buildString(s);
-        int n = t.size();
-        vector<int> p(n, 0);
-        int center = 0;
-        int right_x = 0;
-
-        for (int i = 0; i < n; i++) {
-            int mirror_j = 2 * center - i;
-            if (i < right_x) {
-                p[i] = min(right_x - i, p[mirror_j]);
-            }
-
-            while (i + p[i] + 1 < n && i - p[i] - 1 >= 0 && t[i + p[i] + 1] == t[i - p[i] - 1]) {
-                p[i]++;
-            }
-
-            if (right_x < i + p[i]) {
-                center = i;
-                right_x = i + p[i];
-            }
-        }
-
-
-        int max_center = 0;
-        int max_r = 0;
-        for (int i = 0; i < n; i++) {
-            if (max_r < p[i]) {
-                max_r = p[i];
-                max_center = i;
-            }
-        }
-
-        int start = (max_center - max_r) / 2;
-        return s.substr(start, max_r);
-
+    int res = INT_MAX;
+    int getMinimumDifference(TreeNode* root) {
+        helper(root, nullptr);
+        return res;
     }
 
-    string buildString(string s) {
-        string t = "#";
-        for (auto x: s) {
-            t += x + '';
-            t += '#';
+    void helper(TreeNode* node, TreeNode*pre) {
+        if (!node) {
+            return;
         }
+
+        helper(node->left, pre);
+        cout << node->val << ", " << (pre ? pre->val : -1) << endl;
+        if (pre) {
+            res = min(res, abs(pre->val - node->val));
+        }
+        pre = node;
         
-        cout << t << endl;
-        return t;
+        helper(node->right, pre);
     }
 };
 
 int main() {
+    TreeNode *root = new TreeNode(5);
+    root->left = new TreeNode(4);
+    root->right = new TreeNode(7);
+    
     Solution s;
-    cout << "Longest Palindromic Substring: " << s.longestPalindrome("babad") << endl;
+    cout << "Longest Palindromic Substring: " << s.getMinimumDifference(root) << endl;
     return 0;
 }
