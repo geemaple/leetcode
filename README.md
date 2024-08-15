@@ -5,8 +5,8 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-Total sovled: **404**<br/>
-Auto updated at: **2024-08-15 15:11:53**<br/>
+Total sovled: **405**<br/>
+Auto updated at: **2024-08-15 15:25:33**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
@@ -422,7 +422,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python3](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 
 ## Breadth-First Search
-| Problem(16) | Solution | Tag | Time | Space | Ref |
+| Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python3](./leetcode/102.binary-tree-level-order-traversal.py) | Breadth-First Search | O\(N\) | O\(Width\) | - |
@@ -433,6 +433,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-279. Perfect Squares](https://leetcode.com/problems/perfect-squares/description/) | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Breadth-First Search | O\(n^\{3/2\}\) | O\(N\) | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python3](./leetcode/297.serialize-and-deserialize-binary-tree.py) | Breadth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-322. Coin Change](https://leetcode.com/problems/coin-change/description/) | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Breadth-First Search | O\(K \* N\) | O\(N\) | [Video](https://youtu.be/EjMjlFjLRiM) |
+| [Leetcode-404. Sum Of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/) | [c++](./leetcode/404.sum-of-left-leaves.cpp), [python3](./leetcode/404.sum-of-left-leaves.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/) | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python3](./leetcode/417.pacific-atlantic-water-flow.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-542. 01 Matrix](https://leetcode.com/problems/01-matrix/description/) | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-547. Number Of Provinces](https://leetcode.com/problems/number-of-provinces/description/) | [c++](./leetcode/547.number-of-provinces.cpp), [python3](./leetcode/547.number-of-provinces.py) | Breadth-First Search | O\(N^2\) | O\(N\) | - |
@@ -442,7 +443,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-934. Shortest Bridge](https://leetcode.com/problems/shortest-bridge/description/) | [c++](./leetcode/934.shortest-bridge.cpp), [python3](./leetcode/934.shortest-bridge.py) | Breadth-First Search | O\(N^2\) | O\(N^2\) | - |
 
 ## Depth-First Search
-| Problem(26) | Solution | Tag | Time | Space | Ref |
+| Problem(27) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python3](./leetcode/94.binary-tree-inorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
@@ -458,6 +459,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python3](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-297. Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python3](./leetcode/297.serialize-and-deserialize-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/description/) | [c++](./leetcode/332.reconstruct-itinerary.cpp), [python3](./leetcode/332.reconstruct-itinerary.py) | Depth-First Search | O\(ElogE\) | O\(E\+V\) | - |
+| [Leetcode-404. Sum Of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/) | [c++](./leetcode/404.sum-of-left-leaves.cpp), [python3](./leetcode/404.sum-of-left-leaves.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/) | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python3](./leetcode/417.pacific-atlantic-water-flow.py) | Depth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-437. Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | [c++](./leetcode/437.path-sum-iii.cpp), [python3](./leetcode/437.path-sum-iii.py) | Depth-First Search | O\(N^2 | O\(H\) | - |
 | [Leetcode-543. Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | [c++](./leetcode/543.diameter-of-binary-tree.cpp), [python3](./leetcode/543.diameter-of-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
