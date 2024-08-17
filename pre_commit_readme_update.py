@@ -214,7 +214,7 @@ class Markdown:
                 codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
-                    solution.update.strftime('%Y-%m-%d'),
+                    solution.update.strftime('%Y-%m'),
                     solution.problem_link,
                     codes,
                     category,
