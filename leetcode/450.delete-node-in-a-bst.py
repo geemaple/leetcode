@@ -53,82 +53,25 @@
 #         self.right = right
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-        return self.helper(root, key)
+        if root is None:
+            return None
 
-    def helper(self, node: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-        if node is None:
-            return node
-
-        if key < node.val:
-            node.left = self.helper(node.left, key)
-        elif key > node.val:
-            node.right = self.helper(node.right, key)
+        if root.val < key:
+            root.right = self.deleteNode(root.right, key)
+        elif root.val > key:
+            root.left = self.deleteNode(root.left, key)
         else:
-            if node.left is None:
-                return node.right
-            if node.right is None:
-                return node.left
+            if root.left is None:
+                return root.right
+            
+            if root.right is None:
+                return root.left
 
-            right_min = node.right
+            right_min = root.right
             while right_min.left:
-                 right_min = right_min.left
+                right_min = right_min.left
 
-            right_min.left = node.left
-            return node.right
-        
-        return node
-    
-class Solution:
-    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-
-        if not root:
-            return root
-
-        parent = None
-        curr = root
-
-        while curr:
-            if key == curr.val:
-                break
-            parent = curr
-
-            if key < curr.val:
-                curr = curr.left
-            else:
-                curr = curr.right
-
-        if not curr:
-            return root  # Key not found, nothing to delete
-
-        if not curr.left:  # Node has no left child
-            if not parent:
-                return curr.right
-            if parent.left == curr:
-                parent.left = curr.right
-            else:
-                parent.right = curr.right
-            return root
-
-        if not curr.right:  # Node has no right child
-            if not parent:
-                return curr.left
-            if parent.left == curr:
-                parent.left = curr.left
-            else:
-                parent.right = curr.left
-            return root
-
-        # Node has two children, find the inorder successor (smallest node in the right subtree)
-        successor_parent = curr
-        successor = curr.right
-        while successor.left:
-            successor_parent = successor
-            successor = successor.left
-
-        curr.val = successor.val
-        if successor_parent.left == successor:
-            successor_parent.left = successor.right
-        else:
-            successor_parent.right = successor.right
+            root.val = right_min.val
+            root.right = self.deleteNode(root.right, root.val)
 
         return root

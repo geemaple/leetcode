@@ -56,119 +56,38 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-
-class Solution {
-public:
-    TreeNode* deleteNode(TreeNode* root, int key) {
-        return helper(root, key);
-    }
-
-    TreeNode* helper(TreeNode* node, int key) {
-        if (node == nullptr) {
-            return node;
-        }
-
-        if (key < node->val) {
-            node->left = helper(node->left, key);
-        } else if (key > node->val) {
-            node->right = helper(node->right, key);
-        } else {
-            if (node->left == nullptr) {
-                TreeNode *right = node->right;
-                delete(node);
-                return right;
-            }
-
-            if (node->right == nullptr) {
-                TreeNode *left = node->left;
-                delete(node);
-                return left;
-            }
-
-            TreeNode *rightMin = node->right;
-            while (rightMin->left) {
-                rightMin = rightMin->left;
-            }
-
-            rightMin->left = node->left;
-            TreeNode *new_root = node->right;
-            delete(node); 
-            return new_root;
-        }
-
-        return node;
-    }
-};
-
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
         if (!root) {
-                return root;
+            return nullptr;
+        }
+
+        if (root->val < key) {
+            root->right = deleteNode(root->right, key);
+        } else if (root->val > key) {
+            root->left = deleteNode(root->left, key);
+        } else {
+            if (!root->left) {
+                TreeNode* temp = root->right;
+                delete root;
+                return temp;
             }
 
-            TreeNode* parent = nullptr;
-            TreeNode* curr = root;
-
-            while (curr) {
-                if (key == curr->val) {
-                    break;
-                }
-                parent = curr;
-
-                if (key < curr->val) {
-                    curr = curr->left;
-                } else {
-                    curr = curr->right;
-                }
+            if (!root->right) {
+                TreeNode* temp = root->left;
+                delete root;
+                return temp;
             }
 
-            if (!curr) {
-                return root;  // Key not found, nothing to delete
-            }
+            TreeNode *rigth_min = root->right;
+            while (rigth_min->left) {
+                rigth_min = rigth_min->left;
+            } 
+            root->val = rigth_min->val;
+            root->right = deleteNode(root->right, root->val);
+        }
 
-            if (!curr->left) {  // Node has no left child
-                if (!parent) {
-                    return curr->right;
-                }
-                if (parent->left == curr) {
-                    parent->left = curr->right;
-                } else {
-                    parent->right = curr->right;
-                }
-                delete curr;
-                return root;
-            }
-
-            if (!curr->right) {  // Node has no right child
-                if (!parent) {
-                    return curr->left;
-                }
-                if (parent->left == curr) {
-                    parent->left = curr->left;
-                } else {
-                    parent->right = curr->left;
-                }
-                delete curr;
-                return root;
-            }
-
-            // Node has two children, find the inorder successor (smallest node in the right subtree)
-            TreeNode* successor_parent = curr;
-            TreeNode* successor = curr->right;
-            while (successor->left) {
-                successor_parent = successor;
-                successor = successor->left;
-            }
-
-            curr->val = successor->val;
-            if (successor_parent->left == successor) {
-                successor_parent->left = successor->right;
-            } else {
-                successor_parent->right = successor->right;
-            }
-            delete successor;
-
-            return root;
+        return root;
     }
 };
