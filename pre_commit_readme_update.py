@@ -282,18 +282,29 @@ class Solution:
     
     @staticmethod
     def statistic() -> int:
-        statistic_set = collections.defaultdict(list)
+        statistic_set = collections.defaultdict(set)
+        year_archive = collections.defaultdict(set)
+        visited = set()
 
+        res = []
         for s in Solution.all():
-            statistic_set[s.name].append(s)
+            statistic_set[s.name].add(s)
+            if s not in visited:
+                visited.add(s)
+                year_archive[s.update.year].add(s)
+
+        for year, solved in year_archive.items():
+            res.append(f'{year} solve {len(solved)}')
 
         for key, solutions in statistic_set.items():
-            source = set(solutions)
+            source = set([s.source for s in solutions])
             if len(source) > 1:
-                print(f"{key}: {solutions}")
+                res.append(f"duplicated **{key}** from {','.join(source)}")
 
-        print(f'solved = {len(statistic_set)}')
-        return len(statistic_set)
+
+        res.append(f"Total sovled: **{len(statistic_set)}**")
+        res.append(f"Auto updated at: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
+        return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
         self.path = path
@@ -362,10 +373,7 @@ if __name__ == "__main__":
             "",
             "My personal leetcode answers",
             "This is a **continually updated** open source project",
-            "",
-            f"Total sovled: **{Solution.statistic()}**",
-            f"Auto updated at: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"
-        ])
+            ""] + Solution.statistic())
 
         Markdown.title2(f, "软件/Softwares")
         Markdown.bullet(f, [
