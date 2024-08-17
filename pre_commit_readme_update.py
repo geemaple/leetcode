@@ -125,8 +125,7 @@ class Markdown:
     @staticmethod 
     def paragraph(f, content):
         for line in content:
-            f.write(str(line) + "\n")
-        f.write("\n")
+            f.write(str(line) + "\n\n")
 
     @staticmethod
     def code(f, content, lang="shell"):
@@ -305,9 +304,8 @@ class Solution:
                 duplicates.append(f"- **\"{key}\"** ({', '.join(source)})")
 
         if len(duplicates) > 0:
-            res.append(f"**Duplicates:**\n")
+            res.append(f"**Duplicates:**")
             res += duplicates
-            res.append("")
                 
         res.append(f"**Total:** {len(statistic_set)} problems")
         res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -377,10 +375,8 @@ if __name__ == "__main__":
         Markdown.paragraph(f, [
             "我个人的力扣答案, **公众号:GeekPal**",
             "这是一个持续更新的开源项目",
-            "",
             "My Personal LeetCode Solutions",
-            "This is an open-source project that is continually updated",
-            ""] + Solution.statistic())
+            "This is an open-source project that is continually updated"] + Solution.statistic())
 
         Markdown.title2(f, "软件/Softwares")
         Markdown.bullet(f, [
