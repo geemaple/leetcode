@@ -125,7 +125,7 @@ class Markdown:
     @staticmethod 
     def paragraph(f, content):
         for line in content:
-            f.write(str(line) + "<br/>\n")
+            f.write(str(line) + "\n")
         f.write("\n")
 
     @staticmethod
@@ -143,11 +143,11 @@ class Markdown:
 
     @staticmethod 
     def title1(f, conent):
-        f.write('# ' + str(conent) + "\n")
+        f.write('# ' + str(conent) + "\n\n")
 
     @staticmethod 
     def title2(f, conent):
-        f.write('## ' + str(conent) + "\n")
+        f.write('## ' + str(conent) + "\n\n")
 
     @staticmethod
     def table_row(f, contents):
@@ -302,11 +302,12 @@ class Solution:
             source = set([s.source for s in solutions])
             if len(source) > 1:
                 count += 1
-                duplicates.append(f"    **\"{key}\"** ({', '.join(source)})")
+                duplicates.append(f"- **\"{key}\"** ({', '.join(source)})")
 
         if len(duplicates) > 0:
-            res.append(f"**Duplicates:**")
+            res.append(f"**Duplicates:**\n")
             res += duplicates
+            res.append("")
                 
         res.append(f"**Total:** {len(statistic_set)} problems")
         res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
