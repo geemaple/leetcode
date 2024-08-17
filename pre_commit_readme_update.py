@@ -304,7 +304,7 @@ class Solution:
                 res.append(f"{count} duplicate **\"{key}\"** ({', '.join(source)})")
                 
         res.append(f"**Total:** {len(statistic_set)} problems")
-        res.append(f"Updated: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
+        res.append(f"**Updated: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
