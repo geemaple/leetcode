@@ -2,14 +2,14 @@
 我个人的力扣答案, **公众号:GeekPal**<br/>
 这是一个持续更新的开源项目<br/>
 <br/>
-My personal leetcode answers<br/>
-This is a **continually updated** open source project<br/>
+My Personal LeetCode Solutions<br/>
+This is an open-source project that is continually updated<br/>
 <br/>
-2023 sovled 194<br/>
-2024 sovled 220<br/>
-Duplicated **find-median-from-data-stream** from **lintcode, leetcode**<br/>
-Total sovled: **413**<br/>
-Auto updated at: **2024-08-17 19:25:55**<br/>
+**Problems solved in 2023:** 194<br/>
+**Problems solved in 2024:** 220<br/>
+1 Duplicated **find-median-from-data-stream** from **leetcode, lintcode**<br/>
+**Total problems solved:** 413<br/>
+Last updated on: **2024-08-17 19:30:49**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)

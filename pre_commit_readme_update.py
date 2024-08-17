@@ -294,15 +294,17 @@ class Solution:
                 year_archive[s.update.year].add(s)
 
         for year in sorted(year_archive.keys()):
-            res.append(f'{year} sovled {len(year_archive[year])}')
+            res.append(f'**Problems solved in {year}:** {len(year_archive[year])}')
 
+        count = 0
         for key, solutions in statistic_set.items():
             source = set([s.source for s in solutions])
             if len(source) > 1:
-                res.append(f"Duplicated **{key}** from **{', '.join(source)}**")
-
-        res.append(f"Total sovled: **{len(statistic_set)}**")
-        res.append(f"Auto updated at: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
+                count += 1
+                res.append(f"{count} Duplicated **{key}** from **{', '.join(source)}**")
+                
+        res.append(f"**Total problems solved:** {len(statistic_set)}")
+        res.append(f"Last updated on: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
         return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
@@ -370,8 +372,8 @@ if __name__ == "__main__":
             "我个人的力扣答案, **公众号:GeekPal**",
             "这是一个持续更新的开源项目",
             "",
-            "My personal leetcode answers",
-            "This is a **continually updated** open source project",
+            "My Personal LeetCode Solutions",
+            "This is an open-source project that is continually updated",
             ""] + Solution.statistic())
 
         Markdown.title2(f, "软件/Softwares")
