@@ -46,17 +46,17 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        return self.helper(root, p, q)
+        if root is None:
+            return None
 
-    def helper(self, node: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        if node is None or node == p or node == q:
-            return node
+        if root == p or root == q:
+            return root
 
-        left = self.helper(node.left, p, q)
-        right = self.helper(node.right, p, q)
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
 
         if left and right:
-            return node
+            return root
         else:
-            return left or right
+            return left if left else right
         

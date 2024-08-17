@@ -49,17 +49,18 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        return helper(root, p, q);
-    }
-
-    TreeNode* helper(TreeNode* node, TreeNode* p, TreeNode* q) {
-        if (node == nullptr || node == p || node == q) {
-            return node;
+        if (!root) {
+            return nullptr;
         }
-        TreeNode* left = helper(node->left, p, q);
-        TreeNode* right = helper(node->right, p, q);
+
+        if (root == p || root == q) {
+            return root;
+        }
+
+        TreeNode *left = lowestCommonAncestor(root->left, p, q);
+        TreeNode *right = lowestCommonAncestor(root->right, p, q);
         if (left && right) {
-            return node;
+            return root;
         } else {
             return left ? left : right;
         }
