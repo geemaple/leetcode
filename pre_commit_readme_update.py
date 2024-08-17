@@ -297,14 +297,19 @@ class Solution:
             res.append(f'**{year}:** {len(year_archive[year])} problems')
 
         count = 0
+        duplicates = []
         for key, solutions in statistic_set.items():
             source = set([s.source for s in solutions])
             if len(source) > 1:
                 count += 1
-                res.append(f"{count} duplicate **\"{key}\"** ({', '.join(source)})")
+                duplicates.append(f"**\"{key}\"** ({', '.join(source)})")
+
+        if len(duplicates) > 0:
+            res.append(f"Duplicates:")
+            res += duplicates
                 
         res.append(f"**Total:** {len(statistic_set)} problems")
-        res.append(f"**Updated: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:

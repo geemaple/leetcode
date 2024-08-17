@@ -7,9 +7,10 @@ This is an open-source project that is continually updated<br/>
 <br/>
 **2023:** 194 problems<br/>
 **2024:** 220 problems<br/>
-1 duplicate **"find-median-from-data-stream"** (leetcode, lintcode)<br/>
+Duplicates:<br/>
+**"find-median-from-data-stream"** (lintcode, leetcode)<br/>
 **Total:** 413 problems<br/>
-**Updated: **2024-08-17 19:35:25<br/>
+**Updated:** 2024-08-17 19:39:28<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
