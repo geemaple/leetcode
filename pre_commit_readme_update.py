@@ -295,6 +295,9 @@ class Solution:
         for year in sorted(year_archive.keys()):
             res.append(f'**{year}:** {len(year_archive[year])} problems')
 
+        res.append(f"**Total:** {len(statistic_set)} problems")
+        res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
         count = 0
         duplicates = []
         for key, solutions in statistic_set.items():
@@ -307,8 +310,6 @@ class Solution:
             res.append(f"**Duplicates:**")
             res += duplicates
                 
-        res.append(f"**Total:** {len(statistic_set)} problems")
-        res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
