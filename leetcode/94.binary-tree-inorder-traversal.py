@@ -54,21 +54,18 @@ class Solution:
 
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-
-        if root is None:
-            return []
-
-        results = []
+        cur = root
         stack = []
-        node = root
+        res = []
 
-        while len(stack) > 0 or node:
-            while node:
-                stack.append(node)
-                node = node.left
-            
-            node = stack.pop()
-            results.append(node.val)
-            node = node.right
-            
-        return results
+        while cur or len(stack) > 0:
+            while cur is not None:
+                stack.append(cur)
+                cur = cur.left
+
+            cur = stack.pop()
+            res.append(cur.val)
+
+            cur = cur.right
+
+        return res

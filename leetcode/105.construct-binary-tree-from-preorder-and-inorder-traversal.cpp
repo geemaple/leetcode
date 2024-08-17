@@ -62,8 +62,9 @@ public:
         TreeNode *node = new TreeNode(val);
         if (s0 < e0) {
             int mid = inorder_map[val];
-            node->left = build(preorder, inorder_map, s0 + 1, s0 + mid - s1, s1, mid - 1);
-            node->right = build(preorder, inorder_map, s0 + mid - s1 + 1, e0, mid + 1, e1);
+            int left_size = mid - s1;
+            node->left = build(preorder, inorder_map, s0 + 1, left_size + s0, s1, mid - 1);
+            node->right = build(preorder, inorder_map, left_size + s0 + 1, e0, mid + 1, e1);
         }
 
         return node;

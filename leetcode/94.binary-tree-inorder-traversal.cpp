@@ -65,22 +65,24 @@ public:
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> results;
-        TreeNode *node = root;
+        
+        vector<int> res;
+        TreeNode *cur = root;
         stack<TreeNode *> st;
 
-        while (node || !st.empty()) {
-            while (node) {
-                st.push(node);
-                node = node->left;
+        while (cur || !st.empty()) {
+            while (cur) {
+                st.push(cur);
+                cur = cur->left;
             }
-
-            node = st.top();
+  
+            cur = st.top();
             st.pop();
-            results.push_back(node->val);
-            node = node->right;
-        }
 
-        return results;
+            res.push_back(cur->val);
+
+            cur = cur->right;
+        }
+        return res;
     }
 };
