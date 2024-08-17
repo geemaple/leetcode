@@ -302,7 +302,7 @@ class Solution:
             source = set([s.source for s in solutions])
             if len(source) > 1:
                 count += 1
-                duplicates.append(f"* **\"{key}\"** ({', '.join(source)})")
+                duplicates.append(f"    **\"{key}\"** ({', '.join(source)})")
 
         if len(duplicates) > 0:
             res.append(f"**Duplicates:**")
