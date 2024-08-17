@@ -34,6 +34,20 @@
 #         self.right = right
 class Solution:
     def increasingBST(self, root: TreeNode) -> TreeNode:
+        return self.helper(root, None)
+        
+    def helper(self, root: TreeNode, tail: TreeNode) -> TreeNode:
+
+        if root is None:
+            return tail
+
+        res = self.helper(root.left, root)
+        root.left = None
+        root.right = self.helper(root.right, tail)
+        return res
+
+class Solution:
+    def increasingBST(self, root: TreeNode) -> TreeNode:
         cur = root
         pre = None
         stack = []

@@ -40,6 +40,24 @@
 class Solution {
 public:
     TreeNode* increasingBST(TreeNode* root) {
+        return helper(root, nullptr);
+    }
+
+    TreeNode* helper(TreeNode* root, TreeNode *tail) {
+        if (!root) {
+            return tail;
+        }
+
+        TreeNode *res = helper(root->left, root);
+        root->left = nullptr;
+        root->right = helper(root->right, tail);
+        return res;
+    }
+};
+
+class Solution {
+public:
+    TreeNode* increasingBST(TreeNode* root) {
         TreeNode *cur = root;
         stack<TreeNode *> st;
         TreeNode *head = nullptr;
