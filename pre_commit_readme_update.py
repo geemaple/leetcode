@@ -12,9 +12,9 @@
 
 import os
 import re
-import datetime
 import collections
 from functools import lru_cache
+from datetime import datetime 
 
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
@@ -86,6 +86,7 @@ TAG_REGEX = {
     TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
     TAG_QUEUE: r'^Queue$',
     TAG_HEAP: r'^Heap$|Priority Queue',
+    TAG_HASH: r'^Hash Table$|Hash Function',
     FOLD_TAG_TREE: r'^Tree$|Binary Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
 }
@@ -203,8 +204,8 @@ class Markdown:
             for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
             
-            Markdown.table_header(f, [f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Ref'])
-            sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, int(s.number)))
+            Markdown.table_header(f, ['Update', f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Ref'])
+            sorted_solutions = sorted(category_set[category], key=lambda s: (s.update, s.source, int(s.number)))
             
             for solution in sorted_solutions:
                 if solution.key not in solution_set:
@@ -213,6 +214,7 @@ class Markdown:
                 codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
+                    solution.update.strftime('%Y-%m-%d'),
                     solution.problem_link,
                     codes,
                     category,
@@ -269,7 +271,11 @@ class Solution:
                     space = space_match.group(1) if space_match else '-'
                     ref = link_match.group(1) if link_match else '-'                
                     note = note_match.group(1) if note_match else '-'
-                    all_solution.append(Solution(path, source, number, name, extension, tags, time, space, note, ref))
+
+                    mod_time = os.path.getmtime(path)
+                    mod_datetime = datetime.fromtimestamp(mod_time)
+
+                    all_solution.append(Solution(path, source, number, name, extension, tags, time, space, note, ref, mod_datetime))
 
             print(f'{source} files = {count}')
         return all_solution
@@ -289,7 +295,7 @@ class Solution:
         print(f'solved = {len(statistic_set)}')
         return len(statistic_set)
 
-    def __init__(self, path, source, number, name, extension, tags, time, space, note, ref) -> None:
+    def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
         self.path = path
         self.source = source
         self.number = number
@@ -299,7 +305,8 @@ class Solution:
         self.time = Markdown.escape(time)
         self.space = Markdown.escape(space)
         self.note = Markdown.escape(note)
-        self.ref = ref  
+        self.ref = ref
+        self.update = modify_date
         self.roman_rex = re.compile(r"(?:(?<=\W)|^)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", re.IGNORECASE)
 
     @property
@@ -357,7 +364,7 @@ if __name__ == "__main__":
             "This is a **continually updated** open source project",
             "",
             f"Total sovled: **{Solution.statistic()}**",
-            f"Auto updated at: **{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"
+            f"Auto updated at: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**"
         ])
 
         Markdown.title2(f, "软件/Softwares")
