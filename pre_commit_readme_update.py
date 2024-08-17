@@ -294,17 +294,17 @@ class Solution:
                 year_archive[s.update.year].add(s)
 
         for year in sorted(year_archive.keys()):
-            res.append(f'**Problems solved in {year}:** {len(year_archive[year])}')
+            res.append(f'**{year}:** {len(year_archive[year])} problems')
 
         count = 0
         for key, solutions in statistic_set.items():
             source = set([s.source for s in solutions])
             if len(source) > 1:
                 count += 1
-                res.append(f"{count} Duplicated **{key}** from **{', '.join(source)}**")
+                res.append(f"{count} duplicate **\"{key}\"** ({', '.join(source)})")
                 
-        res.append(f"**Total problems solved:** {len(statistic_set)}")
-        res.append(f"Last updated on: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
+        res.append(f"**Total:** {len(statistic_set)} problems")
+        res.append(f"Updated: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")
         return res
 
     def __init__(self, path, source, number, name, extension, tags, time, space, note, ref, modify_date) -> None:
