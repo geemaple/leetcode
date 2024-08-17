@@ -293,14 +293,13 @@ class Solution:
                 visited.add(s)
                 year_archive[s.update.year].add(s)
 
-        for year, solved in year_archive.items():
-            res.append(f'{year} solve {len(solved)}')
+        for year in sorted(year_archive.keys()):
+            res.append(f'{year} sovled {len(year_archive[year])}')
 
         for key, solutions in statistic_set.items():
             source = set([s.source for s in solutions])
             if len(source) > 1:
-                res.append(f"duplicated **{key}** from {','.join(source)}")
-
+                res.append(f"Duplicated **{key}** from **{', '.join(source)}**")
 
         res.append(f"Total sovled: **{len(statistic_set)}**")
         res.append(f"Auto updated at: **{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**")

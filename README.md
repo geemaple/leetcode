@@ -5,11 +5,11 @@
 My personal leetcode answers<br/>
 This is a **continually updated** open source project<br/>
 <br/>
-2024 solve 220<br/>
-2023 solve 194<br/>
-duplicated **find-median-from-data-stream** from leetcode,lintcode<br/>
+2023 sovled 194<br/>
+2024 sovled 220<br/>
+Duplicated **find-median-from-data-stream** from **lintcode, leetcode**<br/>
 Total sovled: **413**<br/>
-Auto updated at: **2024-08-17 19:22:47**<br/>
+Auto updated at: **2024-08-17 19:25:55**<br/>
 
 ## 软件/Softwares
 - [Anki](https://apps.ankiweb.net/)
