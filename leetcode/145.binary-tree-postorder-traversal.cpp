@@ -64,27 +64,26 @@ public:
 class Solution {
 public:
     vector<int> postorderTraversal(TreeNode* root) {
-        vector<int> results;
-        TreeNode *node = root;
         stack<TreeNode *> st;
-        TreeNode *last = nullptr;
-
-        while (node || !st.empty()) {
-            while (node) {
-                st.push(node);
-                node = node->left;
+        vector<int> res;
+        TreeNode *cur = root;
+        TreeNode *pre = nullptr;
+        while (cur || !st.empty()) {
+            while (cur) {
+                st.push(cur);
+                cur = cur->left;
             }
 
-            TreeNode *peak = st.top();
-            if (peak->right && last != peak->right) {
-                node = peak->right;
+            cur = st.top();
+            if (cur->right && cur->right != pre) {
+                cur = cur->right;
             } else {
-                results.push_back(peak->val);
-                last = peak;
                 st.pop();
+                res.push_back(cur->val);
+                pre = cur;
+                cur = nullptr;
             }
         }
-
-        return results;
+        return res;
     }
 };

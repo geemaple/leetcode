@@ -54,23 +54,22 @@ class Solution:
 
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        results = []
-        node = root
+        cur = root
         stack = []
-        last = None
+        pre = None
+        res = []
+        while cur or len(stack) > 0:
+            while cur is not None:
+                stack.append(cur)
+                cur = cur.left
 
-        while node or len(stack) > 0:
-
-            while node:
-                stack.append(node)
-                node = node.left
-        
-            peak = stack[-1]
-            if peak.right and peak.right != last:
-                node = peak.right
+            cur = stack[-1]
+            if cur.right is not None and cur.right != pre:
+                cur = cur.right
             else:
-                results.append(peak.val)
-                last = peak
+                res.append(cur.val)
                 stack.pop()
-
-        return results
+                pre = cur
+                cur = None
+                
+        return res
