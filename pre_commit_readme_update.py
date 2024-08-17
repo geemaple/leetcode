@@ -376,7 +376,10 @@ if __name__ == "__main__":
             "我个人的力扣答案, **公众号:GeekPal**",
             "这是一个持续更新的开源项目",
             "My Personal LeetCode Solutions",
-            "This is an open-source project that is continually updated"] + Solution.statistic())
+            "This is an open-source project that is continually updated"])
+
+        Markdown.title1(f, "统计/Statistic")
+        Markdown.paragraph(f, Solution.statistic())
 
         Markdown.title2(f, "软件/Softwares")
         Markdown.bullet(f, [

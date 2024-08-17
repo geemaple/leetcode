@@ -8,6 +8,8 @@ My Personal LeetCode Solutions
 
 This is an open-source project that is continually updated
 
+# 统计/Statistic
+
 **2023:** 194 problems
 
 **2024:** 220 problems
@@ -18,7 +20,7 @@ This is an open-source project that is continually updated
 
 **Total:** 413 problems
 
-**Updated:** 2024-08-17 20:09:03
+**Updated:** 2024-08-17 20:11:58
 
 ## 软件/Softwares
 
