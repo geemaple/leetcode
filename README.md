@@ -10,13 +10,13 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 194 problems
+**2023:** 193 problems
 
-**2024:** 221 problems
+**2024:** 222 problems
 
 **Total:** 414 problems
 
-**Updated:** 2024-08-18 16:50:38
+**Updated:** 2024-08-18 17:28:29
 
 **Duplicates:**
 
@@ -538,9 +538,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Topological Sort
 
-| Update | Problem(1) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(2) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | [c++](./leetcode/310.minimum-height-trees.cpp), [python3](./leetcode/310.minimum-height-trees.py) | Topological Sort | O\(N\) | O\(N\) | - |
+| 2024-08 | [Leetcode-210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) | [c++](./leetcode/210.course-schedule-ii.cpp), [python3](./leetcode/210.course-schedule-ii.py) | Topological Sort | O\(E\+V\) | O\(E\+V\) | - |
 
 ## Backtracking
 
@@ -642,7 +643,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(199) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(198) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -714,7 +715,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) | [python3](./leetcode/203.remove-linked-list-elements.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-207. Course Schedule](https://leetcode.com/problems/course-schedule/description/) | [c++](./leetcode/207.course-schedule.cpp), [python3](./leetcode/207.course-schedule.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Other | \- | \- | - |
-| 2023-09 | [Leetcode-210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) | [c++](./leetcode/210.course-schedule-ii.cpp), [python3](./leetcode/210.course-schedule-ii.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-211. Add And Search Word Data Structure Design](https://leetcode.com/problems/add-and-search-word-data-structure-design/description/) | [c++](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python3](./leetcode/211.add-and-search-word-data-structure-design.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-212. Word Search II](https://leetcode.com/problems/word-search-ii/description/) | [c++](./leetcode/212.word-search-ii.cpp), [python3](./leetcode/212.word-search-ii.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/) | [c++](./leetcode/219.contains-duplicate-ii.cpp) | Other | \- | \- | - |
