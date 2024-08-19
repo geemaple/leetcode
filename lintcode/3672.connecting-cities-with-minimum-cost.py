@@ -85,3 +85,46 @@ class Solution:
                     heapq.heappush(heap, (node_cost, node))
 
         return res if len(visited) == n else -1
+    
+class UnionFind:
+    def __init__(self, n):
+        self.nodes = [i for i in range(n + 1)]
+        self.count = [1 for i in range(n + 1)]
+        self.max_count = 1
+
+    def find(self, a):
+        if self.nodes[a] == a:
+            return a
+
+        self.nodes[a] = self.find(self.nodes[a])
+        return self.nodes[a]
+
+    def union(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.nodes[root_a] = root_b
+            self.count[root_b] += self.count[root_a]
+            self.max_count = max(self.max_count, self.count[root_b])
+            print(self.max_count)
+            return True
+        else:
+            return False
+    
+class Solution:
+    """
+    @param n: the number of cities
+    @param connections: the connection info between cities
+    @return: 
+    """
+    def minimum_cost(self, n: int, connections: List[List[int]]) -> int:
+        # write your code here
+        connections.sort(key=lambda x: x[2])
+        uf = UnionFind(n)
+        res = 0    
+    
+        for x in connections:
+            if uf.union(x[0], x[1]):
+                res += x[2]
+
+        return res if uf.max_count == n else -1
