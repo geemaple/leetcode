@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 192 problems
 
-**2024:** 227 problems
+**2024:** 228 problems
 
-**Total:** 418 problems
+**Total:** 419 problems
 
-**Updated:** 2024-08-20 16:39:52
+**Updated:** 2024-08-20 18:59:39
 
 **Duplicates:**
 
@@ -327,7 +327,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Stack
 
-| Update | Problem(14) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(15) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-1249. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/) | [c++](./leetcode/1249.minimum-remove-to-make-valid-parentheses.cpp), [python3](./leetcode/1249.minimum-remove-to-make-valid-parentheses.py) | Stack | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-232. Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Stack | O\(\*1\) | O\(N\) | - |
@@ -343,6 +343,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python3](./leetcode/94.binary-tree-inorder-traversal.py) | Stack | O\(N\) | O\(H\) | - |
 | 2024-08 | [Leetcode-145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [c++](./leetcode/145.binary-tree-postorder-traversal.cpp), [python3](./leetcode/145.binary-tree-postorder-traversal.py) | Stack | O\(N\) | O\(H\) | - |
 | 2024-08 | [Leetcode-897. Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/description/) | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Stack | O\(N\) | O\(H\) | - |
+| 2024-08 | [Lintcode-859. Max Stack](https://www.lintcode.com/problem/max-stack) | [c++](./lintcode/859.max-stack.cpp), [python3](./lintcode/859.max-stack.py) | Stack | \- | O\(N\) | - |
 
 ## Monotonic Stack
 
