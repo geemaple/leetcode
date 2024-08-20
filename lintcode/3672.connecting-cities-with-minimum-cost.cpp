@@ -93,3 +93,65 @@ public:
 
     }
 };
+
+class UnionFind {
+public:
+    vector<int> nodes;
+    vector<int> sizes;
+    UnionFind(int n): nodes(n + 1), sizes(n + 1 , 1) {
+        for (int i = 0; i <= n; i++) {
+            nodes[i] = i;
+        }
+    } 
+
+    int find(int a) {
+        if (a == nodes[a]) {
+            return a;
+        }
+
+        nodes[a] = find(nodes[a]);
+        return nodes[a];
+    }
+
+    bool connect(int a, int b) {
+        int root_a = find(a);
+        int root_b = find(b);
+        if (root_a == root_b) {
+            return false;
+        } else {
+            nodes[root_a] = root_b;
+            sizes[root_b] += sizes[root_a];
+            return true;
+        }
+    }
+
+    int sizeOf(int a) {
+        int root_a = find(a);
+        return sizes[root_a];
+    }
+};
+
+class Solution {
+public:
+    /**
+     * @param n: the number of cities
+     * @param connections: the connection info between cities
+     * @return: nothing
+     */
+    int minimumCost(int n, vector<vector<int>> &connections) {
+        // write your code here
+        sort(connections.begin(), connections.end(), [](vector<int> &a, vector<int> &b) {
+            return a[2] < b[2];
+        });
+
+        UnionFind uf(n);
+        int res = 0;
+        for (auto &x: connections) {
+            if (uf.connect(x[0], x[1])) {
+                res += x[2];
+            }
+        }
+
+        return uf.sizeOf(1) == n ? res: -1;
+    }
+};
