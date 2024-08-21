@@ -53,36 +53,31 @@ class CacheNode:
 class DoubleLinkedList:
     def __init__(self):
         self.head = CacheNode(key=None, val=None)
+        self.tail = CacheNode(key=None, val=None)
+        self.head.next = self.tail
+        self.tail.pre = self.head
 
     def move_to_front(self, node):
         if self.head.next == node:
             return
 
-        if self.head.pre == node:
-            self.head.pre = node.pre
-            node.pre.next = None
-        else:
-            node.pre.next = node.next
-            node.next.pre = node.pre
-        
+        self.remove(node)
         self.insert_front(node)
 
+    def remove(self, node):
+        node.pre.next = node.next
+        node.next.pre = node.pre
+
     def insert_front(self, node):
-        if self.head.next is not None:
-            node.next = self.head.next
-            node.next.pre = node
-        
+        node.next = self.head.next
+        node.next.pre = node
         self.head.next = node
         node.pre = self.head
-
-        if self.head.pre is None:
-            self.head.pre = node
     
     def pop_last(self) -> CacheNode:
-        node = self.head.pre
-        if node is not None:
-            self.head.pre = node.pre if node.pre != self.head else None
-            node.pre.next = None
+        node = self.tail.pre
+        if node != self.head:
+            self.remove(node)
             return node
 
 
@@ -110,9 +105,9 @@ class LRUCache:
             self.hash[key] = node
             self.cache.insert_front(node)
 
-        if len(self.hash) > self.capacity:
-            node = self.cache.pop_last()
-            del self.hash[node.key]
+            if len(self.hash) > self.capacity:
+                node = self.cache.pop_last()
+                del self.hash[node.key]
 
 from collections import OrderedDict
 class LRUCache:

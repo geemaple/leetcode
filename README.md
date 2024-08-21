@@ -16,11 +16,11 @@ This is an open-source project that is continually updated
 
 **Total:** 420 problems
 
-**Updated:** 2024-08-21 10:53:31
+**Updated:** 2024-08-21 11:12:42
 
 **Duplicates:**
 
-- **"find-median-from-data-stream"** (leetcode, lintcode)
+- **"find-median-from-data-stream"** (lintcode, leetcode)
 
 ## 软件/Softwares
 
@@ -158,9 +158,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-225. Implement Stack Using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Design | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-307. Range Sum Query Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/) | [c++](./leetcode/307.range-sum-query-mutable.cpp), [python3](./leetcode/307.range-sum-query-mutable.py) | Design | O\(logN\) | O\(N\) | - |
 | 2024-08 | [Leetcode-208. Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Design | O\(N\) | O\(L\) | - |
-| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Design | O\(1\) | O\(N\) | - |
 | 2024-08 | [Leetcode-380. Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1/description/) | [c++](./leetcode/380.insert-delete-getrandom-o1.cpp), [python3](./leetcode/380.insert-delete-getrandom-o1.py) | Design | O\(1\) | O\(N\) | - |
 | 2024-08 | [Leetcode-432. All Oone Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Design | O\(1\) | O\(N\) | - |
+| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Design | O\(1\) | O\(N\) | - |
 
 ## Greedy
 
@@ -285,8 +285,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-19. Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Linked List | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-148. Sort List](https://leetcode.com/problems/sort-list/description/) | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Linked List | O\(NlogN\) | O\(logN\) | - |
 | 2024-08 | [Leetcode-109. Convert Sorted List To Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) | [c++](./leetcode/109.convert-sorted-list-to-binary-search-tree.cpp), [python3](./leetcode/109.convert-sorted-list-to-binary-search-tree.py) | Linked List | O\(NlogN\) | O\(logN\) | - |
-| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Linked List | O\(1\) | O\(N\) | - |
 | 2024-08 | [Leetcode-432. All Oone Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Linked List | O\(1\) | O\(N\) | - |
+| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Linked List | O\(1\) | O\(N\) | - |
 
 ## Hash Table
 
@@ -324,9 +324,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-106. Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | [c++](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.cpp), [python3](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-105. Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | [c++](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.cpp), [python3](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-653. Two Sum Iv Input Is A Bst](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/) | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Hash Table | O\(NH\) | O\(H\) | - |
-| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Hash Table | O\(1\) | O\(N\) | - |
 | 2024-08 | [Leetcode-380. Insert Delete Getrandom O1](https://leetcode.com/problems/insert-delete-getrandom-o1/description/) | [c++](./leetcode/380.insert-delete-getrandom-o1.cpp), [python3](./leetcode/380.insert-delete-getrandom-o1.py) | Hash Table | O\(1\) | O\(N\) | - |
 | 2024-08 | [Leetcode-432. All Oone Data Structure](https://leetcode.com/problems/all-oone-data-structure/description/) | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | - |
+| 2024-08 | [Leetcode-146. Lru Cache](https://leetcode.com/problems/lru-cache/description/) | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Hash Table | O\(1\) | O\(N\) | - |
 
 ## Stack
 

@@ -67,17 +67,17 @@ public:
         if (hash.count(key) == 0) {
             cache.push_front({key, value});
             hash[key] = cache.begin();
+
+            if (hash.size() > capacity) {
+                hash.erase(cache.back().first);
+                cache.pop_back();
+            }
         } else {
             auto it = hash[key];
             cache.erase(it);
             cache.push_front({key, value});
             hash[key] = cache.begin();
-        }
-
-        if (hash.size() > capacity) {
-            hash.erase(cache.back().first);
-            cache.pop_back();
-        }
+        }        
     }
 };
 
@@ -102,22 +102,15 @@ public:
         if (hash.count(key) == 0) {
             cache.push_front({key, value});
             hash[key] = cache.begin(); 
+
+            if (cache.size() > capacity) {
+                hash.erase(cache.back().first); 
+                cache.pop_back(); 
+            }
         } else {
             auto it = hash[key];
             it->second = value;
             cache.splice(cache.begin(), cache, it);
         }
-
-        if (cache.size() > capacity) {
-            hash.erase(cache.back().first); 
-            cache.pop_back(); 
-        }
     }
 };
-
-/**
- * Your LRUCache object will be instantiated and called as such:
- * LRUCache* obj = new LRUCache(capacity);
- * int param_1 = obj->get(key);
- * obj->put(key,value);
- */
