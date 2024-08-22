@@ -1,32 +1,40 @@
 
-import math
+from typing import List
+from collections import defaultdict
+import heapq
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
-        n = len(s)
-        dp = [[False] * n for i in range(n)]
+    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start_node: int, end_node: int) -> float:
+        graph = defaultdict(dict)
+        for i in range(len(edges)):
+            x, y = edges[i]
+            graph[x][y] = succProb[i]
+            graph[y][x] = succProb[i]
 
-        start = 0
-        length = 0
-        for i in range(n):
-            dp[i][i] = True
+        heap = [(-1, start_node)]
+        visited = set()
+        res = 0
 
-        for i in range(1, n):
-            if s[i] == s[i - 1]:
-                dp[i - 1][i] = True
-                start = i - 1
-                length = 2
+        while len(heap) > 0:
+            pro, cur = heapq.heappop(heap)
 
-        for l in range (3, n + 1):
-            for i in range(n + 1 - l):
-                j = i + l - 1
-                if s[i] == s[j] and dp[i + 1][j - 1]:
-                    dp[i][j] = True
-                    if length < j - i + 1:
-                        length = j - i + 1
-                        start = i
 
-        return s[start: start + length]
+            if cur in visited:
+                continue
+
+            if cur == end_node:
+                res = max(-pro, res)
+
+            visited.add(cur)
+            if cur == end_node:
+                res = max(-pro, res)
+            for node, node_pro in graph[cur].items():
+                if node not in visited:
+                    heapq.heappush(heap, (pro * node_pro, node))
+
+        return res
+            
+
 
 s = Solution()
-res = s.longestPalindrome("aacabdkacaa")
+res = s.maxProbability(5, [[1,4],[2,4],[0,4],[0,3],[0,2],[2,3]], [0.37,0.17,0.93,0.23,0.39,0.04], 3, 4)
 print(res)
