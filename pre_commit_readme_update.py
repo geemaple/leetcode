@@ -39,7 +39,8 @@ TAG_QSEL = 'Quickselect'
 TAG_DC = 'Divide and Conquer'
 TAG_BFS = 'Breadth-First Search'
 TAG_DFS = 'Depth-First Search'
-TAG_TSORT = 'Topological Sort'
+TAG_TOPOLOGICAL_SORT = 'Topological Sort'
+TAG_SHORTEST_PATH = 'Shortest Path'
 TAG_BTRACK = 'Backtracking'
 TAG_LSWEEP = 'Line Sweep'
 TAG_ORDERED_SET = 'Ordered Set'
@@ -68,8 +69,8 @@ TAG_MAP = {
     TAG_QUEUE: [TAG_MONO_QUEUE],
     TAG_2P: [TAG_SWIN],
     TAG_SORT: [TAG_COUNT],
-    TAG_BFS: [TAG_TSORT],
-    TAG_DFS: [TAG_BTRACK, TAG_TSORT],
+    TAG_BFS: [TAG_TOPOLOGICAL_SORT, TAG_SHORTEST_PATH],
+    TAG_DFS: [TAG_BTRACK, TAG_TOPOLOGICAL_SORT, TAG_SHORTEST_PATH],
 }
 
 TAG_IGNORE = r'-|Interactive'

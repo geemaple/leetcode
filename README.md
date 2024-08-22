@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 192 problems
 
-**2024:** 229 problems
+**2024:** 230 problems
 
-**Total:** 420 problems
+**Total:** 421 problems
 
-**Updated:** 2024-08-21 11:12:42
+**Updated:** 2024-08-22 12:51:00
 
 **Duplicates:**
 
@@ -79,6 +79,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [Breadth-First Search](#breadth-first-search)
 - [Depth-First Search](#depth-first-search)
 - [Topological Sort](#topological-sort)
+- [Shortest Path](#shortest-path)
 - [Backtracking](#backtracking)
 - [Line Sweep](#line-sweep)
 - [Ordered Set](#ordered-set)
@@ -371,7 +372,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Update | Problem(8) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(9) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/description/) | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
 | 2024-07 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Heap | O\(N\) ～ O\(N^2\) | O\(1\) | - |
@@ -381,6 +382,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/description/) | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | 2024-08 | [Leetcode-239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Heap | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/description/) | [c++](./leetcode/882.reachable-nodes-in-subdivided-graph.cpp), [python3](./leetcode/882.reachable-nodes-in-subdivided-graph.py) | Heap | O\(ElogE\) | O\(V\+E\) | - |
+| 2024-08 | [Leetcode-743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/) | [c++](./leetcode/743.network-delay-time.cpp), [python3](./leetcode/743.network-delay-time.py) | Heap | O\(ElogE\) | O\(E\+V\) | - |
 
 ## Two Pointers
 
@@ -556,6 +558,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | [c++](./leetcode/310.minimum-height-trees.cpp), [python3](./leetcode/310.minimum-height-trees.py) | Topological Sort | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) | [c++](./leetcode/210.course-schedule-ii.cpp), [python3](./leetcode/210.course-schedule-ii.py) | Topological Sort | O\(E\+V\) | O\(E\+V\) | - |
+
+## Shortest Path
+
+| Update | Problem(2) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| 2024-08 | [Leetcode-882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/description/) | [c++](./leetcode/882.reachable-nodes-in-subdivided-graph.cpp), [python3](./leetcode/882.reachable-nodes-in-subdivided-graph.py) | Shortest Path | O\(ElogE\) | O\(V\+E\) | - |
+| 2024-08 | [Leetcode-743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/) | [c++](./leetcode/743.network-delay-time.cpp), [python3](./leetcode/743.network-delay-time.py) | Shortest Path | O\(ElogE\) | O\(E\+V\) | - |
 
 ## Backtracking
 
