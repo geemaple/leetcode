@@ -10,17 +10,13 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 191 problems
+**2023:** 190 problems
 
 **2024:** 233 problems
 
 **Total:** 423 problems
 
-**Updated:** 2024-08-25 12:54:09
-
-**Duplicates:**
-
-- **"find-median-from-data-stream"** (lintcode, leetcode)
+**Updated:** 2024-08-25 13:06:58
 
 ## 软件/Softwares
 
@@ -678,7 +674,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(196) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(195) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -846,7 +842,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/description/) | [python3](./leetcode/929.unique-email-addresses.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-933. Number Of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | [c++](./leetcode/933.number-of-recent-calls.cpp), [python3](./leetcode/933.number-of-recent-calls.py) | Other | \- | \- | - |
 | 2023-09 | [Lintcode-31. Partition Array](https://www.lintcode.com/problem/partition-array) | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | - |
-| 2023-09 | [Lintcode-81. Find Median From Data Stream](https://www.lintcode.com/problem/find-median-from-data-stream) | [c++](./lintcode/81.find-median-from-data-stream.cpp), [python3](./lintcode/81.find-median-from-data-stream.py) | Other | \- | \- | - |
 | 2023-09 | [Lintcode-89. K Sum](https://www.lintcode.com/problem/k-sum) | [c++](./lintcode/89.k-sum.cpp), [python3](./lintcode/89.k-sum.py) | Other | \- | \- | - |
 | 2023-09 | [Lintcode-91. Minimum Adjustment Cost](https://www.lintcode.com/problem/minimum-adjustment-cost) | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python3](./lintcode/91.minimum-adjustment-cost.py) | Other | \- | \- | - |
 | 2023-09 | [Lintcode-139. Subarray Sum Closest](https://www.lintcode.com/problem/subarray-sum-closest) | [c++](./lintcode/139.subarray-sum-closest.cpp), [python3](./lintcode/139.subarray-sum-closest.py) | Other | \- | \- | - |

@@ -282,13 +282,13 @@ class Solution:
     
     @staticmethod
     def statistic() -> int:
-        statistic_set = collections.defaultdict(set)
+        statistic_dict = collections.defaultdict(list)
         year_archive = collections.defaultdict(set)
         visited = set()
 
         res = []
         for s in Solution.all():
-            statistic_set[s.name].add(s)
+            statistic_dict[s.name].append(s)
             if s not in visited:
                 visited.add(s)
                 year_archive[s.update.year].add(s)
@@ -296,16 +296,16 @@ class Solution:
         for year in sorted(year_archive.keys()):
             res.append(f'**{year}:** {len(year_archive[year])} problems')
 
-        res.append(f"**Total:** {len(statistic_set)} problems")
+        res.append(f"**Total:** {len(statistic_dict)} problems")
         res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
         count = 0
         duplicates = []
-        for key, solutions in statistic_set.items():
-            source = set([s.source for s in solutions])
-            if len(source) > 1:
+        for key, solutions in statistic_dict.items():
+            if len(set(solutions)) > 1:
                 count += 1
-                duplicates.append(f"- **\"{key}\"** ({', '.join(source)})")
+                duplicates.append(f"- **\"{key}\"** ({', '.join([s.source for s in set(solutions)])})")
+                print(key, solutions)
 
         if len(duplicates) > 0:
             res.append(f"**Duplicates:**")
