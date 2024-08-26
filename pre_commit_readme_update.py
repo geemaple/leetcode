@@ -239,6 +239,14 @@ class Markdown:
 
 class Solution:
     @staticmethod
+    def list(directories=['list']) -> str:
+        res = []
+        for source in directories:
+            for file_name in os.listdir(source):
+                res.append(file_name)
+        return res
+
+    @staticmethod
     @lru_cache()
     def all(directories=['leetcode', 'lintcode']) -> int:
 
@@ -383,8 +391,9 @@ if __name__ == "__main__":
         Markdown.title1(f, "统计/Statistic")
         Markdown.paragraph(f, Solution.statistic())
 
-        Markdown.title2(f, "软件/Softwares")
+        Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
+            Markdown.link('本人博客', 'https://blog.mogoal.com/category/#Algorithm'),
             Markdown.link('Anki', 'https://apps.ankiweb.net/'),
             Markdown.link('Tldraw', 'https://www.tldraw.com/'),
             Markdown.link('OBS', 'https://www.tldraw.com/'),
@@ -400,12 +409,8 @@ if __name__ == "__main__":
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
         ])
 
-        Markdown.title2(f, "链接/Links")
-        Markdown.bullet(f, [
-            Markdown.link('本人博客', 'https://blog.mogoal.com/category/#Algorithm'),
-            Markdown.link('极客时间', 'https://github.com/geektime-geekbang/algorithm-1'),
-            Markdown.link('LeetCode 101', 'https://github.com/changgyhub/leetcode_101'),
-        ])
+        Markdown.title2(f, "列表/List")
+        Markdown.bullet(f, [Markdown.link(p, f'./list/{p}') for p in Solution.list()])
 
         Markdown.title2(f, "书籍/Books")
         Markdown.bullet(f, [

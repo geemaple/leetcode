@@ -16,10 +16,11 @@ This is an open-source project that is continually updated
 
 **Total:** 423 problems
 
-**Updated:** 2024-08-25 13:06:58
+**Updated:** 2024-08-26 17:35:21
 
-## 软件/Softwares
+## 链接/Links
 
+- [本人博客](https://blog.mogoal.com/category/#Algorithm)
 - [Anki](https://apps.ankiweb.net/)
 - [Tldraw](https://www.tldraw.com/)
 - [OBS](https://www.tldraw.com/)
@@ -35,11 +36,9 @@ python problem.py https://leetcode.com/problems/online-stock-span/
 python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
 
-## 链接/Links
+## 列表/List
 
-- [本人博客](https://blog.mogoal.com/category/#Algorithm)
-- [极客时间](https://github.com/geektime-geekbang/algorithm-1)
-- [LeetCode 101](https://github.com/changgyhub/leetcode_101)
+- [leetcode101.md](./list/leetcode101.md)
 
 ## 书籍/Books
 
