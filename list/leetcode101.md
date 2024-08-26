@@ -1,8 +1,6 @@
-# 出处
+## [题目](https://github.com/changgyhub/leetcode_101)
 
-https://github.com/changgyhub/leetcode_101
-
-## 题目
+### 贪心
 
 1. https://leetcode.com/problems/assign-cookies/
 2. https://leetcode.com/problems/candy/
@@ -13,6 +11,9 @@ https://github.com/changgyhub/leetcode_101
 7. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 8. https://leetcode.com/problems/queue-reconstruction-by-height/
 9. https://leetcode.com/problems/non-decreasing-array/
+
+### 双指针
+
 10. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 11. https://leetcode.com/problems/merge-sorted-array/
 12. https://leetcode.com/problems/linked-list-cycle-ii/
@@ -21,16 +22,25 @@ https://github.com/changgyhub/leetcode_101
 15. https://leetcode.com/problems/valid-palindrome-ii/
 16. https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
 17. https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+
+### 二分法
+
 18. https://leetcode.com/problems/sqrtx/
 19. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 20. https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 21. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
 22. https://leetcode.com/problems/single-element-in-a-sorted-array/
 23. https://leetcode.com/problems/median-of-two-sorted-arrays/
+
+### 排序
+
 24. https://leetcode.com/problems/kth-largest-element-in-an-array/
 25. https://leetcode.com/problems/top-k-frequent-elements/
 26. https://leetcode.com/problems/sort-characters-by-frequency/
 27. https://leetcode.com/problems/sort-colors/
+
+### 搜索
+
 28. https://leetcode.com/problems/max-area-of-island/
 29. https://leetcode.com/problems/friend-circles/
 30. https://leetcode.com/problems/pacific-atlantic-water-flow/
@@ -46,6 +56,9 @@ https://github.com/changgyhub/leetcode_101
 40. https://leetcode.com/problems/combination-sum-ii/
 41. https://leetcode.com/problems/sudoku-solver/
 42. https://leetcode.com/problems/minimum-height-trees/
+
+### 动态规划
+
 43. https://leetcode.com/problems/climbing-stairs/
 44. https://leetcode.com/problems/house-robber/
 45. https://leetcode.com/problems/arithmetic-slices/
@@ -74,9 +87,16 @@ https://github.com/changgyhub/leetcode_101
 68. https://leetcode.com/problems/wiggle-subsequence/
 69. https://leetcode.com/problems/target-sum/
 70. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+
+### 分治算法
+
 71. https://leetcode.com/problems/different-ways-to-add-parentheses/
 72. https://leetcode.com/problems/beautiful-array/
 73. https://leetcode.com/problems/burst-balloons/
+
+
+### 数学
+
 74. https://leetcode.com/problems/count-primes/
 75. https://leetcode.com/problems/base-7/
 76. https://leetcode.com/problems/factorial-trailing-zeroes/
@@ -92,6 +112,9 @@ https://github.com/changgyhub/leetcode_101
 86. https://leetcode.com/problems/majority-element/
 87. https://leetcode.com/problems/implement-rand10-using-rand7/
 88. https://leetcode.com/problems/happy-number/
+
+### 位运算
+
 89. https://leetcode.com/problems/hamming-distance/
 90. https://leetcode.com/problems/reverse-bits/
 91. https://leetcode.com/problems/single-number/
@@ -102,6 +125,9 @@ https://github.com/changgyhub/leetcode_101
 96. https://leetcode.com/problems/binary-number-with-alternating-bits/
 97. https://leetcode.com/problems/number-complement/
 98. https://leetcode.com/problems/single-number-iii/
+
+### 数据结构
+
 99. https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 100. https://leetcode.com/problems/rotate-image/
 101. https://leetcode.com/problems/search-a-2d-matrix-ii/
@@ -130,6 +156,9 @@ https://github.com/changgyhub/leetcode_101
 124. https://leetcode.com/problems/super-ugly-number/
 125. https://leetcode.com/problems/advantage-shuffle/
 126. https://leetcode.com/problems/range-sum-query-mutable/
+
+### 字符串
+
 127. https://leetcode.com/problems/valid-anagram/
 128. https://leetcode.com/problems/isomorphic-strings/
 129. https://leetcode.com/problems/palindromic-substrings/
@@ -140,6 +169,9 @@ https://github.com/changgyhub/leetcode_101
 134. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 135. https://leetcode.com/problems/basic-calculator-iii/
 136. https://leetcode.com/problems/longest-palindromic-substring/
+
+### 连标
+
 137. https://leetcode.com/problems/reverse-linked-list/
 138. https://leetcode.com/problems/merge-two-sorted-lists/
 139. https://leetcode.com/problems/swap-nodes-in-pairs/
@@ -149,6 +181,9 @@ https://github.com/changgyhub/leetcode_101
 143. https://leetcode.com/problems/odd-even-linked-list/
 144. https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 145. https://leetcode.com/problems/sort-list/
+
+### 树
+
 146. https://leetcode.com/problems/maximum-depth-of-binary-tree/
 147. https://leetcode.com/problems/balanced-binary-tree/
 148. https://leetcode.com/problems/diameter-of-binary-tree/
@@ -178,11 +213,17 @@ https://github.com/changgyhub/leetcode_101
 172. https://leetcode.com/problems/increasing-order-search-tree/
 173. https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 174. https://leetcode.com/problems/delete-node-in-a-bst/
+
+### 图
+
 175. https://leetcode.com/problems/is-graph-bipartite/
 176. https://leetcode.com/problems/course-schedule-ii/
 177. https://leetcode.com/problems/all-paths-from-source-lead-to-destination/
 178. https://leetcode.com/problems/connecting-cities-with-minimum-cost/
 179. https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/
+
+### 复杂数据结构
+
 180. https://leetcode.com/problems/redundant-connection/
 181. https://leetcode.com/problems/lru-cache/
 182. https://leetcode.com/problems/insert-delete-getrandom-o1/
