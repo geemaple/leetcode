@@ -44,10 +44,23 @@ class Solution:
         cur = dummy
 
         while cur.next and cur.next.next:
-            pre = cur.next
-            cur.next = cur.next.next
-            pre.next = cur.next.next
-            cur.next.next = pre
-            cur = pre
+            first = cur.next
+            second = cur.next.next
+
+            first.next = second.next
+            second.next = first
+            cur.next = second
+
+            cur = first
 
         return dummy.next
+
+class Solution:
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head is None or head.next is None:
+            return head
+
+        first = head
+        second = head.next
+        first.next, second.next  = self.swapPairs(second.next), first
+        return second

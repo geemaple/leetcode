@@ -43,17 +43,41 @@
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
+        if (!head) {
+            return nullptr;
+        }
+
         ListNode dummy = ListNode(0, head);
         ListNode *cur = &dummy;
         while (cur->next && cur->next->next) {
-            ListNode *tmp = cur->next;
-            cur->next = cur->next->next;
-            tmp->next = cur->next->next;
-            cur->next->next = tmp;
-            cur = tmp;
+            ListNode *first = cur->next;
+            ListNode *second = cur->next->next;
+
+            first->next = second->next;
+            second->next = first;
+            cur->next = second;
+            
+            cur = first;
         }
 
         return dummy.next;
+    }
+};
 
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if (!head || !head->next) {
+            return head;
+        }
+
+        ListNode *first = head;
+        ListNode *second = head->next;
+
+        ListNode *next_first = second->next; 
+        second->next = first;
+        first->next = swapPairs(next_first);
+
+        return second;
     }
 };
