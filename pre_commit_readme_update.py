@@ -422,6 +422,6 @@ if __name__ == "__main__":
             ""
         ])
 
-        Markdown.title2(f, Markdown.link('Category', 'category'))
+        Markdown.title2(f, "类型/Category")
         Markdown.bullet(f, [Markdown.tag(c) for c in SHOW_CATEGORIES])
         Markdown.table_content(f, ALL_CATEGORIES)
