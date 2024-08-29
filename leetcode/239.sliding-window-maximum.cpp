@@ -1,6 +1,6 @@
 //  Tag: Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue
 //  Time: O(N)
-//  Space: O(N)
+//  Space: O(K)
 //  Ref: -
 //  Note: -
 
@@ -57,4 +57,26 @@ public:
         }
         return res;
     }
+};
+
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        int n = nums.size();
+        priority_queue<pair<int, int>> q;
+        vector<int> res;
+
+        for (int i = 0; i < n; i++) {
+            while (!q.empty() && i - q.top().second >= k) {
+                q.pop();
+            }
+
+            q.push({nums[i], i});
+            if (i + 1 >= k) {
+                res.push_back(q.top().first);
+            }
+        }
+
+        return res;
+    }   
 };

@@ -1,6 +1,6 @@
 #  Tag: Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue
 #  Time: O(N)
-#  Space: O(N)
+#  Space: O(K)
 #  Ref: -
 #  Note: -
 
@@ -53,5 +53,23 @@ class Solution:
 
             if i + 1 >= k:
                 res.append(nums[q[0]])
+
+        return res
+    
+import heapq
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        n = len(nums)
+        heap = []
+        res = []
+
+        for i in range(n):
+            while len(heap) > 0 and i - heap[0][1] >= k:
+                heapq.heappop(heap)
+
+            heapq.heappush(heap, (-nums[i], i))
+
+            if i + 1 >= k:
+                res.append(-heap[0][0])
 
         return res
