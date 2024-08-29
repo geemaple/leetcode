@@ -1,44 +1,96 @@
-from typing import List
+#  Tag: Array, Two Pointers, Sorting
+#  Time: O(N^3)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
+
+#  Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+#  
+#  0 <= a, b, c, d < n
+#  a, b, c, and d are distinct.
+#  nums[a] + nums[b] + nums[c] + nums[d] == target
+#  
+#  You may return the answer in any order.
+#   
+#  Example 1:
+#  
+#  Input: nums = [1,0,-1,0,-2,2], target = 0
+#  Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+#  
+#  Example 2:
+#  
+#  Input: nums = [2,2,2,2,2], target = 8
+#  Output: [[2,2,2,2]]
+#  
+#   
+#  Constraints:
+#  
+#  1 <= nums.length <= 200
+#  -109 <= nums[i] <= 109
+#  -109 <= target <= 109
+#  
+#  
+
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        res = []
+        n = len(nums)
         nums.sort()
-
-        for i in range(len(nums) - 3):
-            
+        res = []
+        for i in range(n):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
-            a = nums[i]
-            
-            for j in range(i + 1, len(nums) - 2): # 3sum
+
+            for j in range(i + 1, n):
                 if j > i + 1 and nums[j] == nums[j - 1]:
                     continue
 
-                b = nums[j]
+                component = target - nums[i] - nums[j]
                 left = j + 1
-                right = len(nums) - 1
-                
-                while left < right: # two sum
-
-                    if a + b + nums[left] + nums[right] == target:
-                        res.append([a, b, nums[left], nums[right]])
-                        
-                        while (left < right and nums[left] == nums[left + 1]):
-                            left += 1
-                            
-                        while (left < right and nums[right] == nums[right - 1]):
+                right = n - 1
+                while left < right:
+                    if nums[left] + nums[right] == component:
+                        res.append([nums[i], nums[j], nums[left], nums[right]])
+                        while left < right and nums[right] == nums[right - 1]:
                             right -= 1
+                        while left < right and nums[left] == nums[left + 1]:
+                            left += 1
 
                         left += 1
                         right -= 1
-                    elif a + b + nums[left] + nums[right] > target:
+                    elif nums[left] + nums[right] > component:
                         right -= 1
                     else:
                         left += 1
-                    
         return res
 
-class Solution2:
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        n = len(nums)
+        nums.sort()
+        res = []
+        for i in range(n):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+
+            for j in range(i + 1, n):
+                if j > i + 1 and nums[j] == nums[j - 1]:
+                    continue
+
+                component = target - nums[i] - nums[j]
+                history = {}
+                k = j + 1
+                while k < n:
+                    if component - nums[k] in history:
+                        res.append([nums[i], nums[j], nums[k], component - nums[k]])
+                        while k + 1 < n and nums[k] == nums[k + 1]:
+                            k += 1
+                    else:
+                        history[nums[k]] = k
+
+                    k += 1
+        return res
+
+class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         k = 4
         res = []
