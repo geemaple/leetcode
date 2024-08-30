@@ -226,6 +226,7 @@
 
 180. https://leetcode.com/problems/redundant-connection/
 181. https://leetcode.com/problems/lru-cache/
-182. https://leetcode.com/problems/insert-delete-getrandom-o1/
-183. https://leetcode.com/problems/all-oone-data-structure/
-184. https://leetcode.com/problems/max-stack/
+182. https://leetcode.com/problems/connecting-cities-with-minimum-cost/
+183. https://leetcode.com/problems/insert-delete-getrandom-o1/
+184. https://leetcode.com/problems/all-oone-data-structure/
+185. https://leetcode.com/problems/max-stack/
