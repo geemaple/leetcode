@@ -16,7 +16,7 @@ This is an open-source project that is continually updated
 
 **Total:** 424 problems
 
-**Updated:** 2024-08-30 16:51:27
+**Updated:** 2024-08-30 18:31:39
 
 ## 链接/Links
 
@@ -304,10 +304,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-07 | [Leetcode-126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | [c++](./leetcode/126.word-ladder-ii.cpp), [python3](./leetcode/126.word-ladder-ii.py) | Hash Table | O\(\(N\*L\)^C\) | O\(N\) | - |
 | 2024-07 | [Leetcode-37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | [c++](./leetcode/37.sudoku-solver.cpp), [python3](./leetcode/37.sudoku-solver.py) | Hash Table | O\(N^\(N^2\)\) | O\(N\) | - |
 | 2024-07 | [Leetcode-139. Word Break](https://leetcode.com/problems/word-break/description/) | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Hash Table | O\(MN\) | O\(N\) | - |
-| 2024-07 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Hash Table | O\(N\) | O\(1\) | - |
 | 2024-07 | [Leetcode-202. Happy Number](https://leetcode.com/problems/happy-number/description/) | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Hash Table | O\(S\) | O\(1\) | - |
 | 2024-07 | [Leetcode-268. Missing Number](https://leetcode.com/problems/missing-number/description/) | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Hash Table | O\(N\) | O\(1\) | - |
 | 2024-07 | [Leetcode-448. Find All Numbers Disappeared In An Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python3](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | Hash Table | O\(N\) | O\(1\) | - |
+| 2024-08 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Hash Table | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [c++](./leetcode/1.two-sum.cpp), [python3](./leetcode/1.two-sum.py) | Hash Table | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | [c++](./leetcode/128.longest-consecutive-sequence.cpp), [python3](./leetcode/128.longest-consecutive-sequence.py) | Hash Table | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-149. Max Points On A Line](https://leetcode.com/problems/max-points-on-a-line/description/) | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Hash Table | O\(N^2\) | O\(N\) | - |
@@ -465,7 +465,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-06 | [Leetcode-2529. Maximum Count Of Positive Integer And Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/) | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python3](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | Counting | O\(logN\) | O\(1\) | - |
 | 2024-07 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Counting | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | 2024-07 | [Leetcode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Counting | O\(N\) | O\(N\) | - |
-| 2024-07 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Counting | O\(N\) | O\(1\) | - |
+| 2024-08 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Counting | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/description/) | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Counting | O\(N\) | O\(N\) | - |
 
 ## Quickselect
@@ -484,9 +484,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-07 | [Leetcode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Divide and Conquer | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | 2024-07 | [Leetcode-53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | [c++](./leetcode/53.maximum-subarray.cpp), [python3](./leetcode/53.maximum-subarray.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | 2024-07 | [Leetcode-932. Beautiful Array](https://leetcode.com/problems/beautiful-array/description/) | [c++](./leetcode/932.beautiful-array.cpp), [python3](./leetcode/932.beautiful-array.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
-| 2024-07 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Divide and Conquer | O\(N\) | O\(1\) | - |
 | 2024-07 | [Leetcode-190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | [c++](./leetcode/190.reverse-bits.cpp), [python3](./leetcode/190.reverse-bits.py) | Divide and Conquer | O\(1\) | O\(1\) | - |
 | 2024-08 | [Leetcode-240. Search A 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [c++](./leetcode/240.search-a-2d-matrix-ii.cpp), [python3](./leetcode/240.search-a-2d-matrix-ii.py) | Divide and Conquer | O\(M \+ N\) | O\(1\) | - |
+| 2024-08 | [Leetcode-169. Majority Element](https://leetcode.com/problems/majority-element/description/) | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Divide and Conquer | O\(N\) | O\(1\) | - |
 | 2024-08 | [Lintcode-11. Search Range In Binary Search Tree](https://www.lintcode.com/problem/search-range-in-binary-search-tree) | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python3](./lintcode/11.search-range-in-binary-search-tree.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 | 2024-08 | [Lintcode-1534. Convert Binary Search Tree To Sorted Doubly Linked List](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list) | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python3](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 | 2024-08 | [Leetcode-23. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Divide and Conquer | O\(NlogK\) | O\(K\) | - |

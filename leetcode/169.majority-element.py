@@ -52,3 +52,25 @@ class Solution:
         nums.sort()
         mid = len(nums)//2
         return nums[mid]
+    
+class Solution:
+    def majorityElement(self, nums):
+        return self.majorityElementRec(nums, 0, len(nums) - 1)
+
+    def helper(self, nums, left, right):
+        if left == right:
+            return nums[left]
+
+        # divide
+        mid = (left + right) // 2
+        left_majority = self.helper(nums, left, mid)
+        right_majority = self.helper(nums, mid + 1, right)
+
+        # conquer
+        if left_majority == right_majority:
+            return left_majority
+
+        left_count = nums[left:right + 1].count(left_majority)
+        right_count = nums[left:right + 1].count(right_majority)
+
+        return left_majority if left_count > right_count else right_majority

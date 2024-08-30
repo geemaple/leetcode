@@ -62,3 +62,30 @@ class Solution(object):
             smallest = min(smallest, sumTo)
 
         return largest
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        return self.helper(nums, 0, len(nums) - 1)
+    
+    def helper(self, nums: List[int], left: int, right: int) -> int:
+        if left == right:
+            return nums[left]
+        
+        mid = (left + right) // 2
+        leftSum = float('-inf')
+        curSum = 0
+        # Maximum sum of subarray ending at mid and going left
+        for i in range(mid, left - 1, -1):
+            curSum += nums[i]
+            leftSum = max(leftSum, curSum)
+        
+        rightSum = float('-inf')
+        curSum = 0
+        # Maximum sum of subarray starting at mid+1 and going right
+        for i in range(mid + 1, right + 1):
+            curSum += nums[i]
+            rightSum = max(rightSum, curSum)
+        
+        return max(self.helper(nums, left, mid),
+                   self.helper(nums, mid + 1, right),
+                   leftSum + rightSum) # Max sum crossing midpoint
