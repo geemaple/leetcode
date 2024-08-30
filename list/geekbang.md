@@ -38,9 +38,9 @@
 19. https://leetcode.com/problems/powx-n/
 20. https://leetcode.com/problems/majority-element/
 21. https://leetcode.com/problems/maximum-subarray/
-22. https://leetcode.com/problems/valid-anagram/#/description
-23. https://leetcode.com/problems/find-all-anagrams-in-a-string/#/description
-24. https://leetcode.com/problems/anagrams/#/description
+22. https://leetcode.com/problems/valid-anagram/
+23. https://leetcode.com/problems/find-all-anagrams-in-a-string/
+24. https://leetcode.com/problems/anagrams/
 
 ### 贪心
 
@@ -61,7 +61,7 @@
 33. https://leetcode.com/problems/n-queens/
 34. https://leetcode.com/problems/n-queens-ii/
 35. https://leetcode.com/problems/valid-sudoku/
-36. https://leetcode.com/problems/sudoku-solver/#/description
+36. https://leetcode.com/problems/sudoku-solver/
 
 ### 二分
 
@@ -85,7 +85,7 @@
 45. https://leetcode.com/problems/climbing-stairs/
 46. https://leetcode.com/problems/triangle/
 47. https://leetcode.com/problems/maximum-product-subarray/
-48. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/#/description
+48. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 49. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 50. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 51. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
@@ -102,4 +102,4 @@
 
 ### LRU
 
-59. https://leetcode.com/problems/lru-cache/#/
+59. https://leetcode.com/problems/lru-cache/
