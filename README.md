@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 185 problems
 
-**2024:** 239 problems
+**2024:** 240 problems
 
-**Total:** 424 problems
+**Total:** 425 problems
 
-**Updated:** 2024-08-30 18:31:39
+**Updated:** 2024-09-02 20:48:27
 
 ## 链接/Links
 
@@ -686,7 +686,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(190) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(191) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -878,4 +878,5 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-10 | [Leetcode-652. Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) | [c++](./leetcode/652.find-duplicate-subtrees.cpp) | Other | \- | \- | - |
 | 2024-07 | [Leetcode-829. Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/description/) | [python3](./leetcode/829.consecutive-numbers-sum.py) | Other | \- | \- | - |
 | 2024-07 | [Leetcode-6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | - |
+| 2024-09 | [Leetcode-3274. Check If Two Chessboard Squares Have The Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/description/) | [c++](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.cpp), [python3](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.py) | Other | O\(1\) | O\(1\) | - |
 
