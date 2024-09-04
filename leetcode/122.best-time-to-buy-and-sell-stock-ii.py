@@ -45,3 +45,14 @@ class Solution:
                 profit += prices[i] - prices[i - 1]
 
         return profit
+    
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        buy = float('-inf')
+        sell = 0
+
+        for p in prices:
+            buy = max(buy, sell - p)
+            sell = max(sell, p + buy)
+
+        return sell
