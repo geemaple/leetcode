@@ -5,28 +5,33 @@ import heapq
 
 from collections import defaultdict
 class Solution:
-    def lemonadeChange(self, bills: List[int]) -> bool:
-        change = defaultdict(int)
+    def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
+        directions = [(1, 1), (0, 1), (1, -1), (0, -1)]
 
-        for b in bills:
-            if b == 5:
-                change[5] += 1
-            if b == 10:
-                if change[5] > 0:
-                    change[5] -= 1
-                else:
-                    return False
-            if b == 20:
-                if change[10] > 0 and change[5] > 0:
-                    change[10] -= 1
-                    change[5] -= 1
-                elif change[5] > 2:
-                    change[5] -= 3
-                else:
-                    return False
+        f = 0
+        pos = [0, 0]
+        res = 0
+        for c in commands:
+            if c == -2:
+                f = (f + 3) % 4
+            elif c == -1:
+                f = (f + 1) % 4
+            else:
+                index = directions[f][0]
+                sign = directions[f][1]
+                distance = c
 
-        return True
+                for ob in obstacles:
+                    if pos[1 - index] == ob[1 - index]:
+                        if sign > 0 and ob[index] > pos[index]:
+                            distance = min(c, ob[index] - pos[index] - 1)
+                        elif sign < 0 and ob[index] < pos[index]:
+                            distance = min(c, pos[index] - ob[index] - 1)
+
+                pos[index] += sign * distance
+                res = max(res, pos[0] ** 2 + pos[1] ** 2)
+        return res
 
 s = Solution()
-res = s.lemonadeChange([5,5,5,10,20])
+res = s.robotSim([7,-2,-2,7,5], [[-3,2],[-2,1],[0,1],[-2,4],[-1,0],[-2,-3],[0,-3],[4,4],[-3,3],[2,2]])
 print(res)
