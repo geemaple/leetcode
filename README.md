@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 184 problems
 
-**2024:** 242 problems
+**2024:** 243 problems
 
-**Total:** 426 problems
+**Total:** 427 problems
 
-**Updated:** 2024-09-04 11:05:30
+**Updated:** 2024-09-04 11:26:22
 
 ## 链接/Links
 
@@ -165,7 +165,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Update | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-135. Candy](https://leetcode.com/problems/candy/description/) | [c++](./leetcode/135.candy.cpp), [python3](./leetcode/135.candy.py) | Greedy | O\(N\) | O\(N\) | - |
 | 2024-06 | [Leetcode-605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/) | [c++](./leetcode/605.can-place-flowers.cpp), [python3](./leetcode/605.can-place-flowers.py) | Greedy | O\(N\) | O\(N\) | - |
@@ -183,6 +183,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/) | [c++](./leetcode/409.longest-palindrome.cpp), [python3](./leetcode/409.longest-palindrome.py) | Greedy | O\(N\) | O\(N\) | - |
 | 2024-08 | [Lintcode-3672. Connecting Cities With Minimum Cost](https://www.lintcode.com/problem/connecting-cities-with-minimum-cost) | [c++](./lintcode/3672.connecting-cities-with-minimum-cost.cpp), [python3](./lintcode/3672.connecting-cities-with-minimum-cost.py) | Greedy | O\(ElogE\) | O\(E\+V\) | - |
 | 2024-09 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python3](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | Greedy | O\(N\) | O\(1\) | - |
+| 2024-09 | [Leetcode-860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/) | [c++](./leetcode/860.lemonade-change.cpp), [python3](./leetcode/860.lemonade-change.py) | Greedy | O\(N\) | O\(1\) | - |
 
 ## Dynamic Programming
 
