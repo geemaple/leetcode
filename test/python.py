@@ -5,26 +5,25 @@ import heapq
 
 from collections import defaultdict
 class Solution:
-    def maxScore(self, grid: List[List[int]]) -> int:
-        n = len(grid)
-        m = len(grid[0])
+    def generateParenthesis(self, n: int) -> List[str]:
+        res = []
+        self.helper(0, 0, n, "", res)
+        return res
 
-        indexes = defaultdict(set)
-        for i in range(n):
-            for j in range(m):
-                indexes[grid[i][j]].add(i)
+    def helper(self, left:int, right: int, n:int, ans: str, res:list):
+        if left + right == n:
+            res.append(ans)
+            print(ans)
+            return
 
-        dp = [0 for i in range(1 << n)]
-        for v, index in indexes.items():
-            # for i in range((1 << n) - 1, 0, -1):
-            for i in range(1, (1 << n)):
-                for j in index:
-                    if (i >> j & 1):
-                        dp[i] = max(dp[i], dp[i ^ (1 << j)] + v)
-                        print(f"{v} {j} dp[{bin(i)}] = {dp[i]} dp[{bin(i ^ (1 << j))}] = {dp[i ^ (1 << j)]}")
-        return dp[-1]        
+        if left < n // 2:
+            self.helper(left + 1, right, n, ans + '(', res)
 
+        if right < left:
+            self.helper(left, right + 1,  n, ans + ')', res)
+
+        
 
 s = Solution()
-res = s.maxScore([[8,7,6],[8,3,2]])
+res = s.generateParenthesis(3)
 print(res)
