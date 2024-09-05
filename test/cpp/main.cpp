@@ -7,63 +7,39 @@ using namespace std;
 
 class Solution {
 public:
-    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        vector<unordered_map<int, int>> graph(n);
-        for (auto &x: flights) {
-            graph[x[0]][x[1]] = x[2];
+    int maxScore(vector<vector<int>>& a) {
+        using pii = pair<int, int>;
+        int n = a.size(), m = a[0].size();
+        vector<pii> ord;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                ord.emplace_back(a[i][j], i);
+            }
         }
-
-        vector<int> distances(n, INT_MAX);
-        vector<int> costs(n, INT_MAX);
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> q;
-        q.push({0, src, 0});
-        while (!q.empty()) {
-            auto &[cost, cur, stop] = q.top();
-            q.pop();
-
-            if (cur == dst) {
-                return cost;
-            }
-
-            if (stop == k + 1) {
-                continue;
-            }
-
-            for (auto &[node, node_cost]: graph[cur]) {
-                if (costs[node] == INT_MAX || costs[node] > cost + node_cost || distances[node] > stop + 1) {
-                    costs[node] = cost + node_cost;
-                    distances[node] = stop + 1;
-                    q.push({costs[node], node, distances[node]});
+        sort(ord.rbegin(), ord.rend());
+        const int inf = 1<<30;
+        vector<int> dp((1<<n), -inf);
+        dp[0] = 0;
+        for(int i = 0, j = 0; i < n * m; i = j){
+            while(j < n * m && ord[i].first == ord[j].first) j++;
+//            vector<int> ndp = dp;
+            for(int msk = 0; msk < (1<<n); msk++){
+                for(int k = i; k < j; k++){
+                    auto [val, p] = ord[k];
+                    if((msk>>p)&1);
+                    else dp[msk | (1<<p)] = max(dp[msk | (1<<p)], dp[msk] + val);
                 }
             }
+//            dp = ndp;
         }
-        return -1;
-
+        return *max_element(dp.begin(), dp.end());
     }
 };
-//int main() {
-//    vector<vector<int>> f = {{0,1,100}, {1,2,100}, {2,0,100}, {1,3,600}, {2,3,200}};
-//    Solution s;
-//    cout << "Longest Palindromic Substring: " << s.findCheapestPrice(4, f, 0, 3, 1) << endl;
-//    return 0;
-//}
 
 int main() {
-    priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> q;
-    q.push({100, 1, 0}); // (cost, node, stop)
-    q.push({50, 2, 1});
-    
-    // Copying values
-    auto [cost1, cur1, stop1] = q.top();
-    cout << "Copy: " << cost1 << ", " << cur1 << ", " << stop1 << endl; // Outputs: 50, 2, 1
-    
-    // Referencing values
-    auto &[cost2, cur2, stop2] = q.top();
-    cout << "Reference: " << cost2 << ", " << cur2 << ", " << stop2 << endl; // Outputs: 50, 2, 1
-    
-    // Modifying via reference
-//    cost2 += 10;  Modifies the original tuple in the queue
-//    cout << "After modification: " << get<0>(q.top()) << endl; // Outputs: 60 (the original tuple is affected)
-
+    vector<vector<int>> f = {{8,7,6},{8,3,2}};
+    Solution s;
+    cout << "Longest Palindromic Substring: " << s.maxScore(f) << endl;
     return 0;
 }
+

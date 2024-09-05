@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 184 problems
 
-**2024:** 245 problems
+**2024:** 246 problems
 
-**Total:** 429 problems
+**Total:** 430 problems
 
-**Updated:** 2024-09-04 16:29:47
+**Updated:** 2024-09-05 18:12:08
 
 ## 链接/Links
 
@@ -120,7 +120,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Update | Problem(12) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | 2024-07 | [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [c++](./leetcode/461.hamming-distance.cpp), [python3](./leetcode/461.hamming-distance.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -134,6 +134,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-07 | [Leetcode-476. Number Complement](https://leetcode.com/problems/number-complement/description/) | [c++](./leetcode/476.number-complement.cpp), [python3](./leetcode/476.number-complement.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 | 2024-07 | [Leetcode-260. Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
+| 2024-09 | [Leetcode-3276. Select Cells In Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/description/) | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Bit Manipulation | O\(NM\*2^N\) | O\(2^N\) | - |
 
 ## Simulation
 
@@ -188,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Update | Problem(44) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(45) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-120. Triangle](https://leetcode.com/problems/triangle/description/) | [c++](./leetcode/120.triangle.cpp), [python3](./leetcode/120.triangle.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | 2024-06 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | - |
@@ -234,6 +235,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | [c++](./leetcode/5.longest-palindromic-substring.cpp), [python3](./leetcode/5.longest-palindromic-substring.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/) | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Dynamic Programming | O\(ElogV\) | O\(E\+V\) | - |
 | 2024-09 | [Leetcode-122. Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python3](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
+| 2024-09 | [Leetcode-3276. Select Cells In Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/description/) | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Dynamic Programming | O\(NM\*2^N\) | O\(2^N\) | - |
 
 ## Binary Search
 
