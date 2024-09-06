@@ -10,13 +10,13 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 181 problems
+**2023:** 180 problems
 
-**2024:** 249 problems
+**2024:** 250 problems
 
 **Total:** 430 problems
 
-**Updated:** 2024-09-06 16:32:59
+**Updated:** 2024-09-06 17:15:18
 
 ## 链接/Links
 
@@ -88,7 +88,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Update | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(18) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-263. Ugly Number](https://leetcode.com/problems/ugly-number/description/) | [c++](./leetcode/263.ugly-number.cpp), [python3](./leetcode/263.ugly-number.py) | Math | O\(k\) | O\(1\) | - |
 | 2024-06 | [Leetcode-633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Math | O\(N\) | O\(1\) | - |
@@ -107,6 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/) | [c++](./leetcode/227.basic-calculator-ii.cpp), [python3](./leetcode/227.basic-calculator-ii.py) | Math | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-50. Powx N](https://leetcode.com/problems/powx-n/description/) | [c++](./leetcode/50.powx-n.cpp), [python3](./leetcode/50.powx-n.py) | Math | O\(logN\) | O\(1\) | - |
 | 2024-09 | [Leetcode-3274. Check If Two Chessboard Squares Have The Same Color](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/description/) | [c++](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.cpp), [python3](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.py) | Math | O\(1\) | O\(1\) | - |
+| 2024-09 | [Leetcode-367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Math | O\(logN\) | O\(1\) | - |
 
 ## Probability
 
@@ -240,7 +241,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Update | Problem(30) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(31) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-33. Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [c++](./leetcode/33.search-in-rotated-sorted-array.cpp), [python3](./leetcode/33.search-in-rotated-sorted-array.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | 2024-06 | [Leetcode-34. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python3](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | Binary Search | O\(logN\) | O\(1\) | [Video](https://youtu.be/y6OT8heV-30) |
@@ -272,6 +273,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-3048. Earliest Second To Mark Indices I](https://leetcode.com/problems/earliest-second-to-mark-indices-i/description/) | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
 | 2024-08 | [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Binary Search | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/description/) | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Binary Search | O\(NMlogNM\) | O\(NM\) | - |
+| 2024-09 | [Leetcode-367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Binary Search | O\(logN\) | O\(1\) | - |
 
 ## Linked List
 
@@ -701,7 +703,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(186) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(185) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -809,7 +811,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter/description/) | [c++](./leetcode/359.logger-rate-limiter.cpp) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/description/) | [c++](./leetcode/361.bomb-enemy.cpp), [python3](./leetcode/361.bomb-enemy.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-366. Find Leaves Of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/description/) | [c++](./leetcode/366.find-leaves-of-binary-tree.cpp), [python3](./leetcode/366.find-leaves-of-binary-tree.py) | Other | \- | \- | - |
-| 2023-09 | [Leetcode-367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/) | [c++](./leetcode/368.largest-divisible-subset.cpp), [python3](./leetcode/368.largest-divisible-subset.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-370. Range Addition](https://leetcode.com/problems/range-addition/description/) | [c++](./leetcode/370.range-addition.cpp), [python3](./leetcode/370.range-addition.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/description/) | [c++](./leetcode/377.combination-sum-iv.cpp), [python3](./leetcode/377.combination-sum-iv.py) | Other | \- | \- | - |
