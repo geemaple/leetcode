@@ -10,13 +10,13 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 182 problems
+**2023:** 181 problems
 
-**2024:** 248 problems
+**2024:** 249 problems
 
 **Total:** 430 problems
 
-**Updated:** 2024-09-06 15:28:57
+**Updated:** 2024-09-06 15:55:54
 
 ## 链接/Links
 
@@ -299,7 +299,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Update | Problem(38) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(39) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-763. Partition Labels](https://leetcode.com/problems/partition-labels/description/) | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Hash Table | O\(N\) | O\(N\) | - |
 | 2024-06 | [Leetcode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -339,6 +339,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | [c++](./leetcode/49.group-anagrams.cpp), [python3](./leetcode/49.group-anagrams.py) | Hash Table | O\(NL\) | O\(N\) | - |
 | 2024-09 | [Leetcode-438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Hash Table | O\(N\) | O\(1\) | - |
 | 2024-09 | [Leetcode-874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/) | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Hash Table | O\(N\) | O\(K\) | - |
+| 2024-09 | [Leetcode-36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python3](./leetcode/36.valid-sudoku.py) | Hash Table | O\(N^2\) | O\(N^2\) | - |
 
 ## Stack
 
@@ -700,7 +701,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(187) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(186) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -717,7 +718,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | [c++](./leetcode/29.divide-two-integers.cpp), [python3](./leetcode/29.divide-two-integers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-30. Substring With Concatenation Of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) | [c++](./leetcode/30.substring-with-concatenation-of-all-words.cpp), [python3](./leetcode/30.substring-with-concatenation-of-all-words.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-31. Next Permutation](https://leetcode.com/problems/next-permutation/description/) | [c++](./leetcode/31.next-permutation.cpp), [python3](./leetcode/31.next-permutation.py) | Other | \- | \- | - |
-| 2023-09 | [Leetcode-36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | [c++](./leetcode/36.valid-sudoku.cpp), [python3](./leetcode/36.valid-sudoku.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-38. Count And Say](https://leetcode.com/problems/count-and-say/description/) | [python3](./leetcode/38.count-and-say.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-39. Combination Sum](https://leetcode.com/problems/combination-sum/description/) | [c++](./leetcode/39.combination-sum.cpp), [python3](./leetcode/39.combination-sum.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | [python3](./leetcode/41.first-missing-positive.py) | Other | \- | \- | - |
