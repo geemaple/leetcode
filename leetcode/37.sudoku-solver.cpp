@@ -47,8 +47,8 @@ public:
                 }
 
                 int num = board[i][j] - '0';
-                int z = i / 3 * 3 + j / 3;
-                row[i][num] = col[j][num] = zone[z][num] = true;
+                int k = i / 3 * 3 + j / 3;
+                row[i][num] = col[j][num] = zone[k][num] = true;
             }
         }
         
@@ -60,19 +60,19 @@ public:
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == '.') {
-                    int z = i / 3 * 3 + j / 3;
-                    for (int k = 1; k < 10; k++) {
-                        if (row[i][k] || col[j][k] || zone[z][k]) {
+                    int k = i / 3 * 3 + j / 3;
+                    for (int num = 1; num <= 9; num++) {
+                        if (row[i][num] || col[j][num] || zone[k][num]) {
                             continue;
                         }
 
-                        row[i][k] = col[j][k] = zone[z][k] = true;
-                        board[i][j] = k + '0';
+                        row[i][num] = col[j][num] = zone[k][num] = true;
+                        board[i][j] = num + '0';
                         if (dfs(board, row, col, zone)) {
                             return true;
                         }
                         board[i][j] = '.';
-                        row[i][k] = col[j][k] = zone[z][k] = false;
+                        row[i][num] = col[j][num] = zone[k][num] = false;
                     }
                     return false;
                 }

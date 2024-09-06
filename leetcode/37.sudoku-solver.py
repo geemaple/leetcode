@@ -37,43 +37,45 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        
         n = len(board)
-
-        row = [[False for j in range(n + 1)] for i in range(n)]
-        col = [[False for j in range(n + 1)] for i in range(n)]
-        zone = [[False for j in range(n + 1)] for i in range(n)]
-
+        row = [[False] * (n + 1) for i in range(n)]
+        col = [[False] * (n + 1) for i in range(n)]
+        zone = [[False] * (n + 1) for i in range(n)]
+        
         for i in range(n):
             for j in range(n):
                 if board[i][j] == '.':
                     continue
+                k = i // 3 * 3 + j // 3
+                number = int(board[i][j])
+                row[i][number] = True
+                col[j][number] = True
+                zone[k][number] = True
 
-                z = i // 3 * 3 + j // 3
-                num = int(board[i][j])
-                
-                row[i][num] = True
-                col[j][num] = True
-                zone[z][num] = True
+        self.helper(board, row, col, zone)
 
-        self.dfs(board, row, col, zone)
-        
-    def dfs(self, board: List[List[str]], row: list, col: list, zone: list) -> bool:
+    def helper(self, board: list, row: list, col: list, zone: list) -> bool:
         n = len(board)
         for i in range(n):
             for j in range(n):
                 if board[i][j] == '.':
-                    z = i // 3 * 3 + j // 3
-                    for k in range(1, 10):
-                        if row[i][k] or col[j][k] or zone[z][k]:
+                    k = i // 3 * 3 + j // 3
+                    for number in range(1, 10):
+                        if row[i][number] or col[j][number] or zone[k][number]:
                             continue
 
-                        row[i][k] = col[j][k] = zone[z][k] = True
-                        board[i][j] = str(k)
-                        if self.dfs(board, row, col, zone):
+                        row[i][number] = True
+                        col[j][number] = True
+                        zone[k][number] = True
+                        board[i][j] = str(number)
+                        if self.helper(board, row, col, zone):
                             return True
-                        board[i][j] = '.'
-                        row[i][k] = col[j][k] = zone[z][k] = False
 
+                        board[i][j] = '.'
+                        row[i][number] = False
+                        col[j][number] = False
+                        zone[k][number] = False
+                
                     return False
+
         return True
