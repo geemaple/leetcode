@@ -10,13 +10,13 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 183 problems
+**2023:** 182 problems
 
-**2024:** 247 problems
+**2024:** 248 problems
 
 **Total:** 430 problems
 
-**Updated:** 2024-09-05 20:09:44
+**Updated:** 2024-09-06 15:28:57
 
 ## 链接/Links
 
@@ -596,7 +596,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Backtracking
 
-| Update | Problem(11) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(12) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-46. Permutations](https://leetcode.com/problems/permutations/description/) | [c++](./leetcode/46.permutations.cpp), [python3](./leetcode/46.permutations.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | 2024-07 | [Leetcode-77. Combinations](https://leetcode.com/problems/combinations/description/) | [c++](./leetcode/77.combinations.cpp), [python3](./leetcode/77.combinations.py) | Backtracking | O\(k \* C\(n, k\)\)  | O\(K\) | - |
@@ -609,6 +609,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-07 | [Leetcode-494. Target Sum](https://leetcode.com/problems/target-sum/description/) | [c++](./leetcode/494.target-sum.cpp), [python3](./leetcode/494.target-sum.py) | Backtracking | O\(N \* Sum\) | O\(N \* Sum\) | - |
 | 2024-08 | [Leetcode-257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) | [c++](./leetcode/257.binary-tree-paths.cpp), [python3](./leetcode/257.binary-tree-paths.py) | Backtracking | O\(N\) | O\(H\) | - |
 | 2024-09 | [Leetcode-22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | [c++](./leetcode/22.generate-parentheses.cpp), [python3](./leetcode/22.generate-parentheses.py) | Backtracking | O\(2^N\) | O\(N\) | - |
+| 2024-09 | [Leetcode-52. N Queens II](https://leetcode.com/problems/n-queens-ii/description/) | [c++](./leetcode/52.n-queens-ii.cpp), [python3](./leetcode/52.n-queens-ii.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 
 ## Line Sweep
 
@@ -699,7 +700,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(188) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(187) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
@@ -724,7 +725,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/) | [c++](./leetcode/44.wildcard-matching.cpp), [python3](./leetcode/44.wildcard-matching.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | [c++](./leetcode/45.jump-game-ii.cpp), [python3](./leetcode/45.jump-game-ii.py) | Other | \- | \- | - |
-| 2023-09 | [Leetcode-52. N Queens II](https://leetcode.com/problems/n-queens-ii/description/) | [c++](./leetcode/52.n-queens-ii.cpp), [python3](./leetcode/52.n-queens-ii.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | [c++](./leetcode/54.spiral-matrix.cpp), [python3](./leetcode/54.spiral-matrix.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-55. Jump Game](https://leetcode.com/problems/jump-game/description/) | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Other | \- | \- | - |
 | 2023-09 | [Leetcode-56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | [c++](./leetcode/56.merge-intervals.cpp), [python3](./leetcode/56.merge-intervals.py) | Other | \- | \- | - |

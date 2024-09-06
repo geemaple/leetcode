@@ -1,57 +1,63 @@
+//  Tag: Backtracking
+//  Time: O(N!)
+//  Space: O(N)
+//  Ref: -
+//  Note: -
+
+//  The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+//  Given an integer n, return the number of distinct solutions to the n-queens puzzle.
+//   
+//  Example 1:
+//  
+//  
+//  Input: n = 4
+//  Output: 2
+//  Explanation: There are two distinct solutions to the 4-queens puzzle as shown.
+//  
+//  Example 2:
+//  
+//  Input: n = 1
+//  Output: 1
+//  
+//   
+//  Constraints:
+//  
+//  1 <= n <= 9
+//  
+//  
+
 class Solution {
-private:
-    bool no_attack(vector<int>& ans, int y)
-    {
-        if (ans.size() == 0)
-        {
-            return true;
-        }
-        
-        int x = ans.size();
-        
-        for (auto i = 0; i < ans.size(); ++i)
-        {
-            int test_x = i;
-            int test_y = ans[i];
-            
-            if (y == test_y || x + y == test_x + test_y || x - y == test_x - test_y)
-            {
-                return false;
-            }
-        }
-        
-        return true;
-    }
-    
-    void helper(int n, vector<int>& ans, vector<vector<int>>& res)
-    {
-        if (ans.size() == n)
-        {
-            res.push_back(ans);
-            return;
-        }
-        
-        for (auto i = 0; i < n; ++i)
-        {
-            if (no_attack(ans, i))
-            {
-                ans.push_back(i);
-                helper(n, ans, res);
-                ans.pop_back();
-            }
-        }
-    }
 public:
     int totalNQueens(int n) {
-        if (n <= 0)
-        {
-            return 0;
+        unordered_set<int> cols;
+        unordered_set<int> dia;
+        unordered_set<int> anti_dia;
+
+        return helper(0, n, cols, dia, anti_dia);
+    }
+
+    int helper(int i, int n, unordered_set<int> &cols, unordered_set<int> &dia, unordered_set<int> &anti_dia) {
+        if (i == n) {
+            return 1;
         }
-        
-        vector<vector<int>> res;
-        vector<int> ans;
-        
-        helper(n, ans, res);
-        return res.size();
+
+        int count = 0;
+        for (int j = 0; j < n; j++) {
+            if (cols.count(j) || dia.count(i + j) || anti_dia.count(i - j)) {
+                continue;
+            }
+
+            cols.insert(j);
+            dia.insert(i + j);
+            anti_dia.insert(i - j);
+
+            count += helper(i + 1, n, cols, dia, anti_dia);
+            cols.erase(j);
+            dia.erase(i + j);
+            anti_dia.erase(i - j);
+        }
+
+        return count;
+
     }
 };

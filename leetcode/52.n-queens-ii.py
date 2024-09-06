@@ -1,42 +1,51 @@
-class Solution(object):
+#  Tag: Backtracking
+#  Time: O(N!)
+#  Space: O(N)
+#  Ref: -
+#  Note: -
 
-    count = 0
-    def totalNQueens(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        self.count = 0
-        cols = []
-        self.helper(n, cols)
+#  The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+#  Given an integer n, return the number of distinct solutions to the n-queens puzzle.
+#   
+#  Example 1:
+#  
+#  
+#  Input: n = 4
+#  Output: 2
+#  Explanation: There are two distinct solutions to the 4-queens puzzle as shown.
+#  
+#  Example 2:
+#  
+#  Input: n = 1
+#  Output: 1
+#  
+#   
+#  Constraints:
+#  
+#  1 <= n <= 9
+#  
+#  
 
-        return self.count
+class Solution:
+    def totalNQueens(self, n: int) -> int:
+        return  self.helper(0, n, set(), set(), set())
 
-    def helper(self, n, cols):
-        if len(cols) == n:
-            self.count += 1
-            return
+    def helper(self, i:int, n:int, col: set, dia: set, anti_dia: set) -> int:
 
-        for column in range(n):
-            if not self.is_valid(cols, column):
+        if i == n:
+            return 1
+
+        count = 0
+        for j in range(n):
+            if j in col or i + j in dia or i - j in anti_dia:
                 continue
 
-            cols.append(column)
-            self.helper(n, cols)
-            cols.pop()
+            col.add(j)
+            dia.add(i + j)
+            anti_dia.add(i - j)
+            count += self.helper(i + 1, n, col, dia, anti_dia)
+            col.remove(j)
+            dia.remove(i + j)
+            anti_dia.remove(i - j)
 
-
-    def is_valid(self, cols, column):
-        row = len(cols)
-
-        for row_index in range(row):
-            if cols[row_index] == column:
-                return False
-
-            if row_index + cols[row_index] == row + column:
-                return False
-
-            if row_index - cols[row_index] == row - column:
-                return False
-
-        return True
+        return count

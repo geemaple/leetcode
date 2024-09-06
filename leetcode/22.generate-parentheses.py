@@ -2,7 +2,7 @@
 #  Time: O(2^N)
 #  Space: O(N)
 #  Ref: -
-#  Note: -
+#  Note: Catalan Number
 
 #  Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 #   
