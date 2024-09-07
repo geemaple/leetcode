@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 180 problems
 
-**2024:** 251 problems
+**2024:** 252 problems
 
-**Total:** 431 problems
+**Total:** 432 problems
 
-**Updated:** 2024-09-07 18:33:52
+**Updated:** 2024-09-07 18:52:36
 
 ## 链接/Links
 
@@ -121,7 +121,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Update | Problem(13) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(14) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-67. Add Binary](https://leetcode.com/problems/add-binary/description/) | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | 2024-07 | [Leetcode-461. Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [c++](./leetcode/461.hamming-distance.cpp), [python3](./leetcode/461.hamming-distance.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -136,6 +136,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-07 | [Leetcode-260. Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | 2024-08 | [Leetcode-287. Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | 2024-09 | [Leetcode-3276. Select Cells In Grid With Maximum Score](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/description/) | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Bit Manipulation | O\(NM\*2^N\) | O\(2^N\) | - |
+| 2024-09 | [Leetcode-191. Number Of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) | [c++](./leetcode/191.number-of-1-bits.cpp), [python3](./leetcode/191.number-of-1-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 
 ## Simulation
 
@@ -491,7 +492,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Divide and Conquer
 
-| Update | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(18) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-07 | [Leetcode-4. Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python3](./leetcode/4.median-of-two-sorted-arrays.py) | Divide and Conquer | O\(log\(min\(M, N\)\)\) | O\(1\) | - |
 | 2024-07 | [Leetcode-215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Divide and Conquer | O\(N\) ～ O\(N^2\) | O\(1\) | - |
@@ -510,6 +511,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-08 | [Leetcode-106. Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | [c++](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.cpp), [python3](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-105. Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | [c++](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.cpp), [python3](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | 2024-08 | [Leetcode-109. Convert Sorted List To Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) | [c++](./leetcode/109.convert-sorted-list-to-binary-search-tree.cpp), [python3](./leetcode/109.convert-sorted-list-to-binary-search-tree.py) | Divide and Conquer | O\(NlogN\) | O\(logN\) | - |
+| 2024-09 | [Leetcode-191. Number Of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) | [c++](./leetcode/191.number-of-1-bits.cpp), [python3](./leetcode/191.number-of-1-bits.py) | Divide and Conquer | O\(1\) | O\(1\) | - |
 
 ## Breadth-First Search
 
