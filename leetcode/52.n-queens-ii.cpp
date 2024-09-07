@@ -61,3 +61,37 @@ public:
 
     }
 };
+
+class Solution {
+public:
+    int res = 0;
+
+    int totalNQueens(int n) {
+        helper(n, 0, 0, 0, 0);
+        return res;
+    }
+
+    void helper(int n, int row, int cols, int rd, int ld) {
+        // 如果当前行等于 n，说明已经成功放置了 n 个皇后
+        if (row == n) {
+            res += 1;
+            return;
+        }
+
+        // (cols | rd | ld) 三个方向取或，0就是没有占用的位置
+        // 〜取反，1就是没有占用的位置, 但是32位的头部0也会变成1
+        // 所以, ((1 << n) - 1) 只有后这些位置是有意义的。
+        int candidate = ~(cols | rd | ld) & ((1 << n) - 1);
+        
+        while (candidate > 0) {
+            // 得到末尾的1(负数的表示正数取反+1), 获得放置位置
+            int p = candidate & -candidate;
+
+            // 往下递归时，列垂直向下, ↖️↘️往右移一位, ↙️↗️往左移一位
+            helper(n, row + 1, cols | p, (rd | p) >> 1, (ld | p) << 1);
+            
+            // 消掉末尾的1
+            candidate &= candidate - 1;
+        }
+    }
+};
