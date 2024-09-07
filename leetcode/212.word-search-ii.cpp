@@ -1,115 +1,118 @@
+//  Tag: Array, String, Backtracking, Trie, Matrix
+//  Time: O(NM*4^L)
+//  Space: O(MN + KL)
+//  Ref: -
+//  Note: -
+
+//  Given an m x n board of characters and a list of strings words, return all words on the board.
+//  Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+//   
+//  Example 1:
+//  
+//  
+//  Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
+//  Output: ["eat","oath"]
+//  
+//  Example 2:
+//  
+//  
+//  Input: board = [["a","b"],["c","d"]], words = ["abcb"]
+//  Output: []
+//  
+//   
+//  Constraints:
+//  
+//  m == board.length
+//  n == board[i].length
+//  1 <= m, n <= 12
+//  board[i][j] is a lowercase English letter.
+//  1 <= words.length <= 3 * 104
+//  1 <= words[i].length <= 10
+//  words[i] consists of lowercase English letters.
+//  All the strings of words are unique.
+//  
+//  
+
 class TrieNode {
 public:
-    unordered_map<char, TrieNode *> children;
+    vector<TrieNode *> children;
     string word;
-    bool isWord;
-    ~TrieNode(){
-        for(auto it: children){
-            delete it.second; //:Fixme
+    bool is_word;
+    TrieNode(): children(26, nullptr), word(""), is_word(false) {
+    }
+
+    ~TrieNode() {
+        for (auto ptr: children) {
+            delete ptr;
         }
     }
 };
 
 class Trie {
 public:
-    
     TrieNode *root;
-    ~Trie(){
+    Trie(): root(new TrieNode()) {}
+    ~Trie() {
         delete root;
     }
-    
-    Trie(){
-        root = new TrieNode();
-    }
-    
-    void insert(string& word)
-    {
-        TrieNode *node = root;
-        for (auto c : word)
-        {
-            if (node->children.count(c) == 0)
-            {
-                node->children[c] = new TrieNode();
+
+    void add_word(string word) {
+        TrieNode *cur = root;
+        for (auto ch: word) {
+            if (!cur->children[ch - 'a']) {
+                cur->children[ch - 'a'] = new TrieNode();
             }
-            node = node->children[c];
+            cur = cur->children[ch - 'a'];
         }
-        node->isWord = true;
-        node->word = word;
+
+        cur->is_word = true;
+        cur->word = word;
     }
-    
-    TrieNode *search(TrieNode *node, char c)
-    {
-        if (node->children.count(c) == 0)
-        {
-            return NULL;
-        }
-    
-        return node->children[c];
-    }
+
 };
 
 class Solution {
-    int directions[4][2] = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}};
-private:
-    int convert_point(vector<vector<char>>& board, int x, int y)
-    {
-        return x * board[0].size() + y;
+public:
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
+        Trie trie;
+        for (auto word: words) {
+            trie.add_word(word);
+        }
+
+        vector<string> res;
+        for (int i = 0; i < board.size(); i++) {
+            for (int j = 0; j < board[i].size(); j++) {
+                helper(i, j, board, trie.root, res);
+            }
+        }
+        
+        return res;
     }
     
-    bool check_in_board(vector<vector<char>>& board, int x, int y)
-    {
-        return (x >= 0 && x < board.size() && y >= 0 && y < board[x].size());
-    }
-    
-    void search_dfs(vector<vector<char>>& board, int x, int y, unordered_set<int>& visted, Trie& trie, TrieNode *node, vector<string>& res)
-    {
-        
-        node = trie.search(node, board[x][y]);
-        
-        if (node == NULL)
-        {
+    void helper(int i, int j, vector<vector<char>>& board, TrieNode *node, vector<string> &res) {
+        char ch = board[i][j];
+        if (!node->children[ch - 'a']) {
             return;
         }
         
-        if (node->isWord)
-        {
-            node->isWord = false;
-            res.push_back(node->word);
+        TrieNode *next_node = node->children[ch - 'a'];
+        if (next_node->is_word) {
+            next_node->is_word = false;
+            res.push_back(next_node->word);
         }
         
-        int point = convert_point(board, x, y);
-        visted.insert(point);
-        for (auto direction: directions)
-        {
-            int new_x = x + direction[0];
-            int new_y = y + direction[1];
-            int new_point = convert_point(board, new_x, new_y);
-            if (check_in_board(board, new_x, new_y) && visted.count(new_point) == 0){
-                search_dfs(board, new_x, new_y, visted, trie, node, res);
+        char val = board[i][j];
+        board[i][j] = '#';
+        int directions[] = {-1, 0, 1, 0, -1};
+        for (int d = 0; d < 4; d++) {
+            int x = i + directions[d];
+            int y = j + directions[d + 1];
+            if (x >=0 && x < board.size() && y >= 0 && y < board[x].size() && board[x][y] != '#') {
+                helper(x, y, board, next_node, res);
             }
+            
         }
         
-        visted.erase(point);
-    }
-    
-public:
-    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
-        unordered_set<int> visted;
-        vector<string> res;
-        Trie trie;
-        
-        for (auto word: words){
-            trie.insert(word);
-        }
-        
-        for (int i = 0; i < board.size(); ++i)
-        {
-            for (int j = 0; j < board[i].size(); ++ j)
-            {
-                search_dfs(board, i, j, visted, trie, trie.root, res);
-            }
-        }
-
-        return res;
+        board[i][j] = val;
     }
 };
