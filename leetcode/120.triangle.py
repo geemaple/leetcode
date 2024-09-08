@@ -37,106 +37,80 @@
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         n = len(triangle)
-        dp = triangle[-1].copy()
+        m = len(triangle[-1])
 
-        for i in reversed(range(n - 1)):
+        dp = list(triangle[-1])
+        for i in range(n - 2, -1, -1):
             for j in range(len(triangle[i])):
-                dp[j] = triangle[i][j] + min(dp[j], dp[j + 1])
+                dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
 
         return dp[0]
         
 # DP top-down O(N^2)
-class SolutionDP_top_down(object):
-    def minimumTotal(self, triangle):
-        """
-        :type triangle: List[List[int]]
-        :rtype: int
-        """
-        table = [[0 for j in range(len(triangle[i]))] for i in range(len(triangle))]
+class Solution(object):
+    def minimumTotal(self, triangle: List[List[int]]) -> int:
+        n = len(triangle)
+        m = len(triangle[-1])
 
-        for i in range(len(triangle)):
-            for j in range(i + 1):
-                
-                table[i][j] = triangle[i][j]
-                if i - 1 >= 0:
-                    tmp = float('inf')
+        dp = [0 for i in range(m)]
+        dp[0] = triangle[0][0]
 
-                    if j - 1 >= 0:
-                        tmp = table[i - 1][j - 1]
-
-                    if j < i:
-                        tmp = min(tmp, table[i - 1][j])
-
-                    table[i][j] += tmp
-        return min(table[-1])
+        for i in range(1, n):
+            for j in range(len(triangle[i]) - 1, -1, -1):
+                if j == 0:
+                    dp[j] = dp[j] + triangle[i][j]
+                elif j == len(triangle[i]) - 1:
+                    dp[j] = dp[j - 1] + triangle[i][j]
+                else:
+                    dp[j] = min(dp[j - 1], dp[j]) + triangle[i][j]
+                      
+        return min(dp)
 
 # divideAndConquer + memory O(N^2) since (x, y), x, y each has N possible numbers
-class SolutionDFS_M(object):
-    def minimumTotal(self, triangle):
-        """
-        :type triangle: List[List[int]]
-        :rtype: int
-        """
-        memroy = {}
-        return self.divideAndConquer(triangle, memroy, 0, 0)
+class Solution(object):
+    def minimumTotal(self, triangle: List[List[int]]) -> int:
+        memory = {}
+        return self.helper(triangle, 0, 0, memory)
 
-    def divideAndConquer(self, triangle, mem, x, y):
-        if x >= len(triangle):
+    def helper(self, triangle, i, j, memory):
+        if i == len(triangle):
             return 0
 
-        if (x, y) in mem:
-            return mem[(x, y)]
+        if (i, j) not in memory:
+            left = self.helper(triangle, i + 1, j, memory)
+            right = self.helper(triangle, i + 1, j + 1, memory)
+            memory[(i, j)] = triangle[i][j] + min(left, right)
 
-        result = triangle[x][y] + min(
-            self.divideAndConquer(triangle, mem, x + 1, y),
-            self.divideAndConquer(triangle, mem, x + 1, y + 1),
-        )
-
-        mem[(x, y)] = result
-
-        return result
+        return memory[(i, j)]
 
 
 # DFS O(2^N)
-class SolutionDC(object):
+class Solution(object):
+    def minimumTotal(self, triangle: List[List[int]]) -> int:
+        return self.helper(triangle, 0, 0)
 
-    def minimumTotal(self, triangle):
-        """
-        :type triangle: List[List[int]]
-        :rtype: int
-        """
-        return self.divideAndConquer(triangle, 0, 0)
-
-    def divideAndConquer(self, triangle, x, y):
-        if x >= len(triangle):
+    def helper(self, triangle, i, j):
+        if i == len(triangle):
             return 0
 
-        return triangle[x][y] + min(
-            self.divideAndConquer(triangle, x + 1, y),
-            self.divideAndConquer(triangle, x + 1, y + 1),
-        )
+        left = self.helper(triangle, i + 1, j)
+        right = self.helper(triangle, i + 1, j + 1)
+        return triangle[i][j] + min(left, right)
 
 # DFS O(2^N)
-class SolutionDFS(object):
-
-    min_sum = float('inf')
-    def minimumTotal(self, triangle):
-        """
-        :type triangle: List[List[int]]
-        :rtype: int
-        """
+class Solution(object):
+    def minimumTotal(self, triangle: List[List[int]]) -> int:
+        self.min_sum = float('inf')
         tmp = []
-        self.dfs(triangle, tmp, 0, 0)
+        self.helper(triangle, tmp, 0, 0)
         return self.min_sum
 
-    def dfs(self, triangle, tmp, x, y):
-        if x >= len(triangle):
-            result = sum(tmp)
-            if result < self.min_sum:
-                self.min_sum = result
+    def helper(self, triangle, tmp, i, j):
+        if i == len(triangle):
+            self.min_sum = min(self.min_sum, sum(tmp))
             return
 
-        tmp.append(triangle[x][y])
-        self.dfs(triangle, tmp, x + 1, y)
-        self.dfs(triangle, tmp, x + 1, y + 1)
+        tmp.append(triangle[i][j])
+        self.helper(triangle, tmp, i + 1, j)
+        self.helper(triangle, tmp, i + 1, j + 1)
         tmp.pop()

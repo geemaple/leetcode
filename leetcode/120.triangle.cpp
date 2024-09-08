@@ -47,6 +47,70 @@ public:
         }
 
         return dp[0];
+    }
+};
 
+class Solution {
+public:
+    int minimumTotal(vector<vector<int>>& triangle) {
+        int n = triangle.size();
+        int m = triangle[n - 1].size();
+
+        vector<int> dp(m, 0);
+        dp[0] = triangle[0][0];
+
+        for (int i = 1; i < n; ++i) {
+            for (int j = triangle[i].size() - 1; j >= 0; --j) {
+                if (j == 0) {
+                    dp[j] = dp[j] + triangle[i][j];
+                } else if (j == triangle[i].size() - 1) {
+                    dp[j] = dp[j - 1] + triangle[i][j];
+                } else {
+                    dp[j] = min(dp[j - 1], dp[j]) + triangle[i][j];
+                }
+            }
+        }
+        
+        return *min_element(dp.begin(), dp.end());
+    }
+};
+
+class Solution {
+public:
+    int minimumTotal(vector<vector<int>>& triangle) {
+        unordered_map<int, int> cache;
+        return helper(triangle, 0, 0, cache);
+    }
+
+    int helper(vector<vector<int>>& triangle, int i, int j, unordered_map<int, int> &cache) {
+        if (i == triangle.size()) {
+            return 0;
+        }
+
+        int index = (1 + i) * i / 2 + j;
+        if (cache.count(index) == 0) {
+            int left = helper(triangle, i + 1, j, cache);
+            int right = helper(triangle, i + 1, j + 1, cache);
+            cache[index] = min(left, right) + triangle[i][j];
+        }
+
+        return cache[index];
+    }
+};
+
+class Solution {
+public:
+    int minimumTotal(vector<vector<int>>& triangle) {
+        return helper(triangle, 0, 0);
+    }
+
+    int helper(vector<vector<int>>& triangle, int i, int j) {
+        if (i == triangle.size()) {
+            return 0;
+        }
+
+        int left = helper(triangle, i + 1, j);
+        int right = helper(triangle, i + 1, j + 1);
+        return min(left, right) + triangle[i][j];
     }
 };
