@@ -58,3 +58,31 @@ class Solution:
                     dp[i][j] = min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1
 
         return dp[m][n]
+
+
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        n = len(word1)
+        m = len(word2)
+        cache = [[None] * m for i in range(n)]
+        return self.helper(word1, word2, 0, 0, cache) # dict cache is too slow
+
+    def helper(self, word1: str, word2: str, i :int, j: int, cache: dict) -> int:
+        if i == len(word1):
+            return len(word2) - j
+
+        if j == len(word2):
+            return len(word1) - i
+
+        if cache[i][j] is not None:
+            return cache[i][j]
+
+        if word1[i] == word2[j]:
+            cache[i][j] = self.helper(word1, word2, i + 1, j + 1, cache)
+        else:
+            insert = self.helper(word1, word2, i, j + 1, cache) + 1
+            delete = self.helper(word1, word2, i + 1, j, cache) + 1
+            replace = self.helper(word1, word2, i + 1, j + 1, cache) + 1
+            cache[i][j] = min(insert, delete, replace)
+
+        return cache[i][j]
