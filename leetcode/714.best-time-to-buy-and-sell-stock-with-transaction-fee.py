@@ -52,14 +52,12 @@ class Solution:
 
 class Solution:
     def maxProfit(self, prices: List[int], fee: int) -> int:
-        n = len(prices)
         buy = float('-inf')
         sell = 0
 
-        for i in range(1, n + 1):
-            next_buy = max(buy, sell - prices[i - 1])
-            next_sell = max(sell, next_buy + prices[i - 1] - fee)
+        for p in prices:
+            buy = max(buy, sell - p)
+            sell = max(sell, buy + p - fee)
 
-            buy, sell = next_buy, next_sell
-            
         return sell
+        
