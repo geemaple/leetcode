@@ -32,6 +32,24 @@
 class Solution {
 public:
     int maxProfit(int k, vector<int>& prices) {
+        k = min(k, (int)prices.size() / 2);
+        vector<int> buy = vector<int>(k + 1, INT_MIN);
+        vector<int> sell = vector<int>(k + 1, 0);
+
+        for (auto p: prices) {
+            for (int i = 1; i <= k; i++) {
+                buy[i] = max(buy[i], sell[i - 1] - p);
+                sell[i] = max(sell[i], buy[i] + p);
+            }
+        }
+
+        return *max_element(sell.begin(), sell.end());
+    }
+};
+
+class Solution {
+public:
+    int maxProfit(int k, vector<int>& prices) {
         if (prices.size() < 2) {
             return 0;
         }
