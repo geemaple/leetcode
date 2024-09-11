@@ -55,3 +55,50 @@ public:
         }
     }
 };
+
+class UnionFind {
+public:
+    vector<int> table;
+    UnionFind(int n) {
+        table.resize(n);
+        for (int i = 0; i < n; i++) {
+            table[i] = i;
+        }
+    }
+
+    int find(int a) {
+        if (a == table[a]) {
+            return a;
+        }
+
+        table[a] = find(table[a]);
+        return table[a];
+    }
+
+    bool connect(int a, int b) {
+        int root_a = find(a);
+        int root_b = find(b);
+        if (root_a != root_b) {
+            table[root_a] = root_b;
+            return true;
+        }
+        return false;
+    }
+};
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        int n = isConnected.size();
+        int count = n;
+        UnionFind uf = UnionFind(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j ++) {
+                if (isConnected[i][j] && uf.connect(i, j)) {
+                    count--;
+                }
+            }
+        }
+
+        return count;
+    }
+};

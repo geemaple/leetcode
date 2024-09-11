@@ -49,3 +49,33 @@ class Solution:
         for j in range(len(isConnected)):
             if isConnected[i][j] == 1 and j not in visited:
                 self.dfs(isConnected, j, visited)
+
+class UnionFind:
+    def __init__(self, n):
+        self.table = [i for i in range(n)]
+
+    def find(self, a):
+        if a == self.table[a]:
+            return a
+
+        self.table[a] = self.find(self.table[a])
+        return self.table[a]
+
+    def connect(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.table[root_a] = root_b
+            return True
+        return False
+
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        n = len(isConnected)
+        count = n
+        uf = UnionFind(n)
+        for i in range(n):
+            for j in range(i):
+                if isConnected[i][j] and uf.connect(i, j):
+                    count -= 1
+        return count
