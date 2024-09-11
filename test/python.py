@@ -4,21 +4,34 @@ from collections import defaultdict
 import heapq
 
 from collections import defaultdict
+from collections import deque
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        n = len(prices)
-        buy = [float('-inf') for i in range(n + 1)]
-        sell = [0 for i in range(n + 1)]
-        rest = [0 for i in range(n + 1)]
+    def numIslands(self, grid: List[List[str]]) -> int:
+        n = len(grid)
+        m = len(grid[0])
 
-        for i in range(1, n + 1):
-            p = prices[i - 1]
-            buy[i] = max(buy[i - 1], rest[i - 1] - p)
-            rest[i] = max(rest[i - 1], sell[i - 1])
-            sell[i] = max(sell[i - 1], buy[i] + p)
+        directions = [-1, 0, 1, 0, -1]
+        count = 0
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == '1':
+                    count += 1
+                    q = deque()
+                    q.append((i, j))
+                    grid[i][j] = '0'
+                    while(len(q) > 0):
+                        x, y = q.popleft()
+                        for k in range(4):
+                            new_x = x + directions[k]
+                            new_y = y + directions[k + 1]
+                            if 0 <= new_x < n and 0 <= new_y < m and grid[new_x][new_y] == '1':
+                                grid[new_x][new_y] = '0'
+                                q.append((new_x, new_y))
 
-        return sell[n]
+        return count
+
+
 
 s = Solution()
-res = s.maxProfit([1,2,3,0,2])
+res = s.numIslands([["1","0"]])
 print(res)
