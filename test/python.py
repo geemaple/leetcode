@@ -2,36 +2,36 @@
 from typing import List
 from collections import defaultdict
 import heapq
-
-from collections import defaultdict
 from collections import deque
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
-        n = len(grid)
-        m = len(grid[0])
+    def maxPossibleScore(self, start: List[int], d: int) -> int:
+        n = len(start)
+        start.sort()
+        right = float('inf')
+        for i in range(1, n):
+            right = min(right, start[i] - start[i - 1])
 
-        directions = [-1, 0, 1, 0, -1]
-        count = 0
-        for i in range(n):
-            for j in range(m):
-                if grid[i][j] == '1':
-                    count += 1
-                    q = deque()
-                    q.append((i, j))
-                    grid[i][j] = '0'
-                    while(len(q) > 0):
-                        x, y = q.popleft()
-                        for k in range(4):
-                            new_x = x + directions[k]
-                            new_y = y + directions[k + 1]
-                            if 0 <= new_x < n and 0 <= new_y < m and grid[new_x][new_y] == '1':
-                                grid[new_x][new_y] = '0'
-                                q.append((new_x, new_y))
+        left = 0
+        right = right + d
+        while left < right:
+            mid = (left + right) // 2
+            if self.fit(start, d, mid):
+                right = mid
+            else:
+                right = mid + 1
 
-        return count
+        return left
 
+    def fit(self, start: list, d: int, ans:int) -> bool:
+        pos = start[0]
+        i = 1
 
+        while i < len(start) and pos + ans <= start[i] + d:
+            pos = max(start[i], pos + ans)
+            i += 1
+            
+        return i == len(start)
 
 s = Solution()
-res = s.numIslands([["1","0"]])
+res = s.maxPossibleScore([6,0,3], 2)
 print(res)
