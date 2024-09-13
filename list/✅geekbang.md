@@ -102,9 +102,3 @@
 ### LRU
 
 58. https://leetcode.com/problems/lru-cache/
-
-### 重复链接
-
-1. https://leetcode.com/problems/valid-anagram/
-2. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
-3. https://leetcode.com/problems/n-queens-ii/
