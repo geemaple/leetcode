@@ -10,13 +10,9 @@ This is an open-source project that is continually updated
 
 # 统计/Statistic
 
-**2023:** 177 problems
+**Total:** 259/436 problems
 
-**2024:** 259 problems
-
-**Total:** 436 problems
-
-**Updated:** 2024-09-13 16:13:49
+**Updated:** 2024-09-13 17:17:37
 
 ## 链接/Links
 
@@ -38,10 +34,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## 列表/List
 
-- [✅leetcode101.md](./list/✅leetcode101.md)
 - [✅geekbang.md](./list/✅geekbang.md)
-- [lee215.md](./list/lee215.md)
-- [9chapter.md](./list/9chapter.md)
+- [✅leetcode101.md](./list/✅leetcode101.md)
+- [❎lee215.md](./list/❎lee215.md)
+- [🚧9chapter-top.md](./list/🚧9chapter-top.md)
 
 ## 书籍/Books
 

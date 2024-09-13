@@ -248,7 +248,7 @@ class Solution:
         for source in directories:
             for file_name in os.listdir(source):
                 res.append(file_name)
-        return res
+        return sorted(res)
 
     @staticmethod
     @lru_cache()
@@ -305,11 +305,10 @@ class Solution:
                 visited.add(s)
                 year_archive[s.update.year].add(s)
 
-        for year in sorted(year_archive.keys()):
-            res.append(f'**{year}:** {len(year_archive[year])} problems')
-
-        res.append(f"**Total:** {len(statistic_dict)} problems")
-        res.append(f"**Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        now = datetime.now()
+        current_year = now.year
+        res.append(f"**Total:** {len(year_archive[current_year])}/{len(statistic_dict)} problems")
+        res.append(f"**Updated:** {now.strftime('%Y-%m-%d %H:%M:%S')}")
 
         count = 0
         duplicates = []
