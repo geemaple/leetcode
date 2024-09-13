@@ -1,55 +1,52 @@
-# greedy O(N)
-class Solution(object):
-    def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        last_pos = len(nums) - 1
-        for i in range(last_pos, -1, -1):
-            if i + nums[i] >= last_pos:
-                last_pos = i
-        
-        return last_pos == 0
+#  Tag: Array, Dynamic Programming, Greedy
+#  Time: O(N)
+#  Space: O(1)
+#  Ref: -
+#  Note: -
 
-# DP
-# table[i] = or (table[pre] >= i - pre)
-# O(N ^ 2) Time Limit Exceeded
-class Solution2(object):
-    def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        table = [False] * len(nums)
-        table[0] = True
+#  You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.
+#  Return true if you can reach the last index, or false otherwise.
+#   
+#  Example 1:
+#  
+#  Input: nums = [2,3,1,1,4]
+#  Output: true
+#  Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+#  
+#  Example 2:
+#  
+#  Input: nums = [3,2,1,0,4]
+#  Output: false
+#  Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+#  
+#   
+#  Constraints:
+#  
+#  1 <= nums.length <= 104
+#  0 <= nums[i] <= 105
+#  
+#  
 
-        for i in range(len(nums)):
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        n = len(nums)
+        cur = nums[0]
+        for i in range(1, n):
+            if i > cur:
+                return False
+            cur = max(cur, i + nums[i])
+
+        return True
+    
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        n = len(nums)
+        dp = [False for i in range(n)]
+        dp[0] = True
+        for i in range(n):
             for j in range(i):
-                if table[j] and nums[j] >= i - j:
-                    table[i] = True
+                if dp[j] and i - j <= nums[j]:
+                    dp[i] = True
                     break
 
-        return table[-1]
-
-# DFS O(2^N) Time Limit Exceeded
-# [3, 2, 1, 0 ,4]
-class Solution3(object):
-    def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """  
-        return self.can_jump_from_position(0, nums)
-
-    def can_jump_from_position(self, pos, nums):
-        if pos == len(nums) - 1:
-            return True
-
-        furthest = min(len(nums) - 1, pos + nums[pos])
-       
-        for i in range(pos + 1, furthest + 1):
-            if self.can_jump_from_position(i, nums):
-                return True 
-
-        return False
+        return dp[-1]
