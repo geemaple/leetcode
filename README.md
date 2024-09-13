@@ -12,11 +12,11 @@ This is an open-source project that is continually updated
 
 **2023:** 177 problems
 
-**2024:** 258 problems
+**2024:** 259 problems
 
-**Total:** 435 problems
+**Total:** 436 problems
 
-**Updated:** 2024-09-12 16:03:35
+**Updated:** 2024-09-13 16:13:49
 
 ## 链接/Links
 
@@ -41,6 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - [✅leetcode101.md](./list/✅leetcode101.md)
 - [✅geekbang.md](./list/✅geekbang.md)
 - [lee215.md](./list/lee215.md)
+- [9chapter.md](./list/9chapter.md)
 
 ## 书籍/Books
 
@@ -171,7 +172,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Update | Problem(18) | Solution | Tag | Time | Space | Ref |
+| Update | Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-135. Candy](https://leetcode.com/problems/candy/description/) | [c++](./leetcode/135.candy.cpp), [python3](./leetcode/135.candy.py) | Greedy | O\(N\) | O\(N\) | - |
 | 2024-06 | [Leetcode-605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/) | [c++](./leetcode/605.can-place-flowers.cpp), [python3](./leetcode/605.can-place-flowers.py) | Greedy | O\(N\) | O\(N\) | - |
@@ -191,6 +192,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-09 | [Leetcode-860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/) | [c++](./leetcode/860.lemonade-change.cpp), [python3](./leetcode/860.lemonade-change.py) | Greedy | O\(N\) | O\(1\) | - |
 | 2024-09 | [Leetcode-714. Best Time To Buy And Sell Stock With Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) | [c++](./leetcode/714.best-time-to-buy-and-sell-stock-with-transaction-fee.cpp), [python3](./leetcode/714.best-time-to-buy-and-sell-stock-with-transaction-fee.py) | Greedy | O\(N\) | O\(N\) | - |
 | 2024-09 | [Leetcode-3281. Maximize Score Of Numbers In Ranges](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/description/) | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Greedy | O\(NlogN \+ NlogD\) | O\(1\) | - |
+| 2024-09 | [Leetcode-3282. Reach End Of Array With Max Score](https://leetcode.com/problems/reach-end-of-array-with-max-score/description/) | [c++](./leetcode/3282.reach-end-of-array-with-max-score.cpp), [python3](./leetcode/3282.reach-end-of-array-with-max-score.py) | Greedy | O\(N\) | O\(1\) | - |
 
 ## Dynamic Programming
 

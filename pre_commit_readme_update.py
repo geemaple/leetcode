@@ -73,10 +73,10 @@ TAG_MAP = {
     TAG_DFS: [TAG_BTRACK, TAG_TOPOLOGICAL_SORT, TAG_SHORTEST_PATH],
 }
 
-TAG_IGNORE = r'-|Interactive'
+TAG_IGNORE = r'-'
 
 TAG_REGEX = {
-    TAG_MATH: r'Math|Number Theory',
+    TAG_MATH: r'Math|Number Theory|Geometry',
     TAG_DESIGN: r'^Design$|Iterator',
     TAG_BS: r'^Binary Search$|Binary Search on Answer',
     TAG_2P: r'^Two Pointers$|Same Direction Two Pointers',
@@ -90,6 +90,7 @@ TAG_REGEX = {
     TAG_HASH: r'^Hash Table$|Hash Function',
     FOLD_TAG_TREE: r'^Tree$|Binary Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
+    FOLD_TAG_STR: r'^String$|^String Matching$',
 }
 
 LANGUAGE = {
@@ -166,16 +167,16 @@ class Markdown:
     @staticmethod 
     def table_content(f, categories):
         print('----table content----')
-        def search_tag(solution):
+        def search_tag(solution, unkown_tags):
             tags = solution.tags
             match_all = set()
-
+            
             for tag in tags.split(', '):
                 match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, rf"^{x}$"), tag, re.IGNORECASE)])
                 if len(match_category) > 0:
                     match_all.update(match_category)
                 elif not re.search(TAG_IGNORE, tag):
-                    print(f'{tag}/[{solution.tags}] - {solution}')
+                    unkown_tags[solution] = tag
 
             duplicates = {x for x in match_all if x in TAG_MAP and any(sub in match_all for sub in TAG_MAP[x])}
             fold_category = set([x for x in (match_all - duplicates) if x in FOLD_STRUCTURES])
@@ -190,11 +191,14 @@ class Markdown:
             return {CATEGORY_OTHER}
 
         category_set = collections.defaultdict(list)
-
+        unkown_tags = {}
         for s in Solution.all():
-            for category in search_tag(s):
-                category_set[category].append(s)                                     
-        
+            for category in search_tag(s, unkown_tags):
+                category_set[category].append(s)      
+
+        for solution, tag in sorted(unkown_tags.items(), key=lambda x: x[1]):
+            print(f'{tag}/[{solution.tags}] - {solution}')
+
         for category in categories:
             if len(category_set[category]) == 0:
                 continue
