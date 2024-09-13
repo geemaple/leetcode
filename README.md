@@ -8,11 +8,16 @@ My Personal LeetCode Solutions
 
 This is an open-source project that is continually updated
 
-# 统计/Statistic
-
 **Total:** 259/436 problems
 
-**Updated:** 2024-09-13 17:17:37
+**Updated:** 2024-09-13 17:19:57
+
+## 列表/List
+
+- [✅geekbang.md](./list/✅geekbang.md)
+- [✅leetcode101.md](./list/✅leetcode101.md)
+- [❎lee215.md](./list/❎lee215.md)
+- [🚧9chapter-top.md](./list/🚧9chapter-top.md)
 
 ## 链接/Links
 
@@ -31,13 +36,6 @@ python problem.py <leetcode/lintcode> [-l java|cpp|python(default)] [-t]
 python problem.py https://leetcode.com/problems/online-stock-span/
 python problem.py https://www.lintcode.com/problem/92 -l cpp
 ```
-
-## 列表/List
-
-- [✅geekbang.md](./list/✅geekbang.md)
-- [✅leetcode101.md](./list/✅leetcode101.md)
-- [❎lee215.md](./list/❎lee215.md)
-- [🚧9chapter-top.md](./list/🚧9chapter-top.md)
 
 ## 书籍/Books
 

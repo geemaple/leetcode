@@ -391,8 +391,10 @@ if __name__ == "__main__":
             "My Personal LeetCode Solutions",
             "This is an open-source project that is continually updated"])
 
-        Markdown.title1(f, "统计/Statistic")
         Markdown.paragraph(f, Solution.statistic())
+
+        Markdown.title2(f, "列表/List")
+        Markdown.bullet(f, [Markdown.link(p, f'./list/{p}') for p in Solution.list()])
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
@@ -411,9 +413,6 @@ if __name__ == "__main__":
             "python problem.py https://leetcode.com/problems/online-stock-span/",
             "python problem.py https://www.lintcode.com/problem/92 -l cpp",
         ])
-
-        Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [Markdown.link(p, f'./list/{p}') for p in Solution.list()])
 
         Markdown.title2(f, "书籍/Books")
         Markdown.bullet(f, [
