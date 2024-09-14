@@ -269,6 +269,9 @@ class Solution:
                     find = [sub in solutions for sub in parsed_link.path.split('/') if len(sub) > 0]
                     if any(find):
                         solved.add(link)
+
+            if 0.9 < len(solved) / len(total) < 1:
+                print(f'VIP: {total - solved}')
                             
             res.append((name, file_path, f"{len(solved)}/{len(total)}"))
   
@@ -326,7 +329,6 @@ class Solution:
 
         now = datetime.now()
         res.append(f"**Total**: {len(statistic_dict)} problems")
-        res.append(f"**Updated:** {now.strftime('%Y-%m-%d %H:%M:%S')}")
 
         count = 0
         duplicates = []

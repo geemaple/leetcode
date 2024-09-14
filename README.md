@@ -6,8 +6,6 @@ LeetCode solutions, written in python and cpp
 
 **Total**: 436 problems
 
-**Updated:** 2024-09-14 21:46:09
-
 ## 列表/List
 
 - [9c-advanced.md](./list/list/9c-advanced.md)	60/87
