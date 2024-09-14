@@ -4,34 +4,17 @@ from collections import defaultdict
 import heapq
 from collections import deque
 class Solution:
-    def maxPossibleScore(self, start: List[int], d: int) -> int:
-        n = len(start)
-        start.sort()
-        right = float('inf')
-        for i in range(1, n):
-            right = min(right, start[i] - start[i - 1])
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        dp = [float('inf') for i in range(amount + 1)]
+        dp[0] = 0
 
-        left = 0
-        right = right + d
-        while left < right:
-            mid = (left + right) // 2
-            if self.fit(start, d, mid):
-                right = mid
-            else:
-                right = mid + 1
+        for i in range(1, amount + 1):
+            for c in coins:
+                if i >= c and dp[i - c] + 1 < dp[i]:
+                    dp[i] = dp[i - c] + 1
 
-        return left
-
-    def fit(self, start: list, d: int, ans:int) -> bool:
-        pos = start[0]
-        i = 1
-
-        while i < len(start) and pos + ans <= start[i] + d:
-            pos = max(start[i], pos + ans)
-            i += 1
-            
-        return i == len(start)
+        return dp[amount]
 
 s = Solution()
-res = s.maxPossibleScore([6,0,3], 2)
+res = s.coinChange([1,2,5], 11)
 print(res)

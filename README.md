@@ -8,9 +8,9 @@ My Personal LeetCode Solutions
 
 This is an open-source project that is continually updated
 
-**Total: 261** / **436** problems
+**Total: 262** / **436** problems
 
-**Updated:** 2024-09-13 20:44:11
+**Updated:** 2024-09-14 17:59:38
 
 ## 列表/List
 
@@ -194,7 +194,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Update | Problem(51) | Solution | Tag | Time | Space | Note | Ref |
+| Update | Problem(52) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | 2024-06 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
@@ -247,6 +247,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-09 | [Leetcode-72. Edit Distance](https://leetcode.com/problems/edit-distance/description/) | [c++](./leetcode/72.edit-distance.cpp), [python3](./leetcode/72.edit-distance.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | 2024-09 | [Leetcode-62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | 2024-09 | [Leetcode-55. Jump Game](https://leetcode.com/problems/jump-game/description/) | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | \- | - |
+| 2024-09 | [Leetcode-63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [c++](./leetcode/63.unique-paths-ii.cpp), [python3](./leetcode/63.unique-paths-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | \- | - |
 
 ## Binary Search
 
@@ -720,7 +721,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(179) | Solution | Tag | Time | Space | Note | Ref |
+| Update | Problem(178) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | \- | - |
@@ -748,7 +749,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | [c++](./leetcode/56.merge-intervals.cpp), [python3](./leetcode/56.merge-intervals.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-57. Insert Interval](https://leetcode.com/problems/insert-interval/description/) | [c++](./leetcode/57.insert-interval.cpp), [python3](./leetcode/57.insert-interval.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-61. Rotate List](https://leetcode.com/problems/rotate-list/description/) | [python3](./leetcode/61.rotate-list.py) | Other | \- | \- | \- | - |
-| 2023-09 | [Leetcode-63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [c++](./leetcode/63.unique-paths-ii.cpp), [python3](./leetcode/63.unique-paths-ii.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-66. Plus One](https://leetcode.com/problems/plus-one/description/) | [c++](./leetcode/66.plus-one.cpp), [python3](./leetcode/66.plus-one.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-68. Text Justification](https://leetcode.com/problems/text-justification/description/) | [python3](./leetcode/68.text-justification.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-78. Subsets](https://leetcode.com/problems/subsets/description/) | [c++](./leetcode/78.subsets.cpp), [python3](./leetcode/78.subsets.py) | Other | \- | \- | \- | - |
