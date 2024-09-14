@@ -97,7 +97,7 @@
 ### 并查
 
 56. https://leetcode.com/problems/number-of-islands/
-57. https://leetcode.com/problems/friend-circles/
+57. https://leetcode.com/problems/number-of-provinces/
 
 ### LRU
 

@@ -1,26 +1,22 @@
 # 算法/Algorithm
 
-我个人的力扣答案, **公众号:GeekPal**
+LeetCode解题报告，记录自己的leetcode成长之路
 
-这是一个持续更新的开源项目
+LeetCode solutions, written in python and cpp
 
-My Personal LeetCode Solutions
+**Total**: 436 problems
 
-This is an open-source project that is continually updated
-
-**Total: 265** / **436** problems
-
-**Updated:** 2024-09-14 20:29:50
+**Updated:** 2024-09-14 21:43:37
 
 ## 列表/List
 
-- [✅geekbang.md](./list/✅geekbang.md)
-- [✅leetcode101.md](./list/✅leetcode101.md)
-- [❎lee215.md](./list/❎lee215.md)
-- [🚧9c-advanced.md](./list/🚧9c-advanced.md)
-- [🚧9c-basic.md](./list/🚧9c-basic.md)
-- [🚧9c-dp.md](./list/🚧9c-dp.md)
-- [🚧9c-top.md](./list/🚧9c-top.md)
+- [9c-advanced.md(60/87)](./list/list/9c-advanced.md)
+- [9c-basic.md(81/130)](./list/list/9c-basic.md)
+- [9c-dp.md(10/10)](./list/list/9c-dp.md)
+- [9c-top.md(25/49)](./list/list/9c-top.md)
+- [geekbang.md(55/55)](./list/list/geekbang.md)
+- [lee215.md(2/34)](./list/list/lee215.md)
+- [leetcode101.md(183/184)](./list/list/leetcode101.md)
 
 ## 链接/Links
 

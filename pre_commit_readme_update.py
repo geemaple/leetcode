@@ -15,6 +15,7 @@ import re
 import collections
 from functools import lru_cache
 from datetime import datetime 
+from urllib.parse import urlparse
 
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
@@ -244,13 +245,35 @@ class Markdown:
 
 class Solution:
     @staticmethod
-    def list(directories=['list']) -> str:
+    def list(dir="list") -> str:
         res = []
-        for source in directories:
-            for file_name in os.listdir(source):
-                res.append(file_name)
-        return sorted(res)
+        solutions = set([s.name for s in Solution.all()])
+        file_names = os.listdir(dir)
 
+        for name in file_names:
+            file_path = os.path.join(dir, name)
+            total = set()
+            solved = set()
+            with open(file_path, 'r') as file:
+                for line in file.readlines():
+                    match = re.match(r'^\s*(\d+)\.\s+(.*)', line)
+                    if match is None:
+                        continue
+                    
+                    link = match.group(2)
+                    parsed_link = urlparse(link)
+                    if parsed_link.netloc not in ['leetcode.com', 'www.lintcode.com']:
+                        continue
+                    
+                    total.add(link)
+                    find = [sub in solutions for sub in parsed_link.path.split('/') if len(sub) > 0]
+                    if any(find):
+                        solved.add(link)
+                            
+            res.append((name, file_path, f"{len(solved)}/{len(total)}"))
+  
+        return sorted(res)
+    
     @staticmethod
     @lru_cache()
     def all(directories=['leetcode', 'lintcode']) -> int:
@@ -296,19 +319,13 @@ class Solution:
     @staticmethod
     def statistic() -> int:
         statistic_dict = collections.defaultdict(list)
-        year_archive = collections.defaultdict(set)
-        visited = set()
 
         res = []
         for s in Solution.all():
             statistic_dict[s.name].append(s)
-            if s not in visited:
-                visited.add(s)
-                year_archive[s.update.year].add(s)
 
         now = datetime.now()
-        current_year = now.year
-        res.append(f"**Total: {len(year_archive[current_year])}** / **{len(statistic_dict)}** problems")
+        res.append(f"**Total**: {len(statistic_dict)} problems")
         res.append(f"**Updated:** {now.strftime('%Y-%m-%d %H:%M:%S')}")
 
         count = 0
@@ -387,15 +404,13 @@ if __name__ == "__main__":
         
         Markdown.title1(f, "算法/Algorithm")
         Markdown.paragraph(f, [
-            "我个人的力扣答案, **公众号:GeekPal**",
-            "这是一个持续更新的开源项目",
-            "My Personal LeetCode Solutions",
-            "This is an open-source project that is continually updated"])
+            "LeetCode解题报告，记录自己的leetcode成长之路", 
+            "LeetCode solutions, written in python and cpp"])
 
         Markdown.paragraph(f, Solution.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [Markdown.link(p, f'./list/{p}') for p in Solution.list()])
+        Markdown.bullet(f, [Markdown.link(f'{name}({progress})', f'./list/{path}') for name, path, progress in Solution.list()])
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [

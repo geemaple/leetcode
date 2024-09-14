@@ -42,7 +42,7 @@
 ### 搜索
 
 28. https://leetcode.com/problems/max-area-of-island/
-29. https://leetcode.com/problems/friend-circles/
+29. https://leetcode.com/problems/number-of-provinces/
 30. https://leetcode.com/problems/pacific-atlantic-water-flow/
 31. https://leetcode.com/problems/permutations/
 32. https://leetcode.com/problems/combinations/
@@ -164,7 +164,7 @@
 129. https://leetcode.com/problems/palindromic-substrings/
 130. https://leetcode.com/problems/count-binary-substrings/
 131. https://leetcode.com/problems/basic-calculator-ii/
-132. https://leetcode.com/problems/implement-strstr/
+132. https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
 133. https://leetcode.com/problems/longest-palindrome/
 134. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 135. https://leetcode.com/problems/basic-calculator-iii/
