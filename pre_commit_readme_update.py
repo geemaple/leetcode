@@ -208,7 +208,7 @@ class Markdown:
             for s in category_set[category]:
                 solution_set[s.key].append(s.local_path)
             
-            Markdown.table_header(f, ['Update', f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Note', 'Ref'])
+            Markdown.table_header(f, ['Link', f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Note', 'Ref'])
             sorted_solutions = sorted(category_set[category], key=lambda s: (s.update, s.source, int(s.number)))
             
             for solution in sorted_solutions:
@@ -218,8 +218,8 @@ class Markdown:
                 codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
-                    solution.problem_source,
-                    solution.problem_link,
+                    solution.link,
+                    solution.title,
                     codes,
                     category,
                     solution.time,
@@ -350,15 +350,11 @@ class Solution:
         return f'{self.source}-{self.name}'
 
     @property
-    def problem_source(self):
-        return f'{self.source}-{self.number}'
-
-    @property
-    def problem_link(self) -> str:
+    def link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return Markdown.link(self.title, f'https://leetcode.com/problems/{self.name}/description/')
+            return Markdown.link(f'{self.source}-{self.number}', f'https://leetcode.com/problems/{self.name}')
         if self.source.lower() == 'lintcode':
-            return Markdown.link(self.title, f'https://www.lintcode.com/problem/{self.name}')
+            return Markdown.link(f'{self.source}-{self.number}', f'https://www.lintcode.com/problem/{self.name}')
         else:
             return f'#'
         
