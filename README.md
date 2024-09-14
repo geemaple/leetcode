@@ -8,9 +8,9 @@ My Personal LeetCode Solutions
 
 This is an open-source project that is continually updated
 
-**Total: 262** / **436** problems
+**Total: 263** / **436** problems
 
-**Updated:** 2024-09-14 17:59:38
+**Updated:** 2024-09-14 18:16:31
 
 ## 列表/List
 
@@ -194,7 +194,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Update | Problem(52) | Solution | Tag | Time | Space | Note | Ref |
+| Update | Problem(53) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2024-06 | [Leetcode-375. Guess Number Higher Or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/) | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | 2024-06 | [Lintcode-437. Copy Books](https://www.lintcode.com/problem/copy-books) | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
@@ -248,6 +248,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2024-09 | [Leetcode-62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | 2024-09 | [Leetcode-55. Jump Game](https://leetcode.com/problems/jump-game/description/) | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | \- | - |
 | 2024-09 | [Leetcode-63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [c++](./leetcode/63.unique-paths-ii.cpp), [python3](./leetcode/63.unique-paths-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | \- | - |
+| 2024-09 | [Lintcode-515. Paint House](https://www.lintcode.com/problem/paint-house) | [c++](./lintcode/515.paint-house.cpp), [python3](./lintcode/515.paint-house.py) | Dynamic Programming | O\(N\) | O\(N\) | Leetcode\-256 | - |
 
 ## Binary Search
 
@@ -721,7 +722,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Update | Problem(178) | Solution | Tag | Time | Space | Note | Ref |
+| Update | Problem(177) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 2023-09 | [Leetcode-2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | \- | - |
@@ -790,7 +791,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | 2023-09 | [Leetcode-249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/description/) | [c++](./leetcode/249.group-shifted-strings.cpp) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/description/) | [python3](./leetcode/251.flatten-2d-vector.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/description/) | [c++](./leetcode/253.meeting-rooms-ii.cpp), [python3](./leetcode/253.meeting-rooms-ii.py) | Other | \- | \- | \- | - |
-| 2023-09 | [Leetcode-256. Paint House](https://leetcode.com/problems/paint-house/description/) | [c++](./leetcode/256.paint-house.cpp), [python3](./leetcode/256.paint-house.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/description/) | [c++](./leetcode/261.graph-valid-tree.cpp), [python3](./leetcode/261.graph-valid-tree.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-265. Paint House II](https://leetcode.com/problems/paint-house-ii/description/) | [c++](./leetcode/265.paint-house-ii.cpp), [python3](./leetcode/265.paint-house-ii.py) | Other | \- | \- | \- | - |
 | 2023-09 | [Leetcode-269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | \- | - |
