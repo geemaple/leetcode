@@ -218,7 +218,7 @@ class Markdown:
                 codes = ', '.join(sorted(solution_set[solution.key]))
 
                 contents = [
-                    solution.update.strftime('%Y-%m'),
+                    solution.problem_source,
                     solution.problem_link,
                     codes,
                     category,
@@ -342,12 +342,16 @@ class Solution:
     @property
     def title(self) -> str:
         problem = self.name.replace('-', ' ')
-        orginal_title = f'{self.source}-{self.number}. {problem}'.title()
+        orginal_title = f'{problem}'.title()
         return re.sub(self.roman_rex, lambda x: x.group(0).upper(), orginal_title)
 
     @property
     def key(self) -> str:
         return f'{self.source}-{self.name}'
+
+    @property
+    def problem_source(self):
+        return f'{self.source}-{self.number}'
 
     @property
     def problem_link(self) -> str:
