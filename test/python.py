@@ -4,17 +4,23 @@ from collections import defaultdict
 import heapq
 from collections import deque
 class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
-        dp = [float('inf') for i in range(amount + 1)]
-        dp[0] = 0
+    def numDecodings(self, s: str) -> int:
+        n = len(s)
+        dp = [0 for i in range(n + 1)]
+        dp[0] = 1
 
-        for i in range(1, amount + 1):
-            for c in coins:
-                if i >= c and dp[i - c] + 1 < dp[i]:
-                    dp[i] = dp[i - c] + 1
+        for i in range(1, n + 1):
+            print(i)
+            if 1 <= int(s[i - 1]) <= 9:
+                dp[i] += dp[i - 1]
 
-        return dp[amount]
+            import pdb; pdb.set_trace()
+            if i - 2 >= 0 and (s[i - 2] == '1' or (s[i - 2] == '2' and int(s[i - 1]) <= 6)):
+                dp[i] += dp[i - 2]
+                
+
+        return dp[n]
 
 s = Solution()
-res = s.coinChange([1,2,5], 11)
+res = s.numDecodings('12')
 print(res)
