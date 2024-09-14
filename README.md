@@ -6,17 +6,17 @@ LeetCode solutions, written in python and cpp
 
 **Total**: 436 problems
 
-**Updated:** 2024-09-14 21:43:37
+**Updated:** 2024-09-14 21:46:09
 
 ## 列表/List
 
-- [9c-advanced.md(60/87)](./list/list/9c-advanced.md)
-- [9c-basic.md(81/130)](./list/list/9c-basic.md)
-- [9c-dp.md(10/10)](./list/list/9c-dp.md)
-- [9c-top.md(25/49)](./list/list/9c-top.md)
-- [geekbang.md(55/55)](./list/list/geekbang.md)
-- [lee215.md(2/34)](./list/list/lee215.md)
-- [leetcode101.md(183/184)](./list/list/leetcode101.md)
+- [9c-advanced.md](./list/list/9c-advanced.md)	60/87
+- [9c-basic.md](./list/list/9c-basic.md)	81/130
+- [9c-dp.md](./list/list/9c-dp.md)	10/10
+- [9c-top.md](./list/list/9c-top.md)	25/49
+- [geekbang.md](./list/list/geekbang.md)	55/55
+- [lee215.md](./list/list/lee215.md)	2/34
+- [leetcode101.md](./list/list/leetcode101.md)	183/184
 
 ## 链接/Links
 

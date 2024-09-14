@@ -410,7 +410,7 @@ if __name__ == "__main__":
         Markdown.paragraph(f, Solution.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [Markdown.link(f'{name}({progress})', f'./list/{path}') for name, path, progress in Solution.list()])
+        Markdown.bullet(f, [Markdown.link(f'{name}', f'./list/{path}') + f'\t{progress}' for name, path, progress in Solution.list()])
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
