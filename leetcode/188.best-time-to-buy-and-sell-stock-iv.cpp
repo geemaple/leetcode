@@ -43,7 +43,7 @@ public:
             }
         }
 
-        return *max_element(sell.begin(), sell.end());
+        return sell[k];
     }
 };
 

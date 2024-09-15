@@ -1,70 +1,69 @@
-# refer question 300
-# O(N * LogN)
-class Solution(object):
-    def maxEnvelopes(self, envelopes):
-        """
-        :type envelopes: List[List[int]]
-        :rtype: int
-        """
-        envelopes.sort(key=lambda v: [v[0], -v[1]])
-        m = len(envelopes)
-        table = []
-        
-        for i in range(m):
-            index = self.lower_bound(table, envelopes[i][1])
-            if index == -1:
-                table.append(envelopes[i][1])
+#  Tag: Array, Binary Search, Dynamic Programming, Sorting
+#  Time: O(NlogN)
+#  Space: O(N)
+#  Ref: -
+#  Note: -
+
+#  You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope.
+#  One envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.
+#  Return the maximum number of envelopes you can Russian doll (i.e., put one inside the other).
+#  Note: You cannot rotate an envelope.
+#   
+#  Example 1:
+#  
+#  Input: envelopes = [[5,4],[6,4],[6,7],[2,3]]
+#  Output: 3
+#  Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+#  
+#  Example 2:
+#  
+#  Input: envelopes = [[1,1],[1,1],[1,1]]
+#  Output: 1
+#  
+#   
+#  Constraints:
+#  
+#  1 <= envelopes.length <= 105
+#  envelopes[i].length == 2
+#  1 <= wi, hi <= 105
+#  
+#  
+
+class Solution:
+    def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
+        n = len(envelopes)
+        envelopes.sort(key=lambda x: (x[0], -x[1]))
+        res = []
+        for i in range(n):
+            index = self.lower_bound(res, envelopes[i])
+            if index == len(res):
+                res.append(envelopes[i])
             else:
-                table[index] = envelopes[i][1]
+                res[index] = envelopes[i]
 
-        return len(table)
+        return len(res)
 
-    def lower_bound(self, table, target):
-        # first index no less than target
-        if len(table) == 0:
-            return -1
+    def lower_bound(self, ans: list, target: list) -> int:
+        left = 0
+        right = len(ans)
 
-        start = 0
-        end = len(table) - 1
-
-        while (start + 1 < end):
-            mid = start + (end - start) / 2
-            if (table[mid] >= target):
-                end = mid
+        while left < right:
+            mid = (left + right) >> 1
+            if target[1] > ans[mid][1]:
+                left = mid + 1
             else:
-                start = mid
+                right = mid
 
-        if table[start] >= target:
-            return start
+        return left
 
-        if table[end] >= target:
-            return end
-
-        return -1
-
-
-# O(N ^ 2) Time Limit Exceeded
-# f(i) = max(1, f(j) + 1 if j < i and envelopes[j] < envelopes[i]) 
-class Solution2(object):
-    def maxEnvelopes(self, envelopes):
-        """
-        :type envelopes: List[List[int]]
-        :rtype: int
-        """
-        if envelopes is None or len(envelopes) == 0:
-            return 0
-
-        envelopes.sort(key=lambda v: v[0])
-        m = len(envelopes)
-        table = [0 for _ in range(m)]
-        table[0] = 1
-
-        for i in range(1, m):
-            val = 1
+class Solution:
+    def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
+        n = len(envelopes)
+        envelopes.sort()
+        dp = [1 for i in range(n)]
+        for i in range(1, n):
             for j in range(i):
-                if envelopes[i][0] != envelopes[j][0] and envelopes[j][1] < envelopes[i][1]:
-                    val = max(val, table[j] + 1)
+                if envelopes[i][0] != envelopes[j][0] and envelopes[i][1] > envelopes[j][1]:
+                    dp[i] = max(dp[i], dp[j] + 1)
 
-            table[i] = val
-
-        return max(table)
+        return max(dp)

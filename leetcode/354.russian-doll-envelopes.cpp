@@ -1,83 +1,99 @@
-// refer question 300
-// O(N * LogN)
+//  Tag: Array, Binary Search, Dynamic Programming, Sorting
+//  Time: O(NlogN)
+//  Space: O(N)
+//  Ref: -
+//  Note: -
+
+//  You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope.
+//  One envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.
+//  Return the maximum number of envelopes you can Russian doll (i.e., put one inside the other).
+//  Note: You cannot rotate an envelope.
+//   
+//  Example 1:
+//  
+//  Input: envelopes = [[5,4],[6,4],[6,7],[2,3]]
+//  Output: 3
+//  Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+//  
+//  Example 2:
+//  
+//  Input: envelopes = [[1,1],[1,1],[1,1]]
+//  Output: 1
+//  
+//   
+//  Constraints:
+//  
+//  1 <= envelopes.length <= 105
+//  envelopes[i].length == 2
+//  1 <= wi, hi <= 105
+//  
+//  
+
 class Solution {
-private:
-    static bool sort_cmp(pair<int, int> &left, pair<int, int> &right)
-    {
-        // first asscending
-        if (left.first < right.first) return true;
-        if (left.first > right.first) return false;
-
-        // second descending
-        if (left.second > right.second) return true;
-        if (left.second < right.second) return false;
-
-        return false;
-    }
-
 public:
-    int maxEnvelopes(vector<pair<int, int>>& envelopes) 
-    {
-        if (envelopes.size() == 0)
-        {
-            return 0;
+    int maxEnvelopes(vector<vector<int>>& envelopes) {
+        int n = envelopes.size();
+        sort(envelopes.begin(), envelopes.end(), [](vector<int> &a, vector<int>&b){
+            return (a[0] < b[0] || (a[0] == b[0] && a[1] > b[1]));
+        });
+        vector<int> res;
+
+        for (int i = 0; i < n; i++) {
+            auto it = lower_bound(res.begin(), res.end(), envelopes[i][1]);
+            if (it == res.end()) {
+                res.push_back(envelopes[i][1]);
+            } else {
+                *it = envelopes[i][1];
+            }
         }
 
-        sort(envelopes.begin(), envelopes.end(), sort_cmp);
-        vector<int> table;
-        for (auto i = 0; i < envelopes.size(); ++i)
-        {
-            auto it = lower_bound(table.begin(), table.end(), envelopes[i].second);
-            if (it == table.end())
-            {
-                table.push_back(envelopes[i].second);
-            }
-            else
-            {
-                *it = envelopes[i].second;
-            }
-
-        }
-
-        return table.size();
+        return res.size();
     }
 };
 
-// O(N ^ 2)
-// f(i) = max(1, f(j) + 1 if j < i and envelopes[j] < envelopes[i]) 
-class Solution2 {
-private:
-    static bool sort_cmp(pair<int, int> &left, pair<int, int> &right)
-    {
-        return (left.first < right.first);
-    }
-
+class Solution {
 public:
-    int maxEnvelopes(vector<pair<int, int>>& envelopes) 
-    {
-        if (envelopes.size() == 0)
-        {
-            return 0;
-        }
+    int maxEnvelopes(vector<vector<int>>& envelopes) {
+        int n = envelopes.size();
+        sort(envelopes.begin(), envelopes.end());
+        vector<int> dp(n, 1);
 
-        sort(envelopes.begin(), envelopes.end(), sort_cmp);
-        int m = envelopes.size();
-        vector<int> table(m, 0);
-        table[0] = 1;
-
-        for (auto i = 1; i < envelopes.size(); ++i)
-        {
-            int value = 1;
-            for(auto j = 0; j < i; ++j)
-            {
-                if (envelopes[j].first != envelopes[i].first && envelopes[j].second < envelopes[i].second)
-                {
-                    value = max(value, table[j] + 1);
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (envelopes[i][0] != envelopes[j][0] && envelopes[i][1] > envelopes[j][1]) {
+                    dp[i] = max(dp[i], dp[j] + 1);
                 }
             }
-            table[i] = value;
         }
 
-        return *max_element(table.begin(), table.end());
+        return *max_element(dp.begin(), dp.end());
+    }
+};
+
+class Solution {
+public:
+    int maxEnvelopes(vector<vector<int>>& envelopes) {
+        int n = envelopes.size();
+        
+        sort(envelopes.begin(), envelopes.end(), [](vector<int>& a, vector<int>& b) {
+            return a[0] < b[0] || (a[0] == b[0] && a[1] > b[1]);
+        });
+        
+        vector<vector<int>> res;
+
+        for (int i = 0; i < n; i++) {
+            auto it = lower_bound(res.begin(), res.end(), envelopes[i],
+                                  [](const vector<int>& a, const vector<int>& b) {
+                                      return a[1] < b[1];
+                                  });
+
+            if (it == res.end()) {
+                res.push_back(envelopes[i]);
+            } else {
+                *it = envelopes[i];
+            }
+        }
+
+        return res.size();
     }
 };

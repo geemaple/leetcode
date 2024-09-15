@@ -14,30 +14,36 @@ from typing import (
 import heapq
 
 class Solution:
-    """
-    @param costs: n x k cost matrix
-    @return: an integer, the minimum cost to paint all houses
-    """
-    def min_cost_i_i(self, costs: List[List[int]]) -> int:
-        # write your code here
-        if len(costs) == 0:
-            return 0
+    def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
+        n = len(envelopes)
+        envelopes.sort()
+        res = []
+        for i in range(n):
+            if len(res) > 0 and (res[-1][0] == envelopes[i][0] or res[-1][1] >= envelopes[i][1]):
+                continue
 
-        n = len(costs)
-        m = len(costs[0])
-        dp = [[0] * m for i in range(n + 1)]
+            index = self.lower_bound(res, envelopes[i])
+            if index == len(res):
+                res.append(envelopes[i])
+            else:
+                res.insert(index, envelopes[i])
 
-        for i in range(1, n + 1):
-            for j in range(m):
-                cost = float('inf')
-                for k in range(m):
-                    if i == 1 or j != k:
-                        cost = min(cost, dp[i - 1][k] + costs[i - 1][j])
+        print(res)
+        return len(res)
 
-                dp[i][j] = cost
+    def lower_bound(self, ans: list, target: list) -> int:
+        left = 0
+        right = len(ans)
 
-        return min(dp[n])
+        while left < right:
+            mid = (left + right) >> 1
+            if target[1] > ans[mid][1]:
+                left = mid + 1
+            else:
+                right = mid
+
+        return left
 
 s = Solution()
-res = s.min_cost_i_i([[5]])
+res = s.maxEnvelopes([[30,50],[12,2],[3,4],[12,15]])
 print(res)

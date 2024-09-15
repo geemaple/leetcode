@@ -17,11 +17,17 @@
 10. https://leetcode.com/problems/counting-bits/
 
 
-### 
+### 状态序列
 
 11. https://leetcode.com/problems/paint-house-ii/
 12. https://leetcode.com/problems/house-robber/
 13. https://leetcode.com/problems/house-robber-ii/
 14. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 15. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+16. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+17. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+18. https://leetcode.com/problems/longest-increasing-subsequence/
+19. https://leetcode.com/problems/russian-doll-envelopes/
+
+
 
