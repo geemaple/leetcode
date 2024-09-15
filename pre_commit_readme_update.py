@@ -210,7 +210,7 @@ class Markdown:
                 solution_set[s.key].append(s.local_path)
             
             Markdown.table_header(f, ['Link', f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Note', 'Ref'])
-            sorted_solutions = sorted(category_set[category], key=lambda s: (s.update, s.source, int(s.number)))
+            sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, s.title))
             
             for solution in sorted_solutions:
                 if solution.key not in solution_set:
