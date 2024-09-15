@@ -11,66 +11,33 @@ from typing import (
     List,
 )
 
+import heapq
+
 class Solution:
     """
-    @param grid: Given a 2D grid, each cell is either 'W', 'E' or '0'
-    @return: an integer, the maximum enemies you can kill using one bomb
+    @param costs: n x k cost matrix
+    @return: an integer, the minimum cost to paint all houses
     """
-    def max_killed_enemies(self, grid: List[List[str]]) -> int:
+    def min_cost_i_i(self, costs: List[List[int]]) -> int:
         # write your code here
-        n = len(grid)
-        m = len(grid[0])
+        if len(costs) == 0:
+            return 0
 
-        up = [[0] * m for i in range(n)]
-        left = [[0] * m for i in range(n)]
-        bottom = [[0] * m for i in range(n)]
-        right = [[0] * m for i in range(n)]
+        n = len(costs)
+        m = len(costs[0])
+        dp = [[0] * m for i in range(n + 1)]
 
-        for i in range(n):
+        for i in range(1, n + 1):
             for j in range(m):
-                if grid[i][j] == 'W':
-                    continue
-                
-                addition = 1 if grid[i][j] == 'E' else 0
-                if i == 0:
-                    up[i][j] = addition
-                else:
-                    up[i][j] = up[i - 1][j] + addition
+                cost = float('inf')
+                for k in range(m):
+                    if i == 1 or j != k:
+                        cost = min(cost, dp[i - 1][k] + costs[i - 1][j])
 
-                if j == 0:
-                    left[i][j] = addition
-                else:
-                    left[i][j] = left[i][j - 1] + addition
+                dp[i][j] = cost
 
-        for i in range(n - 1, -1, -1):
-            for j in range(m - 1, -1, -1):
-                if grid[i][j] == 'W':
-                    continue
-
-                addition = 1 if grid[i][j] == 'E' else 0
-                if i == n - 1:
-                    bottom[i][j] = addition
-                else:
-                    bottom[i][j] = bottom[i + 1][j] + addition
-
-                if j == m - 1:
-                    right[i][j] = addition
-                else:
-                    right[i][j] = right[i][j + 1] + addition
-
-
-        res = 0
-        for i in range(n):
-            for j in range(m):
-                if grid[i][j] == 'E':
-                    res = max(res, up[i][j] + left[i][j] + bottom[i][j] + right[i][j] - 3)
-                
-                elif grid[i][j] == '0':
-                    res = max(res, up[i][j] + left[i][j] + bottom[i][j] + right[i][j])
-
-        return res
-
+        return min(dp[n])
 
 s = Solution()
-res = s.max_killed_enemies(["0E00","E0WE","0E00"])
+res = s.min_cost_i_i([[5]])
 print(res)

@@ -10,7 +10,7 @@ LeetCode solutions, written in python and cpp
 
 - [9c-advanced.md](list/9c-advanced.md)	60/87
 - [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	10/10
+- [9c-dp.md](list/9c-dp.md)	11/11
 - [9c-top.md](list/9c-top.md)	25/49
 - [geekbang.md](list/geekbang.md)	55/55
 - [lee215.md](list/lee215.md)	2/34
@@ -189,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(53) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(54) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-375](https://leetcode.com/problems/guess-number-higher-or-lower-ii) | Guess Number Higher Or Lower II | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
 | [lintcode-437](https://www.lintcode.com/problem/copy-books) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
@@ -244,6 +244,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-55](https://leetcode.com/problems/jump-game) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | \- | - |
 | [leetcode-63](https://leetcode.com/problems/unique-paths-ii) | Unique Paths II | [c++](./leetcode/63.unique-paths-ii.cpp), [python3](./leetcode/63.unique-paths-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | \- | - |
 | [lintcode-515](https://www.lintcode.com/problem/paint-house) | Paint House | [c++](./lintcode/515.paint-house.cpp), [python3](./lintcode/515.paint-house.py) | Dynamic Programming | O\(N\) | O\(N\) | Leetcode\-256 | - |
+| [lintcode-516](https://www.lintcode.com/problem/paint-house-ii) | Paint House II | [c++](./lintcode/516.paint-house-ii.cpp), [python3](./lintcode/516.paint-house-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | Leetcode\-265 | - |
 
 ## Binary Search
 
@@ -718,7 +719,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(175) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(174) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-2](https://leetcode.com/problems/add-two-numbers) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | \- | - |
 | [leetcode-7](https://leetcode.com/problems/reverse-integer) | Reverse Integer | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | \- | - |
@@ -788,7 +789,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-251](https://leetcode.com/problems/flatten-2d-vector) | Flatten 2D Vector | [python3](./leetcode/251.flatten-2d-vector.py) | Other | \- | \- | \- | - |
 | [leetcode-253](https://leetcode.com/problems/meeting-rooms-ii) | Meeting Rooms II | [c++](./leetcode/253.meeting-rooms-ii.cpp), [python3](./leetcode/253.meeting-rooms-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-261](https://leetcode.com/problems/graph-valid-tree) | Graph Valid Tree | [c++](./leetcode/261.graph-valid-tree.cpp), [python3](./leetcode/261.graph-valid-tree.py) | Other | \- | \- | \- | - |
-| [leetcode-265](https://leetcode.com/problems/paint-house-ii) | Paint House II | [c++](./leetcode/265.paint-house-ii.cpp), [python3](./leetcode/265.paint-house-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-269](https://leetcode.com/problems/alien-dictionary) | Alien Dictionary | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | \- | - |
 | [leetcode-270](https://leetcode.com/problems/closest-binary-search-tree-value) | Closest Binary Search Tree Value | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python3](./leetcode/270.closest-binary-search-tree-value.py) | Other | \- | \- | \- | - |
 | [leetcode-271](https://leetcode.com/problems/encode-and-decode-strings) | Encode And Decode Strings | [c++](./leetcode/271.encode-and-decode-strings.cpp), [python3](./leetcode/271.encode-and-decode-strings.py) | Other | \- | \- | \- | - |
