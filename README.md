@@ -10,7 +10,7 @@ LeetCode solutions, written in python and cpp
 
 - [9c-advanced.md](list/9c-advanced.md)	60/87
 - [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	13/13
+- [9c-dp.md](list/9c-dp.md)	15/15
 - [9c-top.md](list/9c-top.md)	25/49
 - [geekbang.md](list/geekbang.md)	55/55
 - [lee215.md](list/lee215.md)	2/34
