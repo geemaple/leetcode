@@ -16,7 +16,6 @@
 9. https://leetcode.com/problems/bomb-enemy/
 10. https://leetcode.com/problems/counting-bits/
 
-
 ### 状态序列
 
 11. https://leetcode.com/problems/paint-house-ii/
@@ -29,8 +28,7 @@
 18. https://leetcode.com/problems/longest-increasing-subsequence/
 19. https://leetcode.com/problems/russian-doll-envelopes/
 
-
-### 
+### 划分、背包
 
 20. https://leetcode.com/problems/perfect-squares/
 21. https://leetcode.com/problems/palindrome-partitioning-ii/
