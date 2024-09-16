@@ -48,18 +48,19 @@ class Solution:
     def back_pack_i_v(self, nums: List[int], target: int) -> int:
         # write your code here
         n = len(nums)
-        m = target
-        dp = [[0 for j in range(m + 1)] for i in range(n + 1)]
-        dp[0][0] = 1
-        for i in range(1, n + 1):
-            for j in range(m + 1):
-                w = nums[i - 1]
-                if w <= j:
-                    dp[i][j] = dp[i - 1][j] + dp[i][j - w]
-                else:
-                    dp[i][j] = dp[i - 1][j]
+        dp = [[0] * (target + 1) for i in range(n + 1)]
 
-        return dp[n][m]
+        for i in range(n + 1):
+            dp[i][0] = 1
+
+        for i in range(1, n + 1):
+            for j in range(1, target + 1):
+                dp[i][j] = dp[i - 1][j]
+                weight = nums[i - 1]
+                if j >= weight:
+                    dp[i][j] += dp[i][j - weight]
+
+        return dp[n][target]
     
 class Solution:
     """
@@ -70,13 +71,13 @@ class Solution:
     def back_pack_i_v(self, nums: List[int], target: int) -> int:
         # write your code here
         n = len(nums)
-        m = target
-        dp = [0 for j in range(m + 1)]
+        dp = [0 for i in range(target + 1)]
         dp[0] = 1
-        for i in range(1, n + 1):
-            for j in range(m + 1):
-                w = nums[i - 1]
-                if w <= j:
-                    dp[j] = dp[j] + dp[j - w]
 
-        return dp[m]
+        for i in range(1, n + 1):
+            for j in range(1, target + 1):
+                weight = nums[i - 1]
+                if j >= weight:
+                    dp[j] += dp[j - weight]
+
+        return dp[target]

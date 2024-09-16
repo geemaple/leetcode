@@ -45,21 +45,19 @@ public:
     int backPackIV(vector<int> &nums, int target) {
         // write your code here
         int n = nums.size();
-        int m = target;
-        vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0));
         dp[0][0] = 1;
         for (int i = 1; i <= n; i++) {
-            for (int j = 0; j <= m; j++) {
-                int w = nums[i - 1];
-                if (w <= j) {
-                    dp[i][j] = dp[i - 1][j] + dp[i][j - w];
-                } else {
-                    dp[i][j] = dp[i - 1][j];
+            for (int j = 0; j <= target; j++) {
+                int weight = nums[i - 1];
+                dp[i][j] = dp[i - 1][j];
+                if (j >= weight) {
+                    dp[i][j] += dp[i][j - weight];
                 }
             }
         }
 
-        return dp[n][m];
+        return dp[n][target];
     }
 };
 
@@ -73,18 +71,17 @@ public:
     int backPackIV(vector<int> &nums, int target) {
         // write your code here
         int n = nums.size();
-        int m = target;
-        vector<int> dp(m + 1, 0);
+        vector<int> dp(target + 1, 0);
         dp[0] = 1;
         for (int i = 1; i <= n; i++) {
-            for (int j = 0; j <= m; j++) {
-                int w = nums[i - 1];
-                if (w <= j) {
-                    dp[j] = dp[j] + dp[j - w];
-                }
+            for (int j = 0; j <= target; j++) {
+                int weight = nums[i - 1];
+                if (j >= weight) {
+                    dp[j] += dp[j - weight];
+                } 
             }
         }
 
-        return dp[m];
+        return dp[target];
     }
 };
