@@ -8,40 +8,40 @@ using namespace std;
 
 class Solution {
 public:
-    int minCut(string s) {
-        int n = s.size();
-        vector<vector<bool>> is_palindrome(n, vector<bool>(n, false));
-        for (int i = 0; i < n; i++) {
-            expand(s, i, i, is_palindrome);
-            expand(s, i, i + 1, is_palindrome);
+    /**
+     * @param pages: an array of integers
+     * @param k: An integer
+     * @return: an integer
+     */
+    int copyBooks(vector<int> &pages, int k) {
+        // write your code here
+        int n = pages.size();
+        vector<vector<int>> dp(k + 1, vector<int>(n + 1, INT_MAX));
+        
+        for (int i = 0; i <= k; i++) {
+            dp[i][0] = 0;
         }
-
-        vector<int> dp(n + 1, INT_MAX);
-        dp[0] = 0;
-        for (int i = 1; i <= n; i++) {
-            for (int j = 0; j < i; j++) {
-                if (is_palindrome[j][i - 1]) {
-                    dp[i] = min(dp[i], dp[j] + 1);
+        
+        for (int i = 1; i <= k; i++) {
+            for (int j = 1; j <=n; j++) {
+                int work_load = 0;
+                for (int p = j - 1; p >= 0; p--) {
+                    work_load += pages[p];
+                    int cost = max(dp[i - 1][p], work_load);
+                    dp[i][j] = min(dp[i][j], cost);
                 }
             }
         }
-        return dp[n] - 1;
-    }
-
-    void expand(string &s, int left, int right, vector<vector<bool>> &is_palindrome) {
-        while (left >=0 && right < s.size() && s[left] == s[right]) {
-            is_palindrome[left][right] = true;
-            left--;
-            right++;
-        }
+        
+        return dp[k][n];
     }
 };
 
 int main() {
-    vector<vector<int>> p1 = {{5,4},{6,4},{6,7},{2,3}};
+    vector<int> p1 = {3,2,4};
     vector<string> words = {"oath","pea","eat","rain"};
     Solution s;
-    auto res = s.maxEnvelopes(p1);
+    auto res = s.copyBooks(p1, 2);
     cout << res << endl;
 //    for (auto &word : res) {
 //        cout << word << ", ";

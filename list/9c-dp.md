@@ -34,8 +34,8 @@
 
 20. https://leetcode.com/problems/perfect-squares/
 21. https://leetcode.com/problems/palindrome-partitioning-ii/
+22. https://www.lintcode.com/problem/copy-books/
 
-* https://www.lintcode.com/problem/copy-books/
 * https://www.lintcode.com/problem/coins-in-a-line/
 * https://www.lintcode.com/problem/backpack/
 * https://www.lintcode.com/problem/backpack-v/
