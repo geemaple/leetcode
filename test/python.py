@@ -10,30 +10,30 @@ from typing import (
 
 class Solution:
     """
-    @param pages: an array of integers
-    @param k: An integer
-    @return: an integer
+    @param n: An integer
+    @return: A boolean which equals to true if the first player will win
     """
-    def copy_books(self, pages: List[int], k: int) -> int:
+    def first_will_win(self, n: int) -> bool:
         # write your code here
-        n = len(pages)
-        dp = [[float('inf')] * (n + 1) for i in range(k + 1)]
+        if n == 0:
+            return False
+            
+        if n <= 2:
+            return True
 
-        for i in range(k + 1):
-            dp[i][0] = 0
+        dp = [False for i in range(1 + n)]
+        dp[1] = dp[2] = True
 
-        for i in range(1, k + 1):
-            for j in range(1, n + 1):
-                work_load = 0
-                for p in range(j - 1, -1, -1):
-                    work_load += pages[p]
-                    cost = max(dp[i - 1][p], work_load)
-                    dp[i][j] = min(dp[i][j], cost)
+        for i in range(3, n + 1):
+            dp[i] = not (dp[i - 1] or dp[i - 2]) 
 
-        return dp[k][n]
+        return dp[n]
 
 
 
 s = Solution()
-res = s.copy_books([3, 2, 4], 2)
+res = s.first_will_win(0)
+print(res)
+
+res = s.first_will_win(11)
 print(res)

@@ -148,10 +148,13 @@ def parse_leetcode(url, lang, translate):
 
 def parse_lintcode(url, lang, translate):
 
+    redirect = requests.get(url)
+    url = redirect.url
+
     numbers = re.findall(r'\d+', url)
     if len(numbers) == 0:
         return
-
+        
     number = numbers[0]
     url = f'https://c1.lintcode.com/v2/api/problems/{number}/?lang={1 if translate else 2}'
     response = requests.get(url)
