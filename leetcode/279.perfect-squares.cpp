@@ -1,5 +1,5 @@
 //  Tag: Math, Dynamic Programming, Breadth-First Search
-//  Time: O(n^{3/2})
+//  Time: O(NlogN)
 //  Space: O(N)
 //  Ref: -
 //  Note: -
@@ -25,6 +25,40 @@
 //  1 <= n <= 104
 //  
 //  
+
+class Solution {
+public:
+    int numSquares(int n) {
+        vector<int> squares;
+        for (int i = 1; i * i <= n; i++) {
+            squares.push_back(i * i);
+        }
+
+        queue<int> q;
+        q.push(n);
+        int level = 0;
+        while (!q.empty()) {
+            int size = q.size();
+            level++;
+            for (int i = 0; i < size; i++) {
+                int cur = q.front();
+                q.pop();
+                for (auto square: squares) {
+                    int next_val = cur - square;
+                    if (next_val == 0) {
+                        return level;
+                    }
+
+                    if (next_val > 0) {
+                        q.push(next_val);
+                    } 
+                }
+            }
+        }
+
+        return level;
+    }
+};
 
 class Solution {
 public:

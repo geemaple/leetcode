@@ -1,5 +1,5 @@
 #  Tag: Math, Dynamic Programming, Breadth-First Search
-#  Time: O(n^{3/2})
+#  Time: O(NlogNN)
 #  Space: O(N)
 #  Ref: -
 #  Note: -
@@ -26,17 +26,36 @@
 #  
 #  
 
+from collections import deque
 class Solution:
     def numSquares(self, n: int) -> int:
-        dp = [0 for i in range(n + 1)]
+        squares = [i * i for i in range(1, int(n ** 0.5) + 1)]
+        q = deque([n])
+
+        level = 0
+        while len(q) > 0:
+            size = len(q)
+            level += 1
+
+            for i in range(size):
+                cur = q.popleft()
+                for square in squares:
+                    next_val = cur - square
+                    if next_val == 0:
+                        return level
+                    if next_val > 0:
+                        q.append(next_val)
+
+        return level
+
+class Solution:
+    def numSquares(self, n: int) -> int:
+        dp = [i for i in range(n + 1)]
 
         for i in range(1, n + 1):
-            res = float('inf')
             j = 1
             while (j * j <= i):
-                res = min(res, dp[i - j * j] + 1)
+                dp[i] = min(dp[i], dp[i - j * j] + 1)
                 j += 1
-
-            dp[i] = res
 
         return dp[n]

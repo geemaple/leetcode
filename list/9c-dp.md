@@ -30,4 +30,9 @@
 19. https://leetcode.com/problems/russian-doll-envelopes/
 
 
+### 
+
+20. https://leetcode.com/problems/perfect-squares/
+
+
 
