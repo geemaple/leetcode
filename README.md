@@ -10,7 +10,7 @@ LeetCode solutions, written in python and cpp
 
 - [9c-advanced.md](list/9c-advanced.md)	60/87
 - [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	20/20
+- [9c-dp.md](list/9c-dp.md)	21/21
 - [9c-top.md](list/9c-top.md)	25/49
 - [geekbang.md](list/geekbang.md)	55/55
 - [lee215.md](list/lee215.md)	2/34
@@ -189,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(55) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(56) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -226,6 +226,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | [c++](./leetcode/64.minimum-path-sum.cpp), [python3](./leetcode/64.minimum-path-sum.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Dynamic Programming | O\(NlogN\) | O\(1\) | \- | - |
 | [leetcode-474](https://leetcode.com/problems/ones-and-zeroes/) | Ones And Zeroes | [c++](./leetcode/474.ones-and-zeroes.cpp), [python3](./leetcode/474.ones-and-zeroes.py) | Dynamic Programming | O\(KMN\) | O\(MN\) | \- | - |
+| [leetcode-132](https://leetcode.com/problems/palindrome-partitioning-ii/) | Palindrome Partitioning II | [c++](./leetcode/132.palindrome-partitioning-ii.cpp), [python3](./leetcode/132.palindrome-partitioning-ii.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | \- | - |
 | [leetcode-647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | [c++](./leetcode/647.palindromic-substrings.cpp), [python3](./leetcode/647.palindromic-substrings.py) | Dynamic Programming | O\(N^2\) | O\(1\) | DP Slow | - |
 | [leetcode-416](https://leetcode.com/problems/partition-equal-subset-sum/) | Partition Equal Subset Sum | [c++](./leetcode/416.partition-equal-subset-sum.cpp), [python3](./leetcode/416.partition-equal-subset-sum.py) | Dynamic Programming | O\(N^2\) | O\(N\) | \- | - |
 | [leetcode-279](https://leetcode.com/problems/perfect-squares/) | Perfect Squares | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -722,7 +723,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(173) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(172) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -822,7 +823,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-9](https://leetcode.com/problems/palindrome-number/) | Palindrome Number | [c++](./leetcode/9.palindrome-number.cpp), [python3](./leetcode/9.palindrome-number.py) | Other | \- | \- | \- | - |
 | [leetcode-336](https://leetcode.com/problems/palindrome-pairs/) | Palindrome Pairs | [python3](./leetcode/336.palindrome-pairs.py) | Other | \- | \- | \- | - |
 | [leetcode-131](https://leetcode.com/problems/palindrome-partitioning/) | Palindrome Partitioning | [c++](./leetcode/131.palindrome-partitioning.cpp), [python3](./leetcode/131.palindrome-partitioning.py) | Other | \- | \- | \- | - |
-| [leetcode-132](https://leetcode.com/problems/palindrome-partitioning-ii/) | Palindrome Partitioning II | [c++](./leetcode/132.palindrome-partitioning-ii.cpp), [python3](./leetcode/132.palindrome-partitioning-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-86](https://leetcode.com/problems/partition-list/) | Partition List | [c++](./leetcode/86.partition-list.cpp), [python3](./leetcode/86.partition-list.py) | Other | \- | \- | \- | - |
 | [leetcode-118](https://leetcode.com/problems/pascals-triangle/) | Pascals Triangle | [c++](./leetcode/118.pascals-triangle.cpp), [python3](./leetcode/118.pascals-triangle.py) | Other | \- | \- | \- | - |
 | [leetcode-119](https://leetcode.com/problems/pascals-triangle-ii/) | Pascals Triangle II | [c++](./leetcode/119.pascals-triangle-ii.cpp), [python3](./leetcode/119.pascals-triangle-ii.py) | Other | \- | \- | \- | - |

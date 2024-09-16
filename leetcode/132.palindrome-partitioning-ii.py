@@ -1,39 +1,53 @@
-# f(i) = min(f[j] + 1 where 0 <= j <= i - 1 and s[j: i - 1] is palindrome)
-class Solution(object):
-    def minCut(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        if s is None or len(s) == 0:
-            return 0
+#  Tag: String, Dynamic Programming
+#  Time: O(N^2)
+#  Space: O(N^2)
+#  Ref: -
+#  Note: -
 
-        m = len(s)
-        store = [[False for _ in range(m)] for _ in range(m)]
+#  Given a string s, partition s such that every substring of the partition is a palindrome.
+#  Return the minimum cuts needed for a palindrome partitioning of s.
+#   
+#  Example 1:
+#  
+#  Input: s = "aab"
+#  Output: 1
+#  Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.
+#  
+#  Example 2:
+#  
+#  Input: s = "a"
+#  Output: 0
+#  
+#  Example 3:
+#  
+#  Input: s = "ab"
+#  Output: 1
+#  
+#   
+#  Constraints:
+#  
+#  1 <= s.length <= 2000
+#  s consists of lowercase English letters only.
+#  
+#  
 
-        i = 0
-        j = 0
-        for t in range(m):
-            i = j = t # odd palindrome
-            while(i >= 0 and j < m and s[i] == s[j]):
-                store[i][j] = True
-                i -= 1
-                j += 1
+class Solution:
+    def minCut(self, s: str) -> int:
+        n = len(s)
+        is_palindrome = [[False] * n for i in range(n)]
+        for i in range(n):
+            self.expand(s, i, i, is_palindrome)
+            self.expand(s, i, i + 1, is_palindrome)
 
-            i = t
-            j = t + 1 # even palindrome
-            while(i >= 0 and j < m and s[i] == s[j]):
-                store[i][j] = True
-                i -= 1
-                j += 1
-
-        table = [0 for _ in range(m + 1)]
-        for i in range(1, m + 1):
-            value = float('inf')
+        dp = [i for i in range(n + 1)]
+        for i in range(1, n + 1):
             for j in range(i):
-                if store[j][i - 1]:
-                    value = min(value, table[j] + 1)
+                if is_palindrome[j][i - 1]:
+                    dp[i] = min(dp[i], dp[j] + 1)
+        return dp[n] - 1
 
-            table[i] = value
-
-        return table[-1] - 1
+    def expand(self, s: str, left: int, right: int, is_palindrome:list):
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            is_palindrome[left][right] = True
+            left -= 1
+            right += 1

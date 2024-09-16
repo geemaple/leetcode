@@ -8,23 +8,32 @@ using namespace std;
 
 class Solution {
 public:
-    int maxEnvelopes(vector<vector<int>>& envelopes) {
-        int n = envelopes.size();
-        sort(envelopes.begin(), envelopes.end(), [](vector<int> &a, vector<int>&b){
-            return (a[0] < b[0] || (a[0] == b[0] && a[1] > b[1]));
-        });
-        vector<int> res;
-
+    int minCut(string s) {
+        int n = s.size();
+        vector<vector<bool>> is_palindrome(n, vector<bool>(n, false));
         for (int i = 0; i < n; i++) {
-            auto it = lower_bound(res.begin(), res.end(), envelopes[i][1]);
-            if (it == res.end()) {
-                res.push_back(envelopes[i][1]);
-            } else {
-                *it = envelopes[i][1];
-            }
+            expand(s, i, i, is_palindrome);
+            expand(s, i, i + 1, is_palindrome);
         }
 
-        return res.size();
+        vector<int> dp(n + 1, INT_MAX);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (is_palindrome[j][i - 1]) {
+                    dp[i] = min(dp[i], dp[j] + 1);
+                }
+            }
+        }
+        return dp[n] - 1;
+    }
+
+    void expand(string &s, int left, int right, vector<vector<bool>> &is_palindrome) {
+        while (left >=0 && right < s.size() && s[left] == s[right]) {
+            is_palindrome[left][right] = true;
+            left--;
+            right++;
+        }
     }
 };
 
