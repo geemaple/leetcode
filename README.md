@@ -10,7 +10,7 @@ LeetCode solutions, written in python and cpp
 
 - [9c-advanced.md](list/9c-advanced.md)	60/87
 - [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	23/23
+- [9c-dp.md](list/9c-dp.md)	26/26
 - [9c-top.md](list/9c-top.md)	25/49
 - [geekbang.md](list/geekbang.md)	55/55
 - [lee215.md](list/lee215.md)	2/34
@@ -189,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(57) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(58) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -244,6 +244,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-125](https://www.lintcode.com/problem/backpack-ii/) | Backpack II | [c++](./lintcode/125.backpack-ii.cpp), [python3](./lintcode/125.backpack-ii.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | \- | - |
 | [lintcode-440](https://www.lintcode.com/problem/backpack-iii/) | Backpack III | [c++](./lintcode/440.backpack-iii.cpp), [python3](./lintcode/440.backpack-iii.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | \- | - |
 | [lintcode-562](https://www.lintcode.com/problem/backpack-iv/) | Backpack IV | [c++](./lintcode/562.backpack-iv.cpp), [python3](./lintcode/562.backpack-iv.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | \- | - |
+| [lintcode-563](https://www.lintcode.com/problem/backpack-v/) | Backpack V | [c++](./lintcode/563.backpack-v.cpp), [python3](./lintcode/563.backpack-v.py) | Dynamic Programming | O\(N^2\) | O\(N\) | \- | - |
 | [lintcode-394](https://www.lintcode.com/problem/coins-in-a-line/) | Coins In A Line | [c++](./lintcode/394.coins-in-a-line.cpp), [python3](./lintcode/394.coins-in-a-line.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [lintcode-437](https://www.lintcode.com/problem/copy-books/) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
 | [lintcode-515](https://www.lintcode.com/problem/paint-house/) | Paint House | [c++](./lintcode/515.paint-house.cpp), [python3](./lintcode/515.paint-house.py) | Dynamic Programming | O\(N\) | O\(N\) | Leetcode\-256 | - |
@@ -724,7 +725,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(171) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(170) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -873,7 +874,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-127](https://leetcode.com/problems/word-ladder/) | Word Ladder | [c++](./leetcode/127.word-ladder.cpp), [python3](./leetcode/127.word-ladder.py) | Other | \- | \- | \- | - |
 | [leetcode-425](https://leetcode.com/problems/word-squares/) | Word Squares | [c++](./leetcode/425.word-squares.cpp), [python3](./leetcode/425.word-squares.py) | Other | \- | \- | \- | - |
 | [leetcode-6](https://leetcode.com/problems/zigzag-conversion/) | Zigzag Conversion | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | \- | - |
-| [lintcode-563](https://www.lintcode.com/problem/backpack-v/) | Backpack V | [c++](./lintcode/563.backpack-v.cpp), [python3](./lintcode/563.backpack-v.py) | Other | \- | \- | \- | - |
 | [lintcode-396](https://www.lintcode.com/problem/coins-in-a-line-iii/) | Coins In A Line III | [c++](./lintcode/396.coins-in-a-line-iii.cpp), [python3](./lintcode/396.coins-in-a-line-iii.py) | Other | \- | \- | \- | - |
 | [lintcode-589](https://www.lintcode.com/problem/connecting-graph/) | Connecting Graph | [c++](./lintcode/589.connecting-graph.cpp), [python3](./lintcode/589.connecting-graph.py) | Other | \- | \- | \- | - |
 | [lintcode-590](https://www.lintcode.com/problem/connecting-graph-ii/) | Connecting Graph II | [c++](./lintcode/590.connecting-graph-ii.cpp), [python3](./lintcode/590.connecting-graph-ii.py) | Other | \- | \- | \- | - |

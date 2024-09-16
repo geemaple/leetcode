@@ -36,10 +36,9 @@
 21. https://leetcode.com/problems/palindrome-partitioning-ii/
 22. https://www.lintcode.com/problem/copy-books/
 23. https://www.lintcode.com/problem/coins-in-a-line/
-
-* https://www.lintcode.com/problem/backpack/
-* https://www.lintcode.com/problem/backpack-v/
-* https://www.lintcode.com/problem/backpack-iv/
+24. https://www.lintcode.com/problem/backpack/
+25. https://www.lintcode.com/problem/backpack-v/
+26. https://www.lintcode.com/problem/backpack-iv/
 
 
 

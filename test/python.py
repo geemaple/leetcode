@@ -8,32 +8,34 @@ from typing import (
     List,
 )
 
+from typing import (
+    List,
+)
+
 class Solution:
     """
-    @param n: An integer
-    @return: A boolean which equals to true if the first player will win
+    @param nums: an integer array and all positive numbers
+    @param target: An integer
+    @return: An integer
     """
-    def first_will_win(self, n: int) -> bool:
+    def back_pack_v(self, nums: List[int], target: int) -> int:
         # write your code here
-        if n == 0:
-            return False
-            
-        if n <= 2:
-            return True
+        n = len(nums)
+        dp = [0] * (target + 1)
+        dp[0] = 1
 
-        dp = [False for i in range(1 + n)]
-        dp[1] = dp[2] = True
+        for i in range(1, n + 1):
+            tmp = list(dp)
+            for j in range(1, target + 1):
+                weight = nums[i - 1]
+                if j >= weight:
+                    tmp[j] = dp[j] + dp[j - weight]
 
-        for i in range(3, n + 1):
-            dp[i] = not (dp[i - 1] or dp[i - 2]) 
-
-        return dp[n]
+            dp = tmp
+        return dp[target]
 
 
 
 s = Solution()
-res = s.first_will_win(0)
-print(res)
-
-res = s.first_will_win(11)
+res = s.back_pack_v([1,2,3,3,7], 7)
 print(res)
