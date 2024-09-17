@@ -55,3 +55,34 @@ public:
         return dp[0][n - 1];
     }
 };
+
+class Solution {
+public:
+    int longestPalindromeSubseq(string s) {
+        int n = s.size();
+        vector<vector<int>> cache(n, vector<int>(n, -1));
+        return helper(s, 0, n - 1, cache);
+    }
+
+    int helper(string &s, int i, int j, vector<vector<int>> &cache) {
+        if (i > j) {
+            return 0;
+        }
+
+        if (i == j) {
+            return 1;
+        }
+
+        if (cache[i][j] == -1) {
+            if (s[i] == s[j]) {
+                cache[i][j] = helper(s, i + 1, j - 1, cache) + 2;
+            } else {
+                int left = helper(s, i + 1, j, cache);
+                int right = helper(s, i, j - 1, cache);
+                cache[i][j] = max(left, right);
+            }
+        }
+
+        return cache[i][j];
+    }
+};

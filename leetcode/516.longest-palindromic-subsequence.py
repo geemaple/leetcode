@@ -49,4 +49,25 @@ class Solution:
                     
         return dp[0][n - 1]
 
-        
+class Solution:
+    def longestPalindromeSubseq(self, s: str) -> int:
+        n = len(s)
+        cache = [[-1] * n for i in range(n)]
+        return self.helper(s, 0, n - 1, cache)
+
+    def helper(self, s: str, i: int, j: int, cache: list) -> int:
+        if i > j:
+            return 0
+
+        if i == j:
+            return 1
+
+        if cache[i][j] == -1:
+            if s[i] == s[j]:
+                cache[i][j] = self.helper(s, i + 1, j - 1, cache) + 2
+            else:
+                left = self.helper(s, i + 1, j, cache)
+                right = self.helper(s, i, j - 1, cache)
+                cache[i][j] = max(left, right)
+
+        return cache[i][j]
