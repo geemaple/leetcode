@@ -10,7 +10,7 @@ LeetCode solutions, written in python and cpp
 
 - [9c-advanced.md](list/9c-advanced.md)	60/87
 - [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	27/27
+- [9c-dp.md](list/9c-dp.md)	29/29
 - [9c-top.md](list/9c-top.md)	25/49
 - [geekbang.md](list/geekbang.md)	55/55
 - [lee215.md](list/lee215.md)	2/34
@@ -189,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(58) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(59) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -217,6 +217,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-55](https://leetcode.com/problems/jump-game/) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | \- | - |
 | [leetcode-1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | [c++](./leetcode/1143.longest-common-subsequence.cpp), [python3](./leetcode/1143.longest-common-subsequence.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-300](https://leetcode.com/problems/longest-increasing-subsequence/) | Longest Increasing Subsequence | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python3](./leetcode/300.longest-increasing-subsequence.py) | Dynamic Programming | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
+| [leetcode-516](https://leetcode.com/problems/longest-palindromic-subsequence/) | Longest Palindromic Subsequence | [c++](./leetcode/516.longest-palindromic-subsequence.cpp), [python3](./leetcode/516.longest-palindromic-subsequence.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | \- | - |
 | [leetcode-5](https://leetcode.com/problems/longest-palindromic-substring/) | Longest Palindromic Substring | [c++](./leetcode/5.longest-palindromic-substring.cpp), [python3](./leetcode/5.longest-palindromic-substring.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [leetcode-221](https://leetcode.com/problems/maximal-square/) | Maximal Square | [c++](./leetcode/221.maximal-square.cpp), [python3](./leetcode/221.maximal-square.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-646](https://leetcode.com/problems/maximum-length-of-pair-chain/) | Maximum Length Of Pair Chain | [c++](./leetcode/646.maximum-length-of-pair-chain.cpp), [python3](./leetcode/646.maximum-length-of-pair-chain.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -725,7 +726,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(170) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(169) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -796,7 +797,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-359](https://leetcode.com/problems/logger-rate-limiter/) | Logger Rate Limiter | [c++](./leetcode/359.logger-rate-limiter.cpp) | Other | \- | \- | \- | - |
 | [leetcode-388](https://leetcode.com/problems/longest-absolute-file-path/) | Longest Absolute File Path | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python3](./leetcode/388.longest-absolute-file-path.py) | Other | \- | \- | \- | - |
 | [leetcode-14](https://leetcode.com/problems/longest-common-prefix/) | Longest Common Prefix | [c++](./leetcode/14.longest-common-prefix.cpp), [python3](./leetcode/14.longest-common-prefix.py) | Other | \- | \- | \- | - |
-| [leetcode-516](https://leetcode.com/problems/longest-palindromic-subsequence/) | Longest Palindromic Subsequence | [c++](./leetcode/516.longest-palindromic-subsequence.cpp), [python3](./leetcode/516.longest-palindromic-subsequence.py) | Other | \- | \- | \- | - |
 | [leetcode-159](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | Longest Substring With At Most Two Distinct Characters | [c++](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python3](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | Other | \- | \- | \- | - |
 | [leetcode-687](https://leetcode.com/problems/longest-univalue-path/) | Longest Univalue Path | [c++](./leetcode/687.longest-univalue-path.cpp), [python3](./leetcode/687.longest-univalue-path.py) | Other | \- | \- | \- | - |
 | [leetcode-229](https://leetcode.com/problems/majority-element-ii/) | Majority Element II | [c++](./leetcode/229.majority-element-ii.cpp), [python3](./leetcode/229.majority-element-ii.py) | Other | \- | \- | The algorithm should run in linear time and in O\(1\) space\. | - |

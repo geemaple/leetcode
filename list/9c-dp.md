@@ -41,5 +41,8 @@
 ### 背包、区间
 
 27. https://www.lintcode.com/problem/backpack-ii/
+28. https://www.lintcode.com/problem/backpack-iii/
+29. https://leetcode.com/problems/longest-palindromic-subsequence/
+
 
 
