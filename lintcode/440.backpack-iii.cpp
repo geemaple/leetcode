@@ -43,10 +43,10 @@ public:
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                int w = a[i - 1];
+                int weight = a[i - 1];
                 int val = v[i - 1];
-                if (w <= j) {
-                    dp[i][j] = max(dp[i - 1][j], dp[i][j - w] + val);
+                if (j >= weight) {
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - weight] + val);
                 } else {
                     dp[i][j] = dp[i - 1][j];
                 }
@@ -71,10 +71,10 @@ public:
         vector<int> dp(m + 1, 0);
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                int w = a[i - 1];
+                int weight = a[i - 1];
                 int val = v[i - 1];
-                if (w <= j) {
-                    dp[j] = max(dp[j], dp[j - w] + val);
+                if (j >= weight) {
+                    dp[j] = max(dp[j], dp[j - weight] + val);
                 }
             }
         }

@@ -33,13 +33,25 @@ class Logger:
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
-    ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
     
     @staticmethod
-    def log(content, color, end='\n'):
-        print(f"{color}{content}{Logger.ENDC}", end=end)
+    def log(content, color='', end='\n'):
+        ENDC = '\033[0m'
+        print(f"{color}{content}{ENDC}", end=end)
+
+    @staticmethod
+    def test_all():
+        Logger.log("HEADER", Logger.HEADER)
+        Logger.log("OKBLUE", Logger.OKBLUE)
+
+        Logger.log("OKCYAN", Logger.OKCYAN)
+        Logger.log("OKGREEN", Logger.OKGREEN)
+        Logger.log("WARNING", Logger.WARNING)
+        Logger.log("FAIL", Logger.FAIL)
+        Logger.log("BOLD", Logger.BOLD)
+        Logger.log("UNDERLINE", Logger.UNDERLINE)
 
 class Problem:
     def __init__(self, source, lang) -> None:
@@ -122,7 +134,7 @@ def parse_leetcode(url, lang, translate):
     response = session.post(graphql, headers=headers, json=question_topic)
     data = response.json()
     problem.tags =  [tag['name'] for tag in data['data']['question']['topicTags']]
-    Logger.log(problem.tags, Logger.BOLD)
+    Logger.log(problem.tags, Logger.OKBLUE)
     
     question_content = {
             "query": "\n    query questionContent($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    content\n    mysqlSchemas\n    dataSchemas\n  }\n}\n    ",
@@ -187,6 +199,7 @@ def parse_lintcode(url, lang, translate):
 
     problem.number = number
     problem.title = data['unique_name']
+    Logger.log(f"{problem.number}: {problem.title}", Logger.OKGREEN, end='\t' if problem.paid else '\n')
 
     description = data['description'].replace('. ', '.\n')
     example = data['example'] 
@@ -196,6 +209,7 @@ def parse_lintcode(url, lang, translate):
 
     tags = data['tags']
     problem.tags = [t["name"] for t in tags]
+    Logger.log(problem.tags, Logger.OKBLUE)
 
     problem.companies = data['company_tags']
 
@@ -234,10 +248,13 @@ if __name__ == '__main__':
     
     if problem is not None:
         path = os.path.join(f'./{problem.source}', problem.file_name)
+
+        Logger.log(f'{path}', Logger.OKGREEN, end=' ')
         if args.force or not os.path.exists(path):
             with open(path, 'w') as f:
                 problem.write(f)
-            Logger.log(f'{path} download success', Logger.OKBLUE)
+            Logger.log(f'download success', Logger.OKGREEN)
         else:
-            Logger.log(f'{path} already exists. But you can use -f/--force option to overwrite', Logger.WARNING)
+            Logger.log(f'already exists. But you can use -f/--force option to overwrite', Logger.WARNING)
+
 
