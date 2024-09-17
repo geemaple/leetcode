@@ -26,6 +26,21 @@ EXTENTION = {
     'java': 'java'
 }
 
+class Logger:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    
+    @staticmethod
+    def log(content, color, end='\n'):
+        print(f"{color}{content}{Logger.ENDC}", end=end)
+
 class Problem:
     def __init__(self, source, lang) -> None:
         self.source = source
@@ -37,6 +52,7 @@ class Problem:
         self.editorData = ''
         self.lang = lang
         self.companies = ''
+        self.paid = False
 
     @property
     def question_name(self) -> str:
@@ -88,8 +104,26 @@ def parse_leetcode(url, lang, translate):
     response = session.post(graphql, headers=headers, json=question_title)
     data = response.json()
     problem.number = data["data"]["question"]["questionFrontendId"]
-    print(problem.number, problem.title)
+    problem.paid = bool(data["data"]["question"]["isPaidOnly"])
+    Logger.log(f"{problem.number}: {problem.title}", Logger.OKGREEN, end='\t' if problem.paid else '\n')
+    if problem.paid:
+        Logger.log(f"paid only", Logger.FAIL)
 
+    if problem.paid:
+        return
+
+    question_topic = {
+                "query":"\n    query singleQuestionTopicTags($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    topicTags {\n      name\n      slug\n    }\n  }\n}\n    ",
+                "variables": {
+                        "titleSlug": problem.question_name
+                    },
+                "operationName":"singleQuestionTopicTags"
+            }
+    response = session.post(graphql, headers=headers, json=question_topic)
+    data = response.json()
+    problem.tags =  [tag['name'] for tag in data['data']['question']['topicTags']]
+    Logger.log(problem.tags, Logger.BOLD)
+    
     question_content = {
             "query": "\n    query questionContent($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    content\n    mysqlSchemas\n    dataSchemas\n  }\n}\n    ",
             "variables": {
@@ -99,20 +133,8 @@ def parse_leetcode(url, lang, translate):
         }
     response = session.post(graphql, headers=headers, json=question_content)
     data = response.json()
-    soup = BeautifulSoup(data["data"]["question"]["content"], 'html.parser')
+    soup = BeautifulSoup(str(data["data"]["question"]["content"]), 'html.parser')
     problem.content = soup.text
-  
-    question_topic = {
-            "query":"\n    query singleQuestionTopicTags($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    topicTags {\n      name\n      slug\n    }\n  }\n}\n    ",
-            "variables": {
-                    "titleSlug": problem.question_name
-                },
-            "operationName":"singleQuestionTopicTags"
-        }
-    response = session.post(graphql, headers=headers, json=question_topic)
-    data = response.json()
-    problem.tags =  [tag['name'] for tag in data['data']['question']['topicTags']]
-    print(problem.tags)
 
     question_editor = {
         'query': '\n    query questionEditorData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    codeSnippets {\n      lang\n      langSlug\n      code\n    }\n    envInfo\n    enableRunCode\n    hasFrontendPreview\n    frontendPreviews\n  }\n}\n    ',
@@ -140,7 +162,7 @@ def parse_leetcode(url, lang, translate):
 
         response = session.post(graphql, headers=headers, json=question_translattion)
         data = response.json()
-        soup = BeautifulSoup(data["data"]["question"]["translatedContent"], 'html.parser')
+        soup = BeautifulSoup(str(data["data"]["question"]["translatedContent"]), 'html.parser')
         problem.content = soup.text
     
     return problem
@@ -215,7 +237,7 @@ if __name__ == '__main__':
         if args.force or not os.path.exists(path):
             with open(path, 'w') as f:
                 problem.write(f)
-            print(f'{path} download success')
+            Logger.log(f'{path} download success', Logger.OKBLUE)
         else:
-            print(f'{path} already exists. But you can use -f/--force option to overwrite')
+            Logger.log(f'{path} already exists. But you can use -f/--force option to overwrite', Logger.WARNING)
 

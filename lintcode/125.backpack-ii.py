@@ -62,18 +62,20 @@ class Solution:
     def back_pack_i_i(self, m: int, a: List[int], v: List[int]) -> int:
         # write your code here
         n = len(a)
-        dp = [[0 for j in range(m + 1)] for i in range(n + 1)]
+        dp = [[0] * (m + 1) for i in range(n + 1)]
 
         for i in range(1, n + 1):
             for j in range(1, m + 1):
-                w = a[i - 1]
-                val = v[i - 1]
-                if j >= w:
-                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + val)
+                weight = a[i - 1]
+                value = v[i - 1]
+
+                if j >= weight:
+                    dp[i][j] = max(dp[i - 1][j - weight] + value, dp[i - 1][j])
                 else:
                     dp[i][j] = dp[i - 1][j]
 
         return dp[n][m]
+
     
 class Solution:
     """
@@ -85,13 +87,13 @@ class Solution:
     def back_pack_i_i(self, m: int, a: List[int], v: List[int]) -> int:
         # write your code here
         n = len(a)
-        dp = [0 for j in range(m + 1)]
+        dp = [0 for i in range(m + 1)]
 
         for i in range(1, n + 1):
-            for j in range(m, 0, -1):
-                w = a[i - 1]
-                val = v[i - 1]
-                if j >= w:
-                    dp[j] = max(dp[j], dp[j - w] + val)
+            for j in range(m, 1, -1):
+                weight = a[i - 1]
+                value = v[i - 1]
+                if j >= weight:
+                    dp[j] = max(dp[j], dp[j - weight] + value)
 
         return dp[m]
