@@ -166,7 +166,7 @@ class Markdown:
         f.write("\n")
 
     @staticmethod 
-    def table_content(f, categories):
+    def solution_table(f, categories):
         print('----table content----')
         def search_tag(solution, unkown_tags):
             tags = solution.tags
@@ -242,22 +242,17 @@ class Markdown:
     def tag(content):
         category_tag = "-".join(content.lower().split())
         return Markdown.link(content, f'#{category_tag}')
-
-class Problem:
+    
     @staticmethod
-    def directories():
-        return ['leetcode', 'lintcode']
-
-    @staticmethod
-    def list(dir="list") -> str:
-        res = []
+    def list_table(f):
+        list_dir = './list'
+        list_row = []
         solutions = set([s.name for s in Problem.solutions()])
         vip_problems = set([s.name for s in Problem.vips()])
-        file_names = os.listdir(dir)
 
-        for file_path in file_names:
+        for file_path in os.listdir(list_dir):
             file_name = os.path.splitext(file_path)[0]
-            file_path = os.path.join(dir, file_path)
+            file_path = os.path.join(list_dir, file_path)
             total = set()
             solved = set()
             vip = set()
@@ -282,20 +277,26 @@ class Problem:
                     else:
                         working.add(link)
 
-            descrption = f"{len(solved)}/{len(total)}" 
-            if len(vip) > 0:
-                descrption += f", {len(vip)} vip{'' if len(vip) == 1 else 's'}"
-            
-            status = ''
+            progress = f"{len(solved)}/{len(total)}" 
+            notes = f"{len(vip)} vip{'' if len(vip) == 1 else 's'}" if len(vip) > 0 else '-'     
+            status = '-'
             if len(solved) + len(vip) == len(total):
-                status = '[✔]'
+                status = '[✅]'
             elif len(working) > 0:
-                status = '[.]'
+                status = '[🔲]'
+            list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
 
-            res.append((status, file_name, file_path, descrption))
-  
-        return sorted(res)
-    
+        list_row.sort()
+        Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
+        for row in list_row:
+            Markdown.table_row(f, row)
+        Markdown.table_footer(f)
+
+class Problem:
+    @staticmethod
+    def directories():
+        return ['leetcode', 'lintcode']
+
     @staticmethod
     @lru_cache()
     def solutions() -> list:
@@ -459,7 +460,7 @@ if __name__ == "__main__":
         Markdown.paragraph(f, Problem.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [status + Markdown.link(name, path) + f'\t{progress}' for status, name, path, progress in Problem.list()])
+        Markdown.list_table(f)
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
@@ -491,4 +492,4 @@ if __name__ == "__main__":
 
         Markdown.title2(f, "类型/Category")
         Markdown.bullet(f, [Markdown.tag(c) for c in SHOW_CATEGORIES])
-        Markdown.table_content(f, ALL_CATEGORIES)
+        Markdown.solution_table(f, ALL_CATEGORIES)
