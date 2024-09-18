@@ -261,7 +261,7 @@ class Problem:
             total = set()
             solved = set()
             vip = set()
-            unsolved = set()
+            working = set()
             with open(file_path, 'r') as file:
                 for line in file.readlines():
                     match = re.match(r'^\s*([\d\+\-]+)\.?\s+(.*)', line)
@@ -279,13 +279,20 @@ class Problem:
                             find_vip = [sub in vip_problems for sub in parsed_link.path.split('/') if len(sub) > 0]
                             if any(find_vip):
                                 vip.add(link)
+                    else:
+                        working.add(link)
 
             descrption = f"{len(solved)}/{len(total)}" 
             if len(vip) > 0:
-                descrption += f", {len(vip)} VIP Problem{'' if len(vip) == 1 else 's'}"
+                descrption += f", {len(vip)} vip{'' if len(vip) == 1 else 's'}"
             
-            mark = '✅ ' if len(solved) + len(vip) == len(total) else ''
-            res.append((mark + file_name, file_path, descrption))
+            status = ''
+            if len(solved) + len(vip) == len(total):
+                status = '[✔]'
+            elif len(working) > 0:
+                status = '[.]'
+
+            res.append((status, file_name, file_path, descrption))
   
         return sorted(res)
     
@@ -452,7 +459,7 @@ if __name__ == "__main__":
         Markdown.paragraph(f, Problem.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [Markdown.link(name, path) + f'\t{progress}' for name, path, progress in Problem.list()])
+        Markdown.bullet(f, [status + Markdown.link(name, path) + f'\t{progress}' for status, name, path, progress in Problem.list()])
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
