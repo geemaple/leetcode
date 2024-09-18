@@ -1,5 +1,5 @@
 #  Tag: Math, Dynamic Programming, Breadth-First Search
-#  Time: O(NlogNN)
+#  Time: O(NlogN)
 #  Space: O(N)
 #  Ref: -
 #  Note: -

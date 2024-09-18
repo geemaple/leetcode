@@ -1,6 +1,6 @@
 #  Tag: Same Direction Two Pointers, Two Pointers
 #  Time: O(N)
-#  Space: O(k)
+#  Space: O(K)
 #  Ref: -
 #  Note: Leetcode-340
 

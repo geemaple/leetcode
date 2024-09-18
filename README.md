@@ -4,18 +4,6 @@ LeetCode解题报告，记录自己的leetcode成长之路
 
 LeetCode solutions, written in python and cpp
 
-**Total**: 434 problems
-
-## 列表/List
-
-- [.][9c-dp      ](list/9c-dp.md) 30/32    1vip
-- [X][9c-advanced](list/9c-advanced.md) 59/87    1vip
-- [X][9c-basic   ](list/9c-basic.md) 81/130 
-- [X][9c-top     ](list/9c-top.md) 25/49  
-- [X][lee215     ](list/lee215.md)  2/34  
-- [✔][geekbang   ](list/geekbang.md) 55/55  
-- [✔][leetcode101](list/leetcode101.md)183/184   1vip
-
 ## 链接/Links
 
 - [本人博客](https://blog.mogoal.com/category/#Algorithm)
@@ -41,6 +29,20 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 - 《算法心得：高效算法的奥秘》/ Hacker's Delight, 2nd Edition
 - 《数学之美》(A chinese version book by Doctor Wujun)
 - 《编程之美 : 微软技术面试心得》(A chinese version book by Mircosoft Developers)
+
+## 列表/List
+
+| Status | List | Progress | Notes |
+| ----- | ----- | ----- | ----- |
+| - | [9c-advanced.md](./list/9c-advanced.md) | 59/87 | 1 vip |
+| - | [9c-basic.md](./list/9c-basic.md) | 80/129 | - |
+| - | [9c-top.md](./list/9c-top.md) | 25/48 | - |
+| - | [lee215.md](./list/lee215.md) | 2/34 | - |
+| [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
+| [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
+| [🔲] | [9c-dp.md](./list/9c-dp.md) | 30/32 | 1 vip |
+
+**Solved**: 435 problems
 
 ## 类型/Category
 
@@ -727,7 +729,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(166) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(167) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -748,6 +750,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Closest Binary Search Tree Value | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python3](./leetcode/270.closest-binary-search-tree-value.py) | Other | \- | \- | \- | - |
 | [leetcode-39](https://leetcode.com/problems/combination-sum/) | Combination Sum | [c++](./leetcode/39.combination-sum.cpp), [python3](./leetcode/39.combination-sum.py) | Other | \- | \- | \- | - |
 | [leetcode-377](https://leetcode.com/problems/combination-sum-iv/) | Combination Sum IV | [c++](./leetcode/377.combination-sum-iv.cpp), [python3](./leetcode/377.combination-sum-iv.py) | Other | \- | \- | \- | - |
+| [leetcode-175](https://leetcode.com/problems/combine-two-tables/) | Combine Two Tables | [sql](./leetcode/175.combine-two-tables.sql) | Other | - | - | - | - |
 | [leetcode-829](https://leetcode.com/problems/consecutive-numbers-sum/) | Consecutive Numbers Sum | [python3](./leetcode/829.consecutive-numbers-sum.py) | Other | \- | \- | \- | - |
 | [leetcode-11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | [python3](./leetcode/11.container-with-most-water.py) | Other | \- | \- | \- | - |
 | [leetcode-219](https://leetcode.com/problems/contains-duplicate-ii/) | Contains Duplicate II | [c++](./leetcode/219.contains-duplicate-ii.cpp) | Other | \- | \- | \- | - |
