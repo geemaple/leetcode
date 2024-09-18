@@ -250,10 +250,13 @@ class Problem:
 
     @staticmethod
     def list(dir="list") -> str:
-        res = []
+        list_satistic = []
         solutions = set([s.name for s in Problem.solutions()])
         vip_problems = set([s.name for s in Problem.vips()])
         file_names = os.listdir(dir)
+        name_width = 0
+        status_width = 0
+        num_width = 0
 
         for file_path in file_names:
             file_name = os.path.splitext(file_path)[0]
@@ -262,6 +265,7 @@ class Problem:
             solved = set()
             vip = set()
             working = set()
+            name_width = max(name_width, len(file_name))
             with open(file_path, 'r') as file:
                 for line in file.readlines():
                     match = re.match(r'^\s*([\d\+\-]+)\.?\s+(.*)', line)
@@ -281,20 +285,26 @@ class Problem:
                                 vip.add(link)
                     else:
                         working.add(link)
-
-            descrption = f"{len(solved)}/{len(total)}" 
-            if len(vip) > 0:
-                descrption += f", {len(vip)} vip{'' if len(vip) == 1 else 's'}"
             
-            status = ''
-            if len(solved) + len(vip) == len(total):
+            status = '[X]'
+            total_num = len(total)
+            if len(solved) + len(vip) == total_num:
                 status = '[✔]'
             elif len(working) > 0:
                 status = '[.]'
-
-            res.append((status, file_name, file_path, descrption))
+            
+            status_width = max(status_width, len(status))
+            num_width = max(num_width, len(str(total_num)))
+            list_satistic.append((status, file_name, file_path, len(solved), len(total), len(vip)))
   
-        return sorted(res)
+        list_satistic.sort()
+        res = []
+        print(status_width, name_width, num_width)
+        for status, name, path, solved, total, vip in list_satistic:
+            notes = '' if vip == 0 else f'{vip:>{num_width}}vip'
+            res.append(f"{status:{status_width}}" + Markdown.link(f"{name:{name_width}}", path) + f"{solved:>{num_width}}/{total:<{num_width}} {notes}")
+
+        return res
     
     @staticmethod
     @lru_cache()
@@ -459,7 +469,7 @@ if __name__ == "__main__":
         Markdown.paragraph(f, Problem.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [status + Markdown.link(name, path) + f'\t{progress}' for status, name, path, progress in Problem.list()])
+        Markdown.bullet(f, Problem.list())
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [

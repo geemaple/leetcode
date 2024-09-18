@@ -8,13 +8,13 @@ LeetCode solutions, written in python and cpp
 
 ## 列表/List
 
-- [9c-advanced](list/9c-advanced.md)	59/87, 1 vip
-- [9c-basic](list/9c-basic.md)	81/130
-- [9c-top](list/9c-top.md)	25/49
-- [lee215](list/lee215.md)	2/34
-- [.][9c-dp](list/9c-dp.md)	30/32, 1 vip
-- [✔][geekbang](list/geekbang.md)	55/55
-- [✔][leetcode101](list/leetcode101.md)	183/184, 1 vip
+- [.][9c-dp      ](list/9c-dp.md) 30/32    1vip
+- [X][9c-advanced](list/9c-advanced.md) 59/87    1vip
+- [X][9c-basic   ](list/9c-basic.md) 81/130 
+- [X][9c-top     ](list/9c-top.md) 25/49  
+- [X][lee215     ](list/lee215.md)  2/34  
+- [✔][geekbang   ](list/geekbang.md) 55/55  
+- [✔][leetcode101](list/leetcode101.md)183/184   1vip
 
 ## 链接/Links
 
