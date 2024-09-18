@@ -1,5 +1,5 @@
 #  Tag: Tree, Depth-First Search, Binary Tree
-#  Time: O(N^2
+#  Time: O(N^2)
 #  Space: O(H)
 #  Ref: -
 #  Note: -

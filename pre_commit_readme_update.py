@@ -379,7 +379,7 @@ class Problem:
                     s2 = solutions[i]
                     for attr in attributes:
                         if getattr(s1, attr) != getattr(s2, attr):
-                            print(f'[Inconsistency]{s1.extension} vs. {s2.extension} ("{getattr(s1, attr)}" != "{getattr(s2, attr)})" {attr} {s1} {s2}')
+                            print(f'[Inconsistency]{s1.extension} vs. {s2.extension} "{getattr(s1, attr)}" != "{getattr(s2, attr)}" {attr} {s1} {s2}')
 
         print('----statics----')
         for k, v in source_dict.items():

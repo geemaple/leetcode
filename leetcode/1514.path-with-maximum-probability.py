@@ -1,6 +1,6 @@
 #  Tag: Array, Graph, Heap (Priority Queue), Shortest Path
-#  Time: O(VLogE)
-#  Space: O(E+V)
+#  Time: O(VlogE)
+#  Space: O(V+E)
 #  Ref: -
 #  Note: -
 

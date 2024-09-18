@@ -1,5 +1,5 @@
 #  Tag: Greedy, Array, Sorting
-#  Time: O(N*logN)
+#  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: -
 #  Note: -
