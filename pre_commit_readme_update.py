@@ -168,7 +168,7 @@ class Markdown:
 
     @staticmethod 
     def solution_table(f, categories):
-        print('----table content----')
+        print('----unknow tags----')
         def search_tag(solution, unkown_tags):
             tags = solution.tags
             match_all = set()
