@@ -1,6 +1,6 @@
 //  Tag: Math, String, Stack
-//  Time: -
-//  Space: -
+//  Time: O(N)
+//  Space: O(N)
 //  Ref: -
 //  Note: -
 

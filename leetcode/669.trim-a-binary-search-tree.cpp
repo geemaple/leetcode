@@ -1,6 +1,6 @@
 //  Tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-//  Time: -
-//  Space: -
+//  Time: O(N)
+//  Space: O(H)
 //  Ref: -
 //  Note: -
 

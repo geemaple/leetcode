@@ -1,6 +1,6 @@
 #  Tag: Array, Math, Binary Search, Prefix Sum, Randomized
 #  Time: O(NlogN)
-#  Space: O(1)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 

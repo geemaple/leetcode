@@ -1,6 +1,6 @@
 #  Tag: Math, Dynamic Programming
-#  Time: -
-#  Space: -
+#  Time: O(NlogN)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 

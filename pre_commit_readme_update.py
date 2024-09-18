@@ -17,6 +17,7 @@ from functools import lru_cache
 from datetime import datetime 
 from urllib.parse import urlparse
 import random
+from logger import Logger
 
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
@@ -168,7 +169,7 @@ class Markdown:
 
     @staticmethod 
     def solution_table(f, categories):
-        print('----unknow tags----')
+        Logger.log('----unknow tags----')
         def search_tag(solution, unkown_tags):
             tags = solution.tags
             match_all = set()
@@ -204,7 +205,9 @@ class Markdown:
                 category_set[category] += v    
 
         for solution, tag in sorted(unkown_tags.items(), key=lambda x: x[1]):
-            print(f'{tag}/[{solution.tags}] - {solution}')
+            Logger.log(tag, Logger.WARNING, end=' ')
+            Logger.log(f'[{solution.tags}]', Logger.OKBLUE, end=' ')
+            Logger.log(solution, Logger.OKGREEN)
 
         for category in categories:
             if len(category_set[category]) == 0:
@@ -338,7 +341,8 @@ class Problem:
                 s = Problem(path, source, number, name, extension, mod_datetime)
                 if extension in EXTENSION:
                     with open(path, 'r') as code:
-                        text = code.read()
+                        texts = code.read().split('\n')[:5]
+                        text = '\n'.join(texts)
                         tag_match = re.search(r"Tag: (.+)", text)
                         time_match = re.search(r"Time: (.+)", text)
                         space_match = re.search(r"Space: (.+)", text)
@@ -365,7 +369,7 @@ class Problem:
         for k, v in all_solutions.items():
             if len(set(v)) > 1:
                 duplicates.append(f"- **\"{k}\"** ({', '.join([s.source for s in set(v)])})")
-                print(k, v)
+                Logger.log(f"{k} {v}", Logger.WARNING)
 
             solutions = [s for s in v if s.extension in EXTENSION]
             if len(solutions) > 0:
@@ -379,12 +383,16 @@ class Problem:
                     s2 = solutions[i]
                     for attr in attributes:
                         if getattr(s1, attr) != getattr(s2, attr):
-                            print(f'[Inconsistency]{s1.extension} vs. {s2.extension} "{getattr(s1, attr)}" != "{getattr(s2, attr)}" {attr} {s1} {s2}')
+                            Logger.log(f'[Inconsistency]', Logger.WARNING, end=' ')
+                            Logger.log(f'{s1.extension} vs. {s2.extension}', end=' ')
+                            Logger.log(f'"{getattr(s1, attr)}" != "{getattr(s2, attr)}"', Logger.WARNING, end=' ')
+                            Logger.log(f'{attr}', Logger.OKBLUE, end=' ')
+                            Logger.log(f'{s1} {s2}', Logger.OKGREEN)
 
-        print('----statics----')
+        Logger.log('----statics----')
         for k, v in source_dict.items():
-            print(f'{k} files = {v}')
-        print(f'total solutions = {count}')
+            Logger.log(f'{k} files = {v}')
+        Logger.log(f'total solutions = {count}')
 
         res = []
         if len(duplicates) > 0:
@@ -433,7 +441,7 @@ class Problem:
         if re.search(r'(youtube\.com|youtu\.be)', self.ref):
             return Markdown.link('Video', self.ref)
         else:
-            return f'-'
+            return '-'
 
     def __eq__(self, other):
         return isinstance(other, Problem) and self.name == other.name
