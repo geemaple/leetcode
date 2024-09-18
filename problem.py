@@ -6,6 +6,7 @@
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
+from collections import defaultdict
 import json
 import os
 import argparse
@@ -72,7 +73,8 @@ class Problem:
 
     @property
     def file_name(self) -> str:
-        return f'{self.number}.{self.question_name}.{EXTENTION[self.lang]}'
+        extension = 'vip' if self.paid else EXTENTION[self.lang]
+        return f'{self.number}.{self.question_name}.{extension}'
 
     def write_comments(self, f, content):
         for c in content:
@@ -83,16 +85,31 @@ class Problem:
     def write_code(self, f, content):
         f.write(content)
 
-    def write(self, file) -> None:
-        self.write_comments(file, [
-            f'Tag: {", ".join(self.tags)}',
-            f'Time: -',
-            f'Space: -',
-            f'Ref: -',
-            f'Note: -',
-            ])
-        self.write_comments(file, self.content.split('\n'))
-        self.write_code(file, self.editorData)
+    def write(self, overwrite) -> None:
+        path = os.path.join(f'./{self.source}', self.file_name)
+        if self.paid:
+            Logger.log(f"[Error] paid question not supported", Logger.FAIL)
+            with open(path, 'w') as file:
+                pass
+        else:
+            Logger.log(f'{path}', Logger.OKBLUE)
+            if overwrite or not os.path.exists(path):
+                with open(path, 'w') as file:
+                    self.write_comments(file, [
+                        f'Tag: {", ".join(self.tags)}',
+                        f'Time: -',
+                        f'Space: -',
+                        f'Ref: -',
+                        f'Note: -',
+                        ])
+                    self.write_comments(file, self.content.split('\n'))
+                    self.write_code(file, self.editorData)
+                    Logger.log(f'[OK] download success', Logger.OKGREEN)
+            else:
+                raise Exception('already exists. But you can use -f/--force option to overwrite')
+
+    def debug_description(self):
+        Logger.log(f"quetionn {self.number} {self.title if len(self.title) > 0 else ''}", Logger.OKGREEN)
 
 def parse_leetcode(url, lang, translate):
     session = requests.session()
@@ -117,12 +134,8 @@ def parse_leetcode(url, lang, translate):
     data = response.json()
     problem.number = data["data"]["question"]["questionFrontendId"]
     problem.paid = bool(data["data"]["question"]["isPaidOnly"])
-    Logger.log(f"{problem.number}: {problem.title}", Logger.OKGREEN, end='\t' if problem.paid else '\n')
     if problem.paid:
-        Logger.log(f"paid only", Logger.FAIL)
-
-    if problem.paid:
-        return
+        return problem
 
     question_topic = {
                 "query":"\n    query singleQuestionTopicTags($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    topicTags {\n      name\n      slug\n    }\n  }\n}\n    ",
@@ -134,8 +147,7 @@ def parse_leetcode(url, lang, translate):
     response = session.post(graphql, headers=headers, json=question_topic)
     data = response.json()
     problem.tags =  [tag['name'] for tag in data['data']['question']['topicTags']]
-    Logger.log(problem.tags, Logger.OKBLUE)
-    
+
     question_content = {
             "query": "\n    query questionContent($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    content\n    mysqlSchemas\n    dataSchemas\n  }\n}\n    ",
             "variables": {
@@ -179,7 +191,6 @@ def parse_leetcode(url, lang, translate):
     
     return problem
 
-
 def parse_lintcode(url, lang, translate):
 
     redirect = requests.get(url)
@@ -193,13 +204,21 @@ def parse_lintcode(url, lang, translate):
     url = f'https://c1.lintcode.com/v2/api/problems/{number}/?lang={1 if translate else 2}'
     response = requests.get(url)
 
-    query = json.loads(response.text)
-    data = query['data']
     problem = Problem('lintcode', lang)
-
     problem.number = number
+
+    query = json.loads(response.text)
+    if not query['success']:
+        vip_url = f'https://apiv1.lintcode.com/new/api/check-vip/problems/{number}/?lang={1 if translate else 2}2'
+        response = requests.get(vip_url)
+        query = json.loads(response.text)
+        data = query['data'] if isinstance(query['data'], dict) else defaultdict(str)
+        problem.title = data['problem_info']['title']
+        problem.paid = True
+        return problem
+    
+    data = query['data'] if isinstance(query['data'], dict) else defaultdict(str)
     problem.title = data['unique_name']
-    Logger.log(f"{problem.number}: {problem.title}", Logger.OKGREEN, end='\t' if problem.paid else '\n')
 
     description = data['description'].replace('. ', '.\n')
     example = data['example'] 
@@ -209,18 +228,16 @@ def parse_lintcode(url, lang, translate):
 
     tags = data['tags']
     problem.tags = [t["name"] for t in tags]
-    Logger.log(problem.tags, Logger.OKBLUE)
 
     problem.companies = data['company_tags']
 
     url = f'https://apiv1.lintcode.com/new/api/problems/{number}/reset/?scene=1&language={lang}'
     response = requests.get(url)
     query = json.loads(response.text)
-    data = query['data']
+    data = query['data'] if isinstance(query['data'], dict) else defaultdict(str)
     problem.editorData = data['code']
 
     return problem
-
 
 class Parser(argparse.ArgumentParser):
     def error(self, message):
@@ -247,14 +264,11 @@ if __name__ == '__main__':
         parser.print_help()
     
     if problem is not None:
-        path = os.path.join(f'./{problem.source}', problem.file_name)
+        problem.debug_description()
 
-        Logger.log(f'{path}', Logger.OKGREEN, end=' ')
-        if args.force or not os.path.exists(path):
-            with open(path, 'w') as f:
-                problem.write(f)
-            Logger.log(f'download success', Logger.OKGREEN)
-        else:
-            Logger.log(f'already exists. But you can use -f/--force option to overwrite', Logger.WARNING)
+        try:
+            problem.write(args.force)
+        except Exception as e:
+            Logger.log(f'[Warning]{str(e)}', Logger.WARNING)
 
 

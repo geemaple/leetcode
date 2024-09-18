@@ -94,10 +94,10 @@ TAG_REGEX = {
     FOLD_TAG_STR: r'^String$|^String Matching$',
 }
 
-LANGUAGE = {
-    'cpp': 'c++',
-    'py': 'python3',
-    'java': 'java'
+EXTENSION = {
+    '.cpp': 'c++',
+    '.py': 'python3',
+    '.java': 'java'
 }
 
 class Markdown:
@@ -193,7 +193,7 @@ class Markdown:
 
         category_set = collections.defaultdict(list)
         unkown_tags = {}
-        for s in Solution.all():
+        for s in Problem.solutions():
             for category in search_tag(s, unkown_tags):
                 category_set[category].append(s)      
 
@@ -243,56 +243,68 @@ class Markdown:
         category_tag = "-".join(content.lower().split())
         return Markdown.link(content, f'#{category_tag}')
 
-class Solution:
+class Problem:
+    @staticmethod
+    def directories():
+        return ['leetcode', 'lintcode']
+
     @staticmethod
     def list(dir="list") -> str:
         res = []
-        solutions = set([s.name for s in Solution.all()])
+        solutions = set([s.name for s in Problem.solutions()])
+        vip_problems = set([s.name for s in Problem.vips()])
         file_names = os.listdir(dir)
 
-        for name in file_names:
-            file_path = os.path.join(dir, name)
+        for file_path in file_names:
+            file_name = os.path.splitext(file_path)[0]
+            file_path = os.path.join(dir, file_path)
             total = set()
             solved = set()
+            vip = set()
+            unsolved = set()
             with open(file_path, 'r') as file:
                 for line in file.readlines():
-                    match = re.match(r'^\s*(\d+)\.\s+(.*)', line)
+                    match = re.match(r'^\s*([\d\+\-]+)\.?\s+(.*)', line)
                     if match is None:
-                        continue
+                        continue    
                     
                     link = match.group(2)
                     parsed_link = urlparse(link)
-                    if parsed_link.netloc not in ['leetcode.com', 'www.lintcode.com']:
-                        continue
-                    
                     total.add(link)
-                    find = [sub in solutions for sub in parsed_link.path.split('/') if len(sub) > 0]
-                    if any(find):
-                        solved.add(link)
+                    if match.group(1).isnumeric():
+                        find_solution = [sub in solutions for sub in parsed_link.path.split('/') if len(sub) > 0]
+                        if any(find_solution):
+                            solved.add(link)
+                        else:
+                            find_vip = [sub in vip_problems for sub in parsed_link.path.split('/') if len(sub) > 0]
+                            if any(find_vip):
+                                vip.add(link)
 
-            if 0.9 < len(solved) / len(total) < 1:
-                print(f'VIP: {total - solved}')
-                            
-            res.append((name, file_path, f"{len(solved)}/{len(total)}"))
+            descrption = f"{len(solved)}/{len(total)}" 
+            if len(vip) > 0:
+                descrption += f", {len(vip)} VIP Problem{'' if len(vip) == 1 else 's'}"
+            
+            mark = '✅ ' if len(solved) + len(vip) == len(total) else ''
+            res.append((mark + file_name, file_path, descrption))
   
         return sorted(res)
     
     @staticmethod
     @lru_cache()
-    def all(directories=['leetcode', 'lintcode']) -> int:
-
+    def solutions() -> list:
+        vip_question = Problem.vips()
         all_solution = []
-        for source in directories:
+        for source in Problem.directories():
             count = 0
             for file_name in os.listdir(source):
-                if file_name.startswith('.'):
+                extension = os.path.splitext(file_name)[1]
+                if extension not in EXTENSION:
                     continue
 
                 count += 1
                 first_dot = file_name.find('.')
                 last_dot = file_name.rfind('.')
                 name = file_name[first_dot + 1: last_dot]
-                extension = file_name[last_dot + 1: ]
                 number = file_name[: first_dot]
                 
                 path = os.path.join(f'./{source}/{file_name}')
@@ -314,17 +326,45 @@ class Solution:
                     mod_time = os.path.getmtime(path)
                     mod_datetime = datetime.fromtimestamp(mod_time)
 
-                    all_solution.append(Solution(path, source, number, name, extension, tags, time, space, note, ref, mod_datetime))
+                    s = Problem(path, source, number, name, extension, tags, time, space, note, ref, mod_datetime)
+                    if s not in vip_question:
+                        all_solution.append(s)
 
             print(f'{source} files = {count}')
         return all_solution
     
     @staticmethod
+    @lru_cache()
+    def vips() -> set:
+        vip_set = set()
+        for source in Problem.directories():
+            count = 0
+            for file_name in os.listdir(source):
+                extension = os.path.splitext(file_name)[1]
+                if extension != '.vip':
+                    continue
+
+                count += 1
+                first_dot = file_name.find('.')
+                last_dot = file_name.rfind('.')
+                name = file_name[first_dot + 1: last_dot]
+                number = file_name[: first_dot]
+                
+                path = os.path.join(f'./{source}/{file_name}')
+                mod_time = os.path.getmtime(path)
+                mod_datetime = datetime.fromtimestamp(mod_time)
+                vip_problem = Problem(path, source, number, name, extension, '-', '-', '-', '-', '-', mod_datetime)
+                vip_set.add(vip_problem)                  
+                print(f'[vip] {vip_problem}')
+
+        return vip_set
+
+    @staticmethod
     def statistic() -> int:
         statistic_dict = collections.defaultdict(list)
 
         res = []
-        for s in Solution.all():
+        for s in Problem.solutions():
             statistic_dict[s.name].append(s)
 
         now = datetime.now()
@@ -379,7 +419,7 @@ class Solution:
         
     @property
     def local_path(self) -> str:
-        lang = LANGUAGE[self.extension] if self.extension in LANGUAGE else self.extension
+        lang = EXTENSION.get(self.extension, self.extension.strip('.'))
         return Markdown.link(lang, self.path) 
         
     @property
@@ -390,13 +430,13 @@ class Solution:
             return f'-'
 
     def __eq__(self, other):
-        return isinstance(other, Solution) and self.key == other.key
+        return isinstance(other, Problem) and self.key == other.key
 
     def __hash__(self):
         return hash(self.key)
 
     def __repr__(self) -> str:
-        return f'{self.title}.{self.extension}'
+        return f'{self.title}{self.extension}'
 
     def __str__(self) -> str:
         return self.__repr__()
@@ -409,10 +449,10 @@ if __name__ == "__main__":
             "LeetCode解题报告，记录自己的leetcode成长之路", 
             "LeetCode solutions, written in python and cpp"])
 
-        Markdown.paragraph(f, Solution.statistic())
+        Markdown.paragraph(f, Problem.statistic())
 
         Markdown.title2(f, "列表/List")
-        Markdown.bullet(f, [Markdown.link(name, path) + f'\t{progress}' for name, path, progress in Solution.list()])
+        Markdown.bullet(f, [Markdown.link(name, path) + f'\t{progress}' for name, path, progress in Problem.list()])
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [

@@ -1,5 +1,6 @@
 
 from typing import List
+from datetime import datetime
 from collections import defaultdict
 import heapq
 from collections import deque
@@ -9,29 +10,28 @@ from typing import (
 )
 
 class Solution:
-    """
-    @param nums: an integer array and all positive numbers, no duplicates
-    @param target: An integer
-    @return: An integer
-    """
-    def back_pack_i_v(self, nums: List[int], target: int) -> int:
-        # write your code here
-        n = len(nums)
-        dp = [[0] * (target + 1) for i in range(n + 1)]
+    def isScramble(self, s1: str, s2: str) -> bool:
+        n = len(s1)
+        dp = [[[False] * (n + 1) for j in range(n)] for i in range(n)]
 
-        for i in range(n + 1):
-            dp[i][0] = 1
+        for l in range(1, n + 1):
+            for i in range(n - l + 1):
+                for j in range(n - l + 1):
+                    if l == 1:
+                        dp[i][j][l] = (s1[i] == s2[j])
+                    else:
+                        for k in range(1, l):
+                            if dp[i][j][k] and dp[i + k][j + k][l - k]:
+                                dp[i][j][l] = True
 
-        for i in range(1, n + 1):
-            for j in range(1, target + 1):
-                dp[i][j] = dp[i - 1][j]
-                weight = nums[i - 1]
-                if j >= weight:
-                    dp[i][j] += dp[i][j - weight]
 
-        return dp[n][target]
+                            if dp[i][j + l - k][k] and dp[i + k][j][l - k]:
+                                dp[i][j][l] = True
 
+        return dp[0][0][n]
 
 s = Solution()
-res = s.back_pack_i_v([2,3,4,5], 7)
+ts = datetime.now()
+res = s.isScramble("eebaacbcbcadaaedceaaacadccd", "eadcaacabaddaceacbceaabeccd")
+print(datetime.now() - ts)
 print(res)

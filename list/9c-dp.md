@@ -43,6 +43,7 @@
 27. https://www.lintcode.com/problem/backpack-ii/
 28. https://www.lintcode.com/problem/backpack-iii/
 29. https://leetcode.com/problems/longest-palindromic-subsequence/
+30. https://www.lintcode.com/problem/coins-in-a-line-iii/
+31. https://leetcode.com/problems/scramble-string/
 
-
-
+- https://leetcode.com/problems/burst-balloons/

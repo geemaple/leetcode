@@ -4,17 +4,17 @@ LeetCode解题报告，记录自己的leetcode成长之路
 
 LeetCode solutions, written in python and cpp
 
-**Total**: 436 problems
+**Total**: 434 problems
 
 ## 列表/List
 
-- [9c-advanced.md](list/9c-advanced.md)	60/87
-- [9c-basic.md](list/9c-basic.md)	81/130
-- [9c-dp.md](list/9c-dp.md)	29/29
-- [9c-top.md](list/9c-top.md)	25/49
-- [geekbang.md](list/geekbang.md)	55/55
-- [lee215.md](list/lee215.md)	2/34
-- [leetcode101.md](list/leetcode101.md)	183/184
+- [9c-advanced](list/9c-advanced.md)	59/87, 1 VIP Problem
+- [9c-basic](list/9c-basic.md)	81/130
+- [9c-dp](list/9c-dp.md)	30/32, 1 VIP Problem
+- [9c-top](list/9c-top.md)	25/49
+- [lee215](list/lee215.md)	2/34
+- [✅ geekbang](list/geekbang.md)	55/55
+- [✅ leetcode101](list/leetcode101.md)	183/184, 1 VIP Problem
 
 ## 链接/Links
 
@@ -189,7 +189,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(59) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(60) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -233,6 +233,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-279](https://leetcode.com/problems/perfect-squares/) | Perfect Squares | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
 | [leetcode-10](https://leetcode.com/problems/regular-expression-matching/) | Regular Expression Matching | [c++](./leetcode/10.regular-expression-matching.cpp), [python3](./leetcode/10.regular-expression-matching.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-354](https://leetcode.com/problems/russian-doll-envelopes/) | Russian Doll Envelopes | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python3](./leetcode/354.russian-doll-envelopes.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
+| [leetcode-87](https://leetcode.com/problems/scramble-string/) | Scramble String | [c++](./leetcode/87.scramble-string.cpp), [python3](./leetcode/87.scramble-string.py) | Dynamic Programming | O\(N^4\) | O\(N^3\) | \- | - |
 | [leetcode-3276](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Select Cells In Grid With Maximum Score | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Dynamic Programming | O\(NM\*2^N\) | O\(2^N\) | \- | - |
 | [leetcode-313](https://leetcode.com/problems/super-ugly-number/) | Super Ugly Number | [c++](./leetcode/313.super-ugly-number.cpp), [python3](./leetcode/313.super-ugly-number.py) | Dynamic Programming | O\(NlogK\) | O\(N\+K\) | K\-Linked\-List\(dup\) | - |
 | [leetcode-494](https://leetcode.com/problems/target-sum/) | Target Sum | [c++](./leetcode/494.target-sum.cpp), [python3](./leetcode/494.target-sum.py) | Dynamic Programming | O\(N \* Sum\) | O\(N \* Sum\) | \- | - |
@@ -726,7 +727,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(169) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(166) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -747,7 +748,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Closest Binary Search Tree Value | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python3](./leetcode/270.closest-binary-search-tree-value.py) | Other | \- | \- | \- | - |
 | [leetcode-39](https://leetcode.com/problems/combination-sum/) | Combination Sum | [c++](./leetcode/39.combination-sum.cpp), [python3](./leetcode/39.combination-sum.py) | Other | \- | \- | \- | - |
 | [leetcode-377](https://leetcode.com/problems/combination-sum-iv/) | Combination Sum IV | [c++](./leetcode/377.combination-sum-iv.cpp), [python3](./leetcode/377.combination-sum-iv.py) | Other | \- | \- | \- | - |
-| [leetcode-175](https://leetcode.com/problems/combine-two-tables/) | Combine Two Tables | [sql](./leetcode/175.combine-two-tables.sql) | Other | \- | \- | \- | - |
 | [leetcode-829](https://leetcode.com/problems/consecutive-numbers-sum/) | Consecutive Numbers Sum | [python3](./leetcode/829.consecutive-numbers-sum.py) | Other | \- | \- | \- | - |
 | [leetcode-11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | [python3](./leetcode/11.container-with-most-water.py) | Other | \- | \- | \- | - |
 | [leetcode-219](https://leetcode.com/problems/contains-duplicate-ii/) | Contains Duplicate II | [c++](./leetcode/219.contains-duplicate-ii.cpp) | Other | \- | \- | \- | - |
@@ -845,7 +845,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-13](https://leetcode.com/problems/roman-to-integer/) | Roman To Integer | [c++](./leetcode/13.roman-to-integer.cpp), [python3](./leetcode/13.roman-to-integer.py) | Other | \- | \- | \- | - |
 | [leetcode-61](https://leetcode.com/problems/rotate-list/) | Rotate List | [python3](./leetcode/61.rotate-list.py) | Other | \- | \- | \- | - |
 | [leetcode-796](https://leetcode.com/problems/rotate-string/) | Rotate String | [c++](./leetcode/796.rotate-string.cpp), [python3](./leetcode/796.rotate-string.py) | Other | \- | \- | \- | - |
-| [leetcode-87](https://leetcode.com/problems/scramble-string/) | Scramble String | [c++](./leetcode/87.scramble-string.cpp), [python3](./leetcode/87.scramble-string.py) | Other | \- | \- | \- | - |
 | [leetcode-702](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | Search In A Sorted Array Of Unknown Size | [c++](./leetcode/702.search-in-a-sorted-array-of-unknown-size.cpp), [python3](./leetcode/702.search-in-a-sorted-array-of-unknown-size.py) | Other | \- | \- | \- | - |
 | [leetcode-444](https://leetcode.com/problems/sequence-reconstruction/) | Sequence Reconstruction | [c++](./leetcode/444.sequence-reconstruction.cpp), [python3](./leetcode/444.sequence-reconstruction.py) | Other | \- | \- | \- | - |
 | [leetcode-773](https://leetcode.com/problems/sliding-puzzle/) | Sliding Puzzle | [python3](./leetcode/773.sliding-puzzle.py) | Other | \- | \- | \- | - |
@@ -874,7 +873,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-127](https://leetcode.com/problems/word-ladder/) | Word Ladder | [c++](./leetcode/127.word-ladder.cpp), [python3](./leetcode/127.word-ladder.py) | Other | \- | \- | \- | - |
 | [leetcode-425](https://leetcode.com/problems/word-squares/) | Word Squares | [c++](./leetcode/425.word-squares.cpp), [python3](./leetcode/425.word-squares.py) | Other | \- | \- | \- | - |
 | [leetcode-6](https://leetcode.com/problems/zigzag-conversion/) | Zigzag Conversion | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | \- | - |
-| [lintcode-396](https://www.lintcode.com/problem/coins-in-a-line-iii/) | Coins In A Line III | [c++](./lintcode/396.coins-in-a-line-iii.cpp), [python3](./lintcode/396.coins-in-a-line-iii.py) | Other | \- | \- | \- | - |
 | [lintcode-589](https://www.lintcode.com/problem/connecting-graph/) | Connecting Graph | [c++](./lintcode/589.connecting-graph.cpp), [python3](./lintcode/589.connecting-graph.py) | Other | \- | \- | \- | - |
 | [lintcode-590](https://www.lintcode.com/problem/connecting-graph-ii/) | Connecting Graph II | [c++](./lintcode/590.connecting-graph-ii.cpp), [python3](./lintcode/590.connecting-graph-ii.py) | Other | \- | \- | \- | - |
 | [lintcode-591](https://www.lintcode.com/problem/connecting-graph-iii/) | Connecting Graph III | [c++](./lintcode/591.connecting-graph-iii.cpp), [python3](./lintcode/591.connecting-graph-iii.py) | Other | \- | \- | \- | - |

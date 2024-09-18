@@ -8,32 +8,33 @@ using namespace std;
 
 class Solution {
 public:
-    /**
-     * @param pages: an array of integers
-     * @param k: An integer
-     * @return: an integer
-     */
-    int copyBooks(vector<int> &pages, int k) {
-        // write your code here
-        int n = pages.size();
-        vector<vector<int>> dp(k + 1, vector<int>(n + 1, INT_MAX));
-        
-        for (int i = 0; i <= k; i++) {
-            dp[i][0] = 0;
-        }
-        
-        for (int i = 1; i <= k; i++) {
-            for (int j = 1; j <=n; j++) {
-                int work_load = 0;
-                for (int p = j - 1; p >= 0; p--) {
-                    work_load += pages[p];
-                    int cost = max(dp[i - 1][p], work_load);
-                    dp[i][j] = min(dp[i][j], cost);
+    bool isScramble(string s1, string s2) {
+        int n = s1.size();
+        vector<vector<vector<bool>>> dp(n, vector<vector<bool>>(n, vector<bool>(n + 1, false)));
+
+        for (int l = 1; l <= n; l++) {
+            for (int i = 0; i <= n - l; i++) {
+                for (int j = 0; j <= n - l; j++) {
+                    if (l == 1) {
+                        dp[i][j][l] = (s1[i] == s2[j]);
+                    } else {
+                        for (int k = 1; k < l; k++) {
+                            if (dp[i][j][k] && dp[i + k][j + k][l - k]) {
+                                dp[i][j][l] = true;
+                                break;
+                            }
+
+                            if (dp[i][j + l - k][k] && dp[i + k][j][l - k]) {
+                                dp[i][j][l] = true;
+                                break;
+                            }
+                        }
+                    }
                 }
             }
         }
-        
-        return dp[k][n];
+
+        return dp[0][0][n];
     }
 };
 
@@ -41,7 +42,7 @@ int main() {
     vector<int> p1 = {3,2,4};
     vector<string> words = {"oath","pea","eat","rain"};
     Solution s;
-    auto res = s.copyBooks(p1, 2);
+    auto res = s.isScramble("great", "rgeat");
     cout << res << endl;
 //    for (auto &word : res) {
 //        cout << word << ", ";
