@@ -34,13 +34,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| - | [9c-advanced.md](./list/9c-advanced.md) | 59/87 | 1 vip |
-| - | [9c-basic.md](./list/9c-basic.md) | 80/129 | - |
-| - | [9c-top.md](./list/9c-top.md) | 25/48 | - |
-| - | [lee215.md](./list/lee215.md) | 2/34 | - |
+| [--] | [9c-advanced.md](./list/9c-advanced.md) | 59/87 | 1 vip |
+| [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | - |
+| [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
+| [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-dp.md](./list/9c-dp.md) | 31/33 | 1 vip |
+| [🔲] | [9c-dp.md](./list/9c-dp.md) | 32/34 | 1 vip |
 
 **Solved**: 435 problems
 
@@ -191,7 +191,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(60) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(61) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -216,6 +216,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-198](https://leetcode.com/problems/house-robber/) | House Robber | [c++](./leetcode/198.house-robber.cpp), [python3](./leetcode/198.house-robber.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [leetcode-213](https://leetcode.com/problems/house-robber-ii/) | House Robber II | [c++](./leetcode/213.house-robber-ii.cpp), [python3](./leetcode/213.house-robber-ii.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [leetcode-343](https://leetcode.com/problems/integer-break/) | Integer Break | [c++](./leetcode/343.integer-break.cpp), [python3](./leetcode/343.integer-break.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
+| [leetcode-97](https://leetcode.com/problems/interleaving-string/) | Interleaving String | [c++](./leetcode/97.interleaving-string.cpp), [python3](./leetcode/97.interleaving-string.py) | Dynamic Programming | O\(NM\) | O\(M\) | Prove \|n \- m\| <= 1 | - |
 | [leetcode-55](https://leetcode.com/problems/jump-game/) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | \- | - |
 | [leetcode-1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | [c++](./leetcode/1143.longest-common-subsequence.cpp), [python3](./leetcode/1143.longest-common-subsequence.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-300](https://leetcode.com/problems/longest-increasing-subsequence/) | Longest Increasing Subsequence | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python3](./leetcode/300.longest-increasing-subsequence.py) | Dynamic Programming | O\(N\*logN\) | O\(N\) | LIS \| std::lower\_bound | - |
@@ -729,7 +730,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(167) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(166) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -783,7 +784,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-57](https://leetcode.com/problems/insert-interval/) | Insert Interval | [c++](./leetcode/57.insert-interval.cpp), [python3](./leetcode/57.insert-interval.py) | Other | \- | \- | \- | - |
 | [leetcode-273](https://leetcode.com/problems/integer-to-english-words/) | Integer To English Words | [python3](./leetcode/273.integer-to-english-words.py) | Other | \- | \- | \- | - |
 | [leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Other | \- | \- | \- | - |
-| [leetcode-97](https://leetcode.com/problems/interleaving-string/) | Interleaving String | [c++](./leetcode/97.interleaving-string.cpp), [python3](./leetcode/97.interleaving-string.py) | Other | \- | \- | \- | - |
 | [leetcode-349](https://leetcode.com/problems/intersection-of-two-arrays/) | Intersection Of Two Arrays | [c++](./leetcode/349.intersection-of-two-arrays.cpp), [python3](./leetcode/349.intersection-of-two-arrays.py) | Other | \- | \- | \- | - |
 | [leetcode-350](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | Intersection Of Two Arrays II | [c++](./leetcode/350.intersection-of-two-arrays-ii.cpp), [python3](./leetcode/350.intersection-of-two-arrays-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-751](https://leetcode.com/problems/ip-to-cidr/) | Ip To Cidr | [python3](./leetcode/751.ip-to-cidr.py) | Other | \- | \- | \- | - |

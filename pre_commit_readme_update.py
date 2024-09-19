@@ -169,7 +169,7 @@ class Markdown:
 
     @staticmethod 
     def solution_table(f, categories):
-        Logger.log('----unknow tags----')
+        Logger.log('----tags----')
         def search_tag(solution, unkown_tags):
             tags = solution.tags
             match_all = set()
@@ -256,16 +256,16 @@ class Markdown:
     def list_table(f):
         list_dir = './list'
         list_row = []
+        list_stat = []
         solutions = Problem.all()
 
         for file_name in os.listdir(list_dir):
             file_path = os.path.join(list_dir, file_name)
-            qestions = Problem.list(file_path)
-            total = set(qestions)
+            questions, dup, total = Problem.list(file_path)
             solved = set()
             vip = set()
             working = set()
-            for q in qestions:
+            for q in questions:
                 if q.number.isnumeric():
                     if q.name in solutions:
                         exensions = [x.extension for x in solutions[q.name]]
@@ -276,20 +276,29 @@ class Markdown:
                 else:
                     working.add(q)
 
-            progress = f"{len(solved)}/{len(total)}" 
+            progress = f"{len(solved)}/{len(questions)}" 
             notes = f"{len(vip)} vip{'' if len(vip) == 1 else 's'}" if len(vip) > 0 else '-'     
-            status = '-'
-            if len(solved) + len(vip) == len(total):
+            status = '[--]'
+            if len(solved) + len(vip) == len(questions):
                 status = '[✅]'
             elif len(working) > 0:
                 status = '[🔲]'
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
+            list_stat.append((status, file_name, len(questions), dup, len(solved) + len(vip), total))
 
-        list_row.sort()
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
-        for row in list_row:
+        for row in sorted(list_row):
             Markdown.table_row(f, row)
         Markdown.table_footer(f)
+
+        Logger.log('---list----')
+        for status, file_name, problems, dup, finished, total in sorted(list_stat, reverse=True):
+            duplicated = finished < total and len(dup) > 0
+            Logger.log(f'{file_name:15}', Logger.OKBLUE, end=f' ')
+            Logger.log(f'{problems:>3} /', end=' ')
+            Logger.log(f'{total:<3} {status}', Logger.OKGREEN, end=' ' if duplicated else '\n')
+            if duplicated:
+                Logger.log(f'dup={dup}', Logger.WARNING)
 
 class Problem:
     @staticmethod
@@ -300,11 +309,10 @@ class Problem:
     @lru_cache()
     def list(file_path):
         mod_datetime = datetime.fromtimestamp(os.path.getmtime(file_path))
-        res = []
+        res = set()
         format_lines = []
-        duplicates = set()
         current_number = 0
-        dup = []
+        dup = set()
         with open(file_path, 'r') as file:
             for line in file.readlines():
                 format_lines.append(f'{line}')
@@ -322,28 +330,23 @@ class Problem:
                     continue
 
                 name = match.group(1)
-                if name not in duplicates:
-                    duplicates.add(name)
-                    if mark.isnumeric():
-                        format_lines[-1] = f'{current_number}. {link}\n'
+    
+                if mark.isnumeric():
+                    format_lines[-1] = f'{current_number}. {link}\n'
 
-                    match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
-                    source = match.group(2)
+                match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
+                source = match.group(2)
 
-                    s = Problem(link, source, mark, name, '', mod_datetime)
-                    res.append(s)
+                s = Problem(link, source, mark, name, '', mod_datetime)
+                if s in res:
+                    dup.add(s.name)
                 else:
-                    dup.append(name)
+                    res.add(s)
         
         with open(file_path, 'w') as file:
             file.writelines(format_lines)
 
-        Logger.log(f'{file_path}', end=' ')
-        Logger.log(f'{current_number}', Logger.OKGREEN)
-        if len(dup) > 0:
-            Logger.log(f'dup={dup}', Logger.WARNING)
-
-        return res
+        return res, dup, current_number
 
     @staticmethod
     @lru_cache()
@@ -410,7 +413,7 @@ class Problem:
                             Logger.log(f'{attr}', Logger.OKBLUE, end=' ')
                             Logger.log(f'{s1} {s2}', Logger.OKGREEN)
 
-        Logger.log('----statics----')
+        Logger.log('----solutions----')
         for k, v in source_dict.items():
             Logger.log(f'{k} files = {v}')
         Logger.log(f'total solutions = {count}')
