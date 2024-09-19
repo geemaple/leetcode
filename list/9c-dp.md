@@ -45,5 +45,8 @@
 29. https://leetcode.com/problems/longest-palindromic-subsequence/
 30. https://www.lintcode.com/problem/coins-in-a-line-iii/
 31. https://leetcode.com/problems/scramble-string/
+32. https://leetcode.com/problems/burst-balloons/
 
-- https://leetcode.com/problems/burst-balloons/
+### 双序列
+
+- https://leetcode.com/problems/longest-common-subsequence/

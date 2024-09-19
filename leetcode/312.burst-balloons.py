@@ -55,16 +55,14 @@ class Solution:
     
 class Solution:
     def maxCoins(self, nums: List[int]) -> int:
-        balloons = [1] + nums + [1]
-        n = len(balloons)
-        dp = [[0 for j in range(n)] for i in range(n)]
+        nums = [1] + nums + [1]
+        n = len(nums)
+        dp = [[0] * n for i in range(n)]
 
-        for length in range(1, n - 1):
-            for l in range(1, n - length):
-                r = l + length - 1
-                for k in range(l, r + 1):
-                    p = balloons[l - 1] * balloons[k] * balloons[r + 1] + dp[l][k - 1] + dp[k + 1][r]
-                    if p > dp[l][r]:
-                        dp[l][r] = p
+        for l in range(1, n - 1):
+            for i in range(1, n - l):
+                j = i + l - 1
+                for k in range(i, j + 1):
+                    dp[i][j] = max(dp[i][j], dp[i][k - 1] + dp[k + 1][j] + nums[k] * nums[i - 1] * nums[j + 1])
 
         return dp[1][n - 2]

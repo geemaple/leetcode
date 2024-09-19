@@ -67,22 +67,20 @@ public:
 
 class Solution {
 public:
-    
     int maxCoins(vector<int>& nums) {
-
         nums.insert(nums.begin(), 1);
         nums.push_back(1);
 
         int n = nums.size();       
         vector<vector<int>> dp(n, vector<int>(n, 0));
 
-        for (int length = 1; length <= n - 2; length++) {
-            for (int l = 1; l < n - length; l++) {
-                int r = l + length - 1;
-                for (int k = l; k <= r; k++) {
-                    int p = nums[l - 1] * nums[k] * nums[r + 1] + dp[l][k - 1] + dp[k + 1][r];
-                    if (p > dp[l][r]) {
-                        dp[l][r] = p;
+        for (int l = 1; l <= n - 2; l++) {
+            for (int i = 1; i < n - l; i++) {
+                int j = i + l - 1;
+                for (int k = i; k <= j; k++) {
+                    int p = nums[i - 1] * nums[k] * nums[j + 1] + dp[i][k - 1] + dp[k + 1][j];
+                    if (p > dp[i][j]) {
+                        dp[i][j] = p;
                     }
                 }
             }
