@@ -56,3 +56,13 @@
 
 - https://leetcode.com/problems/wildcard-matching/
 - https://leetcode.com/problems/ones-and-zeroes/
+
+### 难题
+
+- https://leetcode.com/problems/longest-increasing-subsequence/
+- http://www.lintcode.com/problem/k-edit-distance/
+- https://leetcode.com/problems/frog-jump/
+- https://www.lintcode.com/problem/minimum-adjustment-cost/
+- https://www.lintcode.com/problem/k-sum/
+- https://leetcode.com/problems/maximal-square/
+- https://leetcode.com/problems/maximal-rectangle/
