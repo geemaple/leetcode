@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-dp.md](./list/9c-dp.md) | 32/34 | 1 vip |
+| [🔲] | [9c-dp.md](./list/9c-dp.md) | 35/38 | 1 vip |
 
 **Solved**: 435 problems
 
@@ -191,7 +191,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(61) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(62) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -210,6 +210,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-91](https://leetcode.com/problems/decode-ways/) | Decode Ways | [c++](./leetcode/91.decode-ways.cpp), [python3](./leetcode/91.decode-ways.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [leetcode-583](https://leetcode.com/problems/delete-operation-for-two-strings/) | Delete Operation For Two Strings | [c++](./leetcode/583.delete-operation-for-two-strings.cpp), [python3](./leetcode/583.delete-operation-for-two-strings.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-241](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Different Ways To Add Parentheses | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python3](./leetcode/241.different-ways-to-add-parentheses.py) | Dynamic Programming | \- | \- | \- | - |
+| [leetcode-115](https://leetcode.com/problems/distinct-subsequences/) | Distinct Subsequences | [c++](./leetcode/115.distinct-subsequences.cpp), [python3](./leetcode/115.distinct-subsequences.py) | Dynamic Programming | O\(NM\) | O\(NM\) | \- | - |
 | [leetcode-72](https://leetcode.com/problems/edit-distance/) | Edit Distance | [c++](./leetcode/72.edit-distance.cpp), [python3](./leetcode/72.edit-distance.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | [c++](./leetcode/22.generate-parentheses.cpp), [python3](./leetcode/22.generate-parentheses.py) | Dynamic Programming | O\(2^N\) | O\(N\) | Catalan Number | - |
 | [leetcode-375](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) | Guess Number Higher Or Lower II | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
@@ -730,7 +731,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(166) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(165) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -761,7 +762,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-394](https://leetcode.com/problems/decode-string/) | Decode String | [c++](./leetcode/394.decode-string.cpp), [python3](./leetcode/394.decode-string.py) | Other | \- | \- | \- | - |
 | [leetcode-237](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Delete Node In A Linked List | [python3](./leetcode/237.delete-node-in-a-linked-list.py) | Other | \- | \- | \- | - |
 | [leetcode-498](https://leetcode.com/problems/diagonal-traverse/) | Diagonal Traverse | [c++](./leetcode/498.diagonal-traverse.cpp) | Other | \- | \- | \- | - |
-| [leetcode-115](https://leetcode.com/problems/distinct-subsequences/) | Distinct Subsequences | [c++](./leetcode/115.distinct-subsequences.cpp), [python3](./leetcode/115.distinct-subsequences.py) | Other | \- | \- | \- | - |
 | [leetcode-29](https://leetcode.com/problems/divide-two-integers/) | Divide Two Integers | [c++](./leetcode/29.divide-two-integers.cpp), [python3](./leetcode/29.divide-two-integers.py) | Other | \- | \- | \- | - |
 | [leetcode-271](https://leetcode.com/problems/encode-and-decode-strings/) | Encode And Decode Strings | [c++](./leetcode/271.encode-and-decode-strings.cpp), [python3](./leetcode/271.encode-and-decode-strings.py) | Other | \- | \- | \- | - |
 | [leetcode-535](https://leetcode.com/problems/encode-and-decode-tinyurl/) | Encode And Decode Tinyurl | [python3](./leetcode/535.encode-and-decode-tinyurl.py) | Other | \- | \- | \- | - |

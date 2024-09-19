@@ -50,4 +50,9 @@
 ### 双序列
 
 33. https://leetcode.com/problems/longest-common-subsequence/
-+ https://leetcode.com/problems/interleaving-string/
+34. https://leetcode.com/problems/interleaving-string/
+35. https://leetcode.com/problems/distinct-subsequences/
+36. https://leetcode.com/problems/regular-expression-matching/
+
+- https://leetcode.com/problems/wildcard-matching/
+- https://leetcode.com/problems/ones-and-zeroes/

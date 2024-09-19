@@ -65,7 +65,7 @@ class Solution:
         n = len(word1)
         m = len(word2)
         cache = [[None] * m for i in range(n)]
-        return self.helper(word1, word2, 0, 0, cache) # dict cache is too slow
+        return self.helper(word1, word2, 0, 0, cache) # dict cache is slow than array
 
     def helper(self, word1: str, word2: str, i :int, j: int, cache: dict) -> int:
         if i == len(word1):
