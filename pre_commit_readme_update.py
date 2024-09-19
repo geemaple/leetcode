@@ -301,26 +301,47 @@ class Problem:
     def list(file_path):
         mod_datetime = datetime.fromtimestamp(os.path.getmtime(file_path))
         res = []
+        format_lines = []
+        duplicates = set()
+        current_number = 0
+        dup = []
         with open(file_path, 'r') as file:
             for line in file.readlines():
+                format_lines.append(f'{line}')
                 match = re.match(r'^([\d\+\-]+)\.?\s(.*)$', line)
                 if match is None:
                     continue
                 
-                number = match.group(1)
+                current_number += 1
+                mark = match.group(1)
                 link = match.group(2)
                 parsed_link = urlparse(link)
                 
                 match = re.search(r'\/problems?\/([^\/]+)\/?', parsed_link.path)
-                if match is None:
+                if not match:
                     continue
+
                 name = match.group(1)
+                if name not in duplicates:
+                    duplicates.add(name)
+                    if mark.isnumeric():
+                        format_lines[-1] = f'{current_number}. {link}\n'
 
-                match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
-                source = match.group(2)
+                    match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
+                    source = match.group(2)
 
-                s = Problem(link, source, number, name, '', mod_datetime)
-                res.append(s)
+                    s = Problem(link, source, mark, name, '', mod_datetime)
+                    res.append(s)
+                else:
+                    dup.append(name)
+        
+        with open(file_path, 'w') as file:
+            file.writelines(format_lines)
+
+        Logger.log(f'{file_path}', end=' ')
+        Logger.log(f'{current_number}', Logger.OKGREEN)
+        if len(dup) > 0:
+            Logger.log(f'dup={dup}', Logger.WARNING)
 
         return res
 
