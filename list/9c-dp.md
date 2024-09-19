@@ -53,9 +53,8 @@
 34. https://leetcode.com/problems/interleaving-string/
 35. https://leetcode.com/problems/distinct-subsequences/
 36. https://leetcode.com/problems/regular-expression-matching/
-
-- https://leetcode.com/problems/wildcard-matching/
-- https://leetcode.com/problems/ones-and-zeroes/
+37. https://leetcode.com/problems/wildcard-matching/
+38. https://leetcode.com/problems/ones-and-zeroes/
 
 ### 难题
 
