@@ -61,7 +61,7 @@
 39. https://leetcode.com/problems/longest-increasing-subsequence/
 40. http://www.lintcode.com/problem/k-edit-distance/
 41. https://leetcode.com/problems/frog-jump/
-- https://www.lintcode.com/problem/minimum-adjustment-cost/
-- https://www.lintcode.com/problem/k-sum/
+42. https://www.lintcode.com/problem/minimum-adjustment-cost/
+43. https://www.lintcode.com/problem/k-sum/
 - https://leetcode.com/problems/maximal-square/
 - https://leetcode.com/problems/maximal-rectangle/

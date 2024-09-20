@@ -34,13 +34,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [9c-advanced.md](./list/9c-advanced.md) | 59/87 | 2 vips |
+| [--] | [9c-advanced.md](./list/9c-advanced.md) | 58/87 | 3 vips |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | - |
 | [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
 | [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-dp.md](./list/9c-dp.md) | 38/44 | 2 vips |
+| [🔲] | [9c-dp.md](./list/9c-dp.md) | 39/44 | 3 vips |
 
 **Solved**: 435 problems
 
@@ -192,7 +192,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(64) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(65) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | \- | - |
@@ -256,6 +256,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-563](https://www.lintcode.com/problem/backpack-v/) | Backpack V | [c++](./lintcode/563.backpack-v.cpp), [python3](./lintcode/563.backpack-v.py) | Dynamic Programming | O\(N^2\) | O\(N\) | \- | - |
 | [lintcode-394](https://www.lintcode.com/problem/coins-in-a-line/) | Coins In A Line | [c++](./lintcode/394.coins-in-a-line.cpp), [python3](./lintcode/394.coins-in-a-line.py) | Dynamic Programming | O\(N\) | O\(N\) | \- | - |
 | [lintcode-437](https://www.lintcode.com/problem/copy-books/) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | Answer \| DP | - |
+| [lintcode-89](https://www.lintcode.com/problem/k-sum/) | K Sum | [c++](./lintcode/89.k-sum.cpp), [python3](./lintcode/89.k-sum.py) | Dynamic Programming | O\(NKT\) | O\(NKT\) | \- | - |
 | [lintcode-515](https://www.lintcode.com/problem/paint-house/) | Paint House | [c++](./lintcode/515.paint-house.cpp), [python3](./lintcode/515.paint-house.py) | Dynamic Programming | O\(N\) | O\(N\) | Leetcode\-256 | - |
 | [lintcode-516](https://www.lintcode.com/problem/paint-house-ii/) | Paint House II | [c++](./lintcode/516.paint-house-ii.cpp), [python3](./lintcode/516.paint-house-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | Leetcode\-265 | - |
 
@@ -734,7 +735,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(163) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(161) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -883,12 +884,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-652](https://www.lintcode.com/problem/factorization/) | Factorization | [c++](./lintcode/652.factorization.cpp), [python3](./lintcode/652.factorization.py) | Other | \- | \- | \- | - |
 | [lintcode-390](https://www.lintcode.com/problem/find-peak-element-ii/) | Find Peak Element II | [c++](./lintcode/390.find-peak-element-ii.cpp), [python3](./lintcode/390.find-peak-element-ii.py) | Other | \- | \- | \- | - |
 | [lintcode-144](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers/) | Interleaving Positive And Negative Numbers | [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python3](./lintcode/144.interleaving-positive-and-negative-numbers.py) | Other | \- | \- | \- | - |
-| [lintcode-89](https://www.lintcode.com/problem/k-sum/) | K Sum | [c++](./lintcode/89.k-sum.cpp), [python3](./lintcode/89.k-sum.py) | Other | \- | \- | \- | - |
 | [lintcode-611](https://www.lintcode.com/problem/knight-shortest-path/) | Knight Shortest Path | [c++](./lintcode/611.knight-shortest-path.cpp), [python3](./lintcode/611.knight-shortest-path.py) | Other | \- | \- | \- | - |
 | [lintcode-543](https://www.lintcode.com/problem/kth-largest-in-n-arrays/) | Kth Largest In N Arrays | [c++](./lintcode/543.kth-largest-in-n-arrays.cpp), [python3](./lintcode/543.kth-largest-in-n-arrays.py) | Other | \- | \- | \- | - |
 | [lintcode-465](https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays/) | Kth Smallest Sum In Two Sorted Arrays | [c++](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.cpp), [python3](./lintcode/465.kth-smallest-sum-in-two-sorted-arrays.py) | Other | \- | \- | \- | - |
 | [lintcode-526](https://www.lintcode.com/problem/load-balancer/) | Load Balancer | [c++](./lintcode/526.load-balancer.cpp), [python3](./lintcode/526.load-balancer.py) | Other | \- | \- | \- | - |
-| [lintcode-91](https://www.lintcode.com/problem/minimum-adjustment-cost/) | Minimum Adjustment Cost | [c++](./lintcode/91.minimum-adjustment-cost.cpp), [python3](./lintcode/91.minimum-adjustment-cost.py) | Other | \- | \- | \- | - |
 | [lintcode-629](https://www.lintcode.com/problem/minimum-spanning-tree/) | Minimum Spanning Tree | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python3](./lintcode/629.minimum-spanning-tree.py) | Other | \- | \- | \- | - |
 | [lintcode-391](https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/) | Number Of Airplanes In The Sky | [c++](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python3](./lintcode/391.number-of-airplanes-in-the-sky.py) | Other | \- | \- | \- | - |
 | [lintcode-31](https://www.lintcode.com/problem/partition-array/) | Partition Array | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | \- | - |
