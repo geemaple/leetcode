@@ -2,7 +2,7 @@
 #  Time: O(NM)
 #  Space: O(M)
 #  Ref: -
-#  Note: Based On 84
+#  Note: -
 
 #  Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 #   
@@ -33,6 +33,7 @@
 #  
 #  
 
+# Based On 84
 class Solution:
     def maximalRectangle(self, matrix: List[List[str]]) -> int:
         n = len(matrix)
@@ -62,4 +63,48 @@ class Solution:
 
             stack.append(i)
 
+        return res
+    
+# 3 dp
+class Solution:
+    def maximalRectangle(self, matrix: List[List[str]]) -> int:
+        m = len(matrix)
+        n = len(matrix[0])
+        
+        left = [0] * n
+        right = [n] * n
+        height = [0] * n
+        
+        res = 0
+        for i in range(m):
+            cur_left = 0
+            cur_right = n
+            
+            # height dp
+            for j in range(n):
+                if matrix[i][j] == '1':
+                    height[j] += 1
+                else:
+                    height[j] = 0
+            
+            # left dp
+            for j in range(n):
+                if matrix[i][j] == '1':
+                    left[j] = max(left[j], cur_left)
+                else:
+                    left[j] = 0
+                    cur_left = j + 1
+
+            # right dp
+            for j in range(n - 1, -1, -1):
+                if matrix[i][j] == '1':
+                    right[j] = min(right[j], cur_right)
+                else:
+                    right[j] = n
+                    cur_right = j
+
+            # area
+            for j in range(n):
+                res = max(res, (right[j] - left[j]) * height[j])
+        
         return res
