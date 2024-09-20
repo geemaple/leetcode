@@ -63,5 +63,5 @@
 41. https://leetcode.com/problems/frog-jump/
 42. https://www.lintcode.com/problem/minimum-adjustment-cost/
 43. https://www.lintcode.com/problem/k-sum/
-- https://leetcode.com/problems/maximal-square/
-- https://leetcode.com/problems/maximal-rectangle/
+44. https://leetcode.com/problems/maximal-square/
+45. https://leetcode.com/problems/maximal-rectangle/

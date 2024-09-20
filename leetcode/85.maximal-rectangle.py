@@ -1,42 +1,65 @@
-class Solution(object):
-    def maximalRectangle(self, matrix):
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
-        if matrix is None or len(matrix) == 0 or len(matrix[0]) == 0:
-            return 0
-        
-        m = len(matrix)
-        n = len(matrix[0])
-        
-        nums = [0 for _ in range(n + 1)]
-        
+#  Tag: Array, Dynamic Programming, Stack, Matrix, Monotonic Stack
+#  Time: O(NM)
+#  Space: O(M)
+#  Ref: -
+#  Note: Based On 84
+
+#  Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+#   
+#  Example 1:
+#  
+#  
+#  Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+#  Output: 6
+#  Explanation: The maximal rectangle is shown in the above picture.
+#  
+#  Example 2:
+#  
+#  Input: matrix = [["0"]]
+#  Output: 0
+#  
+#  Example 3:
+#  
+#  Input: matrix = [["1"]]
+#  Output: 1
+#  
+#   
+#  Constraints:
+#  
+#  rows == matrix.length
+#  cols == matrix[i].length
+#  1 <= row, cols <= 200
+#  matrix[i][j] is '0' or '1'.
+#  
+#  
+
+class Solution:
+    def maximalRectangle(self, matrix: List[List[str]]) -> int:
+        n = len(matrix)
+        m = len(matrix[0])
+        dp = [0 for i in range(m + 1)]
         res = 0
-        for i in range(m):
-            for j in range(n):
+        for i in range(n):
+            for j in range(m):
                 if matrix[i][j] == '1':
-                    nums[j] += 1
+                    dp[j] += 1
                 else:
-                    nums[j] = 0
-                    
-            res = max(res, self.maxArea(nums))
-            
+                    dp[j] = 0
+
+            res = max(res, self.cal(dp))
+
         return res
-                    
-    def maxArea(self, nums):
-        nums[-1] = -1
-        stack = []
-        
+                
+    def cal(self, dp: list) -> int:
         res = 0
-        for i in range(len(nums)):
-            while stack and nums[stack[-1]] >= nums[i]:
-                index = stack.pop()
-                left = stack[-1] if stack else -1
-                width = i - left + 1 - 2
-                
-                res = max(res, width * nums[index])
-                
+        stack = []
+        for i in range(len(dp)):
+            while len(stack) > 0 and dp[i] < dp[stack[-1]]:
+                height = dp[stack[-1]]
+                stack.pop()
+                left = 0 if len(stack) == 0 else stack[-1] + 1
+                res = max(res, (i - left) * height)
+
             stack.append(i)
-            
+
         return res
