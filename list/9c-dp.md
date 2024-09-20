@@ -56,11 +56,11 @@
 37. https://leetcode.com/problems/wildcard-matching/
 38. https://leetcode.com/problems/ones-and-zeroes/
 
-### 难题
+### DP + 数据结构
 
-- https://leetcode.com/problems/longest-increasing-subsequence/
-- http://www.lintcode.com/problem/k-edit-distance/
-- https://leetcode.com/problems/frog-jump/
+39. https://leetcode.com/problems/longest-increasing-subsequence/
+40. http://www.lintcode.com/problem/k-edit-distance/
+41. https://leetcode.com/problems/frog-jump/
 - https://www.lintcode.com/problem/minimum-adjustment-cost/
 - https://www.lintcode.com/problem/k-sum/
 - https://leetcode.com/problems/maximal-square/
