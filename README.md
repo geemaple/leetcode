@@ -39,7 +39,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 41/44 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
-| [✅] | [lc-contest.md](./list/lc-contest.md) | 0/0 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 0/87 | - |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |

@@ -258,10 +258,13 @@ class Markdown:
         list_row = []
         list_stat = []
         solutions = Problem.all()
+        all_prolebem = set()
+
 
         for file_name in os.listdir(list_dir):
             file_path = os.path.join(list_dir, file_name)
             questions, dup, total = Problem.list(file_path)
+            all_prolebem.update(questions)
             solved = set()
             vip = set()
             working = set()
@@ -298,7 +301,10 @@ class Markdown:
             Logger.log(f'{finished:>3} /', end=' ')
             Logger.log(f'{total:<3} {status}', Logger.OKGREEN, end=' ' if duplicated else '\n')
             if duplicated:
-                Logger.log(f'dup={dup}', Logger.WARNING)
+                Logger.log(f'duplicated={len(dup)}', Logger.WARNING, end=' ')
+                Logger.log(f'{dup}')
+
+        Logger.log(f'total list question = {len(all_prolebem)}', Logger.OKGREEN)
 
 class Problem:
     @staticmethod
