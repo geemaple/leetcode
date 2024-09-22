@@ -284,7 +284,7 @@ class Markdown:
             elif len(working) > 0:
                 status = '[🔲]'
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
-            list_stat.append((status, file_path, len(questions), dup, len(solved) + len(vip), total))
+            list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
 
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):
@@ -292,10 +292,10 @@ class Markdown:
         Markdown.table_footer(f)
 
         Logger.log('---list----')
-        for status, file_path, problems, dup, finished, total in sorted(list_stat, reverse=True):
+        for status, file_path, dup, finished, total in sorted(list_stat, reverse=True):
             duplicated = finished < total and len(dup) > 0
             Logger.log(f'{file_path:15}', Logger.OKBLUE, end=f' ')
-            Logger.log(f'{problems:>3} /', end=' ')
+            Logger.log(f'{finished:>3} /', end=' ')
             Logger.log(f'{total:<3} {status}', Logger.OKGREEN, end=' ' if duplicated else '\n')
             if duplicated:
                 Logger.log(f'dup={dup}', Logger.WARNING)

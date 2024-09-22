@@ -34,13 +34,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [9c-advanced.md](./list/9c-advanced.md) | 58/87 | 3 vips |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | - |
 | [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
 | [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 41/44 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 0/87 | - |
+| [🔲] | [leetcode-biweekly.md](./list/leetcode-biweekly.md) | 0/4 | - |
+| [🔲] | [leetcode-weekly.md](./list/leetcode-weekly.md) | 7/16 | - |
 
 **Solved**: 435 problems
 

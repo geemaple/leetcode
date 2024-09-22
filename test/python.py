@@ -10,44 +10,39 @@ from typing import (
 )
 
 
+from collections import defaultdict
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
-        heights = heights + [-1]
-        n = len(heights)
-        stack = []
+    def validSubstringCount(self, word1: str, word2: str) -> int:
+        n = len(word1)
+        m = len(word2)
+    
+        counter = defaultdict(int)
+        for x in word2:
+            counter[x] += 1
+
+        i = 0
+        found = 0
         res = 0
+        for j in range(n):
+            if word1[j] in counter:
+                counter[word1[j]] -= 1
+                if counter[word1[j]] >= 0:
+                    found += 1
 
-        for i in range(n):
-            while len(stack) > 0 and heights[i] < heights[stack[-1]]:
-                left = 0 if len(stack) == 1 else stack[-2] + 1
-                area = (i - left) * heights[stack[-1]]
-                res = max(res, area)
-                stack.pop()
+            while found == m:
+                res += n - j
+                if word1[i] in counter:
+                    counter[word1[i]] += 1
+                    if counter[word1[i]] > 0:
+                        found -= 1
 
-            stack.append(i)
+                i += 1
 
         return res
-    
-    # def largestRectangleArea(self, heights: List[int]) -> int:
-    #     stack = []
-    #     nums = heights[:] + [-1]
-    #     res = 0
-        
-    #     for i in range(len(nums)):
-            
-    #         while(stack and nums[stack[-1]] >= nums[i]):
-    #             index = stack.pop()
-    #             left = stack[-1] if stack else -1
-    #             width = i - left + 1 - 2
-    #             res = max(res, width * heights[index])
-            
-    #         stack.append(i)
-            
-    #     return res
 
 
 s = Solution()
 ts = datetime.now()
-res = s.largestRectangleArea([4,2,0,3,2,5])
+res = s.validSubstringCount("dcbdcdccb", "cdd")
 print(datetime.now() - ts)
 print(res)
