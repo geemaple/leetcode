@@ -10,39 +10,42 @@ from typing import (
 )
 
 
-from collections import defaultdict
 class Solution:
-    def validSubstringCount(self, word1: str, word2: str) -> int:
-        n = len(word1)
-        m = len(word2)
-    
-        counter = defaultdict(int)
-        for x in word2:
-            counter[x] += 1
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        
+        prefix = [0 for i in range(len(nums) + 1)]
+        n = len(prefix)
+        for i in range(1, n):
+            prefix[i] = nums[i - 1] + prefix[i - 1]
 
-        i = 0
-        found = 0
-        res = 0
-        for j in range(n):
-            if word1[j] in counter:
-                counter[word1[j]] -= 1
-                if counter[word1[j]] >= 0:
-                    found += 1
+        res = float('inf')
+        for i in range(n):
+            x = prefix[i]
+            j = self.binary_search(prefix,  x + target)
+            if j != len(prefix):
+                res = min(res, j - i)
 
-            while found == m:
-                res += n - j
-                if word1[i] in counter:
-                    counter[word1[i]] += 1
-                    if counter[word1[i]] > 0:
-                        found -= 1
+        return res if res < float('inf') else 0
 
-                i += 1
+    def binary_search(self, array:list, target:int):
+        
+        left = 0
+        right = len(array)
+        while left < right:
+            mid = (left + right) >> 1
+            if array[mid] == target:
+                return mid
 
-        return res
+            if array[mid] < target:
+                left = mid + 1
+            else:
+                right = mid
+        return left
+
 
 
 s = Solution()
 ts = datetime.now()
-res = s.validSubstringCount("dcbdcdccb", "cdd")
+res = s.minSubArrayLen(7, [2,3,1,2,4,3])
 print(datetime.now() - ts)
 print(res)

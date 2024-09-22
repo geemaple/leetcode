@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 41/44 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 0/87 | - |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 1/87 | - |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |
 
 **Solved**: 435 problems
@@ -264,7 +264,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(33) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(34) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | Standard; | [Video](https://youtu.be/oxWpJtUGG_0) |
 | [leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | \- | - |
@@ -281,6 +281,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Binary Search | O\(NlogN \+ NlogD\) | O\(1\) | \- | - |
 | [leetcode-2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | Maximum Count Of Positive Integer And Negative Integer | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python3](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | Binary Search | O\(logN\) | O\(1\) | std::lower\_bound | - |
 | [leetcode-4](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Median Of Two Sorted Arrays | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python3](./leetcode/4.median-of-two-sorted-arrays.py) | Binary Search | O\(log\(min\(M, N\)\)\) | O\(1\) | \- | - |
+| [leetcode-209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Minimum Size Subarray Sum | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Binary Search | O\(N\) | O\(1\) | \- | - |
 | [leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Binary Search | O\(N\) | O\(1\) | \- | - |
 | [leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Binary Search | O\(NMlogNM\) | O\(NM\) | \- | - |
 | [leetcode-852](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | Peak Index In A Mountain Array | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python3](./leetcode/852.peak-index-in-a-mountain-array.py) | Binary Search | O\(logN\) | O\(1\) | Mountain | - |
@@ -462,12 +463,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(6) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(7) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Sliding Window | O\(N\) | O\(1\) | \- | - |
 | [leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Sliding Window | O\(Log\(N \- K\)\) | O\(1\) | Range | - |
 | [leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Sliding Window | O\(N\) | O\(N\) | \- | - |
 | [leetcode-3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python3](./leetcode/3.longest-substring-without-repeating-characters.py) | Sliding Window | O\(N\) | O\(N\) | \- | - |
+| [leetcode-209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Minimum Size Subarray Sum | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Sliding Window | O\(N\) | O\(1\) | \- | - |
 | [leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Sliding Window | O\(M\) | O\(N\) | Hash \+ TP | - |
 | [leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Sliding Window | O\(N\) | O\(K\) | \- | - |
 
@@ -739,7 +741,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(159) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(158) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -818,7 +820,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-928](https://leetcode.com/problems/minimize-malware-spread-ii/) | Minimize Malware Spread II | [python3](./leetcode/928.minimize-malware-spread-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-433](https://leetcode.com/problems/minimum-genetic-mutation/) | Minimum Genetic Mutation | [c++](./leetcode/433.minimum-genetic-mutation.cpp), [python3](./leetcode/433.minimum-genetic-mutation.py) | Other | \- | \- | \- | - |
 | [leetcode-599](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | Minimum Index Sum Of Two Lists | [c++](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | Other | \- | \- | \- | - |
-| [leetcode-209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Minimum Size Subarray Sum | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Other | \- | \- | \- | - |
 | [leetcode-163](https://leetcode.com/problems/missing-ranges/) | Missing Ranges | [c++](./leetcode/163.missing-ranges.cpp), [python3](./leetcode/163.missing-ranges.py) | Other | \- | \- | \- | - |
 | [leetcode-283](https://leetcode.com/problems/move-zeroes/) | Move Zeroes | [c++](./leetcode/283.move-zeroes.cpp), [python3](./leetcode/283.move-zeroes.py) | Other | \- | \- | \- | - |
 | [leetcode-346](https://leetcode.com/problems/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./leetcode/346.moving-average-from-data-stream.cpp), [python3](./leetcode/346.moving-average-from-data-stream.py) | Other | \- | \- | \- | - |

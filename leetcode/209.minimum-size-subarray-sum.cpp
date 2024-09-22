@@ -1,55 +1,77 @@
-// two-pointer  O(N)
+//  Tag: Array, Binary Search, Sliding Window, Prefix Sum
+//  Time: O(N)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  Given an array of positive integers nums and a positive integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+//   
+//  Example 1:
+//  
+//  Input: target = 7, nums = [2,3,1,2,4,3]
+//  Output: 2
+//  Explanation: The subarray [4,3] has the minimal length under the problem constraint.
+//  
+//  Example 2:
+//  
+//  Input: target = 4, nums = [1,4,4]
+//  Output: 1
+//  
+//  Example 3:
+//  
+//  Input: target = 11, nums = [1,1,1,1,1,1,1,1]
+//  Output: 0
+//  
+//   
+//  Constraints:
+//  
+//  1 <= target <= 109
+//  1 <= nums.length <= 105
+//  1 <= nums[i] <= 104
+//  
+//   
+//  Follow up: If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log(n)).
+
 class Solution {
 public:
-    int minSubArrayLen(int s, vector<int>& nums) {
-        
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int n = nums.size();
+        int total = 0;
         int res = INT_MAX;
-        int j = 0;
-        int sum = 0;
-        for (int i = 0; i < nums.size(); ++i)
-        {
-            while (j < nums.size() && sum < s){
-                sum += nums[j++];
+        int i = 0;
+
+        for (int j = 0; j < n; j++) {
+            total += nums[j];
+
+            while (total >= target) {
+                res = min(res, j - i + 1);
+                total -= nums[i];
+                i ++;
             }
-            
-            if (sum >= s){
-                res = min(res, j - i);
-            }
-            
-            sum -= nums[i];
         }
-        
-        return (res == INT_MAX) ? 0 : res;
+        return res == INT_MAX ? 0 : res;
     }
 };
 
-
-class Solution2 {
+// follow up
+class Solution {
 public:
-    // sum[to jth] - sum[to ith] = subArray(from ith to jth)
-    // O(N * LogN)
-    int minSubArrayLen(int s, vector<int>& nums) {
-        if (nums.size() == 0)
-        {
-            return 0;
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int n = nums.size();
+        vector<int> prefix(n + 1, 0);
+        for (int i = 1; i <= n; i++) {
+            prefix[i] = nums[i - 1] + prefix[i - 1];
         }
-        
-        // previous ith sum
-        int smallest = INT_MAX;
-        vector<int> sums(nums.size() + 1, 0);
-        for (auto i = 1; i < sums.size(); ++i)
-        {
-            sums[i] = sums[i - 1] + nums[i - 1];
-        }
-        
-        for (auto i = 1; i < sums.size(); ++i) {
-            int to_find = s + sums[i - 1];
-            auto bound = lower_bound(sums.begin(), sums.end(), to_find);
-            if (bound != sums.end()) {
-                smallest = min(smallest, static_cast<int>(bound - (sums.begin() + i - 1)));
+
+        int res = INT_MAX;
+        for (int i = 0; i < n; i++) {
+            int x = prefix[i];
+            auto it = lower_bound(prefix.begin(), prefix.end(), x + target);
+            if (it != prefix.end()) {
+                res = min(res, int(it - prefix.begin() - i));
             }
         }
-        
-        return (smallest != INT_MAX)? smallest: 0;
+
+        return res == INT_MAX ? 0 : res;
     }
 };

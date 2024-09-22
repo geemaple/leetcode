@@ -2,7 +2,8 @@
 
 ### Intro
 
-- https://www.lintcode.com/problem/minimum-size-subarray-sum/
+1. https://leetcode.com/problems/minimum-size-subarray-sum/
+
 - https://www.lintcode.com/problem/longest-substring-without-repeating-characters/
 - https://www.lintcode.com/problem/minimum-window-substring/
 - https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
