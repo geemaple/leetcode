@@ -43,7 +43,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 4/87 | - |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |
 
-**Solved**: 435 problems
+**Solved**: 434 problems
 
 ## 类型/Category
 
@@ -459,7 +459,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Two Pointers | O\(N\) | O\(1\) | \- | - |
 | [leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Two Pointers | O\(NH\) | O\(H\) | \- | - |
 | [leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) | Valid Palindrome II | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python3](./leetcode/680.valid-palindrome-ii.py) | Two Pointers | O\(N\) | O\(1\) | \- | - |
-| [lintcode-386](https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/) | Longest Substring With At Most K Distinct Characters | [c++](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.cpp), [python3](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.py) | Two Pointers | O\(N\) | O\(K\) | Leetcode\-340 | - |
+| [lintcode-386](https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/) | Longest Substring With At Most K Distinct Characters | [c++](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.cpp), [python3](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.py) | Two Pointers | O\(N\) | O\(K\) | Leetcode\-159, 340 | - |
 
 ## Sliding Window
 
@@ -741,7 +741,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(158) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(157) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -808,7 +808,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-359](https://leetcode.com/problems/logger-rate-limiter/) | Logger Rate Limiter | [c++](./leetcode/359.logger-rate-limiter.cpp) | Other | \- | \- | \- | - |
 | [leetcode-388](https://leetcode.com/problems/longest-absolute-file-path/) | Longest Absolute File Path | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python3](./leetcode/388.longest-absolute-file-path.py) | Other | \- | \- | \- | - |
 | [leetcode-14](https://leetcode.com/problems/longest-common-prefix/) | Longest Common Prefix | [c++](./leetcode/14.longest-common-prefix.cpp), [python3](./leetcode/14.longest-common-prefix.py) | Other | \- | \- | \- | - |
-| [leetcode-159](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | Longest Substring With At Most Two Distinct Characters | [c++](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.cpp), [python3](./leetcode/159.longest-substring-with-at-most-two-distinct-characters.py) | Other | \- | \- | \- | - |
 | [leetcode-687](https://leetcode.com/problems/longest-univalue-path/) | Longest Univalue Path | [c++](./leetcode/687.longest-univalue-path.cpp), [python3](./leetcode/687.longest-univalue-path.py) | Other | \- | \- | \- | - |
 | [leetcode-229](https://leetcode.com/problems/majority-element-ii/) | Majority Element II | [c++](./leetcode/229.majority-element-ii.cpp), [python3](./leetcode/229.majority-element-ii.py) | Other | \- | \- | \- | - |
 | [leetcode-677](https://leetcode.com/problems/map-sum-pairs/) | Map Sum Pairs | [c++](./leetcode/677.map-sum-pairs.cpp), [python3](./leetcode/677.map-sum-pairs.py) | Other | \- | \- | \- | - |
