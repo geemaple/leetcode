@@ -1,12 +1,12 @@
 ## 题目(高级篇)
 
-### Intro
+### Intro, 双指针
 
 1. https://leetcode.com/problems/minimum-size-subarray-sum/
+2. https://leetcode.com/problems/longest-substring-without-repeating-characters/
+3. https://leetcode.com/problems/minimum-window-substring/
+4. https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
 
-- https://www.lintcode.com/problem/longest-substring-without-repeating-characters/
-- https://www.lintcode.com/problem/minimum-window-substring/
-- https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
 - https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
 - https://www.lintcode.com/problem/kth-largest-in-n-arrays/
 - https://www.lintcode.com/problem/kth-smallest-element-in-a-sorted-matrix/

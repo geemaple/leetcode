@@ -24,6 +24,7 @@
 #  
 #  
 
+from collections import defaultdict
 class Solution:
     """
     @param s: A string
@@ -32,22 +33,19 @@ class Solution:
     """
     def length_of_longest_substring_k_distinct(self, s: str, k: int) -> int:
         # write your code here
-        table = collections.defaultdict(int)
-        count = 0
-        l = 0
-        length = 0
-        for r in range(len(s)):
-            if table[s[r]] == 0:
-                count += 1
-            table[s[r]] += 1
+        n = len(s)
+        counter = defaultdict(int)
+        j = 0
+        res = 0
+        for i in range(n):
+            counter[s[i]] += 1
+            
+            while (len(counter) > k):
+                counter[s[j]] -= 1
+                if counter[s[j]] == 0:
+                    del counter[s[j]]
+                j += 1
 
-            while count > k:
-                if table[s[l]] == 1:
-                    count -= 1
-                table[s[l]] -= 1
-                l += 1
+            res = max(res, i - j + 1)
 
-            if r - l + 1 > length:
-                length = r - l + 1
-
-        return length
+        return res

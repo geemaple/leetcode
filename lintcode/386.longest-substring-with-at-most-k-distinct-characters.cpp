@@ -33,30 +33,22 @@ public:
      */
     int lengthOfLongestSubstringKDistinct(string &s, int k) {
         // write your code here
-        unordered_map<char, int> table;
-        int count = 0;
-        int l = 0;
-        int length = 0;    
-    
-        for (int r = 0; r < s.size(); r++) {
-            if (table[s[r]] == 0) {
-                count += 1;
-            }
-            table[s[r]] += 1;
+        int n = s.size();
+        unordered_map<char, int> counter;
+        int j = 0;
+        int res = 0;
 
-            while (count > k) {
-                if (table[s[l]] == 1) {
-                    count -= 1;
+        for (int i = 0; i < n; i++) {
+            counter[s[i]] += 1;
+            while (counter.size() > k) {
+                counter[s[j]] -= 1;
+                if (counter[s[j]] == 0) {
+                    counter.erase(s[j]);
                 }
-                table[s[l]] -= 1;
-                l++;
+                j++;
             }
-
-            if (r - l + 1 > length) {
-                length = r - l + 1;
-            } 
+            res = max(res, i - j + 1);
         }
-
-        return length;
+        return res;
     }
 };
