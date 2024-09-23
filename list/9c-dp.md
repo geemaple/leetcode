@@ -9,16 +9,16 @@
 ### 坐标、序列
 
 4. https://leetcode.com/problems/unique-paths-ii/
-5. https://leetcode.com/problems/paint-house/
+5. https://www.lintcode.com/problem/paint-house/
 6. https://leetcode.com/problems/decode-ways/
 7. https://leetcode.com/problems/longest-continuous-increasing-subsequence/
 8. https://leetcode.com/problems/minimum-path-sum/
-9. https://leetcode.com/problems/bomb-enemy/
+9. https://www.lintcode.com/problem/bomb-enemy/
 10. https://leetcode.com/problems/counting-bits/
 
 ### 状态序列
 
-11. https://leetcode.com/problems/paint-house-ii/
+11. https://www.lintcode.com/problem/paint-house-ii/
 12. https://leetcode.com/problems/house-robber/
 13. https://leetcode.com/problems/house-robber-ii/
 14. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/

@@ -21,7 +21,7 @@
 14. https://leetcode.com/problems/sum-of-square-numbers/
 15. https://leetcode.com/problems/valid-palindrome-ii/
 16. https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
-17. https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+17. https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
 
 ### 二分法
 
@@ -167,7 +167,7 @@
 132. https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
 133. https://leetcode.com/problems/longest-palindrome/
 134. https://leetcode.com/problems/longest-substring-without-repeating-characters/
-135. https://leetcode.com/problems/basic-calculator-iii/
+135. https://www.lintcode.com/problem/basic-calculator-iii/
 136. https://leetcode.com/problems/longest-palindromic-substring/
 
 ### 连标
@@ -219,14 +219,14 @@
 175. https://leetcode.com/problems/is-graph-bipartite/
 176. https://leetcode.com/problems/course-schedule-ii/
 177. https://leetcode.com/problems/all-paths-from-source-lead-to-destination/
-178. https://leetcode.com/problems/connecting-cities-with-minimum-cost/
+178. https://www.lintcode.com/problem/connecting-cities-with-minimum-cost/
 179. https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/
 
 ### 复杂数据结构
 
 180. https://leetcode.com/problems/redundant-connection/
 181. https://leetcode.com/problems/lru-cache/
-182. https://leetcode.com/problems/connecting-cities-with-minimum-cost/
+182. https://www.lintcode.com/problem/connecting-cities-with-minimum-cost/
 183. https://leetcode.com/problems/insert-delete-getrandom-o1/
 184. https://leetcode.com/problems/all-oone-data-structure/
-185. https://leetcode.com/problems/max-stack/
+185. https://www.lintcode.com/problem/max-stack/

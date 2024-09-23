@@ -7,6 +7,10 @@
 3. https://leetcode.com/problems/minimum-window-substring/
 4. https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
 
+- https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- https://leetcode.com/problems/middle-of-the-linked-list/
+- https://leetcode.com/problems/linked-list-cycle/
+- https://leetcode.com/problems/linked-list-cycle-ii/
 - https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
 - https://www.lintcode.com/problem/kth-largest-in-n-arrays/
 - https://www.lintcode.com/problem/kth-smallest-element-in-a-sorted-matrix/
@@ -105,3 +109,5 @@
 - https://www.lintcode.com/problem/flatten-nested-list-iterator/
 - https://www.lintcode.com/problem/flatten-2d-vector/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
+
+

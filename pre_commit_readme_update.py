@@ -260,7 +260,6 @@ class Markdown:
         solutions = Problem.all()
         all_prolebem = set()
 
-
         for file_name in os.listdir(list_dir):
             file_path = os.path.join(list_dir, file_name)
             questions, dup, total = Problem.list(file_path)
@@ -268,6 +267,7 @@ class Markdown:
             solved = set()
             vip = set()
             working = set()
+            diff = set()
             for q in questions:
                 if q.number.isnumeric():
                     if q.name in solutions:
@@ -275,6 +275,9 @@ class Markdown:
                         if '.vip' in exensions:
                             vip.add(q)
                         else:
+                            sol = random.choice(solutions[q.name])
+                            if q.source != sol.source:
+                                diff.add(q)
                             solved.add(q)  
                 else:
                     working.add(q)
@@ -289,12 +292,18 @@ class Markdown:
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
             list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
 
+            if len(diff) > 0 and len(solved) + len(vip) == len(questions):
+                Logger.log('incorrect link:', Logger.WARNING, end=' ')
+                Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
+                Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
+
+
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):
             Markdown.table_row(f, row)
         Markdown.table_footer(f)
 
-        Logger.log('---list----')
+        Logger.log('----list----')
         for status, file_path, dup, finished, total in sorted(list_stat, reverse=True):
             duplicated = finished < total and len(dup) > 0
             Logger.log(f'{file_path:15}', Logger.OKBLUE, end=f' ')
