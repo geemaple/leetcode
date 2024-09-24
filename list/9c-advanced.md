@@ -10,11 +10,10 @@
 6. https://leetcode.com/problems/middle-of-the-linked-list/
 7. https://leetcode.com/problems/linked-list-cycle/
 8. https://leetcode.com/problems/linked-list-cycle-ii/
-
-- https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
-- https://www.lintcode.com/problem/kth-largest-in-n-arrays/
-- https://www.lintcode.com/problem/kth-smallest-element-in-a-sorted-matrix/
-- https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays/
+9. https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
+10. https://www.lintcode.com/problem/kth-largest-in-n-arrays/
+11. https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+12. https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays/
 
 ### 并查集、字典树
 
