@@ -6,11 +6,11 @@
 2. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 3. https://leetcode.com/problems/minimum-window-substring/
 4. https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/
+5. https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+6. https://leetcode.com/problems/middle-of-the-linked-list/
+7. https://leetcode.com/problems/linked-list-cycle/
+8. https://leetcode.com/problems/linked-list-cycle-ii/
 
-- https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-- https://leetcode.com/problems/middle-of-the-linked-list/
-- https://leetcode.com/problems/linked-list-cycle/
-- https://leetcode.com/problems/linked-list-cycle-ii/
 - https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
 - https://www.lintcode.com/problem/kth-largest-in-n-arrays/
 - https://www.lintcode.com/problem/kth-smallest-element-in-a-sorted-matrix/
