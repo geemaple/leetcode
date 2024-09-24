@@ -14,6 +14,7 @@
 10. https://www.lintcode.com/problem/kth-largest-in-n-arrays/
 11. https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 12. https://www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays/
+13. https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/
 
 ### 并查集、字典树
 

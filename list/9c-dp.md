@@ -51,17 +51,18 @@
 
 33. https://leetcode.com/problems/longest-common-subsequence/
 34. https://leetcode.com/problems/interleaving-string/
-35. https://leetcode.com/problems/distinct-subsequences/
-36. https://leetcode.com/problems/regular-expression-matching/
-37. https://leetcode.com/problems/wildcard-matching/
-38. https://leetcode.com/problems/ones-and-zeroes/
+35. https://leetcode.com/problems/edit-distance/
+36. https://leetcode.com/problems/distinct-subsequences/
+37. https://leetcode.com/problems/regular-expression-matching/
+38. https://leetcode.com/problems/wildcard-matching/
+39. https://leetcode.com/problems/ones-and-zeroes/
 
 ### DP + 数据结构
 
-39. https://leetcode.com/problems/longest-increasing-subsequence/
-40. http://www.lintcode.com/problem/k-edit-distance/
-41. https://leetcode.com/problems/frog-jump/
-42. https://www.lintcode.com/problem/minimum-adjustment-cost/
-43. https://www.lintcode.com/problem/k-sum/
-44. https://leetcode.com/problems/maximal-square/
-45. https://leetcode.com/problems/maximal-rectangle/
+40. https://leetcode.com/problems/longest-increasing-subsequence/
+41. http://www.lintcode.com/problem/k-edit-distance/
+42. https://leetcode.com/problems/frog-jump/
+43. https://www.lintcode.com/problem/minimum-adjustment-cost/
+44. https://www.lintcode.com/problem/k-sum/
+45. https://leetcode.com/problems/maximal-square/
+46. https://leetcode.com/problems/maximal-rectangle/
