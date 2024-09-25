@@ -1,22 +1,60 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <queue>
-#include <unordered_set>
-using namespace std;
+//  Tag: Union Find
+//  Time: O(K)
+//  Space: O(NM + K)
+//  Ref: -
+//  Note: leetcode-305
+
+//  Given a n,m which means the row and column of the 2D matrix and an array of pair A( size k).
+//  Originally, the 2D matrix is all 0 which means there is only sea in the matrix.
+//  The list pair has k operator and each operator has two integer A[i].x, A[i].y means that you can change the grid matrix[A[i].x][A[i].y] from sea to island.
+//  Return how many island are there in the matrix after each operator.You need to return an array of size K.
+//  
+//  **Example 1:**
+//  
+//  ```
+//  Input: n = 4, m = 5, A = [[1,1],[0,1],[3,3],[3,4]]
+//  Output: [1,1,2,2]
+//  Explanation:
+//  0.  00000
+//      00000
+//      00000
+//      00000
+//  1.  00000
+//      01000
+//      00000
+//      00000
+//  2.  01000
+//      01000
+//      00000
+//      00000
+//  3.  01000
+//      01000
+//      00000
+//      00010
+//  4.  01000
+//      01000
+//      00000
+//      00011
+//  ```
+//  
+//  **Example 2:**
+//  
+//  ```
+//  Input: n = 3, m = 3, A = [[0,0],[0,1],[2,2],[2,1]]
+//  Output: [1,1,2,2]
+//  ```
+//  
+//  0 is represented as the sea, 1 is represented as the island. If two 1 is adjacent, we consider them in the same island. We only consider up/down/left/right adjacent.
+
 /**
  * Definition for a point.
- *  */
-struct Point {
-
-      int x;
-      int y;
-      Point() : x(0), y(0) {}
-      Point(int a, int b) : x(a), y(b) {}
-  };
-
-
+ * struct Point {
+ *     int x;
+ *     int y;
+ *     Point() : x(0), y(0) {}
+ *     Point(int a, int b) : x(a), y(b) {}
+ * };
+ */
 
 class UnionFind {
 public:
@@ -83,20 +121,3 @@ public:
         return res;
     }
 };
-
-int main() {
-    vector<int> p1 = {3,2,4};
-    vector<Point> matrix = {Point(1,1),Point(0, 1),Point(3,3),Point(3, 4)};
-    vector<int> nums1 = {-3,-1,2,4,5};
-    vector<int> nums2 = {-3,-1,2,4,5};
-    Solution s;
-    vector<int> res = s.numIslands2(4, 5, matrix);
-//    cout << res << endl;
-    for (int word : res) {
-        cout << word << ", ";
-    }
-    cout << endl;
-    
-    return 0;
-}
-

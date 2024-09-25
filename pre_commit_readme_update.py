@@ -26,6 +26,7 @@ TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
+TAG_GAME = 'Game Theory'
 TAG_BS = 'Binary Search'
 TAG_LINKED_LIST = 'Linked List'
 TAG_HASH = 'Hash Table'
@@ -68,6 +69,7 @@ FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
 ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
 TAG_MAP = {
     TAG_MATH: [TAG_PROB, TAG_BIT_OP, TAG_DP],
+    TAG_DP: [TAG_GAME],
     TAG_STACK: [TAG_MONO_STACK],
     TAG_QUEUE: [TAG_MONO_QUEUE],
     TAG_2P: [TAG_SWIN],
@@ -292,7 +294,8 @@ class Markdown:
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
             list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
 
-            if len(diff) > 0 and len(solved) + len(vip) == len(questions):
+            if len(diff) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
+                Logger.log('----incorrect link----')
                 Logger.log('incorrect link:', Logger.WARNING, end=' ')
                 Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
                 Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
