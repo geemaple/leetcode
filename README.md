@@ -40,10 +40,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 10/91 | 3 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 11/91 | 5 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |
 
-**Solved**: 434 problems
+**Solved**: 432 problems
 
 ## 类型/Category
 
@@ -710,7 +710,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Union Find
 
-| Link | Problem(9) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(10) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Union Find | O\(E\+V\) | O\(W\) | \- | - |
 | [leetcode-128](https://leetcode.com/problems/longest-consecutive-sequence/) | Longest Consecutive Sequence | [c++](./leetcode/128.longest-consecutive-sequence.cpp), [python3](./leetcode/128.longest-consecutive-sequence.py) | Union Find | O\(N\) | O\(N\) | \- | - |
@@ -721,6 +721,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Union Find | O\(N\) | O\(1\) | \- | - |
 | [leetcode-130](https://leetcode.com/problems/surrounded-regions/) | Surrounded Regions | [c++](./leetcode/130.surrounded-regions.cpp), [python3](./leetcode/130.surrounded-regions.py) | Union Find | O\(MN\) | O\(1\) | \- | - |
 | [lintcode-3672](https://www.lintcode.com/problem/connecting-cities-with-minimum-cost/) | Connecting Cities With Minimum Cost | [c++](./lintcode/3672.connecting-cities-with-minimum-cost.cpp), [python3](./lintcode/3672.connecting-cities-with-minimum-cost.py) | Union Find | O\(ElogE\) | O\(E\+V\) | Leetcode\-1135 | - |
+| [lintcode-591](https://www.lintcode.com/problem/connecting-graph-iii/) | Connecting Graph III | [c++](./lintcode/591.connecting-graph-iii.cpp), [python3](./lintcode/591.connecting-graph-iii.py) | Union Find | O\(N\) | O\(N\) | \- | - |
 
 ## Trie
 
@@ -747,7 +748,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(154) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(151) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
@@ -885,9 +886,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-127](https://leetcode.com/problems/word-ladder/) | Word Ladder | [c++](./leetcode/127.word-ladder.cpp), [python3](./leetcode/127.word-ladder.py) | Other | \- | \- | \- | - |
 | [leetcode-425](https://leetcode.com/problems/word-squares/) | Word Squares | [c++](./leetcode/425.word-squares.cpp), [python3](./leetcode/425.word-squares.py) | Other | \- | \- | \- | - |
 | [leetcode-6](https://leetcode.com/problems/zigzag-conversion/) | Zigzag Conversion | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | \- | - |
-| [lintcode-589](https://www.lintcode.com/problem/connecting-graph/) | Connecting Graph | [c++](./lintcode/589.connecting-graph.cpp), [python3](./lintcode/589.connecting-graph.py) | Other | \- | \- | \- | - |
-| [lintcode-590](https://www.lintcode.com/problem/connecting-graph-ii/) | Connecting Graph II | [c++](./lintcode/590.connecting-graph-ii.cpp), [python3](./lintcode/590.connecting-graph-ii.py) | Other | \- | \- | \- | - |
-| [lintcode-591](https://www.lintcode.com/problem/connecting-graph-iii/) | Connecting Graph III | [c++](./lintcode/591.connecting-graph-iii.cpp), [python3](./lintcode/591.connecting-graph-iii.py) | Other | \- | \- | \- | - |
 | [lintcode-652](https://www.lintcode.com/problem/factorization/) | Factorization | [c++](./lintcode/652.factorization.cpp), [python3](./lintcode/652.factorization.py) | Other | \- | \- | \- | - |
 | [lintcode-390](https://www.lintcode.com/problem/find-peak-element-ii/) | Find Peak Element II | [c++](./lintcode/390.find-peak-element-ii.cpp), [python3](./lintcode/390.find-peak-element-ii.py) | Other | \- | \- | \- | - |
 | [lintcode-144](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers/) | Interleaving Positive And Negative Numbers | [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python3](./lintcode/144.interleaving-positive-and-negative-numbers.py) | Other | \- | \- | \- | - |

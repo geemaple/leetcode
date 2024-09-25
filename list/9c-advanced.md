@@ -18,9 +18,9 @@
 
 ### 并查集、字典树
 
-- https://www.lintcode.com/problem/connecting-graph/
-- https://www.lintcode.com/problem/connecting-graph-ii/
-- https://www.lintcode.com/problem/connecting-graph-iii/
+14. https://www.lintcode.com/problem/connecting-graph/
+15. https://www.lintcode.com/problem/connecting-graph-ii/
+16. https://www.lintcode.com/problem/connecting-graph-iii/
 - https://www.lintcode.com/problem/number-of-islands/
 - https://www.lintcode.com/problem/number-of-islands-ii/
 - https://www.lintcode.com/problem/graph-valid-tree/
