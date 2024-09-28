@@ -23,8 +23,8 @@
 16. https://www.lintcode.com/problem/connecting-graph-iii/
 17. https://leetcode.com/problems/number-of-islands/
 18. https://www.lintcode.com/problem/number-of-islands-ii/
+19. https://www.lintcode.com/problem/graph-valid-tree/
 
-- https://www.lintcode.com/problem/graph-valid-tree/
 - https://www.lintcode.com/problem/accounts-merge/
 - https://www.lintcode.com/problem/set-union/
 - https://www.lintcode.com/problem/surrounded-regions/
