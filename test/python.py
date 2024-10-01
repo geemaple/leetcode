@@ -10,38 +10,47 @@ from typing import (
 )
 
 
-from bisect import *
+from collections import defaultdict
 class Solution:
-    def kthSmallestProduct(self, nums1: List[int], nums2: List[int], k: int) -> int:
-        left = -10**10
-        right = 10**10
-        while left < right:
-            mid = (left + right) >> 1
-            if self.count_less_equal(nums1, nums2, mid) < k:
-                left = mid + 1
-            else:
-                right = mid
-
-        return left
-
-    def count_less_equal(self, nums1: list, nums2: list, target: int) -> int:
-        n = len(nums1)
-        m = len(nums2)
-        count = 0
+    def countOfSubstrings(self, word: str, k: int) -> int:
+        n = len(word)
+        vowels = defaultdict(int)
+        j = 0
+        res = 0
         for i in range(n):
-            if nums1[i] > 0:
-                count += bisect_right(nums2, target / nums1[i])
-            elif nums1[i] < 0:
-                count += m - bisect_left(nums2, target / nums1[i])
+            if word[i] in 'aeiou':
+                vowels[word[i]] += 1
             else:
-                count += m if target >= 0 else 0
+                if len(vowels) == 5:
+                    while len(vowels) == 5 and k == 0:  
+                        print(j, i)
+                        res += 1
+                        if word[j] in 'aeiou':
+                            vowels[word[j]] -= 1
+                            if vowels[word[j]] == 0:
+                                del vowels[word[j]]
+                        else:
+                            k += 1
 
-        return count
+                        j += 1  
+                    k -= 1
+                else:
+                    while k < 0 and j < n:
+                        if word[j] in 'aeiou':
+                            vowels[word[j]] -= 1
+                            if vowels[word[j]] == 0:
+                                del vowels[word[j]]
+                        else:
+                            k += 1
+
+                    k -= 1
+
+        return res
 
 
 
 s = Solution()
 ts = datetime.now()
-res = s.kthSmallestProduct([-4,-2,0,3], [2,4], 6)
+res = s.countOfSubstrings("iqeaouqi", 2)
 print(datetime.now() - ts)
 print(res)

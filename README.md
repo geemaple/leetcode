@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 14/91 | 5 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 15/91 | 6 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |
 
 **Solved**: 432 problems
@@ -336,8 +336,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(39) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(40) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | \- | - |
 | [leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | \- | - |
 | [leetcode-106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Construct Binary Tree From Inorder And Postorder Traversal | [c++](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.cpp), [python3](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | \- | - |
 | [leetcode-105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Construct Binary Tree From Preorder And Inorder Traversal | [c++](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.cpp), [python3](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | \- | - |
@@ -486,10 +487,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(25) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(26) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | \- | - |
 | [leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | \- | - |
+| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Sorting | O\(MlogM\) | O\(N\) | \- | - |
 | [leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Sorting | O\(NlogN\) | O\(N\) | \- | - |
 | [leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Sorting | O\(NlogN\) | O\(1\) | \- | - |
 | [leetcode-217](https://leetcode.com/problems/contains-duplicate/) | Contains Duplicate | [c++](./leetcode/217.contains-duplicate.cpp), [python3](./leetcode/217.contains-duplicate.py) | Sorting | O\(N\) | O\(N\) | \- | - |
@@ -556,9 +558,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Breadth-First Search
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(27) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | \- | - |
+| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Breadth-First Search | O\(MlogM\) | O\(N\) | \- | - |
 | [leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Breadth-First Search | O\(N\) | O\(N\) | \- | - |
 | [leetcode-102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Binary Tree Level Order Traversal | [c++](./leetcode/102.binary-tree-level-order-traversal.cpp), [python3](./leetcode/102.binary-tree-level-order-traversal.py) | Breadth-First Search | O\(N\) | O\(Width\) | Level | - |
 | [leetcode-322](https://leetcode.com/problems/coin-change/) | Coin Change | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Breadth-First Search | O\(K \* N\) | O\(N\) | Index | [Video](https://youtu.be/EjMjlFjLRiM) |
@@ -587,8 +590,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(38) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(39) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | \- | - |
 | [leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | \- | - |
 | [leetcode-110](https://leetcode.com/problems/balanced-binary-tree/) | Balanced Binary Tree | [c++](./leetcode/110.balanced-binary-tree.cpp), [python3](./leetcode/110.balanced-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | Recursion | - |
 | [leetcode-94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Binary Tree Inorder Traversal | [c++](./leetcode/94.binary-tree-inorder-traversal.cpp), [python3](./leetcode/94.binary-tree-inorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | InOrder | - |
@@ -717,8 +721,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Union Find
 
-| Link | Problem(12) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(13) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Union Find | O\(MlogM\) | O\(N\) | \- | - |
 | [leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Union Find | O\(E\+V\) | O\(W\) | \- | - |
 | [leetcode-128](https://leetcode.com/problems/longest-consecutive-sequence/) | Longest Consecutive Sequence | [c++](./leetcode/128.longest-consecutive-sequence.cpp), [python3](./leetcode/128.longest-consecutive-sequence.py) | Union Find | O\(N\) | O\(N\) | \- | - |
 | [leetcode-695](https://leetcode.com/problems/max-area-of-island/) | Max Area Of Island | [c++](./leetcode/695.max-area-of-island.cpp), [python3](./leetcode/695.max-area-of-island.py) | Union Find | O\(MN\) | O\(MN\) | \- | - |
@@ -757,11 +762,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(149) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(148) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | \- | - |
-| [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Other | \- | \- | \- | - |
 | [leetcode-211](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Add And Search Word Data Structure Design | [c++](./leetcode/211.add-and-search-word-data-structure-design.cpp), [python3](./leetcode/211.add-and-search-word-data-structure-design.py) | Other | \- | \- | \- | - |
 | [leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | \- | - |
 | [leetcode-269](https://leetcode.com/problems/alien-dictionary/) | Alien Dictionary | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | \- | - |

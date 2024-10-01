@@ -24,9 +24,10 @@
 17. https://leetcode.com/problems/number-of-islands/
 18. https://www.lintcode.com/problem/number-of-islands-ii/
 19. https://www.lintcode.com/problem/graph-valid-tree/
+20. https://leetcode.com/problems/accounts-merge/
 
-- https://www.lintcode.com/problem/accounts-merge/
-- https://www.lintcode.com/problem/set-union/
+21. https://www.lintcode.com/problem/set-union/
+
 - https://www.lintcode.com/problem/surrounded-regions/
 - https://www.lintcode.com/problem/maximum-association-set/
 - https://www.lintcode.com/problem/implement-trie/
