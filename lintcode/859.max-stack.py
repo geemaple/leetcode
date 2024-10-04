@@ -1,8 +1,8 @@
 #  Tag: Stack
 #  Time: -
 #  Space: O(N)
-#  Ref: -
-#  Note: Leetcode-716
+#  Ref: Leetcode-716
+#  Note: -
 
 #  Design a max stack that supports push, pop, top, peekMax and popMax.
 #  

@@ -1,8 +1,8 @@
 #  Tag: Dynamic Programming/DP, Coordinate DP
 #  Time: O(N)
 #  Space: O(N)
-#  Ref: -
-#  Note: Leetcode-256
+#  Ref: Leetcode-256
+#  Note: -
 
 #  There are a row of `n` houses, each house can be painted with one of the three colors: red, blue or green.
 #  The cost of painting each house with a certain color is different.

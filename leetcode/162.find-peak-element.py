@@ -1,8 +1,9 @@
 #  Tag: Array, Binary Search
 #  Time: O(logN)
 #  Space: O(1)
-#  Ref: https://youtu.be/bexO0N9eP1I
+#  Ref: -
 #  Note: Mountain;
+#  Video: https://youtu.be/bexO0N9eP1I
 
 #  A peak element is an element that is strictly greater than its neighbors.
 #  Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.

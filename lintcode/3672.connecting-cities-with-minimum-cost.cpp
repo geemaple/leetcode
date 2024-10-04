@@ -1,8 +1,8 @@
 //  Tag: Graph, Greedy, Union Find
 //  Time: O(ElogE)
 //  Space: O(E+V)
-//  Ref: -
-//  Note: Leetcode-1135
+//  Ref: Leetcode-1135
+//  Note: -
 
 //  There are `n` cities in this question, and their numbers range from 1 to n.
 //  

@@ -1,8 +1,8 @@
 #  Tag: Dynamic Programming/DP, Coordinate DP
 #  Time: O(NM)
 #  Space: O(NM)
-#  Ref: -
-#  Note: Leetcode-265
+#  Ref: Leetcode-265
+#  Note: -
 
 #  There are a row of `n` houses, each house can be painted with one of the `k` colors.
 #  The cost of painting each house with a certain color is different.

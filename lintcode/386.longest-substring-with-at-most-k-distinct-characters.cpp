@@ -1,8 +1,8 @@
 //  Tag: Same Direction Two Pointers, Two Pointers
 //  Time: O(N)
 //  Space: O(K)
-//  Ref: -
-//  Note: Leetcode-159, 340
+//  Ref: Leetcode-159, 340
+//  Note: -
 
 //  Given a string *S*, find the length of the longest substring *T* that contains at most k distinct characters.
 //  
