@@ -237,7 +237,7 @@ class Markdown:
                     category,
                     solution.time,
                     solution.space,
-                    solution.ref_link,
+                    solution.ref,
                     ]
 
                 Markdown.table_row(f, contents) 
@@ -477,13 +477,6 @@ class Problem:
     def local_path(self) -> str:
         lang = EXTENSION.get(self.extension, self.extension.strip('.'))
         return Markdown.link(lang, self.path) 
-        
-    @property
-    def ref_link(self) -> str:
-        if re.search(r'(youtube\.com|youtu\.be)', self.ref):
-            return Markdown.link('Video', self.ref)
-        else:
-            return '-'
 
     def __eq__(self, other):
         return isinstance(other, Problem) and self.name == other.name
