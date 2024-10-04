@@ -11,7 +11,7 @@
 5. https://leetcode.com/problems/convert-date-to-binary/
 6. https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/
 7. https://leetcode.com/problems/reach-end-of-array-with-max-score/
-- https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/
+8. https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/
 
 # [Biweek](https://leetcode.com/contest/biweekly-contest-139/)
 

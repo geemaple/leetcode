@@ -5,97 +5,71 @@
 #include <queue>
 #include <unordered_set>
 using namespace std;
-/**
- * Definition for a point.
- *  */
-struct Point {
-
-      int x;
-      int y;
-      Point() : x(0), y(0) {}
-      Point(int a, int b) : x(a), y(b) {}
-  };
-
-
-
-class UnionFind {
-public:
-    vector<int> table;
-    UnionFind(int n): table(n) {
-        for (int i = 0; i < n; i++) {
-            table[i] = i;
-        }
-    }
-
-    int find(int a) {
-        if (a == table[a]) {
-            return a;
-        }
-        table[a] = find(table[a]);
-        return table[a];
-    }
-
-    bool connect(int a, int b) {
-        int root_a = find(a);
-        int root_b = find(b);
-        if (root_a != root_b) {
-            table[root_a] = root_b;
-            return true;
-        }
-        return false;
-    }
-
-};
 
 class Solution {
 public:
-    /**
-     * @param n: An integer
-     * @param m: An integer
-     * @param operators: an array of point
-     * @return: an integer array
-     */
-    vector<int> numIslands2(int n, int m, vector<Point> &operators) {
-        // write your code here
-        UnionFind uf(n * m);
-        unordered_set<int> islands;
-        vector<int> res;
-        int directions[] = {-1, 0, 1, 0, -1};
-        int count = 0;
-        
-        for (auto p: operators) {
-            int i = p.x;
-            int j = p.y;
-            islands.insert(i * m + j);
-            
-            for (int d = 0; d < 4; d++) {
-                int x = i + directions[d];
-                int y = j + directions[d + 1];
-
-                if (x >= 0 && x < n && y >= 0 && y < m && islands.count(x * m + y) > 0) {
-                    if (uf.connect(i * m + j, x * m + y)) {
-                        count += 1;
+    int maxMoves(int kx, int ky, vector<vector<int>>& p) {
+        using pii = pair<int, int>;
+        vector<pii> a;
+        for(auto e : p){
+            a.emplace_back(e[0], e[1]);
+        }
+        a.emplace_back(kx, ky);
+        int n = a.size();
+        vector dist(n, vector(50, vector(50, -1)));
+        vector<int> di({-2, -2, -1, -1, 1, 1, 2, 2});
+        vector<int> dj({-1, 1, -2, 2, -2, 2, -1, 1});
+        for(int s = 0; s < n; s++){
+            queue<pii> q;
+            q.push(a[s]);
+            dist[s][a[s].first][a[s].second] = 0;
+            while(!q.empty()){
+                auto [i, j] = q.front(); q.pop();
+                for(int e = 0; e < 8; e++){
+                    int ni = i + di[e], nj = j + dj[e];
+                    if(ni >= 0 && ni < 50 && nj >= 0 && nj < 50 && dist[s][ni][nj] == -1){
+                        dist[s][ni][nj] = dist[s][i][j] + 1;
+                        q.push(pii(ni, nj));
                     }
                 }
             }
-            res.push_back(islands.size() - count);
         }
-        return res;
+        vector dp(1<<n, vector(n, 0));
+        for(int msk = (1<<n) - 2; msk > 0; msk--){
+            int ty = __builtin_popcount(msk) & 1;
+            
+            for(int i = 0; i < n; i++) dp[msk][i] = ty?  -(1<<30) : (1<<30);
+            
+            for(int i = 0; i < n; i++){
+                if((msk>>i) & 1){
+                    for(int j = 0; j < n; j++){
+                        if((msk >> j) & 1) continue;
+                        if(ty){
+                            dp[msk][i] = max(dp[msk][i], dp[msk | (1<<j)][j] + dist[i][a[j].first][a[j].second]);
+                        } else {
+                            dp[msk][i] = min(dp[msk][i], dp[msk | (1<<j)][j] + dist[i][a[j].first][a[j].second]);
+                        }
+                    }
+                }
+            }
+        }
+        return dp[1<<(n - 1)][n - 1];
     }
 };
 
+
 int main() {
-    vector<int> p1 = {3,2,4};
-    vector<Point> matrix = {Point(1,1),Point(0, 1),Point(3,3),Point(3, 4)};
+    vector<vector<int>> pawns= {{1,1},{2,2},{3,3}};
+    
     vector<int> nums1 = {-3,-1,2,4,5};
     vector<int> nums2 = {-3,-1,2,4,5};
     Solution s;
-    vector<int> res = s.numIslands2(4, 5, matrix);
-//    cout << res << endl;
-    for (int word : res) {
-        cout << word << ", ";
-    }
-    cout << endl;
+    int res = s.maxMoves(0, 2, pawns);
+    cout << res << endl;
+//    for (int word : res) {
+//        cout << word << ", ";
+//    }
+//    cout << endl;
     
     return 0;
 }

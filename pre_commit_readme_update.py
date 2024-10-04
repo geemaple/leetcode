@@ -22,6 +22,7 @@ from logger import Logger
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
 TAG_BIT_OP = 'Bit Manipulation'
+TAG_BIT_MASK = 'Bitmask'
 TAG_SIM = 'Simulation'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'

@@ -41,15 +41,16 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 15/91 | 6 vips |
-| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 7/20 | - |
+| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 8/20 | - |
 
-**Solved**: 432 problems
+**Solved**: 433 problems
 
 ## 类型/Category
 
 - [Math](#math)
 - [Probability](#probability)
 - [Bit Manipulation](#bit-manipulation)
+- [Bitmask](#bitmask)
 - [Simulation](#simulation)
 - [Design](#design)
 - [Greedy](#greedy)
@@ -118,13 +119,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(15) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(16) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | \- | - |
 | [leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | \- | - |
 | [leetcode-338](https://leetcode.com/problems/counting-bits/) | Counting Bits | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Bit Manipulation | O\(N\) | O\(1\) | \- | - |
 | [leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | \- | - |
 | [leetcode-461](https://leetcode.com/problems/hamming-distance/) | Hamming Distance | [c++](./leetcode/461.hamming-distance.cpp), [python3](./leetcode/461.hamming-distance.py) | Bit Manipulation | O\(1\) | O\(1\) | \- | - |
+| [leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Bit Manipulation | O\(2^K \* K\) | O\(2^K \* K\) | \- | - |
 | [leetcode-318](https://leetcode.com/problems/maximum-product-of-word-lengths/) | Maximum Product Of Word Lengths | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python3](./leetcode/318.maximum-product-of-word-lengths.py) | Bit Manipulation | O\(N^2\) | O\(N\) | \- | - |
 | [leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Bit Manipulation | O\(N\) | O\(1\) | \- | - |
 | [leetcode-476](https://leetcode.com/problems/number-complement/) | Number Complement | [c++](./leetcode/476.number-complement.cpp), [python3](./leetcode/476.number-complement.py) | Bit Manipulation | O\(1\) | O\(1\) | \- | - |
@@ -135,6 +137,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-3276](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Select Cells In Grid With Maximum Score | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Bit Manipulation | O\(NM\*2^N\) | O\(2^N\) | \- | - |
 | [leetcode-136](https://leetcode.com/problems/single-number/) | Single Number | [c++](./leetcode/136.single-number.cpp), [python3](./leetcode/136.single-number.py) | Bit Manipulation | O\(N\) | O\(1\) | \- | - |
 | [leetcode-260](https://leetcode.com/problems/single-number-iii/) | Single Number III | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | \- | - |
+
+## Bitmask
+
+| Link | Problem(4) | Solution | Tag | Time | Space | Note | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Bitmask | O\(2^K \* K\) | O\(2^K \* K\) | \- | - |
+| [leetcode-51](https://leetcode.com/problems/n-queens/) | N Queens | [c++](./leetcode/51.n-queens.cpp), [python3](./leetcode/51.n-queens.py) | Bitmask | O\(N\!\) | O\(N\) | \- | - |
+| [leetcode-52](https://leetcode.com/problems/n-queens-ii/) | N Queens II | [c++](./leetcode/52.n-queens-ii.cpp), [python3](./leetcode/52.n-queens-ii.py) | Bitmask | O\(N\!\) | O\(N\) | \- | - |
+| [leetcode-3276](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Select Cells In Grid With Maximum Score | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Bitmask | O\(NM\*2^N\) | O\(2^N\) | \- | - |
 
 ## Simulation
 
@@ -263,9 +274,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Game Theory
 
-| Link | Problem(2) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(3) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-375](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) | Guess Number Higher Or Lower II | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Game Theory | O\(N^3\) | O\(N^2\) | DP\(Index\) | - |
+| [leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Game Theory | O\(2^K \* K\) | O\(2^K \* K\) | \- | - |
 | [lintcode-394](https://www.lintcode.com/problem/coins-in-a-line/) | Coins In A Line | [c++](./lintcode/394.coins-in-a-line.cpp), [python3](./lintcode/394.coins-in-a-line.py) | Game Theory | O\(N\) | O\(N\) | \- | - |
 
 ## Binary Search
@@ -558,7 +570,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Breadth-First Search
 
-| Link | Problem(27) | Solution | Tag | Time | Space | Note | Ref |
+| Link | Problem(28) | Solution | Tag | Time | Space | Note | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Breadth-First Search | O\(MlogM\) | O\(N\) | \- | - |
@@ -570,6 +582,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Breadth-First Search | O\(E\+V\) | O\(W\) | \- | - |
 | [leetcode-695](https://leetcode.com/problems/max-area-of-island/) | Max Area Of Island | [c++](./leetcode/695.max-area-of-island.cpp), [python3](./leetcode/695.max-area-of-island.py) | Breadth-First Search | O\(MN\) | O\(MN\) | \- | - |
 | [leetcode-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Maximum Depth Of Binary Tree | [c++](./leetcode/104.maximum-depth-of-binary-tree.cpp), [python3](./leetcode/104.maximum-depth-of-binary-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | Recursion | - |
+| [leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Breadth-First Search | O\(2^K \* K\) | O\(2^K \* K\) | \- | - |
 | [leetcode-617](https://leetcode.com/problems/merge-two-binary-trees/) | Merge Two Binary Trees | [c++](./leetcode/617.merge-two-binary-trees.cpp), [python3](./leetcode/617.merge-two-binary-trees.py) | Breadth-First Search | O\(N\) | O\(H\) | \- | - |
 | [leetcode-530](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Minimum Absolute Difference In Bst | [c++](./leetcode/530.minimum-absolute-difference-in-bst.cpp), [python3](./leetcode/530.minimum-absolute-difference-in-bst.py) | Breadth-First Search | O\(N\) | O\(H\) | \- | - |
 | [leetcode-111](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | Minimum Depth Of Binary Tree | [c++](./leetcode/111.minimum-depth-of-binary-tree.cpp), [python3](./leetcode/111.minimum-depth-of-binary-tree.py) | Breadth-First Search | O\(N\) | O\(W\) | \- | - |

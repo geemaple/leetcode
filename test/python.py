@@ -10,47 +10,33 @@ from typing import (
 )
 
 
-from collections import defaultdict
 class Solution:
-    def countOfSubstrings(self, word: str, k: int) -> int:
-        n = len(word)
-        vowels = defaultdict(int)
-        j = 0
-        res = 0
-        for i in range(n):
-            if word[i] in 'aeiou':
-                vowels[word[i]] += 1
-            else:
-                if len(vowels) == 5:
-                    while len(vowels) == 5 and k == 0:  
-                        print(j, i)
-                        res += 1
-                        if word[j] in 'aeiou':
-                            vowels[word[j]] -= 1
-                            if vowels[word[j]] == 0:
-                                del vowels[word[j]]
-                        else:
-                            k += 1
-
-                        j += 1  
-                    k -= 1
-                else:
-                    while k < 0 and j < n:
-                        if word[j] in 'aeiou':
-                            vowels[word[j]] -= 1
-                            if vowels[word[j]] == 0:
-                                del vowels[word[j]]
-                        else:
-                            k += 1
-
-                    k -= 1
-
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        res = []
+        self.helper(n, 0, 0, 0, 0, [], res)
         return res
 
+    def helper(self, n:int, row: int, col: int, left: int, right: int, ans: list, res: list):
+        if row == n:
+            res.append(list(ans))
+            return
+
+        taken = col | left | right
+        mask = ~taken & ((1 << n) - 1)
+
+        while mask > 0:
+            pos = mask & (-mask)
+
+            tmp = ['Q' if 2 ** j == pos else '.' for j in range(n)]
+            ans.append(tmp)
+            self.helper(n, row + 1, col | pos, (left | pos) << 1, (right | pos) >> 1, ans, res)
+            ans.pop()
+
+            mask &= mask - 1
 
 
 s = Solution()
 ts = datetime.now()
-res = s.countOfSubstrings("iqeaouqi", 2)
+res = s.solveNQueens(4)
 print(datetime.now() - ts)
 print(res)

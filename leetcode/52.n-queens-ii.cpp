@@ -1,4 +1,4 @@
-//  Tag: Backtracking
+//  Tag: Backtracking, Bitmask
 //  Time: O(N!)
 //  Space: O(N)
 //  Ref: -
@@ -81,17 +81,17 @@ public:
         // (cols | rd | ld) 三个方向取或，0就是没有占用的位置
         // 〜取反，1就是没有占用的位置, 但是32位的头部0也会变成1
         // 所以, ((1 << n) - 1) 只有后这些位置是有意义的。
-        int candidate = ~(cols | rd | ld) & ((1 << n) - 1);
-        
-        while (candidate > 0) {
+        int taken = cols | rd | ld;
+        int mask = ~taken & ((1 << n) - 1);
+        while (mask > 0) {
             // 得到末尾的1(负数的表示正数取反+1), 获得放置位置
-            int p = candidate & -candidate;
+            int p = mask & -mask;
 
             // 往下递归时，列垂直向下, ↖️↘️往右移一位, ↙️↗️往左移一位
             helper(n, row + 1, cols | p, (rd | p) >> 1, (ld | p) << 1);
             
             // 消掉末尾的1
-            candidate &= candidate - 1;
+            mask &= mask - 1;
         }
     }
 };

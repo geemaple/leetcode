@@ -1,4 +1,4 @@
-//  Tag: Array, Backtracking
+//  Tag: Array, Backtracking, Bitmask
 //  Time: O(N!)
 //  Space: O(N)
 //  Ref: -
@@ -59,6 +59,45 @@ public:
                 diagonal_plus.erase(k + j);
                 diagonal_minus.erase(k - j);
             }
+        }
+    }
+};
+
+class Solution {
+public:
+    vector<vector<string>> solveNQueens(int n) {
+        vector<vector<string>> res;
+        vector<string> ans;
+        helper(n, 0, 0, 0, 0, ans, res);
+        return res;
+    }
+
+private:
+    void helper(int n, int row, int col, int left, int right, vector<string>& ans, vector<vector<string>>& res) {
+        if (row == n) {
+            res.push_back(ans);
+            return;
+        }
+
+        int taken = col | left | right;
+        int mask = ~taken & ((1 << n) - 1);
+
+        while (mask > 0) {
+            int pos = mask & (-mask);
+
+            string tmp(n, '.');
+            for (int j = 0; j < n; ++j) {
+                if (1 << j == pos) {
+                    tmp[j] = 'Q';
+                    break;
+                }
+            }
+            ans.push_back(tmp);
+
+            helper(n, row + 1, col | pos, (left | pos) << 1, (right | pos) >> 1, ans, res);
+            ans.pop_back();
+
+            mask &= mask - 1;
         }
     }
 };
