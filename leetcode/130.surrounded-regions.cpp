@@ -122,3 +122,87 @@ public:
         }
     }
 };
+
+class UionFind {
+public:
+    vector<int> table;
+    vector<bool> sea;
+
+    UionFind(int n): table(n), sea(n, false) {
+        for (int i = 0; i < n; i++) {
+            table[i] = i;
+        }
+    }
+
+    int find(int a) {
+        if (a == table[a]) {
+            return a;
+        }
+
+        table[a] = find(table[a]);
+        return table[a];
+    }
+
+    void connect(int a, int b) {
+        int root_a = find(a);
+        int root_b = find(b);
+        if (root_a != root_b) {
+            table[root_a] = root_b;
+            if (sea[root_a]) {
+                sea[root_b] = true;
+            }
+        }
+    }
+
+};
+
+class Solution {
+public:
+    void solve(vector<vector<char>>& board) {
+        int n = board.size();
+        int m = board[0].size();
+
+        UionFind uf = UionFind(n * m);
+        for (int i = 0; i < n; i++) {
+            uf.sea[i * m + 0] = true;
+            uf.sea[i * m + m - 1] = true;
+        }
+
+        for (int j = 0; j < m; j++) {
+            uf.sea[0 * m + j] = true;
+            uf.sea[(n - 1) * m + j] = true;
+        }
+
+        int directions[5] = {-1, 0, 1, 0, -1};
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == 'X') {
+                    continue;
+                }
+
+                for (int d = 0; d < 4; d++) {
+                    int x = i + directions[d];
+                    int y = j + directions[d + 1];
+                    if (x >= 0 && x < n && y >= 0 && y < m && board[x][y] != 'X') {
+                        uf.connect(i * m + j, x * m + y);
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == 'X') {
+                    continue;
+                }
+
+                int root = uf.find(i * m + j);
+                if (!uf.sea[root]) {
+                    board[i][j] = 'X';
+                }
+
+            }
+        }
+
+    }
+};

@@ -10,33 +10,73 @@ from typing import (
 )
 
 
+class UionFind:
+    def __init__(self, n):
+        self.table = [i for i in range(n)]
+        self.sea = [False for i in range(n)]
+
+    def find(self, a) -> int:
+        if a == self.table[a]:
+            return a
+
+        self.table[a] = self.find(self.table[a])
+        return self.table[a]
+
+    def connect(self, a, b):
+        root_a = self.find(a)
+        root_b = self.find(b)
+        if root_a != root_b:
+            self.table[root_a] = root_b
+            if self.sea[root_a]:
+                self.sea[root_b] = True
+
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
-        res = []
-        self.helper(n, 0, 0, 0, 0, [], res)
-        return res
+    def solve(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        n = len(board)
+        m = len(board[0])
 
-    def helper(self, n:int, row: int, col: int, left: int, right: int, ans: list, res: list):
-        if row == n:
-            res.append(list(ans))
-            return
+        directions = [-1, 0, 1, 0, -1]
+        uf = UionFind(n * m)
 
-        taken = col | left | right
-        mask = ~taken & ((1 << n) - 1)
+        for i in range(n):
+            uf.sea[i * m + 0] = True
+            uf.sea[i * m + m - 1] = True
 
-        while mask > 0:
-            pos = mask & (-mask)
+        for j in range(m):
+            uf.sea[0 * m + j] = True
+            uf.sea[(n - 1) * m + j] = True
 
-            tmp = ['Q' if 2 ** j == pos else '.' for j in range(n)]
-            ans.append(tmp)
-            self.helper(n, row + 1, col | pos, (left | pos) << 1, (right | pos) >> 1, ans, res)
-            ans.pop()
 
-            mask &= mask - 1
+        for i in range(n):
+            for j in range(m):
+                if board[i][j] == 'X':
+                    continue
+
+                for d in range(4):
+                    x = i + directions[d]
+                    y = j + directions[d + 1]
+                    if 0 <= x < n and 0 <= y < m and board[x][y] != 'X':
+                        uf.connect(i * m + j, x * m + y)
+
+        for i in range(n):
+            for j in range(m):
+                if board[i][j] == 'X':
+                    continue
+
+                root = uf.find(i * m + j)
+                if not uf.sea[root]:
+                    board[i][j] = 'X'
+
+
+
 
 
 s = Solution()
+a = [["X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X"],["X","X","X","X","X","X","X","X","X","O","O","O","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","O","O","X","O","X","O","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","X","O","X","O","X","O","O","O","X","X","X","X","X","X"],["X","X","X","X","X","O","X","O","O","O","X","X","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","X","X","X","X","X","X","X","X","X","X","X","X","X","X"]]
 ts = datetime.now()
-res = s.solveNQueens(4)
+res = s.solve(a)
 print(datetime.now() - ts)
-print(res)
+print('\n'.join([str(x) for x in a]))
