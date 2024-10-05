@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 18/91 | 7 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 20/91 | 7 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 8/20 | - |
 
 **Solved**: 433 problems
@@ -604,7 +604,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(40) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(41) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -646,6 +646,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Depth-First Search | O\(NH\) | O\(H\) | - |
 | [leetcode-98](https://leetcode.com/problems/validate-binary-search-tree/) | Validate Binary Search Tree | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [lintcode-11](https://www.lintcode.com/problem/search-range-in-binary-search-tree/) | Search Range In Binary Search Tree | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python3](./lintcode/11.search-range-in-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
+| [lintcode-634](https://www.lintcode.com/problem/word-squares/) | Word Squares | [c++](./lintcode/634.word-squares.cpp), [python3](./lintcode/634.word-squares.py) | Depth-First Search | O\(N \* P^5\) | O\(N\) | Leetcode-425 |
 
 ## Topological Sort
 
@@ -754,12 +755,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Trie
 
-| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Design Add And Search Words Data Structure | [c++](./leetcode/211.design-add-and-search-words-data-structure.cpp), [python3](./leetcode/211.design-add-and-search-words-data-structure.py) | Trie | O\(26^k \* N\) | O\(LN\) | - |
 | [leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Trie | O\(N\) | O\(L\) | - |
 | [leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Trie | O\(MN\) | O\(N\) | - |
 | [leetcode-212](https://leetcode.com/problems/word-search-ii/) | Word Search II | [c++](./leetcode/212.word-search-ii.cpp), [python3](./leetcode/212.word-search-ii.py) | Trie | O\(NM\*4^L\) | O\(MN \+ KL\) | - |
+| [lintcode-634](https://www.lintcode.com/problem/word-squares/) | Word Squares | [c++](./lintcode/634.word-squares.cpp), [python3](./lintcode/634.word-squares.py) | Trie | O\(N \* P^5\) | O\(N\) | Leetcode-425 |
 
 ## Array
 
@@ -778,7 +780,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(147) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(146) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -910,7 +912,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [python3](./leetcode/324.wiggle-sort-ii.py) | Other | \- | \- | - |
 | [leetcode-527](https://leetcode.com/problems/word-abbreviation/) | Word Abbreviation | [c++](./leetcode/527.word-abbreviation.cpp), [python3](./leetcode/527.word-abbreviation.py) | Other | \- | \- | - |
 | [leetcode-127](https://leetcode.com/problems/word-ladder/) | Word Ladder | [c++](./leetcode/127.word-ladder.cpp), [python3](./leetcode/127.word-ladder.py) | Other | \- | \- | - |
-| [leetcode-425](https://leetcode.com/problems/word-squares/) | Word Squares | [c++](./leetcode/425.word-squares.cpp), [python3](./leetcode/425.word-squares.py) | Other | \- | \- | - |
 | [leetcode-6](https://leetcode.com/problems/zigzag-conversion/) | Zigzag Conversion | [python3](./leetcode/6.zigzag-conversion.py) | Other | \- | \- | - |
 | [lintcode-652](https://www.lintcode.com/problem/factorization/) | Factorization | [c++](./lintcode/652.factorization.cpp), [python3](./lintcode/652.factorization.py) | Other | \- | \- | - |
 | [lintcode-390](https://www.lintcode.com/problem/find-peak-element-ii/) | Find Peak Element II | [c++](./lintcode/390.find-peak-element-ii.cpp), [python3](./lintcode/390.find-peak-element-ii.py) | Other | \- | \- | - |

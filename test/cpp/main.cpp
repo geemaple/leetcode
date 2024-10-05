@@ -6,70 +6,113 @@
 #include <unordered_set>
 using namespace std;
 
+class TrieNode {
+public:
+    vector<TrieNode *> children;
+    bool is_word;
+    vector<string> prefix;
+    TrieNode(): children(26, nullptr), is_word(false), prefix() {}
+    ~TrieNode() {
+        cout << this << endl;
+        for (auto p: children) {
+            delete p;
+        }
+    }
+};
+
+class Trie {
+public:
+    TrieNode *root;
+    Trie() {
+        root = new TrieNode();
+    }
+    ~Trie() {
+        delete root;
+    }
+
+    void add(string word) {
+        TrieNode *cur = root;
+        for (auto ch: word) {
+            if (!cur->children[ch - 'a']) {
+                cur->children[ch - 'a'] = new TrieNode();
+            }
+            
+            cur = cur->children[ch - 'a'];
+            cur->prefix.push_back(word);
+        }
+        cur->is_word = true;
+    }
+
+    vector<string> prefix(string word) {
+        TrieNode *cur = root;
+        for (auto ch: word) {
+            if (!cur->children[ch - 'a']) {
+                return vector<string>{};
+            }
+            cur = cur->children[ch - 'a'];
+        }
+        return cur->prefix;
+    };
+
+};
+
+
 class Solution {
 public:
-    int maxMoves(int kx, int ky, vector<vector<int>>& p) {
-        using pii = pair<int, int>;
-        vector<pii> a;
-        for(auto e : p){
-            a.emplace_back(e[0], e[1]);
+    /**
+     * @param words: a set of words without duplicates
+     * @return: all word squares
+     *          we will sort your return value in output
+     */
+    vector<vector<string>> wordSquares(vector<string> &words) {
+        // write your code here
+        int n = words[0].size();
+
+        Trie tree = Trie();
+        for (auto word: words){
+            tree.add(word);
         }
-        a.emplace_back(kx, ky);
-        int n = a.size();
-        vector dist(n, vector(50, vector(50, -1)));
-        vector<int> di({-2, -2, -1, -1, 1, 1, 2, 2});
-        vector<int> dj({-1, 1, -2, 2, -2, 2, -1, 1});
-        for(int s = 0; s < n; s++){
-            queue<pii> q;
-            q.push(a[s]);
-            dist[s][a[s].first][a[s].second] = 0;
-            while(!q.empty()){
-                auto [i, j] = q.front(); q.pop();
-                for(int e = 0; e < 8; e++){
-                    int ni = i + di[e], nj = j + dj[e];
-                    if(ni >= 0 && ni < 50 && nj >= 0 && nj < 50 && dist[s][ni][nj] == -1){
-                        dist[s][ni][nj] = dist[s][i][j] + 1;
-                        q.push(pii(ni, nj));
-                    }
-                }
-            }
+
+        vector<vector<string>> res;
+        for (auto word: words) {
+            vector<string> ans = vector<string>{word};
+            dfs(n, tree, ans, res);
         }
-        vector dp(1<<n, vector(n, 0));
-        for(int msk = (1<<n) - 2; msk > 0; msk--){
-            int ty = __builtin_popcount(msk) & 1;
-            
-            for(int i = 0; i < n; i++) dp[msk][i] = ty?  -(1<<30) : (1<<30);
-            
-            for(int i = 0; i < n; i++){
-                if((msk>>i) & 1){
-                    for(int j = 0; j < n; j++){
-                        if((msk >> j) & 1) continue;
-                        if(ty){
-                            dp[msk][i] = max(dp[msk][i], dp[msk | (1<<j)][j] + dist[i][a[j].first][a[j].second]);
-                        } else {
-                            dp[msk][i] = min(dp[msk][i], dp[msk | (1<<j)][j] + dist[i][a[j].first][a[j].second]);
-                        }
-                    }
-                }
-            }
+        return res;
+    }
+
+    void dfs(int n, Trie &tree, vector<string> &ans, vector<vector<string>> &res) {
+        if (ans.size() == n) {
+            res.push_back(ans);
+            return;
         }
-        return dp[1<<(n - 1)][n - 1];
+        int k = ans.size();
+        string pre = "";
+        for (int i = 0; i < k; i++) {
+            pre += ans[i][k];
+        }
+
+        for (auto word: tree.prefix(pre)) {
+            ans.push_back(word);
+            dfs(n, tree, ans, res);
+            ans.pop_back();
+        }
     }
 };
 
 
 int main() {
-    vector<vector<int>> pawns= {{1,1},{2,2},{3,3}};
+    vector<string> words= {"area","lead","wall","lady","ball"};
     
     vector<int> nums1 = {-3,-1,2,4,5};
     vector<int> nums2 = {-3,-1,2,4,5};
     Solution s;
-    int res = s.maxMoves(0, 2, pawns);
-    cout << res << endl;
-//    for (int word : res) {
+    vector<vector<string>> res = s.wordSquares(words);
+//    cout << res << endl;
+//    for (auto word : res) {
 //        cout << word << ", ";
 //    }
-//    cout << endl;
+    cout << endl;
     
     return 0;
 }

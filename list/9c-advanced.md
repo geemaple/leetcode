@@ -30,9 +30,8 @@
 23. https://www.lintcode.com/problem/maximum-association-set/
 24. https://leetcode.com/problems/implement-trie-prefix-tree/
 25. https://leetcode.com/problems/design-add-and-search-words-data-structure/
-
-- https://www.lintcode.com/problem/word-squares/
-- https://www.lintcode.com/problem/word-search-ii/
+26. https://www.lintcode.com/problem/word-squares/
+27. https://leetcode.com/problems/word-search-ii/
 
 ### 堆栈
 
@@ -110,5 +109,3 @@
 - https://www.lintcode.com/problem/flatten-nested-list-iterator/
 - https://www.lintcode.com/problem/flatten-2d-vector/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
-
-

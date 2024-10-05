@@ -10,73 +10,66 @@ from typing import (
 )
 
 
-class UionFind:
-    def __init__(self, n):
-        self.table = [i for i in range(n)]
-        self.sea = [False for i in range(n)]
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_word = False
+        self.word = None
 
-    def find(self, a) -> int:
-        if a == self.table[a]:
-            return a
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
 
-        self.table[a] = self.find(self.table[a])
-        return self.table[a]
-
-    def connect(self, a, b):
-        root_a = self.find(a)
-        root_b = self.find(b)
-        if root_a != root_b:
-            self.table[root_a] = root_b
-            if self.sea[root_a]:
-                self.sea[root_b] = True
+    def add(self, word: str):
+        cur = self.root
+        for x in word:
+            if x not in cur.children:
+                cur.children[x] = TrieNode()
+            cur = cur.children[x]
+        cur.is_word = True
+        cur.word = word
 
 class Solution:
-    def solve(self, board: List[List[str]]) -> None:
-        """
-        Do not return anything, modify board in-place instead.
-        """
+    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
         n = len(board)
         m = len(board[0])
+        tree = Trie()
+        for word in words:
+            tree.add(word)
 
+        res = []
+        for i in range(n):
+            for j in range(m):
+                visited = {(i , j)}
+                self.dfs(board, tree.root, res, visited, i, j)
+
+        return res
+
+    def dfs(self, board: list, node: TrieNode, res: list, visited: set, i: int, j: int):
+        print(visited)
+        if board[i][j] not in node.children:
+            return
+
+        cur = node.children[board[i][j]]
+        if cur.is_word:
+            cur.is_word = False
+            res.append(cur.word)
+        
         directions = [-1, 0, 1, 0, -1]
-        uf = UionFind(n * m)
-
-        for i in range(n):
-            uf.sea[i * m + 0] = True
-            uf.sea[i * m + m - 1] = True
-
-        for j in range(m):
-            uf.sea[0 * m + j] = True
-            uf.sea[(n - 1) * m + j] = True
-
-
-        for i in range(n):
-            for j in range(m):
-                if board[i][j] == 'X':
-                    continue
-
-                for d in range(4):
-                    x = i + directions[d]
-                    y = j + directions[d + 1]
-                    if 0 <= x < n and 0 <= y < m and board[x][y] != 'X':
-                        uf.connect(i * m + j, x * m + y)
-
-        for i in range(n):
-            for j in range(m):
-                if board[i][j] == 'X':
-                    continue
-
-                root = uf.find(i * m + j)
-                if not uf.sea[root]:
-                    board[i][j] = 'X'
-
-
+        for d in range(4):
+            x = i + directions[d]
+            y = j + directions[d + 1]
+            if 0 <= x < len(board) and 0 <= y < len(board[x]) and (x, y) not in visited:
+                visited.add((x, y))
+                self.dfs(board, cur, res, visited, x, y)
+                visited.remove((x, y))
+                
 
 
 
 s = Solution()
-a = [["X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X","X"],["X","X","X","X","X","X","X","X","X","O","O","O","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","O","O","X","O","X","O","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","X","O","X","O","X","O","O","O","X","X","X","X","X","X"],["X","X","X","X","X","O","X","O","O","O","X","X","X","X","X","X","X","X","X","X"],["X","X","X","X","X","O","X","X","X","X","X","X","X","X","X","X","X","X","X","X"]]
+a = [["a","b","c","e"],["x","x","c","d"],["x","x","b","a"]]
 ts = datetime.now()
-res = s.solve(a)
+res = s.findWords(a, ["abc","abcd"])
 print(datetime.now() - ts)
-print('\n'.join([str(x) for x in a]))
+print(res)

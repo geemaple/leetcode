@@ -59,14 +59,13 @@ class Solution:
             trie.add(word)
 
         res = []
-        visited = set()
         for i in range(len(board)):
             for j in range(len(board[i])):
-                self.helper(i, j, board, trie.root, visited, res)
+                self.helper(i, j, board, trie.root, res)
 
         return res
 
-    def helper(self, i: int, j: int, board: list, node: TrieNode, visited: set, res: list):
+    def helper(self, i: int, j: int, board: list, node: TrieNode, res: list):
     
         if board[i][j] not in node.children:
             return
@@ -78,11 +77,12 @@ class Solution:
             child.is_word = False
             res.append(child.word)
 
-        visited.add((i, j))
+        val = board[i][j]
+        board[i][j] = '#'
         for d in range(4):
             x = i + directions[d]
             y = j + directions[d + 1]
-            if 0 <= x < len(board) and 0 <= y < len(board[x]) and (x, y) not in visited:
-                self.helper(x, y, board, child, visited, res)
-        visited.remove((i, j))
+            if 0 <= x < len(board) and 0 <= y < len(board[x]) and board[x][y] != '#':
+                self.helper(x, y, board, child, res)
+        board[i][j] = val
                 
