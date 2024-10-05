@@ -28,9 +28,9 @@
 21. https://www.lintcode.com/problem/set-union/
 22. https://leetcode.com/problems/surrounded-regions/
 23. https://www.lintcode.com/problem/maximum-association-set/
+24. https://leetcode.com/problems/implement-trie-prefix-tree/
+25. https://leetcode.com/problems/design-add-and-search-words-data-structure/
 
-- https://www.lintcode.com/problem/implement-trie/
-- https://www.lintcode.com/problem/add-and-search-word/
 - https://www.lintcode.com/problem/word-squares/
 - https://www.lintcode.com/problem/word-search-ii/
 
