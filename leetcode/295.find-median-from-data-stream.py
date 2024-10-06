@@ -55,20 +55,14 @@ class MedianFinder:
         self.min_heap = []
 
     def addNum(self, num: int) -> None:
-        if len(self.max_heap) > len(self.min_heap):
-            heapq.heappush(self.min_heap, num)
-        else:
-            heapq.heappush(self.max_heap, -num)
 
-        if len(self.min_heap) > 0:
-            left = -self.max_heap[0]
-            right = self.min_heap[0]
-            if left > right:
-                heapq.heappop(self.max_heap)
-                heapq.heappop(self.min_heap)
+        heapq.heappush(self.max_heap, -num)
+        heapq.heappush(self.min_heap, -self.max_heap[0])
+        heapq.heappop(self.max_heap)
 
-                heapq.heappush(self.max_heap, -right)
-                heapq.heappush(self.min_heap, left)
+        if len(self.max_heap) < len(self.min_heap):
+            heapq.heappush(self.max_heap, -self.min_heap[0]);
+            heapq.heappop(self.min_heap)
 
     def findMedian(self) -> float:
         if len(self.max_heap) > len(self.min_heap):
@@ -76,8 +70,111 @@ class MedianFinder:
 
         return (-self.max_heap[0] + self.min_heap[0]) / 2
 
-
 # Your MedianFinder object will be instantiated and called as such:
 # obj = MedianFinder()
 # obj.addNum(num)
 # param_2 = obj.findMedian()
+
+# follow-up 1
+class MedianFinder:
+    def __init__(self):
+        self.count = [0] * 101
+        self.total = 0
+
+    def addNum(self, num: int) -> None:
+        self.count[num] += 1
+        self.total += 1
+
+    def findMedian(self) -> float:
+        half = self.total // 2
+        cumulative_count = 0
+        first = second = -1
+
+        for i in range(101):
+            cumulative_count += self.count[i]
+
+            if self.total % 2 == 1:
+                if cumulative_count > half:
+                    return float(i)
+            else:
+                if cumulative_count > half and first == -1:
+                    first = i
+                if cumulative_count > half + 1:
+                    second = i
+                    break
+
+        if first != -1 and second != -1:
+            return (first + second) / 2.0
+        
+# follow-up 2
+import bisect
+
+class MedianFinder:
+    def __init__(self):
+        self.count = [0] * 101
+        self.low_outliers = []  # for numbers < 0
+        self.high_outliers = []  # for numbers > 100
+        self.total = 0
+
+    def addNum(self, num: int) -> None:
+        if 0 <= num <= 100:
+            self.count[num] += 1
+        elif num < 0:
+            bisect.insort(self.low_outliers, num)  # Insert while keeping sorted
+        else:  # num > 100
+            bisect.insort(self.high_outliers, num)  # Insert while keeping sorted
+        self.total += 1
+
+    def findMedian(self) -> float:
+        half = self.total // 2
+        cumulative_count = 0
+
+        if self.total % 2 == 1:  # Total is odd
+            for i in range(101):
+                cumulative_count += self.count[i]
+                if cumulative_count > half:
+                    return float(i)
+
+            # Handle low outliers
+            for outlier in self.low_outliers:
+                cumulative_count += 1
+                if cumulative_count > half:
+                    return float(outlier)
+
+            # Handle high outliers
+            for outlier in self.high_outliers:
+                cumulative_count += 1
+                if cumulative_count > half:
+                    return float(outlier)
+
+        else:  # Total is even
+            first = second = None
+
+            for i in range(101):
+                cumulative_count += self.count[i]
+                if cumulative_count > half:
+                    first = i
+                    break
+            
+            if first is None:
+                for outlier in self.low_outliers:
+                    cumulative_count += 1
+                    if cumulative_count > half:
+                        first = outlier
+                        break
+            
+            cumulative_count = 0
+            for i in range(101):
+                cumulative_count += self.count[i]
+                if cumulative_count > half + 1:
+                    second = i
+                    break
+            
+            if second is None:
+                for outlier in self.high_outliers:
+                    cumulative_count += 1
+                    if cumulative_count > half + 1:
+                        second = outlier
+                        break
+            
+            return (first + second) / 2.0

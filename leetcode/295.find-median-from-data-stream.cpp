@@ -54,22 +54,13 @@ public:
     MedianFinder() {}
     
     void addNum(int num) {
-        if (max_heap.size() > min_heap.size()) {
-            min_heap.push(num);
-        } else {
-            max_heap.push(num);
-        }
+        max_heap.push(num);
+        min_heap.push(max_heap.top());
+        max_heap.pop();
 
-        if (min_heap.size() > 0) {
-            int left = max_heap.top();
-            int right = min_heap.top();
-            if (left > right) {
-                max_heap.pop();
-                min_heap.pop();
-
-                max_heap.push(right);
-                min_heap.push(left);
-            }
+        if (max_heap.size() < min_heap.size()) {
+            max_heap.push(min_heap.top());
+            min_heap.pop();
         }
     }
     

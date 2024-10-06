@@ -38,8 +38,8 @@
 28. https://leetcode.com/problems/trapping-rain-water/
 29. https://leetcode.com/problems/trapping-rain-water-ii/
 30. https://leetcode.com/problems/find-median-from-data-stream/
+31. https://leetcode.com/problems/sliding-window-median/
 
-- https://leetcode.com/problems/sliding-window-median/description/
 - https://www.lintcode.com/problem/min-stack/
 - https://www.lintcode.com/problem/implement-queue-by-two-stacks/
 - https://www.lintcode.com/problem/expression-expand/
