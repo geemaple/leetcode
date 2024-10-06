@@ -35,7 +35,7 @@
 
 ### 堆栈
 
-- https://www.lintcode.com/problem/trapping-rain-water/
+28. https://leetcode.com/problems/trapping-rain-water/
 - https://www.lintcode.com/problem/trapping-rain-water-ii/
 - https://www.lintcode.com/problem/sliding-window-median/
 - https://www.lintcode.com/problem/min-stack/

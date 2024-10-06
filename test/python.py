@@ -10,66 +10,34 @@ from typing import (
 )
 
 
-class TrieNode:
-    def __init__(self):
-        self.children = {}
-        self.is_word = False
-        self.word = None
-
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
-    def add(self, word: str):
-        cur = self.root
-        for x in word:
-            if x not in cur.children:
-                cur.children[x] = TrieNode()
-            cur = cur.children[x]
-        cur.is_word = True
-        cur.word = word
-
+from collections import defaultdict, deque
 class Solution:
-    def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
-        n = len(board)
-        m = len(board[0])
-        tree = Trie()
-        for word in words:
-            tree.add(word)
+    def remainingMethods(self, n: int, k: int, invocations: List[List[int]]) -> List[int]:
+        graph = defaultdict(list)
+        for x in invocations:
+            graph[x[0]].append(x[1])
 
-        res = []
-        for i in range(n):
-            for j in range(m):
-                visited = {(i , j)}
-                self.dfs(board, tree.root, res, visited, i, j)
+        suspicious = set()
+        q = deque([k])
+        visited = set([k])
+        while len(q):
+            cur = q.popleft()
+            suspicious.add(cur)
+            for node in graph[cur]:
+                if node not in visited:
+                    visited.add(node)
+                    q.append(node)
 
-        return res
+        for x in invocations:
+            if x[0] not in suspicious and x[1] in suspicious:
+                return [i for i in range(n)]
 
-    def dfs(self, board: list, node: TrieNode, res: list, visited: set, i: int, j: int):
-        print(visited)
-        if board[i][j] not in node.children:
-            return
-
-        cur = node.children[board[i][j]]
-        if cur.is_word:
-            cur.is_word = False
-            res.append(cur.word)
+        return [i for i in range(n) if i not in suspicious]
         
-        directions = [-1, 0, 1, 0, -1]
-        for d in range(4):
-            x = i + directions[d]
-            y = j + directions[d + 1]
-            if 0 <= x < len(board) and 0 <= y < len(board[x]) and (x, y) not in visited:
-                visited.add((x, y))
-                self.dfs(board, cur, res, visited, x, y)
-                visited.remove((x, y))
-                
-
-
 
 s = Solution()
 a = [["a","b","c","e"],["x","x","c","d"],["x","x","b","a"]]
 ts = datetime.now()
-res = s.findWords(a, ["abc","abcd"])
+res = s.remainingMethods(4, 1, [[1,2],[0,1],[3,2]])
 print(datetime.now() - ts)
 print(res)
