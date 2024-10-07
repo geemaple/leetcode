@@ -42,9 +42,8 @@
 32. https://leetcode.com/problems/min-stack/
 33. https://leetcode.com/problems/implement-queue-using-stacks/
 34. https://leetcode.com/problems/decode-string/
-
-- https://www.lintcode.com/problem/largest-rectangle-in-histogram/
-- https://www.lintcode.com/problem/maximal-rectangle/
+35. https://leetcode.com/problems/largest-rectangle-in-histogram/
+36. https://leetcode.com/problems/maximal-rectangle/
 
 ### 扫描线、双端队列、二分
 

@@ -31,7 +31,7 @@
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
-        heights.push_back(-1);
+        heights.push_back(0);
         int n = heights.size();
         stack<int> st;
         int res = 0;

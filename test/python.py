@@ -10,37 +10,33 @@ from typing import (
 )
 
 
-import heapq
-
 class Solution:
-    def decodeString(self, s: str) -> str:
-        stack = []
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        
+        heights = [0] + heights + [0]
+        stack = [0]
+        n = len(heights)
 
-        for x in s:
-            if x == ']':
-                seg = ''
-                while stack[-1] != '[':
-                    seg = stack.pop() + seg
+        res = 0
+        for i in range(1, n):
+            while heights[i] < heights[stack[-1]]:
+                h = heights[stack[-1]]
                 stack.pop()
-                count = 0
-                power = 1
-                while len(stack) > 0 and stack[-1].isdigit():
-                    count = int(stack.pop()) * power + count
-                    power *= 10
-                
-                expand = seg * count
-                for ch in expand:
-                    stack.append(ch)
-            else:
-                stack.append(x)
+                width = i - stack[-1] - 1
+                print(width, h, i)
+                res = max(res, width * h)
 
-        return ''.join(stack)
+            stack.append(i)
+
+        return res
+        
+
 
         
 
 s = Solution()
 a = [["a","b","c","e"],["x","x","c","d"],["x","x","b","a"]]
 ts = datetime.now()
-res = s.decodeString('3[a]2[bc]')
+res = s.largestRectangleArea([2,1,5,6,2,3])
 print(datetime.now() - ts)
 print(res)
