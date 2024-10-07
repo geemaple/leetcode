@@ -39,10 +39,10 @@
 29. https://leetcode.com/problems/trapping-rain-water-ii/
 30. https://leetcode.com/problems/find-median-from-data-stream/
 31. https://leetcode.com/problems/sliding-window-median/
+32. https://leetcode.com/problems/min-stack/
+33. https://leetcode.com/problems/implement-queue-using-stacks/
+34. https://leetcode.com/problems/decode-string/
 
-- https://www.lintcode.com/problem/min-stack/
-- https://www.lintcode.com/problem/implement-queue-by-two-stacks/
-- https://www.lintcode.com/problem/expression-expand/
 - https://www.lintcode.com/problem/largest-rectangle-in-histogram/
 - https://www.lintcode.com/problem/maximal-rectangle/
 
