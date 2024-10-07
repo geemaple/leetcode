@@ -44,6 +44,8 @@
 34. https://leetcode.com/problems/decode-string/
 35. https://leetcode.com/problems/largest-rectangle-in-histogram/
 36. https://leetcode.com/problems/maximal-rectangle/
+37. https://www.lintcode.com/problem/max-tree/
+38. https://leetcode.com/problems/sliding-window-maximum/
 
 ### 扫描线、双端队列、二分
 

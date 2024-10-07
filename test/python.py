@@ -11,32 +11,36 @@ from typing import (
 
 
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
-        
-        heights = [0] + heights + [0]
-        stack = [0]
-        n = len(heights)
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        n = len(nums)
+        cur = None
+        pre = None
+        res = []
 
-        res = 0
-        for i in range(1, n):
-            while heights[i] < heights[stack[-1]]:
-                h = heights[stack[-1]]
-                stack.pop()
-                width = i - stack[-1] - 1
-                print(width, h, i)
-                res = max(res, width * h)
+        for i in range(n):
+            if i >= k:
+                if nums[i - k] == pre:
+                    pre = None
+                if nums[i - k] == cur:
+                    cur = pre
+                    pre = None
 
-            stack.append(i)
+            if cur is None or nums[i] > cur:
+                pre = cur
+                cur = nums[i]
+                
+            elif pre is None or nums[i] > pre:
+                pre = nums[i]
+
+            print(nums[i - k], nums[max(0, i - k + 1): i + 1], cur, pre)
+            if i >= k - 1:
+                res.append(cur)
 
         return res
-        
-
-
-        
 
 s = Solution()
 a = [["a","b","c","e"],["x","x","c","d"],["x","x","b","a"]]
 ts = datetime.now()
-res = s.largestRectangleArea([2,1,5,6,2,3])
+res = s.maxSlidingWindow([9,10,9,-7,-4,-8,2,-6], 5)
 print(datetime.now() - ts)
 print(res)
