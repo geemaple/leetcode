@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 30/93 | 8 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 31/93 | 8 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 8/32 | - |
 
 **Solved**: 434 problems
@@ -928,7 +928,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [lintcode-611](https://www.lintcode.com/problem/knight-shortest-path/) | Knight Shortest Path | [c++](./lintcode/611.knight-shortest-path.cpp), [python3](./lintcode/611.knight-shortest-path.py) | Other | \- | \- | - |
 | [lintcode-526](https://www.lintcode.com/problem/load-balancer/) | Load Balancer | [c++](./lintcode/526.load-balancer.cpp), [python3](./lintcode/526.load-balancer.py) | Other | \- | \- | - |
 | [lintcode-629](https://www.lintcode.com/problem/minimum-spanning-tree/) | Minimum Spanning Tree | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python3](./lintcode/629.minimum-spanning-tree.py) | Other | \- | \- | - |
-| [lintcode-391](https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/) | Number Of Airplanes In The Sky | [c++](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python3](./lintcode/391.number-of-airplanes-in-the-sky.py) | Other | \- | \- | - |
+| [lintcode-391](https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/) | Number Of Airplanes In The Sky | [c++](./lintcode/391.number-of-airplanes-in-the-sky.cpp), [python3](./lintcode/391.number-of-airplanes-in-the-sky.py) | Other | O\(NlogN\) | O\(N\) | - |
 | [lintcode-31](https://www.lintcode.com/problem/partition-array/) | Partition Array | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | - |
 | [lintcode-618](https://www.lintcode.com/problem/search-graph-nodes/) | Search Graph Nodes | [c++](./lintcode/618.search-graph-nodes.cpp), [python3](./lintcode/618.search-graph-nodes.py) | Other | \- | \- | - |
 | [lintcode-447](https://www.lintcode.com/problem/search-in-a-big-sorted-array/) | Search In A Big Sorted Array | [c++](./lintcode/447.search-in-a-big-sorted-array.cpp), [python3](./lintcode/447.search-in-a-big-sorted-array.py) | Other | \- | \- | - |

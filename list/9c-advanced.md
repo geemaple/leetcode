@@ -49,7 +49,9 @@
 
 ### 扫描线、双端队列、二分
 
-- https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/
+39. https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/
+
+
 - https://www.lintcode.com/problem/building-outline/
 - https://www.lintcode.com/problem/meeting-rooms-ii/
 - https://www.lintcode.com/problem/time-intersection/
