@@ -43,6 +43,40 @@ class Solution {
 public:
     vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
         int n = buildings.size();
+        for (int i = 0; i < n; i++) {
+            buildings.push_back({buildings[i][1], 0, 0});
+        }
+
+        sort(buildings.begin(), buildings.end());
+        vector<vector<int>> res;
+        priority_queue<pair<int, int>> heap;
+        for (int i = 0; i < buildings.size(); i++) {
+            vector<int> tuple = buildings[i];
+            int l = tuple[0], r = tuple[1], h = tuple[2];
+            while (!heap.empty() && heap.top().second <= l) {
+                heap.pop();
+            }
+
+            if (h > 0) {
+                heap.push(make_pair(h, r));
+            }
+            
+            if (i == buildings.size() - 1 || buildings[i][0] != buildings[i + 1][0]) {
+                int height = heap.empty() ? 0 : heap.top().first;
+                if (res.size() == 0 || height != res.back()[1]) {
+                    res.push_back({l, height});
+                }
+            }
+        }
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
+        int n = buildings.size();
         vector<vector<int>> res;
         priority_queue<pair<int, int>> heap;
         int cur_x = 0;

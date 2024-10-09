@@ -42,6 +42,34 @@
 import heapq
 class Solution:
     def getSkyline(self, buildings: List[List[int]]) -> List[List[int]]:
+        anchor = list(buildings)
+        for i in range(len(buildings)):
+            anchor.append([buildings[i][1], 0, 0])
+
+        anchor.sort()
+        res = []
+        heap = []
+        n = len(anchor)
+
+        for i in range(n)
+            l, r, h = anchor[i]
+
+            while len(heap) > 0 and heap[0][1] <= l:
+                heapq.heappop(heap)
+
+            if h > 0:
+                heapq.heappush(heap, (-h, r))
+
+            if i == n - 1 or anchor[i][0] != anchor[i + 1][0]:
+                height = 0 if len(heap) == 0 else -heap[0][0]
+                if len(res) == 0 or res[-1][1] != height:
+                    res.append([l, height])
+
+        return res
+
+import heapq
+class Solution:
+    def getSkyline(self, buildings: List[List[int]]) -> List[List[int]]:
         
         n = len(buildings)
         
@@ -68,3 +96,4 @@ class Solution:
                 res.append((cur_x, cur_h))
 
         return res
+

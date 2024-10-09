@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <vector>
 #include <string>
 #include <algorithm>
@@ -6,43 +7,37 @@
 #include <unordered_set>
 #include <stack>
 #include <set>
+
 using namespace std;
 
 class Solution {
 public:
-    string decodeString(string s) {
-        stack<char> st;
-
-        for (auto x: s) {
-            if (x == ']') {
-                string seg = "";
-                while (st.top() != '[') {
-                    seg = st.top() + seg;
-                    st.pop();
-                }
-                st.pop();
-                int count = 0;
-                int power = 1;
-                while (!st.empty() && isdigit(st.top())) {
-                    count = (st.top() - '0') * power + count;
-                    power *= 10;
-                    st.pop();
-                }
-
-                for (int i = 0; i < count; i++) {
-                    for (int j = 0; j < seg.size(); j++) {
-                        st.push(seg[j]);
-                    }
-                }
-            } else {
-                st.push(x);
-            }
+    vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
+        int n = buildings.size();
+        for (int i = 0; i < n; i++) {
+            buildings.push_back({buildings[i][1], 0, 0});
         }
 
-        string res = "";
-        while (!st.empty()) {
-            res = st.top() + res;
-            st.pop();
+        sort(buildings.begin(), buildings.end());
+        vector<vector<int>> res;
+        priority_queue<pair<int, int>> heap;
+        for (int i = 0; i < buildings.size(); i++) {
+            vector<int> tuple = buildings[i];
+            int l = tuple[0], r = tuple[1], h = tuple[2];
+            while (!heap.empty() && heap.top().second <= l) {
+                heap.pop();
+            }
+
+            if (h > 0) {
+                heap.push(make_pair(h, r));
+            }
+            
+            if (i == buildings.size() - 1 || buildings[i][0] != buildings[i + 1][0]) {
+                int height = heap.empty() ? 0 : heap.top().first;
+                if (res.size() == 0 || height != res.back()[1]) {
+                    res.push_back({i, height});
+                }
+            }
         }
 
         return res;
@@ -50,15 +45,15 @@ public:
 };
 
 int main() {
-    vector<int> graph= {1,3,-1,-3,5,3,6,7};
+    vector<vector<int>> graph= {{2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}};
     
     vector<int> nums1 = {-3,-1,2,4,5};
     vector<int> nums2 = {-3,-1,2,4,5};
     Solution s;
-    string res = s.decodeString("3[a]2[bc]");
-    cout << res << endl;
-//    for (auto word : res) {
-//        cout << word << ", ";
+    vector<vector<int>> res = s.getSkyline(graph);
+//    cout << res << endl;
+//    for (int word : res) {
+//        cout << std::to_string(word) << ", ";
 //    }
 //    cout << endl;
     
