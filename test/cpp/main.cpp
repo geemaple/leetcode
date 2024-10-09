@@ -35,7 +35,8 @@ public:
             if (i == buildings.size() - 1 || buildings[i][0] != buildings[i + 1][0]) {
                 int height = heap.empty() ? 0 : heap.top().first;
                 if (res.size() == 0 || height != res.back()[1]) {
-                    res.push_back({i, height});
+//                    res.push_back({i, height});
+                    res.emplace_back(vector<int>{l, height});
                 }
             }
         }

@@ -40,7 +40,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 31/93 | 8 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 33/93 | 9 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 8/32 | - |
 
 **Solved**: 434 problems
@@ -181,7 +181,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -204,6 +204,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-376](https://leetcode.com/problems/wiggle-subsequence/) | Wiggle Subsequence | [c++](./leetcode/376.wiggle-subsequence.cpp), [python3](./leetcode/376.wiggle-subsequence.py) | Greedy | O\(N\) | O\(N\) | - |
 | [leetcode-44](https://leetcode.com/problems/wildcard-matching/) | Wildcard Matching | [c++](./leetcode/44.wildcard-matching.cpp), [python3](./leetcode/44.wildcard-matching.py) | Greedy | O\(NM\) | O\(NM\) | - |
 | [lintcode-3672](https://www.lintcode.com/problem/connecting-cities-with-minimum-cost/) | Connecting Cities With Minimum Cost | [c++](./lintcode/3672.connecting-cities-with-minimum-cost.cpp), [python3](./lintcode/3672.connecting-cities-with-minimum-cost.py) | Greedy | O\(ElogE\) | O\(E\+V\) | Leetcode-1135 |
+| [lintcode-919](https://www.lintcode.com/problem/meeting-rooms-ii/) | Meeting Rooms II | [c++](./lintcode/919.meeting-rooms-ii.cpp), [python3](./lintcode/919.meeting-rooms-ii.py) | Greedy | O\(NlogN\) | O\(N\) | leetcode-253 |
 
 ## Dynamic Programming
 
@@ -442,7 +443,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(18) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
@@ -462,6 +463,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Heap | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [leetcode-407](https://leetcode.com/problems/trapping-rain-water-ii/) | Trapping Rain Water II | [c++](./leetcode/407.trapping-rain-water-ii.cpp), [python3](./leetcode/407.trapping-rain-water-ii.py) | Heap | O\(NlogN\) | O\(N\) | - |
+| [lintcode-919](https://www.lintcode.com/problem/meeting-rooms-ii/) | Meeting Rooms II | [c++](./lintcode/919.meeting-rooms-ii.cpp), [python3](./lintcode/919.meeting-rooms-ii.py) | Heap | O\(NlogN\) | O\(N\) | leetcode-253 |
 
 ## Two Pointers
 
@@ -511,7 +513,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -539,6 +541,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
 | [leetcode-242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | [c++](./leetcode/242.valid-anagram.cpp), [python3](./leetcode/242.valid-anagram.py) | Sorting | O\(N\) | O\(1\) | - |
+| [lintcode-919](https://www.lintcode.com/problem/meeting-rooms-ii/) | Meeting Rooms II | [c++](./lintcode/919.meeting-rooms-ii.cpp), [python3](./lintcode/919.meeting-rooms-ii.py) | Sorting | O\(NlogN\) | O\(N\) | leetcode-253 |
 | [lintcode-39](https://www.lintcode.com/problem/recover-rotated-sorted-array/) | Recover Rotated Sorted Array | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
 
 ## Counting
@@ -793,7 +796,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(142) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(141) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -859,7 +862,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [leetcode-677](https://leetcode.com/problems/map-sum-pairs/) | Map Sum Pairs | [c++](./leetcode/677.map-sum-pairs.cpp), [python3](./leetcode/677.map-sum-pairs.py) | Other | \- | \- | - |
 | [leetcode-485](https://leetcode.com/problems/max-consecutive-ones/) | Max Consecutive Ones | [c++](./leetcode/485.max-consecutive-ones.cpp) | Other | \- | \- | - |
 | [leetcode-654](https://leetcode.com/problems/maximum-binary-tree/) | Maximum Binary Tree | [c++](./leetcode/654.maximum-binary-tree.cpp), [python3](./leetcode/654.maximum-binary-tree.py) | Other | \- | \- | - |
-| [leetcode-253](https://leetcode.com/problems/meeting-rooms-ii/) | Meeting Rooms II | [c++](./leetcode/253.meeting-rooms-ii.cpp), [python3](./leetcode/253.meeting-rooms-ii.py) | Other | \- | \- | - |
 | [leetcode-56](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | [c++](./leetcode/56.merge-intervals.cpp), [python3](./leetcode/56.merge-intervals.py) | Other | \- | \- | - |
 | [leetcode-924](https://leetcode.com/problems/minimize-malware-spread/) | Minimize Malware Spread | [python3](./leetcode/924.minimize-malware-spread.py) | Other | \- | \- | - |
 | [leetcode-928](https://leetcode.com/problems/minimize-malware-spread-ii/) | Minimize Malware Spread II | [python3](./leetcode/928.minimize-malware-spread-ii.py) | Other | \- | \- | - |
