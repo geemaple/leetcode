@@ -469,9 +469,9 @@ class Problem:
     @property
     def link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return Markdown.link(f'{self.source}-{self.number}', f'https://leetcode.com/problems/{self.name}/')
+            return Markdown.link(f'{self.source}-{self.number}'.title(), f'https://leetcode.com/problems/{self.name}/')
         if self.source.lower() == 'lintcode':
-            return Markdown.link(f'{self.source}-{self.number}', f'https://www.lintcode.com/problem/{self.name}/')
+            return Markdown.link(f'{self.source}-{self.number}'.title(), f'https://www.lintcode.com/problem/{self.name}/')
         else:
             return '#'
         
