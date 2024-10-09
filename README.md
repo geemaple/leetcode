@@ -41,9 +41,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 33/93 | 9 vips |
-| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 8/32 | - |
+| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 9/32 | - |
 
-**Solved**: 434 problems
+**Solved**: 435 problems
 
 ## 类型/Category
 
@@ -783,9 +783,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2210](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Count Hills And Valleys In An Array | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python3](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-3285](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Find Indices Of Stable Mountains | [c++](./leetcode/3285.find-indices-of-stable-mountains.cpp), [python3](./leetcode/3285.find-indices-of-stable-mountains.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-238](https://leetcode.com/problems/product-of-array-except-self/) | Product Of Array Except Self | [c++](./leetcode/238.product-of-array-except-self.cpp), [python3](./leetcode/238.product-of-array-except-self.py) | Array | O\(N\) | O\(1\) | - |
