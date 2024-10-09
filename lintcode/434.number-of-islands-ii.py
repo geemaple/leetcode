@@ -2,7 +2,7 @@
 #  Time: O(K)
 #  Space: O(NM + K)
 #  Ref: -
-#  Note: leetcode-305
+#  Note: Leetcode-305
 
 #  Given a n,m which means the row and column of the 2D matrix and an array of pair A( size k).
 #  Originally, the 2D matrix is all 0 which means there is only sea in the matrix.
