@@ -94,9 +94,11 @@ TAG_REGEX = {
     TAG_QUEUE: r'^Queue$',
     TAG_HEAP: r'^Heap$|Priority Queue',
     TAG_HASH: r'^Hash Table$|Hash Function',
+    TAG_LSWEEP: r'^Line Sweep$|^Sweep Line$',
     FOLD_TAG_TREE: r'^Tree$|Binary Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
     FOLD_TAG_STR: r'^String$|^String Matching$',
+
 }
 
 EXTENSION = {
