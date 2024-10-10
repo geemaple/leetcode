@@ -61,9 +61,11 @@
 
 - https://www.lintcode.com/problem/wood-cut/
 - https://www.lintcode.com/problem/copy-books/
+- https://www.lintcode.com/problem/find-the-duplicate-number/
 - https://www.lintcode.com/problem/linked-list-cycle-ii/
 - https://www.lintcode.com/problem/maximum-average-subarray/
 - https://www.lintcode.com/problem/maximum-average-subarray-ii/
+- https://www.lintcode.com/problem/sliding-window-maximum/
 
 ### 动态规划
 
