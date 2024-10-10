@@ -55,8 +55,8 @@
 42. https://www.lintcode.com/problem/time-intersection/
 43. https://leetcode.com/problems/find-peak-element/
 44. https://leetcode.com/problems/find-a-peak-element-ii/
+45. https://leetcode.com/problems/first-bad-version/
 
-- https://www.lintcode.com/problem/first-bad-version/
 - https://www.lintcode.com/problem/sqrtx/
 - https://www.lintcode.com/problem/sqrtx-ii/
 - https://www.lintcode.com/problem/wood-cut/

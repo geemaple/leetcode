@@ -40,18 +40,18 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int start = 1;
-        int end = n; // 由于int限制，不能使用开区间
+        int left = 1;
+        int right = n; // 由于int范围限制，不能使用开区间n + 1
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
             if (isBadVersion(mid)){
-                end = mid;
+                right = mid;
             } else {
-                start = mid + 1;
+                left = mid + 1;
             }
         } 
 
-        return start;
+        return left;
     }
 };
