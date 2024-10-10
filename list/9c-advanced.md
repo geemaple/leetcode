@@ -53,9 +53,9 @@
 40. https://leetcode.com/problems/the-skyline-problem/
 41. https://www.lintcode.com/problem/meeting-rooms-ii/
 42. https://www.lintcode.com/problem/time-intersection/
+43. https://leetcode.com/problems/find-peak-element/
+44. https://leetcode.com/problems/find-a-peak-element-ii/
 
-- https://www.lintcode.com/problem/find-peak-element/
-- https://www.lintcode.com/problem/find-peak-element-ii/
 - https://www.lintcode.com/problem/first-bad-version/
 - https://www.lintcode.com/problem/sqrtx/
 - https://www.lintcode.com/problem/sqrtx-ii/
@@ -64,7 +64,6 @@
 - https://www.lintcode.com/problem/linked-list-cycle-ii/
 - https://www.lintcode.com/problem/maximum-average-subarray/
 - https://www.lintcode.com/problem/maximum-average-subarray-ii/
-- https://www.lintcode.com/problem/sliding-window-maximum/
 
 ### 动态规划
 

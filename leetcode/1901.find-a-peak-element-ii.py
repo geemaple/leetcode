@@ -36,20 +36,21 @@
 
 class Solution:
     def findPeakGrid(self, mat: List[List[int]]) -> List[int]:
-        start = 0
-        end = len(mat) - 1
+        n = len(mat)
+        top = 0
+        bottom = n - 1
 
-        while start < end:
-            mid = start + (end - start) // 2
-
-            if max(mat[mid]) >= max(mat[mid + 1]):
-                end = mid
+        while top < bottom:
+            mid = top + (bottom - top) // 2
+            if max(mat[mid]) < max(mat[mid + 1]):
+                top = mid + 1
             else:
-                start = mid + 1
+                bottom = mid
 
-        peak = 0
-        for i in range(1, len(mat[start])):
-            if mat[start][i] > mat[start][peak]:
-                peak = i
-                
-        return [start, peak]
+        i = top
+        j = 0
+        for p in range(len(mat[i])):
+            if mat[i][j] < mat[i][p]:
+                j = p
+     
+        return [i, j]

@@ -37,22 +37,22 @@
 class Solution {
 public:
     vector<int> findPeakGrid(vector<vector<int>>& mat) {
-        int start = 0;
-        int end = mat.size() - 1;
+        int top = 0;
+        int bottom = mat.size() - 1;
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
+        while (top < bottom) {
+            int mid = top + (bottom - top) / 2;
             int mid_val = *max_element(mat[mid].begin(), mat[mid].end());
             int mid_neighbor_val = *max_element(mat[mid + 1].begin(), mat[mid + 1].end());
 
             if (mid_val >= mid_neighbor_val) {
-                end = mid;
+                bottom = mid;
             } else {
-                start = mid + 1;
+                top = mid + 1;
             }
         }
 
-        int peak = max_element(mat[start].begin(), mat[start].end()) - mat[start].begin();
-        return vector<int>{start, peak};
+        int peak = max_element(mat[top].begin(), mat[top].end()) - mat[top].begin();
+        return vector<int>{top, peak};
     }
 };
