@@ -11,151 +11,59 @@
 using namespace std;
 
 class Solution {
-
 public:
+    bool findSafeWalk(vector<vector<int>>& grid, int health) {
+        int n = grid.size();
+        int m = grid[0].size();
+        int directions[5] = {-1, 0, 1, 0, -1};
+        unordered_set<int> visited;
+        priority_queue<tuple<int, int, int>> heap;
+        heap.emplace(health, 0, 0);
 
-    /*
-
-     * @param A: An integer matrix
-
-     * @return: The index of the peak
-
-     */
-
-    vector<int> findPeakII(vector<vector<int>> &A) {
-
-        int n = A.size();
-
-        int m = A[0].size();
-
-        //根据条件可以知道边界上是不可能为峰值的
-
-        //所以起始边界从1开始，终止边界为n - 1和m - 1
-
-        return find(A, 1, n - 2, 1, m - 2);
-
-    }
-
-private:
-
-    vector<int> find(vector<vector<int>>& A, int up, int bottom, int left, int right) {
-
-        int row_mid = up + (bottom - up) / 2;
-
-        int col_mid = left + (right - left) / 2;
-
-        
-
-        int row = row_mid, col = col_mid;
-
-        int mx = A[row_mid][col_mid];
-
-        
-
-        //在中心点所在列上找最大值
-
-        for (int i = up; i <= bottom; i++) {
-
-            if (A[i][col_mid] > mx) {
-
-                mx = A[i][col_mid];
-
-                row = i;
-
-                col = col_mid;
-
+        while (!heap.empty()) {
+            auto [left, i, j] = heap.top();
+            heap.pop();
+            if (left == 0) {
+                return false;
             }
 
-        }
-
-        //在中心点所在行上找最大值
-
-        for (int i = left; i <= right; i++) {
-
-            if (A[row_mid][i] > mx) {
-
-                mx = A[row_mid][i];
-
-                row = row_mid;
-
-                col = i;
-
+            if (i == n - 1 && j == m - 1) {
+                cout << i << "," << j << endl;
+                return true;
             }
 
+            if (visited.count(i * m + j) > 0) {
+                continue;
+            }
+            visited.insert(i * m + j);
+            for (int d = 0; d < 4; d++) {
+                int x = i + directions[d];
+                int y = j + directions[d + 1];
+                if (x >= 0 && x < n && y >= 0 && y < m && visited.count(x * m + y) == 0) {
+                    cout << left - grid[x][y] << "," << x << "," << y << endl;
+                    heap.emplace(left - grid[x][y], x, y);
+                }
+            }
         }
 
-        //比较四个方向上的相邻值，若小于相邻值则向该方向移动
-
-        //否则即为峰值直接返回答案
-
-        if (A[row - 1][col] > A[row][col]) {
-
-            row -= 1;
-
-        } else if (A[row + 1][col] > A[row][col]) {
-
-            row += 1;
-
-        } else if (A[row][col - 1] > A[row][col]) {
-
-            col -= 1;
-
-        } else if (A[row][col + 1] > A[row][col]) {
-
-            col += 1;
-
-        } else {
-
-            return vector<int>{row, col};
-
-        }
-
-        //递归搜索比最大值大的相邻点所在的部分
-
-        if (row >= up && row < row_mid && col >= left && col < col_mid) {
-
-            return find(A, up, row_mid - 1, left, col_mid - 1);
-
-        }else if (row >= up && row < row_mid && col > col_mid && col <= right) {
-
-            return find(A, up, row_mid - 1, col_mid + 1, right);
-
-        }else if (row > row_mid && row <= bottom && col >= left && col < col_mid) {
-
-            return find(A, row_mid + 1, bottom, left, col_mid - 1);
-
-        }else if (row > row_mid && row <= bottom && col > col_mid && col <= right) {
-
-            return find(A, row_mid + 1, bottom, col_mid + 1, right);
-
-        }
-        
-        return vector<int>{-1, -1};
-
+        return false;
     }
-
 };
 
 
 int main() {
     vector<vector<int>> matrix = {
-        {0,  1,  0,  1,  0,  1,  0,  1,  0},
-        {1,  2,  1, 99, 98, 22, 21, 20,  1},
-        {0,  3,  2,  1,  2,  3,  4, 19,  0},
-        {1,  4,  3,  2,  1,  2,  3, 18,  1},
-        {0,  5,  4,  3,  2,  1,  2, 17,  0},
-        {1,  6,  5,  4,  3,  2,  1, 16,  1},
-        {0,  7,  6,  5,  4,  3,  2, 15,  0},
-        {1,  8,  9, 10, 11, 12, 13, 14,  1},
-        {0,  1,  0,  1,  0,  1,  0,  1,  0}
+        {0,1,1,0,0,0},
+        {1,0,1,0,0,0},
+        {0,1,1,1,0,1},
+        {0,0,1,0,1,0}
     };
     
     vector<int> nums1 = {-3,-1,2,4,5};
     vector<int> nums2 = {-3,-1,2,4,5};
     Solution s;
-    vector<int> res = s.findPeakII(matrix);
-    cout << matrix[res[0]][res[1]] << endl;
-//    cout << res << endl;
+    bool res = s.findSafeWalk(matrix, 3);
+    cout << res << endl;
 //    for (int word : res) {
 //        cout << std::to_string(word) << ", ";
 //    }
