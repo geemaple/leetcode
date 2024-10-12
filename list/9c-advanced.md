@@ -58,8 +58,8 @@
 45. https://leetcode.com/problems/first-bad-version/
 46. https://leetcode.com/problems/sqrtx/
 47. https://www.lintcode.com/problem/sqrtx-ii/
+48. https://www.lintcode.com/problem/wood-cut/
 
-- https://www.lintcode.com/problem/wood-cut/
 - https://www.lintcode.com/problem/copy-books/
 - https://www.lintcode.com/problem/find-the-duplicate-number/
 - https://www.lintcode.com/problem/linked-list-cycle-ii/
