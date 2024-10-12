@@ -70,3 +70,24 @@ class Solution:
             fast = nums[fast]
 
         return fast
+    
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        left = 1
+        right = len(nums) - 1
+
+        while left < right:
+            mid = left + (right - left) // 2
+            if self.count_less_equal(nums, mid) <= mid:
+                left = mid + 1
+            else:
+                right = mid
+        return left
+                
+
+    def count_less_equal(self, nums:list, target: int) -> int:
+        count = 0
+        for x in nums:
+            if x <= target:
+                count += 1
+        return count

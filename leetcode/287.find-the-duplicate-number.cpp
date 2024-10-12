@@ -72,3 +72,30 @@ public:
         return fast;
     }
 };
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int left = 1;
+        int right =nums.size() - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (count_less_equal(nums, mid) <= mid) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+
+    int count_less_equal(vector<int>& nums, int target) {
+        int count = 0;
+        for (auto x: nums) {
+            if (x <= target) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+};

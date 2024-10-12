@@ -59,10 +59,9 @@
 46. https://leetcode.com/problems/sqrtx/
 47. https://www.lintcode.com/problem/sqrtx-ii/
 48. https://www.lintcode.com/problem/wood-cut/
+49. https://www.lintcode.com/problem/copy-books/
+50. https://leetcode.com/problems/find-the-duplicate-number/
 
-- https://www.lintcode.com/problem/copy-books/
-- https://www.lintcode.com/problem/find-the-duplicate-number/
-- https://www.lintcode.com/problem/linked-list-cycle-ii/
 - https://www.lintcode.com/problem/maximum-average-subarray/
 - https://www.lintcode.com/problem/maximum-average-subarray-ii/
 - https://www.lintcode.com/problem/sliding-window-maximum/
