@@ -61,8 +61,8 @@
 48. https://www.lintcode.com/problem/wood-cut/
 49. https://www.lintcode.com/problem/copy-books/
 50. https://leetcode.com/problems/find-the-duplicate-number/
+51. https://leetcode.com/problems/maximum-average-subarray-i/
 
-- https://www.lintcode.com/problem/maximum-average-subarray/
 - https://www.lintcode.com/problem/maximum-average-subarray-ii/
 - https://www.lintcode.com/problem/sliding-window-maximum/
 
