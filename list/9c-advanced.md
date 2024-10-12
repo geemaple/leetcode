@@ -45,24 +45,24 @@
 35. https://leetcode.com/problems/largest-rectangle-in-histogram/
 36. https://leetcode.com/problems/maximal-rectangle/
 37. https://www.lintcode.com/problem/max-tree/
-38. https://leetcode.com/problems/sliding-window-maximum/
 
 ### 扫描线、双端队列、二分
 
-39. https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/
-40. https://leetcode.com/problems/the-skyline-problem/
-41. https://www.lintcode.com/problem/meeting-rooms-ii/
-42. https://www.lintcode.com/problem/time-intersection/
-43. https://leetcode.com/problems/find-peak-element/
-44. https://leetcode.com/problems/find-a-peak-element-ii/
-45. https://leetcode.com/problems/first-bad-version/
-46. https://leetcode.com/problems/sqrtx/
-47. https://www.lintcode.com/problem/sqrtx-ii/
-48. https://www.lintcode.com/problem/wood-cut/
-49. https://www.lintcode.com/problem/copy-books/
-50. https://leetcode.com/problems/find-the-duplicate-number/
-51. https://leetcode.com/problems/maximum-average-subarray-i/
-52. https://www.lintcode.com/problem/maximum-average-subarray-ii/
+38. https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/
+39. https://leetcode.com/problems/the-skyline-problem/
+40. https://www.lintcode.com/problem/meeting-rooms-ii/
+41. https://www.lintcode.com/problem/time-intersection/
+42. https://leetcode.com/problems/find-peak-element/
+43. https://leetcode.com/problems/find-a-peak-element-ii/
+44. https://leetcode.com/problems/first-bad-version/
+45. https://leetcode.com/problems/sqrtx/
+46. https://www.lintcode.com/problem/sqrtx-ii/
+47. https://www.lintcode.com/problem/wood-cut/
+48. https://www.lintcode.com/problem/copy-books/
+49. https://leetcode.com/problems/find-the-duplicate-number/
+50. https://leetcode.com/problems/maximum-average-subarray-i/
+51. https://www.lintcode.com/problem/maximum-average-subarray-ii/
+52. https://leetcode.com/problems/sliding-window-maximum/
 
 ### 动态规划
 
