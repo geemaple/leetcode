@@ -41,7 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 42/94 | 9 vips |
-| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/32 | - |
+| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 
 **Solved**: 437 problems
 

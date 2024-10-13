@@ -50,3 +50,15 @@
 - https://leetcode.com/problems/remove-methods-from-project/
 - https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/
 - https://leetcode.com/problems/sorted-gcd-pair-queries/
+
+# [Biweek 141](https://leetcode.com/contest/biweekly-contest-141/)
+- https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/
+- https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/
+- https://leetcode.com/problems/find-maximum-removals-from-source-string/
+- https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/
+
+# [Week 419](https://leetcode.com/contest/weekly-contest-419/)
+- https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/
+- https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/
+- https://leetcode.com/problems/count-the-number-of-winning-sequences/
+- https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/
