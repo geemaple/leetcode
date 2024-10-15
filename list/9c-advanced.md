@@ -66,10 +66,11 @@
 
 ### 动态规划
 
-- https://www.lintcode.com/problem/house-robber/
-- https://www.lintcode.com/problem/house-robber-ii/
-- https://www.lintcode.com/problem/climbing-stairs/
-- https://www.lintcode.com/problem/fibonacci/
+53. https://leetcode.com/problems/house-robber/
+54. https://leetcode.com/problems/house-robber-ii/
+55. https://leetcode.com/problems/climbing-stairs/
+56. https://www.lintcode.com/problem/fibonacci/
+
 - https://www.lintcode.com/problem/maximal-square/
 - https://www.lintcode.com/problem/maximal-square-ii/
 - https://www.lintcode.com/problem/unique-paths/
@@ -80,6 +81,7 @@
 - https://www.lintcode.com/problem/coins-in-a-line/
 - https://www.lintcode.com/problem/coins-in-a-line-ii/
 - https://www.lintcode.com/problem/coins-in-a-line-iii/
+
 - https://www.lintcode.com/problem/stone-game/
 - https://www.lintcode.com/problem/burst-balloons/
 - https://www.lintcode.com/problem/scramble-string/
