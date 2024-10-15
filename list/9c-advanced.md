@@ -70,11 +70,11 @@
 54. https://leetcode.com/problems/house-robber-ii/
 55. https://leetcode.com/problems/climbing-stairs/
 56. https://www.lintcode.com/problem/fibonacci/
+57. https://leetcode.com/problems/maximal-square/
+58. https://www.lintcode.com/problem/maximal-square-ii/
+59. https://leetcode.com/problems/unique-paths/
+60. https://leetcode.com/problems/minimum-path-sum/
 
-- https://www.lintcode.com/problem/maximal-square/
-- https://www.lintcode.com/problem/maximal-square-ii/
-- https://www.lintcode.com/problem/unique-paths/
-- https://www.lintcode.com/problem/minimum-path-sum/
 - https://www.lintcode.com/problem/edit-distance/
 - https://www.lintcode.com/problem/longest-continuous-increasing-subsequence/
 - https://www.lintcode.com/problem/longest-continuous-increasing-subsequence-ii/
