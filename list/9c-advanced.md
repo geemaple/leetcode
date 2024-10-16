@@ -80,8 +80,8 @@
 64. https://www.lintcode.com/problem/coins-in-a-line-ii/
 65. https://www.lintcode.com/problem/coins-in-a-line-iii/
 66. https://www.lintcode.com/problem/stone-game/
+67. https://leetcode.com/problems/burst-balloons/
 
-- https://www.lintcode.com/problem/burst-balloons/
 - https://www.lintcode.com/problem/scramble-string/
 - https://www.lintcode.com/problem/longest-common-subsequence/
 - https://www.lintcode.com/problem/longest-common-substring/

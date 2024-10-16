@@ -59,6 +59,8 @@ class Solution:
         n = len(nums)
         dp = [[0] * n for i in range(n)]
 
+        # how to init l = 1 if do it seperately?
+
         for l in range(1, n - 1):
             for i in range(1, n - l):
                 j = i + l - 1

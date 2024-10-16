@@ -74,6 +74,8 @@ public:
         int n = nums.size();       
         vector<vector<int>> dp(n, vector<int>(n, 0));
 
+        // how to init l = 1 if do it seperately?
+
         for (int l = 1; l <= n - 2; l++) {
             for (int i = 1; i < n - l; i++) {
                 int j = i + l - 1;
