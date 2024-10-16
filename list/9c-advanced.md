@@ -82,7 +82,7 @@
 66. https://www.lintcode.com/problem/stone-game/
 67. https://leetcode.com/problems/burst-balloons/
 
-- https://www.lintcode.com/problem/scramble-string/
+- https://leetcode.com/problems/scramble-string/
 - https://www.lintcode.com/problem/longest-common-subsequence/
 - https://www.lintcode.com/problem/longest-common-substring/
 - https://www.lintcode.com/problem/distinct-subsequences/
