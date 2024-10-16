@@ -40,10 +40,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 49/94 | 10 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 53/93 | 11 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 
-**Solved**: 438 problems
+**Solved**: 439 problems
 
 ## 类型/Category
 
@@ -279,11 +279,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Game Theory
 
-| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-375](https://leetcode.com/problems/guess-number-higher-or-lower-ii/) | Guess Number Higher Or Lower II | [c++](./leetcode/375.guess-number-higher-or-lower-ii.cpp), [python3](./leetcode/375.guess-number-higher-or-lower-ii.py) | Game Theory | O\(N^3\) | O\(N^2\) | - |
 | [Leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [c++](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.cpp), [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Game Theory | O\(2^K \* K\) | O\(2^K \* K\) | - |
 | [Lintcode-394](https://www.lintcode.com/problem/coins-in-a-line/) | Coins In A Line | [c++](./lintcode/394.coins-in-a-line.cpp), [python3](./lintcode/394.coins-in-a-line.py) | Game Theory | O\(N\) | O\(N\) | - |
+| [Lintcode-395](https://www.lintcode.com/problem/coins-in-a-line-ii/) | Coins In A Line II | [c++](./lintcode/395.coins-in-a-line-ii.cpp), [python3](./lintcode/395.coins-in-a-line-ii.py) | Game Theory | O\(N\) | O\(N\) | - |
 
 ## Binary Search
 

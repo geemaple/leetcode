@@ -74,13 +74,11 @@
 58. https://www.lintcode.com/problem/maximal-square-ii/
 59. https://leetcode.com/problems/unique-paths/
 60. https://leetcode.com/problems/minimum-path-sum/
-
-- https://www.lintcode.com/problem/edit-distance/
-- https://www.lintcode.com/problem/longest-continuous-increasing-subsequence/
-- https://www.lintcode.com/problem/longest-continuous-increasing-subsequence-ii/
-- https://www.lintcode.com/problem/coins-in-a-line/
-- https://www.lintcode.com/problem/coins-in-a-line-ii/
-- https://www.lintcode.com/problem/coins-in-a-line-iii/
+61. https://leetcode.com/problems/edit-distance/
+62. https://leetcode.com/problems/longest-continuous-increasing-subsequence/
+63. https://www.lintcode.com/problem/coins-in-a-line/
+64. https://www.lintcode.com/problem/coins-in-a-line-ii/
+65. https://www.lintcode.com/problem/coins-in-a-line-iii/
 
 - https://www.lintcode.com/problem/stone-game/
 - https://www.lintcode.com/problem/burst-balloons/
