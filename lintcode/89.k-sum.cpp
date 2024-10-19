@@ -70,3 +70,29 @@ public:
         return dp[n][k][target];
     }
 };
+
+class Solution {
+public:
+    /**
+     * @param a: An integer array
+     * @param k: A positive integer (k <= length(A))
+     * @param target: An integer
+     * @return: An integer
+     */
+    int kSum(vector<int> &a, int k, int target) {
+        // write your code here
+        int n = a.size();
+        vector<vector<int>> dp(k + 1, vector<int>(target + 1, 0));
+        dp[0][0] = 1;
+
+        for (int num: a) {
+            for (int j = k; j >= 1; j--) {
+                for (int t = target; t >= num; t--) {
+                    dp[j][t] += dp[j - 1][t - num];
+                }
+            }
+        }
+
+        return dp[k][target];
+    }
+};

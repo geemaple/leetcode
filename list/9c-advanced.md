@@ -87,12 +87,11 @@
 71. https://leetcode.com/problems/distinct-subsequences/
 72. https://leetcode.com/problems/interleaving-string/
 73. https://www.lintcode.com/problem/k-edit-distance/
-
-- https://www.lintcode.com/problem/backpack/
-- https://www.lintcode.com/problem/backpack-ii/
-- https://www.lintcode.com/problem/backpack-iv/
-- https://www.lintcode.com/problem/k-sum/
-- https://www.lintcode.com/problem/minimum-adjustment-cost/
+74. https://www.lintcode.com/problem/backpack/
+75. https://www.lintcode.com/problem/backpack-ii/
+76. https://www.lintcode.com/problem/backpack-iv/
+77. https://www.lintcode.com/problem/k-sum/
+78. https://www.lintcode.com/problem/minimum-adjustment-cost/
 
 ### Follow-UP
 

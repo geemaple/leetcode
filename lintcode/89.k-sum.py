@@ -67,3 +67,23 @@ class Solution:
                         dp[i][j][t] += dp[i - 1][j - 1][t - a[i - 1]]
 
         return dp[n][k][target]
+
+class Solution:
+    """
+    @param a: An integer array
+    @param k: A positive integer (k <= length(A))
+    @param target: An integer
+    @return: An integer
+    """
+    def k_sum(self, a: List[int], k: int, target: int) -> int:
+        # write your code here
+        n = len(a)
+        dp = [[0] * (target + 1) for j in range(k + 1)]
+        dp[0][0] = 1
+
+        for num in a:
+            for j in range(k, 0, -1):
+                for t in range(target, num - 1, -1):
+                    dp[j][t] += dp[j - 1][t - num]
+
+        return dp[k][target]
