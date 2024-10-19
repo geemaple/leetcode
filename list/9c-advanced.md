@@ -79,15 +79,15 @@
 63. https://www.lintcode.com/problem/coins-in-a-line/
 64. https://www.lintcode.com/problem/coins-in-a-line-ii/
 65. https://www.lintcode.com/problem/coins-in-a-line-iii/
-66. https://www.lintcode.com/problem/stone-game/
+66. https://leetcode.com/problems/stone-game/
 67. https://leetcode.com/problems/burst-balloons/
 68. https://leetcode.com/problems/scramble-string/
 69. https://leetcode.com/problems/longest-common-subsequence/
 70. https://www.lintcode.com/problem/longest-common-substring/
-71. https://www.lintcode.com/problem/distinct-subsequences/
+71. https://leetcode.com/problems/distinct-subsequences/
+72. https://leetcode.com/problems/interleaving-string/
+73. https://www.lintcode.com/problem/k-edit-distance/
 
-- https://www.lintcode.com/problem/interleaving-string/
-- https://www.lintcode.com/problem/k-edit-distance/
 - https://www.lintcode.com/problem/backpack/
 - https://www.lintcode.com/problem/backpack-ii/
 - https://www.lintcode.com/problem/backpack-iv/
