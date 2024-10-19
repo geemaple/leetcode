@@ -90,10 +90,6 @@ public:
             return true;
         }
 
-        if (s1.size() != s2.size()) {
-            return false;
-        }
-
         if (sorted(s1) != sorted(s2)) {
             return false;
         }
