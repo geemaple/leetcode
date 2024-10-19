@@ -83,8 +83,8 @@
 67. https://leetcode.com/problems/burst-balloons/
 68. https://leetcode.com/problems/scramble-string/
 69. https://leetcode.com/problems/longest-common-subsequence/
+70. https://www.lintcode.com/problem/longest-common-substring/
 
-- https://www.lintcode.com/problem/longest-common-substring/
 - https://www.lintcode.com/problem/distinct-subsequences/
 - https://www.lintcode.com/problem/interleaving-string/
 - https://www.lintcode.com/problem/k-edit-distance/

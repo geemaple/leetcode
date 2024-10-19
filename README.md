@@ -40,10 +40,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 57/93 | 11 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 58/93 | 11 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 
-**Solved**: 440 problems
+**Solved**: 441 problems
 
 ## 类型/Category
 
@@ -209,7 +209,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(65) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(66) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -274,6 +274,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-563](https://www.lintcode.com/problem/backpack-v/) | Backpack V | [c++](./lintcode/563.backpack-v.cpp), [python3](./lintcode/563.backpack-v.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Lintcode-437](https://www.lintcode.com/problem/copy-books/) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Dynamic Programming | O\(N\*logP\) | O\(1\) | - |
 | [Lintcode-89](https://www.lintcode.com/problem/k-sum/) | K Sum | [c++](./lintcode/89.k-sum.cpp), [python3](./lintcode/89.k-sum.py) | Dynamic Programming | O\(NKT\) | O\(NKT\) | - |
+| [Lintcode-79](https://www.lintcode.com/problem/longest-common-substring/) | Longest Common Substring | [c++](./lintcode/79.longest-common-substring.cpp), [python3](./lintcode/79.longest-common-substring.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Lintcode-515](https://www.lintcode.com/problem/paint-house/) | Paint House | [c++](./lintcode/515.paint-house.cpp), [python3](./lintcode/515.paint-house.py) | Dynamic Programming | O\(N\) | O\(N\) | Leetcode-256 |
 | [Lintcode-516](https://www.lintcode.com/problem/paint-house-ii/) | Paint House II | [c++](./lintcode/516.paint-house-ii.cpp), [python3](./lintcode/516.paint-house-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | Leetcode-265 |
 
