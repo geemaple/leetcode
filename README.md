@@ -34,16 +34,16 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [9c-basic.md](./list/9c-basic.md) | 81/129 | 1 vip |
+| [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | 2 vips |
 | [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
 | [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 65/93 | 13 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 65/93 | 14 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 
-**Solved**: 442 problems
+**Solved**: 441 problems
 
 ## 类型/Category
 
@@ -809,7 +809,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(138) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(137) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -946,7 +946,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-31](https://www.lintcode.com/problem/partition-array/) | Partition Array | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | - |
 | [Lintcode-618](https://www.lintcode.com/problem/search-graph-nodes/) | Search Graph Nodes | [c++](./lintcode/618.search-graph-nodes.cpp), [python3](./lintcode/618.search-graph-nodes.py) | Other | \- | \- | - |
 | [Lintcode-447](https://www.lintcode.com/problem/search-in-a-big-sorted-array/) | Search In A Big Sorted Array | [c++](./lintcode/447.search-in-a-big-sorted-array.cpp), [python3](./lintcode/447.search-in-a-big-sorted-array.py) | Other | \- | \- | - |
-| [Lintcode-139](https://www.lintcode.com/problem/subarray-sum-closest/) | Subarray Sum Closest | [c++](./lintcode/139.subarray-sum-closest.cpp), [python3](./lintcode/139.subarray-sum-closest.py) | Other | \- | \- | - |
 | [Lintcode-382](https://www.lintcode.com/problem/triangle-count/) | Triangle Count | [c++](./lintcode/382.triangle-count.cpp), [python3](./lintcode/382.triangle-count.py) | Other | \- | \- | - |
 | [Lintcode-598](https://www.lintcode.com/problem/zombie-in-matrix/) | Zombie In Matrix | [c++](./lintcode/598.zombie-in-matrix.cpp), [python3](./lintcode/598.zombie-in-matrix.py) | Other | \- | \- | - |
 
