@@ -221,21 +221,19 @@ class Markdown:
             Markdown.title2(f, category)
             solution_set = collections.defaultdict(list)
             for s in category_set[category]:
-                solution_set[s.name].append(s.local_path)
+                solution_set[s.link].append(Markdown.link(s.language, s.path))
 
             Markdown.table_header(f, ['Link', f'Problem({len(solution_set)})', 'Solution', 'Tag', 'Time', 'Space', 'Ref'])
             sorted_solutions = sorted(category_set[category], key=lambda s: (s.source, s.title))
 
             for solution in sorted_solutions:
-                if solution.name not in solution_set:
+                if solution.link not in solution_set:
                     continue
 
-                codes = ', '.join(sorted(solution_set[solution.name]))
-
                 contents = [
-                    solution.link,
+                    Markdown.link(solution.link_title, solution.link),
                     solution.title,
-                    codes,
+                    ', '.join(sorted(solution_set[solution.link])),
                     category,
                     solution.time,
                     solution.space,
@@ -243,7 +241,7 @@ class Markdown:
                     ]
 
                 Markdown.table_row(f, contents) 
-                del solution_set[solution.name]
+                del solution_set[solution.link]
 
             Markdown.table_footer(f)
 
@@ -275,12 +273,12 @@ class Markdown:
             missing = set()
             for q in questions:
                 if q.number.isnumeric():
-                    if q.name in solutions:
-                        exensions = [x.extension for x in solutions[q.name]]
+                    if q.link in solutions:
+                        exensions = [x.extension for x in solutions[q.link]]
                         if '.vip' in exensions:
                             vip.add(q)
                         else:
-                            sol = random.choice(solutions[q.name])
+                            sol = random.choice(solutions[q.link])
                             if q.source != sol.source:
                                 diff.add(q)
                             solved.add(q)
@@ -406,7 +404,7 @@ class Problem:
                         s.ref = link_match.group(1) if link_match else '-'                
                         s.note = Markdown.escape(note_match.group(1) if note_match else '-')
 
-                all_solutions[s.name].append(s)
+                all_solutions[s.link].append(s)
 
         return all_solutions
 
@@ -474,24 +472,27 @@ class Problem:
         return re.sub(roman_rex, lambda x: x.group(0).upper(), orginal_title)
 
     @property
+    def link_title(self) -> str:
+        return f'{self.source}-{self.number}'.title()
+
+    @property
     def link(self) -> str:
         if self.source.lower() == 'leetcode':
-            return Markdown.link(f'{self.source}-{self.number}'.title(), f'https://leetcode.com/problems/{self.name}/')
+            return f'https://leetcode.com/problems/{self.name}/'
         if self.source.lower() == 'lintcode':
-            return Markdown.link(f'{self.source}-{self.number}'.title(), f'https://www.lintcode.com/problem/{self.name}/')
+            return f'https://www.lintcode.com/problem/{self.name}/'
         else:
             return '#'
         
     @property
-    def local_path(self) -> str:
-        lang = EXTENSION.get(self.extension, self.extension.strip('.'))
-        return Markdown.link(lang, self.path) 
+    def language(self) -> str:
+        return EXTENSION.get(self.extension, self.extension.strip('.'))
 
     def __eq__(self, other):
-        return isinstance(other, Problem) and self.name == other.name
+        return isinstance(other, Problem) and self.link == other.link
 
     def __hash__(self):
-        return hash(self.name)
+        return hash(self.link)
 
     def __repr__(self) -> str:
         return self.path

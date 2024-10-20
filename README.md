@@ -34,8 +34,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | 2 vips |
-| [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
+| [--] | [9c-basic.md](./list/9c-basic.md) | 13/129 | 2 vips |
+| [--] | [9c-top.md](./list/9c-top.md) | 8/48 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
