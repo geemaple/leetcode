@@ -97,9 +97,8 @@
 
 79. https://www.lintcode.com/problem/subarray-sum/
 80. https://www.lintcode.com/problem/subarray-sum-closest/
+81. https://www.lintcode.com/problem/submatrix-sum/
 
-- https://www.lintcode.com/problem/submatrix-sum/
-- https://www.lintcode.com/problem/subarray-sum-ii/
 - https://www.lintcode.com/problem/continuous-subarray-sum/
 - https://www.lintcode.com/problem/maximum-subarray/
 - https://www.lintcode.com/problem/continuous-subarray-sum-ii/
