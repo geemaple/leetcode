@@ -36,14 +36,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 80/129 | 2 vips |
 | [--] | [9c-top.md](./list/9c-top.md) | 25/48 | - |
-| [--] | [lee215.md](./list/lee215.md) | 2/34 | - |
+| [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 65/92 | 16 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 66/92 | 16 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
+| [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 441 problems
+**Solved**: 442 problems
 
 ## 类型/Category
 
@@ -793,13 +794,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(6) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2210](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Count Hills And Valleys In An Array | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python3](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3285](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Find Indices Of Stable Mountains | [c++](./leetcode/3285.find-indices-of-stable-mountains.cpp), [python3](./leetcode/3285.find-indices-of-stable-mountains.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-238](https://leetcode.com/problems/product-of-array-except-self/) | Product Of Array Except Self | [c++](./leetcode/238.product-of-array-except-self.cpp), [python3](./leetcode/238.product-of-array-except-self.py) | Array | O\(N\) | O\(1\) | - |
+| [Lintcode-402](https://www.lintcode.com/problem/continuous-subarray-sum/) | Continuous Subarray Sum | [c++](./lintcode/402.continuous-subarray-sum.cpp), [python3](./lintcode/402.continuous-subarray-sum.py) | Array | O\(N\) | O\(N\) | - |
 
 ## String
 
