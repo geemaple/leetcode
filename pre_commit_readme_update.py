@@ -272,6 +272,7 @@ class Markdown:
             vip = set()
             working = set()
             diff = set()
+            missing = set()
             for q in questions:
                 if q.number.isnumeric():
                     if q.name in solutions:
@@ -282,7 +283,9 @@ class Markdown:
                             sol = random.choice(solutions[q.name])
                             if q.source != sol.source:
                                 diff.add(q)
-                            solved.add(q)  
+                            solved.add(q)
+                    else:
+                        missing.add(q)
                 else:
                     working.add(q)
 
@@ -302,6 +305,10 @@ class Markdown:
                 Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
                 Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
 
+            if len(missing) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
+                Logger.log('----missing link----')
+                Logger.log(f'missing={len(missing)}', Logger.WARNING, end=' ')
+                Logger.log(f'{missing}')
 
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):

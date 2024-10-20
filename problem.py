@@ -183,11 +183,11 @@ def parse_lintcode(url, lang, translate):
 
     query = json.loads(response.text)
     if not query['success']:
-        vip_url = f'https://apiv1.lintcode.com/new/api/check-vip/problems/{number}/?lang={1 if translate else 2}2'
+        vip_url = f'https://apiv1.lintcode.com/new/api/check-vip/problems/{number}/?lang={1 if translate else 2}'
         response = requests.get(vip_url)
         query = json.loads(response.text)
         data = query['data'] if isinstance(query['data'], dict) else defaultdict(str)
-        problem.title = data['problem_info']['title']
+        problem.title = re.sub(r'[()]', '', data['problem_info']['title'])
         problem.paid = True
         return problem
     
