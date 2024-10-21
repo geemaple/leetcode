@@ -42,10 +42,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [--] | [grind75.md](./list/grind75.md) | 64/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
 | [--] | [neetcode150.md](./list/neetcode150.md) | 118/150 | - |
+| [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/91 | 17 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 73/91 | 17 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 

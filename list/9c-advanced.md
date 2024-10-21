@@ -107,5 +107,4 @@
 88. https://www.lintcode.com/problem/flatten-list/
 89. https://leetcode.com/problems/flatten-nested-list-iterator/
 90. https://www.lintcode.com/problem/flatten-2d-vector/
-
-- https://leetcode.com/problems/binary-search-tree-iterator/
+91. https://leetcode.com/problems/binary-search-tree-iterator/
