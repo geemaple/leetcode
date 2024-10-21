@@ -36,13 +36,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 13/129 | 2 vips |
 | [--] | [9c-top.md](./list/9c-top.md) | 8/48 | - |
-| [--] | [blind75.md](./list/blind75.md) | 67/77 | - |
-| [--] | [grind102.md](./list/grind102.md) | 82/102 | - |
-| [--] | [grind169.md](./list/grind169.md) | 130/169 | - |
+| [--] | [blind75.md](./list/blind75.md) | 67/77 | 1 vip |
+| [--] | [grind102.md](./list/grind102.md) | 82/102 | 1 vip |
+| [--] | [grind169.md](./list/grind169.md) | 130/169 | 1 vip |
 | [--] | [grind75.md](./list/grind75.md) | 64/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
-| [--] | [neetcode150.md](./list/neetcode150.md) | 118/150 | - |
-| [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/91 | 17 vips |
+| [--] | [neetcode150.md](./list/neetcode150.md) | 118/150 | 1 vip |
+| [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/92 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
