@@ -99,10 +99,10 @@
 80. https://www.lintcode.com/problem/subarray-sum-closest/
 81. https://www.lintcode.com/problem/submatrix-sum/
 82. https://www.lintcode.com/problem/continuous-subarray-sum/
+83. https://www.lintcode.com/problem/maximum-subarray/
+84. https://www.lintcode.com/problem/continuous-subarray-sum-ii/
+85. https://leetcode.com/problems/kth-largest-element-in-an-array/
 
-- https://www.lintcode.com/problem/maximum-subarray/
-- https://www.lintcode.com/problem/continuous-subarray-sum-ii/
-- https://www.lintcode.com/problem/kth-largest-element/
 - https://www.lintcode.com/problem/wiggle-sort/
 - https://www.lintcode.com/problem/wiggle-sort-ii/
 - https://www.lintcode.com/problem/nuts-bolts-problem/

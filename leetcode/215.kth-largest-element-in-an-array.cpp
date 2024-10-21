@@ -49,27 +49,6 @@ public:
 };
 
 class Solution {
-private:
-    int partition(vector<int>& nums, int start, int end) {
-        int l = start + 1;
-        int r = end;
-        int pivot = nums[start];
-
-        while (l <= r) {
-            if (nums[l] > pivot && nums[r] < pivot) {
-                swap(nums[l++], nums[r--]);
-            }
-            if (nums[l] <= pivot) {
-                l++;
-            }
-            if (nums[r] >= pivot) {
-                r--;
-            }
-        }
-        swap(nums[start], nums[r]);
-        return r;
-    }
-
 public:
     int findKthLargest(vector<int>& nums, int k) {
         
@@ -89,5 +68,25 @@ public:
         }
 
         return nums[k];
+    }
+
+    int partition(vector<int>& nums, int start, int end) {
+        int l = start + 1;
+        int r = end;
+        int pivot = nums[start];
+
+        while (l <= r) {
+            if (nums[l] > pivot && nums[r] < pivot) {
+                swap(nums[l], nums[r]);
+            }
+            if (nums[l] <= pivot) {
+                l++;
+            }
+            if (nums[r] >= pivot) {
+                r--;
+            }
+        }
+        swap(nums[start], nums[r]);
+        return r;
     }
 };

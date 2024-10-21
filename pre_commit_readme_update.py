@@ -305,7 +305,10 @@ class Markdown:
 
             if len(missing) > 0:
                 Logger.log(f'----{file_name} missing {len(missing)} link----', Logger.WARNING)
-                Logger.log(f'{random.sample(missing, 5)}')
+                if len(missing) >= 5:
+                    Logger.log(f'{random.sample(missing, 5)}')
+                else:
+                    Logger.log(f'{missing}')
 
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):

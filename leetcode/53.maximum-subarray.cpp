@@ -67,3 +67,36 @@ public:
         return largest;
     }
 };
+
+// follow-up
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        return helper(nums, 0, nums.size() - 1);
+    }
+
+    int helper(vector<int>& nums, int left, int right) {
+        if (left == right) {
+            return nums[left];
+        }
+
+        int mid = (left + right) >> 1; 
+        int cur = 0;
+        int left_max = INT_MIN;
+        for (int i = mid; i >= left; i--) {
+            cur += nums[i];
+            left_max = max(left_max, cur);
+        }
+
+        cur = 0;
+        int right_max = INT_MIN;
+        for (int i = mid + 1; i <= right; i++) {
+            cur += nums[i];
+            right_max = max(right_max, cur);
+        }
+
+        int child_max = max(helper(nums, left, mid), helper(nums, mid + 1, right));
+        return max(child_max, left_max + right_max);
+
+    }
+};
