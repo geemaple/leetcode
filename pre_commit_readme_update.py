@@ -303,10 +303,9 @@ class Markdown:
                 Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
                 Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
 
-            if len(missing) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
-                Logger.log('----missing link----')
-                Logger.log(f'missing={len(missing)}', Logger.WARNING, end=' ')
-                Logger.log(f'{missing}')
+            if len(missing) > 0:
+                Logger.log(f'----{file_name} missing {len(missing)} link----', Logger.WARNING)
+                Logger.log(f'{random.sample(missing, 5)}')
 
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):
@@ -341,7 +340,7 @@ class Problem:
         with open(file_path, 'r') as file:
             for line in file.readlines():
                 format_lines.append(f'{line}')
-                match = re.match(r'^([\d\+\-]+)\.?\s(.*)$', line)
+                match = re.match(r'^([\d\+\-]+)\.?\s([^\s]+)', line)
                 if match is None:
                     continue
                 
@@ -349,7 +348,7 @@ class Problem:
                 mark = match.group(1)
                 link = match.group(2)
                 parsed_link = urlparse(link)
-                
+
                 match = re.search(r'\/problems?\/([^\/]+)\/?', parsed_link.path)
                 if not match:
                     continue
@@ -358,6 +357,8 @@ class Problem:
     
                 if mark.isnumeric():
                     format_lines[-1] = f'{current_number}. {link}\n'
+                else:
+                    format_lines[-1] = f'- {link}\n'
 
                 match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
                 source = match.group(2)
@@ -365,6 +366,7 @@ class Problem:
                 s = Problem(link, source, mark, name, '', mod_datetime)
                 if s in res:
                     dup.add(s.name)
+                    format_lines[-1] = f'{format_lines[-1].strip()} +duplicate \n'
                 else:
                     res.add(s)
         

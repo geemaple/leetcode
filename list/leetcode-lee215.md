@@ -31,7 +31,7 @@
 ### Mono Stack Problem
 
 20. https://leetcode.com/problems/beautiful-towers-ii/
-21. https://leetcode.com/problems/next-greater-element-iv/
+21. https://leetcode.com/problems/next-greater-element-iv/ +duplicate 
 22. https://leetcode.com/problems/maximum-number-of-robots-within-budget/
 
 ### Binary Search Problems

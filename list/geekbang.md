@@ -38,7 +38,7 @@
 19. https://leetcode.com/problems/powx-n/
 20. https://leetcode.com/problems/majority-element/
 21. https://leetcode.com/problems/maximum-subarray/
-22. https://leetcode.com/problems/valid-anagram/
+22. https://leetcode.com/problems/valid-anagram/ +duplicate 
 23. https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 ### 贪心
@@ -77,7 +77,7 @@
 40. https://leetcode.com/problems/number-of-1-bits/
 41. https://leetcode.com/problems/power-of-two/
 42. https://leetcode.com/problems/counting-bits/
-43. https://leetcode.com/problems/n-queens-ii/
+43. https://leetcode.com/problems/n-queens-ii/ +duplicate 
 
 ### 动态规划
 
@@ -85,7 +85,7 @@
 45. https://leetcode.com/problems/triangle/
 46. https://leetcode.com/problems/maximum-product-subarray/
 47. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-48. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+48. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ +duplicate 
 49. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 50. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 51. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/

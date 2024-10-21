@@ -63,20 +63,20 @@
 50. https://www.lintcode.com/problem/zombie-in-matrix/
 51. https://www.lintcode.com/problem/knight-shortest-path/
 52. https://www.lintcode.com/problem/connected-component-in-undirected-graph/
-53. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
+53. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/ +duplicate 
 54. https://www.lintcode.com/problem/word-ladder/
 55. https://www.lintcode.com/problem/build-post-office-ii/
 
 ### 深度优先搜索
 
-56. https://www.lintcode.com/problem/subsets/%EF%BC%89
+56. https://www.lintcode.com/problem/subsets/%EF%BC%89 +duplicate 
 57. https://www.lintcode.com/problem/combination-sum/
 58. https://www.lintcode.com/problem/combination-sum-ii/
 59. https://www.lintcode.com/problem/palindrome-partitioning/
 60. https://www.lintcode.com/problem/permutations/
 61. https://www.lintcode.com/problem/permutations-ii/
 62. https://www.lintcode.com/problem/n-queens/
-63. https://www.lintcode.com/problem/word-ladder/
+63. https://www.lintcode.com/problem/word-ladder/ +duplicate 
 64. https://www.lintcode.com/problem/word-ladder-ii/
 
 ### 数组、连表
@@ -94,7 +94,7 @@
 75. https://www.lintcode.com/problem/sort-list/
 76. https://www.lintcode.com/problem/convert-sorted-list-to-balanced-bst/
 77. https://www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list/
-78. https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/
+78. https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/ +duplicate 
 79. https://www.lintcode.com/problem/merge-two-sorted-arrays
 80. https://www.lintcode.com/problem/merge-sorted-array/
 81. https://www.lintcode.com/problem/intersection-of-two-arrays/
@@ -108,8 +108,8 @@
 86. https://www.lintcode.com/problem/window-sum/
 87. https://www.lintcode.com/problem/move-zeroes/
 88. https://www.lintcode.com/problem/valid-palindrome/
-89. https://www.lintcode.com/problem/rotate-string/
-90. https://www.lintcode.com/problem/recover-rotated-sorted-array/
+89. https://www.lintcode.com/problem/rotate-string/ +duplicate 
+90. https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate 
 91. https://www.lintcode.com/problem/two-sum/
 92. https://www.lintcode.com/problem/two-sum-data-structure-design/
 93. https://www.lintcode.com/problem/two-sum-input-array-is-sorted/
@@ -135,8 +135,8 @@
 
 111. https://www.lintcode.com/problem/rehashing/
 112. https://www.lintcode.com/problem/lru-cache/
-113. https://www.lintcode.com/problem/subarray-sum/
-114. https://www.lintcode.com/problem/copy-list-with-random-pointer/
+113. https://www.lintcode.com/problem/subarray-sum/ +duplicate 
+114. https://www.lintcode.com/problem/copy-list-with-random-pointer/ +duplicate 
 115. https://www.lintcode.com/problem/anagrams/
 116. https://www.lintcode.com/problem/longest-consecutive-sequence/
 117. https://www.lintcode.com/problem/ugly-number-ii/
@@ -154,8 +154,8 @@
 ### 动态规划
 
 128. https://www.lintcode.com/problem/triangle/
-129. https://www.lintcode.com/problem/palindrome-partitioning/
-130. https://www.lintcode.com/problem/longest-consecutive-sequence/
+129. https://www.lintcode.com/problem/palindrome-partitioning/ +duplicate 
+130. https://www.lintcode.com/problem/longest-consecutive-sequence/ +duplicate 
 131. https://www.lintcode.com/problem/minimum-path-sum/
 132. https://www.lintcode.com/problem/unique-paths/
 133. https://www.lintcode.com/problem/climbing-stairs/
