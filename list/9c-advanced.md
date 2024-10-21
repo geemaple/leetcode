@@ -103,8 +103,8 @@
 84. https://www.lintcode.com/problem/continuous-subarray-sum-ii/
 85. https://leetcode.com/problems/kth-largest-element-in-an-array/
 86. https://www.lintcode.com/problem/wiggle-sort/
+87. https://leetcode.com/problems/wiggle-sort-ii/
 
-- https://www.lintcode.com/problem/wiggle-sort-ii/
 - https://www.lintcode.com/problem/nuts-bolts-problem/
 - https://www.lintcode.com/problem/flatten-list/
 - https://www.lintcode.com/problem/flatten-nested-list-iterator/
