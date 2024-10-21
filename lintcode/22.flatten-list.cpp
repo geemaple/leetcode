@@ -99,22 +99,22 @@ public:
     vector<int> flatten(vector<NestedInteger> &nestedList) {
         // Write your code here
         vector<int> result;
-        stack<NestedInteger> stack;
+        stack<NestedInteger> st;
 
         for (int i = nestedList.size() - 1; i >= 0; i--) {
-            stack.push(nestedList[i]);
+            st.push(nestedList[i]);
         }
 
-        while (!stack.empty()) {
-            NestedInteger cur = stack.top();
-            stack.pop();
+        while (!st.empty()) {
+            NestedInteger cur = st.top();
+            st.pop();
 
             if (cur.isInteger()) {
                 result.push_back(cur.getInteger());
             } else {
                 auto &list = cur.getList();
                 for (int i = list.size() - 1; i >= 0; i--) {
-                    stack.push(list[i]);
+                    st.push(list[i]);
                 }
             }
         }

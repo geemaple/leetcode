@@ -74,9 +74,7 @@ class Solution(object):
     def flatten(self, nestedList):
         # Write your code here
         res = []
-        stack = []
-        for x in reversed(nestedList):
-            stack.append(x)
+        stack = nestedList[::-1]
 
         while len(stack) > 0:
             cur = stack.pop()

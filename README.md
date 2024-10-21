@@ -45,11 +45,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 70/91 | 17 vips |
+| [🔲] | [9c-advanced.md](./list/9c-advanced.md) | 73/91 | 17 vips |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 443 problems
+**Solved**: 444 problems
 
 ## 类型/Category
 
@@ -169,12 +169,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Design
 
-| Link | Problem(15) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Design | O\(1\) | O\(H\) | - |
 | [Leetcode-211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Design Add And Search Words Data Structure | [c++](./leetcode/211.design-add-and-search-words-data-structure.cpp), [python3](./leetcode/211.design-add-and-search-words-data-structure.py) | Design | O\(26^k \* N\) | O\(LN\) | - |
 | [Leetcode-295](https://leetcode.com/problems/find-median-from-data-stream/) | Find Median From Data Stream | [c++](./leetcode/295.find-median-from-data-stream.cpp), [python3](./leetcode/295.find-median-from-data-stream.py) | Design | O\(logN\) | O\(N\) | - |
+| [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Design | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Design | O\(\*1\) | O\(N\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Design | O\(N\) | O\(N\) | - |
 | [Leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Design | O\(N\) | O\(L\) | - |
@@ -186,6 +187,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-303](https://leetcode.com/problems/range-sum-query-immutable/) | Range Sum Query Immutable | [c++](./leetcode/303.range-sum-query-immutable.cpp), [python3](./leetcode/303.range-sum-query-immutable.py) | Design | O\(\*1\) | O\(N\) | - |
 | [Leetcode-307](https://leetcode.com/problems/range-sum-query-mutable/) | Range Sum Query Mutable | [c++](./leetcode/307.range-sum-query-mutable.cpp), [python3](./leetcode/307.range-sum-query-mutable.py) | Design | O\(logN\) | O\(N\) | - |
 | [Leetcode-297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize And Deserialize Binary Tree | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python3](./leetcode/297.serialize-and-deserialize-binary-tree.py) | Design | O\(N\) | O\(N\) | - |
+| [Lintcode-601](https://www.lintcode.com/problem/flatten-2d-vector/) | Flatten 2D Vector | [c++](./lintcode/601.flatten-2d-vector.cpp), [python3](./lintcode/601.flatten-2d-vector.py) | Design | O\(\*1\) | O\(N\) | Leetcode-251 |
 
 ## Greedy
 
@@ -413,7 +415,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Stack
 
-| Link | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-227](https://leetcode.com/problems/basic-calculator-ii/) | Basic Calculator II | [c++](./leetcode/227.basic-calculator-ii.cpp), [python3](./leetcode/227.basic-calculator-ii.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Stack | O\(1\) | O\(H\) | - |
@@ -422,6 +424,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | Binary Tree Preorder Traversal | [c++](./leetcode/144.binary-tree-preorder-traversal.cpp), [python3](./leetcode/144.binary-tree-preorder-traversal.py) | Stack | O\(N\) | O\(H\) | - |
 | [Leetcode-394](https://leetcode.com/problems/decode-string/) | Decode String | [c++](./leetcode/394.decode-string.cpp), [python3](./leetcode/394.decode-string.py) | Stack | O\(A\) | O\(A\) | - |
 | [Leetcode-114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Flatten Binary Tree To Linked List | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Stack | O\(N\) | O\(H\) | - |
+| [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Stack | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Stack | O\(\*1\) | O\(N\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-897](https://leetcode.com/problems/increasing-order-search-tree/) | Increasing Order Search Tree | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Stack | O\(N\) | O\(H\) | - |
@@ -445,8 +448,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Queue
 
-| Link | Problem(2) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Queue | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Queue | O\(\*1\) | O\(N\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Queue | O\(N\) | O\(N\) | - |
 
@@ -641,7 +645,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(41) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(42) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -655,6 +659,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-543](https://leetcode.com/problems/diameter-of-binary-tree/) | Diameter Of Binary Tree | [c++](./leetcode/543.diameter-of-binary-tree.cpp), [python3](./leetcode/543.diameter-of-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-513](https://leetcode.com/problems/find-bottom-left-tree-value/) | Find Bottom Left Tree Value | [c++](./leetcode/513.find-bottom-left-tree-value.cpp), [python3](./leetcode/513.find-bottom-left-tree-value.py) | Depth-First Search | O\(N\) | O\(W\) | - |
 | [Leetcode-114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Flatten Binary Tree To Linked List | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Depth-First Search | O\(N\) | O\(H\) | - |
+| [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Depth-First Search | O\(\*1\) | O\(N\) | - |
 | [Leetcode-897](https://leetcode.com/problems/increasing-order-search-tree/) | Increasing Order Search Tree | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-226](https://leetcode.com/problems/invert-binary-tree/) | Invert Binary Tree | [c++](./leetcode/226.invert-binary-tree.cpp), [python3](./leetcode/226.invert-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Depth-First Search | O\(E\+V\) | O\(W\) | - |
@@ -822,7 +827,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(135) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(134) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -862,7 +867,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-41](https://leetcode.com/problems/first-missing-positive/) | First Missing Positive | [python3](./leetcode/41.first-missing-positive.py) | Other | \- | \- | - |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Other | \- | \- | - |
 | [Leetcode-251](https://leetcode.com/problems/flatten-2d-vector/) | Flatten 2D Vector | [python3](./leetcode/251.flatten-2d-vector.py) | Other | \- | \- | - |
-| [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [python3](./leetcode/341.flatten-nested-list-iterator.py) | Other | \- | \- | - |
 | [Leetcode-832](https://leetcode.com/problems/flipping-an-image/) | Flipping An Image | [python3](./leetcode/832.flipping-an-image.py) | Other | \- | \- | - |
 | [Leetcode-289](https://leetcode.com/problems/game-of-life/) | Game Of Life | [python3](./leetcode/289.game-of-life.py) | Other | \- | \- | - |
 | [Leetcode-249](https://leetcode.com/problems/group-shifted-strings/) | Group Shifted Strings | [c++](./leetcode/249.group-shifted-strings.cpp) | Other | \- | \- | - |

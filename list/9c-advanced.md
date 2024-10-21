@@ -104,8 +104,8 @@
 85. https://leetcode.com/problems/kth-largest-element-in-an-array/
 86. https://www.lintcode.com/problem/wiggle-sort/
 87. https://leetcode.com/problems/wiggle-sort-ii/
+88. https://www.lintcode.com/problem/flatten-list/
+89. https://leetcode.com/problems/flatten-nested-list-iterator/
+90. https://www.lintcode.com/problem/flatten-2d-vector/
 
-- https://www.lintcode.com/problem/flatten-list/
-- https://www.lintcode.com/problem/flatten-nested-list-iterator/
-- https://www.lintcode.com/problem/flatten-2d-vector/
-- https://www.lintcode.com/problem/binary-search-tree-iterator/
+- https://leetcode.com/problems/binary-search-tree-iterator/
