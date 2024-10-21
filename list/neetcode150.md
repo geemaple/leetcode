@@ -115,9 +115,9 @@
 111. https://leetcode.com/problems/sliding-window-maximum/
 112. https://leetcode.com/problems/valid-anagram/
 113. https://leetcode.com/problems/meeting-rooms/
-114. https://leetcode.com/problems/meeting-rooms-ii/
+114. https://www.lintcode.com/problem/meeting-rooms-ii/
 115. https://leetcode.com/problems/partition-labels/
-116. https://leetcode.com/problems/graph-valid-tree/
+116. https://www.lintcode.com/problem/graph-valid-tree/
 117. https://leetcode.com/problems/missing-number/
 118. https://leetcode.com/problems/alien-dictionary/
 119. https://leetcode.com/problems/encode-and-decode-strings/

@@ -7,7 +7,7 @@
 3. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 4. https://leetcode.com/problems/longest-palindromic-substring/
 5. https://leetcode.com/problems/clone-graph/
-6. https://leetcode.com/problems/graph-valid-tree/
+6. https://www.lintcode.com/problem/graph-valid-tree/
 7. https://leetcode.com/problems/palindromic-substrings/
 8. https://leetcode.com/problems/container-with-most-water/
 9. https://leetcode.com/problems/word-break/
@@ -60,7 +60,7 @@
 56. https://leetcode.com/problems/contains-duplicate/
 57. https://leetcode.com/problems/decode-ways/
 58. https://leetcode.com/problems/top-k-frequent-elements/
-59. https://leetcode.com/problems/meeting-rooms-ii/
+59. https://www.lintcode.com/problem/meeting-rooms-ii/
 60. https://leetcode.com/problems/validate-binary-search-tree/
 61. https://leetcode.com/problems/invert-binary-tree/
 62. https://leetcode.com/problems/same-tree/
