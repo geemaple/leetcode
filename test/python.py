@@ -11,33 +11,28 @@ from typing import (
 )
 
 class Solution:
-    def minOperations(self, nums: List[int]) -> int:
-        n = len(nums)
-        right_min = list(nums)
-        for i in range(n - 2, -1, -1):
-            right_min[i] = min(right_min[i + 1], nums[i])
+    def getSum(self, a: int, b: int) -> int:
+        mask = 0xffffffff
+        while ((b & mask) != 0):
+            sum_without_carry = a ^ b
+            carry = (a & b) << 1
 
-        res = 0
-        for i in range(n - 1):
-            if nums[i] == nums[i + 1] or nums[i] <= right_min[i + 1]:
-                continue
+            a = sum_without_carry
+            b = carry
             
-            for d in range(2, right_min[i + 1] + 1):
-                if nums[i] % d == 0:
-                    res += 1
-                    j = i
-                    while j > 0 and nums[j] == nums[j - 1]:
-                        res += 1
-                        j -= 1
-                    break
-            else:
-                return -1
+        if (b) > 0:
+            import pdb; pdb.set_trace()
 
-        return res
+        return a
 
 
 s = Solution()
 ts = datetime.now()
-res = s.minOperations([675,675,149,149,233])
+for i in range(-1000, 1001):
+    for j in range(-1000, 1001):
+        print(i, j)
+        res = s.getSum(i, j)
+
+
 print(datetime.now() - ts)
 print(res)

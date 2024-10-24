@@ -35,12 +35,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 13/129 | 2 vips |
-| [--] | [blind75.md](./list/blind75.md) | 71/77 | 1 vip |
+| [--] | [blind75.md](./list/blind75.md) | 72/77 | 1 vip |
 | [--] | [grind102.md](./list/grind102.md) | 83/102 | 1 vip |
 | [--] | [grind169.md](./list/grind169.md) | 132/169 | 1 vip |
 | [--] | [grind75.md](./list/grind75.md) | 65/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
-| [--] | [neetcode150.md](./list/neetcode150.md) | 122/150 | 1 vip |
+| [--] | [neetcode150.md](./list/neetcode150.md) | 123/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/93 | 19 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
@@ -49,7 +49,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 446 problems
+**Solved**: 447 problems
 
 ## 类型/Category
 
@@ -125,7 +125,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -143,6 +143,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3276](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Select Cells In Grid With Maximum Score | [c++](./leetcode/3276.select-cells-in-grid-with-maximum-score.cpp), [python3](./leetcode/3276.select-cells-in-grid-with-maximum-score.py) | Bit Manipulation | O\(NM\*2^N\) | O\(2^N\) | - |
 | [Leetcode-136](https://leetcode.com/problems/single-number/) | Single Number | [c++](./leetcode/136.single-number.cpp), [python3](./leetcode/136.single-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-260](https://leetcode.com/problems/single-number-iii/) | Single Number III | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
+| [Leetcode-371](https://leetcode.com/problems/sum-of-two-integers/) | Sum Of Two Integers | [c++](./leetcode/371.sum-of-two-integers.cpp), [python3](./leetcode/371.sum-of-two-integers.py) | Bit Manipulation | \- | \- | - |
 
 ## Bitmask
 
