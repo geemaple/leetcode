@@ -35,12 +35,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
 | [--] | [9c-basic.md](./list/9c-basic.md) | 13/129 | 2 vips |
-| [--] | [blind75.md](./list/blind75.md) | 70/77 | 1 vip |
-| [--] | [grind102.md](./list/grind102.md) | 82/102 | 1 vip |
-| [--] | [grind169.md](./list/grind169.md) | 131/169 | 1 vip |
-| [--] | [grind75.md](./list/grind75.md) | 64/75 | - |
+| [--] | [blind75.md](./list/blind75.md) | 71/77 | 1 vip |
+| [--] | [grind102.md](./list/grind102.md) | 83/102 | 1 vip |
+| [--] | [grind169.md](./list/grind169.md) | 132/169 | 1 vip |
+| [--] | [grind75.md](./list/grind75.md) | 65/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 2/34 | - |
-| [--] | [neetcode150.md](./list/neetcode150.md) | 121/150 | 1 vip |
+| [--] | [neetcode150.md](./list/neetcode150.md) | 122/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/93 | 19 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
@@ -49,7 +49,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 445 problems
+**Solved**: 446 problems
 
 ## 类型/Category
 
@@ -646,7 +646,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(43) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(44) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -664,6 +664,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-897](https://leetcode.com/problems/increasing-order-search-tree/) | Increasing Order Search Tree | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-226](https://leetcode.com/problems/invert-binary-tree/) | Invert Binary Tree | [c++](./leetcode/226.invert-binary-tree.cpp), [python3](./leetcode/226.invert-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Depth-First Search | O\(E\+V\) | O\(W\) | - |
+| [Leetcode-230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Kth Smallest Element In A Bst | [c++](./leetcode/230.kth-smallest-element-in-a-bst.cpp), [python3](./leetcode/230.kth-smallest-element-in-a-bst.py) | Depth-First Search | O\(K\) | O\(H\) | - |
 | [Leetcode-235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Lowest Common Ancestor Of A Binary Search Tree | [c++](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.cpp), [python3](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Lowest Common Ancestor Of A Binary Tree | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python3](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-695](https://leetcode.com/problems/max-area-of-island/) | Max Area Of Island | [c++](./leetcode/695.max-area-of-island.cpp), [python3](./leetcode/695.max-area-of-island.py) | Depth-First Search | O\(MN\) | O\(MN\) | - |
@@ -743,7 +744,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search Tree
 
-| Link | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Binary Search Tree | O\(1\) | O\(H\) | - |
 | [Leetcode-538](https://leetcode.com/problems/convert-bst-to-greater-tree/) | Convert Bst To Greater Tree | [c++](./leetcode/538.convert-bst-to-greater-tree.cpp), [python3](./leetcode/538.convert-bst-to-greater-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
@@ -752,6 +753,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-897](https://leetcode.com/problems/increasing-order-search-tree/) | Increasing Order Search Tree | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 | [Leetcode-701](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Insert Into A Binary Search Tree | [c++](./leetcode/701.insert-into-a-binary-search-tree.cpp), [python3](./leetcode/701.insert-into-a-binary-search-tree.py) | Binary Search Tree | O\(H\) | O\(H\) | - |
 | [Leetcode-703](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | Kth Largest Element In A Stream | [c++](./leetcode/703.kth-largest-element-in-a-stream.cpp), [python3](./leetcode/703.kth-largest-element-in-a-stream.py) | Binary Search Tree | O\(logN\) | O\(N\) | - |
+| [Leetcode-230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Kth Smallest Element In A Bst | [c++](./leetcode/230.kth-smallest-element-in-a-bst.cpp), [python3](./leetcode/230.kth-smallest-element-in-a-bst.py) | Binary Search Tree | O\(K\) | O\(H\) | - |
 | [Leetcode-235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Lowest Common Ancestor Of A Binary Search Tree | [c++](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.cpp), [python3](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 | [Leetcode-530](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Minimum Absolute Difference In Bst | [c++](./leetcode/530.minimum-absolute-difference-in-bst.cpp), [python3](./leetcode/530.minimum-absolute-difference-in-bst.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 | [Leetcode-99](https://leetcode.com/problems/recover-binary-search-tree/) | Recover Binary Search Tree | [c++](./leetcode/99.recover-binary-search-tree.cpp), [python3](./leetcode/99.recover-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
