@@ -43,18 +43,19 @@ class Solution:
 
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        if s is None or t is None or len(s) != len(t):
-            return False
-
-        left_to_right = {}
-        right_to_left = {}
-
-        for i in range(len(s)):
-            if s[i] in left_to_right and left_to_right[s[i]] != t[i]:
+        table = {}
+        n = len(s)
+        for i in range(n):
+            if s[i] in table and table[s[i]] != t[i]:
                 return False
-            left_to_right[s[i]] = t[i]
 
-            if t[i] in right_to_left and right_to_left[t[i]] != s[i]:
+            table[s[i]] = t[i]
+
+        table = {}
+        for i in range(n):
+            if t[i] in table and table[t[i]] != s[i]:
                 return False
+
+            table[t[i]] = s[i]
         
         return True
