@@ -6,7 +6,7 @@
 2. https://leetcode.com/problems/decode-ways/
 3. https://leetcode.com/problems/rectangle-overlap/
 4. https://www.lintcode.com/problem/valid-word-abbreviation/
-5. https://leetcode.com/problems/word-abbreviation/
+5. https://www.lintcode.com/problem/word-abbreviation/
 
 ### 模拟、字符串
 
