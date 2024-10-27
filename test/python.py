@@ -10,29 +10,55 @@ from typing import (
     List,
 )
 
+from typing import (
+    List,
+)
+
+from collections import defaultdict
 class Solution:
-    def getSum(self, a: int, b: int) -> int:
-        mask = 0xffffffff
-        while ((b & mask) != 0):
-            sum_without_carry = a ^ b
-            carry = (a & b) << 1
+    """
+    @param dict: an array of n distinct non-empty strings
+    @return: an array of minimal possible abbreviations for every word
+    """
+    def words_abbreviation(self, dict: List[str]) -> List[str]:
+        # write your code here
+        heap = []
+        n = len(dict)
+        prefix = [1 for i in range(n)]
+        counter = defaultdict(int)
+        res = []
+        for i in range(n):
+            abbr = self.abbreviate(dict[i], prefix[i])
+            res.append(abbr)
+            counter[abbr] += 1
 
-            a = sum_without_carry
-            b = carry
-            
-        if (b) > 0:
-            import pdb; pdb.set_trace()
+        duplicate = True
+        while duplicate:
 
-        return a
+            duplicate = False
+            for i in range(n):
+                abbr = res[i]
+                if counter[abbr] > 1:
+                    duplicate = True
+                    prefix[i] += 1
+                    new_abbr = self.abbreviate(dict[i], prefix[i])
+                    counter[new_abbr] += 1
+                    res[i] = new_abbr
 
+        return res
+
+    def abbreviate(self, word, pos) -> str:
+        if pos + 2 >= len(word):
+            return word
+
+        return word[:pos] + str(len(word) - 1 - pos) + word[-1]
+
+    
 
 s = Solution()
 ts = datetime.now()
-for i in range(-1000, 1001):
-    for j in range(-1000, 1001):
-        print(i, j)
-        res = s.getSum(i, j)
 
+res = s.words_abbreviation(["like","god","internal","me","internet","interval","intension","face","intrusion"])
 
 print(datetime.now() - ts)
 print(res)
