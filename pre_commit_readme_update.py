@@ -174,7 +174,7 @@ class Markdown:
 
     @staticmethod 
     def solution_table(f, categories):
-        Logger.log('----tags----')
+        Logger.log('----tags----', Logger.BOLD)
         def search_tag(solution, unkown_tags):
             tags = solution.tags
             match_all = set()
@@ -298,19 +298,21 @@ class Markdown:
             list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
 
             if len(vip) > 0:
-                Logger.log('----VIP link----', Logger.FAIL)
-                Logger.log(f' {[q.link for q in vip]}')
+                Logger.log(f'----{len(vip)} VIP link----', Logger.FAIL)
+                if len(vip) >= 3:
+                    Logger.log(f'{random.sample(vip, 3)} ...')
+                else:
+                    Logger.log(f'{vip}')
 
             if len(diff) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
-                Logger.log('----incorrect link----')
-                Logger.log('incorrect link:', Logger.WARNING, end=' ')
+                Logger.log('----incorrect link----', Logger.WARNING)
                 Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
                 Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
 
             if len(missing) > 0:
                 Logger.log(f'----{file_name} missing {len(missing)} link----', Logger.WARNING)
-                if len(missing) >= 5:
-                    Logger.log(f'{random.sample(missing, 5)}')
+                if len(missing) >= 3:
+                    Logger.log(f'{random.sample(missing, 3)} ...')
                 else:
                     Logger.log(f'{missing}')
 
@@ -319,7 +321,7 @@ class Markdown:
             Markdown.table_row(f, row)
         Markdown.table_footer(f)
 
-        Logger.log('----list----')
+        Logger.log('----list----', Logger.BOLD)
         for status, file_path, dup, finished, total in sorted(list_stat, reverse=True):
             duplicated = finished < total and len(dup) > 0
             Logger.log(f'{file_path:15}', Logger.OKBLUE, end=f' ')
@@ -327,9 +329,12 @@ class Markdown:
             Logger.log(f'{total:<3} {status}', Logger.OKGREEN, end=' ' if duplicated else '\n')
             if duplicated:
                 Logger.log(f'duplicated={len(dup)}', Logger.WARNING, end=' ')
-                Logger.log(f'{dup}')
+                if len(dup) > 3:
+                    Logger.log(f'{random.sample(dup, 3)} ...')
+                else:
+                    Logger.log(f'{dup}')
 
-        Logger.log(f'total list question = {len(all_problem)}', Logger.OKGREEN)
+        Logger.log(f'total list question = {len(all_problem)}', Logger.OKCYAN)
 
 class Problem:
     @staticmethod
@@ -447,10 +452,10 @@ class Problem:
                             Logger.log(f'{attr}', Logger.OKBLUE, end=' ')
                             Logger.log(f'{s1} {s2}', Logger.OKGREEN)
 
-        Logger.log('----solutions----')
+        Logger.log('----solutions----', Logger.BOLD)
         for k, v in source_dict.items():
             Logger.log(f'{k} files = {v}')
-        Logger.log(f'total solutions = {count}')
+        Logger.log(f'solved = {count}', Logger.OKCYAN)
 
         res = []
         if len(duplicates) > 0:

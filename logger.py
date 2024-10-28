@@ -24,3 +24,6 @@ class Logger:
         Logger.log("FAIL", Logger.FAIL)
         Logger.log("BOLD", Logger.BOLD)
         Logger.log("UNDERLINE", Logger.UNDERLINE)
+
+if __name__ == '__main__':
+    Logger.test_all()
