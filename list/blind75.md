@@ -74,7 +74,7 @@
 70. https://leetcode.com/problems/product-of-array-except-self/
 71. https://leetcode.com/problems/valid-anagram/
 72. https://leetcode.com/problems/sum-of-two-integers/
-73. https://leetcode.com/problems/meeting-rooms/
+73. https://www.lintcode.com/problem/meeting-rooms/
 74. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 75. https://leetcode.com/problems/binary-tree-maximum-path-sum/
 76. https://leetcode.com/problems/valid-palindrome/

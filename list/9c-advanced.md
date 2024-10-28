@@ -50,7 +50,7 @@
 
 38. https://www.lintcode.com/problem/number-of-airplanes-in-the-sky/
 39. https://leetcode.com/problems/the-skyline-problem/
-40. https://leetcode.com/problems/meeting-rooms/
+40. https://www.lintcode.com/problem/meeting-rooms/
 41. https://www.lintcode.com/problem/meeting-rooms-ii/
 42. https://www.lintcode.com/problem/time-intersection/
 43. https://leetcode.com/problems/find-peak-element/

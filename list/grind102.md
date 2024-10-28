@@ -26,7 +26,7 @@
 22. https://leetcode.com/problems/middle-of-the-linked-list
 23. https://leetcode.com/problems/maximum-depth-of-binary-tree
 24. https://leetcode.com/problems/contains-duplicate
-25. https://leetcode.com/problems/meeting-rooms
+25. https://www.lintcode.com/problem/meeting-rooms/
 26. https://leetcode.com/problems/roman-to-integer
 27. https://leetcode.com/problems/backspace-string-compare
 28. https://leetcode.com/problems/counting-bits

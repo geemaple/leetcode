@@ -26,7 +26,7 @@
 22. https://leetcode.com/problems/middle-of-the-linked-list
 23. https://leetcode.com/problems/maximum-depth-of-binary-tree
 24. https://leetcode.com/problems/contains-duplicate
-25. https://leetcode.com/problems/meeting-rooms
+25. https://www.lintcode.com/problem/meeting-rooms/
 26. https://leetcode.com/problems/roman-to-integer
 27. https://leetcode.com/problems/backspace-string-compare
 28. https://leetcode.com/problems/counting-bits
@@ -131,7 +131,7 @@
 127. https://leetcode.com/problems/search-a-2d-matrix
 128. https://leetcode.com/problems/largest-number
 129. https://leetcode.com/problems/decode-ways
-130. https://leetcode.com/problems/meeting-rooms-ii
+130. https://www.lintcode.com/problem/meeting-rooms-ii/
 131. https://leetcode.com/problems/reverse-integer
 132. https://leetcode.com/problems/set-matrix-zeroes
 133. https://leetcode.com/problems/reorder-list

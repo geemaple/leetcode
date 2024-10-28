@@ -34,13 +34,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [blind75.md](./list/blind75.md) | 75/77 | 1 vip |
-| [--] | [grind102.md](./list/grind102.md) | 84/102 | 1 vip |
-| [--] | [grind169.md](./list/grind169.md) | 135/169 | 1 vip |
-| [--] | [grind75.md](./list/grind75.md) | 65/75 | - |
+| [--] | [blind75.md](./list/blind75.md) | 76/77 | - |
+| [--] | [grind102.md](./list/grind102.md) | 86/102 | - |
+| [--] | [grind169.md](./list/grind169.md) | 138/169 | - |
+| [--] | [grind75.md](./list/grind75.md) | 66/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 3/34 | - |
-| [--] | [neetcode150.md](./list/neetcode150.md) | 126/150 | 1 vip |
-| [✅] | [9c-advanced.md](./list/9c-advanced.md) | 74/93 | 19 vips |
+| [--] | [neetcode150.md](./list/neetcode150.md) | 128/150 | - |
+| [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
@@ -49,7 +49,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 451 problems
+**Solved**: 453 problems
 
 ## 类型/Category
 
@@ -542,7 +542,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(30) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(31) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -571,6 +571,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | [c++](./leetcode/242.valid-anagram.cpp), [python3](./leetcode/242.valid-anagram.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [c++](./leetcode/324.wiggle-sort-ii.cpp), [python3](./leetcode/324.wiggle-sort-ii.py) | Sorting | \- | \- | - |
+| [Lintcode-920](https://www.lintcode.com/problem/meeting-rooms/) | Meeting Rooms | [c++](./lintcode/920.meeting-rooms.cpp), [python3](./lintcode/920.meeting-rooms.py) | Sorting | O\(NlogN\) | O\(1\) | Leetcode-252 |
 | [Lintcode-919](https://www.lintcode.com/problem/meeting-rooms-ii/) | Meeting Rooms II | [c++](./lintcode/919.meeting-rooms-ii.cpp), [python3](./lintcode/919.meeting-rooms-ii.py) | Sorting | O\(NlogN\) | O\(N\) | Leetcode-253 |
 | [Lintcode-39](https://www.lintcode.com/problem/recover-rotated-sorted-array/) | Recover Rotated Sorted Array | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Lintcode-508](https://www.lintcode.com/problem/wiggle-sort/) | Wiggle Sort | [c++](./lintcode/508.wiggle-sort.cpp), [python3](./lintcode/508.wiggle-sort.py) | Sorting | O\(N\) | O\(1\) | Leetcode-280 |
@@ -619,7 +620,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Breadth-First Search
 
-| Link | Problem(30) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(31) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Breadth-First Search | O\(MlogM\) | O\(N\) | - |
@@ -641,6 +642,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Breadth-First Search | O\(NMlogNM\) | O\(NM\) | - |
 | [Leetcode-279](https://leetcode.com/problems/perfect-squares/) | Perfect Squares | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Breadth-First Search | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Breadth-First Search | O\(N\) | O\(1\) | - |
+| [Leetcode-994](https://leetcode.com/problems/rotting-oranges/) | Rotting Oranges | [c++](./leetcode/994.rotting-oranges.cpp), [python3](./leetcode/994.rotting-oranges.py) | Breadth-First Search | O\(NM\) | O\(NM\) | - |
 | [Leetcode-100](https://leetcode.com/problems/same-tree/) | Same Tree | [c++](./leetcode/100.same-tree.cpp), [python3](./leetcode/100.same-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize And Deserialize Binary Tree | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python3](./leetcode/297.serialize-and-deserialize-binary-tree.py) | Breadth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-934](https://leetcode.com/problems/shortest-bridge/) | Shortest Bridge | [c++](./leetcode/934.shortest-bridge.cpp), [python3](./leetcode/934.shortest-bridge.py) | Breadth-First Search | O\(N^2\) | O\(N^2\) | - |

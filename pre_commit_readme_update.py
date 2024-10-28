@@ -297,6 +297,10 @@ class Markdown:
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
             list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
 
+            if len(vip) > 0:
+                Logger.log('----VIP link----', Logger.FAIL)
+                Logger.log(f' {[q.link for q in vip]}')
+
             if len(diff) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
                 Logger.log('----incorrect link----')
                 Logger.log('incorrect link:', Logger.WARNING, end=' ')

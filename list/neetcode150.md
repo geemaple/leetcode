@@ -114,7 +114,7 @@
 110. https://leetcode.com/problems/product-of-array-except-self/
 111. https://leetcode.com/problems/sliding-window-maximum/
 112. https://leetcode.com/problems/valid-anagram/
-113. https://leetcode.com/problems/meeting-rooms/
+113. https://www.lintcode.com/problem/meeting-rooms/
 114. https://www.lintcode.com/problem/meeting-rooms-ii/
 115. https://leetcode.com/problems/partition-labels/
 116. https://www.lintcode.com/problem/graph-valid-tree/
