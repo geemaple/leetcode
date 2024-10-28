@@ -366,7 +366,9 @@ class Problem:
                     continue
 
                 name = match.group(1)
-    
+                if not link.endswith('/'):
+                    link += '/'
+
                 if mark.isnumeric():
                     format_lines[-1] = f'{current_number}. {link}\n'
                 else:

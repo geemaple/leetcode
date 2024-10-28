@@ -39,7 +39,7 @@
 - https://www.lintcode.com/problem/validate-binary-search-tree/
 - https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/
 - https://www.lintcode.com/problem/flatten-binary-tree-to-linked-list/
-- https://www.lintcode.com/problem/binary-search-tree-iterator
+- https://www.lintcode.com/problem/binary-search-tree-iterator/
 - https://www.lintcode.com/problem/inorder-successor-in-binary-search-tree/
 - https://www.lintcode.com/problem/search-range-in-binary-search-tree/
 - https://www.lintcode.com/problem/insert-node-in-a-binary-search-tree/
@@ -69,7 +69,7 @@
 
 ### 深度优先搜索
 
-- https://www.lintcode.com/problem/subsets/%EF%BC%-+duplicate +duplicate 
+- https://www.lintcode.com/problem/subsets/%EF%BC%-+duplicate/ +duplicate 
 - https://www.lintcode.com/problem/combination-sum/
 - https://www.lintcode.com/problem/combination-sum-ii/
 - https://www.lintcode.com/problem/palindrome-partitioning/
@@ -95,7 +95,7 @@
 - https://www.lintcode.com/problem/convert-sorted-list-to-balanced-bst/
 - https://www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list/
 - https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/ +duplicate 
-- https://www.lintcode.com/problem/merge-two-sorted-arrays
+- https://www.lintcode.com/problem/merge-two-sorted-arrays/
 - https://www.lintcode.com/problem/merge-sorted-array/
 - https://www.lintcode.com/problem/intersection-of-two-arrays/
 - https://www.lintcode.com/problem/median-of-two-sorted-arrays/
@@ -125,7 +125,7 @@
 - https://www.lintcode.com/problem/partition-array/
 - https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
 - https://www.lintcode.com/problem/kth-largest-element/
-- https://www.lintcode.com/problem/partition-array-by-odd-and-ev
+- https://www.lintcode.com/problem/partition-array-by-odd-and-ev/
 - https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers/
 - https://www.lintcode.com/problem/sort-letters-by-case/
 - https://www.lintcode.com/problem/sort-colors/

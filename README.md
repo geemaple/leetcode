@@ -34,8 +34,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [grind102.md](./list/grind102.md) | 86/102 | - |
-| [--] | [grind169.md](./list/grind169.md) | 138/169 | - |
+| [--] | [grind102.md](./list/grind102.md) | 87/102 | - |
+| [--] | [grind169.md](./list/grind169.md) | 139/169 | - |
 | [--] | [grind75.md](./list/grind75.md) | 66/75 | - |
 | [--] | [leetcode-lee215.md](./list/leetcode-lee215.md) | 3/34 | - |
 | [--] | [neetcode150.md](./list/neetcode150.md) | 128/150 | - |

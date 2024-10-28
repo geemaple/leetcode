@@ -3,9 +3,9 @@
 ### 数组与链表
 
 1. https://leetcode.com/problems/reverse-linked-list/
-2. https://leetcode.com/problems/linked-list-cycle
-3. https://leetcode.com/problems/swap-nodes-in-pairs
-4. https://leetcode.com/problems/linked-list-cycle-ii
+2. https://leetcode.com/problems/linked-list-cycle/
+3. https://leetcode.com/problems/swap-nodes-in-pairs/
+4. https://leetcode.com/problems/linked-list-cycle-ii/
 5. https://leetcode.com/problems/reverse-nodes-in-k-group/
 
 ### 栈与队列
@@ -29,7 +29,7 @@
 
 ### 树，二叉树，二叉搜索树
 
-16. https://leetcode.com/problems/validate-binary-search-tree
+16. https://leetcode.com/problems/validate-binary-search-tree/
 17. https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 18. https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
@@ -90,7 +90,7 @@
 50. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 51. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 52. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
-53. https://leetcode.com/problems/longest-increasing-subsequence
+53. https://leetcode.com/problems/longest-increasing-subsequence/
 54. https://leetcode.com/problems/coin-change/
 55. https://leetcode.com/problems/edit-distance/
 
