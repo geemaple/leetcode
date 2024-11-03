@@ -6,59 +6,39 @@ import heapq
 from collections import deque
 import math
 
-from typing import (
-    List,
-)
+import heapq
 
-from typing import (
-    List,
-)
-
-from collections import defaultdict
 class Solution:
-    """
-    @param dict: an array of n distinct non-empty strings
-    @return: an array of minimal possible abbreviations for every word
-    """
-    def words_abbreviation(self, dict: List[str]) -> List[str]:
-        # write your code here
-        heap = []
-        n = len(dict)
-        prefix = [1 for i in range(n)]
-        counter = defaultdict(int)
-        res = []
-        for i in range(n):
-            abbr = self.abbreviate(dict[i], prefix[i])
-            res.append(abbr)
-            counter[abbr] += 1
+    def minTimeToReach(self, moveTime: List[List[int]]) -> int:
+        n = len(moveTime)
+        m = len(moveTime[0])
 
-        duplicate = True
-        while duplicate:
+        heap = [(0, 0, 0, 0)]
+        directions = [-1, 0, 1, 0, -1]
+        visited = set()
 
-            duplicate = False
-            for i in range(n):
-                abbr = res[i]
-                if counter[abbr] > 1:
-                    duplicate = True
-                    prefix[i] += 1
-                    new_abbr = self.abbreviate(dict[i], prefix[i])
-                    counter[new_abbr] += 1
-                    res[i] = new_abbr
+        res = float('inf')
+        while len(heap) > 0:
+            cost, i, j, delta = heapq.heappop(heap)
+            if (i, j) in visited:
+                continue
 
-        return res
+            visited.add((i, j))
+            if i == n - 1 and j == m - 1:
+                return cost
 
-    def abbreviate(self, word, pos) -> str:
-        if pos + 2 >= len(word):
-            return word
-
-        return word[:pos] + str(len(word) - 1 - pos) + word[-1]
-
-    
+            for d in range(4):
+                x = i + directions[d]
+                y = j + directions[d + 1]
+                if 0 <= x < n and 0 <= y < m and (x, y) not in visited:
+                    next_cost = max(moveTime[x][y], cost) + delta + 1
+                    heapq.heappush(heap, (next_cost, x, y, 1 - delta))
+            
 
 s = Solution()
 ts = datetime.now()
 
-res = s.words_abbreviation(["like","god","internal","me","internet","interval","intension","face","intrusion"])
+res = s.minTimeToReach([[0,1],[1,2]])
 
 print(datetime.now() - ts)
 print(res)

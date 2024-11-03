@@ -7,7 +7,7 @@
 
 ### 二分法
 
-- https://www.lintcode.com/problem/classical-binary-search/
+3. https://www.lintcode.com/problem/classical-binary-search/
 - https://www.lintcode.com/problem/first-position-of-target/
 - https://www.lintcode.com/problem/last-position-of-target/
 - https://www.lintcode.com/problem/first-bad-version/

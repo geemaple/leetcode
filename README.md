@@ -44,12 +44,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-basic.md](./list/9c-basic.md) | 0/128 | - |
+| [🔲] | [9c-basic.md](./list/9c-basic.md) | 1/128 | - |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
-| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/40 | - |
+| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/56 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 455 problems
+**Solved**: 456 problems
 
 ## 类型/Category
 
@@ -305,7 +305,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(38) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(39) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
@@ -341,6 +341,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Binary Search | O\(logN\) | O\(1\) | - |
+| [Lintcode-457](https://www.lintcode.com/problem/classical-binary-search/) | Classical Binary Search | [c++](./lintcode/457.classical-binary-search.cpp), [python3](./lintcode/457.classical-binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Lintcode-437](https://www.lintcode.com/problem/copy-books/) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Binary Search | O\(N\*logP\) | O\(1\) | - |
 | [Lintcode-617](https://www.lintcode.com/problem/maximum-average-subarray-ii/) | Maximum Average Subarray II | [c++](./lintcode/617.maximum-average-subarray-ii.cpp), [python3](./lintcode/617.maximum-average-subarray-ii.py) | Binary Search | O\(Nlog\(A/ε\)\) | O\(N\) | Leetcode-644 |
 | [Lintcode-600](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/) | Smallest Rectangle Enclosing Black Pixels | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python3](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | Binary Search | O\(N \* logM \+ M \* logN\) | O\(1\) | - |

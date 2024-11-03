@@ -62,3 +62,27 @@
 - https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/
 - https://leetcode.com/problems/count-the-number-of-winning-sequences/
 - https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/
+
+# [Week 420](https://leetcode.com/contest/weekly-contest-420/)
+- https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/
+- https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/
+- https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/
+- https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/
+
+# [Biweek 142](https://leetcode.com/contest/biweekly-contest-142/)
+- https://leetcode.com/problems/find-the-original-typed-string-i/
+- https://leetcode.com/problems/find-subtree-sizes-after-changes/
+- https://leetcode.com/problems/maximum-points-tourist-can-earn/
+- https://leetcode.com/problems/find-the-original-typed-string-ii/
+
+# [Biweek 141](https://leetcode.com/contest/biweekly-contest-141/)
+- https://leetcode.com/problems/find-the-maximum-factor-score-of-array/
+- https://leetcode.com/problems/total-characters-in-string-after-transformations-i/
+- https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/
+- https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/
+
+# [Week 422](https://leetcode.com/contest/weekly-contest-422/)
+- https://leetcode.com/problems/check-balanced-string/
+- https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/
+- https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/description/
+- https://leetcode.com/problems/count-number-of-balanced-permutations/description/
