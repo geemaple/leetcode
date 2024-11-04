@@ -50,3 +50,38 @@ public:
         return -1;
     }
 };
+
+
+class Solution {
+public:
+    /**
+     * @param nums: An integer array sorted in ascending order
+     * @param target: An integer
+     * @return: An integer
+     */
+    int findPosition(vector<int> &nums, int target) {
+        // write your code here
+
+
+        int n = nums.size();
+        if (n == 0) {
+            return -1;
+        }
+
+        int left = 0;
+        int right = n - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+
+            if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return nums[left] == target ? left : -1;
+    }
+};

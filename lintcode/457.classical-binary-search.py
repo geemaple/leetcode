@@ -46,3 +46,31 @@ class Solution:
                 end = mid
 
         return -1
+    
+class Solution:
+    """
+    @param nums: An integer array sorted in ascending order
+    @param target: An integer
+    @return: An integer
+    """
+    def findPosition(self, nums, target):
+        # write your code here
+        n = len(nums)
+        if n == 0:
+            return -1
+
+        left = 0
+        right = n - 1
+
+        while left < right:
+            mid = left + (right - left) // 2
+            if nums[mid] == target:
+                return mid
+
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid
+
+        return -1 if nums[left] != target else left
+

@@ -13,31 +13,28 @@ using namespace std;
 class Solution {
 public:
     /**
-     * @param word: a non-empty string
-     * @param abbr: an abbreviation
-     * @return: true if string matches with the given abbr or false
+     * @param nums: An integer array sorted in ascending order
+     * @param target: An integer
+     * @return: An integer
      */
-    bool validWordAbbreviation(string &word, string &abbr) {
+    int findPosition(vector<int> &nums, int target) {
         // write your code here
-        int i = 0;
-        int j = 0;
-        while (i < word.size() && j < abbr.size()) {
-            if (word[i] == abbr[j]) {
-                i++;
-                j++;
-            } else if (isdigit(abbr[j]) && abbr[j] != '0') {
-                int num = 0;
-                while (j < abbr.size() && isdigit(abbr[j])) {
-                    num = num * 10 + abbr[j] - '0';
-                    j++;
-                }
-                i += num;
+        int n = nums.size();
+        int start = 0;
+        int end = n;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+
+            if (nums[mid] < target) {
+                start = mid + 1;
             } else {
-                return false;
+                end = mid;
             }
         }
-        
-        return i == word.size() && j == abbr.size();
+        return -1;
     }
 };
 
@@ -50,10 +47,9 @@ int main() {
         {0,0,1,0,1,0}
     };
     
-    vector<int> nums1 = {-3,-1,2,4,5};
-    vector<int> nums2 = {-3,-1,2,4,5};
+    vector<int> nums = {1,2,3,4,5};
     Solution s;
-    bool res = s.validWordAbbreviation(-2, 3);
+    int res = s.findPosition(nums, 0);
     cout << res << endl;
 //    for (int word : res) {
 //        cout << std::to_string(word) << ", ";
