@@ -17,9 +17,9 @@
 10. https://leetcode.com/problems/search-a-2d-matrix-ii/
 11. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 12. https://www.lintcode.com/problem/total-occurrence-of-target/
+13. https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
+14. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
 
-- https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
-- https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
 - https://www.lintcode.com/problem/find-peak-element/
 - https://www.lintcode.com/problem/search-in-rotated-sorted-array/
 - https://www.lintcode.com/problem/recover-rotated-sorted-array/

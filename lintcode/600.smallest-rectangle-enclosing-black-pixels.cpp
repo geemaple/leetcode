@@ -1,8 +1,8 @@
 //  Tag: Binary Search on Answer, Binary Search
 //  Time: O(N * logM + M * logN)
 //  Space: O(1)
-//  Ref: -
-//  Note: Graph | Leetcode-302
+//  Ref: Leetcode-302
+//  Note: Graph
 
 //  An image is represented by a binary matrix with `0` as a white pixel and `1` as a black pixel.
 //  The black pixels are connected, i.e., there is only one black region.
@@ -39,10 +39,13 @@ public:
      */
     int minArea(vector<vector<char>> &image, int x, int y) {
         // write your code here
+        int n = image.size();
+        int m = image[0].size();
+
         int left = search(image, 0, y, checkCol, false);
-        int right = search(image, y, image[0].size(), checkCol, true);
+        int right = search(image, y, m, checkCol, true);
         int top = search(image, 0, x, checkRow, false);
-        int bottom = search(image, x, image.size(), checkRow, true);  
+        int bottom = search(image, x, n, checkRow, true);  
         return (right - left) * (bottom - top);
     }
 
@@ -78,5 +81,98 @@ public:
             }
         }
         return start;
+    }
+};
+
+class Solution {
+public:
+    /**
+     * @param image: a binary matrix with '0' and '1'
+     * @param x: the location of one of the black pixels
+     * @param y: the location of one of the black pixels
+     * @return: an integer
+     */
+    int minArea(vector<vector<char>> &image, int x, int y) {
+        // write your code here
+        int n = image.size();
+        int m = image[0].size();
+
+        int left = 0, right = y;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            bool hasBlackPixel = false;
+            for (int i = 0; i < n; i++) {
+                if (image[i][mid] == '1') {
+                    hasBlackPixel = true;
+                    break;
+                }
+            }
+            if (hasBlackPixel) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        int left_most = left;
+
+        left = y;
+        right = m - 1;
+        while (left < right) {
+            int mid = (left + right + 1) / 2;
+            bool hasBlackPixel = false;
+            for (int i = 0; i < n; i++) {
+                if (image[i][mid] == '1') {
+                    hasBlackPixel = true;
+                    break;
+                }
+            }
+            if (hasBlackPixel) {
+                left = mid;
+            } else {
+                right = mid - 1;
+            }
+        }
+        int right_most = left;
+
+        int top = 0, bottom = x;
+        while (top < bottom) {
+            int mid = (top + bottom) / 2;
+            bool hasBlackPixel = false;
+            for (int j = left_most; j <= right_most; j++) {
+                if (image[mid][j] == '1') {
+                    hasBlackPixel = true;
+                    break;
+                }
+            }
+            if (hasBlackPixel) {
+                bottom = mid;
+            } else {
+                top = mid + 1;
+            }
+        }
+        int top_most = top;
+
+        top = x;
+        bottom = n - 1;
+        while (top < bottom) {
+            int mid = (top + bottom + 1) / 2;
+            bool hasBlackPixel = false;
+            for (int j = left_most; j <= right_most; j++) {
+                if (image[mid][j] == '1') {
+                    hasBlackPixel = true;
+                    break;
+                }
+            }
+            if (hasBlackPixel) {
+                top = mid;
+            } else {
+                bottom = mid - 1;
+            }
+        }
+        int bottom_most = top;
+
+        int width = right_most - left_most + 1;
+        int height = bottom_most - top_most + 1;
+        return width * height;
     }
 };

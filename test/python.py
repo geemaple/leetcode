@@ -14,34 +14,48 @@ from typing import (
 
 class Solution:
     """
-    @param nums: The integer array.
-    @param target: Target to find.
-    @return: The first position of target. Position starts from 0.
+    @param image: a binary matrix with '0' and '1'
+    @param x: the location of one of the black pixels
+    @param y: the location of one of the black pixels
+    @return: an integer
     """
-    def binary_search(self, nums: List[int], target: int) -> int:
+    def min_area(self, image: List[List[str]], x: int, y: int) -> int:
         # write your code here
-        n = len(nums)
-        if n == 0:
-            return -1
+        n = len(image)
+        m = len(image[0])
 
-        print(n)
         left = 0
-        right = n - 1
-
+        right = y
         while left < right:
-            mid = left + (right - left) // 2
-            if nums[mid] < target:
-                left = mid + 1
-            else:
+            mid = (left + right) // 2
+            print([image[i][mid] == 1 for i in range(n)])
+            import pdb; pdb.set_trace()
+            if any(image[i][mid] == 1 for i in range(n)):
                 right = mid
+            else:
+                left = mid + 1
+        
+        left_most = left
 
-        return left if nums[left] == target else -1
+        left = y
+        right = m - 1
+        while left < right:
+            mid = (left + right) // 2 + 1
+            if any(image[i][mid] == 1 for i in range(n)):
+                left = mid
+            else:
+                right = mid - 1
+                
+        right_most = left
+        print(left_most, right_most)
+        width = right_most - left_most + 1
+        return width
             
 
 s = Solution()
 ts = datetime.now()
 
-res = s.binary_search([], 6)
+res = s.min_area(["0010","0110","0100"], 2, 2)
 
 print(datetime.now() - ts)
 print(res)
