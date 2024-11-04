@@ -8,37 +8,40 @@ import math
 
 import heapq
 
+from typing import (
+    List,
+)
+
 class Solution:
-    def minTimeToReach(self, moveTime: List[List[int]]) -> int:
-        n = len(moveTime)
-        m = len(moveTime[0])
+    """
+    @param nums: The integer array.
+    @param target: Target to find.
+    @return: The first position of target. Position starts from 0.
+    """
+    def binary_search(self, nums: List[int], target: int) -> int:
+        # write your code here
+        n = len(nums)
+        if n == 0:
+            return -1
 
-        heap = [(0, 0, 0, 0)]
-        directions = [-1, 0, 1, 0, -1]
-        visited = set()
+        print(n)
+        left = 0
+        right = n - 1
 
-        res = float('inf')
-        while len(heap) > 0:
-            cost, i, j, delta = heapq.heappop(heap)
-            if (i, j) in visited:
-                continue
+        while left < right:
+            mid = left + (right - left) // 2
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid
 
-            visited.add((i, j))
-            if i == n - 1 and j == m - 1:
-                return cost
-
-            for d in range(4):
-                x = i + directions[d]
-                y = j + directions[d + 1]
-                if 0 <= x < n and 0 <= y < m and (x, y) not in visited:
-                    next_cost = max(moveTime[x][y], cost) + delta + 1
-                    heapq.heappush(heap, (next_cost, x, y, 1 - delta))
+        return left if nums[left] == target else -1
             
 
 s = Solution()
 ts = datetime.now()
 
-res = s.minTimeToReach([[0,1],[1,2]])
+res = s.binary_search([], 6)
 
 print(datetime.now() - ts)
 print(res)

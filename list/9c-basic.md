@@ -8,8 +8,8 @@
 ### 二分法
 
 3. https://www.lintcode.com/problem/classical-binary-search/
-- https://www.lintcode.com/problem/first-position-of-target/
-- https://www.lintcode.com/problem/last-position-of-target/
+4. https://www.lintcode.com/problem/first-position-of-target/
+5. https://www.lintcode.com/problem/last-position-of-target/
 - https://www.lintcode.com/problem/first-bad-version/
 - https://www.lintcode.com/problem/search-in-a-big-sorted-array/
 - https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/
