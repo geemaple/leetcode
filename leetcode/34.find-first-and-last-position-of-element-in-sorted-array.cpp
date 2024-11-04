@@ -55,3 +55,16 @@ public:
         return start;
     }
 };
+
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        auto first = lower_bound(nums.begin(), nums.end(), target);
+        if (first == nums.end() || *first != target) {
+            return vector<int>{-1, -1};
+        }   
+
+        auto last = lower_bound(nums.begin(), nums.end(), target + 1);
+        return vector<int>{int(first - nums.begin()), int(last - nums.begin() - 1)};
+    }
+};

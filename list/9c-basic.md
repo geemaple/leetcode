@@ -13,12 +13,11 @@
 6. https://leetcode.com/problems/first-bad-version/
 7. https://www.lintcode.com/problem/search-in-a-big-sorted-array/
 8. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+9. https://leetcode.com/problems/search-a-2d-matrix/
+10. https://leetcode.com/problems/search-a-2d-matrix-ii/
+11. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+12. https://www.lintcode.com/problem/total-occurrence-of-target/
 
-
-- https://www.lintcode.com/problem/search-a---matrix/
-- https://www.lintcode.com/problem/search-a---matrix-ii/
-- https://www.lintcode.com/problem/search-for-a-range/
-- https://www.lintcode.com/problem/total-occurrence-of-target/
 - https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
 - https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
 - https://www.lintcode.com/problem/find-peak-element/

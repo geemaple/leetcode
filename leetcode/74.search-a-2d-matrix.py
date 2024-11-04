@@ -34,28 +34,23 @@
 #  
 #  
 
-class Solution(object):
-    def searchMatrix(self, matrix, target):
-        """
-        :type matrix: List[List[int]]
-        :type target: int
-        :rtype: bool
-        """
-        m = len(matrix)
-        n = len(matrix[0])
-        start = 0
-        end = m * n
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        n = len(matrix)
+        m = len(matrix[0])
+        left = 0
+        right = n * m - 1
 
-        while start < end:
-            mid = start + (end - start) // 2
-            i, j = mid // n, mid % n
-
+        while left < right:
+            mid = left + (right - left) // 2
+            i, j = mid // m, mid % m
             if matrix[i][j] == target:
                 return True
 
-            if matrix[i][j] > target:
-                end = mid
+            if matrix[i][j] < target:
+                left = mid + 1
             else:
-                start = mid + 1
+                right = mid
 
-        return False
+        i, j = left // m, left % m
+        return matrix[i][j] == target
