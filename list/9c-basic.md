@@ -10,9 +10,11 @@
 3. https://www.lintcode.com/problem/classical-binary-search/
 4. https://www.lintcode.com/problem/first-position-of-target/
 5. https://www.lintcode.com/problem/last-position-of-target/
-- https://www.lintcode.com/problem/first-bad-version/
-- https://www.lintcode.com/problem/search-in-a-big-sorted-array/
-- https://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/
+6. https://leetcode.com/problems/first-bad-version/
+7. https://www.lintcode.com/problem/search-in-a-big-sorted-array/
+8. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+
+
 - https://www.lintcode.com/problem/search-a---matrix/
 - https://www.lintcode.com/problem/search-a---matrix-ii/
 - https://www.lintcode.com/problem/search-for-a-range/

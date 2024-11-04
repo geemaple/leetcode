@@ -44,12 +44,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
-| [🔲] | [9c-basic.md](./list/9c-basic.md) | 2/128 | 1 vip |
+| [🔲] | [9c-basic.md](./list/9c-basic.md) | 4/128 | 2 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
 | [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 10/56 | - |
 | [🔲] | [leetcode-google.md](./list/leetcode-google.md) | 0/7 | - |
 
-**Solved**: 457 problems
+**Solved**: 456 problems
 
 ## 类型/Category
 
@@ -850,7 +850,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(132) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(131) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -981,7 +981,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-629](https://www.lintcode.com/problem/minimum-spanning-tree/) | Minimum Spanning Tree | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python3](./lintcode/629.minimum-spanning-tree.py) | Other | \- | \- | - |
 | [Lintcode-31](https://www.lintcode.com/problem/partition-array/) | Partition Array | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | - |
 | [Lintcode-618](https://www.lintcode.com/problem/search-graph-nodes/) | Search Graph Nodes | [c++](./lintcode/618.search-graph-nodes.cpp), [python3](./lintcode/618.search-graph-nodes.py) | Other | \- | \- | - |
-| [Lintcode-447](https://www.lintcode.com/problem/search-in-a-big-sorted-array/) | Search In A Big Sorted Array | [c++](./lintcode/447.search-in-a-big-sorted-array.cpp), [python3](./lintcode/447.search-in-a-big-sorted-array.py) | Other | \- | \- | - |
 | [Lintcode-382](https://www.lintcode.com/problem/triangle-count/) | Triangle Count | [c++](./lintcode/382.triangle-count.cpp), [python3](./lintcode/382.triangle-count.py) | Other | \- | \- | - |
 | [Lintcode-598](https://www.lintcode.com/problem/zombie-in-matrix/) | Zombie In Matrix | [c++](./lintcode/598.zombie-in-matrix.cpp), [python3](./lintcode/598.zombie-in-matrix.py) | Other | \- | \- | - |
 

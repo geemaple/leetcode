@@ -41,7 +41,7 @@ class Solution {
 public:
     int firstBadVersion(int n) {
         int left = 1;
-        int right = n; // 由于int范围限制，不能使用开区间n + 1
+        int right = n;
 
         while (left < right) {
             int mid = left + (right - left) / 2;

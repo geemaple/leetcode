@@ -46,19 +46,19 @@
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        int start = 0;
-        int end = nums.size() - 1;
+        int left = 0;
+        int right = nums.size() - 1;
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
 
-            if (nums[mid] < nums[end]) {
-                end = mid;
+            if (nums[mid] > nums[right]) {
+                left = mid + 1;
             } else {
-                start = mid + 1;
+                right = mid;
             }
         }
 
-        return nums[start];
+        return nums[left];
     }
 };
