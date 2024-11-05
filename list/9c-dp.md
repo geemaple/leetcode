@@ -60,7 +60,7 @@
 ### DP + 数据结构
 
 40. https://leetcode.com/problems/longest-increasing-subsequence/ +duplicate 
-41. http://www.lintcode.com/problem/k-edit-distance/
+41. https://www.lintcode.com/problem/k-edit-distance/
 42. https://leetcode.com/problems/frog-jump/
 43. https://www.lintcode.com/problem/minimum-adjustment-cost/
 44. https://www.lintcode.com/problem/k-sum/

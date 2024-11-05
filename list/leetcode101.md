@@ -164,7 +164,7 @@
 129. https://leetcode.com/problems/palindromic-substrings/
 130. https://leetcode.com/problems/count-binary-substrings/
 131. https://leetcode.com/problems/basic-calculator-ii/
-132. https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+132. https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 133. https://leetcode.com/problems/longest-palindrome/
 134. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 135. https://www.lintcode.com/problem/basic-calculator-iii/

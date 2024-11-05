@@ -69,7 +69,7 @@
 
 ### 深度优先搜索
 
-- https://www.lintcode.com/problem/subsets/%EF%BC%-+duplicate/ +duplicate 
+- https://www.lintcode.com/problem/subsets/ +duplicate 
 - https://www.lintcode.com/problem/combination-sum/
 - https://www.lintcode.com/problem/combination-sum-ii/
 - https://www.lintcode.com/problem/palindrome-partitioning/

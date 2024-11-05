@@ -366,18 +366,17 @@ class Problem:
                     continue
 
                 name = match.group(1)
-                if not link.endswith('/'):
-                    link += '/'
-
-                if mark.isnumeric():
-                    format_lines[-1] = f'{current_number}. {link}\n'
-                else:
-                    format_lines[-1] = f'- {link}\n'
-
                 match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
                 source = match.group(2)
                 
                 s = Problem(link, source, mark, name, '', mod_datetime)
+
+                if mark.isnumeric():
+                    format_lines[-1] = f'{current_number}. {s.link}\n'
+                else:
+                    format_lines[-1] = f'- {s.link}\n'
+
+
                 if s in res:
                     dup.add(s.name)
                     format_lines[-1] = f'{format_lines[-1].strip()} +duplicate \n'

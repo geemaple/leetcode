@@ -97,7 +97,7 @@
 ### Follow-UP
 
 80. https://www.lintcode.com/problem/subarray-sum/
-81. http://www.lintcode.com/problem/subarray-sum-ii/
+81. https://www.lintcode.com/problem/subarray-sum-ii/
 82. https://www.lintcode.com/problem/subarray-sum-closest/
 83. https://www.lintcode.com/problem/submatrix-sum/
 84. https://www.lintcode.com/problem/continuous-subarray-sum/

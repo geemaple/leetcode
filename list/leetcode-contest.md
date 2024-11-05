@@ -83,6 +83,6 @@
 
 # [Week 422](https://leetcode.com/contest/weekly-contest-422/)
 53. https://leetcode.com/problems/check-balanced-string/
-- https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/description/
-- https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/description/
-- https://leetcode.com/problems/count-number-of-balanced-permutations/description/
+54. https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/
+- https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/
+- https://leetcode.com/problems/count-number-of-balanced-permutations/
