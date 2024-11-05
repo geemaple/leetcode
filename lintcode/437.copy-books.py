@@ -49,36 +49,32 @@ class Solution:
     """
     def copy_books(self, pages: List[int], k: int) -> int:
         # write your code here
-
         if len(pages) == 0:
             return 0
 
-        start = max(pages)
-        end = sum(pages)
-
-        while start < end:
-            mid = start + (end - start) // 2
-
-            if self.can_finish(pages, mid, k):
-                end = mid
+        left = max(pages)
+        right = sum(pages)
+        while left < right:
+            mid = (left + right) // 2
+            if self.can_finish(pages, k, mid):
+                right = mid
             else:
-                start = mid + 1
+                left = mid + 1
 
-        return start
+        return left
 
 
-    def can_finish(self, pages: List[int], minutes: int, k: int) -> bool:
-        
-        work = 0
-        people = 1
-        for i in range(len(pages)):
-            if work + pages[i] > minutes:
-                work = pages[i]
-                people += 1
+    def can_finish(self, pages: list, k: int, minites: int)-> bool:
+        assign = 0
+        worker = 1
+        for p in pages:
+            if assign + p <= minites:
+                assign += p
             else:
-                work += pages[i]
+                worker += 1
+                assign = p
 
-        return people <= k
+        return worker <= k
     
 class Solution:
     """

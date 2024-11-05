@@ -55,26 +55,26 @@ class Solution:
             self.reverse(nums, low, len(nums) - 1)
             self.reverse(nums, 0, len(nums) - 1)
 
-    def reverse(self, nums: List[int], start: int, end: int):
-        while start < end:
-            nums[start], nums[end] = nums[end], nums[start]
-            start += 1
-            end -= 1
+    def reverse(self, nums: List[int], left: int, right: int):
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
 
     def find_min(self, nums: List[int]) -> int:
-        start = 0
-        end = len(nums) - 1
+        left = 0
+        right = len(nums) - 1
 
-        while start < end:
-            mid = start + (end - start) // 2
+        while left < right:
+            mid = left + (right - left) // 2
 
-            if nums[mid] == nums[end]:
-                end -= 1
+            if nums[mid] == nums[right]:
+                right -= 1
                 continue
 
-            if nums[mid] < nums[end]:
-                end = mid
+            if nums[mid] < nums[right]:
+                right = mid
             else:
-                start = mid + 1            
+                left = mid + 1            
 
-        return start
+        return left

@@ -17,14 +17,13 @@
 10. https://leetcode.com/problems/search-a-2d-matrix-ii/
 11. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 12. https://www.lintcode.com/problem/total-occurrence-of-target/
-13. https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
-14. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
-
-- https://www.lintcode.com/problem/find-peak-element/
-- https://www.lintcode.com/problem/search-in-rotated-sorted-array/
-- https://www.lintcode.com/problem/recover-rotated-sorted-array/
-- https://www.lintcode.com/problem/rotate-string/
-- https://www.lintcode.com/problem/copy-books/
+13. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
+14. https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
+15. https://leetcode.com/problems/find-peak-element/
+16. https://leetcode.com/problems/search-in-rotated-sorted-array/
+17. https://www.lintcode.com/problem/recover-rotated-sorted-array/
+18. https://leetcode.com/problems/rotate-string/
+19. https://www.lintcode.com/problem/copy-books/
 
 ### 二叉树、分治
 
@@ -109,7 +108,7 @@
 - https://www.lintcode.com/problem/window-sum/
 - https://www.lintcode.com/problem/move-zeroes/
 - https://www.lintcode.com/problem/valid-palindrome/
-- https://www.lintcode.com/problem/rotate-string/ +duplicate 
+- https://www.lintcode.com/problem/rotate-string/
 - https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate 
 - https://www.lintcode.com/problem/two-sum/
 - https://www.lintcode.com/problem/two-sum-data-structure-design/

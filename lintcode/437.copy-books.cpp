@@ -52,18 +52,18 @@ public:
             return 0;
         }
 
-        int start = *std::max_element(pages.begin(), pages.end());
-        int end = std::accumulate(pages.begin(), pages.end(), 0);
+        int left = *std::max_element(pages.begin(), pages.end());
+        int right = std::accumulate(pages.begin(), pages.end(), 0);
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
             if (can_finish(pages, mid, k)) {
-                end = mid;
+                right = mid;
             } else {
-                start = mid + 1;
+                left = mid + 1;
             }
         }
-        return start;
+        return left;
     }
 
     bool can_finish(vector<int> &pages, int minutes, int k) {
