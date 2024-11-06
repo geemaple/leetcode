@@ -52,3 +52,33 @@
 33. https://leetcode.com/problems/maximum-earnings-from-taxi/
 34. https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/
 35. https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+
+
+## [Leetcode Google Online Accessment](https://leetcode.com/discuss/interview-question/352460/Google-Online-Assessment-Questions)
+
+36. https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/
+37. https://leetcode.com/problems/number-of-good-ways-to-split-a-string/
+38. https://leetcode.com/problems/largest-time-for-given-digits/
+39. https://leetcode.com/problems/last-stone-weight-ii/
+40. https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/
+41. https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/
+42. https://leetcode.com/problems/single-row-keyboard/
+43. https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/
+44. https://leetcode.com/problems/meeting-rooms-ii/
+45. https://leetcode.com/problems/k-closest-points-to-origin/
+46. https://leetcode.com/problems/odd-even-jump/
+47. https://leetcode.com/problems/license-key-formatting/
+48. https://leetcode.com/problems/unique-email-addresses/
+49. https://leetcode.com/problems/fruit-into-baskets/ +duplicate 
+50. https://leetcode.com/problems/split-array-largest-sum/ +duplicate 
+51. https://leetcode.com/problems/k-empty-slots/
+52. https://leetcode.com/problems/diameter-of-binary-tree/
+53. https://leetcode.com/problems/heaters/
+54. https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/
+55. https://leetcode.com/problems/tree-diameter/
+56. https://leetcode.com/problems/minimum-height-trees/
+57. https://leetcode.com/problems/maximum-number-of-accepted-invitations/
+
+
+- https://github.com/hxu296/leetcode-company-wise-problems-2022?tab=readme-ov-file#google
+- https://github.com/jobream/Leetcode-Company-Wise-Problems

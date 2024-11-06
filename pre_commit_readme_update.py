@@ -263,6 +263,9 @@ class Markdown:
         all_problem = set()
 
         for file_name in os.listdir(list_dir):
+            if not file_name.endswith('md'):
+                continue
+
             file_path = os.path.join(list_dir, file_name)
             questions, dup, total = Problem.list(file_path)
             all_problem.update(questions)
