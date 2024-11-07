@@ -37,6 +37,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [--] | [grind102.md](./list/grind102.md) | 92/102 | - |
 | [--] | [grind169.md](./list/grind169.md) | 144/169 | - |
 | [--] | [grind75.md](./list/grind75.md) | 70/75 | - |
+| [--] | [leetcode-contest.md](./list/leetcode-contest.md) | 12/56 | - |
 | [--] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 8/54 | - |
 | [--] | [leetcode-google.md](./list/leetcode-google.md) | 202/471 | - |
 | [--] | [neetcode150.md](./list/neetcode150.md) | 130/150 | - |
@@ -47,7 +48,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
-| [🔲] | [leetcode-contest.md](./list/leetcode-contest.md) | 12/56 | - |
 
 **Solved**: 463 problems
 
