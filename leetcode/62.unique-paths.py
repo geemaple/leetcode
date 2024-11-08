@@ -42,3 +42,8 @@ class Solution:
                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
 
         return dp[m - 1][n - 1]  
+    
+from math import comb
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        return comb(n + m - 2, n - 1)
