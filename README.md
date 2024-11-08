@@ -34,17 +34,17 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [--] | [grind102.md](./list/grind102.md) | 93/102 | - |
-| [--] | [grind169.md](./list/grind169.md) | 145/169 | - |
-| [--] | [grind75.md](./list/grind75.md) | 71/75 | - |
-| [--] | [leetcode-75.md](./list/leetcode-75.md) | 32/75 | - |
-| [--] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/56 | - |
-| [--] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
-| [--] | [leetcode-google.md](./list/leetcode-google.md) | 203/471 | - |
-| [--] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 96/100 | - |
-| [--] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 125/150 | - |
-| [--] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
-| [--] | [neetcode150.md](./list/neetcode150.md) | 131/150 | - |
+| [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
+| [25%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/56 | - |
+| [42%] | [leetcode-75.md](./list/leetcode-75.md) | 32/75 | - |
+| [43%] | [leetcode-google.md](./list/leetcode-google.md) | 203/471 | - |
+| [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
+| [83%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 125/150 | - |
+| [85%] | [grind169.md](./list/grind169.md) | 145/169 | - |
+| [87%] | [neetcode150.md](./list/neetcode150.md) | 131/150 | - |
+| [91%] | [grind102.md](./list/grind102.md) | 93/102 | - |
+| [94%] | [grind75.md](./list/grind75.md) | 71/75 | - |
+| [96%] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 96/100 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |

@@ -293,7 +293,7 @@ class Markdown:
 
             progress = f"{len(solved)}/{len(questions)}" 
             notes = f"{len(vip)} vip{'' if len(vip) == 1 else 's'}" if len(vip) > 0 else '-'     
-            status = '[--]'
+            status = f'[{len(solved) * 100 // len(questions)}%]'
             if len(solved) + len(vip) == len(questions):
                 status = '[✅]'
             elif len(working) > 0:
