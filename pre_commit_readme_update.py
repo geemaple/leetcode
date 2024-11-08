@@ -21,6 +21,7 @@ from logger import Logger
 
 TAG_MATH = 'Math'
 TAG_PROB = 'Probability'
+TAG_COMB = 'Combinatorics'
 TAG_BIT_OP = 'Bit Manipulation'
 TAG_BIT_MASK = 'Bitmask'
 TAG_SIM = 'Simulation'
@@ -98,7 +99,6 @@ TAG_REGEX = {
     FOLD_TAG_TREE: r'^Tree$|Binary Tree',
     FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
     FOLD_TAG_STR: r'^String$|^String Matching$',
-
 }
 
 EXTENSION = {
@@ -179,7 +179,8 @@ class Markdown:
             tags = solution.tags
             match_all = set()
 
-            for tag in tags.split(', '):
+            for tag in tags.split(','):
+                tag = tag.strip()
                 match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, rf"^{x}$"), tag, re.IGNORECASE)])
                 if len(match_category) > 0:
                     match_all.update(match_category)
