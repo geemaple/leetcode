@@ -36,15 +36,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- |
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [25%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/56 | - |
-| [43%] | [leetcode-google.md](./list/leetcode-google.md) | 203/471 | - |
+| [43%] | [leetcode-google.md](./list/leetcode-google.md) | 204/471 | - |
 | [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
-| [84%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 126/150 | - |
-| [86%] | [grind169.md](./list/grind169.md) | 146/169 | - |
+| [84%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 127/150 | - |
+| [86%] | [grind169.md](./list/grind169.md) | 147/169 | - |
 | [88%] | [neetcode150.md](./list/neetcode150.md) | 132/150 | - |
-| [92%] | [grind102.md](./list/grind102.md) | 94/102 | - |
+| [93%] | [grind102.md](./list/grind102.md) | 95/102 | - |
 | [96%] | [grind75.md](./list/grind75.md) | 72/75 | - |
-| [97%] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 97/100 | - |
+| [98%] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 98/100 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
 
-**Solved**: 467 problems
+**Solved**: 468 problems
 
 ## 类型/Category
 
@@ -96,7 +96,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-504](https://leetcode.com/problems/base-7/) | Base 7 | [c++](./leetcode/504.base-7.cpp), [python3](./leetcode/504.base-7.py) | Math | O\(N\) | O\(1\) | - |
@@ -114,6 +114,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-50](https://leetcode.com/problems/powx-n/) | Powx N | [c++](./leetcode/50.powx-n.cpp), [python3](./leetcode/50.powx-n.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-836](https://leetcode.com/problems/rectangle-overlap/) | Rectangle Overlap | [c++](./leetcode/836.rectangle-overlap.cpp), [python3](./leetcode/836.rectangle-overlap.py) | Math | O\(1\) | O\(1\) | - |
+| [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-48](https://leetcode.com/problems/rotate-image/) | Rotate Image | [c++](./leetcode/48.rotate-image.cpp), [python3](./leetcode/48.rotate-image.py) | Math | O\(N^2\) | O\(1\) | - |
 | [Leetcode-69](https://leetcode.com/problems/sqrtx/) | Sqrtx | [c++](./leetcode/69.sqrtx.cpp), [python3](./leetcode/69.sqrtx.py) | Math | N\(logN\) | O\(1\) | - |
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Math | O\(N\) | O\(1\) | - |
@@ -522,7 +523,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(29) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Two Pointers | O\(N^3\) | O\(1\) | - |
@@ -544,6 +545,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | [c++](./leetcode/647.palindromic-substrings.cpp), [python3](./leetcode/647.palindromic-substrings.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Remove Nth Node From End Of List | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Two Pointers | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Two Pointers | O\(N\) | O\(1\) | - |

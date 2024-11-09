@@ -340,7 +340,7 @@ class Markdown:
                 if len(missing) >= 3:
                     Logger.log(f'{random.sample(missing, 3)} ...', end='')
                 else:
-                    Logger.log(f'{missing:3d}', end='')
+                    Logger.log(f'{missing}', end='')
 
 
             Logger.log('')
