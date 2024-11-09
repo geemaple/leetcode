@@ -299,26 +299,13 @@ class Markdown:
             elif len(working) > 0:
                 status = '[🔲]'
             list_row.append((status, Markdown.link(file_name, file_path), progress, notes))
-            list_stat.append((status, file_path, dup, len(solved) + len(vip), total))
-
-            if len(vip) > 0:
-                Logger.log(f'----{len(vip)} VIP link----', Logger.FAIL)
-                if len(vip) >= 3:
-                    Logger.log(f'{random.sample(vip, 3)} ...')
-                else:
-                    Logger.log(f'{vip}')
+            list_stat.append((status, file_path, dup, solved, vip, missing, total))
 
             if len(diff) > 0 and (len(working) > 0 or len(solved) + len(vip) == len(questions)):
                 Logger.log('----incorrect link----', Logger.WARNING)
                 Logger.log(f'{file_path}:', Logger.OKBLUE, end=' ')
                 Logger.log(f' {[q.title for q in diff]}', Logger.WARNING)
 
-            if len(missing) > 0:
-                Logger.log(f'----{file_name} missing {len(missing)} link----', Logger.WARNING)
-                if len(missing) >= 3:
-                    Logger.log(f'{random.sample(missing, 3)} ...')
-                else:
-                    Logger.log(f'{missing}')
 
         Markdown.table_header(f, ['Status', 'List', 'Progress', 'Notes'])
         for row in sorted(list_row):
@@ -326,17 +313,37 @@ class Markdown:
         Markdown.table_footer(f)
 
         Logger.log('----list----', Logger.BOLD)
-        for status, file_path, dup, finished, total in sorted(list_stat, reverse=True):
+        for status, file_path, dup, solved, vip, missing, total in sorted(list_stat, reverse=True):
+            finished = len(solved) + len(vip)
             duplicated = finished < total and len(dup) > 0
+            
+            Logger.log(f'{status}', end=' ')
+            Logger.log(f'{finished:>3}/{total:<3}', Logger.OKGREEN, end=' ')
             Logger.log(f'{file_path:15}', Logger.OKBLUE, end=f' ')
-            Logger.log(f'{finished:>3} /', end=' ')
-            Logger.log(f'{total:<3} {status}', Logger.OKGREEN, end=' ' if duplicated else '\n')
             if duplicated:
-                Logger.log(f'duplicated={len(dup)}', Logger.WARNING, end=' ')
+                Logger.log(f'+dup:', Logger.WARNING, end=' ')
                 if len(dup) > 3:
-                    Logger.log(f'{random.sample(dup, 3)} ...')
+                    Logger.log(f'{random.sample(dup, 3)} ...', end=' ')
                 else:
-                    Logger.log(f'{dup}')
+                    Logger.log(f'{dup}', end=' ')
+
+
+            filter_vip = [x for x in vip if 'leetcode' in x.link]
+            if len(filter_vip) > 0:
+                if len(filter_vip) >= 3:
+                    Logger.log(f'vip: {random.sample(filter_vip, 3)} ...', Logger.FAIL, end='')
+                else:
+                    Logger.log(f'vip: {filter_vip}', Logger.FAIL, end='')
+
+            if len(missing) > 0:
+                Logger.log(f'\n---{len(missing):3} TODO---:', Logger.WARNING, end=' ')
+                if len(missing) >= 3:
+                    Logger.log(f'{random.sample(missing, 3)} ...', end='')
+                else:
+                    Logger.log(f'{missing:3d}', end='')
+
+
+            Logger.log('')
 
         Logger.log(f'total list question = {len(all_problem)}', Logger.OKCYAN)
 
