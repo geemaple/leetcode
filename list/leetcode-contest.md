@@ -75,7 +75,7 @@
 47. https://leetcode.com/problems/maximum-points-tourist-can-earn/
 48. https://leetcode.com/problems/find-the-original-typed-string-ii/
 
-## [Biweek 141](https://leetcode.com/contest/biweekly-contest-141/)
+## [Week 421](https://leetcode.com/contest/weekly-contest-421/)
 49. https://leetcode.com/problems/find-the-maximum-factor-score-of-array/
 50. https://leetcode.com/problems/total-characters-in-string-after-transformations-i/
 51. https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/
@@ -86,3 +86,9 @@
 54. https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/
 55. https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/
 56. https://leetcode.com/problems/count-number-of-balanced-permutations/
+
+## [Biweek 143](https://leetcode.com/contest/biweekly-contest-143/)
+57. https://leetcode.com/problems/smallest-divisible-digit-product-i/
+58. https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/
+59. https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/
+60. https://leetcode.com/problems/smallest-divisible-digit-product-ii/
