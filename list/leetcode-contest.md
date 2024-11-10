@@ -92,3 +92,9 @@
 58. https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/
 59. https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/
 60. https://leetcode.com/problems/smallest-divisible-digit-product-ii/
+
+## [Week 423](https://leetcode.com/contest/weekly-contest-423/)
+61. https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/
+62. https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/
+63. https://leetcode.com/problems/sum-of-good-subsequences/
+64. https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/
