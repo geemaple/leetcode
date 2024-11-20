@@ -323,7 +323,7 @@ class Markdown:
             if duplicated:
                 Logger.log(f'+dup:', Logger.WARNING, end=' ')
                 if len(dup) > 3:
-                    Logger.log(f'{random.sample(dup, 3)} ...', end=' ')
+                    Logger.log(f'{random.sample(list(dup), 3)} ...', end=' ')
                 else:
                     Logger.log(f'{dup}', end=' ')
 
@@ -331,14 +331,14 @@ class Markdown:
             filter_vip = [x for x in vip if 'leetcode' in x.link]
             if len(filter_vip) > 0:
                 if len(filter_vip) >= 3:
-                    Logger.log(f'vip: {random.sample(filter_vip, 3)} ...', Logger.FAIL, end='')
+                    Logger.log(f'vip: {random.sample(list(filter_vip), 3)} ...', Logger.FAIL, end='')
                 else:
                     Logger.log(f'vip: {filter_vip}', Logger.FAIL, end='')
 
             if len(missing) > 0:
                 Logger.log(f'\n---{len(missing):3} TODO---:', Logger.WARNING, end=' ')
                 if len(missing) >= 3:
-                    Logger.log(f'{random.sample(missing, 3)} ...', end='')
+                    Logger.log(f'{random.sample(list(missing), 3)} ...', end='')
                 else:
                     Logger.log(f'{missing}', end='')
 
