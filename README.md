@@ -36,14 +36,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- |
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [21%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/64 | - |
-| [43%] | [leetcode-google.md](./list/leetcode-google.md) | 206/471 | - |
+| [43%] | [leetcode-google.md](./list/leetcode-google.md) | 207/471 | - |
 | [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 129/150 | - |
-| [88%] | [grind169.md](./list/grind169.md) | 150/169 | - |
-| [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | - |
-| [94%] | [grind102.md](./list/grind102.md) | 96/102 | - |
-| [97%] | [grind75.md](./list/grind75.md) | 73/75 | - |
+| [89%] | [grind169.md](./list/grind169.md) | 151/169 | - |
+| [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | - |
+| [95%] | [grind102.md](./list/grind102.md) | 97/102 | - |
+| [98%] | [grind75.md](./list/grind75.md) | 74/75 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
 
-**Solved**: 471 problems
+**Solved**: 472 problems
 
 ## 类型/Category
 
@@ -211,7 +211,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(24) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(25) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -231,6 +231,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-3282](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | Reach End Of Array With Max Score | [c++](./leetcode/3282.reach-end-of-array-with-max-score.cpp), [python3](./leetcode/3282.reach-end-of-array-with-max-score.py) | Greedy | O\(N\) | O\(1\) | - |
+| [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) | Valid Palindrome II | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python3](./leetcode/680.valid-palindrome-ii.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [c++](./leetcode/324.wiggle-sort-ii.cpp), [python3](./leetcode/324.wiggle-sort-ii.py) | Greedy | \- | \- | - |
 | [Leetcode-376](https://leetcode.com/problems/wiggle-subsequence/) | Wiggle Subsequence | [c++](./leetcode/376.wiggle-subsequence.cpp), [python3](./leetcode/376.wiggle-subsequence.py) | Greedy | O\(N\) | O\(N\) | - |
@@ -398,7 +399,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(47) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(48) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | - |
@@ -436,6 +437,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-560](https://leetcode.com/problems/subarray-sum-equals-k/) | Subarray Sum Equals K | [c++](./leetcode/560.subarray-sum-equals-k.cpp), [python3](./leetcode/560.subarray-sum-equals-k.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-572](https://leetcode.com/problems/subtree-of-another-tree/) | Subtree Of Another Tree | [c++](./leetcode/572.subtree-of-another-tree.cpp), [python3](./leetcode/572.subtree-of-another-tree.py) | Hash Table | O\(NM\) | O\(H\) | - |
 | [Leetcode-37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | [c++](./leetcode/37.sudoku-solver.cpp), [python3](./leetcode/37.sudoku-solver.py) | Hash Table | O\(N^\(N^2\)\) | O\(N\) | - |
+| [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-981](https://leetcode.com/problems/time-based-key-value-store/) | Time Based Key Value Store | [c++](./leetcode/981.time-based-key-value-store.cpp), [python3](./leetcode/981.time-based-key-value-store.py) | Hash Table | O\(logN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Hash Table | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-1](https://leetcode.com/problems/two-sum/) | Two Sum | [c++](./leetcode/1.two-sum.cpp), [python3](./leetcode/1.two-sum.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -499,7 +501,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(23) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(24) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-3286](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Find A Safe Walk Through A Grid | [c++](./leetcode/3286.find-a-safe-walk-through-a-grid.cpp), [python3](./leetcode/3286.find-a-safe-walk-through-a-grid.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -520,6 +522,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Heap | O\(N\) | O\(K\) | - |
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Heap | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Heap | O\(N\) | O\(N\) | - |
+| [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Heap | O\(N\) | O\(1\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Heap | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-407](https://leetcode.com/problems/trapping-rain-water-ii/) | Trapping Rain Water II | [c++](./leetcode/407.trapping-rain-water-ii.cpp), [python3](./leetcode/407.trapping-rain-water-ii.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -614,13 +617,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Counting
 
-| Link | Problem(6) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-169](https://leetcode.com/problems/majority-element/) | Majority Element | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Counting | O\(N\) | O\(1\) | - |
 | [Leetcode-2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | Maximum Count Of Positive Integer And Negative Integer | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python3](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | Counting | O\(logN\) | O\(1\) | - |
 | [Leetcode-383](https://leetcode.com/problems/ransom-note/) | Ransom Note | [c++](./leetcode/383.ransom-note.cpp), [python3](./leetcode/383.ransom-note.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Counting | O\(N\) | O\(N\) | - |
+| [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Counting | O\(N\) | O\(1\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Counting | O\(N\), O\(C\*logK\) | O\(N\) | - |
 
 ## Quickselect
