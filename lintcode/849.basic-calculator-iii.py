@@ -49,10 +49,10 @@ class Solution:
             if char.isdigit():
                 num = num * 10 + int(char)
 
-            if char == '(':
-                num, i = self.helper(s, i + 1)
+            if (not char.isdigit() and char != ' ') or i == len(s) - 1:  
+                if char == '(':
+                    num, i = self.helper(s, i + 1)
 
-            if  (not char.isdigit() and char != ' ') or i == len(s) - 1:                
                 if op == '+':
                     left += right
                     right = num
@@ -67,8 +67,8 @@ class Solution:
                 op = char
                 num = 0
         
-            if char == ')':
-                break
+                if char == ')':
+                    break
             i += 1
             
         return left + right, i

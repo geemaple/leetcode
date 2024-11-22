@@ -38,10 +38,11 @@ public:
      */
     int calculate(string &s) {
         // Write your code here
-        return helper(s, 0).first;
+        int i = 0;
+        return helper(s, i);
     }
 
-    pair<int, int> helper(string &s, int i) {
+    int helper(string &s, int &i) {
         int left = 0; // stack except top
         int right = 0; // stack top
         int num = 0;
@@ -49,16 +50,15 @@ public:
         while (i < s.size()) {
             char ch = s[i];
             if (isdigit(ch)) {
-                num = num * 10 + ch - '0';
+                num = num * 10 + (ch - '0');
             }
 
-            if (ch == '(') {
-                auto p = helper(s, i + 1);
-                num = p.first;
-                i = p.second;
-            }
+            if ((!isdigit(ch) && ch != ' ') || i == s.size() - 1) {
+                if (ch == '(') {
+                    i = i + 1;
+                    num = helper(s, i);
+                }
 
-            if ((ch != ' ' && !isdigit(ch)) || i == s.size() - 1) {
                 switch (op) {
                     case '+': left += right; right = num; break;
                     case '-': left += right; right = -num; break;
@@ -68,13 +68,14 @@ public:
 
                 op = ch;
                 num = 0;
-            }
 
-            if (ch == ')') {
-                break;
+                if (ch == ')') {
+                    break;
+                }
             }
             i++;
         }
-        return make_pair(left + right, i);
+
+        return left + right;
     }
 };
