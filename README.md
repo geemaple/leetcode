@@ -37,12 +37,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [21%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/64 | - |
 | [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
-| [44%] | [leetcode-google.md](./list/leetcode-google.md) | 208/471 | - |
+| [44%] | [leetcode-google.md](./list/leetcode-google.md) | 208/471 | 1 vip |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [89%] | [grind169.md](./list/grind169.md) | 152/169 | - |
 | [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | - |
-| [96%] | [grind102.md](./list/grind102.md) | 98/102 | - |
+| [90%] | [grind169.md](./list/grind169.md) | 153/169 | 1 vip |
+| [97%] | [grind102.md](./list/grind102.md) | 99/102 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
 
-**Solved**: 473 problems
+**Solved**: 474 problems
 
 ## 类型/Category
 
@@ -777,7 +777,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Backtracking
 
-| Link | Problem(13) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(14) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-257](https://leetcode.com/problems/binary-tree-paths/) | Binary Tree Paths | [c++](./leetcode/257.binary-tree-paths.cpp), [python3](./leetcode/257.binary-tree-paths.py) | Backtracking | O\(N\) | O\(H\) | - |
 | [Leetcode-40](https://leetcode.com/problems/combination-sum-ii/) | Combination Sum II | [c++](./leetcode/40.combination-sum-ii.cpp), [python3](./leetcode/40.combination-sum-ii.py) | Backtracking | O\(2^N\) | O\(N\) | - |
@@ -785,6 +785,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | [c++](./leetcode/22.generate-parentheses.cpp), [python3](./leetcode/22.generate-parentheses.py) | Backtracking | O\(2^N\) | O\(N\) | - |
 | [Leetcode-51](https://leetcode.com/problems/n-queens/) | N Queens | [c++](./leetcode/51.n-queens.cpp), [python3](./leetcode/51.n-queens.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | [Leetcode-52](https://leetcode.com/problems/n-queens-ii/) | N Queens II | [c++](./leetcode/52.n-queens-ii.cpp), [python3](./leetcode/52.n-queens-ii.py) | Backtracking | O\(N\!\) | O\(N\) | - |
+| [Leetcode-113](https://leetcode.com/problems/path-sum-ii/) | Path Sum II | [c++](./leetcode/113.path-sum-ii.cpp), [python3](./leetcode/113.path-sum-ii.py) | Backtracking | O\(N\) | O\(H\) | - |
 | [Leetcode-46](https://leetcode.com/problems/permutations/) | Permutations | [c++](./leetcode/46.permutations.cpp), [python3](./leetcode/46.permutations.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | [Leetcode-47](https://leetcode.com/problems/permutations-ii/) | Permutations II | [c++](./leetcode/47.permutations-ii.cpp), [python3](./leetcode/47.permutations-ii.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | [Leetcode-37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | [c++](./leetcode/37.sudoku-solver.cpp), [python3](./leetcode/37.sudoku-solver.py) | Backtracking | O\(N^\(N^2\)\) | O\(N\) | - |
