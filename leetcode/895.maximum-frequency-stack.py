@@ -108,3 +108,27 @@ class FreqStack:
 # obj.push(val)
 # param_2 = obj.pop()
 
+from collections import defaultdict
+import heapq
+class FreqStack:
+
+    def __init__(self):
+        self.heap = []
+        self.frequency = defaultdict(int)
+        self.pos = 0
+
+    def push(self, val: int) -> None:
+        self.frequency[val] += 1
+        self.pos += 1
+        heapq.heappush(self.heap, (-self.frequency[val], -self.pos, val))
+
+    def pop(self) -> int:
+        cur = heapq.heappop(self.heap)
+        val = cur[2]
+        self.frequency[val] -= 1
+        return val
+
+# Your FreqStack object will be instantiated and called as such:
+# obj = FreqStack()
+# obj.push(val)
+# param_2 = obj.pop()
