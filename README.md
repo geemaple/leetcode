@@ -41,7 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | - |
-| [91%] | [grind169.md](./list/grind169.md) | 155/169 | 1 vip |
+| [92%] | [grind169.md](./list/grind169.md) | 156/169 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 5/48 | - |
 
-**Solved**: 476 problems
+**Solved**: 477 problems
 
 ## 类型/Category
 
@@ -401,7 +401,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(50) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(51) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | - |
@@ -409,6 +409,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Construct Binary Tree From Preorder And Inorder Traversal | [c++](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.cpp), [python3](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-889](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | Construct Binary Tree From Preorder And Postorder Traversal | [c++](./leetcode/889.construct-binary-tree-from-preorder-and-postorder-traversal.cpp), [python3](./leetcode/889.construct-binary-tree-from-preorder-and-postorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-217](https://leetcode.com/problems/contains-duplicate/) | Contains Duplicate | [c++](./leetcode/217.contains-duplicate.cpp), [python3](./leetcode/217.contains-duplicate.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | [c++](./leetcode/525.contiguous-array.cpp), [python3](./leetcode/525.contiguous-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-697](https://leetcode.com/problems/degree-of-an-array/) | Degree Of An Array | [c++](./leetcode/697.degree-of-an-array.cpp), [python3](./leetcode/697.degree-of-an-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1110](https://leetcode.com/problems/delete-nodes-and-return-forest/) | Delete Nodes And Return Forest | [c++](./leetcode/1110.delete-nodes-and-return-forest.cpp), [python3](./leetcode/1110.delete-nodes-and-return-forest.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Hash Table | O\(N\) | O\(1\) | - |
