@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 9/51 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 10/51 | 1 vip |
 
-**Solved**: 479 problems
+**Solved**: 480 problems
 
 ## 类型/Category
 
@@ -173,7 +173,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(10) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(11) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -184,6 +184,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-366](https://www.lintcode.com/problem/fibonacci/) | Fibonacci | [c++](./lintcode/366.fibonacci.cpp), [python3](./lintcode/366.fibonacci.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-22](https://www.lintcode.com/problem/flatten-list/) | Flatten List | [c++](./lintcode/22.flatten-list.cpp), [python3](./lintcode/22.flatten-list.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-39](https://www.lintcode.com/problem/recover-rotated-sorted-array/) | Recover Rotated Sorted Array | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Simulation | O\(N\) | O\(1\) | - |
+| [Lintcode-644](https://www.lintcode.com/problem/strobogrammatic-number/) | Strobogrammatic Number | [c++](./lintcode/644.strobogrammatic-number.cpp), [python3](./lintcode/644.strobogrammatic-number.py) | Simulation | O\(N\) | O\(1\) | Leetcode-246 |
 | [Lintcode-637](https://www.lintcode.com/problem/valid-word-abbreviation/) | Valid Word Abbreviation | [c++](./lintcode/637.valid-word-abbreviation.cpp), [python3](./lintcode/637.valid-word-abbreviation.py) | Simulation | O\(N\) | O\(1\) | Leetcode-408 |
 
 ## Design
@@ -401,7 +402,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(51) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(52) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | - |
@@ -452,6 +453,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Hash Table | O\(N\) | O\(K\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Hash Table | O\(MN\) | O\(N\) | - |
 | [Leetcode-126](https://leetcode.com/problems/word-ladder-ii/) | Word Ladder II | [c++](./leetcode/126.word-ladder-ii.cpp), [python3](./leetcode/126.word-ladder-ii.py) | Hash Table | O\(\(N\*L\)^C\) | O\(N\) | - |
+| [Lintcode-644](https://www.lintcode.com/problem/strobogrammatic-number/) | Strobogrammatic Number | [c++](./lintcode/644.strobogrammatic-number.cpp), [python3](./lintcode/644.strobogrammatic-number.py) | Hash Table | O\(N\) | O\(1\) | Leetcode-246 |
 | [Lintcode-138](https://www.lintcode.com/problem/subarray-sum/) | Subarray Sum | [c++](./lintcode/138.subarray-sum.cpp), [python3](./lintcode/138.subarray-sum.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Lintcode-639](https://www.lintcode.com/problem/word-abbreviation/) | Word Abbreviation | [c++](./lintcode/639.word-abbreviation.cpp), [python3](./lintcode/639.word-abbreviation.py) | Hash Table | O\(NL\) | O\(N\) | Leetcode-527 |
 
