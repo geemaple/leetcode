@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 6/48 | - |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 9/51 | 1 vip |
 
-**Solved**: 478 problems
+**Solved**: 479 problems
 
 ## 类型/Category
 
@@ -852,12 +852,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Segment Tree
 
-| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction By Height | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python3](./leetcode/406.queue-reconstruction-by-height.py) | Segment Tree | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-307](https://leetcode.com/problems/range-sum-query-mutable/) | Range Sum Query Mutable | [c++](./leetcode/307.range-sum-query-mutable.cpp), [python3](./leetcode/307.range-sum-query-mutable.py) | Segment Tree | O\(logN\) | O\(N\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Segment Tree | O\(NlogN\) | O\(N\) | - |
 | [Lintcode-205](https://www.lintcode.com/problem/interval-minimum-number/) | Interval Minimum Number | [c++](./lintcode/205.interval-minimum-number.cpp), [python3](./lintcode/205.interval-minimum-number.py) | Segment Tree | O\(NlogN\) | O\(N\) | - |
+| [Lintcode-206](https://www.lintcode.com/problem/interval-sum/) | Interval Sum | [c++](./lintcode/206.interval-sum.cpp), [python3](./lintcode/206.interval-sum.py) | Segment Tree | O\(N\) | O\(N\) | - |
 | [Lintcode-201](https://www.lintcode.com/problem/segment-tree-build/) | Segment Tree Build | [c++](./lintcode/201.segment-tree-build.cpp), [python3](./lintcode/201.segment-tree-build.py) | Segment Tree | O\(N\) | O\(1\) | - |
 | [Lintcode-439](https://www.lintcode.com/problem/segment-tree-build-ii/) | Segment Tree Build II | [c++](./lintcode/439.segment-tree-build-ii.cpp), [python3](./lintcode/439.segment-tree-build-ii.py) | Segment Tree | O\(N\) | O\(1\) | - |
 | [Lintcode-203](https://www.lintcode.com/problem/segment-tree-modify/) | Segment Tree Modify | [c++](./lintcode/203.segment-tree-modify.cpp), [python3](./lintcode/203.segment-tree-modify.py) | Segment Tree | O\(logN\) | O\(1\) | - |

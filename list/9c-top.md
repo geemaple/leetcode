@@ -11,8 +11,11 @@
 ### 模拟、字符串
 
 6. https://www.lintcode.com/problem/moving-average-from-data-stream/
+7. https://www.lintcode.com/problem/interval-sum/
+8. https://www.lintcode.com/problem/segment-tree-build/
+9. https://www.lintcode.com/problem/segment-tree-query/
+10. https://www.lintcode.com/problem/segment-tree-modify/
 
-- https://www.lintcode.com/problem/interval-sum/
 - https://www.lintcode.com/problem/mirror-numbers/
 - https://www.lintcode.com/problem/edit-distance-ii/
 - https://www.lintcode.com/problem/read-characters-from-file-multiple-calls/
