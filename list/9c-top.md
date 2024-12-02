@@ -10,7 +10,8 @@
 
 ### 模拟、字符串
 
-- https://www.lintcode.com/problem/sliding-window-average-from-data-stream/
+6. https://www.lintcode.com/problem/moving-average-from-data-stream/
+
 - https://www.lintcode.com/problem/interval-sum/
 - https://www.lintcode.com/problem/mirror-numbers/
 - https://www.lintcode.com/problem/edit-distance-ii/
