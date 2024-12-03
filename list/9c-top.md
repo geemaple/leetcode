@@ -16,8 +16,8 @@
 9. https://www.lintcode.com/problem/segment-tree-query/
 10. https://www.lintcode.com/problem/segment-tree-modify/
 11. https://www.lintcode.com/problem/strobogrammatic-number/
+12. https://www.lintcode.com/problem/one-edit-distance/
 
-- https://www.lintcode.com/problem/edit-distance-ii/
 - https://www.lintcode.com/problem/read-characters-from-file-multiple-calls/
 - https://www.lintcode.com/problem/strings-serialization/
 - https://www.lintcode.com/problem/binary-tree-serialization/
