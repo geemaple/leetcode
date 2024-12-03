@@ -13,27 +13,32 @@ using namespace std;
 #include <vector>
 #include <string>
 
+int read4(char* buf);
+
 class Solution {
 public:
-    vector<string> topKFrequent(vector<string>& words, int k) {
-        unordered_map<string, int> counter;
-        for (string w: words) {
-            counter[w] += 1;
-        }
+    /**
+     * @param buf: destination
+     * @param n: the number of characters that need to be read
+     * @return: the number of characters read
+     */
+    char tmp[4];
+    int read(char* &buf, int n) {
+        // write you code here
+        int total = 0;
         
-        vector<pair<int, string>> word_list;
-        for (auto &[word, count]: counter) {
-            word_list.emplace_back(-count, word);
+        while (total < n) {
+            int count = read4(tmp);
+            if (count == 0) {
+                break;
+            }
+            int read = min(count, n - total);
+            for (int i = 0; i < read; i++) {
+                buf[total + i] = tmp[i];
+            }
+            total += read;
         }
-            
-        sort(word_list.begin(), word_list.end());
-        vector<string> res;
- 
-        for (int i = 0; i < k; i++) {
-            res.push_back(word_list[i].second);
-        }
-        
-        return res;
+        return total;
     }
 };
 

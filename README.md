@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 11/51 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 12/52 | 1 vip |
 
-**Solved**: 480 problems
+**Solved**: 481 problems
 
 ## 类型/Category
 
@@ -173,7 +173,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(12) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(14) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -184,6 +184,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-366](https://www.lintcode.com/problem/fibonacci/) | Fibonacci | [c++](./lintcode/366.fibonacci.cpp), [python3](./lintcode/366.fibonacci.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-22](https://www.lintcode.com/problem/flatten-list/) | Flatten List | [c++](./lintcode/22.flatten-list.cpp), [python3](./lintcode/22.flatten-list.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-640](https://www.lintcode.com/problem/one-edit-distance/) | One Edit Distance | [c++](./lintcode/640.one-edit-distance.cpp), [python3](./lintcode/640.one-edit-distance.py) | Simulation | O\(N\) | O\(1\) | Leetcode-161 |
+| [Lintcode-3622](https://www.lintcode.com/problem/read-n-characters-given-read4/) | Read N Characters Given Read4 | [c++](./lintcode/3622.read-n-characters-given-read4.cpp), [python3](./lintcode/3622.read-n-characters-given-read4.py) | Simulation | O\(N\) | O\(1\) | Leetcode-157 |
+| [Lintcode-660](https://www.lintcode.com/problem/read-n-characters-given-read4-ii-call-multiple-times/) | Read N Characters Given Read4 Ii Call Multiple Times | [c++](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.cpp), [python3](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.py) | Simulation | \- | \- | - |
 | [Lintcode-39](https://www.lintcode.com/problem/recover-rotated-sorted-array/) | Recover Rotated Sorted Array | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Lintcode-644](https://www.lintcode.com/problem/strobogrammatic-number/) | Strobogrammatic Number | [c++](./lintcode/644.strobogrammatic-number.cpp), [python3](./lintcode/644.strobogrammatic-number.py) | Simulation | O\(N\) | O\(1\) | Leetcode-246 |
 | [Lintcode-637](https://www.lintcode.com/problem/valid-word-abbreviation/) | Valid Word Abbreviation | [c++](./lintcode/637.valid-word-abbreviation.cpp), [python3](./lintcode/637.valid-word-abbreviation.py) | Simulation | O\(N\) | O\(1\) | Leetcode-408 |
@@ -916,7 +918,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(129) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(128) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -1004,7 +1006,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-66](https://leetcode.com/problems/plus-one/) | Plus One | [c++](./leetcode/66.plus-one.cpp), [python3](./leetcode/66.plus-one.py) | Other | \- | \- | - |
 | [Leetcode-755](https://leetcode.com/problems/pour-water/) | Pour Water | [python3](./leetcode/755.pour-water.py) | Other | \- | \- | - |
 | [Leetcode-370](https://leetcode.com/problems/range-addition/) | Range Addition | [c++](./leetcode/370.range-addition.cpp), [python3](./leetcode/370.range-addition.py) | Other | \- | \- | - |
-| [Leetcode-157](https://leetcode.com/problems/read-n-characters-given-read4/) | Read N Characters Given Read4 | [c++](./leetcode/157.read-n-characters-given-read4.cpp), [python3](./leetcode/157.read-n-characters-given-read4.py) | Other | \- | \- | - |
 | [Leetcode-26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Remove Duplicates From Sorted Array | [c++](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python3](./leetcode/26.remove-duplicates-from-sorted-array.py) | Other | \- | \- | - |
 | [Leetcode-27](https://leetcode.com/problems/remove-element/) | Remove Element | [c++](./leetcode/27.remove-element.cpp), [python3](./leetcode/27.remove-element.py) | Other | \- | \- | - |
 | [Leetcode-203](https://leetcode.com/problems/remove-linked-list-elements/) | Remove Linked List Elements | [python3](./leetcode/203.remove-linked-list-elements.py) | Other | \- | \- | - |
