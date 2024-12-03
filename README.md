@@ -51,7 +51,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 12/52 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 13/52 | 1 vip |
 
 **Solved**: 481 problems
 
@@ -185,7 +185,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-22](https://www.lintcode.com/problem/flatten-list/) | Flatten List | [c++](./lintcode/22.flatten-list.cpp), [python3](./lintcode/22.flatten-list.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-640](https://www.lintcode.com/problem/one-edit-distance/) | One Edit Distance | [c++](./lintcode/640.one-edit-distance.cpp), [python3](./lintcode/640.one-edit-distance.py) | Simulation | O\(N\) | O\(1\) | Leetcode-161 |
 | [Lintcode-3622](https://www.lintcode.com/problem/read-n-characters-given-read4/) | Read N Characters Given Read4 | [c++](./lintcode/3622.read-n-characters-given-read4.cpp), [python3](./lintcode/3622.read-n-characters-given-read4.py) | Simulation | O\(N\) | O\(1\) | Leetcode-157 |
-| [Lintcode-660](https://www.lintcode.com/problem/read-n-characters-given-read4-ii-call-multiple-times/) | Read N Characters Given Read4 Ii Call Multiple Times | [c++](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.cpp), [python3](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.py) | Simulation | \- | \- | - |
+| [Lintcode-660](https://www.lintcode.com/problem/read-n-characters-given-read4-ii-call-multiple-times/) | Read N Characters Given Read4 Ii Call Multiple Times | [c++](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.cpp), [python3](./lintcode/660.read-n-characters-given-read4-ii-call-multiple-times.py) | Simulation | O\(N\) | O\(1\) | Leetcode-158 |
 | [Lintcode-39](https://www.lintcode.com/problem/recover-rotated-sorted-array/) | Recover Rotated Sorted Array | [c++](./lintcode/39.recover-rotated-sorted-array.cpp), [python3](./lintcode/39.recover-rotated-sorted-array.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Lintcode-644](https://www.lintcode.com/problem/strobogrammatic-number/) | Strobogrammatic Number | [c++](./lintcode/644.strobogrammatic-number.cpp), [python3](./lintcode/644.strobogrammatic-number.py) | Simulation | O\(N\) | O\(1\) | Leetcode-246 |
 | [Lintcode-637](https://www.lintcode.com/problem/valid-word-abbreviation/) | Valid Word Abbreviation | [c++](./lintcode/637.valid-word-abbreviation.cpp), [python3](./lintcode/637.valid-word-abbreviation.py) | Simulation | O\(N\) | O\(1\) | Leetcode-408 |

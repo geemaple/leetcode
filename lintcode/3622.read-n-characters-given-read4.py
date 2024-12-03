@@ -105,14 +105,14 @@ class Solution(Reader):
         # write you code here
         tmp = [''] * 4
         offset = 0
-        read = 0
+        count = 0
 
         for i in range(n):
-            if offset == read:
-                read = self.read4(tmp)
+            if offset == count:
+                count = self.read4(tmp)
                 offset = 0
 
-            if offset < read:
+            if offset < count:
                 buf[i] = tmp[offset]
                 offset += 1
             else:

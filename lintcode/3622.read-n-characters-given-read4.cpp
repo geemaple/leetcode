@@ -110,15 +110,15 @@ public:
         // write you code here
         char tmp[4];
         int offset = 0;
-        int read = 0;
+        int count = 0;
 
         for(auto i = 0; i < n; ++i) {
-            if (offset == read) {
-                read = read4(tmp);
+            if (offset == count) {
+                count = read4(tmp);
                 offset = 0;
             }
 
-            if (offset < read) {
+            if (offset < count) {
                 buf[i] = tmp[offset++];
             } else {
                 return i;
