@@ -40,20 +40,20 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [44%] | [leetcode-google.md](./list/leetcode-google.md) | 209/471 | 1 vip |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | - |
-| [92%] | [grind169.md](./list/grind169.md) | 156/169 | 2 vips |
+| [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | 1 vip |
+| [91%] | [grind169.md](./list/grind169.md) | 155/169 | 3 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
-| [✅] | [blind75.md](./list/blind75.md) | 77/77 | - |
+| [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [grind102.md](./list/grind102.md) | 101/102 | 1 vip |
 | [✅] | [grind75.md](./list/grind75.md) | 75/75 | - |
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 14/52 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 16/52 | 1 vip |
 
-**Solved**: 482 problems
+**Solved**: 481 problems
 
 ## 类型/Category
 
@@ -462,7 +462,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Stack
 
-| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | [c++](./leetcode/224.basic-calculator.cpp), [python3](./leetcode/224.basic-calculator.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-227](https://leetcode.com/problems/basic-calculator-ii/) | Basic Calculator II | [c++](./leetcode/227.basic-calculator-ii.cpp), [python3](./leetcode/227.basic-calculator-ii.py) | Stack | O\(N\) | O\(N\) | - |
@@ -477,6 +477,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Stack | O\(\*1\) | O\(N\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-897](https://leetcode.com/problems/increasing-order-search-tree/) | Increasing Order Search Tree | [c++](./leetcode/897.increasing-order-search-tree.cpp), [python3](./leetcode/897.increasing-order-search-tree.py) | Stack | O\(N\) | O\(H\) | - |
+| [Leetcode-388](https://leetcode.com/problems/longest-absolute-file-path/) | Longest Absolute File Path | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python3](./leetcode/388.longest-absolute-file-path.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-32](https://leetcode.com/problems/longest-valid-parentheses/) | Longest Valid Parentheses | [c++](./leetcode/32.longest-valid-parentheses.cpp), [python3](./leetcode/32.longest-valid-parentheses.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-895](https://leetcode.com/problems/maximum-frequency-stack/) | Maximum Frequency Stack | [c++](./leetcode/895.maximum-frequency-stack.cpp), [python3](./leetcode/895.maximum-frequency-stack.py) | Stack | O\(1\) | O\(N\) | - |
 | [Leetcode-155](https://leetcode.com/problems/min-stack/) | Min Stack | [c++](./leetcode/155.min-stack.cpp), [python3](./leetcode/155.min-stack.py) | Stack | O\(1\) | O\(N\) | - |
@@ -719,7 +720,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(48) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(49) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-637](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | Average Of Levels In Binary Tree | [c++](./leetcode/637.average-of-levels-in-binary-tree.cpp), [python3](./leetcode/637.average-of-levels-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -741,6 +742,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-226](https://leetcode.com/problems/invert-binary-tree/) | Invert Binary Tree | [c++](./leetcode/226.invert-binary-tree.cpp), [python3](./leetcode/226.invert-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Depth-First Search | O\(E\+V\) | O\(W\) | - |
 | [Leetcode-230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Kth Smallest Element In A Bst | [c++](./leetcode/230.kth-smallest-element-in-a-bst.cpp), [python3](./leetcode/230.kth-smallest-element-in-a-bst.py) | Depth-First Search | O\(K\) | O\(H\) | - |
+| [Leetcode-388](https://leetcode.com/problems/longest-absolute-file-path/) | Longest Absolute File Path | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python3](./leetcode/388.longest-absolute-file-path.py) | Depth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Lowest Common Ancestor Of A Binary Search Tree | [c++](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.cpp), [python3](./leetcode/235.lowest-common-ancestor-of-a-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Lowest Common Ancestor Of A Binary Tree | [c++](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.cpp), [python3](./leetcode/236.lowest-common-ancestor-of-a-binary-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-695](https://leetcode.com/problems/max-area-of-island/) | Max Area Of Island | [c++](./leetcode/695.max-area-of-island.cpp), [python3](./leetcode/695.max-area-of-island.py) | Depth-First Search | O\(MN\) | O\(MN\) | - |
@@ -919,7 +921,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(128) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(126) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -948,7 +950,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-237](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Delete Node In A Linked List | [python3](./leetcode/237.delete-node-in-a-linked-list.py) | Other | \- | \- | - |
 | [Leetcode-498](https://leetcode.com/problems/diagonal-traverse/) | Diagonal Traverse | [c++](./leetcode/498.diagonal-traverse.cpp) | Other | \- | \- | - |
 | [Leetcode-29](https://leetcode.com/problems/divide-two-integers/) | Divide Two Integers | [c++](./leetcode/29.divide-two-integers.cpp), [python3](./leetcode/29.divide-two-integers.py) | Other | \- | \- | - |
-| [Leetcode-271](https://leetcode.com/problems/encode-and-decode-strings/) | Encode And Decode Strings | [c++](./leetcode/271.encode-and-decode-strings.cpp), [python3](./leetcode/271.encode-and-decode-strings.py) | Other | \- | \- | - |
 | [Leetcode-535](https://leetcode.com/problems/encode-and-decode-tinyurl/) | Encode And Decode Tinyurl | [python3](./leetcode/535.encode-and-decode-tinyurl.py) | Other | \- | \- | - |
 | [Leetcode-282](https://leetcode.com/problems/expression-add-operators/) | Expression Add Operators | [c++](./leetcode/282.expression-add-operators.cpp), [python3](./leetcode/282.expression-add-operators.py) | Other | \- | \- | - |
 | [Leetcode-760](https://leetcode.com/problems/find-anagram-mappings/) | Find Anagram Mappings | [python3](./leetcode/760.find-anagram-mappings.py) | Other | \- | \- | - |
@@ -977,7 +978,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-747](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | Largest Number At Least Twice Of Others | [c++](./leetcode/747.largest-number-at-least-twice-of-others.cpp) | Other | \- | \- | - |
 | [Leetcode-17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Letter Combinations Of A Phone Number | [c++](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python3](./leetcode/17.letter-combinations-of-a-phone-number.py) | Other | \- | \- | - |
 | [Leetcode-359](https://leetcode.com/problems/logger-rate-limiter/) | Logger Rate Limiter | [c++](./leetcode/359.logger-rate-limiter.cpp) | Other | \- | \- | - |
-| [Leetcode-388](https://leetcode.com/problems/longest-absolute-file-path/) | Longest Absolute File Path | [c++](./leetcode/388.longest-absolute-file-path.cpp), [python3](./leetcode/388.longest-absolute-file-path.py) | Other | \- | \- | - |
 | [Leetcode-14](https://leetcode.com/problems/longest-common-prefix/) | Longest Common Prefix | [c++](./leetcode/14.longest-common-prefix.cpp), [python3](./leetcode/14.longest-common-prefix.py) | Other | \- | \- | - |
 | [Leetcode-687](https://leetcode.com/problems/longest-univalue-path/) | Longest Univalue Path | [c++](./leetcode/687.longest-univalue-path.cpp), [python3](./leetcode/687.longest-univalue-path.py) | Other | \- | \- | - |
 | [Leetcode-229](https://leetcode.com/problems/majority-element-ii/) | Majority Element II | [c++](./leetcode/229.majority-element-ii.cpp), [python3](./leetcode/229.majority-element-ii.py) | Other | \- | \- | - |
