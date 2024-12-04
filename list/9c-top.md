@@ -19,8 +19,8 @@
 12. https://www.lintcode.com/problem/one-edit-distance/
 13. https://www.lintcode.com/problem/read-n-characters-given-read4/
 14. https://www.lintcode.com/problem/read-n-characters-given-read4-ii-call-multiple-times/
+15. https://www.lintcode.com/problem/encode-and-decode-strings/
 
-- https://www.lintcode.com/problem/strings-serialization/
 - https://www.lintcode.com/problem/binary-tree-serialization/
 - https://www.lintcode.com/problem/system-longest-file-path/
 - https://www.lintcode.com/problem/roman-to-integer/

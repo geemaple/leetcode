@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 13/52 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 14/52 | 1 vip |
 
-**Solved**: 481 problems
+**Solved**: 482 problems
 
 ## 类型/Category
 
@@ -910,10 +910,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## String
 
-| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3340](https://leetcode.com/problems/check-balanced-string/) | Check Balanced String | [c++](./leetcode/3340.check-balanced-string.cpp), [python3](./leetcode/3340.check-balanced-string.py) | String | O\(N\) | O\(1\) | - |
 | [Leetcode-796](https://leetcode.com/problems/rotate-string/) | Rotate String | [c++](./leetcode/796.rotate-string.cpp), [python3](./leetcode/796.rotate-string.py) | String | O\(N\) | O\(N\) | - |
+| [Lintcode-659](https://www.lintcode.com/problem/encode-and-decode-strings/) | Encode And Decode Strings | [c++](./lintcode/659.encode-and-decode-strings.cpp), [python3](./lintcode/659.encode-and-decode-strings.py) | String | O\(N\) | O\(1\) | Leetcode-271 |
 | [Lintcode-1790](https://www.lintcode.com/problem/rotate-string-ii/) | Rotate String II | [c++](./lintcode/1790.rotate-string-ii.cpp), [python3](./lintcode/1790.rotate-string-ii.py) | String | O\(N\) | O\(N\) | - |
 
 ## Other
