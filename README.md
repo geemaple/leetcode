@@ -37,11 +37,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [21%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/64 | - |
 | [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
-| [44%] | [leetcode-google.md](./list/leetcode-google.md) | 209/471 | 1 vip |
+| [44%] | [leetcode-google.md](./list/leetcode-google.md) | 209/471 | 2 vips |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | 1 vip |
-| [91%] | [grind169.md](./list/grind169.md) | 155/169 | 3 vips |
+| [91%] | [grind169.md](./list/grind169.md) | 155/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -924,9 +924,25 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-659](https://www.lintcode.com/problem/encode-and-decode-strings/) | Encode And Decode Strings | [c++](./lintcode/659.encode-and-decode-strings.cpp), [python3](./lintcode/659.encode-and-decode-strings.py) | String | O\(N\) | O\(1\) | Leetcode-271 |
 | [Lintcode-1790](https://www.lintcode.com/problem/rotate-string-ii/) | Rotate String II | [c++](./lintcode/1790.rotate-string-ii.cpp), [python3](./lintcode/1790.rotate-string-ii.py) | String | O\(N\) | O\(N\) | - |
 
+## Pandas
+
+| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-2877](https://leetcode.com/problems/create-a-dataframe-from-list/) | Create A Dataframe From List | [python3](./leetcode/2877.create-a-dataframe-from-list.py) | Pandas | N/A | N/A | - |
+| [Leetcode-2881](https://leetcode.com/problems/create-a-new-column/) | Create A New Column | [python3](./leetcode/2881.create-a-new-column.py) | Pandas | N/A | N/A | - |
+| [Leetcode-2879](https://leetcode.com/problems/display-the-first-three-rows/) | Display The First Three Rows | [python3](./leetcode/2879.display-the-first-three-rows.py) | Pandas | N/A | N/A | - |
+| [Leetcode-2878](https://leetcode.com/problems/get-the-size-of-a-dataframe/) | Get The Size Of A Dataframe | [python3](./leetcode/2878.get-the-size-of-a-dataframe.py) | Pandas | N/A | N/A | - |
+| [Leetcode-2880](https://leetcode.com/problems/select-data/) | Select Data | [python3](./leetcode/2880.select-data.py) | Pandas | N/A | N/A | - |
+
+## Database
+
+| Link | Problem(1) | Solution | Tag | Time | Space | Ref |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-175](https://leetcode.com/problems/combine-two-tables/) | Combine Two Tables | [sql](./leetcode/175.combine-two-tables.sql) | Database | N/A | N/A | - |
+
 ## Other
 
-| Link | Problem(123) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(122) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -945,7 +961,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Closest Binary Search Tree Value | [c++](./leetcode/270.closest-binary-search-tree-value.cpp), [python3](./leetcode/270.closest-binary-search-tree-value.py) | Other | \- | \- | - |
 | [Leetcode-39](https://leetcode.com/problems/combination-sum/) | Combination Sum | [c++](./leetcode/39.combination-sum.cpp), [python3](./leetcode/39.combination-sum.py) | Other | \- | \- | - |
 | [Leetcode-377](https://leetcode.com/problems/combination-sum-iv/) | Combination Sum IV | [c++](./leetcode/377.combination-sum-iv.cpp), [python3](./leetcode/377.combination-sum-iv.py) | Other | \- | \- | - |
-| [Leetcode-175](https://leetcode.com/problems/combine-two-tables/) | Combine Two Tables | [sql](./leetcode/175.combine-two-tables.sql) | Other | - | - | - |
 | [Leetcode-829](https://leetcode.com/problems/consecutive-numbers-sum/) | Consecutive Numbers Sum | [python3](./leetcode/829.consecutive-numbers-sum.py) | Other | \- | \- | - |
 | [Leetcode-11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | [python3](./leetcode/11.container-with-most-water.py) | Other | \- | \- | - |
 | [Leetcode-219](https://leetcode.com/problems/contains-duplicate-ii/) | Contains Duplicate II | [c++](./leetcode/219.contains-duplicate-ii.cpp) | Other | \- | \- | - |

@@ -1,3 +1,72 @@
-# Write your MySQL query statement below
-# https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins
-SELECT Person.FirstName, Person.LastName, Address.City, Address.State from Person LEFT JOIN Address on Person.PersonId = Address.PersonId;
+--  Tag: Database
+--  Time: N/A
+--  Space: N/A
+--  Ref: -
+--  Note: -
+
+--  Table: Person
+--  
+--  +-------------+---------+
+--  | Column Name | Type    |
+--  +-------------+---------+
+--  | personId    | int     |
+--  | lastName    | varchar |
+--  | firstName   | varchar |
+--  +-------------+---------+
+--  personId is the primary key (column with unique values) for this table.
+--  This table contains information about the ID of some persons and their first and last names.
+--  
+--   
+--  Table: Address
+--  
+--  +-------------+---------+
+--  | Column Name | Type    |
+--  +-------------+---------+
+--  | addressId   | int     |
+--  | personId    | int     |
+--  | city        | varchar |
+--  | state       | varchar |
+--  +-------------+---------+
+--  addressId is the primary key (column with unique values) for this table.
+--  Each row of this table contains information about the city and state of one person with ID = PersonId.
+--  
+--   
+--  Write a solution to report the first name, last name, city, and state of each person in the Person table. If the address of a personId is not present in the Address table, report null instead.
+--  Return the result table in any order.
+--  The result format is in the following example.
+--   
+--  Example 1:
+--  
+--  Input: 
+--  Person table:
+--  +----------+----------+-----------+
+--  | personId | lastName | firstName |
+--  +----------+----------+-----------+
+--  | 1        | Wang     | Allen     |
+--  | 2        | Alice    | Bob       |
+--  +----------+----------+-----------+
+--  Address table:
+--  +-----------+----------+---------------+------------+
+--  | addressId | personId | city          | state      |
+--  +-----------+----------+---------------+------------+
+--  | 1         | 2        | New York City | New York   |
+--  | 2         | 3        | Leetcode      | California |
+--  +-----------+----------+---------------+------------+
+--  Output: 
+--  +-----------+----------+---------------+----------+
+--  | firstName | lastName | city          | state    |
+--  +-----------+----------+---------------+----------+
+--  | Allen     | Wang     | Null          | Null     |
+--  | Bob       | Alice    | New York City | New York |
+--  +-----------+----------+---------------+----------+
+--  Explanation: 
+--  There is no address in the address table for the personId = 1 so we return null in their city and state.
+--  addressId = 1 contains information about the address of personId = 2.
+--  
+--  
+
+-- Write your MySQL query statement below
+-- https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins
+
+SELECT FirstName, LastName, City, State 
+From Person LEFT JOIN Address on Person.PersonId = Address.PersonId;

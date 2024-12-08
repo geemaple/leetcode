@@ -15,17 +15,22 @@ import sys
 from logger import Logger
 
 COMMENT = {
-    'python3': '# ',
-    'python': '# ',
-    'cpp': '// ',
-    'java': '// '
+    'python3': '#',
+    'python': '#',
+    'cpp': '//',
+    'java': '//',
+    'Pandas': '#',
+    'MySQL': '--',
+
 }
 
 EXTENTION = {
     'python3': 'py',
     'python': 'py',
     'cpp': 'cpp',
-    'java': 'java'
+    'java': 'java',
+    'Pandas': 'py',
+    'MySQL': 'sql',
 }
 
 class Problem:
@@ -52,7 +57,7 @@ class Problem:
 
     def write_comments(self, f, content):
         for c in content:
-            f.write(f'{COMMENT[self.lang]} {c}\n')
+            f.write(f'{COMMENT[self.lang]}  {c}\n')
 
         f.write(f'\n')
 
@@ -148,6 +153,10 @@ def parse_leetcode(url, lang, translate):
     for code in editorData:
         if code['langSlug'].lower() == lang.lower():
             problem.editorData = code['code']
+            break
+    else:
+        problem.editorData = editorData[0]['code']
+        problem.lang = editorData[0]['lang']
 
     if translate:
         question_translattion = {

@@ -56,19 +56,23 @@ TAG_SEGMENT_TREE = 'Segment Tree'
 TAG_UNION_FIND = 'Union Find'
 TAG_TRIE = 'Trie'
 
-FOLD_TAG_ARY = 'Array'
-FOLD_TAG_STR = 'String'
-FOLD_TAG_SET = 'Set'
-FOLD_TAG_TREE = 'Tree'
-FOLD_TAG_GRAPH = 'Graph'
-FOLD_TAG_RECURSION = 'Recursion'
+MISC_TAG_ARY = 'Array'
+MISC_TAG_STR = 'String'
+MISC_TAG_SET = 'Set'
+MISC_TAG_TREE = 'Tree'
+MISC_TAG_GRAPH = 'Graph'
+MISC_TAG_RECURSION = 'Recursion'
 
-CATEGORY_OTHER = 'Other'
+STUDY_TAG_PANDAS = 'Pandas'
+STUDY_TAG_DATABASE = 'Database'
+
+DEFAULT_TAG = 'Other'
 
 ivars = globals()
 SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
-FOLD_STRUCTURES = [ivars[n] for n in ivars if n.startswith('FOLD_TAG')]
-ALL_CATEGORIES =  SHOW_CATEGORIES + FOLD_STRUCTURES + [CATEGORY_OTHER]
+MISC_CATEGORIES = [ivars[n] for n in ivars if n.startswith('MISC_TAG')]
+STUDY_CATEGORIES = [ivars[n] for n in ivars if n.startswith('STUDY_TAG')]
+ALL_CATEGORIES =  SHOW_CATEGORIES + MISC_CATEGORIES + STUDY_CATEGORIES + [DEFAULT_TAG] 
 TAG_MAP = {
     TAG_MATH: [TAG_PROB, TAG_BIT_OP, TAG_DP],
     TAG_DP: [TAG_GAME],
@@ -96,15 +100,16 @@ TAG_REGEX = {
     TAG_HEAP: r'^Heap$|Priority Queue',
     TAG_HASH: r'^Hash Table$|Hash Function',
     TAG_LSWEEP: r'^Line Sweep$|^Sweep Line$',
-    FOLD_TAG_TREE: r'^Tree$|Binary Tree',
-    FOLD_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
-    FOLD_TAG_STR: r'^String$|^String Matching$',
+    MISC_TAG_TREE: r'^Tree$|Binary Tree',
+    MISC_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
+    MISC_TAG_STR: r'^String$|^String Matching$',
 }
 
 EXTENSION = {
     '.cpp': 'c++',
     '.py': 'python3',
     '.java': 'java',
+    '.sql': 'sql',
 }
 
 class Markdown:
@@ -188,8 +193,12 @@ class Markdown:
                     unkown_tags[solution] = tag
 
             duplicates = {x for x in match_all if x in TAG_MAP and any(sub in match_all for sub in TAG_MAP[x])}
-            fold_category = set([x for x in (match_all - duplicates) if x in FOLD_STRUCTURES])
+            fold_category = set([x for x in (match_all - duplicates) if x in MISC_CATEGORIES])
             show_category = match_all - duplicates - fold_category
+            study_category = show_category - show_category
+
+            if len(study_category) > 0:
+                return set(study_category)
 
             if len(show_category) > 0:
                 return set(show_category)
@@ -197,7 +206,7 @@ class Markdown:
             if len(fold_category) > 0:
                 return set(fold_category)
 
-            return {CATEGORY_OTHER}
+            return {DEFAULT_TAG}
 
         category_set = collections.defaultdict(list)
         unkown_tags = {}
@@ -448,9 +457,10 @@ class Problem:
 
             solutions = [s for s in v if s.extension in EXTENSION]
             if len(solutions) > 0:
-                count += 1
                 s1 = solutions[0]
                 source_dict[s1.source] += 1
+                if getattr(s1, 'time') != 'N/A' and getattr(s1, 'space') != 'N/A': 
+                    count += 1
 
                 attributes = ['tags', 'time', 'space', 'note', 'ref']
                 for i in range(1, len(solutions)):
