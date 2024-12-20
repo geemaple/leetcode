@@ -28,7 +28,8 @@
 
 ### 基础、数据结构
 
-- https://www.lintcode.com/problem/missing-interval/
+21. https://www.lintcode.com/problem/missing-ranges/
+
 - https://www.lintcode.com/problem/merge-intervals/
 - https://www.lintcode.com/problem/insert-interval/
 - https://www.lintcode.com/problem/first-position-unique-character/
