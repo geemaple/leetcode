@@ -98,3 +98,9 @@
 62. https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/
 63. https://leetcode.com/problems/sum-of-good-subsequences/
 64. https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/
+
+## [Week 428](https://leetcode.com/contest/weekly-contest-428/)
+65. https://leetcode.com/problems/button-with-longest-push-time/
+66. https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/
+67. https://leetcode.com/problems/count-beautiful-splits-in-an-array/
+68. https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/

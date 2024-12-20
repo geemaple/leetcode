@@ -35,13 +35,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
-| [21%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/64 | - |
+| [20%] | [leetcode-contest.md](./list/leetcode-contest.md) | 14/68 | - |
 | [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
 | [44%] | [leetcode-google.md](./list/leetcode-google.md) | 209/471 | 2 vips |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | 1 vip |
-| [91%] | [grind169.md](./list/grind169.md) | 155/169 | 4 vips |
+| [92%] | [grind169.md](./list/grind169.md) | 156/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 22/52 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 23/52 | 1 vip |
 
-**Solved**: 482 problems
+**Solved**: 483 problems
 
 ## 类型/Category
 
@@ -221,7 +221,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(25) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -232,6 +232,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-134](https://leetcode.com/problems/gas-station/) | Gas Station | [c++](./leetcode/134.gas-station.cpp), [python3](./leetcode/134.gas-station.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-55](https://leetcode.com/problems/jump-game/) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Greedy | O\(N\) | O\(1\) | - |
+| [Leetcode-179](https://leetcode.com/problems/largest-number/) | Largest Number | [c++](./leetcode/179.largest-number.cpp), [python3](./leetcode/179.largest-number.py) | Greedy | O\(NlogN \* K\) | O\(N\) | - |
 | [Leetcode-860](https://leetcode.com/problems/lemonade-change/) | Lemonade Change | [c++](./leetcode/860.lemonade-change.cpp), [python3](./leetcode/860.lemonade-change.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-409](https://leetcode.com/problems/longest-palindrome/) | Longest Palindrome | [c++](./leetcode/409.longest-palindrome.cpp), [python3](./leetcode/409.longest-palindrome.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Greedy | O\(N\) | O\(1\) | - |
@@ -607,7 +608,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(35) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -621,6 +622,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Sorting | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Kth Largest Element In An Array | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Sorting | O\(N\) ～ O\(N^2\) | O\(1\) | - |
 | [Leetcode-378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element In A Sorted Matrix | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python3](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | Sorting | O\(KlogN\) | O\(N\) | - |
+| [Leetcode-179](https://leetcode.com/problems/largest-number/) | Largest Number | [c++](./leetcode/179.largest-number.cpp), [python3](./leetcode/179.largest-number.py) | Sorting | O\(NlogN \* K\) | O\(N\) | - |
 | [Leetcode-524](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) | Longest Word In Dictionary Through Deleting | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python3](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | Sorting | O\(N\*logN \+ M \* N\) | O\(1\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Sorting | O\(NlogN \+ NlogD\) | O\(1\) | - |

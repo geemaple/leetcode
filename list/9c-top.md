@@ -24,7 +24,7 @@
 17. https://leetcode.com/problems/longest-absolute-file-path/
 18. https://leetcode.com/problems/roman-to-integer/
 19. https://leetcode.com/problems/integer-to-roman/
-20. https://www.lintcode.com/problem/identify-celebrity/
+20. https://www.lintcode.com/problem/find-the-celebrity/
 
 ### 基础、数据结构
 
