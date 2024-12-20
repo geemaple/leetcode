@@ -13,54 +13,57 @@ from typing import (
 )
 
 
-import heapq
+from typing import (
+    List,
+)
+# from lintcode import (
+#     Interval,
+# )
+
+"""
+Definition of Interval:
+"""
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+
+
 class Solution:
-    def makeStringGood(self, s: str) -> int:
-        n = len(s)
-        occ = [0 for i in range(26)]
-        
-        for x in s:
-            index = ord(x) - ord('a')
-            occ[index] += 1
+    """
+    @param schedule: a list schedule of employees
+    @return: Return a list of finite intervals 
+    """
+    def employee_free_time(self, schedule: List[List[int]]) -> List[Interval]:
+        # Write your code here
+        works = []
+        for s in schedule:
+            for i in range(0, len(s), 2):
+                works.append((s[i], 'start'))
+                works.append((s[i + 1], 'end'))
 
-        print(occ)
-        low = min(x for x in occ if x != 0)
-        high = max(occ)
-        res = float('inf')
-        for k in range(low, high + 1):
-            op = self.helper(s, k, list(occ))
-            res = min(res, op)
+        works.sort()
+        count = 0
+        low = None
+        res = []
+        for i in range(len(works)):
+            if works[i][1] == 'start':
+                count += 1
+                if count == 1 and low is not None:
+                    if low < works[i][0]:
+                        res.append(Interval(low, works[i][0]))
+            else:
+                count -= 1
+                if count == 0:
+                    low = works[i][0]
+
         return res
-
-    def helper(self, s: str, k: int, occ: list) -> int:
-        
-        dp = [[float('inf'), float('inf')] for i in range(27)]
-        dp[0] = [0, 0]
-
-        for i in range(1, 27):
-            if occ[i - 1] == 0 or occ[i - 1] == k:
-                dp[i][0] = dp[i][1] = min(dp[i - 1])
-                continue
-            
-            # op1
-            dp[i][1] = min(dp[i - 1]) + (occ[i - 1] - k if occ[i - 1] > k else occ[i - 1])
-
-            if occ[i - 1] < k:
-                # op2
-                dp[i][0] = min(dp[i - 1]) + (k - occ[i - 1])
-                if i - 2 >= 0:
-                    op = occ[i - 2] - k if occ[i - 2] >= k else occ[i - 2]
-                    res = dp[i - 1][1] + max(k - occ[i - 1] - op, 0)
-                    dp[i][0] = min(dp[i][0], res)
-
-        print(dp, k)
-        return min(dp[-1])
 
 
 s = Solution()
 ts = datetime.now()
 
-res = s.makeStringGood("aaabbc")
+res = s.employee_free_time([[1,2,5,6],[1,3],[4,10]])
 
 print(datetime.now() - ts)
 print(res)

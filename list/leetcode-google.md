@@ -16,7 +16,7 @@
 12. https://leetcode.com/problems/count-pairs-with-xor-in-a-range/
 13. https://leetcode.com/problems/shortest-bridge/
 14. https://leetcode.com/problems/odd-even-jump/
-15. https://leetcode.com/problems/employee-free-time/
+15. https://www.lintcode.com/problem/employee-free-time/
 16. https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
 17. https://leetcode.com/problems/new-21-game/
 18. https://leetcode.com/problems/largest-color-value-in-a-directed-graph/

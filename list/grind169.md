@@ -160,7 +160,7 @@
 156. https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 157. https://leetcode.com/problems/longest-valid-parentheses/
 158. https://leetcode.com/problems/design-in-memory-file-system/
-159. https://leetcode.com/problems/employee-free-time/
+159. https://www.lintcode.com/problem/employee-free-time/
 160. https://leetcode.com/problems/word-search-ii/
 161. https://leetcode.com/problems/alien-dictionary/
 162. https://leetcode.com/problems/bus-routes/
