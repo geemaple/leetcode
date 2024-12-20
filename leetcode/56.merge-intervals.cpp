@@ -1,49 +1,51 @@
-/**
- * Definition for an interval.
- * struct Interval {
- *     int start;
- *     int end;
- *     Interval() : start(0), end(0) {}
- *     Interval(int s, int e) : start(s), end(e) {}
- * };
- */
+//  Tag: Array, Sorting
+//  Time: O(NlogN)
+//  Space: O(1)
+//  Ref: -
+//  Note: -
+
+//  Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+//   
+//  Example 1:
+//  
+//  Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+//  Output: [[1,6],[8,10],[15,18]]
+//  Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+//  
+//  Example 2:
+//  
+//  Input: intervals = [[1,4],[4,5]]
+//  Output: [[1,5]]
+//  Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+//  
+//   
+//  Constraints:
+//  
+//  1 <= intervals.length <= 104
+//  intervals[i].length == 2
+//  0 <= starti <= endi <= 104
+//  
+//  
+
 class Solution {
-
-private:
-    static bool cmp(Interval &left, Interval &right)
-    {
-        return left.start < right.start;
-    }
 public:
-    vector<Interval> merge(vector<Interval>& intervals) {
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        int n = intervals.size();
+        sort(intervals.begin(), intervals.end());
+        int low = intervals[0][0];
+        int high = intervals[0][1];
 
-        sort(intervals.begin(), intervals.end(), cmp);
-
-        vector<Interval> res;
-        if (intervals.size() == 0)
-        {
-            return res;
-        }
-
-        int start = intervals[0].start;
-        int end = intervals[0].end;
-        for (auto i = 1; i < intervals.size(); ++i)
-        {
-            if (end >= intervals[i].start)
-            {
-                end = max(end, intervals[i].end);
+        vector<vector<int>> res;
+        for (int i = 1; i < n; i++) {
+            if (intervals[i][0] <= high) {
+                high = max(high, intervals[i][1]);
+            } else {
+                res.push_back({low, high});
+                low = intervals[i][0];
+                high = intervals[i][1];
             }
-            else
-            {
-                Interval ans(start, end);
-                res.push_back(ans);
-                start = intervals[i].start;
-                end = intervals[i].end;
-            }   
         }
-
-        Interval ans(start, end);
-        res.push_back(ans);
+        res.push_back({low, high});
         return res;
     }
 };

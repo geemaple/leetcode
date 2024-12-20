@@ -51,7 +51,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 19/52 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 21/52 | 1 vip |
 
 **Solved**: 482 problems
 
@@ -605,7 +605,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(33) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -624,6 +624,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Sorting | O\(NlogN \+ NlogD\) | O\(1\) | - |
 | [Leetcode-646](https://leetcode.com/problems/maximum-length-of-pair-chain/) | Maximum Length Of Pair Chain | [c++](./leetcode/646.maximum-length-of-pair-chain.cpp), [python3](./leetcode/646.maximum-length-of-pair-chain.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1235](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | Maximum Profit In Job Scheduling | [c++](./leetcode/1235.maximum-profit-in-job-scheduling.cpp), [python3](./leetcode/1235.maximum-profit-in-job-scheduling.py) | Sorting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-56](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | [c++](./leetcode/56.merge-intervals.cpp), [python3](./leetcode/56.merge-intervals.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-23](https://leetcode.com/problems/merge-k-sorted-lists/) | Merge K Sorted Lists | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Sorting | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-88](https://leetcode.com/problems/merge-sorted-array/) | Merge Sorted Array | [c++](./leetcode/88.merge-sorted-array.cpp), [python3](./leetcode/88.merge-sorted-array.py) | Sorting | O\(M \+ N\) | O\(1\) | - |
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Sorting | O\(NlogN\) | O\(1\) | - |
@@ -911,10 +912,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(6) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2210](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Count Hills And Valleys In An Array | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python3](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3285](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Find Indices Of Stable Mountains | [c++](./leetcode/3285.find-indices-of-stable-mountains.cpp), [python3](./leetcode/3285.find-indices-of-stable-mountains.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-57](https://leetcode.com/problems/insert-interval/) | Insert Interval | [c++](./leetcode/57.insert-interval.cpp), [python3](./leetcode/57.insert-interval.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-238](https://leetcode.com/problems/product-of-array-except-self/) | Product Of Array Except Self | [c++](./leetcode/238.product-of-array-except-self.cpp), [python3](./leetcode/238.product-of-array-except-self.py) | Array | O\(N\) | O\(1\) | - |
@@ -947,7 +949,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(121) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(119) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
@@ -987,7 +989,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-832](https://leetcode.com/problems/flipping-an-image/) | Flipping An Image | [python3](./leetcode/832.flipping-an-image.py) | Other | \- | \- | - |
 | [Leetcode-289](https://leetcode.com/problems/game-of-life/) | Game Of Life | [python3](./leetcode/289.game-of-life.py) | Other | \- | \- | - |
 | [Leetcode-249](https://leetcode.com/problems/group-shifted-strings/) | Group Shifted Strings | [c++](./leetcode/249.group-shifted-strings.cpp) | Other | \- | \- | - |
-| [Leetcode-57](https://leetcode.com/problems/insert-interval/) | Insert Interval | [c++](./leetcode/57.insert-interval.cpp), [python3](./leetcode/57.insert-interval.py) | Other | \- | \- | - |
 | [Leetcode-273](https://leetcode.com/problems/integer-to-english-words/) | Integer To English Words | [python3](./leetcode/273.integer-to-english-words.py) | Other | \- | \- | - |
 | [Leetcode-349](https://leetcode.com/problems/intersection-of-two-arrays/) | Intersection Of Two Arrays | [c++](./leetcode/349.intersection-of-two-arrays.cpp), [python3](./leetcode/349.intersection-of-two-arrays.py) | Other | \- | \- | - |
 | [Leetcode-350](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | Intersection Of Two Arrays II | [c++](./leetcode/350.intersection-of-two-arrays-ii.cpp), [python3](./leetcode/350.intersection-of-two-arrays-ii.py) | Other | \- | \- | - |
@@ -1007,7 +1008,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-677](https://leetcode.com/problems/map-sum-pairs/) | Map Sum Pairs | [c++](./leetcode/677.map-sum-pairs.cpp), [python3](./leetcode/677.map-sum-pairs.py) | Other | \- | \- | - |
 | [Leetcode-485](https://leetcode.com/problems/max-consecutive-ones/) | Max Consecutive Ones | [c++](./leetcode/485.max-consecutive-ones.cpp) | Other | \- | \- | - |
 | [Leetcode-654](https://leetcode.com/problems/maximum-binary-tree/) | Maximum Binary Tree | [c++](./leetcode/654.maximum-binary-tree.cpp), [python3](./leetcode/654.maximum-binary-tree.py) | Other | \- | \- | - |
-| [Leetcode-56](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | [c++](./leetcode/56.merge-intervals.cpp), [python3](./leetcode/56.merge-intervals.py) | Other | \- | \- | - |
 | [Leetcode-924](https://leetcode.com/problems/minimize-malware-spread/) | Minimize Malware Spread | [python3](./leetcode/924.minimize-malware-spread.py) | Other | \- | \- | - |
 | [Leetcode-928](https://leetcode.com/problems/minimize-malware-spread-ii/) | Minimize Malware Spread II | [python3](./leetcode/928.minimize-malware-spread-ii.py) | Other | \- | \- | - |
 | [Leetcode-433](https://leetcode.com/problems/minimum-genetic-mutation/) | Minimum Genetic Mutation | [c++](./leetcode/433.minimum-genetic-mutation.cpp), [python3](./leetcode/433.minimum-genetic-mutation.py) | Other | \- | \- | - |

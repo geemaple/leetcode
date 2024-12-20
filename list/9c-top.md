@@ -29,9 +29,9 @@
 ### 基础、数据结构
 
 21. https://www.lintcode.com/problem/missing-ranges/
+22. https://leetcode.com/problems/merge-intervals/
+23. https://leetcode.com/problems/insert-interval/
 
-- https://www.lintcode.com/problem/merge-intervals/
-- https://www.lintcode.com/problem/insert-interval/
 - https://www.lintcode.com/problem/first-position-unique-character/
 - https://www.lintcode.com/problem/substring-anagrams/
 - https://www.lintcode.com/problem/word-abbreviation-set/
