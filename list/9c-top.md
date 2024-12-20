@@ -31,8 +31,8 @@
 21. https://www.lintcode.com/problem/missing-ranges/
 22. https://leetcode.com/problems/merge-intervals/
 23. https://leetcode.com/problems/insert-interval/
+24. https://leetcode.com/problems/first-unique-character-in-a-string/
 
-- https://www.lintcode.com/problem/first-position-unique-character/
 - https://www.lintcode.com/problem/substring-anagrams/
 - https://www.lintcode.com/problem/word-abbreviation-set/
 - https://www.lintcode.com/problem/longest-consecutive-sequence/
