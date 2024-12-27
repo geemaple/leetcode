@@ -41,7 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | 1 vip |
-| [92%] | [grind169.md](./list/grind169.md) | 157/169 | 4 vips |
+| [93%] | [grind169.md](./list/grind169.md) | 158/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 29/54 | 1 vip |
 
-**Solved**: 486 problems
+**Solved**: 487 problems
 
 ## 类型/Category
 
@@ -558,7 +558,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(29) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(30) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Two Pointers | O\(N^3\) | O\(1\) | - |
@@ -583,6 +583,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Two Pointers | O\(NlogN\) | O\(logN\) | - |
+| [Leetcode-977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares Of A Sorted Array | [c++](./leetcode/977.squares-of-a-sorted-array.cpp), [python3](./leetcode/977.squares-of-a-sorted-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-42](https://leetcode.com/problems/trapping-rain-water/) | Trapping Rain Water | [c++](./leetcode/42.trapping-rain-water.cpp), [python3](./leetcode/42.trapping-rain-water.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Two Pointers | O\(N\) | O\(1\) | - |
@@ -609,7 +610,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(35) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(36) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -640,6 +641,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-354](https://leetcode.com/problems/russian-doll-envelopes/) | Russian Doll Envelopes | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python3](./leetcode/354.russian-doll-envelopes.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
+| [Leetcode-977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares Of A Sorted Array | [c++](./leetcode/977.squares-of-a-sorted-array.cpp), [python3](./leetcode/977.squares-of-a-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | [c++](./leetcode/242.valid-anagram.cpp), [python3](./leetcode/242.valid-anagram.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [c++](./leetcode/324.wiggle-sort-ii.cpp), [python3](./leetcode/324.wiggle-sort-ii.py) | Sorting | \- | \- | - |
 | [Lintcode-920](https://www.lintcode.com/problem/meeting-rooms/) | Meeting Rooms | [c++](./lintcode/920.meeting-rooms.cpp), [python3](./lintcode/920.meeting-rooms.py) | Sorting | O\(NlogN\) | O\(1\) | Leetcode-252 |
