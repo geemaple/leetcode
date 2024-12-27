@@ -32,9 +32,14 @@
 22. https://leetcode.com/problems/merge-intervals/
 23. https://leetcode.com/problems/insert-interval/
 24. https://leetcode.com/problems/first-unique-character-in-a-string/
+25. https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
-- https://www.lintcode.com/problem/substring-anagrams/
-- https://www.lintcode.com/problem/word-abbreviation-set/
+- https://leetcode.com/problems/sliding-window-median/
+- https://leetcode.com/problems/sliding-window-maximum/
+
+28. https://www.lintcode.com/problem/unique-word-abbreviation/
+
+
 - https://www.lintcode.com/problem/longest-consecutive-sequence/
 - https://www.lintcode.com/problem/valid-parentheses/
 - https://www.lintcode.com/problem/load-balancer/

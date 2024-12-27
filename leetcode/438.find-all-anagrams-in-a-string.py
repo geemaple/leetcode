@@ -40,7 +40,7 @@ class Solution:
         counter = Counter(p)
         left = len(p)
         res = []
-        tmp = {}
+
         j = 0
         for i in range(n):
             if s[i] in counter:

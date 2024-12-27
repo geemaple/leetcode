@@ -13,34 +13,48 @@ using namespace std;
 #include <vector>
 #include <string>
 
-int read4(char* buf);
-
-class Solution {
+class ValidWordAbbr {
 public:
-    /**
-     * @param buf: destination
-     * @param n: the number of characters that need to be read
-     * @return: the number of characters read
-     */
-    char tmp[4];
-    int read(char* &buf, int n) {
-        // write you code here
-        int total = 0;
-        
-        while (total < n) {
-            int count = read4(tmp);
-            if (count == 0) {
-                break;
-            }
-            int read = min(count, n - total);
-            for (int i = 0; i < read; i++) {
-                buf[total + i] = tmp[i];
-            }
-            total += read;
+    /*
+    * @param dictionary: a list of words
+    */
+    unordered_map<string, unordered_set<string>> word_map;
+    ValidWordAbbr(vector<string> dictionary) {
+        // do intialization if necessary
+        for (auto &x: dictionary) {
+            word_map[abbreviate(x)].insert(x);
         }
-        return total;
+    }
+
+    /*
+     * @param word: a string
+     * @return: true if its abbreviation is unique or false
+     */
+    bool isUnique(string &word) {
+        // write your code here
+        string ab = abbreviate(word);
+        return word_map[ab].size() == 0 || (word_map[ab].size() == 1 && word_map[ab].count(word) > 0);
+    }
+
+    string abbreviate(string &word) {
+        if (word.size() <= 2) {
+            return word;
+        } else {
+            return word[0] + to_string(word.size() - 2) + word.back();
+        }
     }
 };
+
+/**
+ * Your ValidWordAbbr object will be instantiated and called as such:
+ * ValidWordAbbr obj = new ValidWordAbbr(dictionary);
+ * bool param = obj.isUnique(word);
+ */
+/**
+ * Your ValidWordAbbr object will be instantiated and called as such:
+ * ValidWordAbbr obj = new ValidWordAbbr(dictionary);
+ * bool param = obj.isUnique(word);
+ */
 
 int main() {
     vector<vector<int>> matrix = {
