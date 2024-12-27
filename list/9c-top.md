@@ -36,9 +36,8 @@
 26. https://leetcode.com/problems/sliding-window-median/
 27. https://leetcode.com/problems/sliding-window-maximum/
 28. https://www.lintcode.com/problem/unique-word-abbreviation/
+29. https://leetcode.com/problems/longest-consecutive-sequence/
 
-
-- https://www.lintcode.com/problem/longest-consecutive-sequence/
 - https://www.lintcode.com/problem/valid-parentheses/
 - https://www.lintcode.com/problem/load-balancer/
 - https://www.lintcode.com/problem/guess-number-game/

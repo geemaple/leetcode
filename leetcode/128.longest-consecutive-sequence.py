@@ -28,29 +28,33 @@
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        cache = set(nums)
+        nums = set(nums)
         res = 0
-        while len(cache) > 0:
-            x = next(iter(cache))
-            cache.remove(x)
-            count = 1
+        for x in nums:
+            if x - 1 not in nums:
+                y = x + 1
 
-            b = x + 1
-            while b in cache:
-                cache.remove(b)
-                b += 1
-                count += 1
+                while y in nums:
+                    y += 1
 
-            s = x - 1
-            while s in cache:
-                cache.remove(s)
-                s -= 1
-                count += 1
-
-            res = max(res, count)
+                res = max(res, y - x)
 
         return res
         
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        count = {}
+        res = 0
+        for x in nums:
+            if x not in count:
+                total = count.get(x - 1, 0) + 1 + count.get(x + 1, 0)
+                count[x] = total
+                # update left right border
+                count[x - count.get(x - 1, 0)] = total
+                count[x + count.get(x + 1, 0)] = total
+                res = max(res, total)
+
+        return res
 
 class UnionFind:
     def __init__(self, n):

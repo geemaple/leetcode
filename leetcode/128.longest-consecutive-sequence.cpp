@@ -29,29 +29,41 @@
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        unordered_set<int> cache(nums.begin(), nums.end());
+        unordered_set<int> num_set(nums.begin(), nums.end());
         int res = 0;
-        while (!cache.empty()) {
-            int x = *(cache.begin());
-            cache.erase(x);
-            int count = 1;
+        for (int x: num_set) {
+            if (num_set.count(x - 1) == 0) {
+                int y = x + 1;
+                while (num_set.count(y) > 0) {
+                    y += 1;
+                }
 
-            int b = x + 1;
-            while (cache.count(b) > 0) {
-                cache.erase(b);
-                count += 1;
-                b += 1;
+                res = max(res, y - x);
             }
-
-            int s = x - 1;
-            while (cache.count(s) > 0) {
-                cache.erase(s);
-                count += 1;
-                s -= 1;
-            }
-
-            res = max(res, count);
         }
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        unordered_map<int, int> count;
+        int res = 0;
+
+        for (int x: nums) {
+            if (count[x] == 0) {
+                int total = count[x - 1] + 1 + count[x + 1];
+                count[x] = total;
+                // update left right boarder
+                count[x - count[x - 1]] = total;
+                count[x + count[x + 1]] = total;
+
+                res = max(res, total);
+            }
+        }
+
         return res;
     }
 };
