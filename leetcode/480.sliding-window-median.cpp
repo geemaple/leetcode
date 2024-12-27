@@ -102,3 +102,60 @@ public:
         }
     }
 };
+
+class Solution {
+public:
+    vector<double> medianSlidingWindow(vector<int>& nums, int k) {
+        priority_queue<pair<int, int>, vector<pair<int, int>>,
+                       function<bool(const pair<int, int>&, const pair<int, int>&)>>
+            max_heap([](const pair<int, int>& a, const pair<int, int>& b) {
+                return a.first < b.first || (a.first == b.first && a.second > b.second);
+            });
+
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+        
+        for (int i = 0; i < k; i++) {
+            max_heap.emplace(nums[i], i);
+        }
+
+        for (int i = 0; i < k / 2; i++) {
+            auto [number, index] = max_heap.top();
+            max_heap.pop();
+            min_heap.emplace(number, index);
+        }
+        vector<double> res;
+        double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
+        res.push_back(val);
+
+        for (int i = k; i < nums.size(); i++) {
+            if (nums[i] <= max_heap.top().first) {
+                max_heap.emplace(nums[i], i);
+                if (nums[i - k] >= max_heap.top().first) {
+                    auto [number, index] = max_heap.top();
+                    max_heap.pop();
+                    min_heap.emplace(number, index);
+                }
+            } else {
+                min_heap.emplace(nums[i], i);
+                if (nums[i - k] <= max_heap.top().first) {
+                    auto [number, index] = min_heap.top();
+                    min_heap.pop();
+                    max_heap.emplace(number, index);
+                }
+            }
+
+            while (!max_heap.empty() && max_heap.top().second <= i - k) {
+                max_heap.pop();
+            }
+
+            while (!min_heap.empty() && min_heap.top().second <= i - k) {
+                min_heap.pop();
+            }
+
+            double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
+            res.push_back(val);
+        }
+
+        return res;
+    }
+};

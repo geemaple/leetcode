@@ -13,38 +13,86 @@ using namespace std;
 #include <vector>
 #include <string>
 
-class ValidWordAbbr {
+#include <vector>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+template <typename T>
+void printHeap(priority_queue<T> heap) {
+    cout << "Heap elements (max-heap order): ";
+    while (!heap.empty()) {
+        cout << heap.top().first << "," <<  heap.top().second << " ";
+        heap.pop();  // Pop from the copied heap
+    }
+    cout << endl;
+}
+
+template <typename T, typename Comparator>
+void printHeap(priority_queue<T, vector<T>, Comparator> heap) {
+    cout << "Heap elements (custom order): ";
+    while (!heap.empty()) {
+        cout << heap.top().first << "," <<  heap.top().second << " ";
+        heap.pop();  // Pop from the copied heap
+    }
+    cout << endl;
+}
+
+class Solution {
 public:
-    /*
-    * @param dictionary: a list of words
-    */
-    unordered_map<string, unordered_set<string>> word_map;
-    ValidWordAbbr(vector<string> dictionary) {
-        // do intialization if necessary
-        for (auto &x: dictionary) {
-            word_map[abbreviate(x)].insert(x);
+    vector<double> medianSlidingWindow(vector<int>& nums, int k) {
+        priority_queue<pair<int, int>> max_heap;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+        
+        
+        for (int i = 0; i < k; i++) {
+            max_heap.emplace(nums[i], i);
         }
+
+        for (int i = 0; i < k / 2; i++) {
+            auto [number, index] = max_heap.top();
+            max_heap.pop();
+            min_heap.emplace(number, index);
+        }
+        vector<double> res;
+        res.push_back(median(max_heap, min_heap, k));
+
+        for (int i = k; i < nums.size(); i++) {
+            if (nums[i] <= max_heap.top().first) {
+                max_heap.emplace(nums[i], i);
+                if (nums[i - k] >= min_heap.top().first) {
+                    auto [number, index] = max_heap.top();
+                    max_heap.pop();
+                    min_heap.emplace(number, index);
+                }
+            } else {
+                min_heap.emplace(nums[i], i);
+                if (nums[i - k] <= max_heap.top().first) {
+                    auto [number, index] = min_heap.top();
+                    min_heap.pop();
+                    max_heap.emplace(number, index);
+                }
+            }
+
+            while (!max_heap.empty() && max_heap.top().second <= i - k) {
+                max_heap.pop();
+            }
+
+            while (!min_heap.empty() && min_heap.top().second <= i - k) {
+                min_heap.pop();
+            }
+
+            res.push_back(median(max_heap, min_heap, k));
+        }
+
+        return res;
     }
 
-    /*
-     * @param word: a string
-     * @return: true if its abbreviation is unique or false
-     */
-    bool isUnique(string &word) {
-        // write your code here
-        string ab = abbreviate(word);
-        return word_map[ab].size() == 0 || (word_map[ab].size() == 1 && word_map[ab].count(word) > 0);
-    }
-
-    string abbreviate(string &word) {
-        if (word.size() <= 2) {
-            return word;
-        } else {
-            return word[0] + to_string(word.size() - 2) + word.back();
-        }
+    double median(priority_queue<pair<int, int>>& max_heap, priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>& min_heap, int k) {
+        return (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
     }
 };
-
 /**
  * Your ValidWordAbbr object will be instantiated and called as such:
  * ValidWordAbbr obj = new ValidWordAbbr(dictionary);
@@ -66,16 +114,17 @@ int main() {
     
     
     
-    vector<int> start = {1,2,3,3};
+    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
     vector<int> end = {3,4,5,6};
     vector<int> profit = {50,10,40,70};
     Solution s;
-    int res = s.longestValidParentheses("())");
-    cout << res << endl;
-//    for (int word : res) {
-//        cout << to_string(word) << ", ";
-//    }
-//    cout << endl;
+    vector<double> res = s.medianSlidingWindow(nums, 3);
+    
+
+    for (int word : res) {
+        cout << to_string(word) << ", ";
+    }
+    cout << endl;
     
     return 0;
 }

@@ -33,10 +33,8 @@
 23. https://leetcode.com/problems/insert-interval/
 24. https://leetcode.com/problems/first-unique-character-in-a-string/
 25. https://leetcode.com/problems/find-all-anagrams-in-a-string/
-
-- https://leetcode.com/problems/sliding-window-median/
-- https://leetcode.com/problems/sliding-window-maximum/
-
+26. https://leetcode.com/problems/sliding-window-median/
+27. https://leetcode.com/problems/sliding-window-maximum/
 28. https://www.lintcode.com/problem/unique-word-abbreviation/
 
 
