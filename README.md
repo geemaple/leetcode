@@ -36,12 +36,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | ----- | ----- | ----- | ----- |
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [23%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/68 | - |
-| [44%] | [leetcode-75.md](./list/leetcode-75.md) | 33/75 | - |
-| [44%] | [leetcode-google.md](./list/leetcode-google.md) | 210/471 | 2 vips |
+| [45%] | [leetcode-75.md](./list/leetcode-75.md) | 34/75 | - |
+| [45%] | [leetcode-google.md](./list/leetcode-google.md) | 212/471 | 2 vips |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [88%] | [neetcode150.md](./list/neetcode150.md) | 133/150 | 1 vip |
-| [93%] | [grind169.md](./list/grind169.md) | 158/169 | 4 vips |
+| [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | 1 vip |
+| [94%] | [grind169.md](./list/grind169.md) | 160/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 29/54 | 1 vip |
 
-**Solved**: 487 problems
+**Solved**: 489 problems
 
 ## 类型/Category
 
@@ -175,10 +175,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
+| [Leetcode-735](https://leetcode.com/problems/asteroid-collision/) | Asteroid Collision | [c++](./leetcode/735.asteroid-collision.cpp), [python3](./leetcode/735.asteroid-collision.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape The Matrix | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Simulation | O\(N\) | O\(K\) | - |
 | [Lintcode-849](https://www.lintcode.com/problem/basic-calculator-iii/) | Basic Calculator III | [c++](./lintcode/849.basic-calculator-iii.cpp), [python3](./lintcode/849.basic-calculator-iii.py) | Simulation | O\(N\) | O\(1\) | Leetcode-772 |
@@ -252,7 +253,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(71) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(72) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -283,6 +284,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-97](https://leetcode.com/problems/interleaving-string/) | Interleaving String | [c++](./leetcode/97.interleaving-string.cpp), [python3](./leetcode/97.interleaving-string.py) | Dynamic Programming | O\(NM\) | O\(M\) | - |
 | [Leetcode-55](https://leetcode.com/problems/jump-game/) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | [c++](./leetcode/1143.longest-common-subsequence.cpp), [python3](./leetcode/1143.longest-common-subsequence.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
+| [Leetcode-329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Longest Increasing Path In A Matrix | [c++](./leetcode/329.longest-increasing-path-in-a-matrix.cpp), [python3](./leetcode/329.longest-increasing-path-in-a-matrix.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-300](https://leetcode.com/problems/longest-increasing-subsequence/) | Longest Increasing Subsequence | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python3](./leetcode/300.longest-increasing-subsequence.py) | Dynamic Programming | O\(N\*logN\) | O\(N\) | - |
 | [Leetcode-516](https://leetcode.com/problems/longest-palindromic-subsequence/) | Longest Palindromic Subsequence | [c++](./leetcode/516.longest-palindromic-subsequence.cpp), [python3](./leetcode/516.longest-palindromic-subsequence.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-5](https://leetcode.com/problems/longest-palindromic-substring/) | Longest Palindromic Substring | [c++](./leetcode/5.longest-palindromic-substring.cpp), [python3](./leetcode/5.longest-palindromic-substring.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
@@ -474,8 +476,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Stack
 
-| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(23) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-735](https://leetcode.com/problems/asteroid-collision/) | Asteroid Collision | [c++](./leetcode/735.asteroid-collision.cpp), [python3](./leetcode/735.asteroid-collision.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | [c++](./leetcode/224.basic-calculator.cpp), [python3](./leetcode/224.basic-calculator.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-227](https://leetcode.com/problems/basic-calculator-ii/) | Basic Calculator II | [c++](./leetcode/227.basic-calculator-ii.cpp), [python3](./leetcode/227.basic-calculator-ii.py) | Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Stack | O\(1\) | O\(H\) | - |
@@ -795,9 +798,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Topological Sort
 
-| Link | Problem(2) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-210](https://leetcode.com/problems/course-schedule-ii/) | Course Schedule II | [c++](./leetcode/210.course-schedule-ii.cpp), [python3](./leetcode/210.course-schedule-ii.py) | Topological Sort | O\(E\+V\) | O\(E\+V\) | - |
+| [Leetcode-329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Longest Increasing Path In A Matrix | [c++](./leetcode/329.longest-increasing-path-in-a-matrix.cpp), [python3](./leetcode/329.longest-increasing-path-in-a-matrix.py) | Topological Sort | O\(NM\) | O\(NM\) | - |
 | [Leetcode-310](https://leetcode.com/problems/minimum-height-trees/) | Minimum Height Trees | [c++](./leetcode/310.minimum-height-trees.cpp), [python3](./leetcode/310.minimum-height-trees.py) | Topological Sort | O\(N\) | O\(N\) | - |
 
 ## Shortest Path
