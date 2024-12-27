@@ -39,8 +39,7 @@
 #  
 #  
 
-import heapq
-
+from collections import defaultdict
 class Solution:
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
         n = len(nums)
@@ -48,38 +47,89 @@ class Solution:
         min_heap = []
 
         for i in range(k):
-            heapq.heappush(max_heap, (-nums[i], i))
+            heapq.heappush(max_heap, -nums[i])
         
         for _ in range(k >> 1): 
-            x, i = heapq.heappop(max_heap)
-            heapq.heappush(min_heap, (-x, i))
+            heapq.heappush(min_heap, -heapq.heappop(max_heap))
 
         ans = [self.get_med(max_heap, min_heap, k)]
+        
+        table = defaultdict(int)
 
         for i in range(k, n):
-            x = nums[i]
-            if x <= -max_heap[0][0]:
-                heapq.heappush(max_heap, (-x, i))
-                if nums[i - k] >= -max_heap[0][0]:
-                    self.move(max_heap, min_heap)
-            else:
-                heapq.heappush(min_heap, (x, i))
-                if nums[i - k] <= -max_heap[0][0]:
-                    self.move(min_heap, max_heap)
+            out_num = nums[i - k]
+            in_num = nums[i]
+            balance = -1 if out_num <= -max_heap[0] else 1
+            table[out_num] += 1
 
-            while max_heap and max_heap[0][1] <= i - k: 
+            if in_num <= -max_heap[0]:
+                balance += 1
+                heapq.heappush(max_heap, -in_num)
+            else:
+                balance -= 1
+                heapq.heappush(min_heap, in_num)
+
+            if balance < 0:
+                heapq.heappush(max_heap, -heapq.heappop(min_heap))
+
+            if balance > 0:
+                heapq.heappush(min_heap, -heapq.heappop(max_heap))
+
+            while (table[-max_heap[0]] > 0):
+                table[-max_heap[0]] -= 1
                 heapq.heappop(max_heap)
-            while min_heap and min_heap[0][1] <= i - k: 
+
+            while (len(min_heap) > 0 and table[min_heap[0]] > 0):
+                table[min_heap[0]] -= 1
                 heapq.heappop(min_heap)
 
             ans.append(self.get_med(max_heap, min_heap, k))
         
         return ans
-
-    def move(self, h1, h2):
-        x, i = heapq.heappop(h1)
-        heapq.heappush(h2, (-x, i))
     
     def get_med(self, max_heap, min_heap, k):
-        return -max_heap[0][0] * 1.0 if k & 1 else (min_heap[0][0] - max_heap[0][0]) / 2.0
+        return -max_heap[0] * 1.0 if k & 1 else (min_heap[0] - max_heap[0]) / 2.0
+
+# import heapq
+# class Solution:
+#     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
+#         n = len(nums)
+#         max_heap = []
+#         min_heap = []
+
+#         for i in range(k):
+#             heapq.heappush(max_heap, (-nums[i], i))
+        
+#         for _ in range(k >> 1): 
+#             x, i = heapq.heappop(max_heap)
+#             heapq.heappush(min_heap, (-x, i))
+
+#         ans = [self.get_med(max_heap, min_heap, k)]
+
+#         for i in range(k, n):
+#             x = nums[i]
+#             if x <= -max_heap[0][0]:
+#                 heapq.heappush(max_heap, (-x, i))
+#                 if nums[i - k] >= -max_heap[0][0]:
+#                     self.move(max_heap, min_heap)
+#             else:
+#                 heapq.heappush(min_heap, (x, i))
+#                 if nums[i - k] <= -max_heap[0][0]:
+#                     self.move(min_heap, max_heap)
+
+#             while max_heap and max_heap[0][1] <= i - k: 
+#                 heapq.heappop(max_heap)
+#             while min_heap and min_heap[0][1] <= i - k: 
+#                 heapq.heappop(min_heap)
+
+#             ans.append(self.get_med(max_heap, min_heap, k))
+        
+#         return ans
+
+#     def move(self, h1, h2):
+#         x, i = heapq.heappop(h1)
+#         heapq.heappush(h2, (-x, i))
+    
+#     def get_med(self, max_heap, min_heap, k):
+#         return -max_heap[0][0] * 1.0 if k & 1 else (min_heap[0][0] - max_heap[0][0]) / 2.0
 

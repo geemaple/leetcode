@@ -106,56 +106,120 @@ public:
 class Solution {
 public:
     vector<double> medianSlidingWindow(vector<int>& nums, int k) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>,
-                       function<bool(const pair<int, int>&, const pair<int, int>&)>>
-            max_heap([](const pair<int, int>& a, const pair<int, int>& b) {
-                return a.first < b.first || (a.first == b.first && a.second > b.second);
-            });
-
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+        priority_queue<int> max_heap;
+        priority_queue<int, vector<int>, greater<int>> min_heap;
+        unordered_map<int, int> table;
+        vector<double> res;
         
         for (int i = 0; i < k; i++) {
-            max_heap.emplace(nums[i], i);
+            max_heap.push(nums[i]);
         }
 
         for (int i = 0; i < k / 2; i++) {
-            auto [number, index] = max_heap.top();
+            min_heap.push(max_heap.top());
             max_heap.pop();
-            min_heap.emplace(number, index);
         }
-        vector<double> res;
-        double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
-        res.push_back(val);
-
+        res.push_back(median(max_heap, min_heap, k));
+        
         for (int i = k; i < nums.size(); i++) {
-            if (nums[i] <= max_heap.top().first) {
-                max_heap.emplace(nums[i], i);
-                if (nums[i - k] >= max_heap.top().first) {
-                    auto [number, index] = max_heap.top();
-                    max_heap.pop();
-                    min_heap.emplace(number, index);
-                }
+            int out_num = nums[i - k];
+            int in_num = nums[i];
+
+            int balance = out_num <= max_heap.top() ? -1 : 1;
+            table[out_num] += 1;
+
+            if (in_num <= max_heap.top()) {
+                balance += 1;
+                max_heap.push(in_num);
             } else {
-                min_heap.emplace(nums[i], i);
-                if (nums[i - k] <= max_heap.top().first) {
-                    auto [number, index] = min_heap.top();
-                    min_heap.pop();
-                    max_heap.emplace(number, index);
-                }
+                balance -= 1;
+                min_heap.push(in_num);
             }
 
-            while (!max_heap.empty() && max_heap.top().second <= i - k) {
-                max_heap.pop();
-            }
-
-            while (!min_heap.empty() && min_heap.top().second <= i - k) {
+            if (balance < 0) {
+                max_heap.push(min_heap.top());
                 min_heap.pop();
             }
 
-            double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
-            res.push_back(val);
+            if (balance > 0) {
+                min_heap.push(max_heap.top());
+                max_heap.pop();
+            }
+
+            while (table[max_heap.top()] > 0) {
+                table[max_heap.top()] -= 1;
+                max_heap.pop();
+            }
+
+            while (!min_heap.empty() && table[min_heap.top()] > 0) {
+                table[min_heap.top()] -= 1;
+                min_heap.pop();
+            }
+
+            res.push_back(median(max_heap, min_heap, k));
         }
 
         return res;
     }
+
+    double median(priority_queue<int>& max_heap, priority_queue<int, vector<int>, greater<int>>& min_heap, int k) {
+        return (k % 2 == 1) ? (double)max_heap.top(): ((double)max_heap.top() + (double)min_heap.top()) / 2.0;
+    }
 };
+
+// class Solution {
+// public:
+//     vector<double> medianSlidingWindow(vector<int>& nums, int k) {
+//         priority_queue<pair<int, int>, vector<pair<int, int>>,
+//                        function<bool(const pair<int, int>&, const pair<int, int>&)>>
+//             max_heap([](const pair<int, int>& a, const pair<int, int>& b) {
+//                 return a.first < b.first || (a.first == b.first && a.second > b.second);
+//             });
+
+//         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> min_heap;
+        
+//         for (int i = 0; i < k; i++) {
+//             max_heap.emplace(nums[i], i);
+//         }
+
+//         for (int i = 0; i < k / 2; i++) {
+//             auto [number, index] = max_heap.top();
+//             max_heap.pop();
+//             min_heap.emplace(number, index);
+//         }
+//         vector<double> res;
+//         double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
+//         res.push_back(val);
+
+//         for (int i = k; i < nums.size(); i++) {
+//             if (nums[i] <= max_heap.top().first) {
+//                 max_heap.emplace(nums[i], i);
+//                 if (nums[i - k] >= max_heap.top().first) {
+//                     auto [number, index] = max_heap.top();
+//                     max_heap.pop();
+//                     min_heap.emplace(number, index);
+//                 }
+//             } else {
+//                 min_heap.emplace(nums[i], i);
+//                 if (nums[i - k] <= max_heap.top().first) {
+//                     auto [number, index] = min_heap.top();
+//                     min_heap.pop();
+//                     max_heap.emplace(number, index);
+//                 }
+//             }
+
+//             while (!max_heap.empty() && max_heap.top().second <= i - k) {
+//                 max_heap.pop();
+//             }
+
+//             while (!min_heap.empty() && min_heap.top().second <= i - k) {
+//                 min_heap.pop();
+//             }
+
+//             double val = (k % 2 == 1) ? (double)max_heap.top().first : ((double)max_heap.top().first + (double)min_heap.top().first) / 2.0;
+//             res.push_back(val);
+//         }
+
+//         return res;
+//     }
+// };
