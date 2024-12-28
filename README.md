@@ -51,9 +51,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 30/54 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 490 problems
+**Solved**: 491 problems
 
 ## 类型/Category
 
@@ -175,7 +175,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(18) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -184,6 +184,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Simulation | O\(N\) | O\(K\) | - |
 | [Lintcode-849](https://www.lintcode.com/problem/basic-calculator-iii/) | Basic Calculator III | [c++](./lintcode/849.basic-calculator-iii.cpp), [python3](./lintcode/849.basic-calculator-iii.py) | Simulation | O\(N\) | O\(1\) | Leetcode-772 |
 | [Lintcode-553](https://www.lintcode.com/problem/bomb-enemy/) | Bomb Enemy | [c++](./lintcode/553.bomb-enemy.cpp), [python3](./lintcode/553.bomb-enemy.py) | Simulation | O\(NM\) | O\(NM\) | Leetcode-361 |
+| [Lintcode-3662](https://www.lintcode.com/problem/design-hit-counter/) | Design Hit Counter | [c++](./lintcode/3662.design-hit-counter.cpp), [python3](./lintcode/3662.design-hit-counter.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-366](https://www.lintcode.com/problem/fibonacci/) | Fibonacci | [c++](./lintcode/366.fibonacci.cpp), [python3](./lintcode/366.fibonacci.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Lintcode-645](https://www.lintcode.com/problem/find-the-celebrity/) | Find The Celebrity | [c++](./lintcode/645.find-the-celebrity.cpp), [python3](./lintcode/645.find-the-celebrity.py) | Simulation | O\(N\) | O\(N\) | Leetcode-277 |
 | [Lintcode-22](https://www.lintcode.com/problem/flatten-list/) | Flatten List | [c++](./lintcode/22.flatten-list.cpp), [python3](./lintcode/22.flatten-list.py) | Simulation | O\(N\) | O\(N\) | - |

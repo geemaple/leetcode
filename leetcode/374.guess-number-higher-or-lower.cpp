@@ -50,24 +50,24 @@
 class Solution {
 public:
     int guessNumber(int n) {
-        int start = 1;
-        int end = n;
+        int left = 1;
+        int right = n;
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
             int res = guess(mid);
 
             if (res == 0) {
                 return mid;
             }
 
-            if (res == -1) { // >
-                end = mid;
+            if (res > 0) {
+                left = mid + 1;
             } else {
-                start = mid + 1;
+                right = mid;
             }
         }
 
-        return start;
+        return left;
     }
 };

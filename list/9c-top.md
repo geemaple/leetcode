@@ -40,9 +40,10 @@
 30. https://leetcode.com/problems/valid-parentheses/
 31. https://www.lintcode.com/problem/load-balancer/
 
-- https://www.lintcode.com/problem/guess-number-game/
-- https://www.lintcode.com/problem/search-for-a-range/
-- https://www.lintcode.com/problem/convert-bst-to-greater-tree/
+32. https://leetcode.com/problems/guess-number-higher-or-lower/
+33. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+- https://leetcode.com/problems/convert-bst-to-greater-tree/
 - https://www.lintcode.com/problem/inorder-successor-in-binary-search-tree/
 - https://www.lintcode.com/problem/validate-binary-search-tree/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
