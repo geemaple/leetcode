@@ -38,8 +38,8 @@
 28. https://www.lintcode.com/problem/unique-word-abbreviation/
 29. https://leetcode.com/problems/longest-consecutive-sequence/
 30. https://leetcode.com/problems/valid-parentheses/
+31. https://www.lintcode.com/problem/load-balancer/
 
-- https://www.lintcode.com/problem/load-balancer/
 - https://www.lintcode.com/problem/guess-number-game/
 - https://www.lintcode.com/problem/search-for-a-range/
 - https://www.lintcode.com/problem/convert-bst-to-greater-tree/

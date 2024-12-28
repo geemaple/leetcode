@@ -35,7 +35,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
-| [23%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/68 | - |
+| [22%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/72 | - |
 | [45%] | [leetcode-75.md](./list/leetcode-75.md) | 34/75 | - |
 | [45%] | [leetcode-google.md](./list/leetcode-google.md) | 212/471 | 2 vips |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 72/144 | - |
@@ -51,7 +51,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 29/54 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 30/54 | 1 vip |
 
 **Solved**: 490 problems
 
@@ -1080,7 +1080,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Lintcode-390](https://www.lintcode.com/problem/find-peak-element-ii/) | Find Peak Element II | [c++](./lintcode/390.find-peak-element-ii.cpp), [python3](./lintcode/390.find-peak-element-ii.py) | Other | \- | \- | - |
 | [Lintcode-144](https://www.lintcode.com/problem/interleaving-positive-and-negative-numbers/) | Interleaving Positive And Negative Numbers | [c++](./lintcode/144.interleaving-positive-and-negative-numbers.cpp), [python3](./lintcode/144.interleaving-positive-and-negative-numbers.py) | Other | \- | \- | - |
 | [Lintcode-611](https://www.lintcode.com/problem/knight-shortest-path/) | Knight Shortest Path | [c++](./lintcode/611.knight-shortest-path.cpp), [python3](./lintcode/611.knight-shortest-path.py) | Other | \- | \- | - |
-| [Lintcode-526](https://www.lintcode.com/problem/load-balancer/) | Load Balancer | [c++](./lintcode/526.load-balancer.cpp), [python3](./lintcode/526.load-balancer.py) | Other | \- | \- | - |
+| [Lintcode-526](https://www.lintcode.com/problem/load-balancer/) | Load Balancer | [c++](./lintcode/526.load-balancer.cpp), [python3](./lintcode/526.load-balancer.py) | Other | O\(1\) | O\(N\) | - |
 | [Lintcode-629](https://www.lintcode.com/problem/minimum-spanning-tree/) | Minimum Spanning Tree | [c++](./lintcode/629.minimum-spanning-tree.cpp), [python3](./lintcode/629.minimum-spanning-tree.py) | Other | \- | \- | - |
 | [Lintcode-31](https://www.lintcode.com/problem/partition-array/) | Partition Array | [python3](./lintcode/31.partition-array.py) | Other | \- | \- | - |
 | [Lintcode-618](https://www.lintcode.com/problem/search-graph-nodes/) | Search Graph Nodes | [c++](./lintcode/618.search-graph-nodes.cpp), [python3](./lintcode/618.search-graph-nodes.py) | Other | \- | \- | - |

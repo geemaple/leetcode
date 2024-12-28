@@ -104,3 +104,9 @@
 66. https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/
 67. https://leetcode.com/problems/count-beautiful-splits-in-an-array/
 68. https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/
+
+## [Week 429](https://leetcode.com/contest/weekly-contest-429/)
+69. https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/
+70. https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/
+71. https://leetcode.com/problems/smallest-substring-with-identical-characters-i/
+72. https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/
