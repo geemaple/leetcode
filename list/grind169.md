@@ -111,7 +111,7 @@
 107. https://leetcode.com/problems/maximum-width-of-binary-tree/
 108. https://leetcode.com/problems/find-k-closest-elements/
 109. https://leetcode.com/problems/longest-repeating-character-replacement/
-110. https://leetcode.com/problems/inorder-successor-in-bst/
+110. https://www.lintcode.com/problem/inorder-successor-in-bst/
 111. https://leetcode.com/problems/jump-game/
 112. https://leetcode.com/problems/add-two-numbers/
 113. https://leetcode.com/problems/generate-parentheses/

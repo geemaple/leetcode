@@ -41,12 +41,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 73/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | 1 vip |
-| [97%] | [grind169.md](./list/grind169.md) | 164/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [grind102.md](./list/grind102.md) | 101/102 | 1 vip |
+| [✅] | [grind169.md](./list/grind169.md) | 165/169 | 4 vips |
 | [✅] | [grind75.md](./list/grind75.md) | 75/75 | - |
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
@@ -883,7 +883,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Binary Search Tree | O\(NH\) | O\(H\) | - |
 | [Leetcode-98](https://leetcode.com/problems/validate-binary-search-tree/) | Validate Binary Search Tree | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 | [Lintcode-1534](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list/) | Convert Binary Search Tree To Sorted Doubly Linked List | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python3](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
-| [Lintcode-448](https://www.lintcode.com/problem/inorder-successor-in-bst/) | Inorder Successor In Bst | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python3](./lintcode/448.inorder-successor-in-bst.py) | Binary Search Tree | O\(H\) | O\(1\) | - |
+| [Lintcode-448](https://www.lintcode.com/problem/inorder-successor-in-bst/) | Inorder Successor In Bst | [c++](./lintcode/448.inorder-successor-in-bst.cpp), [python3](./lintcode/448.inorder-successor-in-bst.py) | Binary Search Tree | O\(H\) | O\(1\) | Leetcode-285 |
 | [Lintcode-11](https://www.lintcode.com/problem/search-range-in-binary-search-tree/) | Search Range In Binary Search Tree | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python3](./lintcode/11.search-range-in-binary-search-tree.py) | Binary Search Tree | O\(N\) | O\(H\) | - |
 
 ## Binary Indexed Tree
