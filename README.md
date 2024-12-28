@@ -41,7 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 73/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [89%] | [neetcode150.md](./list/neetcode150.md) | 134/150 | 1 vip |
-| [96%] | [grind169.md](./list/grind169.md) | 163/169 | 4 vips |
+| [97%] | [grind169.md](./list/grind169.md) | 164/169 | 4 vips |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 492 problems
+**Solved**: 493 problems
 
 ## 类型/Category
 
@@ -223,7 +223,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -244,6 +244,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-3282](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | Reach End Of Array With Max Score | [c++](./leetcode/3282.reach-end-of-array-with-max-score.cpp), [python3](./leetcode/3282.reach-end-of-array-with-max-score.py) | Greedy | O\(N\) | O\(1\) | - |
+| [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) | Valid Palindrome II | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python3](./leetcode/680.valid-palindrome-ii.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [c++](./leetcode/324.wiggle-sort-ii.cpp), [python3](./leetcode/324.wiggle-sort-ii.py) | Greedy | \- | \- | - |
@@ -415,7 +416,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(58) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(59) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -456,6 +457,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-13](https://leetcode.com/problems/roman-to-integer/) | Roman To Integer | [c++](./leetcode/13.roman-to-integer.cpp), [python3](./leetcode/13.roman-to-integer.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-73](https://leetcode.com/problems/set-matrix-zeroes/) | Set Matrix Zeroes | [c++](./leetcode/73.set-matrix-zeroes.cpp), [python3](./leetcode/73.set-matrix-zeroes.py) | Hash Table | O\(NM\) | O\(N \+ M\) | - |
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Hash Table | O\(NlogK\) | O\(K\) | - |
+| [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-560](https://leetcode.com/problems/subarray-sum-equals-k/) | Subarray Sum Equals K | [c++](./leetcode/560.subarray-sum-equals-k.cpp), [python3](./leetcode/560.subarray-sum-equals-k.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-572](https://leetcode.com/problems/subtree-of-another-tree/) | Subtree Of Another Tree | [c++](./leetcode/572.subtree-of-another-tree.cpp), [python3](./leetcode/572.subtree-of-another-tree.py) | Hash Table | O\(NM\) | O\(H\) | - |
@@ -533,7 +535,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(25) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-3286](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Find A Safe Walk Through A Grid | [c++](./leetcode/3286.find-a-safe-walk-through-a-grid.cpp), [python3](./leetcode/3286.find-a-safe-walk-through-a-grid.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -553,6 +555,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-882](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | Reachable Nodes In Subdivided Graph | [c++](./leetcode/882.reachable-nodes-in-subdivided-graph.cpp), [python3](./leetcode/882.reachable-nodes-in-subdivided-graph.py) | Heap | O\(ElogE\) | O\(V\+E\) | - |
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Heap | O\(N\) | O\(K\) | - |
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Heap | O\(NlogK\) | O\(K\) | - |
+| [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Heap | O\(N\) | O\(1\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -598,7 +601,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(12) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Sliding Window | O\(Log\(N \- K\)\) | O\(1\) | - |
@@ -611,11 +614,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Sliding Window | O\(M \+ N\) | O\(N\) | - |
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Sliding Window | O\(N\) | O\(K\) | - |
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Sliding Window | O\(NlogK\) | O\(K\) | - |
+| [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
 | [Lintcode-642](https://www.lintcode.com/problem/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./lintcode/642.moving-average-from-data-stream.cpp), [python3](./lintcode/642.moving-average-from-data-stream.py) | Sliding Window | O\(1\) | O\(K\) | Leetcode-346 |
 
 ## Sorting
 
-| Link | Problem(36) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(37) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
@@ -644,6 +648,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction By Height | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python3](./leetcode/406.queue-reconstruction-by-height.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-354](https://leetcode.com/problems/russian-doll-envelopes/) | Russian Doll Envelopes | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python3](./leetcode/354.russian-doll-envelopes.py) | Sorting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares Of A Sorted Array | [c++](./leetcode/977.squares-of-a-sorted-array.cpp), [python3](./leetcode/977.squares-of-a-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
