@@ -68,3 +68,39 @@ public:
         return next;
     }
 };
+
+class Solution {
+public:
+    /*
+     * @param root: The root of the BST.
+     * @param p: You need find the successor node of p.
+     * @return: Successor of p.
+     */
+    TreeNode * inorderSuccessor(TreeNode * root, TreeNode * p) {
+        // write your code here
+        stack<TreeNode *>st;
+        TreeNode *cur = root;
+        bool find = false;
+        while (!st.empty() || cur) {
+            while (cur) {
+                st.push(cur);
+                cur = cur->left;
+            }
+
+            cur = st.top();
+            st.pop();
+
+            if (find) {
+                return cur;
+            }
+
+            if (cur == p) {
+                find = true;
+            }
+            cur = cur->right;
+
+        }
+
+        return nullptr;
+    }
+};

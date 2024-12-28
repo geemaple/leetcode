@@ -62,3 +62,30 @@ class Solution:
                 node = node.right
 
         return successor
+
+class Solution:
+    """
+    @param: root: The root of the BST.
+    @param: p: You need find the successor node of p.
+    @return: Successor of p.
+    """
+    def inorderSuccessor(self, root, p):
+        # write your code here
+        stack = []
+        cur = root
+        find = False
+        while len(stack) > 0 or cur is not None:
+            while cur is not None:
+                stack.append(cur)
+                cur = cur.left
+
+            cur = stack.pop()
+            if find:
+                return cur
+
+            if cur == p:
+                find = True
+
+            cur = cur.right
+
+        return None
