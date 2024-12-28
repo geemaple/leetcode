@@ -1,7 +1,7 @@
 //  Tag: Simulation
 //  Time: O(N)
 //  Space: O(N)
-//  Ref: -
+//  Ref: Leetcode-362
 //  Note: -
 
 //  In this question, you need to design a HitCounter class.

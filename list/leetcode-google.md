@@ -383,7 +383,7 @@
 375. https://leetcode.com/problems/deepest-leaves-sum/
 376. https://leetcode.com/problems/pacific-atlantic-water-flow/
 377. https://leetcode.com/problems/remove-comments/
-378. https://leetcode.com/problems/design-hit-counter/
+378. https://www.lintcode.com/problem/design-hit-counter/
 379. https://leetcode.com/problems/find-the-difference-of-two-arrays/
 380. https://leetcode.com/problems/minimum-time-to-complete-trips/
 381. https://leetcode.com/problems/add-two-integers/

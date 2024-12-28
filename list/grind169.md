@@ -125,7 +125,7 @@
 121. https://leetcode.com/problems/maximal-square/
 122. https://leetcode.com/problems/rotate-image/
 123. https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-124. https://leetcode.com/problems/design-hit-counter/
+124. https://www.lintcode.com/problem/design-hit-counter/
 125. https://leetcode.com/problems/path-sum-iii/
 126. https://leetcode.com/problems/powx-n/
 127. https://leetcode.com/problems/search-a-2d-matrix/
