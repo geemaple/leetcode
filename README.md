@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 493 problems
+**Solved**: 494 problems
 
 ## 类型/Category
 
@@ -938,7 +938,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(9) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3386](https://leetcode.com/problems/button-with-longest-push-time/) | Button With Longest Push Time | [c++](./leetcode/3386.button-with-longest-push-time.cpp), [python3](./leetcode/3386.button-with-longest-push-time.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2210](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Count Hills And Valleys In An Array | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python3](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | Array | O\(N\) | O\(1\) | - |
@@ -946,6 +946,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-57](https://leetcode.com/problems/insert-interval/) | Insert Interval | [c++](./leetcode/57.insert-interval.cpp), [python3](./leetcode/57.insert-interval.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-2270](https://leetcode.com/problems/number-of-ways-to-split-array/) | Number Of Ways To Split Array | [c++](./leetcode/2270.number-of-ways-to-split-array.cpp), [python3](./leetcode/2270.number-of-ways-to-split-array.py) | Array | O\(N\) | O\(N\) | - |
 | [Leetcode-238](https://leetcode.com/problems/product-of-array-except-self/) | Product Of Array Except Self | [c++](./leetcode/238.product-of-array-except-self.cpp), [python3](./leetcode/238.product-of-array-except-self.py) | Array | O\(N\) | O\(1\) | - |
 | [Lintcode-402](https://www.lintcode.com/problem/continuous-subarray-sum/) | Continuous Subarray Sum | [c++](./lintcode/402.continuous-subarray-sum.cpp), [python3](./lintcode/402.continuous-subarray-sum.py) | Array | O\(N\) | O\(N\) | - |
 
