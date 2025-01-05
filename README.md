@@ -37,10 +37,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [22%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/72 | - |
 | [45%] | [leetcode-75.md](./list/leetcode-75.md) | 34/75 | - |
-| [45%] | [leetcode-google.md](./list/leetcode-google.md) | 216/471 | 2 vips |
-| [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 73/144 | - |
+| [46%] | [leetcode-google.md](./list/leetcode-google.md) | 217/471 | 2 vips |
+| [51%] | [leetcode-topics.md](./list/leetcode-topics.md) | 74/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [91%] | [neetcode150.md](./list/neetcode150.md) | 137/150 | 1 vip |
+| [92%] | [neetcode150.md](./list/neetcode150.md) | 138/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 497 problems
+**Solved**: 498 problems
 
 ## 类型/Category
 
@@ -257,7 +257,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(72) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(73) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -273,6 +273,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Dynamic Programming | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-70](https://leetcode.com/problems/climbing-stairs/) | Climbing Stairs | [c++](./leetcode/70.climbing-stairs.cpp), [python3](./leetcode/70.climbing-stairs.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-322](https://leetcode.com/problems/coin-change/) | Coin Change | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Dynamic Programming | O\(K \* N\) | O\(N\) | - |
+| [Leetcode-518](https://leetcode.com/problems/coin-change-ii/) | Coin Change II | [c++](./leetcode/518.coin-change-ii.cpp), [python3](./leetcode/518.coin-change-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Dynamic Programming | O\(N^3\) | O\(N^3\) | - |
 | [Leetcode-338](https://leetcode.com/problems/counting-bits/) | Counting Bits | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-91](https://leetcode.com/problems/decode-ways/) | Decode Ways | [c++](./leetcode/91.decode-ways.cpp), [python3](./leetcode/91.decode-ways.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
