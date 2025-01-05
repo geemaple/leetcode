@@ -37,10 +37,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
 | [22%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/72 | - |
 | [45%] | [leetcode-75.md](./list/leetcode-75.md) | 34/75 | - |
-| [45%] | [leetcode-google.md](./list/leetcode-google.md) | 215/471 | 2 vips |
+| [45%] | [leetcode-google.md](./list/leetcode-google.md) | 216/471 | 2 vips |
 | [50%] | [leetcode-topics.md](./list/leetcode-topics.md) | 73/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [90%] | [neetcode150.md](./list/neetcode150.md) | 136/150 | 1 vip |
+| [91%] | [neetcode150.md](./list/neetcode150.md) | 137/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 496 problems
+**Solved**: 497 problems
 
 ## 类型/Category
 
@@ -344,7 +344,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(44) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(45) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
@@ -380,6 +380,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2468](https://leetcode.com/problems/split-message-based-on-limit/) | Split Message Based On Limit | [c++](./leetcode/2468.split-message-based-on-limit.cpp), [python3](./leetcode/2468.split-message-based-on-limit.py) | Binary Search | O\(logN \+ K\) | O\(1\) | - |
 | [Leetcode-69](https://leetcode.com/problems/sqrtx/) | Sqrtx | [c++](./leetcode/69.sqrtx.cpp), [python3](./leetcode/69.sqrtx.py) | Binary Search | N\(logN\) | O\(1\) | - |
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Binary Search | O\(N\) | O\(1\) | - |
+| [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Binary Search | O\(N^2 \* logN\) | O\(N^2\) | - |
 | [Leetcode-981](https://leetcode.com/problems/time-based-key-value-store/) | Time Based Key Value Store | [c++](./leetcode/981.time-based-key-value-store.cpp), [python3](./leetcode/981.time-based-key-value-store.py) | Binary Search | O\(logN\) | O\(N\) | - |
 | [Leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -540,7 +541,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-3286](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Find A Safe Walk Through A Grid | [c++](./leetcode/3286.find-a-safe-walk-through-a-grid.cpp), [python3](./leetcode/3286.find-a-safe-walk-through-a-grid.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -562,6 +563,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Heap | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Heap | O\(N\) | O\(N\) | - |
+| [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Heap | O\(N^2 \* logN\) | O\(N^2\) | - |
 | [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Heap | O\(N\) | O\(1\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Heap | O\(N\), O\(C\*logK\) | O\(N\) | - |
@@ -717,7 +719,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Breadth-First Search
 
-| Link | Problem(37) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(38) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Breadth-First Search | O\(MlogM\) | O\(N\) | - |
@@ -751,6 +753,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-934](https://leetcode.com/problems/shortest-bridge/) | Shortest Bridge | [c++](./leetcode/934.shortest-bridge.cpp), [python3](./leetcode/934.shortest-bridge.py) | Breadth-First Search | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-404](https://leetcode.com/problems/sum-of-left-leaves/) | Sum Of Left Leaves | [c++](./leetcode/404.sum-of-left-leaves.cpp), [python3](./leetcode/404.sum-of-left-leaves.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-130](https://leetcode.com/problems/surrounded-regions/) | Surrounded Regions | [c++](./leetcode/130.surrounded-regions.cpp), [python3](./leetcode/130.surrounded-regions.py) | Breadth-First Search | O\(MN\) | O\(1\) | - |
+| [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Breadth-First Search | O\(N^2 \* logN\) | O\(N^2\) | - |
 | [Leetcode-101](https://leetcode.com/problems/symmetric-tree/) | Symmetric Tree | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-407](https://leetcode.com/problems/trapping-rain-water-ii/) | Trapping Rain Water II | [c++](./leetcode/407.trapping-rain-water-ii.cpp), [python3](./leetcode/407.trapping-rain-water-ii.py) | Breadth-First Search | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Breadth-First Search | O\(NH\) | O\(H\) | - |
@@ -759,7 +762,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(52) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(53) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -807,6 +810,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-572](https://leetcode.com/problems/subtree-of-another-tree/) | Subtree Of Another Tree | [c++](./leetcode/572.subtree-of-another-tree.cpp), [python3](./leetcode/572.subtree-of-another-tree.py) | Depth-First Search | O\(NM\) | O\(H\) | - |
 | [Leetcode-404](https://leetcode.com/problems/sum-of-left-leaves/) | Sum Of Left Leaves | [c++](./leetcode/404.sum-of-left-leaves.cpp), [python3](./leetcode/404.sum-of-left-leaves.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-130](https://leetcode.com/problems/surrounded-regions/) | Surrounded Regions | [c++](./leetcode/130.surrounded-regions.cpp), [python3](./leetcode/130.surrounded-regions.py) | Depth-First Search | O\(MN\) | O\(1\) | - |
+| [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Depth-First Search | O\(N^2 \* logN\) | O\(N^2\) | - |
 | [Leetcode-101](https://leetcode.com/problems/symmetric-tree/) | Symmetric Tree | [c++](./leetcode/101.symmetric-tree.cpp), [python3](./leetcode/101.symmetric-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-669](https://leetcode.com/problems/trim-a-binary-search-tree/) | Trim A Binary Search Tree | [c++](./leetcode/669.trim-a-binary-search-tree.cpp), [python3](./leetcode/669.trim-a-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Depth-First Search | O\(NH\) | O\(H\) | - |
@@ -916,7 +920,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Union Find
 
-| Link | Problem(13) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(14) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Union Find | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite | [c++](./leetcode/785.is-graph-bipartite.cpp), [python3](./leetcode/785.is-graph-bipartite.py) | Union Find | O\(E\+V\) | O\(W\) | - |
@@ -927,6 +931,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Union Find | O\(NMlogNM\) | O\(NM\) | - |
 | [Leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Union Find | O\(N\) | O\(1\) | - |
 | [Leetcode-130](https://leetcode.com/problems/surrounded-regions/) | Surrounded Regions | [c++](./leetcode/130.surrounded-regions.cpp), [python3](./leetcode/130.surrounded-regions.py) | Union Find | O\(MN\) | O\(1\) | - |
+| [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Union Find | O\(N^2 \* logN\) | O\(N^2\) | - |
 | [Lintcode-3672](https://www.lintcode.com/problem/connecting-cities-with-minimum-cost/) | Connecting Cities With Minimum Cost | [c++](./lintcode/3672.connecting-cities-with-minimum-cost.cpp), [python3](./lintcode/3672.connecting-cities-with-minimum-cost.py) | Union Find | O\(ElogE\) | O\(E\+V\) | Leetcode-1135 |
 | [Lintcode-591](https://www.lintcode.com/problem/connecting-graph-iii/) | Connecting Graph III | [c++](./lintcode/591.connecting-graph-iii.cpp), [python3](./lintcode/591.connecting-graph-iii.py) | Union Find | O\(N\) | O\(N\) | - |
 | [Lintcode-178](https://www.lintcode.com/problem/graph-valid-tree/) | Graph Valid Tree | [c++](./lintcode/178.graph-valid-tree.cpp), [python3](./lintcode/178.graph-valid-tree.py) | Union Find | O\(N\) | O\(N\) | LeetCode-261 |

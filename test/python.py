@@ -19,56 +19,51 @@ from typing import (
 import heapq
 
 class Solution:
-    def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
-        n = len(nums)
-        max_heap = []
-        min_heap = []
+    def maximumCoins(self, coins: List[List[int]], k: int) -> int:
+        coins.sort()
+        left = coins[0][0]
+        right = coins[-1][1]
+        if k >= right - left + 1:
+            return self.collect_forward(coins, 0, k)
 
-        for i in range(k):
-            heapq.heappush(max_heap, (-nums[i], i))
-        
-        for _ in range(k >> 1): 
-            x, i = heapq.heappop(max_heap)
-            heapq.heappush(min_heap, (-x, i))
+        res = 0
+        for i in range(len(coins)):
+            res = max(res, self.collect_forward(coins, i, k))
 
-        ans = [self.get_med(max_heap, min_heap, k)]
-
-        for i in range(k, n):
-            x = nums[i]
-            if x <= -max_heap[0][0]:
-                heapq.heappush(max_heap, (-x, i))
-                if nums[i - k] > -max_heap[0][0]:
-                    self.move(max_heap, min_heap)
-            else:
-                heapq.heappush(min_heap, (x, i))
-                if nums[i - k] <= -max_heap[0][0]:
-                    self.move(min_heap, max_heap)
-
-            while max_heap and max_heap[0][1] <= i - k: 
-                heapq.heappop(max_heap)
-                
-            while min_heap and min_heap[0][1] <= i - k: 
-                heapq.heappop(min_heap)
-                
-
-            print(max_heap, min_heap)
-            print(len(max_heap), len(min_heap), len(max_heap) + len(min_heap))
-            ans.append(self.get_med(max_heap, min_heap, k))
-        
-        return ans
-
-    def move(self, h1, h2):
-        x, i = heapq.heappop(h1)
-        heapq.heappush(h2, (-x, i))
+        for i in range(len(coins) - 1, -1, -1):
+            res = max(res, self.collect_backward(coins, i, k))
+            
+        return res
     
-    def get_med(self, max_heap, min_heap, k):
-        return -max_heap[0][0] * 1.0 if k & 1 else (min_heap[0][0] - max_heap[0][0]) / 2.0
 
+    def collect_forward(self, coins:list, start: int, k: int) -> int:
+        right = coins[start][0] + k - 1
+        res = 0
+        for i in range(start, len(coins)):
+            if right >= coins[i][0]:
+                d = min(right, coins[i][1]) - coins[i][0] + 1
+                res += d * coins[i][2]
+            else:
+                break
+        return res
+        
+    def collect_backward(self, coins:list, start: int, k: int) -> int:
+        left = coins[start][1] - k + 1
+        res = 0
+        print(left, k)
+        for i in range(start, -1, -1):
+            if left <= coins[i][1]:
+                d = coins[i][1] - max(left, coins[i][0]) + 1
+                res += d * coins[i][2]
+            else:
+                
+                break
+        return res
 
 s = Solution()
 ts = datetime.now()
 
-res = s.medianSlidingWindow([7,8,8,3,8,1,5,3,5,4], 3)
+res = s.maximumCoins([[8,10,1],[1,3,2],[5,6,4]], 4)
 
 print(datetime.now() - ts)
 print(res)
