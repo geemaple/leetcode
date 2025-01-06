@@ -34,13 +34,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [16%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 9/54 | - |
+| [18%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 10/54 | - |
 | [22%] | [leetcode-contest.md](./list/leetcode-contest.md) | 16/72 | - |
-| [45%] | [leetcode-75.md](./list/leetcode-75.md) | 34/75 | - |
-| [46%] | [leetcode-google.md](./list/leetcode-google.md) | 217/471 | 2 vips |
+| [46%] | [leetcode-75.md](./list/leetcode-75.md) | 35/75 | - |
+| [46%] | [leetcode-google.md](./list/leetcode-google.md) | 218/471 | 2 vips |
 | [51%] | [leetcode-topics.md](./list/leetcode-topics.md) | 74/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
-| [92%] | [neetcode150.md](./list/neetcode150.md) | 139/150 | 1 vip |
+| [93%] | [neetcode150.md](./list/neetcode150.md) | 140/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
@@ -53,7 +53,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 32/54 | 1 vip |
 
-**Solved**: 499 problems
+**Solved**: 500 problems
 
 ## 类型/Category
 
@@ -345,7 +345,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(45) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(46) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
@@ -358,6 +358,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-278](https://leetcode.com/problems/first-bad-version/) | First Bad Version | [c++](./leetcode/278.first-bad-version.cpp), [python3](./leetcode/278.first-bad-version.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-374](https://leetcode.com/problems/guess-number-higher-or-lower/) | Guess Number Higher Or Lower | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python3](./leetcode/374.guess-number-higher-or-lower.py) | Binary Search | O\(logN\) | O\(1\) | - |
+| [Leetcode-875](https://leetcode.com/problems/koko-eating-bananas/) | Koko Eating Bananas | [c++](./leetcode/875.koko-eating-bananas.cpp), [python3](./leetcode/875.koko-eating-bananas.py) | Binary Search | O\(NlogA\) | O\(1\) | - |
 | [Leetcode-378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element In A Sorted Matrix | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python3](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | Binary Search | O\(KlogN\) | O\(N\) | - |
 | [Leetcode-2040](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/) | Kth Smallest Product Of Two Sorted Arrays | [c++](./leetcode/2040.kth-smallest-product-of-two-sorted-arrays.cpp), [python3](./leetcode/2040.kth-smallest-product-of-two-sorted-arrays.py) | Binary Search | O\(logA \* NlogM\) | O\(1\) | - |
 | [Leetcode-300](https://leetcode.com/problems/longest-increasing-subsequence/) | Longest Increasing Subsequence | [c++](./leetcode/300.longest-increasing-subsequence.cpp), [python3](./leetcode/300.longest-increasing-subsequence.py) | Binary Search | O\(N\*logN\) | O\(N\) | - |
