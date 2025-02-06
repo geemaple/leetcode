@@ -102,28 +102,49 @@ public:
  * bool param = obj.isUnique(word);
  */
 
-int main() {
-    vector<vector<int>> matrix = {
-        {0,1,1,0,0,0},
-        {1,0,1,0,0,0},
-        {0,1,1,1,0,1},
-        {0,0,1,0,1,0}
-    };
-    
-    
-    
-    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
-    vector<int> end = {3,4,5,6};
-    vector<int> profit = {50,10,40,70};
-    Solution s;
-    vector<double> res = s.medianSlidingWindow(nums, 3);
-    
+// 函数重载，分别接收左值引用和右值引用
 
-    for (int word : res) {
-        cout << to_string(word) << ", ";
-    }
-    cout << endl;
+void processString(const std::string& s) {
+    std::cout << "Lvalue reference: " << s << "\n";
+}
+
+void processString(std::string&& s) {
+    std::cout << "Rvalue reference: " << s << "\n";
+}
+
+int main() {
+    std::string str = "Hello, World!";
     
+    processString(str);             // 调用左值引用版本
+    processString(std::move(str));  // 调用右值引用版本
+    cout << "string:" << endl;
+    
+    processString("Temporary!");    // 调用右值引用版本，直接捕获右值
+
     return 0;
 }
+    
+//    vector<vector<int>> matrix = {
+//        {0,1,1,0,0,0},
+//        {1,0,1,0,0,0},
+//        {0,1,1,1,0,1},
+//        {0,0,1,0,1,0}
+//    };
+//    
+//    
+//    
+//    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
+//    vector<int> end = {3,4,5,6};
+//    vector<int> profit = {50,10,40,70};
+//    Solution s;
+//    vector<double> res = s.medianSlidingWindow(nums, 3);
+//    
+//
+//    for (int word : res) {
+//        cout << to_string(word) << ", ";
+//    }
+//    cout << endl;
+//    
+//    return 0;
+//}
 

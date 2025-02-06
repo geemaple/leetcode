@@ -39,7 +39,6 @@
 29. https://leetcode.com/problems/longest-consecutive-sequence/
 30. https://leetcode.com/problems/valid-parentheses/
 31. https://www.lintcode.com/problem/load-balancer/
-
 32. https://leetcode.com/problems/guess-number-higher-or-lower/
 33. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
