@@ -3,6 +3,7 @@
 #  Space: O(N^2)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/6PvtDyA-IPw
 
 #  Given an array nums of distinct positive integers, return the number of tuples (a, b, c, d) such that a * b = c * d where a, b, c, and d are elements of nums, and a != b != c != d.
 #   

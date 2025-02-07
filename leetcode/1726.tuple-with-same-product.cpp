@@ -3,6 +3,7 @@
 //  Space: O(N^2)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/6PvtDyA-IPw
 
 //  Given an array nums of distinct positive integers, return the number of tuples (a, b, c, d) such that a * b = c * d where a, b, c, and d are elements of nums, and a != b != c != d.
 //   
@@ -33,26 +34,20 @@
 //
 //
 
-class Solution
-{
+class Solution {
 public:
-    int tupleSameProduct(vector<int> &nums)
-    {
+    int tupleSameProduct(vector<int>& nums) {
         int n = nums.size();
         unordered_map<int, int> counter;
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = i + 1; j < n; j++)
-            {
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
                 counter[nums[i] * nums[j]] += 1;
             }
         }
 
         int res = 0;
-        for (auto &[prod, count] : counter)
-        {
-            if (count > 1)
-            {
+        for (auto &[prod, count]: counter) {
+            if (count > 1) {
                 res += count * (count - 1) * 4;
             }
         }
