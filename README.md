@@ -6,7 +6,7 @@ LeetCode solutions, written in python and cpp
 
 ## 链接/Links
 
-- [本人博客](https://blog.mogoal.com/category/#Algorithm)
+- [视频](https://www.youtube.com/@GeekPal)
 - [Anki](https://apps.ankiweb.net/)
 - [Tldraw](https://www.tldraw.com/)
 - [OBS](https://www.tldraw.com/)

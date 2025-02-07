@@ -546,7 +546,7 @@ if __name__ == "__main__":
 
         Markdown.title2(f, "链接/Links")
         Markdown.bullet(f, [
-            Markdown.link('本人博客', 'https://blog.mogoal.com/category/#Algorithm'),
+            Markdown.link('视频', 'https://www.youtube.com/@GeekPal'),
             Markdown.link('Anki', 'https://apps.ankiweb.net/'),
             Markdown.link('Tldraw', 'https://www.tldraw.com/'),
             Markdown.link('OBS', 'https://www.tldraw.com/'),
