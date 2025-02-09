@@ -43,22 +43,6 @@
 #         self.right = right
 class Solution:
     def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        self.helper(root, 0)
-        return root
-
-    def helper(self, node:TreeNode, pre: int) -> int:
-        if node is None:
-            return pre
-
-        pre = self.helper(node.right, pre)
-        node.val += pre
-        pre = node.val
-
-        return self.helper(node.left, pre)
-    
-
-class Solution:
-    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         self.pre = 0
         self.helper(root)
         return root
@@ -72,3 +56,18 @@ class Solution:
         self.pre = node.val
 
         self.helper(node.left)
+
+class Solution:
+    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        self.helper(root, 0)
+        return root
+
+    def helper(self, node:TreeNode, pre: int) -> int:
+        if node is None:
+            return pre
+
+        pre = self.helper(node.right, pre)
+        node.val += pre
+        pre = node.val
+
+        return self.helper(node.left, pre)

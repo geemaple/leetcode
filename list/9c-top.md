@@ -39,10 +39,13 @@
 29. https://leetcode.com/problems/longest-consecutive-sequence/
 30. https://leetcode.com/problems/valid-parentheses/
 31. https://www.lintcode.com/problem/load-balancer/
+
 32. https://leetcode.com/problems/guess-number-higher-or-lower/
 33. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+34. https://leetcode.com/problems/convert-bst-to-greater-tree/
 
-- https://leetcode.com/problems/convert-bst-to-greater-tree/
+File://Users/felix/Downloads/高频算法4.pdf page 22
+
 - https://www.lintcode.com/problem/inorder-successor-in-binary-search-tree/
 - https://www.lintcode.com/problem/validate-binary-search-tree/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
