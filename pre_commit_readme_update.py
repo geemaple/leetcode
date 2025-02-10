@@ -541,6 +541,7 @@ if __name__ == "__main__":
         
         Markdown.title1(f, "算法/Algorithm")
         Markdown.paragraph(f, [
+            "微信公众号: 极客算法(GeekPal)",
             "LeetCode解题报告，记录自己的leetcode成长之路", 
             "LeetCode solutions, written in python and cpp"])
 

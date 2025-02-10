@@ -43,10 +43,12 @@
 32. https://leetcode.com/problems/guess-number-higher-or-lower/
 33. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 34. https://leetcode.com/problems/convert-bst-to-greater-tree/
+35. https://www.lintcode.com/problem/inorder-successor-in-bst/
+36. https://www.lintcode.com/problem/inorder-successor-in-bst-ii/
 
-File://Users/felix/Downloads/高频算法4.pdf page 22
+/Users/felix/Downloads/高频算法4.pdf page 26
 
-- https://www.lintcode.com/problem/inorder-successor-in-binary-search-tree/
+- https://leetcode.com/problems/range-sum-of-bst/
 - https://www.lintcode.com/problem/validate-binary-search-tree/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
 - https://www.lintcode.com/problem/binary-tree-flipping/
