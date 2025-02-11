@@ -41,17 +41,16 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        return self.helper(root, float('-inf'), float('inf'))
+        return self.helper(root, None, None)
 
-
-    def helper(self, node: Optional[TreeNode], low: int, high: int) -> bool:
+    def helper(self, node: Optional[TreeNode], low: TreeNode, high: TreeNode) -> bool:
         if node is None:
             return True
         
-        if node.val <= low or node.val >= high:
+        if (low and node.val <= low.val) or (high and node.val >= high.val):
             return False
         
-        return self.helper(node.left, low, node.val) and self.helper(node.right, node.val, high)
+        return self.helper(node.left, low, node) and self.helper(node.right, node, high)
 
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:

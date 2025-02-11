@@ -45,11 +45,11 @@
 34. https://leetcode.com/problems/convert-bst-to-greater-tree/
 35. https://www.lintcode.com/problem/inorder-successor-in-bst/
 36. https://www.lintcode.com/problem/inorder-successor-in-bst-ii/
+37. https://leetcode.com/problems/range-sum-of-bst/
+38. https://leetcode.com/problems/validate-binary-search-tree/
 
-/Users/felix/Downloads/高频算法4.pdf page 26
+/Users/felix/Downloads/高频算法4.pdf page 30
 
-- https://leetcode.com/problems/range-sum-of-bst/
-- https://www.lintcode.com/problem/validate-binary-search-tree/
 - https://www.lintcode.com/problem/binary-search-tree-iterator/
 - https://www.lintcode.com/problem/binary-tree-flipping/
 - https://www.lintcode.com/problem/binary-tree-leaves-order-traversal/
