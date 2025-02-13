@@ -36,7 +36,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [15%] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 345/2207 | 4 vips |
+| [15%] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 349/2207 | 5 vips |
 | [18%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 10/54 | - |
 | [47%] | [leetcode-google.md](./list/leetcode-google.md) | 223/471 | 2 vips |
 | [48%] | [leetcode-75.md](./list/leetcode-75.md) | 36/75 | - |
@@ -53,9 +53,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 37/56 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 38/56 | 1 vip |
 
-**Solved**: 519 problems
+**Solved**: 523 problems
 
 ## 类型/Category
 
@@ -178,13 +178,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Leetcode-735](https://leetcode.com/problems/asteroid-collision/) | Asteroid Collision | [c++](./leetcode/735.asteroid-collision.cpp), [python3](./leetcode/735.asteroid-collision.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-3174](https://leetcode.com/problems/clear-digits/) | Clear Digits | [c++](./leetcode/3174.clear-digits.cpp), [python3](./leetcode/3174.clear-digits.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Simulation | O\(N\) | O\(N\) | - |
+| [Leetcode-3066](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | Minimum Operations To Exceed Threshold Value II | [c++](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.cpp), [python3](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.py) | Simulation | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1910](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Remove All Occurrences Of A Substring | [c++](./leetcode/1910.remove-all-occurrences-of-a-substring.cpp), [python3](./leetcode/1910.remove-all-occurrences-of-a-substring.py) | Simulation | O\(NM\) | O\(1\) | - |
 | [Leetcode-566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape The Matrix | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Simulation | O\(N\) | O\(K\) | - |
@@ -428,7 +429,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(69) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(70) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -495,6 +496,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Hash Table | O\(N\) | O\(K\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Hash Table | O\(MN\) | O\(N\) | - |
 | [Leetcode-126](https://leetcode.com/problems/word-ladder-ii/) | Word Ladder II | [c++](./leetcode/126.word-ladder-ii.cpp), [python3](./leetcode/126.word-ladder-ii.py) | Hash Table | O\(\(N\*L\)^C\) | O\(N\) | - |
+| [Lintcode-3756](https://www.lintcode.com/problem/number-of-unique-flavors-remaining-after-sharing-k-candies/) | Number Of Unique Flavors Remaining After Sharing K Candies | [c++](./lintcode/3756.number-of-unique-flavors-remaining-after-sharing-k-candies.cpp), [python3](./lintcode/3756.number-of-unique-flavors-remaining-after-sharing-k-candies.py) | Hash Table | O\(N\) | O\(N\) | Leetcode-2107 |
 | [Lintcode-644](https://www.lintcode.com/problem/strobogrammatic-number/) | Strobogrammatic Number | [c++](./lintcode/644.strobogrammatic-number.cpp), [python3](./lintcode/644.strobogrammatic-number.py) | Hash Table | O\(N\) | O\(1\) | Leetcode-246 |
 | [Lintcode-138](https://www.lintcode.com/problem/subarray-sum/) | Subarray Sum | [c++](./lintcode/138.subarray-sum.cpp), [python3](./lintcode/138.subarray-sum.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Lintcode-648](https://www.lintcode.com/problem/unique-word-abbreviation/) | Unique Word Abbreviation | [c++](./lintcode/648.unique-word-abbreviation.cpp), [python3](./lintcode/648.unique-word-abbreviation.py) | Hash Table | O\(1\) | O\(N\) | Leetcode-288 |
@@ -560,7 +562,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(30) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(31) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Heap | O\(LogN\) | O\(N\) | - |
@@ -577,6 +579,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1046](https://leetcode.com/problems/last-stone-weight/) | Last Stone Weight | [c++](./leetcode/1046.last-stone-weight.cpp), [python3](./leetcode/1046.last-stone-weight.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2342](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | Max Sum Of A Pair With Equal Sum Of Digits | [c++](./leetcode/2342.max-sum-of-a-pair-with-equal-sum-of-digits.cpp), [python3](./leetcode/2342.max-sum-of-a-pair-with-equal-sum-of-digits.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-23](https://leetcode.com/problems/merge-k-sorted-lists/) | Merge K Sorted Lists | [c++](./leetcode/23.merge-k-sorted-lists.cpp), [python3](./leetcode/23.merge-k-sorted-lists.py) | Heap | O\(NlogK\) | O\(K\) | - |
+| [Leetcode-3066](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | Minimum Operations To Exceed Threshold Value II | [c++](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.cpp), [python3](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-743](https://leetcode.com/problems/network-delay-time/) | Network Delay Time | [c++](./leetcode/743.network-delay-time.cpp), [python3](./leetcode/743.network-delay-time.py) | Heap | O\(ElogE\) | O\(E\+V\) | - |
 | [Leetcode-1514](https://leetcode.com/problems/path-with-maximum-probability/) | Path With Maximum Probability | [c++](./leetcode/1514.path-with-maximum-probability.cpp), [python3](./leetcode/1514.path-with-maximum-probability.py) | Heap | O\(VlogE\) | O\(V\+E\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Heap | O\(NMlogNM\) | O\(NM\) | - |
@@ -630,7 +633,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(23) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1652](https://leetcode.com/problems/defuse-the-bomb/) | Defuse The Bomb | [c++](./leetcode/1652.defuse-the-bomb.cpp), [python3](./leetcode/1652.defuse-the-bomb.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -654,7 +657,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Sliding Window | O\(N\) | O\(K\) | - |
 | [Leetcode-480](https://leetcode.com/problems/sliding-window-median/) | Sliding Window Median | [c++](./leetcode/480.sliding-window-median.cpp), [python3](./leetcode/480.sliding-window-median.py) | Sliding Window | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
+| [Lintcode-3724](https://www.lintcode.com/problem/distinct-numbers-in-each-subarray/) | Distinct Numbers In Each Subarray | [c++](./lintcode/3724.distinct-numbers-in-each-subarray.cpp), [python3](./lintcode/3724.distinct-numbers-in-each-subarray.py) | Sliding Window | O\(N\) | O\(K\) | Leetcode-1852 |
+| [Lintcode-3675](https://www.lintcode.com/problem/minimum-swaps-to-group-all-1s-together/) | Minimum Swaps To Group All 1S Together | [c++](./lintcode/3675.minimum-swaps-to-group-all-1s-together.cpp), [python3](./lintcode/3675.minimum-swaps-to-group-all-1s-together.py) | Sliding Window | O\(N\) | O\(1\) | Leetcode-1151 |
 | [Lintcode-642](https://www.lintcode.com/problem/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./lintcode/642.moving-average-from-data-stream.cpp), [python3](./lintcode/642.moving-average-from-data-stream.py) | Sliding Window | O\(1\) | O\(K\) | Leetcode-346 |
+| [Lintcode-3756](https://www.lintcode.com/problem/number-of-unique-flavors-remaining-after-sharing-k-candies/) | Number Of Unique Flavors Remaining After Sharing K Candies | [c++](./lintcode/3756.number-of-unique-flavors-remaining-after-sharing-k-candies.cpp), [python3](./lintcode/3756.number-of-unique-flavors-remaining-after-sharing-k-candies.py) | Sliding Window | O\(N\) | O\(N\) | Leetcode-2107 |
 
 ## Sorting
 
