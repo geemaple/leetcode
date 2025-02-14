@@ -40,20 +40,24 @@ class Solution {
 public:
     int maxScore(vector<int>& cardPoints, int k) {
         int n = cardPoints.size();
+        k = n - k;
         int total = 0;
         int tmp = 0;
         int res = INT_MAX;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            total += cardPoints[j];
-            tmp += cardPoints[j];
-            if (j - i + 1 == n - k) {
+
+        for (int i = 0; i < n; i++) {
+            if (i >= k) {
+                tmp -= cardPoints[i - k];
+            }
+
+            total += cardPoints[i];
+            tmp += cardPoints[i];
+
+            if (i >= k - 1) {
                 res = min(res, tmp);
-                tmp -= cardPoints[i];
-                i += 1;
             }
         }
 
-        return n == k ? total : total - res;
+        return total - res;
     }
 };

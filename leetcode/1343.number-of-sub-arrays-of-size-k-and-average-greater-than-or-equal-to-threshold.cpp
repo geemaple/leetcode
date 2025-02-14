@@ -34,14 +34,13 @@ public:
         int n = arr.size();
         int res = 0;
         int total = 0;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            total += arr[j];
-            if (j - i + 1 == k) {
+        for (int i = 0; i < n; i++) {
+            total += arr[i];
+            if (i >= k - 1) {
                 if (total >= threshold * k) {
                     res += 1;
                 }
-                total -= arr[i++];
+                total -= arr[i - k + 1];
             }
         }
         return res;

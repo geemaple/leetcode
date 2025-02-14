@@ -48,10 +48,10 @@
 37. https://leetcode.com/problems/range-sum-of-bst/
 38. https://leetcode.com/problems/validate-binary-search-tree/
 39. https://leetcode.com/problems/binary-search-tree-iterator/
+40. https://www.lintcode.com/problem/binary-tree-upside-down/
 
-/Users/felix/Downloads/高频算法4.pdf page 32
+/Users/felix/Downloads/高频算法4.pdf page 36
 
-- https://www.lintcode.com/problem/binary-tree-flipping/
 - https://www.lintcode.com/problem/binary-tree-leaves-order-traversal/
 - https://www.lintcode.com/problem/maximum-subtree/
 - https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/

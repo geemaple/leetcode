@@ -39,18 +39,19 @@
 class Solution:
     def maxScore(self, cardPoints: List[int], k: int) -> int:
         n = len(cardPoints)
+        k = n - k
         res = float('inf')
         tmp = 0
         total = 0
-        i = 0
     
-        for j in range(n):
-            total += cardPoints[j]
-            tmp += cardPoints[j]
+        for i in range(n):
+            if i >= k:
+                tmp -= cardPoints[i - k]
 
-            if j - i + 1 == n - k:
+            total += cardPoints[i]
+            tmp += cardPoints[i]
+
+            if i >= k - 1:
                 res = min(res, tmp)
-                tmp -= cardPoints[i]
-                i += 1
-
-        return total if k == n else total - res
+                
+        return total - res

@@ -54,14 +54,13 @@ class Solution:
         n = len(nums)
         res = [-1 for i in range(n)]
         total = 0
-        i = 0
-        diameter = 2 * k + 1
-        for j in range(n):
-            total += nums[j]
-            if j - i + 1 == diameter:
-                center = (j + i) // 2
-                res[center] = total // diameter
-                total -= nums[i]
-                i += 1
+        k = 2 * k + 1
+        for i in range(n):
+            total += nums[i]
+            if i >= k - 1:
+                j = (i - k + 1)
+                center = (i + j) // 2
+                res[center] = total // k
+                total -= nums[j]
         
         return res

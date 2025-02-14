@@ -33,13 +33,11 @@ class Solution:
         n = len(arr)
         total = 0
         res = 0
-        i = 0
-        for j in range(n):
-            total += arr[j]
-            if j - i + 1 == k:
+        for i in range(n):
+            total += arr[i]
+            if i >= k - 1:
                 if total >= threshold * k:
                     res += 1
-                total -= arr[i]
-                i += 1
+                total -= arr[i - k + 1]
 
         return res

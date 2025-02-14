@@ -63,14 +63,12 @@ class Solution:
         k = arr.count(1)
         ones = 0
         count = 0
-        i = 0
-        for j in range(n):
-            if arr[j] == 1:
-                count += 1
-            if j - i + 1 == k:
-                ones = max(ones, count)
-                if arr[i] == 1:
-                    count -= 1
-                i += 1
+        for i in range(n):
+            if i >= k:
+                count -= arr[i - k]
 
+            count += arr[i]
+            if i >= k - 1:
+                ones = max(ones, count)
+                
         return k - ones

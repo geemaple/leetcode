@@ -39,18 +39,16 @@ public:
         int n = grumpy.size();
         int res = 0;
         int count = 0;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            if (grumpy[j]) {
-                count += customers[j];
+        for (int i = 0; i < n; i++) {
+            if (grumpy[i]) {
+                count += customers[i];
             }
 
-            if (j - i + 1 == minutes) {
+            if (i >= minutes - 1) {
                 res = max(res, count);
-                if (grumpy[i]) {
-                    count -= customers[i];
+                if (grumpy[i - minutes + 1]) {
+                    count -= customers[i - minutes + 1];
                 }
-                i += 1;
             }
         }
 

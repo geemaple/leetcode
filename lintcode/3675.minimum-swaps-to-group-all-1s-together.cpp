@@ -64,20 +64,16 @@ public:
 
         int count = 0;
         int ones = 0;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            if (arr[j] == 1) {
-                count += 1;
+        for (int i = 0; i < n; i++) {
+            if (i >= k) {
+                count -= arr[i - k];
             }
 
-            if (j - i + 1 == k) {
+            count += arr[i];
+
+            if (i >= k - 1) {
                 ones = max(ones, count);
-                if (arr[i] == 1) {
-                    count -= 1;
-                }
-                i += 1;
             }
-
         }
 
         return k - ones;

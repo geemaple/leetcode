@@ -30,15 +30,13 @@
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         n = len(nums)
-        i = 0
         res = float('-inf')
         tmp = 0
-        for j in range(n):
-            tmp += nums[j]
+        for i in range(n):
+            tmp += nums[i]
 
-            if j - i + 1 == k:
+            if i >= k - 1:
                 res = max(res, tmp)
-                tmp -= nums[i]
-                i += 1
+                tmp -= nums[i - k + 1]
 
         return res / k

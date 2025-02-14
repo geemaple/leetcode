@@ -90,26 +90,22 @@ class Solution:
     """
     def maximum_unique_flavors(self, candies: List[int], k: int) -> int:
         # --- write your code here ---
-
         n = len(candies)
         counter = Counter(candies)
-        if k == 0:
-            return len(counter)
-
-        i = 0
         give = len(counter)
         count = 0
-        for j in range(n):
-            counter[candies[j]] -= 1
-            if counter[candies[j]] == 0:
+        for i in range(n):
+            if i >= k:
+                counter[candies[i - k]] += 1
+                if counter[candies[i - k]] == 1:
+                    count -= 1
+
+            counter[candies[i]] -= 1
+            if counter[candies[i]] == 0:
                 count += 1
 
-            if (j - i + 1 == k):
+            if (i >= k - 1):
                 give = min(give, count)
-                counter[candies[i]] += 1
-                if counter[candies[i]] == 1:
-                    count -= 1
-                i += 1
-
+                
         return len(counter) - give
     

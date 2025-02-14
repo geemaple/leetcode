@@ -44,24 +44,22 @@ class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
         n = len(nums)
         res = 0
-        i = 0
         counter = defaultdict(int)
         total = 0
-        for j in range(n):
-            total += nums[j]
-            counter[nums[j]] += 1
+        for i in range(n):
+            total += nums[i]
+            counter[nums[i]] += 1
 
-            if j - i + 1 == k:
+            if i >= k - 1:
                 if len(counter) == k:
                     res = max(res, total)
 
-                total -= nums[i]
-                counter[nums[i]] -= 1
-                if counter[nums[i]] == 0:
-                    del counter[nums[i]]
+                j = i - k + 1
+                total -= nums[j]
+                counter[nums[j]] -= 1
+                if counter[nums[j]] == 0:
+                    del counter[nums[j]]
 
-                i += 1
-        
         return res
     
 class Solution:

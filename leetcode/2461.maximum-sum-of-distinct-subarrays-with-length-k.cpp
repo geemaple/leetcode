@@ -47,20 +47,19 @@ public:
         unordered_map<int, int> counter;
         long long res = 0;
         long long total = 0;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            total += nums[j];
-            counter[nums[j]] += 1;
-            if (j - i + 1 == k) {
+        for (int i = 0; i < n; i++) {
+            total += nums[i];
+            counter[nums[i]] += 1;
+            if (i >= k - 1) {
                 if (counter.size() == k) {
                     res = max(res, total);
                 }
-                total -= nums[i];
-                counter[nums[i]] -= 1;
-                if (counter[nums[i]] == 0) {
-                    counter.erase(nums[i]);
+                int j = i - k + 1;
+                total -= nums[j];
+                counter[nums[j]] -= 1;
+                if (counter[nums[j]] == 0) {
+                    counter.erase(nums[j]);
                 }
-                i += 1;
             }
         }
 

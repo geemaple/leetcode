@@ -36,7 +36,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [15%] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 349/2207 | 5 vips |
+| [15%] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 351/2207 | 5 vips |
 | [18%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 10/54 | - |
 | [47%] | [leetcode-google.md](./list/leetcode-google.md) | 223/471 | 2 vips |
 | [48%] | [leetcode-75.md](./list/leetcode-75.md) | 36/75 | - |
@@ -53,9 +53,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 38/56 | 1 vip |
+| [🔲] | [9c-top.md](./list/9c-top.md) | 39/56 | 1 vip |
 
-**Solved**: 523 problems
+**Solved**: 527 problems
 
 ## 类型/Category
 
@@ -98,7 +98,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-504](https://leetcode.com/problems/base-7/) | Base 7 | [c++](./leetcode/504.base-7.cpp), [python3](./leetcode/504.base-7.py) | Math | O\(N\) | O\(1\) | - |
@@ -119,6 +119,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-50](https://leetcode.com/problems/powx-n/) | Powx N | [c++](./leetcode/50.powx-n.cpp), [python3](./leetcode/50.powx-n.py) | Math | O\(logN\) | O\(1\) | - |
+| [Leetcode-1352](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Product Of The Last K Numbers | [c++](./leetcode/1352.product-of-the-last-k-numbers.cpp), [python3](./leetcode/1352.product-of-the-last-k-numbers.py) | Math | O\(1\) | O\(N\) | - |
 | [Leetcode-836](https://leetcode.com/problems/rectangle-overlap/) | Rectangle Overlap | [c++](./leetcode/836.rectangle-overlap.cpp), [python3](./leetcode/836.rectangle-overlap.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-13](https://leetcode.com/problems/roman-to-integer/) | Roman To Integer | [c++](./leetcode/13.roman-to-integer.cpp), [python3](./leetcode/13.roman-to-integer.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Math | O\(N\) | O\(1\) | - |
@@ -147,10 +148,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(18) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
+| [Leetcode-1461](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | Check If A String Contains All Binary Codes Of Size K | [c++](./leetcode/1461.check-if-a-string-contains-all-binary-codes-of-size-k.cpp), [python3](./leetcode/1461.check-if-a-string-contains-all-binary-codes-of-size-k.py) | Bit Manipulation | O\(N\) | O\(N\) | - |
 | [Leetcode-338](https://leetcode.com/problems/counting-bits/) | Counting Bits | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-461](https://leetcode.com/problems/hamming-distance/) | Hamming Distance | [c++](./leetcode/461.hamming-distance.cpp), [python3](./leetcode/461.hamming-distance.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -205,7 +207,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Design
 
-| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(23) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Design | O\(1\) | O\(H\) | - |
@@ -222,6 +224,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-146](https://leetcode.com/problems/lru-cache/) | Lru Cache | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-895](https://leetcode.com/problems/maximum-frequency-stack/) | Maximum Frequency Stack | [c++](./leetcode/895.maximum-frequency-stack.cpp), [python3](./leetcode/895.maximum-frequency-stack.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-155](https://leetcode.com/problems/min-stack/) | Min Stack | [c++](./leetcode/155.min-stack.cpp), [python3](./leetcode/155.min-stack.py) | Design | O\(1\) | O\(N\) | - |
+| [Leetcode-1352](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Product Of The Last K Numbers | [c++](./leetcode/1352.product-of-the-last-k-numbers.cpp), [python3](./leetcode/1352.product-of-the-last-k-numbers.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-304](https://leetcode.com/problems/range-sum-query-2d-immutable/) | Range Sum Query 2D Immutable | [c++](./leetcode/304.range-sum-query-2d-immutable.cpp), [python3](./leetcode/304.range-sum-query-2d-immutable.py) | Design | O\(\*1\) | O\(MN\) | - |
 | [Leetcode-303](https://leetcode.com/problems/range-sum-query-immutable/) | Range Sum Query Immutable | [c++](./leetcode/303.range-sum-query-immutable.cpp), [python3](./leetcode/303.range-sum-query-immutable.py) | Design | O\(\*1\) | O\(N\) | - |
 | [Leetcode-307](https://leetcode.com/problems/range-sum-query-mutable/) | Range Sum Query Mutable | [c++](./leetcode/307.range-sum-query-mutable.cpp), [python3](./leetcode/307.range-sum-query-mutable.py) | Design | O\(logN\) | O\(N\) | - |
@@ -429,11 +432,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(70) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(71) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Hash Table | O\(1\) | O\(N\) | - |
+| [Leetcode-1461](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | Check If A String Contains All Binary Codes Of Size K | [c++](./leetcode/1461.check-if-a-string-contains-all-binary-codes-of-size-k.cpp), [python3](./leetcode/1461.check-if-a-string-contains-all-binary-codes-of-size-k.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Construct Binary Tree From Inorder And Postorder Traversal | [c++](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.cpp), [python3](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Construct Binary Tree From Preorder And Inorder Traversal | [c++](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.cpp), [python3](./leetcode/105.construct-binary-tree-from-preorder-and-inorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-889](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | Construct Binary Tree From Preorder And Postorder Traversal | [c++](./leetcode/889.construct-binary-tree-from-preorder-and-postorder-traversal.cpp), [python3](./leetcode/889.construct-binary-tree-from-preorder-and-postorder-traversal.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -633,7 +637,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1652](https://leetcode.com/problems/defuse-the-bomb/) | Defuse The Bomb | [c++](./leetcode/1652.defuse-the-bomb.cpp), [python3](./leetcode/1652.defuse-the-bomb.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -651,6 +655,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2461](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | Maximum Sum Of Distinct Subarrays With Length K | [c++](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.cpp), [python3](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2379](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | Minimum Recolors To Get K Consecutive Black Blocks | [c++](./leetcode/2379.minimum-recolors-to-get-k-consecutive-black-blocks.cpp), [python3](./leetcode/2379.minimum-recolors-to-get-k-consecutive-black-blocks.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Minimum Size Subarray Sum | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-2134](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | Minimum Swaps To Group All 1S Together II | [c++](./leetcode/2134.minimum-swaps-to-group-all-1s-together-ii.cpp), [python3](./leetcode/2134.minimum-swaps-to-group-all-1s-together-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Sliding Window | O\(M \+ N\) | O\(N\) | - |
 | [Leetcode-1343](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold | [c++](./leetcode/1343.number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.cpp), [python3](./leetcode/1343.number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-567](https://leetcode.com/problems/permutation-in-string/) | Permutation In String | [c++](./leetcode/567.permutation-in-string.cpp), [python3](./leetcode/567.permutation-in-string.py) | Sliding Window | O\(N\+M\) | O\(N\) | - |
@@ -734,7 +739,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Divide and Conquer
 
-| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-932](https://leetcode.com/problems/beautiful-array/) | Beautiful Array | [c++](./leetcode/932.beautiful-array.cpp), [python3](./leetcode/932.beautiful-array.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | [Leetcode-106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Construct Binary Tree From Inorder And Postorder Traversal | [c++](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.cpp), [python3](./leetcode/106.construct-binary-tree-from-inorder-and-postorder-traversal.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
@@ -755,6 +760,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Divide and Conquer | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Divide and Conquer | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-324](https://leetcode.com/problems/wiggle-sort-ii/) | Wiggle Sort II | [c++](./leetcode/324.wiggle-sort-ii.cpp), [python3](./leetcode/324.wiggle-sort-ii.py) | Divide and Conquer | \- | \- | - |
+| [Lintcode-649](https://www.lintcode.com/problem/binary-tree-upside-down/) | Binary Tree Upside Down | [c++](./lintcode/649.binary-tree-upside-down.cpp), [python3](./lintcode/649.binary-tree-upside-down.py) | Divide and Conquer | O\(N\) | O\(H\) | Leetcode-156 |
 | [Lintcode-1534](https://www.lintcode.com/problem/convert-binary-search-tree-to-sorted-doubly-linked-list/) | Convert Binary Search Tree To Sorted Doubly Linked List | [c++](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.cpp), [python3](./lintcode/1534.convert-binary-search-tree-to-sorted-doubly-linked-list.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 | [Lintcode-11](https://www.lintcode.com/problem/search-range-in-binary-search-tree/) | Search Range In Binary Search Tree | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python3](./lintcode/11.search-range-in-binary-search-tree.py) | Divide and Conquer | O\(N\) | O\(H\) | - |
 
@@ -803,7 +809,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(54) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(55) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -857,6 +863,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-669](https://leetcode.com/problems/trim-a-binary-search-tree/) | Trim A Binary Search Tree | [c++](./leetcode/669.trim-a-binary-search-tree.cpp), [python3](./leetcode/669.trim-a-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Depth-First Search | O\(NH\) | O\(H\) | - |
 | [Leetcode-98](https://leetcode.com/problems/validate-binary-search-tree/) | Validate Binary Search Tree | [c++](./leetcode/98.validate-binary-search-tree.cpp), [python3](./leetcode/98.validate-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
+| [Lintcode-649](https://www.lintcode.com/problem/binary-tree-upside-down/) | Binary Tree Upside Down | [c++](./lintcode/649.binary-tree-upside-down.cpp), [python3](./lintcode/649.binary-tree-upside-down.py) | Depth-First Search | O\(N\) | O\(H\) | Leetcode-156 |
 | [Lintcode-11](https://www.lintcode.com/problem/search-range-in-binary-search-tree/) | Search Range In Binary Search Tree | [c++](./lintcode/11.search-range-in-binary-search-tree.cpp), [python3](./lintcode/11.search-range-in-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Lintcode-634](https://www.lintcode.com/problem/word-squares/) | Word Squares | [c++](./lintcode/634.word-squares.cpp), [python3](./lintcode/634.word-squares.py) | Depth-First Search | O\(N \* P^5\) | O\(N\) | Leetcode-425 |
 

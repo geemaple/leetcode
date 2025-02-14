@@ -52,14 +52,13 @@ class Solution:
         # write your code here
         n = len(nums)
         counter = defaultdict(int)
-        i = 0
         res = []
-        for j in range(n):
-            counter[nums[j]] += 1
-            if j - i + 1 == k:
+        for i in range(n):
+            counter[nums[i]] += 1
+            if i >= k - 1:
                 res.append(len(counter))
-                counter[nums[i]] -= 1
-                if counter[nums[i]] == 0:
-                    del counter[nums[i]]
-                i += 1
+                j = i - k + 1
+                counter[nums[j]] -= 1
+                if counter[nums[j]] == 0:
+                    del counter[nums[j]]
         return res

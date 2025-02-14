@@ -40,18 +40,16 @@ public:
         int n = s.size();
         int res = 0;
         int count = 0;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            if (isVowel(s[j])) {
+        for (int i = 0; i < n; i++) {
+            if (isVowel(s[i])) {
                 count += 1;
             }
 
-            if (j - i + 1 == k) {
+            if (i >= k - 1) {
                 res = max(res, count);
-                if (isVowel(s[i])) {
+                if (isVowel(s[i - k + 1])) {
                     count -= 1;
                 }
-                i += 1;
             }
         }
 

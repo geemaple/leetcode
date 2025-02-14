@@ -42,19 +42,17 @@ public:
     int minimumRecolors(string blocks, int k) {
         int n = blocks.size();
         int black = 0;
-        int i = 0;
         int count = 0;
-        for (int j = 0; j < n; j++) {
-            if (blocks[j] == 'B') {
+        for (int i = 0; i < n; i++) {
+            if (blocks[i] == 'B') {
                 count += 1;
             }
 
-            if (j - i + 1 == k) {
+            if (i >= k - 1) {
                 black = max(black, count);
-                if (blocks[i] == 'B') {
+                if (blocks[i - k + 1] == 'B') {
                     count -= 1;
                 }
-                i += 1;
             }
         }
 

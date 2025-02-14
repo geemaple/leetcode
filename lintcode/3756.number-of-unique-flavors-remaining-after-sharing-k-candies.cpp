@@ -91,31 +91,27 @@ public:
         for (int x: candies) {
             counter[x] += 1;
         }
-        
-        if (k == 0) {
-            return counter.size();
-        }
 
         int give = counter.size();
-        int i = 0;
         int count = 0;
-        for (int j = 0; j < n; j++) {
-            counter[candies[j]] -= 1;
-            if (counter[candies[j]] == 0) {
+        for (int i = 0; i < n; i++) {
+            if (i >= k) {
+                counter[candies[i - k]] += 1;
+                if (counter[candies[i - k]] == 1) {
+                    count -= 1;
+                }
+            }
+
+            counter[candies[i]] -= 1;
+            if (counter[candies[i]] == 0) {
                 count += 1;
             }
 
-            if (j - i + 1 == k) {
+            if (i >= k - 1) {
                 give = min(give, count);
-                counter[candies[i]] += 1;
-                if (counter[candies[i]] == 1) {
-                    count -= 1;
-                }
-                i += 1;
             } 
         }
 
         return counter.size() - give;
-
     }
 };

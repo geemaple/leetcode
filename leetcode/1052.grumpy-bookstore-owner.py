@@ -38,16 +38,14 @@ class Solution:
         n = len(grumpy)
         count = 0
         res = 0
-        i = 0
-        for j in range(n):
-            if grumpy[j] == 1:
-                count += customers[j]
+        for i in range(n):
+            if grumpy[i] == 1:
+                count += customers[i]
 
-            if j - i + 1 == minutes:
+            if i >= minutes - 1:
                 res = max(res, count)
-                if grumpy[i] == 1:
-                    count -= customers[i]
-                i += 1
+                if grumpy[i - minutes + 1] == 1:
+                    count -= customers[i - minutes + 1]
                     
         for i in range(n):
             if grumpy[i] == 0:

@@ -55,16 +55,14 @@ public:
         int n = nums.size();
         vector<int> res(n, -1);
         long long total = 0;
-        int i = 0;
-        int diameter = 2 * k + 1;
-        for (int j = 0; j < n; j++) {
-            total += nums[j];
-
-            if (j - i + 1 == diameter) {
+        k = 2 * k + 1;
+        for (int i = 0; i < n; i++) {
+            total += nums[i];
+            if (i >= k - 1) {
+                int j = i - k + 1;
                 int center = (i + j) / 2;
-                res[center] = total / diameter;
-                total -= nums[i];
-                i += 1;
+                res[center] = total / k;
+                total -= nums[j];
             } 
         }
         return res;

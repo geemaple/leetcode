@@ -49,16 +49,15 @@ public:
         int n = nums.size();
         unordered_map<int, int> counter;
         vector<int> res;
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            counter[nums[j]] += 1;
-            if (j - i + 1 == k) {
+        for (int i = 0; i < n; i++) {
+            counter[nums[i]] += 1;
+            if (i >= k - 1) {
                 res.push_back(counter.size());
-                counter[nums[i]] -= 1;
-                if (counter[nums[i]] == 0) {
-                    counter.erase(nums[i]);
+                int j = i - k + 1;
+                counter[nums[j]] -= 1;
+                if (counter[nums[j]] == 0) {
+                    counter.erase(nums[j]);
                 }
-                i += 1;
             }
         }
         return res;

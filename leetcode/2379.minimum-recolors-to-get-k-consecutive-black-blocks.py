@@ -40,17 +40,15 @@
 class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
         n = len(blocks)
-        i = 0
         black = 0
         count = 0
-        for j in range(n):
-            if blocks[j] == 'B':
+        for i in range(n):
+            if blocks[i] == 'B':
                 count += 1
 
-            if j - i + 1 == k:
+            if i >= k - 1:
                 black = max(black, count)
-                if blocks[i] == 'B':
+                if blocks[i - k + 1] == 'B':
                     count -= 1
-                i += 1
 
         return k - black
