@@ -49,11 +49,11 @@
 38. https://leetcode.com/problems/validate-binary-search-tree/
 39. https://leetcode.com/problems/binary-search-tree-iterator/
 40. https://www.lintcode.com/problem/binary-tree-upside-down/
+41. https://www.lintcode.com/problem/find-leaves-of-binary-tree/
+42. https://www.lintcode.com/problem/maximum-subtree/
 
-/Users/felix/Downloads/高频算法4.pdf page 36
+/Users/felix/Downloads/高频算法4.pdf page 41
 
-- https://www.lintcode.com/problem/binary-tree-leaves-order-traversal/
-- https://www.lintcode.com/problem/maximum-subtree/
 - https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/
 
 ### 搜索
