@@ -56,6 +56,9 @@ Smallest Rectangle Enclosing Black Pixels
 - https://www.lintcode.com/problem/insert-node-in-a-binary-search-tree/
 - https://www.lintcode.com/problem/remove-node-in-binary-search-tree/
 
+Binary Tree Maximum Path Sum II
+Binary Tree Maximum Path Sum
+
 ### 宽度优先搜索
 
 - https://www.lintcode.com/problem/binary-tree-level-order-traversal/
@@ -79,6 +82,8 @@ Smallest Rectangle Enclosing Black Pixels
 - https://www.lintcode.com/problem/build-post-office-ii/
 
 ### 深度优先搜索
+
+https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?envType=daily-question&envId=2025-02-17
 
 - https://www.lintcode.com/problem/subsets/ +duplicate 
 - https://www.lintcode.com/problem/combination-sum/

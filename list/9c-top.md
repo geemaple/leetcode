@@ -51,12 +51,11 @@
 40. https://www.lintcode.com/problem/binary-tree-upside-down/
 41. https://www.lintcode.com/problem/find-leaves-of-binary-tree/
 42. https://www.lintcode.com/problem/maximum-subtree/
-
-/Users/felix/Downloads/高频算法4.pdf page 41
-
-- https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/
+43. https://www.lintcode.com/problem/binary-tree-vertical-order-traversal/
 
 ### 搜索
+
+/Users/felix/Downloads/高频算法4.pdf page 41
 
 - https://www.lintcode.com/problem/surrounded-regions/
 - https://www.lintcode.com/problem/nearest-exit/
