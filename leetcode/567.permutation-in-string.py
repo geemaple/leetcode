@@ -29,24 +29,25 @@
 from collections import Counter
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
+        n = len(s2)
+        k = len(s1)
         counter = Counter(s1)
         hit = 0
-        j = 0
-        for i in range(len(s2)):
+
+        for i in range(n):
+            if i >= k:
+                if s2[i - k] in counter:
+                    counter[s2[i - k]] += 1
+                    if counter[s2[i - k]] >= 1:
+                        hit -= 1
+
             if s2[i] in counter:
                 counter[s2[i]] -= 1
                 if counter[s2[i]] >= 0:
                     hit += 1
-            
-            if i >= len(s1) - 1:
-                if hit == len(s1):
+
+            if i >= k - 1:
+                if hit == k:
                     return True
-
-                if s2[j] in counter:
-                    counter[s2[j]] += 1
-                    if counter[s2[j]] > 0:
-                        hit -= 1
-
-                j += 1
-
+                
         return False

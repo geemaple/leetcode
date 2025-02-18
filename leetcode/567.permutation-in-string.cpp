@@ -29,14 +29,24 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
+        int n = s2.size();
+        int k = s1.size();
         unordered_map<char, int> counter;
         for (char x: s1) {
             counter[x] += 1;
         }
-
+        
         int hit = 0;
-        int j = 0;
-        for (int i = 0; i < s2.size(); i++) {
+        for (int i = 0; i < n; i++) {
+            if (i >= k) {
+                if (counter.count(s2[i - k]) > 0) {
+                    counter[s2[i - k]] += 1;
+                    if (counter[s2[i - k]] >= 1) {
+                        hit -= 1;
+                    }
+                }
+            }
+
             if (counter.count(s2[i]) > 0) {
                 counter[s2[i]] -= 1;
                 if (counter[s2[i]] >= 0) {
@@ -44,19 +54,10 @@ public:
                 }
             }
             
-            if (i >= s1.size() - 1) {
-                if (hit == s1.size()) {
+            if (i >= k - 1) {
+                if (hit == k) {
                     return true;
                 }
-
-                if (counter.count(s2[j]) > 0) {
-                    counter[s2[j]] += 1;
-                    if (counter[s2[j]] > 0) {
-                        hit -= 1;
-                    }
-                }
-
-                j += 1;
             }
         }
 
