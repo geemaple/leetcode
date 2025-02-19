@@ -1,7 +1,7 @@
 #  Tag: Binary Tree, Depth First Search/DFS, Divide and Conquer
 #  Time: O(N)
 #  Space: O(N)
-#  Ref: LeetCode 366
+#  Ref: Leetcode-366
 #  Note: -
 
 #  Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.

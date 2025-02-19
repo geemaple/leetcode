@@ -1,6 +1,6 @@
 #  Tag: Hash Table, String, Sliding Window
 #  Time: O(N)
-#  Space: O(1)
+#  Space: O(K)
 #  Ref: -
 #  Note: -
 
@@ -33,30 +33,27 @@
 #  
 
 from collections import Counter
-
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         n = len(s)
+        k = len(p)
         counter = Counter(p)
-        left = len(p)
+        hit = 0
         res = []
-
-        j = 0
         for i in range(n):
+            if i >= k:
+                if s[i - k] in counter:
+                    counter[s[i - k]] += 1
+                    if counter[s[i - k]] >= 1:
+                        hit -= 1
+
             if s[i] in counter:
                 counter[s[i]] -= 1
                 if counter[s[i]] >= 0:
-                    left -= 1
+                    hit += 1
 
-            if i - j + 1 == len(p):
-                if left == 0:
-                    res.append(j)
-
-                if s[j] in counter:
-                    counter[s[j]] += 1
-                    if counter[s[j]] > 0:
-                        left += 1
-
-                j += 1
+            if i >= k - 1:
+                if hit == k:
+                    res.append(i - k + 1)
 
         return res

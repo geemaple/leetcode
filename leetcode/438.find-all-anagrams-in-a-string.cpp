@@ -1,6 +1,6 @@
 //  Tag: Hash Table, String, Sliding Window
 //  Time: O(N)
-//  Space: O(1)
+//  Space: O(K)
 //  Ref: -
 //  Note: -
 
@@ -36,35 +36,35 @@ class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
         int n = s.size();
+        int k = p.size();
         unordered_map<char, int> counter;
         for (auto ch: p) {
             counter[ch] += 1;
         }
-
-        int left = p.size();
+        int hit = 0;
         vector<int> res;
-        int j =0;
         for (int i = 0; i < n; i++) {
-            if (counter.count(s[i]) > 0) {
-                counter[s[i]]--;
-                if (counter[s[i]] >= 0) {
-                    left--;
+            if (i >= k) {
+                if (counter.count(s[i - k]) > 0) {
+                    counter[s[i - k]] += 1;
+                    if (counter[s[i - k]] >= 1) {
+                        hit -= 1;
+                    }
                 }
             }
 
-            if (i - j + 1 == p.size()) {
-                if (left == 0) {
-                    res.push_back(j);
-                }
 
-                if (counter.count(s[j]) > 0) {
-                    counter[s[j]]++;
-                    if (counter[s[j]] > 0) {
-                        left++;
-                    }
+            if (counter.count(s[i]) > 0) {
+                counter[s[i]]--;
+                if (counter[s[i]] >= 0) {
+                    hit += 1;
                 }
+            }
 
-                j++;
+            if (i >= k - 1) {
+                if (hit == k) {
+                    res.push_back(i - k + 1);
+                }
             }
         }
 

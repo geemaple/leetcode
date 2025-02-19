@@ -1,95 +1,94 @@
-/*
- * [30] Substring with Concatenation of All Words
- *
- * https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/
- *
- * algorithms
- * Hard (22.51%)
- * Total Accepted:    162.7K
- * Total Submissions: 656.8K
- * Testcase Example:  '"barfoothefoobarman"\n["foo","bar"]'
- *
- * You are given a string, s, and a list of words, words, that are all of the
- * same length. Find all starting indices of substring(s) in s that is a
- * concatenation of each word in words exactly once and without any intervening
- * characters.
- * 
- * 
- * 
- * Example 1:
- * 
- * 
- * Input:
- * ⁠ s = "barfoothefoobarman",
- * ⁠ words = ["foo","bar"]
- * Output: [0,9]
- * Explanation: Substrings starting at index 0 and 9 are "barfoo" and "foobar"
- * respectively.
- * The output order does not matter, returning [9,0] is fine too.
- * 
- * 
- * Example 2:
- * 
- * 
- * Input:
- * ⁠ s = "wordgoodgoodgoodbestword",
- * ⁠ words = ["word","good","best","word"]
- * Output: []
- * 
- * 
- */
+//  Tag: Hash Table, String, Sliding Window
+//  Time: O(N)
+//  Space: O(K)
+//  Ref: -
+//  Note: -
 
-#include <vector>
-#include <string>
-#include <unordered_map>
-#include <iostream>
-using namespace std;
+//  You are given a string s and an array of strings words. All the strings of words are of the same length.
+//  A concatenated string is a string that exactly contains all the strings of any permutation of words concatenated.
+//  
+//  For example, if words = ["ab","cd","ef"], then "abcdef", "abefcd", "cdabef", "cdefab", "efabcd", and "efcdab" are all concatenated strings. "acdbef" is not a concatenated string because it is not the concatenation of any permutation of words.
+//  
+//  Return an array of the starting indices of all the concatenated substrings in s. You can return the answer in any order.
+//   
+//  Example 1:
+//  
+//  Input: s = "barfoothefoobarman", words = ["foo","bar"]
+//  Output: [0,9]
+//  Explanation:
+//  The substring starting at 0 is "barfoo". It is the concatenation of ["bar","foo"] which is a permutation of words.
+//  The substring starting at 9 is "foobar". It is the concatenation of ["foo","bar"] which is a permutation of words.
+//  
+//  Example 2:
+//  
+//  Input: s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]
+//  Output: []
+//  Explanation:
+//  There is no concatenated substring.
+//  
+//  Example 3:
+//  
+//  Input: s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]
+//  Output: [6,9,12]
+//  Explanation:
+//  The substring starting at 6 is "foobarthe". It is the concatenation of ["foo","bar","the"].
+//  The substring starting at 9 is "barthefoo". It is the concatenation of ["bar","the","foo"].
+//  The substring starting at 12 is "thefoobar". It is the concatenation of ["the","foo","bar"].
+//  
+//   
+//  Constraints:
+//  
+//  1 <= s.length <= 104
+//  1 <= words.length <= 5000
+//  1 <= words[i].length <= 30
+//  s and words[i] consist of lowercase English letters.
+//  
+//  
 
 class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
-        vector<int> ans;
-        if (s.size() == 0 || words.size() == 0 || words[0].size() == 0) return ans;
-        
-        int num = (int)words.size();
-        int word_len = (int)words[0].size();
-        int substring_len = num * word_len;
-        
-        unordered_map<string, int> word_count;
-        for (int i = 0; i < words.size(); i++) {
-            word_count[words[i]] += 1;
+        int n = s.size();
+        int k = words.size();
+        int l = words[0].size();
+        vector<int> res;
+        unordered_map<string, int> counter;
+        for (auto x: words) {
+            counter[x] += 1;
         }
-        
-        for (int i = 0; i < num - substring_len + 1; i++) {
-            string test_string = s.substr(i, substring_len);
-            unordered_map<string, int> test_count;
-            int count = 0;
-            for (int j = 0; j < substring_len; j += word_len) {
-                string test_word = test_string.substr(j, word_len);
 
-                if (word_count.count(test_word) && test_count[test_word] < word_count[test_word]) {
-                    count++;
-                    test_count[test_word] += 1;
-                } else {
-                    break;
+        for (int index = 0; index < l; index++) {
+            int left = index;
+            int count = 0;
+            int hit = 0;
+            unordered_map<string, int> current_counter = counter;
+            for (int i = index; i <= n - l; i += l) {
+                string sub = s.substr(i, l);
+                count += 1;
+                if (current_counter.count(sub) > 0) {
+                    current_counter[sub] -= 1;
+                    if (current_counter[sub] >= 0) {
+                        hit += 1;
+                    }
+                }
+
+                if (count == k) {
+                    if (hit == k) {
+                        res.push_back(left);
+                    }
+                    string pre = s.substr(left, l);
+                    if (current_counter.count(pre) > 0) {
+                        current_counter[pre] += 1;
+                        if (current_counter[pre] >= 1) {
+                            hit -= 1;
+                        }
+                    }
+                    count -= 1;
+                    left += l;
                 }
             }
-            
-            if (count == num) {
-                ans.push_back(i);
-            }
         }
-        
-        return ans;
+
+        return res;
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    string a[] = {"foo","bar"};
-    vector<string> vec(a, a + 3);
-    Solution s;
-    vector<int> res = s.findSubstring("barfoothefoobarman", vec);
-
-    return 0;
-}
