@@ -53,9 +53,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
 | [🔲] | [9c-top.md](./list/9c-top.md) | 41/56 | 2 vips |
-| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 20/2207 | 2 vips |
+| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 22/2207 | 2 vips |
 
-**Solved**: 536 problems
+**Solved**: 538 problems
 
 ## 类型/Category
 
@@ -436,7 +436,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(76) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(78) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -454,7 +454,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-535](https://leetcode.com/problems/encode-and-decode-tinyurl/) | Encode And Decode Tinyurl | [c++](./leetcode/535.encode-and-decode-tinyurl.cpp), [python3](./leetcode/535.encode-and-decode-tinyurl.py) | Hash Table | O\(1\) | O\(N\) | - |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Hash Table | O\(N\) | O\(K\) | - |
 | [Leetcode-448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Find All Numbers Disappeared In An Array | [c++](./leetcode/448.find-all-numbers-disappeared-in-an-array.cpp), [python3](./leetcode/448.find-all-numbers-disappeared-in-an-array.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-2156](https://leetcode.com/problems/find-substring-with-given-hash-value/) | Find Substring With Given Hash Value | [c++](./leetcode/2156.find-substring-with-given-hash-value.cpp), [python3](./leetcode/2156.find-substring-with-given-hash-value.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-1980](https://leetcode.com/problems/find-unique-binary-string/) | Find Unique Binary String | [c++](./leetcode/1980.find-unique-binary-string.cpp), [python3](./leetcode/1980.find-unique-binary-string.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-49](https://leetcode.com/problems/group-anagrams/) | Group Anagrams | [c++](./leetcode/49.group-anagrams.cpp), [python3](./leetcode/49.group-anagrams.py) | Hash Table | O\(NL\) | O\(N\) | - |
 | [Leetcode-846](https://leetcode.com/problems/hand-of-straights/) | Hand Of Straights | [c++](./leetcode/846.hand-of-straights.cpp), [python3](./leetcode/846.hand-of-straights.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
@@ -647,11 +649,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(31) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(32) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1652](https://leetcode.com/problems/defuse-the-bomb/) | Defuse The Bomb | [c++](./leetcode/1652.defuse-the-bomb.cpp), [python3](./leetcode/1652.defuse-the-bomb.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-438](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Find All Anagrams In A String | [c++](./leetcode/438.find-all-anagrams-in-a-string.cpp), [python3](./leetcode/438.find-all-anagrams-in-a-string.py) | Sliding Window | O\(N\) | O\(K\) | - |
 | [Leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Sliding Window | O\(Log\(N \- K\)\) | O\(1\) | - |
+| [Leetcode-2156](https://leetcode.com/problems/find-substring-with-given-hash-value/) | Find Substring With Given Hash Value | [c++](./leetcode/2156.find-substring-with-given-hash-value.cpp), [python3](./leetcode/2156.find-substring-with-given-hash-value.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-1052](https://leetcode.com/problems/grumpy-bookstore-owner/) | Grumpy Bookstore Owner | [c++](./leetcode/1052.grumpy-bookstore-owner.cpp), [python3](./leetcode/1052.grumpy-bookstore-owner.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2090](https://leetcode.com/problems/k-radius-subarray-averages/) | K Radius Subarray Averages | [c++](./leetcode/2090.k-radius-subarray-averages.cpp), [python3](./leetcode/2090.k-radius-subarray-averages.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Sliding Window | O\(N\) | O\(N\) | - |
@@ -907,7 +910,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Backtracking
 
-| Link | Problem(19) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(20) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-257](https://leetcode.com/problems/binary-tree-paths/) | Binary Tree Paths | [c++](./leetcode/257.binary-tree-paths.cpp), [python3](./leetcode/257.binary-tree-paths.py) | Backtracking | O\(N\) | O\(H\) | - |
 | [Leetcode-40](https://leetcode.com/problems/combination-sum-ii/) | Combination Sum II | [c++](./leetcode/40.combination-sum-ii.cpp), [python3](./leetcode/40.combination-sum-ii.py) | Backtracking | O\(2^N\) | O\(N\) | - |
@@ -915,6 +918,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2375](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | Construct Smallest Number From Di String | [c++](./leetcode/2375.construct-smallest-number-from-di-string.cpp), [python3](./leetcode/2375.construct-smallest-number-from-di-string.py) | Backtracking | O\(N\) | O\(N\) | - |
 | [Leetcode-1718](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | Construct The Lexicographically Largest Valid Sequence | [c++](./leetcode/1718.construct-the-lexicographically-largest-valid-sequence.cpp), [python3](./leetcode/1718.construct-the-lexicographically-largest-valid-sequence.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | [Leetcode-2698](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Find The Punishment Number Of An Integer | [c++](./leetcode/2698.find-the-punishment-number-of-an-integer.cpp), [python3](./leetcode/2698.find-the-punishment-number-of-an-integer.py) | Backtracking | O\(N \* 2^K\) | O\(K\) | - |
+| [Leetcode-1980](https://leetcode.com/problems/find-unique-binary-string/) | Find Unique Binary String | [c++](./leetcode/1980.find-unique-binary-string.cpp), [python3](./leetcode/1980.find-unique-binary-string.py) | Backtracking | O\(N\) | O\(1\) | - |
 | [Leetcode-22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | [c++](./leetcode/22.generate-parentheses.cpp), [python3](./leetcode/22.generate-parentheses.py) | Backtracking | O\(2^N\) | O\(N\) | - |
 | [Leetcode-1079](https://leetcode.com/problems/letter-tile-possibilities/) | Letter Tile Possibilities | [c++](./leetcode/1079.letter-tile-possibilities.cpp), [python3](./leetcode/1079.letter-tile-possibilities.py) | Backtracking | O\(N\!\) | O\(N\) | - |
 | [Leetcode-51](https://leetcode.com/problems/n-queens/) | N Queens | [c++](./leetcode/51.n-queens.cpp), [python3](./leetcode/51.n-queens.py) | Backtracking | O\(N\!\) | O\(N\) | - |
