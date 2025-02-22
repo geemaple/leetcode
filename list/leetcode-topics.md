@@ -156,5 +156,5 @@ undefined
 142. https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
 143. https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
 144. https://leetcode.com/problems/random-pick-with-weight/
-145. https://leetcode.com/problems/longest-increasing-subsequence/ +duplicate 
-146. https://leetcode.com/problems/russian-doll-envelopes/ +duplicate 
+145. https://leetcode.com/problems/longest-increasing-subsequence/ +duplicate
+146. https://leetcode.com/problems/russian-doll-envelopes/ +duplicate

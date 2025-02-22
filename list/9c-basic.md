@@ -77,7 +77,7 @@ Binary Tree Maximum Path Sum
 - https://www.lintcode.com/problem/zombie-in-matrix/
 - https://www.lintcode.com/problem/knight-shortest-path/
 - https://www.lintcode.com/problem/connected-component-in-undirected-graph/
-- https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/ +duplicate 
+- https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/ +duplicate
 - https://www.lintcode.com/problem/word-ladder/
 - https://www.lintcode.com/problem/build-post-office-ii/
 
@@ -85,14 +85,14 @@ Binary Tree Maximum Path Sum
 
 https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?envType=daily-question&envId=2025-02-17
 
-- https://www.lintcode.com/problem/subsets/ +duplicate 
+- https://www.lintcode.com/problem/subsets/ +duplicate
 - https://www.lintcode.com/problem/combination-sum/
 - https://www.lintcode.com/problem/combination-sum-ii/
 - https://www.lintcode.com/problem/palindrome-partitioning/
 - https://www.lintcode.com/problem/permutations/
 - https://www.lintcode.com/problem/permutations-ii/
 - https://www.lintcode.com/problem/n-queens/
-- https://www.lintcode.com/problem/word-ladder/ +duplicate 
+- https://www.lintcode.com/problem/word-ladder/ +duplicate
 - https://www.lintcode.com/problem/word-ladder-ii/
 
 ### 数组、连表
@@ -110,7 +110,7 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 - https://www.lintcode.com/problem/sort-list/
 - https://www.lintcode.com/problem/convert-sorted-list-to-balanced-bst/
 - https://www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list/
-- https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/ +duplicate 
+- https://www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list/ +duplicate
 - https://www.lintcode.com/problem/merge-two-sorted-arrays/
 - https://www.lintcode.com/problem/merge-sorted-array/
 - https://www.lintcode.com/problem/intersection-of-two-arrays/
@@ -125,7 +125,7 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 - https://www.lintcode.com/problem/move-zeroes/
 - https://www.lintcode.com/problem/valid-palindrome/
 - https://www.lintcode.com/problem/rotate-string/
-- https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate 
+- https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate
 - https://www.lintcode.com/problem/two-sum/
 - https://www.lintcode.com/problem/two-sum-data-structure-design/
 - https://www.lintcode.com/problem/two-sum-input-array-is-sorted/
@@ -136,7 +136,7 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 - https://www.lintcode.com/problem/two-sum-greater-than-target/
 - https://www.lintcode.com/problem/two-sum-closest-to-target/
 - https://www.lintcode.com/problem/-um-closest/
-- https://www.lintcode.com/problem/-um/ +duplicate 
+- https://www.lintcode.com/problem/-um/ +duplicate
 - https://www.lintcode.com/problem/two-sum-difference-equals-to-target/
 - https://www.lintcode.com/problem/partition-array/
 - https://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
@@ -151,8 +151,8 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 
 - https://www.lintcode.com/problem/rehashing/
 - https://www.lintcode.com/problem/lru-cache/
-- https://www.lintcode.com/problem/subarray-sum/ +duplicate 
-- https://www.lintcode.com/problem/copy-list-with-random-pointer/ +duplicate 
+- https://www.lintcode.com/problem/subarray-sum/ +duplicate
+- https://www.lintcode.com/problem/copy-list-with-random-pointer/ +duplicate
 - https://www.lintcode.com/problem/anagrams/
 - https://www.lintcode.com/problem/longest-consecutive-sequence/
 - https://www.lintcode.com/problem/ugly-number-ii/
@@ -170,8 +170,8 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 ### 动态规划
 
 - https://www.lintcode.com/problem/triangle/
-- https://www.lintcode.com/problem/palindrome-partitioning/ +duplicate 
-- https://www.lintcode.com/problem/longest-consecutive-sequence/ +duplicate 
+- https://www.lintcode.com/problem/palindrome-partitioning/ +duplicate
+- https://www.lintcode.com/problem/longest-consecutive-sequence/ +duplicate
 - https://www.lintcode.com/problem/minimum-path-sum/
 - https://www.lintcode.com/problem/unique-paths/
 - https://www.lintcode.com/problem/climbing-stairs/

@@ -12,26 +12,30 @@ using namespace std;
 
 class Solution {
 public:
-    int minSwaps(vector<int>& nums) {
-        int n = nums.size();
-        int k = 0;
-        for (int x : nums) {
-            k += x;
-        }
-
-        int ones = 0;
-        int count = 0;
-        for (int i = 0; i < n + k; i++) {
-            if (i >= k) {
-                count -= nums[i - k];
+    int kEmptySlots(vector<int>& flowers, int k) {
+                
+        set<int> bloom;
+        bloom.insert(flowers[0]);
+        
+        for (auto i = 1; i < flowers.size(); ++i) {
+            auto lower = bloom.lower_bound(flowers[i]);
+            if (lower != bloom.begin()) {
+               lower--;
             }
-            count += nums[i % n];
-            if (i >= k - 1) {
-                ones = max(ones, count);
+    
+            if (flowers[i] - *lower == k + 1) {
+                return i + 1;
             }
+            
+            auto upper = bloom.upper_bound(flowers[i]);
+            if (upper != bloom.end() && *upper - flowers[i] == k + 1) {
+                return i + 1;
+            }
+            
+            bloom.insert(flowers[i]);
         }
-
-        return k - ones;
+        
+        return -1;
     }
 };
 
@@ -49,9 +53,9 @@ int main() {
 //    
 //    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
 //    vector<int> end = {3,4,5,6};
-    vector<int> profit = {0, 0, 0};
+    vector<int> profit = {1, 3, 2};
     Solution s;
-    int res = s.minSwaps(profit);
+    int res = s.kEmptySlots(profit, 1);
 
     return 0;
 }

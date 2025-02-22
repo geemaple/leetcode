@@ -372,19 +372,20 @@ class Problem:
         with open(file_path, 'r') as file:
             for line in file.readlines():
                 format_lines.append(f'{line}')
-                match = re.match(r'^([\d\+\-]+)\.?\s([^\s]+)', line)
+                match = re.match(r'^([\d\+\-]+)\.?\s([^\s]+)\s+([^\s]+)?', line)
                 if match is None:
                     continue
                 
                 current_number += 1
                 mark = match.group(1)
                 link = match.group(2)
+                other =  f' {match.group(3)}' if match.group(3) else ''
                 parsed_link = urlparse(link)
 
                 match = re.search(r'\/problems?\/([^\/]+)\/?', parsed_link.path)
                 if not match:
                     continue
-
+                
                 name = match.group(1)
                 match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
                 source = match.group(2)
@@ -392,12 +393,12 @@ class Problem:
                 s = Problem(link, source, mark, name, '', mod_datetime)
 
                 if mark.isnumeric():
-                    format_lines[-1] = f'{current_number}. {s.link}\n'
+                    format_lines[-1] = f'{current_number}. {s.link}{other}\n'
                 else:
-                    format_lines[-1] = f'- {s.link}\n'
+                    format_lines[-1] = f'- {s.link}{other}\n'
 
 
-                if s in res:
+                if s in res and 'duplicate' not in other:
                     dup.add(s.name)
                     format_lines[-1] = f'{format_lines[-1].strip()} +duplicate \n'
                 else:

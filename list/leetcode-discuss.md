@@ -31,7 +31,7 @@
 ### Mono Stack Problem
 
 20. https://leetcode.com/problems/beautiful-towers-ii/
-21. https://leetcode.com/problems/next-greater-element-iv/ +duplicate 
+21. https://leetcode.com/problems/next-greater-element-iv/ +duplicate
 22. https://leetcode.com/problems/maximum-number-of-robots-within-budget/
 
 ### Binary Search Problems
@@ -69,8 +69,8 @@
 46. https://leetcode.com/problems/odd-even-jump/
 47. https://leetcode.com/problems/license-key-formatting/
 48. https://leetcode.com/problems/unique-email-addresses/
-49. https://leetcode.com/problems/fruit-into-baskets/ +duplicate 
-50. https://leetcode.com/problems/split-array-largest-sum/ +duplicate 
+49. https://leetcode.com/problems/fruit-into-baskets/ +duplicate
+50. https://leetcode.com/problems/split-array-largest-sum/ +duplicate
 51. https://leetcode.com/problems/k-empty-slots/
 52. https://leetcode.com/problems/diameter-of-binary-tree/
 53. https://leetcode.com/problems/heaters/
