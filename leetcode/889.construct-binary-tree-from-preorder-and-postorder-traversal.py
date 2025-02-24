@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/ztqhSjxYC-M
 
 #  Given two integer arrays, preorder and postorder where preorder is the preorder traversal of a binary tree of distinct values and postorder is the postorder traversal of the same tree, reconstruct and return the binary tree.
 #  If there exist multiple answers, you can return any of them.
@@ -39,26 +40,35 @@
 #         self.right = right
 class Solution:
     def constructFromPrePost(self, preorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
-        
-        if len(preorder) == 0:
+        post_map = {}
+        for i in range(len(postorder)):
+            post_map[postorder[i]] = i
+
+        return self.helper(preorder, postorder, post_map)
+
+    def helper(self, preorder: list, postorder: list, post_map: dict) -> TreeNode:
+        n = len(preorder)
+        if n == 0:
             return None
 
         val = preorder[0]
-        root = TreeNode(val)
-        if len(preorder) > 1:
-            left = preorder[1]
-            index = postorder.index(left)
-            root.left = self.constructFromPrePost(preorder[1: index + 2], postorder[0: index + 1])
-            root.right = self.constructFromPrePost(preorder[index + 2 :], postorder[index + 1: -1])
+        node = TreeNode(val)
 
-        return root
+        if n > 1:
+            r = post_map[preorder[1]]
+            l = post_map[postorder[0]]
+            k = r - l + 1
+            node.left = self.helper(preorder[1: k + 1], postorder[0: k], post_map)
+            node.right = self.helper(preorder[k + 1: n], postorder[k : n - 1], post_map)
+
+        return node
     
 class Solution:
     def constructFromPrePost(self, preorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
         postorder_map = {postorder[i] : i for i in range(len(postorder))}
         return self.helper(preorder, postorder_map, 0, len(preorder) - 1, 0, len(postorder) - 1)
 
-    def helper(self, preorder:list, postorder_map:list, s0: int, e0: int, s1: int, e1: int):
+    def helper(self, preorder:list, postorder_map:list, s0: int, e0: int, s1: int, e1: int) -> TreeNode:
         if s0 > e0:
             return None
 
