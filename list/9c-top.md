@@ -55,10 +55,10 @@
 
 ### 搜索
 
-/Users/felix/Downloads/高频算法4.pdf page 41
+44. https://leetcode.com/problems/surrounded-regions/
+45. https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
+/Users/felix/Downloads/高频算法5.pdf page 22
 
-- https://www.lintcode.com/problem/surrounded-regions/
-- https://www.lintcode.com/problem/nearest-exit/
 - https://www.lintcode.com/problem/letter-combinations-of-a-phone-number/
 - https://www.lintcode.com/problem/factorization/
 - https://www.lintcode.com/problem/add-operators/

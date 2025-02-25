@@ -1,6 +1,6 @@
 //  Tag: Array, Depth-First Search, Breadth-First Search, Union Find, Matrix
 //  Time: O(MN)
-//  Space: O(1)
+//  Space: O(MN)
 //  Ref: -
 //  Note: -
 
