@@ -32,6 +32,8 @@ TAG_GAME = 'Game Theory'
 TAG_BS = 'Binary Search'
 TAG_LINKED_LIST = 'Linked List'
 TAG_HASH = 'Hash Table'
+TAG_ROLLING_HASH = 'Rolling Hash'
+TAG_PREFIX_SUM = 'Prefix Sum'
 TAG_STACK = 'Stack'
 TAG_MONO_STACK = 'Monotonic Stack'
 TAG_QUEUE = 'Queue'
@@ -41,7 +43,7 @@ TAG_2P = 'Two Pointers'
 TAG_SWIN = 'Sliding Window'
 TAG_SORT = 'Sorting'
 TAG_COUNT = 'Counting'
-TAG_QSEL = 'Quickselect'
+TAG_QUICK_SELECT = 'Quickselect'
 TAG_DC = 'Divide and Conquer'
 TAG_BFS = 'Breadth-First Search'
 TAG_DFS = 'Depth-First Search'
@@ -72,7 +74,7 @@ ivars = globals()
 SHOW_CATEGORIES = [ivars[n] for n in ivars if n.startswith('TAG')]
 MISC_CATEGORIES = [ivars[n] for n in ivars if n.startswith('MISC_TAG')]
 STUDY_CATEGORIES = [ivars[n] for n in ivars if n.startswith('STUDY_TAG')]
-ALL_CATEGORIES =  SHOW_CATEGORIES + MISC_CATEGORIES + STUDY_CATEGORIES + [DEFAULT_TAG] 
+ALL_CATEGORIES =  SHOW_CATEGORIES + MISC_CATEGORIES + STUDY_CATEGORIES + [DEFAULT_TAG]
 TAG_MAP = {
     TAG_MATH: [TAG_PROB, TAG_BIT_OP, TAG_DP],
     TAG_DP: [TAG_GAME],
@@ -82,27 +84,30 @@ TAG_MAP = {
     TAG_SORT: [TAG_COUNT],
     TAG_BFS: [TAG_TOPOLOGICAL_SORT, TAG_SHORTEST_PATH],
     TAG_DFS: [TAG_BTRACK, TAG_TOPOLOGICAL_SORT, TAG_SHORTEST_PATH],
+    TAG_HASH: [TAG_ROLLING_HASH]
 }
 
 TAG_IGNORE = r'-'
 
 TAG_REGEX = {
-    TAG_MATH: r'Math|Number Theory|Geometry',
-    TAG_DESIGN: r'^Design$|Iterator',
-    TAG_BS: r'^Binary Search$|Binary Search on Answer',
-    TAG_2P: r'^Two Pointers$|Same Direction Two Pointers',
-    TAG_BFS: r'Breadth-First Search|Breadth First Search|BFS',
-    TAG_DFS: r'Depth-First Search|Depth First Search|DFS',
-    TAG_DP: r'DP$|Dynamic Programming|Memoization',
-    TAG_SORT: r'^Sort$|^Sorting$|Merge Sort|Bucket Sort',
-    TAG_PROB: r'Randomized|Rejection Sampling|Reservoir Sampling|Probability and Statistics',
+    TAG_MATH: r'^(Math|Geometry|Number Theory)$',
+    TAG_DESIGN: r'^(Design|Iterator|Data Stream)$',
+    TAG_BS: r'^(Binary Search|Binary Search on Answer)$',
+    TAG_2P: r'^(Two Pointers|Same Direction Two Pointers)$',
+    TAG_BFS: r'^(Breadth-First Search|Breadth First Search(/BFS)?|BFS)$',
+    TAG_DFS: r'^(Depth-First Search|Depth First Search(/DFS)?|DFS)$',
+    TAG_DP: r'^(DP|Dynamic Programming(/DP)?|\w+(\s\w+)* DP|Memoization)$',
+    TAG_SORT: r'^(Sort(ing)?|\w+ Sort)$',
+    TAG_PROB: r'^(Randomized|\w+ Sampling|Probability and Statistics)$',
     TAG_QUEUE: r'^Queue$',
-    TAG_HEAP: r'^Heap$|Priority Queue',
-    TAG_HASH: r'^Hash Table$|Hash Function',
-    TAG_LSWEEP: r'^Line Sweep$|^Sweep Line$',
-    MISC_TAG_TREE: r'^Tree$|Binary Tree',
-    MISC_TAG_ARY: r'^Array$|^Matrix$|Prefix Sum',
-    MISC_TAG_STR: r'^String$|^String Matching$',
+    TAG_HEAP: r'^(Heap|Heap \(Priority Queue\)|Priority Queue)$',
+    TAG_HASH: r'^(Hash Table|Hash Function)$',
+    TAG_LSWEEP: r'^(Line Sweep|Sweep Line)$',
+    TAG_QUICK_SELECT: r'^(Quickselect|Quick Select)$',
+    TAG_PREFIX_SUM: r'^(Prefix Sum|Prefix Sum Array)$',
+    MISC_TAG_TREE: r'^(Tree|Binary Tree)$',
+    MISC_TAG_ARY: r'^(Array|Matrix)$',
+    MISC_TAG_STR: r'^(String|String Matching)$',
 }
 
 EXTENSION = {
@@ -186,6 +191,7 @@ class Markdown:
 
             for tag in tags.split(','):
                 tag = tag.strip()
+
                 match_category = set([x for x in ALL_CATEGORIES if re.search(TAG_REGEX.get(x, rf"^{x}$"), tag, re.IGNORECASE)])
                 if len(match_category) > 0:
                     match_all.update(match_category)

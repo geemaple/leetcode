@@ -57,9 +57,10 @@
 
 44. https://leetcode.com/problems/surrounded-regions/
 45. https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
-/Users/felix/Downloads/高频算法5.pdf page 22
+46. https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
-- https://www.lintcode.com/problem/letter-combinations-of-a-phone-number/
+/Users/felix/Downloads/高频算法5.pdf page 28
+
 - https://www.lintcode.com/problem/factorization/
 - https://www.lintcode.com/problem/add-operators/
 - https://www.lintcode.com/problem/word-squares/

@@ -1,45 +1,67 @@
+//  Tag: Hash Table, String, Backtracking
+//  Time: O(4^N)
+//  Space: O(4^N)
+//  Ref: -
+//  Note: -
+
+//  Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+//  A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+//  
+//   
+//  Example 1:
+//  
+//  Input: digits = "23"
+//  Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+//  
+//  Example 2:
+//  
+//  Input: digits = ""
+//  Output: []
+//  
+//  Example 3:
+//  
+//  Input: digits = "2"
+//  Output: ["a","b","c"]
+//  
+//   
+//  Constraints:
+//  
+//  0 <= digits.length <= 4
+//  digits[i] is a digit in the range ['2', '9'].
+//  
+//  
+
 class Solution {
-    
-private:
-    unordered_map<char, vector<char>> mapping;
-    void dfs(int level, string &answer, string &digits, vector<string> &res)
-    {
-        if (level == digits.size())
-        {
-            res.push_back(answer);
-            return;
-        }
-        
-        char number = digits[level];
-        for (auto i = 0; i < mapping[number].size(); ++i)
-        {
-            answer += mapping[number][i];
-            dfs(level + 1, answer, digits, res);
-            answer.pop_back();
-        }
-    }
-    
 public:
     vector<string> letterCombinations(string digits) {
-        if (digits.size() == 0)
-        {
-            return vector<string>();
+        if (digits.empty()) {
+            return {};
         }
-        
+
+        unordered_map<char, string> graph = {
+                {'2', "abc"},
+                {'3', "def"},
+                {'4', "ghi"},
+                {'5', "jkl"},
+                {'6', "mno"},
+                {'7', "pqrs"},
+                {'8', "tuv"},
+                {'9', "wxyz"}
+            };
+
         vector<string> res;
-        string answer = "";
-        
-        mapping['2'] = {'a', 'b', 'c'};
-        mapping['3'] = {'d', 'e', 'f'};
-        mapping['4'] = {'g', 'h', 'i'};
-        mapping['5'] = {'j', 'k', 'l'};
-        mapping['6'] = {'m', 'n', 'o'};
-        mapping['7'] = {'p', 'q', 'r', 's'};
-        mapping['8'] = {'t', 'u', 'v'};
-        mapping['9'] = {'w', 'x', 'y', 'z'};
-        
-        dfs(0, answer, digits, res);
-        
+        helper(graph, digits, 0, "", res);
         return res;
+    }
+
+    void helper(unordered_map<char, string> &graph, string &digits, int index, string ans, vector<string> &res) {
+        if (index == digits.size()) {
+            res.push_back(ans);
+            return;
+        }
+
+        for (auto &ch: graph[digits[index]]) {
+            helper(graph, digits, index + 1, ans + ch, res);
+        }
     }
 };
