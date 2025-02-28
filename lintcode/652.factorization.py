@@ -1,28 +1,51 @@
+#  Tag: Depth First Search/DFS
+#  Time: O(2^K)
+#  Space: O(LogN)
+#  Ref: -
+#  Note: -
+
+#  A non-negative numbers can be regarded as product of its factors.
+#  Write a function that takes an integer n and return all possible combinations of its factors.
+#  
+#  **Example1**
+#  ```
+#  Input: 8
+#  Output: [[2,2,2],[2,4]]
+#  Explanation:
+#  8 = 2 x 2 x 2 = 2 x 4
+#  ```
+#  **Example2**
+#  ```
+#  Input: 1
+#  Output: []
+#  ```
+#  
+#  - Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+#  - The solution set must not contain duplicate combination.
+
+from typing import (
+    List,
+)
+
 class Solution:
     """
     @param n: An integer
     @return: a list of combination
+             we will sort your return value in output
     """
-    def getFactors(self, n):
+    def get_factors(self, n: int) -> List[List[int]]:
         # write your code here
         res = []
-        ans = []
-        self.dfs(2, n, ans, res)
+        self.helper(n, 2, [], res)
         return res
 
-
-    def dfs(self, start, remain, ans, res):
-        
+    def helper(self, n: int, start: int, ans: list, res: list):
         if len(ans) > 0:
-            ans.append(remain)
-            res.append(ans[:])
-            ans.pop()
+            res.append(ans + [n])
 
-        for i in range(start, remain):
-            if remain / i < i:
+        for k in range(start, n):
+            if n // k < k:
                 break
 
-            if remain % i == 0:
-                ans.append(i)
-                self.dfs(i, remain // i, ans, res)
-                ans.pop()
+            if n % k == 0:
+                self.helper(n // k, k, ans + [k], res)

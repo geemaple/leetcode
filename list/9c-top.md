@@ -58,11 +58,11 @@
 44. https://leetcode.com/problems/surrounded-regions/
 45. https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
 46. https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+47. https://www.lintcode.com/problem/factorization/ +Mark
+48. https://leetcode.com/problems/expression-add-operators/ +Mark
 
-/Users/felix/Downloads/高频算法5.pdf page 28
+/Users/felix/Downloads/高频算法5.pdf page 39
 
-- https://www.lintcode.com/problem/factorization/
-- https://www.lintcode.com/problem/add-operators/
 - https://www.lintcode.com/problem/word-squares/
 
 ### 数学、几何、位运算
