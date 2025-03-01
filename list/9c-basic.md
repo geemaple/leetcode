@@ -98,6 +98,9 @@ https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?
 - https://www.lintcode.com/problem/word-ladder/ +duplicate
 - https://www.lintcode.com/problem/word-ladder-ii/
 
+Subsets II
+Word Break II
+
 ### 数组、连表
 
 - https://www.lintcode.com/problem/reverse-nodes-in-k-group/

@@ -60,10 +60,7 @@
 46. https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 47. https://www.lintcode.com/problem/factorization/ +Mark
 48. https://leetcode.com/problems/expression-add-operators/ +Mark
-
-/Users/felix/Downloads/高频算法5.pdf page 39
-
-- https://www.lintcode.com/problem/word-squares/
+49. https://www.lintcode.com/problem/word-squares/ +Mark
 
 ### 数学、几何、位运算
 

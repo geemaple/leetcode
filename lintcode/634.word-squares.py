@@ -87,14 +87,79 @@ class Solution:
 
         res = []
         for i in range(n):
-            self.dfs(k, tree, [words[i]], res)
+            self.helper(k, tree, [words[i]], res)
         return res
         
-    def dfs(self, k: int, tree: Trie, ans: list, res: list):
+    def helper(self, k: int, tree: Trie, ans: list, res: list):
         if len(ans) == k:
             res.append(list(ans))
             return
         index = len(ans)
         pre = ''.join([x[index] for x in ans])
         for word in tree.prefix(pre):
-            self.dfs(k, tree, ans + [word], res)
+            self.helper(k, tree, ans + [word], res)
+
+class TireNode:
+    def __init__(self):
+        self.is_word = False
+        self.children = {}
+        self.word = None
+
+class Trie:
+    def __init__(self):
+        self.root = TireNode()
+
+    def add(self, word):
+        cur = self.root
+        
+        for ch in word:
+            if ch not in cur.children:
+                cur.children[ch] = TireNode()
+            cur = cur.children[ch]
+            
+        cur.is_word = True
+        cur.word = word
+
+    def prefix(self, word) -> list:
+        cur = self.root
+        for ch in word:
+            if ch not in cur.children:
+                return []
+            cur = cur.children[ch]
+
+        res = []
+        self.dfs(cur, res)
+        return res
+
+    def dfs(self, cur, res):
+        if cur.is_word:
+            res.append(cur.word)
+
+        for ch, neighbor in cur.children.items():
+            self.dfs(neighbor, res)
+
+class Solution:
+    """
+    @param words: a set of words without duplicates
+    @return: all word squares
+             we will sort your return value in output
+    """
+    def word_squares(self, words: List[str]) -> List[List[str]]:
+        # write your code here
+        k = len(words[0])
+        trie = Trie()
+        for x in words:
+            trie.add(x)
+        res = []
+        self.helper(k, trie, [], res)
+        return res
+
+    def helper(self, k: int, trie: Trie, ans: list, res: list):
+        if len(ans) == k:
+            res.append(ans)
+            return
+        
+        index = len(ans)
+        prefix = ''.join(x[index] for x in ans)
+        for word in trie.prefix(prefix):
+            self.helper(k, trie, ans + [word], res)

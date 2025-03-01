@@ -109,12 +109,12 @@ public:
         vector<vector<string>> res;
         for (auto word: words) {
             vector<string> ans = vector<string>{word};
-            dfs(n, tree, ans, res);
+            helper(n, tree, ans, res);
         }
         return res;
     }
 
-    void dfs(int n, Trie &tree, vector<string> &ans, vector<vector<string>> &res) {
+    void helper(int n, Trie &tree, vector<string> &ans, vector<vector<string>> &res) {
         if (ans.size() == n) {
             res.push_back(ans);
             return;
@@ -127,7 +127,113 @@ public:
 
         for (auto word: tree.prefix(pre)) {
             ans.push_back(word);
-            dfs(n, tree, ans, res);
+            helper(n, tree, ans, res);
+            ans.pop_back();
+        }
+    }
+};
+
+
+class TrieNode {
+public:
+    vector<TrieNode *> children;
+    bool is_word;
+    string word;
+    TrieNode(): children(26, nullptr), is_word(false), word() {}
+    ~TrieNode() {
+        for (auto p: children) {
+            delete p;
+        }
+    }
+};
+
+class Trie {
+public:
+    TrieNode *root;
+    Trie() {
+        root = new TrieNode();
+    }
+    ~Trie() {
+        delete root;
+    }
+
+    void add(string word) {
+        TrieNode *cur = root;
+        for (auto ch: word) {
+            if (!cur->children[ch - 'a']) {
+                cur->children[ch - 'a'] = new TrieNode();
+            }
+            
+            cur = cur->children[ch - 'a'];
+        }
+        cur->is_word = true;
+        cur->word = word;
+    }
+
+    vector<string> prefix(string word) {
+        TrieNode *cur = root;
+        for (auto ch: word) {
+            if (!cur->children[ch - 'a']) {
+                return vector<string>{};
+            }
+            cur = cur->children[ch - 'a'];
+        }
+        vector<string> res;
+        dfs(res, cur);
+        return res;
+    };
+
+    void dfs(vector<string> &res, TrieNode *cur) {
+        if (cur->is_word) {
+            res.push_back(cur->word);
+        }
+
+        for (auto &neighbor: cur->children) {
+            if (neighbor) {
+                dfs(res, neighbor);
+            }
+            
+        }
+    }
+
+};
+
+class Solution {
+public:
+    /**
+     * @param words: a set of words without duplicates
+     * @return: all word squares
+     *          we will sort your return value in output
+     */
+    vector<vector<string>> wordSquares(vector<string> &words) {
+        // write your code here
+        int n = words[0].size();
+
+        Trie tree = Trie();
+        for (auto word: words){
+            tree.add(word);
+        }
+
+        vector<vector<string>> res;
+        vector<string> ans;
+        helper(n, tree, ans, res);
+        return res;
+    }
+
+    void helper(int n, Trie &tree, vector<string> &ans, vector<vector<string>> &res) {
+        if (ans.size() == n) {
+            res.push_back(ans);
+            return;
+        }
+        int k = ans.size();
+        string pre = "";
+        for (int i = 0; i < k; i++) {
+            pre += ans[i][k];
+        }
+
+        for (auto word: tree.prefix(pre)) {
+            ans.push_back(word);
+            helper(n, tree, ans, res);
             ans.pop_back();
         }
     }
