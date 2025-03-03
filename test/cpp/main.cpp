@@ -12,37 +12,33 @@ using namespace std;
 
 class Solution {
 public:
-    /**
-     * @param n: An integer
-     * @return: a list of combination
-     *          we will sort your return value in output
-     */
-    vector<vector<int>> getFactors(int n) {
-        // write your code here
-        vector<int> ans;
-        vector<vector<int>> res;
-        helper(2, n, ans, res);
-        return res;
-    }
-
-    void helper(int start, int n, vector<int> &ans, vector<vector<int>> &res) {
-        if (ans.size() > 0) {
-            ans.push_back(n);
-            res.push_back(ans);
-            ans.pop_back();
+    int takeCharacters(string s, int k) {
+        int n = s.size();
+        vector<int> counter;
+        for (char x: s) {
+            counter[x - 'a'] += 1;
         }
 
-        for (int k = start; k < n; k++) {
-            if (n / k < k) {
-                break;
+        for (int i = 0; i < 3; i++) {
+            if (counter[i] < k) {
+                return -1;
             }
-            if (n % k == 0) {
-                ans.push_back(k);
-                helper(k, n / k, ans, res);
-                ans.pop_back();
+            counter[i] -= k;
+        }
+ 
+        int i = 0;
+        int res = 0;
+        vector<int> tmp;
+        for(int j = 0; j < n; j++) {
+            tmp[s[j] - 'a'] += 1;
+            while (tmp[s[j] - 'a'] > counter[s[j] - 'a']) {
+                tmp[s[i] - 'a'] -= 1;
+                i += 1;
             }
+            res = max(res, j - i + 1);
         }
 
+        return n - res;
     }
 };
 
@@ -62,7 +58,7 @@ int main() {
 //    vector<int> end = {3,4,5,6};
     vector<int> profit = {1, 3, 2};
     Solution s;
-    string res = s.shortestCommonSupersequence("abac", "cab");
+    int res = s.takeCharacters("aabaaaacaabc", 2);
 
     return 0;
 }
