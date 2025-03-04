@@ -64,8 +64,11 @@
 
 ### 数学、几何、位运算
 
-- https://www.lintcode.com/problem/search-a---matrix-ii/
-- https://www.lintcode.com/problem/rotate-image/
+50. https://leetcode.com/problems/search-a-2d-matrix-ii/
+51. https://leetcode.com/problems/rotate-image/
+
+/Users/felix/Downloads/高频算法6.pdf 20
+
 - https://www.lintcode.com/problem/sparse-matrix-multiplication/
 - https://www.lintcode.com/problem/big-integer-addition/
 - https://www.lintcode.com/problem/add-binary/
