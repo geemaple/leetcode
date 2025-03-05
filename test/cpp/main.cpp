@@ -12,33 +12,40 @@ using namespace std;
 
 class Solution {
 public:
-    int takeCharacters(string s, int k) {
-        int n = s.size();
-        vector<int> counter;
-        for (char x: s) {
-            counter[x - 'a'] += 1;
+    /**
+     * @param a: a sparse matrix
+     * @param b: a sparse matrix
+     * @return: the result of A * B
+     */
+    vector<vector<int>> multiply(vector<vector<int>> &a, vector<vector<int>> &b) {
+        // write your code here
+        int n = a.size();
+        int m = b[0].size();
+
+        vector<vector<pair<int, int>>> sparseB(b.size(), vector<pair<int, int>>());
+        for (int i = 0; i < b.size(); i++) {
+            for (int j = 0; j < m; j++) {
+                if (!b[i][j]) {
+                    sparseB[i].emplace_back(j, b[i][j]);
+                }
+            }
         }
 
-        for (int i = 0; i < 3; i++) {
-            if (counter[i] < k) {
-                return -1;
+        vector<vector<int>> res(n, vector<int>(m, 0));
+        for (int i = 0; i < n; i++) {
+            for (int k = 0; k < a[i].size(); k++) {
+                if (a[i][k] == 0) {
+                    continue;
+                }
+
+                for (auto &[j, v]: sparseB[k]) {
+                    res[i][j] += a[i][k] * v;
+                }
             }
-            counter[i] -= k;
-        }
- 
-        int i = 0;
-        int res = 0;
-        vector<int> tmp;
-        for(int j = 0; j < n; j++) {
-            tmp[s[j] - 'a'] += 1;
-            while (tmp[s[j] - 'a'] > counter[s[j] - 'a']) {
-                tmp[s[i] - 'a'] -= 1;
-                i += 1;
-            }
-            res = max(res, j - i + 1);
         }
 
-        return n - res;
+        return res;
+
     }
 };
 

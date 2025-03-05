@@ -66,10 +66,10 @@
 
 50. https://leetcode.com/problems/search-a-2d-matrix-ii/
 51. https://leetcode.com/problems/rotate-image/
+52. https://www.lintcode.com/problem/sparse-matrix-multiplication/
 
-/Users/felix/Downloads/高频算法6.pdf 20
+/Users/felix/Downloads/高频算法6.pdf 32
 
-- https://www.lintcode.com/problem/sparse-matrix-multiplication/
 - https://www.lintcode.com/problem/big-integer-addition/
 - https://www.lintcode.com/problem/add-binary/
 - https://www.lintcode.com/problem/add-two-numbers/
