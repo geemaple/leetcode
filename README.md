@@ -55,7 +55,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-top.md](./list/9c-top.md) | 50/56 | 2 vips |
 | [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 47/2208 | 3 vips |
 
-**Solved**: 575 problems
+**Solved**: 576 problems
 
 ## 类型/Category
 
@@ -100,7 +100,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(35) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-504](https://leetcode.com/problems/base-7/) | Base 7 | [c++](./leetcode/504.base-7.cpp), [python3](./leetcode/504.base-7.py) | Math | O\(N\) | O\(1\) | - |
@@ -109,6 +109,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-932](https://leetcode.com/problems/beautiful-array/) | Beautiful Array | [c++](./leetcode/932.beautiful-array.cpp), [python3](./leetcode/932.beautiful-array.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-1780](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | Check If Number Is A Sum Of Powers Of Three | [c++](./leetcode/1780.check-if-number-is-a-sum-of-powers-of-three.cpp), [python3](./leetcode/1780.check-if-number-is-a-sum-of-powers-of-three.py) | Math | O\(LogN\) | O\(1\) | - |
 | [Leetcode-3274](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | Check If Two Chessboard Squares Have The Same Color | [c++](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.cpp), [python3](./leetcode/3274.check-if-two-chessboard-squares-have-the-same-color.py) | Math | O\(1\) | O\(1\) | - |
+| [Leetcode-2523](https://leetcode.com/problems/closest-prime-numbers-in-range/) | Closest Prime Numbers In Range | [c++](./leetcode/2523.closest-prime-numbers-in-range.cpp), [python3](./leetcode/2523.closest-prime-numbers-in-range.py) | Math | O\(NloglogN\) | O\(N\) | - |
 | [Leetcode-3280](https://leetcode.com/problems/convert-date-to-binary/) | Convert Date To Binary | [c++](./leetcode/3280.convert-date-to-binary.cpp), [python3](./leetcode/3280.convert-date-to-binary.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-204](https://leetcode.com/problems/count-primes/) | Count Primes | [c++](./leetcode/204.count-primes.cpp), [python3](./leetcode/204.count-primes.py) | Math | O\(NlogN\) | O\(N\) | - |
