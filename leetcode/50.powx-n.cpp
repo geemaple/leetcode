@@ -40,6 +40,34 @@ public:
         if (power == 0) {
             return 1;
         }
+
+        if (power > 0) {
+            return pow(x, power);
+        } else {
+            return pow(1.0 / x, -power);
+        }
+    }
+
+    double pow(double x, long n) {
+        double res = 1;
+        while (n > 0) {
+            if (n % 2 == 1) {
+                res *= x;
+            }
+            x = x * x;
+            n = n / 2;
+        }
+        return res;
+    }
+};
+
+class Solution {
+public:
+    double myPow(double x, int n) {
+        long power = n;
+        if (power == 0) {
+            return 1;
+        }
         if (power > 0) {
             return pow(x, power);
         } else {
@@ -61,30 +89,3 @@ public:
     }
 };
 
-class Solution {
-public:
-    double myPow(double x, int n) {
-        long power = n;
-        if (power == 0) {
-            return 1;
-        }
-        if (power > 0) {
-            return pow(x, power);
-        } else {
-            return pow(1.0 / x, -power);
-        }
-    }
-
-    double pow(double x, long n) {
-        double res = 1;
-        double product = x;
-        while (n > 0) {
-            if (n % 2 == 1) {
-                res *= product;
-            }
-            product = product * product;
-            n = n / 2;
-        }
-        return res;
-    }
-};

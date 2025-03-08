@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/2beK-k1hnmA
 
 #  You are given a 0-indexed string blocks of length n, where blocks[i] is either 'W' or 'B', representing the color of the ith block. The characters 'W' and 'B' denote the colors white and black, respectively.
 #  You are also given an integer k, which is the desired number of consecutive black blocks.
@@ -40,15 +41,12 @@
 class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
         n = len(blocks)
-        black = 0
         count = 0
+        res = 0
         for i in range(n):
-            if blocks[i] == 'B':
-                count += 1
-
+            count += blocks[i] == 'B'
             if i >= k - 1:
-                black = max(black, count)
-                if blocks[i - k + 1] == 'B':
-                    count -= 1
+                res = max(res, count)
+                count -= blocks[i - k + 1] == 'B'
 
-        return k - black
+        return k - res

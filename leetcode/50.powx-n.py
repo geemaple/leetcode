@@ -35,51 +35,20 @@
 
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        if n == 0:
-            return 1
-        if n > 0:
-            return self.pow(x, n)
-        else:
-            return self.pow(1/x, -n)
+        if x == 0:
+            return 0
 
-    def pow(self, x: float, n: int) -> float:
+        negative = n < 0
+        n = abs(n)
         res = 1
-        product = x
-        times = 1
-        count = 0
-        while count < n:
-            if times + count > n:
-                times = 1
-                product = x
 
-            res *= product
-            count += times
-            times = times * 2
-            product = product * product
-
-        return res
-    
-class Solution:
-    def myPow(self, x: float, n: int) -> float:
-        if n == 0:
-            return 1
-        if n > 0:
-            return self.pow(x, n)
-        else:
-            return self.pow(1/x, -n)
-
-    def pow(self, x: float, n: int) -> float:
-        res = 1
-        product = x
         while n > 0:
             if n % 2 == 1:
-                res *= product
-
-            product = product * product
-
+                res = res * x
+            x = x * x
             n = n // 2
 
-        return res
+        return 1 / res if negative else res
 
 class Solution:
     def myPow(self, x: float, n: int) -> float:
@@ -99,20 +68,3 @@ class Solution:
             return half * half
         else:
             return half * half * x
-
-from functools import lru_cache
-class Solution:
-    def myPow(self, x: float, n: int) -> float:
-        if n == 0:
-            return 1
-        if n > 0:
-            return self.pow(x, n)
-        else:
-            return self.pow(1/x, -n)
-
-    @lru_cache()
-    def pow(self, x: float, n: int) -> float:
-        if n == 1:
-            return x
-
-        return self.pow(x, n // 2) * self.pow(x, n - n//2)

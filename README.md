@@ -44,6 +44,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [94%] | [neetcode150.md](./list/neetcode150.md) | 141/150 | 1 vip |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
+| [✅] | [9c-top.md](./list/9c-top.md) | 55/57 | 2 vips |
 | [✅] | [blind75.md](./list/blind75.md) | 76/77 | 1 vip |
 | [✅] | [geekbang.md](./list/geekbang.md) | 55/55 | - |
 | [✅] | [grind102.md](./list/grind102.md) | 101/102 | 1 vip |
@@ -52,7 +53,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [9c-top.md](./list/9c-top.md) | 50/56 | 2 vips |
 | [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 47/2208 | 3 vips |
 
 **Solved**: 576 problems
@@ -100,9 +100,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(35) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(37) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
+| [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
 | [Leetcode-504](https://leetcode.com/problems/base-7/) | Base 7 | [c++](./leetcode/504.base-7.cpp), [python3](./leetcode/504.base-7.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | [c++](./leetcode/224.basic-calculator.cpp), [python3](./leetcode/224.basic-calculator.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-227](https://leetcode.com/problems/basic-calculator-ii/) | Basic Calculator II | [c++](./leetcode/227.basic-calculator-ii.cpp), [python3](./leetcode/227.basic-calculator-ii.py) | Math | O\(N\) | O\(N\) | - |
@@ -126,6 +127,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-149](https://leetcode.com/problems/max-points-on-a-line/) | Max Points On A Line | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Math | O\(N^2\) | O\(N\) | - |
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Math | O\(NM\) | O\(N\+M\) | - |
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-50](https://leetcode.com/problems/powx-n/) | Powx N | [c++](./leetcode/50.powx-n.cpp), [python3](./leetcode/50.powx-n.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-1352](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Product Of The Last K Numbers | [c++](./leetcode/1352.product-of-the-last-k-numbers.cpp), [python3](./leetcode/1352.product-of-the-last-k-numbers.py) | Math | O\(1\) | O\(N\) | - |
@@ -189,7 +191,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(24) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(25) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -198,6 +200,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3174](https://leetcode.com/problems/clear-digits/) | Clear Digits | [c++](./leetcode/3174.clear-digits.cpp), [python3](./leetcode/3174.clear-digits.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-3066](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | Minimum Operations To Exceed Threshold Value II | [c++](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.cpp), [python3](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.py) | Simulation | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Simulation | O\(NM\) | O\(N\+M\) | - |
 | [Leetcode-2161](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | Partition Array According To Given Pivot | [c++](./leetcode/2161.partition-array-according-to-given-pivot.cpp), [python3](./leetcode/2161.partition-array-according-to-given-pivot.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-1910](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Remove All Occurrences Of A Substring | [c++](./leetcode/1910.remove-all-occurrences-of-a-substring.cpp), [python3](./leetcode/1910.remove-all-occurrences-of-a-substring.py) | Simulation | O\(NM\) | O\(1\) | - |
 | [Leetcode-566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape The Matrix | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
@@ -441,8 +444,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Linked List
 
-| Link | Problem(20) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Linked List | O\(N \+ M\) | O\(1\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Linked List | O\(1\) | O\(N\) | - |
 | [Leetcode-109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Convert Sorted List To Binary Search Tree | [c++](./leetcode/109.convert-sorted-list-to-binary-search-tree.cpp), [python3](./leetcode/109.convert-sorted-list-to-binary-search-tree.py) | Linked List | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Flatten Binary Tree To Linked List | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Linked List | O\(N\) | O\(H\) | - |
@@ -1184,11 +1188,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(110) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(108) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Other | \- | \- | - |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
-| [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Other | \- | \- | - |
 | [Leetcode-269](https://leetcode.com/problems/alien-dictionary/) | Alien Dictionary | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | - |
 | [Leetcode-561](https://leetcode.com/problems/array-partition-i/) | Array Partition I | [c++](./leetcode/561.array-partition-i.cpp) | Other | \- | \- | - |
 | [Leetcode-844](https://leetcode.com/problems/backspace-string-compare/) | Backspace String Compare | [c++](./leetcode/844.backspace-string-compare.cpp), [python3](./leetcode/844.backspace-string-compare.py) | Other | \- | \- | - |
@@ -1243,7 +1246,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-599](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | Minimum Index Sum Of Two Lists | [c++](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | Other | \- | \- | - |
 | [Leetcode-283](https://leetcode.com/problems/move-zeroes/) | Move Zeroes | [c++](./leetcode/283.move-zeroes.cpp), [python3](./leetcode/283.move-zeroes.py) | Other | \- | \- | - |
 | [Leetcode-346](https://leetcode.com/problems/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./leetcode/346.moving-average-from-data-stream.cpp), [python3](./leetcode/346.moving-average-from-data-stream.py) | Other | \- | \- | - |
-| [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Other | \- | \- | - |
 | [Leetcode-31](https://leetcode.com/problems/next-permutation/) | Next Permutation | [c++](./leetcode/31.next-permutation.cpp), [python3](./leetcode/31.next-permutation.py) | Other | \- | \- | - |
 | [Leetcode-447](https://leetcode.com/problems/number-of-boomerangs/) | Number Of Boomerangs | [c++](./leetcode/447.number-of-boomerangs.cpp), [python3](./leetcode/447.number-of-boomerangs.py) | Other | \- | \- | - |
 | [Leetcode-323](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | Number Of Connected Components In An Undirected Graph | [c++](./leetcode/323.number-of-connected-components-in-an-undirected-graph.cpp), [python3](./leetcode/323.number-of-connected-components-in-an-undirected-graph.py) | Other | \- | \- | - |

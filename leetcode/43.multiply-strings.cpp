@@ -1,34 +1,54 @@
-// res[i + j] += a[i] * b[j]
+//  Tag: Math, String, Simulation
+//  Time: O(NM)
+//  Space: O(N+M)
+//  Ref: -
+//  Note: -
+
+//  Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+//  Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
+//   
+//  Example 1:
+//  Input: num1 = "2", num2 = "3"
+//  Output: "6"
+//  Example 2:
+//  Input: num1 = "123", num2 = "456"
+//  Output: "56088"
+//  
+//   
+//  Constraints:
+//  
+//  1 <= num1.length, num2.length <= 200
+//  num1 and num2 consist of digits only.
+//  Both num1 and num2 do not contain any leading zero, except the number 0 itself.
+//  
+//  
+
 class Solution {
 public:
     string multiply(string num1, string num2) {
+        if (num1 == "0" || num2 == "0") {
+            return "0";
+        }
+
+        int n = num1.size();
+        int m = num2.size();
+        vector<int> digits(n + m, 0);
         
-        int size = num1.size() + num2.size();
-        vector<int> digits(size, 0);
-        
-        for(auto i = 0; i < num1.size(); ++i)
-        {
-            int digit1 = num1[i] - '0';
-            for(auto j = 0; j < num2.size(); ++j)
-            {
-                int digit2 = num2[j] - '0';
-                int index = size - 1 - i - 1 - j;
-                digits[index] += digit1 * digit2;
+        for(auto i = n - 1; i >= 0; i--) {
+            for(auto j = m - 1; j >= 0; j--) {
+                digits[i + j + 1] += (num1[i] - '0') * (num2[j] - '0');
+                digits[i + j] += digits[i + j + 1] / 10;
+                digits[i + j + 1] %= 10;
             }
         }
         
-        int addon = 0;
         string res = "";
-        
-        for (auto i = 0; i < digits.size(); ++i)
-        {
-            int number = digits[i] + addon;
-            addon = number / 10;
-            res = to_string(number % 10) + res;
-        }
-        
-        while (res.size() > 1 && res[0] == '0') {
-            res = res.substr(1, res.size() - 1);
+        for (int i = 0; i < m + n; i++) {
+            if (digits[i] == 0 && res.size() == 0) {
+                continue;
+            }
+
+            res += to_string(digits[i]);
         }
         
         return res;

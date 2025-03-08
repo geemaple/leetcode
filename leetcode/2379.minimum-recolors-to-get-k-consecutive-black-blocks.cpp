@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/2beK-k1hnmA
 
 //  You are given a 0-indexed string blocks of length n, where blocks[i] is either 'W' or 'B', representing the color of the ith block. The characters 'W' and 'B' denote the colors white and black, respectively.
 //  You are also given an integer k, which is the desired number of consecutive black blocks.
@@ -44,15 +45,11 @@ public:
         int black = 0;
         int count = 0;
         for (int i = 0; i < n; i++) {
-            if (blocks[i] == 'B') {
-                count += 1;
-            }
+            count += blocks[i] == 'B';
 
             if (i >= k - 1) {
                 black = max(black, count);
-                if (blocks[i - k + 1] == 'B') {
-                    count -= 1;
-                }
+                count -= blocks[i - k + 1] == 'B';
             }
         }
 
