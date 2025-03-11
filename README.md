@@ -53,9 +53,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 50/2208 | 3 vips |
+| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 51/2208 | 3 vips |
 
-**Solved**: 582 problems
+**Solved**: 585 problems
 
 ## 类型/Category
 
@@ -100,7 +100,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(38) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(39) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
@@ -127,6 +127,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-149](https://leetcode.com/problems/max-points-on-a-line/) | Max Points On A Line | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Math | O\(N^2\) | O\(N\) | - |
 | [Leetcode-1610](https://leetcode.com/problems/maximum-number-of-visible-points/) | Maximum Number Of Visible Points | [c++](./leetcode/1610.maximum-number-of-visible-points.cpp), [python3](./leetcode/1610.maximum-number-of-visible-points.py) | Math | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Math | \- | \- | - |
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Math | O\(NM\) | O\(N\+M\) | - |
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
@@ -474,7 +475,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(90) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(92) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -510,6 +511,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-205](https://leetcode.com/problems/isomorphic-strings/) | Isomorphic Strings | [c++](./leetcode/205.isomorphic-strings.cpp), [python3](./leetcode/205.isomorphic-strings.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-873](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | Length Of Longest Fibonacci Subsequence | [c++](./leetcode/873.length-of-longest-fibonacci-subsequence.cpp), [python3](./leetcode/873.length-of-longest-fibonacci-subsequence.py) | Hash Table | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-2958](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | Length Of Longest Subarray With At Most K Frequency | [c++](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.cpp), [python3](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-2781](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | Length Of The Longest Valid Substring | [c++](./leetcode/2781.length-of-the-longest-valid-substring.cpp), [python3](./leetcode/2781.length-of-the-longest-valid-substring.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Letter Combinations Of A Phone Number | [c++](./leetcode/17.letter-combinations-of-a-phone-number.cpp), [python3](./leetcode/17.letter-combinations-of-a-phone-number.py) | Hash Table | O\(4^N\) | O\(4^N\) | - |
 | [Leetcode-1079](https://leetcode.com/problems/letter-tile-possibilities/) | Letter Tile Possibilities | [c++](./leetcode/1079.letter-tile-possibilities.cpp), [python3](./leetcode/1079.letter-tile-possibilities.py) | Hash Table | O\(N\!\) | O\(N\) | - |
 | [Leetcode-141](https://leetcode.com/problems/linked-list-cycle/) | Linked List Cycle | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -534,6 +536,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1658](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | Minimum Operations To Reduce X To Zero | [c++](./leetcode/1658.minimum-operations-to-reduce-x-to-zero.cpp), [python3](./leetcode/1658.minimum-operations-to-reduce-x-to-zero.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Hash Table | O\(M \+ N\) | O\(N\) | - |
 | [Leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-1358](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Number Of Substrings Containing All Three Characters | [c++](./leetcode/1358.number-of-substrings-containing-all-three-characters.cpp), [python3](./leetcode/1358.number-of-substrings-containing-all-three-characters.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-567](https://leetcode.com/problems/permutation-in-string/) | Permutation In String | [c++](./leetcode/567.permutation-in-string.cpp), [python3](./leetcode/567.permutation-in-string.py) | Hash Table | O\(N\+M\) | O\(N\) | - |
 | [Leetcode-383](https://leetcode.com/problems/ransom-note/) | Ransom Note | [c++](./leetcode/383.ransom-note.cpp), [python3](./leetcode/383.ransom-note.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -736,7 +739,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(60) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(63) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -756,6 +759,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1052](https://leetcode.com/problems/grumpy-bookstore-owner/) | Grumpy Bookstore Owner | [c++](./leetcode/1052.grumpy-bookstore-owner.cpp), [python3](./leetcode/1052.grumpy-bookstore-owner.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2090](https://leetcode.com/problems/k-radius-subarray-averages/) | K Radius Subarray Averages | [c++](./leetcode/2090.k-radius-subarray-averages.cpp), [python3](./leetcode/2090.k-radius-subarray-averages.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2958](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | Length Of Longest Subarray With At Most K Frequency | [c++](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.cpp), [python3](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.py) | Sliding Window | O\(N\) | O\(N\) | - |
+| [Leetcode-2781](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | Length Of The Longest Valid Substring | [c++](./leetcode/2781.length-of-the-longest-valid-substring.cpp), [python3](./leetcode/2781.length-of-the-longest-valid-substring.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-424](https://leetcode.com/problems/longest-repeating-character-replacement/) | Longest Repeating Character Replacement | [c++](./leetcode/424.longest-repeating-character-replacement.cpp), [python3](./leetcode/424.longest-repeating-character-replacement.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-1493](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | Longest Subarray Of 1S After Deleting One Element | [c++](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.cpp), [python3](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.py) | Sliding Window | O\(N\) | O\(N\) | - |
@@ -773,6 +777,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1610](https://leetcode.com/problems/maximum-number-of-visible-points/) | Maximum Number Of Visible Points | [c++](./leetcode/1610.maximum-number-of-visible-points.cpp), [python3](./leetcode/1610.maximum-number-of-visible-points.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | Maximum Number Of Vowels In A Substring Of Given Length | [c++](./leetcode/1456.maximum-number-of-vowels-in-a-substring-of-given-length.cpp), [python3](./leetcode/1456.maximum-number-of-vowels-in-a-substring-of-given-length.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-1423](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | Maximum Points You Can Obtain From Cards | [c++](./leetcode/1423.maximum-points-you-can-obtain-from-cards.cpp), [python3](./leetcode/1423.maximum-points-you-can-obtain-from-cards.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Sliding Window | \- | \- | - |
 | [Leetcode-2841](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | Maximum Sum Of Almost Unique Subarray | [c++](./leetcode/2841.maximum-sum-of-almost-unique-subarray.cpp), [python3](./leetcode/2841.maximum-sum-of-almost-unique-subarray.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2461](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | Maximum Sum Of Distinct Subarrays With Length K | [c++](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.cpp), [python3](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2271](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | Maximum White Tiles Covered By A Carpet | [c++](./leetcode/2271.maximum-white-tiles-covered-by-a-carpet.cpp), [python3](./leetcode/2271.maximum-white-tiles-covered-by-a-carpet.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
@@ -785,6 +790,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2134](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | Minimum Swaps To Group All 1S Together II | [c++](./leetcode/2134.minimum-swaps-to-group-all-1s-together-ii.cpp), [python3](./leetcode/2134.minimum-swaps-to-group-all-1s-together-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Sliding Window | O\(M \+ N\) | O\(N\) | - |
 | [Leetcode-1343](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold | [c++](./leetcode/1343.number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.cpp), [python3](./leetcode/1343.number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-1358](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Number Of Substrings Containing All Three Characters | [c++](./leetcode/1358.number-of-substrings-containing-all-three-characters.cpp), [python3](./leetcode/1358.number-of-substrings-containing-all-three-characters.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-567](https://leetcode.com/problems/permutation-in-string/) | Permutation In String | [c++](./leetcode/567.permutation-in-string.cpp), [python3](./leetcode/567.permutation-in-string.py) | Sliding Window | O\(N\+M\) | O\(N\) | - |
 | [Leetcode-3439](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/) | Reschedule Meetings For Maximum Free Time I | [c++](./leetcode/3439.reschedule-meetings-for-maximum-free-time-i.cpp), [python3](./leetcode/3439.reschedule-meetings-for-maximum-free-time-i.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2653](https://leetcode.com/problems/sliding-subarray-beauty/) | Sliding Subarray Beauty | [c++](./leetcode/2653.sliding-subarray-beauty.cpp), [python3](./leetcode/2653.sliding-subarray-beauty.py) | Sliding Window | O\(N\) | O\(1\) | - |
