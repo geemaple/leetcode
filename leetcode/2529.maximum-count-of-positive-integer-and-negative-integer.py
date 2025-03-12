@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: std::lower_bound
+#  Video: https://youtu.be/W2a6_PNNN0g
 
 #  Given an array nums sorted in non-decreasing order, return the maximum between the number of positive integers and the number of negative integers.
 #  
@@ -38,6 +39,15 @@
 #   
 #  Follow up: Can you solve the problem in O(log(n)) time complexity?
 #  
+
+import bisect
+class Solution:
+    def maximumCount(self, nums: List[int]) -> int:
+        n = len(nums)
+        pos = bisect.bisect_right(nums, 0)
+        neg = bisect.bisect_left(nums, 0)
+
+        return max(n - pos, neg)
 
 class Solution(object):
     def maximumCount(self, nums):

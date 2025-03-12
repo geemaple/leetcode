@@ -12,65 +12,35 @@ using namespace std;
 
 class Solution {
 public:
-    long long countOfSubstrings(string word, int k) {
-        int n = word.size();
-        unordered_map<char, int> counter;
-        int consonants = 0;
-        int vowels = 0;
-        vector<int> next_constant = vector<int>(n, 0);
-        int val = n;
-        for (int i = n - 1; i >= 0; i--) {
-            next_constant[i] = val;
-            if (!is_consonant(word[i])) {
-                val = i;
-            }
+    int maxFrequencyScore(vector<int>& nums, long long k) {
+        int n = nums.size();
+        sort(nums.begin(), nums.end());
+        vector<long long> prefix = {0};
+        for (auto x: nums) {
+            prefix.push_back(prefix.back() + x);
         }
 
-        int i = 0;
-        int res = 0;
-        for (int j = 0; j < n; j++) {
-            if (is_consonant(word[j])) {
-                counter[word[j]] += 1;
-                if (counter[word[j]] == 1) {
-                    vowels += 1;
-                }
+        int l = 1;
+        int r = n;
+        while (l < r) {
+            int m = l + (r - l + 1) / 2;
+            if (fit(prefix, m, k)) {
+                l = m;
             } else {
-                consonants += 1;
-            }
-
-            while (consonants > k) {
-                if (is_consonant(word[i])) {
-                    counter[word[i]] -= 1;
-                    if (counter[word[i]] == 0) {
-                        vowels -= 1;
-                    }
-                } else {
-                    consonants -= 1;
-                }
-
-                i += 1;
-            }
-
-            while (vowels == 5 && consonants == k) {
-                res += next_constant[j] - j;
-
-                if (is_consonant(word[i])) {
-                    counter[word[i]] -= 1;
-                    if (counter[word[i]] == 0) {
-                        vowels -= 1;
-                    }
-                } else {
-                    consonants -= 1;
-                }
-
-                i += 1;
+                r = m - 1;
             }
         }
-        return res;
+        return l;
     }
+    bool fit(vector<long long>& prefix, long long m, long long k) {
+        int n = prefix.size() - 1;
+        for (int i = 0; i <= n - m; i++) {
+            if ((prefix[i + m] - prefix[i + m / 2]) - (prefix[i + (m + 1) / 2] - prefix[i]) <= k) {
+                return true;
+            }
+        }
 
-    bool is_consonant(char ch) {
-        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+        return false;
     }
 };
 
@@ -88,9 +58,9 @@ int main() {
 //    
 //    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
 //    vector<int> end = {3,4,5,6};
-    vector<int> profit = {1, 3, 2};
+    vector<int> profit = {1,2,6,4};
     Solution s;
-    int res = s.countOfSubstrings(str, 1);
+    int res = s.maxFrequencyScore(profit, 3);
 
     return 0;
 }

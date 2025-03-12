@@ -1,6 +1,6 @@
 #  Tag: Array, Math, Sliding Window, Enumeration, Number Theory
-#  Time: -
-#  Space: -
+#  Time: O(N * sqrt(Num))
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 
@@ -39,6 +39,36 @@
 #  1 <= nums[i] <= 10
 #  
 #  
+
+class Solution:
+    def maxLength(self, nums: List[int]) -> int:
+        n = len(nums)
+        res = 2
+        i = 0
+        last = {}
+        for j in range(n):
+            primes = self.getPrimes(nums[j])
+            for p in primes:
+                next_i = last[p] + 1 if p in last else 0
+                i = max(i, next_i)
+                last[p] = j
+            res = max(res, j - i + 1)
+
+        return res
+
+    def getPrimes(self, x: int) -> list:
+        res = []
+        d = 2
+        while d * d <= x:
+            if x % d == 0:
+                res.append(d)
+                while (x % d == 0):
+                    x //= d
+            d += 1
+
+        if x > 1:
+            res.append(x)
+        return res
 
 import math
 class Solution:

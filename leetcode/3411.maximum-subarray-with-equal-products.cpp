@@ -1,6 +1,6 @@
 //  Tag: Array, Math, Sliding Window, Enumeration, Number Theory
-//  Time: -
-//  Space: -
+//  Time: O(N * sqrt(Num))
+//  Space: O(N)
 //  Ref: -
 //  Note: -
 
@@ -39,6 +39,45 @@
 //  1 <= nums[i] <= 10
 //  
 //  
+
+class Solution {
+public:
+    int maxLength(vector<int>& nums) {
+        int n = nums.size();
+        int res = 2;
+        int i = 0;
+        unordered_map<int, int> last;
+        for (int j = 0; j < n; ++j) {
+            vector<int> primes = getPrimes(nums[j]);
+            for (auto d: primes) {
+                int next_i = last.count(d) > 0 ? last[d] + 1: 0;
+                i = max(i, next_i);
+                last[d] = j;
+            }
+            res = max(res, j - i + 1);
+        }
+
+        return res;
+    }
+
+    vector<int> getPrimes(int x) {
+        vector<int> res;
+        int d = 2;
+        while (d * d <= x) {
+            if (x % d == 0) {
+                res.push_back(d);
+                while (x % d == 0) {
+                    x /= d;
+                }
+            }
+            d += 1;
+        }
+        if (x > 1) {
+            res.push_back(x);
+        }
+        return res;
+    }
+};
 
 class Solution {
 public:

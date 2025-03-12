@@ -53,9 +53,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/129 | 3 vips |
-| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 51/2208 | 3 vips |
+| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 53/2208 | 3 vips |
 
-**Solved**: 585 problems
+**Solved**: 586 problems
 
 ## 类型/Category
 
@@ -127,7 +127,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-149](https://leetcode.com/problems/max-points-on-a-line/) | Max Points On A Line | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Math | O\(N^2\) | O\(N\) | - |
 | [Leetcode-1610](https://leetcode.com/problems/maximum-number-of-visible-points/) | Maximum Number Of Visible Points | [c++](./leetcode/1610.maximum-number-of-visible-points.cpp), [python3](./leetcode/1610.maximum-number-of-visible-points.py) | Math | O\(NlogN\) | O\(N\) | - |
-| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Math | \- | \- | - |
+| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Math | O\(N \* sqrt\(Num\)\) | O\(N\) | - |
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Math | O\(NM\) | O\(N\+M\) | - |
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
@@ -387,8 +387,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(57) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(58) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1901](https://leetcode.com/problems/find-a-peak-element-ii/) | Find A Peak Element II | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python3](./leetcode/1901.find-a-peak-element-ii.py) | Binary Search | O\(N \* logM\) | O\(1\) | - |
@@ -580,8 +581,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Prefix Sum
 
-| Link | Problem(20) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(21) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | [c++](./leetcode/525.contiguous-array.cpp), [python3](./leetcode/525.contiguous-array.py) | Prefix Sum | O\(N\) | O\(N\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Prefix Sum | O\(N\) | O\(1\) | - |
@@ -739,10 +741,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(63) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(64) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-220](https://leetcode.com/problems/contains-duplicate-iii/) | Contains Duplicate III | [c++](./leetcode/220.contains-duplicate-iii.cpp), [python3](./leetcode/220.contains-duplicate-iii.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2953](https://leetcode.com/problems/count-complete-substrings/) | Count Complete Substrings | [c++](./leetcode/2953.count-complete-substrings.cpp), [python3](./leetcode/2953.count-complete-substrings.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-3306](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Count Of Substrings Containing Every Vowel And K Consonants II | [c++](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp), [python3](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | Sliding Window | O\(N\) | O\(N\) | - |
@@ -777,7 +780,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1610](https://leetcode.com/problems/maximum-number-of-visible-points/) | Maximum Number Of Visible Points | [c++](./leetcode/1610.maximum-number-of-visible-points.cpp), [python3](./leetcode/1610.maximum-number-of-visible-points.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1456](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | Maximum Number Of Vowels In A Substring Of Given Length | [c++](./leetcode/1456.maximum-number-of-vowels-in-a-substring-of-given-length.cpp), [python3](./leetcode/1456.maximum-number-of-vowels-in-a-substring-of-given-length.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-1423](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | Maximum Points You Can Obtain From Cards | [c++](./leetcode/1423.maximum-points-you-can-obtain-from-cards.cpp), [python3](./leetcode/1423.maximum-points-you-can-obtain-from-cards.py) | Sliding Window | O\(N\) | O\(1\) | - |
-| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Sliding Window | \- | \- | - |
+| [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Sliding Window | O\(N \* sqrt\(Num\)\) | O\(N\) | - |
 | [Leetcode-2841](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | Maximum Sum Of Almost Unique Subarray | [c++](./leetcode/2841.maximum-sum-of-almost-unique-subarray.cpp), [python3](./leetcode/2841.maximum-sum-of-almost-unique-subarray.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2461](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/) | Maximum Sum Of Distinct Subarrays With Length K | [c++](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.cpp), [python3](./leetcode/2461.maximum-sum-of-distinct-subarrays-with-length-k.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2271](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | Maximum White Tiles Covered By A Carpet | [c++](./leetcode/2271.maximum-white-tiles-covered-by-a-carpet.cpp), [python3](./leetcode/2271.maximum-white-tiles-covered-by-a-carpet.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
@@ -807,12 +810,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(49) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(50) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Sorting | O\(N^3\) | O\(1\) | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Sorting | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Sorting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-853](https://leetcode.com/problems/car-fleet/) | Car Fleet | [c++](./leetcode/853.car-fleet.cpp), [python3](./leetcode/853.car-fleet.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-217](https://leetcode.com/problems/contains-duplicate/) | Contains Duplicate | [c++](./leetcode/217.contains-duplicate.cpp), [python3](./leetcode/217.contains-duplicate.py) | Sorting | O\(N\) | O\(N\) | - |

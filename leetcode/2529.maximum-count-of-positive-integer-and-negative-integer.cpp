@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: std::lower_bound
+//  Video: https://youtu.be/W2a6_PNNN0g
 
 //  Given an array nums sorted in non-decreasing order, return the maximum between the number of positive integers and the number of negative integers.
 //  
@@ -42,6 +43,35 @@
 class Solution {
 public:
     int maximumCount(vector<int>& nums) {
-        
+        int n = nums.size();
+        int pos = upper_bound(nums.begin(), nums.end(), 0) - nums.begin();
+        int neg = lower_bound(nums.begin(), nums.end(), 0) - nums.begin();
+
+        return max(n - pos, neg);
+    }
+};
+
+class Solution {
+public:
+    int maximumCount(vector<int>& nums) {
+        int n = nums.size();
+        int pos = lower_bound(nums, 1);
+        int neg = lower_bound(nums, 0);
+
+        return max(n - pos, neg);
+    }
+
+    int lower_bound(vector<int>& nums, int target) {
+        int l = 0;
+        int r = nums.size(); 
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] >= target) {
+                r = mid;
+            } else {
+                l = mid + 1;
+            }
+        }
+        return l;
     }
 };
