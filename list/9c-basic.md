@@ -1,29 +1,24 @@
 ## 题目(基础篇)
 
-### Intro
-
-- https://www.lintcode.com/problem/strstr/
-- https://www.lintcode.com/problem/subsets/
-
 ### 二分法
 
-3. https://www.lintcode.com/problem/classical-binary-search/
-4. https://www.lintcode.com/problem/first-position-of-target/
-5. https://www.lintcode.com/problem/last-position-of-target/
-6. https://leetcode.com/problems/first-bad-version/
-7. https://www.lintcode.com/problem/search-in-a-big-sorted-array/
-8. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-9. https://leetcode.com/problems/search-a-2d-matrix/
-10. https://leetcode.com/problems/search-a-2d-matrix-ii/
-11. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-12. https://www.lintcode.com/problem/total-occurrence-of-target/
-13. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
-14. https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
-15. https://leetcode.com/problems/find-peak-element/
-16. https://leetcode.com/problems/search-in-rotated-sorted-array/
-17. https://www.lintcode.com/problem/recover-rotated-sorted-array/
-18. https://leetcode.com/problems/rotate-string/
-19. https://www.lintcode.com/problem/copy-books/
+1. https://www.lintcode.com/problem/classical-binary-search/
+2. https://www.lintcode.com/problem/first-position-of-target/
+3. https://www.lintcode.com/problem/last-position-of-target/
+4. https://leetcode.com/problems/first-bad-version/
+5. https://www.lintcode.com/problem/search-in-a-big-sorted-array/
+6. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+7. https://leetcode.com/problems/search-a-2d-matrix/
+8. https://leetcode.com/problems/search-a-2d-matrix-ii/
+9. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+10. https://www.lintcode.com/problem/total-occurrence-of-target/
+11. https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
+12. https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
+13. https://leetcode.com/problems/find-peak-element/
+14. https://leetcode.com/problems/search-in-rotated-sorted-array/
+15. https://www.lintcode.com/problem/recover-rotated-sorted-array/
+16. https://leetcode.com/problems/rotate-string/
+17. https://www.lintcode.com/problem/copy-books/
 
 Closest Number in Sorted Array
 Maximum Number in Mountain Sequence
@@ -88,7 +83,7 @@ Word Ladder II
 
 https://leetcode.com/problems/letter-tile-possibilities/submissions/1545815287/?envType=daily-question&envId=2025-02-17
 
-- https://www.lintcode.com/problem/subsets/ +duplicate
+- https://www.lintcode.com/problem/subsets/
 - https://www.lintcode.com/problem/combination-sum/
 - https://www.lintcode.com/problem/combination-sum-ii/
 - https://www.lintcode.com/problem/palindrome-partitioning/
@@ -187,3 +182,7 @@ Word Break II
 - https://www.lintcode.com/problem/russian-doll-envelopes/
 - https://www.lintcode.com/problem/largest-divisible-subset/
 - https://www.lintcode.com/problem/frog-jump/
+
+### 字符串
+
+- https://www.lintcode.com/problem/strstr/
