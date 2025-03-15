@@ -23,6 +23,12 @@
     "__hash_table": "cpp",
     "iosfwd": "cpp",
     "__split_buffer": "cpp",
-    "list": "cpp"
+    "list": "cpp",
+    "__tree": "cpp",
+    "bitset": "cpp",
+    "initializer_list": "cpp",
+    "set": "cpp",
+    "stack": "cpp",
+    "unordered_set": "cpp"
   }
 }

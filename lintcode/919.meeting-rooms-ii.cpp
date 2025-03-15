@@ -48,6 +48,32 @@ public:
      */
     int minMeetingRooms(vector<Interval> &intervals) {
         // Write your code here
+        int n = intervals.size();
+        map<int, int> lines;
+        for (auto &inter: intervals) {
+            lines[inter.start] += 1;
+            lines[inter.end] -= 1;
+        }
+
+        int res = 0;
+        int prefix = 0;
+        for (auto& it: lines) {
+            prefix += it.second;
+            res = max(res, prefix);
+        }
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    /**
+     * @param intervals: an array of meeting time intervals
+     * @return: the minimum number of conference rooms required
+     */
+    int minMeetingRooms(vector<Interval> &intervals) {
+        // Write your code here
         vector<pair<int, int>> meetings;
         for (auto x: intervals) {
             meetings.emplace_back(x.start, 1);
@@ -56,13 +82,10 @@ public:
 
         int count = 0;
         int res = 0;
-        int n = meetings.size();
         sort(meetings.begin(), meetings.end());
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < meetings.size(); i++) {
             count += meetings[i].second;
-            if (i == n - 1 || meetings[i].first != meetings[i + 1].first) { // second -1 comes first after sorting, this is not necessary
-                res = max(res, count);
-            }   
+            res = max(res, count);
         }
         return res;
     }

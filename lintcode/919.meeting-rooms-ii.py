@@ -43,6 +43,28 @@ class Interval(object):
         self.end = end
 """
 
+from collections import defaultdict
+class Solution:
+    """
+    @param intervals: an array of meeting time intervals
+    @return: the minimum number of conference rooms required
+    """
+    def min_meeting_rooms(self, intervals: List[Interval]) -> int:
+        # Write your code here
+        n = len(intervals)
+        lines = defaultdict(int)
+        for interval in intervals:
+            lines[interval.start] += 1
+            lines[interval.end] -= 1
+
+        prefix = 0
+        res = 0
+        for t in sorted(lines.keys()):
+            prefix += lines[t]
+            res = max(res, prefix)
+
+        return res
+
 class Solution:
     """
     @param intervals: an array of meeting time intervals
@@ -58,9 +80,7 @@ class Solution:
         meetings.sort()
         count = 0
         res = 0
-        n = len(meetings)
-        for i in range(n):
+        for i in range(len(meetings)):
             count += meetings[i][1]
-            if i == n - 1 or meetings[i][0] != meetings[i + 1][0]: # second -1 comes first after sorting, this is not necessary
-                res = max(res, count)
+            res = max(res, count)
         return res 

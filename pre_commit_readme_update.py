@@ -558,7 +558,9 @@ if __name__ == "__main__":
             Markdown.link('Anki', 'https://apps.ankiweb.net/'),
             Markdown.link('Tldraw', 'https://www.tldraw.com/'),
             Markdown.link('OBS', 'https://www.tldraw.com/'),
-            Markdown.link('Leetcode中英网站切换', 'https://greasyfork.org/en/scripts/478450-leetcode-cn-en-site-switcher'),
+            Markdown.link('Leetcode难度插件', 'https://chromewebstore.google.com/detail/leetcode-difficulty-ratin/hedijgjklbddpidomdhhngflipnibhca'),
+            Markdown.link('Leetcode难度评分', 'https://zerotrac.github.io/leetcode_problem_rating/'),
+            
         ])
 
         Markdown.title2(f, '脚本/Script')
