@@ -38,7 +38,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
 | [30%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 25/81 | - |
-| [49%] | [leetcode-google.md](./list/leetcode-google.md) | 232/471 | 2 vips |
+| [49%] | [leetcode-google.md](./list/leetcode-google.md) | 233/471 | 2 vips |
 | [52%] | [leetcode-75.md](./list/leetcode-75.md) | 39/75 | - |
 | [52%] | [leetcode-topics.md](./list/leetcode-topics.md) | 76/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
@@ -54,9 +54,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/128 | 3 vips |
-| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 55/2208 | 3 vips |
+| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 56/2208 | 3 vips |
 
-**Solved**: 601 problems
+**Solved**: 603 problems
 
 ## 类型/Category
 
@@ -164,7 +164,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(19) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(20) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -173,6 +173,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2206](https://leetcode.com/problems/divide-array-into-equal-pairs/) | Divide Array Into Equal Pairs | [c++](./leetcode/2206.divide-array-into-equal-pairs.cpp), [python3](./leetcode/2206.divide-array-into-equal-pairs.py) | Bit Manipulation | O\(N\) | O\(N\) | - |
 | [Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-461](https://leetcode.com/problems/hamming-distance/) | Hamming Distance | [c++](./leetcode/461.hamming-distance.cpp), [python3](./leetcode/461.hamming-distance.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
+| [Leetcode-2401](https://leetcode.com/problems/longest-nice-subarray/) | Longest Nice Subarray | [c++](./leetcode/2401.longest-nice-subarray.cpp), [python3](./leetcode/2401.longest-nice-subarray.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [c++](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.cpp), [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Bit Manipulation | O\(2^K \* K\) | O\(2^K \* K\) | - |
 | [Leetcode-318](https://leetcode.com/problems/maximum-product-of-word-lengths/) | Maximum Product Of Word Lengths | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python3](./leetcode/318.maximum-product-of-word-lengths.py) | Bit Manipulation | O\(N^2\) | O\(N\) | - |
 | [Leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
@@ -227,7 +228,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Design
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Design | O\(1\) | O\(H\) | - |
@@ -245,6 +246,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-146](https://leetcode.com/problems/lru-cache/) | Lru Cache | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-895](https://leetcode.com/problems/maximum-frequency-stack/) | Maximum Frequency Stack | [c++](./leetcode/895.maximum-frequency-stack.cpp), [python3](./leetcode/895.maximum-frequency-stack.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-155](https://leetcode.com/problems/min-stack/) | Min Stack | [c++](./leetcode/155.min-stack.cpp), [python3](./leetcode/155.min-stack.py) | Design | O\(1\) | O\(N\) | - |
+| [Leetcode-729](https://leetcode.com/problems/my-calendar-i/) | My Calendar I | [c++](./leetcode/729.my-calendar-i.cpp), [python3](./leetcode/729.my-calendar-i.py) | Design | O\(LogN\) | O\(N\) | - |
 | [Leetcode-731](https://leetcode.com/problems/my-calendar-ii/) | My Calendar II | [c++](./leetcode/731.my-calendar-ii.cpp), [python3](./leetcode/731.my-calendar-ii.py) | Design | O\(N\) | O\(N\) | - |
 | [Leetcode-1352](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Product Of The Last K Numbers | [c++](./leetcode/1352.product-of-the-last-k-numbers.cpp), [python3](./leetcode/1352.product-of-the-last-k-numbers.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-304](https://leetcode.com/problems/range-sum-query-2d-immutable/) | Range Sum Query 2D Immutable | [c++](./leetcode/304.range-sum-query-2d-immutable.cpp), [python3](./leetcode/304.range-sum-query-2d-immutable.py) | Design | O\(\*1\) | O\(MN\) | - |
@@ -395,7 +397,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(64) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(65) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -435,6 +437,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Minimum Size Subarray Sum | [c++](./leetcode/209.minimum-size-subarray-sum.cpp), [python3](./leetcode/209.minimum-size-subarray-sum.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-2594](https://leetcode.com/problems/minimum-time-to-repair-cars/) | Minimum Time To Repair Cars | [c++](./leetcode/2594.minimum-time-to-repair-cars.cpp), [python3](./leetcode/2594.minimum-time-to-repair-cars.py) | Binary Search | O\(AlogN\) | O\(1\) | - |
 | [Leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Binary Search | O\(N\) | O\(1\) | - |
+| [Leetcode-729](https://leetcode.com/problems/my-calendar-i/) | My Calendar I | [c++](./leetcode/729.my-calendar-i.cpp), [python3](./leetcode/729.my-calendar-i.py) | Binary Search | O\(LogN\) | O\(N\) | - |
 | [Leetcode-731](https://leetcode.com/problems/my-calendar-ii/) | My Calendar II | [c++](./leetcode/731.my-calendar-ii.cpp), [python3](./leetcode/731.my-calendar-ii.py) | Binary Search | O\(N\) | O\(N\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Binary Search | O\(NMlogNM\) | O\(NM\) | - |
 | [Leetcode-852](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | Peak Index In A Mountain Array | [c++](./leetcode/852.peak-index-in-a-mountain-array.cpp), [python3](./leetcode/852.peak-index-in-a-mountain-array.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -536,7 +539,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-409](https://leetcode.com/problems/longest-palindrome/) | Longest Palindrome | [c++](./leetcode/409.longest-palindrome.cpp), [python3](./leetcode/409.longest-palindrome.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-424](https://leetcode.com/problems/longest-repeating-character-replacement/) | Longest Repeating Character Replacement | [c++](./leetcode/424.longest-repeating-character-replacement.cpp), [python3](./leetcode/424.longest-repeating-character-replacement.py) | Hash Table | O\(N\) | O\(N\) | - |
-| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Hash Table | \- | \- | - |
+| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python3](./leetcode/3.longest-substring-without-repeating-characters.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-146](https://leetcode.com/problems/lru-cache/) | Lru Cache | [c++](./leetcode/146.lru-cache.cpp), [python3](./leetcode/146.lru-cache.py) | Hash Table | O\(1\) | O\(N\) | - |
 | [Leetcode-169](https://leetcode.com/problems/majority-element/) | Majority Element | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -767,7 +770,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(66) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(67) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -790,9 +793,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2958](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | Length Of Longest Subarray With At Most K Frequency | [c++](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.cpp), [python3](./leetcode/2958.length-of-longest-subarray-with-at-most-k-frequency.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2781](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | Length Of The Longest Valid Substring | [c++](./leetcode/2781.length-of-the-longest-valid-substring.cpp), [python3](./leetcode/2781.length-of-the-longest-valid-substring.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | [c++](./leetcode/594.longest-harmonious-subsequence.cpp), [python3](./leetcode/594.longest-harmonious-subsequence.py) | Sliding Window | O\(N\) | O\(N\) | - |
+| [Leetcode-2401](https://leetcode.com/problems/longest-nice-subarray/) | Longest Nice Subarray | [c++](./leetcode/2401.longest-nice-subarray.cpp), [python3](./leetcode/2401.longest-nice-subarray.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-424](https://leetcode.com/problems/longest-repeating-character-replacement/) | Longest Repeating Character Replacement | [c++](./leetcode/424.longest-repeating-character-replacement.cpp), [python3](./leetcode/424.longest-repeating-character-replacement.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-1493](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | Longest Subarray Of 1S After Deleting One Element | [c++](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.cpp), [python3](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.py) | Sliding Window | O\(N\) | O\(N\) | - |
-| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Sliding Window | \- | \- | - |
+| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python3](./leetcode/3.longest-substring-without-repeating-characters.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-1004](https://leetcode.com/problems/max-consecutive-ones-iii/) | Max Consecutive Ones III | [c++](./leetcode/1004.max-consecutive-ones-iii.cpp), [python3](./leetcode/1004.max-consecutive-ones-iii.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2024](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | Maximize The Confusion Of An Exam | [c++](./leetcode/2024.maximize-the-confusion-of-an-exam.cpp), [python3](./leetcode/2024.maximize-the-confusion-of-an-exam.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -935,7 +939,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Convert Sorted List To Binary Search Tree | [c++](./leetcode/109.convert-sorted-list-to-binary-search-tree.cpp), [python3](./leetcode/109.convert-sorted-list-to-binary-search-tree.py) | Divide and Conquer | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Divide and Conquer | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Kth Largest Element In An Array | [c++](./leetcode/215.kth-largest-element-in-an-array.cpp), [python3](./leetcode/215.kth-largest-element-in-an-array.py) | Divide and Conquer | O\(N\) ～ O\(N^2\) | O\(1\) | - |
-| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Divide and Conquer | \- | \- | - |
+| [Leetcode-395](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | Longest Substring With At Least K Repeating Characters | [c++](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.cpp), [python3](./leetcode/395.longest-substring-with-at-least-k-repeating-characters.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | [Leetcode-169](https://leetcode.com/problems/majority-element/) | Majority Element | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Divide and Conquer | O\(N\) | O\(1\) | - |
 | [Leetcode-53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | [c++](./leetcode/53.maximum-subarray.cpp), [python3](./leetcode/53.maximum-subarray.py) | Divide and Conquer | O\(N\) | O\(N\) | - |
 | [Leetcode-4](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Median Of Two Sorted Arrays | [c++](./leetcode/4.median-of-two-sorted-arrays.cpp), [python3](./leetcode/4.median-of-two-sorted-arrays.py) | Divide and Conquer | O\(log\(min\(M, N\)\)\) | O\(1\) | - |
@@ -1127,11 +1131,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Ordered Set
 
-| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(6) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-220](https://leetcode.com/problems/contains-duplicate-iii/) | Contains Duplicate III | [c++](./leetcode/220.contains-duplicate-iii.cpp), [python3](./leetcode/220.contains-duplicate-iii.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Ordered Set | O\(LogN\) | O\(N\) | - |
 | [Leetcode-895](https://leetcode.com/problems/maximum-frequency-stack/) | Maximum Frequency Stack | [c++](./leetcode/895.maximum-frequency-stack.cpp), [python3](./leetcode/895.maximum-frequency-stack.py) | Ordered Set | O\(1\) | O\(N\) | - |
+| [Leetcode-729](https://leetcode.com/problems/my-calendar-i/) | My Calendar I | [c++](./leetcode/729.my-calendar-i.cpp), [python3](./leetcode/729.my-calendar-i.py) | Ordered Set | O\(LogN\) | O\(N\) | - |
 | [Leetcode-731](https://leetcode.com/problems/my-calendar-ii/) | My Calendar II | [c++](./leetcode/731.my-calendar-ii.cpp), [python3](./leetcode/731.my-calendar-ii.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 
@@ -1171,8 +1176,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Segment Tree
 
-| Link | Problem(9) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(10) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| [Leetcode-729](https://leetcode.com/problems/my-calendar-i/) | My Calendar I | [c++](./leetcode/729.my-calendar-i.cpp), [python3](./leetcode/729.my-calendar-i.py) | Segment Tree | O\(LogN\) | O\(N\) | - |
 | [Leetcode-731](https://leetcode.com/problems/my-calendar-ii/) | My Calendar II | [c++](./leetcode/731.my-calendar-ii.cpp), [python3](./leetcode/731.my-calendar-ii.py) | Segment Tree | O\(N\) | O\(N\) | - |
 | [Leetcode-406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction By Height | [c++](./leetcode/406.queue-reconstruction-by-height.cpp), [python3](./leetcode/406.queue-reconstruction-by-height.py) | Segment Tree | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-307](https://leetcode.com/problems/range-sum-query-mutable/) | Range Sum Query Mutable | [c++](./leetcode/307.range-sum-query-mutable.cpp), [python3](./leetcode/307.range-sum-query-mutable.py) | Segment Tree | O\(logN\) | O\(N\) | - |

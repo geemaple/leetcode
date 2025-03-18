@@ -1,6 +1,6 @@
 //  Tag: Hash Table, String, Divide and Conquer, Sliding Window
-//  Time: -
-//  Space: -
+//  Time: O(N)
+//  Space: O(N)
 //  Ref: -
 //  Note: -
 
@@ -60,6 +60,48 @@ public:
 
         if (i > pre) {
             res = max(res, longestSubstring(s.substr(pre, i - pre), k));
+        }
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    int longestSubstring(string s, int k) {
+        int res = 0;
+        for (int i = 1; i <= 26; i++) {
+            res = max(res, longestSubstringWithUnique(s, k, i));
+        }
+        return res;
+    }
+
+    int longestSubstringWithUnique(string &s, int k, int target) {
+        int n = s.size();
+        int count = 0;
+        unordered_map<char, int> counter;
+        int res = 0;
+        int i = 0;
+        for (int j = 0; j < n; j++) {
+            counter[s[j]] += 1;
+            if (counter[s[j]] == k) {
+                count += 1;
+            }
+            
+            while (counter.size() > target) {
+                counter[s[i]] -= 1;
+                if (counter[s[i]] == k - 1) {
+                    count -= 1;
+                }
+                if (counter[s[i]] == 0) {
+                    counter.erase(s[i]);
+                }
+                i += 1;
+            }
+
+            if (counter.size() == target && counter.size() == count) {
+                res = max(res, j - i + 1);
+            }
         }
 
         return res;

@@ -1,6 +1,6 @@
 #  Tag: Hash Table, String, Divide and Conquer, Sliding Window
-#  Time: -
-#  Space: -
+#  Time: O(N)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 
@@ -37,3 +37,36 @@ class Solution:
                 return max(self.longestSubstring(s, k) for s in s.split(x))                
 
         return len(s)
+    
+from collections import defaultdict
+class Solution:
+    def longestSubstring(self, s: str, k: int) -> int:
+        res = 0
+        for i in range(1, 27):
+            res = max(res, self.longestSubstringWithUnique(s, k, i))
+        return res
+
+    def longestSubstringWithUnique(self, s: str, k: int, target: int) -> int:
+
+        n = len(s)
+        counter = defaultdict(int)
+        count = 0
+        i = 0
+        res = 0
+        for j in range(n):
+            counter[s[j]] += 1
+            if counter[s[j]] == k:
+                count += 1
+
+            while (len(counter) > target):
+                counter[s[i]] -= 1
+                if counter[s[i]] == k - 1:
+                    count -= 1
+                if counter[s[i]] == 0:
+                    del counter[s[i]]
+                i += 1
+            
+            if len(counter) == target and len(counter) == count:
+                res = max(res, j - i + 1)
+
+        return res
