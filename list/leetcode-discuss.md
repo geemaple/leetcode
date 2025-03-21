@@ -81,35 +81,39 @@
 
 ## [Swipe Line](https://leetcode.com/discuss/post/2166045/line-sweep-algorithms-by-c0d3m-8ebq/)
 
-https://leetcode.com/problems/the-skyline-problem?envType=problem-list-v2&envId=mzw3cyy6
-58. https://leetcode.com/problems/perfect-rectangle/
-59. https://leetcode.com/problems/rectangle-area-ii/
-60. https://leetcode.com/problems/minimum-interval-to-include-each-query/
-61. https://leetcode.com/problems/employee-free-time/
-62. https://leetcode.com/problems/my-calendar-iii/
-63. https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
-64. https://leetcode.com/problems/number-of-flowers-in-full-bloom/
-65. https://leetcode.com/problems/amount-of-new-area-painted-each-day/
-66. https://leetcode.com/problems/minimum-moves-to-make-array-complementary/
-67. https://leetcode.com/problems/describe-the-painting/
-68. https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/
-69. https://leetcode.com/problems/merge-intervals/
-70. https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
-71. https://leetcode.com/problems/remove-covered-intervals/
+58. https://leetcode.com/problems/maximum-population-year/
+59. https://leetcode.com/problems/points-that-intersect-with-cars/
+60. https://leetcode.com/problems/meeting-rooms-ii/ +duplicate
+61. https://leetcode.com/problems/my-calendar-ii/
+62. https://www.lintcode.com/problem/brightest-position-on-street/
+63. https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/
+64. https://leetcode.com/problems/range-addition/
+65. https://leetcode.com/problems/car-pooling/
+66. https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+67. https://leetcode.com/problems/non-overlapping-intervals/
+68. https://leetcode.com/problems/maximum-length-of-pair-chain/
+69. https://leetcode.com/problems/meeting-rooms/
+70. https://leetcode.com/problems/insert-interval/
+71. https://leetcode.com/problems/remove-interval/
 72. https://leetcode.com/problems/meeting-scheduler/
-73. https://leetcode.com/problems/remove-interval/
-74. https://leetcode.com/problems/insert-interval/
-75. https://leetcode.com/problems/meeting-rooms/
-76. https://leetcode.com/problems/maximum-length-of-pair-chain/
-77. https://leetcode.com/problems/non-overlapping-intervals/
-78. https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
-79. https://leetcode.com/problems/range-addition/
-80. https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/
-81. https://leetcode.com/problems/count-positions-on-street-with-required-brightness/
-82. https://leetcode.com/problems/my-calendar-ii/
-83. https://leetcode.com/problems/meeting-rooms-ii/ +duplicate
-84. https://leetcode.com/problems/points-that-intersect-with-cars/
-85. https://leetcode.com/problems/maximum-population-year/
+73. https://leetcode.com/problems/remove-covered-intervals/
+74. https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
+75. https://leetcode.com/problems/merge-intervals/
+76. https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/
+77. https://leetcode.com/problems/describe-the-painting/
+78. https://leetcode.com/problems/minimum-moves-to-make-array-complementary/
+79. https://leetcode.com/problems/amount-of-new-area-painted-each-day/
+80. https://leetcode.com/problems/number-of-flowers-in-full-bloom/
+81. https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+82. https://leetcode.com/problems/my-calendar-iii/
+83. https://leetcode.com/problems/employee-free-time/
+84. https://leetcode.com/problems/minimum-interval-to-include-each-query/
+85. https://leetcode.com/problems/rectangle-area-ii/
+86. https://leetcode.com/problems/perfect-rectangle/
+87. https://leetcode.com/problems/perfect-rectangle/ +duplicate
+88. https://leetcode.com/problems/the-skyline-problem/
+89. https://leetcode.com/problems/erect-the-fence/
+90. https://leetcode.com/problems/range-sum-query-mutable/
 
 - https://github.com/hxu296/leetcode-company-wise-problems-2022?tab=readme-ov-file#google
 - https://github.com/jobream/Leetcode-Company-Wise-Problems
