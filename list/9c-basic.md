@@ -21,15 +21,7 @@
 17. https://www.lintcode.com/problem/copy-books/
 
 Closest Number in Sorted Array
-Maximum Number in Mountain Sequence
-Search in a Big Sorted Array 
 Rectangle Enclosing Black Pixels
-Last Position of Target 
-Find Minimum in Rotated Sorted Array
-First Bad Version 
-Search a 2D Matrix
-Find Peak Element
-Smallest Rectangle Enclosing Black Pixels
 
 ### 二叉树、分治
 
@@ -75,7 +67,6 @@ Binary Tree Maximum Path Sum
 - https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/ +duplicate
 - https://www.lintcode.com/problem/word-ladder/
 - https://www.lintcode.com/problem/build-post-office-ii/
-
 
 Word Ladder II
 

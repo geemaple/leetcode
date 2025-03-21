@@ -1,4 +1,4 @@
-//  Tag: Sort
+//  Tag: Sort, Line Sweep
 //  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: Leetcode-252
@@ -60,6 +60,31 @@ public:
             }
         }
         
+        return true;
+    }
+};
+
+class Solution {
+public:
+    /**
+     * @param intervals: an array of meeting time intervals
+     * @return: if a person could attend all meetings
+     */
+    bool canAttendMeetings(vector<Interval> &intervals) {
+        // Write your code here
+        map<int, int> lines;
+        for (auto &interval: intervals) {
+            lines[interval.start] += 1;
+            lines[interval.end] -= 1;
+        }
+
+        int prefix = 0;
+        for (auto &[time, count]: lines) {
+            prefix += count;
+            if (prefix > 1) {
+                return false;
+            }
+        }
         return true;
     }
 };

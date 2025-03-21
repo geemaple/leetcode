@@ -1,7 +1,7 @@
 #  Tag: Same Direction Two Pointers, Two Pointers
 #  Time: O(N)
 #  Space: O(K)
-#  Ref: Leetcode-159, 340
+#  Ref: Leetcode-340
 #  Note: -
 
 #  Given a string *S*, find the length of the longest substring *T* that contains at most k distinct characters.
@@ -34,18 +34,16 @@ class Solution:
     def length_of_longest_substring_k_distinct(self, s: str, k: int) -> int:
         # write your code here
         n = len(s)
-        counter = defaultdict(int)
-        j = 0
         res = 0
-        for i in range(n):
-            counter[s[i]] += 1
-            
-            while (len(counter) > k):
-                counter[s[j]] -= 1
-                if counter[s[j]] == 0:
-                    del counter[s[j]]
-                j += 1
+        i = 0
+        counter = defaultdict(int)
+        for j in range(n):
+            counter[s[j]] += 1
+            while len(counter) > k:
+                counter[s[i]] -= 1
+                if counter[s[i]] == 0:
+                    del counter[s[i]]
+                i += 1
 
-            res = max(res, i - j + 1)
-
+            res = max(res, j - i + 1)
         return res

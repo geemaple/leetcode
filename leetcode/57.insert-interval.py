@@ -1,4 +1,4 @@
-#  Tag: Array
+#  Tag: Array, Line Sweep
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -
@@ -57,4 +57,28 @@ class Solution:
         while i < n:
             res.append(intervals[i])
             i += 1
+        return res
+    
+from collections import defaultdict
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        lines = defaultdict(int)
+        for s, e in intervals:
+            lines[s] += 1
+            lines[e] -= 1
+
+        lines[newInterval[0]] += 1
+        lines[newInterval[1]] -= 1
+
+        res = []
+        prefix = 0
+        start = 0
+        for num in sorted(lines.keys()):
+            if prefix == 0:
+                start = num
+            
+            prefix += lines[num]
+            if prefix == 0:
+                res.append([start, num])
+
         return res

@@ -1,6 +1,6 @@
 #  Tag: Array, Bit Manipulation, Union Find, Graph
 #  Time: O(N + M)
-#  Space: O(1)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 #  Video: https://youtu.be/8EobS6zkaZw

@@ -1,7 +1,7 @@
 #  Tag: Dynamic Programming/DP, Coordinate DP, Two Pointers
 #  Time: O(N)
 #  Space: O(1)
-#  Ref: LeetCode-487
+#  Ref: Leetcode-487
 #  Note: -
 
 #  Given a binary array, find the maximum number of consecutive 1s in this array if you can flip at most one 0.

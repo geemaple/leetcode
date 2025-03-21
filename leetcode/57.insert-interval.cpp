@@ -1,4 +1,4 @@
-//  Tag: Array
+//  Tag: Array, Line Sweep
 //  Time: O(N)
 //  Space: O(1)
 //  Ref: -
@@ -60,6 +60,35 @@ public:
         while (i < n) {
             res.push_back(intervals[i++]);
         }
+        return res;
+    }
+};
+
+class Solution {
+public:
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
+        int n = intervals.size();
+        map<int, int> lines;
+        for (auto &x: intervals) {
+            lines[x[0]] += 1;
+            lines[x[1]] -= 1;
+        }
+
+        lines[newInterval[0]] += 1;
+        lines[newInterval[1]] -= 1;
+        vector<vector<int>> res;
+        int prefix = 0;
+        int start = 0;
+        for (auto &[num, count]: lines) {
+            if (prefix == 0) {
+                start = num;
+            }
+            prefix += count;
+            if (prefix == 0) {
+                res.push_back({start, num});
+            }
+        }
+
         return res;
     }
 };

@@ -1,4 +1,4 @@
-#  Tag: Greedy, Array, Sorting
+#  Tag: Greedy, Array, Sorting, Line Sweep
 #  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: -
@@ -41,15 +41,13 @@
 
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
-        points.sort(key=lambda b: b[1])
-
-        arrow = 1
+        n = len(points)
+        points.sort(key=lambda x: x[1])
+        res = 1
         pre = points[0][1]
-
-        for i in range(1, len(points)):
+        for i in range(1, n):
             if points[i][0] > pre:
-                arrow += 1
                 pre = points[i][1]
+                res += 1
 
-        return arrow
-
+        return res

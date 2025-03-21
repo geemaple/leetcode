@@ -1,5 +1,5 @@
 //  Tag: Array, Bit Manipulation, Union Find, Graph
-//  Time: O(N+M)
+//  Time: O(N + M)
 //  Space: O(N)
 //  Ref: -
 //  Note: -

@@ -1,4 +1,4 @@
-#  Tag: Greedy, Array, Dynamic Programming, Sorting
+#  Tag: Greedy, Array, Dynamic Programming, Sorting, Line Sweep
 #  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: -
@@ -35,17 +35,15 @@
 
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
-
         n = len(intervals)
-        intervals.sort(key=lambda item: item[1])
+        intervals.sort(key=lambda x: x[1])
         
+        res = 0
         pre = intervals[0][1]
-        count = 0
-
         for i in range(1, n):
             if intervals[i][0] >= pre:
                 pre = intervals[i][1]
             else:
-                count += 1
+                res += 1
 
-        return count
+        return res

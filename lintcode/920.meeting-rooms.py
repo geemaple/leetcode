@@ -1,4 +1,4 @@
-#  Tag: Sort
+#  Tag: Sort, Line Sweep
 #  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: Leetcode-252
@@ -59,5 +59,22 @@ class Solution:
 
         return True
 
+from collections import defaultdict
+class Solution:
+    """
+    @param intervals: an array of meeting time intervals
+    @return: if a person could attend all meetings
+    """
+    def can_attend_meetings(self, intervals: List[Interval]) -> bool:
+        # Write your code here
+        lines = defaultdict(int)
+        for interval in intervals:
+            lines[interval.start] += 1
+            lines[interval.end] -= 1
 
-
+        prefix = 0
+        for t in sorted(lines.keys()):
+            prefix += lines[t]
+            if prefix > 1:
+                return False
+        return True

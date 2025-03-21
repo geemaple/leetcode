@@ -1,4 +1,4 @@
-//  Tag: Array, Dynamic Programming, Greedy, Sorting
+//  Tag: Array, Dynamic Programming, Greedy, Sorting, Line Sweep
 //  Time: O(NlogN)
 //  Space: O(N)
 //  Ref: -
@@ -84,12 +84,12 @@ public:
         });
 
         int res = 1;
-        int cur = pairs[0][1];
+        int pre = pairs[0][1];
 
         for (int i = 1; i < n; i++) {
-            if (pairs[i][0] > cur) {
+            if (pairs[i][0] > pre) {
                 res += 1;
-                cur = pairs[i][1];
+                pre = pairs[i][1];
             }
         }
         return res;

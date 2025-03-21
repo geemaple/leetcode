@@ -120,7 +120,7 @@
 116. https://www.lintcode.com/problem/graph-valid-tree/
 117. https://leetcode.com/problems/missing-number/
 118. https://leetcode.com/problems/alien-dictionary/
-119. https://leetcode.com/problems/encode-and-decode-strings/
+119. https://www.lintcode.com/problem/encode-and-decode-strings/
 120. https://leetcode.com/problems/kth-largest-element-in-a-stream/
 121. https://leetcode.com/problems/binary-search/
 122. https://leetcode.com/problems/swim-in-rising-water/

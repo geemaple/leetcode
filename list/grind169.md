@@ -135,7 +135,7 @@
 131. https://leetcode.com/problems/reverse-integer/
 132. https://leetcode.com/problems/set-matrix-zeroes/
 133. https://leetcode.com/problems/reorder-list/
-134. https://leetcode.com/problems/encode-and-decode-strings/
+134. https://www.lintcode.com/problem/encode-and-decode-strings/
 135. https://leetcode.com/problems/cheapest-flights-within-k-stops/
 136. https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 137. https://leetcode.com/problems/3sum-closest/

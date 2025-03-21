@@ -1,4 +1,4 @@
-//  Tag: Greedy, Array, Sorting
+//  Tag: Greedy, Array, Sorting, Line Sweep
 //  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: -
@@ -46,17 +46,15 @@ public:
             return a[1] < b[1];
         });
 
-        int arrow = 1;
+        int res = 1;
         int pre = points[0][1];
 
-        for (int i = 0; i < points.size(); i++) {
-
+        for (int i = 1; i < points.size(); i++) {
             if (points[i][0] > pre) {
-                arrow += 1;
+                res += 1;
                 pre = points[i][1];
             }
-
         }
-        return arrow;
+        return res;
     }
 };

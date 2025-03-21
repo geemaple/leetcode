@@ -1,4 +1,4 @@
-#  Tag: Array, Dynamic Programming, Greedy, Sorting
+#  Tag: Array, Dynamic Programming, Greedy, Sorting, Line Sweep
 #  Time: O(NlogN)
 #  Space: O(N)
 #  Ref: -
@@ -71,15 +71,15 @@ class Solution:
         return left
     
 class Solution:
-    def findLongestChain(self, pairs):
+    def findLongestChain(self, pairs: List[List[int]]) -> int:
         n = len(pairs)
-        pairs.sort(key = lambda x: x[1])
-        ans = 1
-        cur = pairs[0][1]
+        pairs.sort(key=lambda x: x[1])
 
+        res = 1
+        pre = pairs[0][1]
         for i in range(1, n):
-            if pairs[i][0] > cur:
-                ans += 1
-                cur = pairs[i][1]
+            if pairs[i][0] > pre:
+                res += 1
+                pre = pairs[i][1]
 
-        return ans
+        return res

@@ -16,7 +16,7 @@
 12. https://leetcode.com/problems/3sum/
 13. https://leetcode.com/problems/reorder-list/
 14. https://leetcode.com/problems/alien-dictionary/
-15. https://leetcode.com/problems/encode-and-decode-strings/
+15. https://www.lintcode.com/problem/encode-and-decode-strings/
 16. https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 17. https://leetcode.com/problems/valid-parentheses/
 18. https://leetcode.com/problems/merge-two-sorted-lists/
