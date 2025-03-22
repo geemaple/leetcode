@@ -94,8 +94,8 @@
 68. https://leetcode.com/problems/maximum-length-of-pair-chain/
 69. https://leetcode.com/problems/meeting-rooms/
 70. https://leetcode.com/problems/insert-interval/
-71. https://leetcode.com/problems/remove-interval/
-72. https://leetcode.com/problems/meeting-scheduler/
+71. https://www.lintcode.com/problem/delete-interval/
+72. https://www.lintcode.com/problem/meeting-scheduler/
 73. https://leetcode.com/problems/remove-covered-intervals/
 74. https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
 75. https://leetcode.com/problems/merge-intervals/
