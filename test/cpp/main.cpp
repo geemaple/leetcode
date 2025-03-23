@@ -12,47 +12,44 @@ using namespace std;
 
 class Solution {
 public:
-    int maxFrequencyScore(vector<int>& nums, long long k) {
-        int n = nums.size();
-        sort(nums.begin(), nums.end());
-        vector<long long> prefix = {0};
-        for (auto x: nums) {
-            prefix.push_back(prefix.back() + x);
+    int countPaths(int n, vector<vector<int>>& roads) {
+        unordered_map<int, vector<pair<int, int>>> graph;
+        int mod = 1e9 + 7;
+        for (auto &r: roads) {
+            graph[r[0]].emplace_back(r[1], r[2]);
+            graph[r[1]].emplace_back(r[0], r[2]);
         }
 
-        int l = 1;
-        int r = n;
-        while (l < r) {
-            int m = l + (r - l + 1) / 2;
-            if (fit(prefix, m, k)) {
-                l = m;
-            } else {
-                r = m - 1;
-            }
-        }
-        return l;
-    }
-    bool fit(vector<long long>& prefix, long long m, long long k) {
-        int n = prefix.size() - 1;
-        for (int i = 0; i <= n - m; i++) {
-            if ((prefix[i + m] - prefix[i + m / 2]) - (prefix[i + (m + 1) / 2] - prefix[i]) <= k) {
-                return true;
-            }
-        }
+        vector<int> time(n, 0);
+        vector<int> count(n, 1);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
+        q.emplace(0, 0);
 
-        return false;
+        while (!q.empty()) {
+            auto [cost, cur] = q.top();
+            q.pop();
+
+            for (auto &[neighbor, t]: graph[cur]) {
+                cout << neighbor << endl;
+                if (time[neighbor] == 0 || time[neighbor] > time[cur] + t) {
+                    time[neighbor] = time[cost] + t;
+                    count[neighbor] = count[cost];
+                    q.emplace(time[neighbor], neighbor);
+                } else if (time[neighbor] == time[cur] + t) {
+                    count[neighbor] = (count[neighbor] + count[cur]) % mod;
+                }
+            }
+        }
+        return count[n - 1];
     }
 };
 
 int main() {
     std::string str = "aeioqq";
     
-//    vector<vector<int>> matrix = {
-//        {0,1,1,0,0,0},
-//        {1,0,1,0,0,0},
-//        {0,1,1,1,0,1},
-//        {0,0,1,0,1,0}
-//    };
+    vector<vector<int>> matrix = {
+        {0,6,7},{0,1,2},{1,2,3},{1,3,3},{6,3,3},{3,5,1},{6,5,1},{2,5,1},{0,4,5},{4,6,2}
+    };
 //    
 //    
 //    
@@ -60,7 +57,7 @@ int main() {
 //    vector<int> end = {3,4,5,6};
     vector<int> profit = {1,2,6,4};
     Solution s;
-    int res = s.maxFrequencyScore(profit, 3);
+    int res = s.countPaths(7, matrix);
 
     return 0;
 }
