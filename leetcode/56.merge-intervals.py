@@ -1,4 +1,4 @@
-#  Tag: Array, Sorting
+#  Tag: Array, Sorting, Line Sweep
 #  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: -
@@ -43,4 +43,25 @@ class Solution:
                 low, high = intervals[i]
 
         res.append((low, high))
+        return res
+
+from collections import defaultdict
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        lines = defaultdict(int)
+        for s, e in intervals:
+            lines[s] += 1
+            lines[e] -= 1
+
+        prefix = 0
+        start = 0
+        res = []
+        for num in sorted(lines.keys()):
+            if prefix == 0:
+                start = num
+
+            prefix += lines[num]
+            if prefix == 0:
+                res.append([start, num])
+
         return res

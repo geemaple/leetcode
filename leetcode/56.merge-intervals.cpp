@@ -1,4 +1,4 @@
-//  Tag: Array, Sorting
+//  Tag: Array, Sorting, Line Sweep
 //  Time: O(NlogN)
 //  Space: O(1)
 //  Ref: -
@@ -46,6 +46,31 @@ public:
             }
         }
         res.push_back({low, high});
+        return res;
+    }
+};
+
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        map<int, int> lines;
+        for (auto &x: intervals) {
+            lines[x[0]] += 1;
+            lines[x[1]] -= 1;
+        }
+
+        int prefix = 0;
+        int start = 0;
+        vector<vector<int>> res;
+        for (auto &[num, count]: lines) {
+            if (prefix == 0) {
+                start = num;
+            }
+            prefix += count;
+            if (prefix == 0) {
+                res.push_back({start, num});
+            }
+        }
         return res;
     }
 };
