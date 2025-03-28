@@ -560,7 +560,7 @@ if __name__ == "__main__":
             Markdown.link('OBS', 'https://www.tldraw.com/'),
             Markdown.link('Leetcode难度插件', 'https://chromewebstore.google.com/detail/leetcode-difficulty-ratin/hedijgjklbddpidomdhhngflipnibhca'),
             Markdown.link('Leetcode难度评分', 'https://zerotrac.github.io/leetcode_problem_rating/'),
-            
+            Markdown.link('竞赛编程算法集合', 'https://github.com/cp-algorithms/cp-algorithms'),
         ])
 
         Markdown.title2(f, '脚本/Script')

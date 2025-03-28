@@ -12,35 +12,40 @@ using namespace std;
 
 class Solution {
 public:
-    int countPaths(int n, vector<vector<int>>& roads) {
-        unordered_map<int, vector<pair<int, int>>> graph;
-        int mod = 1e9 + 7;
-        for (auto &r: roads) {
-            graph[r[0]].emplace_back(r[1], r[2]);
-            graph[r[1]].emplace_back(r[0], r[2]);
+    vector<int> maxPoints(vector<vector<int>>& grid, vector<int>& queries) {
+        int directions[5] = {-1, 0, 1, 0, -1};
+        int n = grid.size();
+        int m = grid[0].size();
+
+        vector<pair<int, int>> index_queries;
+        for (int i = 0; i < queries.size(); i++) {
+            index_queries.emplace_back(queries[i], i);
         }
+        sort(index_queries.begin(), index_queries.end());
+        priority_queue<tuple<int, int, int>> q;
+        q.push({-grid[0][0], 0, 0});
+        grid[0][0] = 0;
 
-        vector<int> time(n, 0);
-        vector<int> count(n, 1);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
-        q.emplace(0, 0);
-
-        while (!q.empty()) {
-            auto [cost, cur] = q.top();
-            q.pop();
-
-            for (auto &[neighbor, t]: graph[cur]) {
-                cout << neighbor << endl;
-                if (time[neighbor] == 0 || time[neighbor] > time[cur] + t) {
-                    time[neighbor] = time[cost] + t;
-                    count[neighbor] = count[cost];
-                    q.emplace(time[neighbor], neighbor);
-                } else if (time[neighbor] == time[cur] + t) {
-                    count[neighbor] = (count[neighbor] + count[cur]) % mod;
+        vector<int> res(queries.size(), 0);
+        int count = 0;
+        for (auto &p: index_queries) {
+            while (!q.empty() && -get<0>(q.top()) < p.first) {
+                auto [val, x, y] = q.top();
+                q.pop();
+                count += 1;
+                for (int d = 0; d < 4; d++) {
+                    int dx = x + directions[d];
+                    int dy = y + directions[d + 1];
+                    if (dx >= 0 && dx < n && dy >= 0 && dy < m && grid[dx][dy]) {
+                        q.push({-grid[dx][dy], dx, dy});
+                        grid[dx][dy] = 0;
+                    }
                 }
             }
+            
+            res[p.second] = count;
         }
-        return count[n - 1];
+        return res;
     }
 };
 
@@ -48,16 +53,16 @@ int main() {
     std::string str = "aeioqq";
     
     vector<vector<int>> matrix = {
-        {0,6,7},{0,1,2},{1,2,3},{1,3,3},{6,3,3},{3,5,1},{6,5,1},{2,5,1},{0,4,5},{4,6,2}
+        {1,2,3},{2,5,7},{3,5,1}
     };
 //    
 //    
 //    
 //    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
 //    vector<int> end = {3,4,5,6};
-    vector<int> profit = {1,2,6,4};
+    vector<int> profit = {5,6,2};
     Solution s;
-    int res = s.countPaths(7, matrix);
+    vector<int> res = s.maxPoints(matrix, profit);
 
     return 0;
 }
