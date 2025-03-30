@@ -75,31 +75,33 @@ public:
         }
 
         sort(merge.begin(), merge.end());
-        int j = 0;
-        vector<int> res;
-        unordered_map<int, int> count;
-        int group = 0;
+        int i = 0;
+        int l = -1;
+        int r = -1;
+        unordered_map<int, int> counter;
+        int count = 0;
 
-        for (int i = 0; i < merge.size(); i++) {
-            auto [num, arr_index] = merge[i];
-            count[arr_index] += 1;
-            if (count[arr_index] == 1) {
-                group += 1;
+        for (int j = 0; j < merge.size(); j++) {
+            auto [num, k] = merge[j];
+            counter[k] += 1;
+            if (counter[k] == 1) {
+                count += 1;
             }
 
-            while (group == n) {
-                if (res.empty() || res[1] - res[0] > merge[i].first - merge[j].first) {
-                    res = {merge[j].first, merge[i].first};
+            while (count == n) {
+                if (l == -1 || r - l > merge[j].first - merge[i].first) {
+                    l = merge[i].first;
+                    r = merge[j].first;
                 }
-                int arr_index = merge[j].second;
-                count[arr_index] -= 1;
-                if (count[arr_index] == 0) {
-                    group -= 1;
+                int k = merge[i].second;
+                counter[k] -= 1;
+                if (counter[k] == 0) {
+                    count -= 1;
                 }
-                j += 1;
+                i += 1;
             }
         }
 
-        return res;
+        return {l, r};
     }
 };

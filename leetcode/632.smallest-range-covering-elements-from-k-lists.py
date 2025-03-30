@@ -64,26 +64,26 @@ class Solution:
 
         merge.sort()
 
-        res = None
-        group = 0
-        count = defaultdict(int)
+        l, r = -1, -1
+        counter = defaultdict(int)
+        count = 0
+        i = 0
 
-        j = 0
-        for i in range(len(merge)):
-            num, arr_index = merge[i]
-            count[arr_index] += 1
-            if count[arr_index] == 1:
-                group += 1
+        for j in range(len(merge)):
+            num, k = merge[j]
+            counter[k] += 1
+            if counter[k] == 1:
+                count += 1
 
-            while group == n:
-                if res is None or res[1] - res[0] > merge[i][0] - merge[j][0]:
-                    res = [merge[j][0], merge[i][0]]
+            while count == n:
+                if l == -1 or r - l > merge[j][0] - merge[i][0]:
+                    l, r = [merge[i][0], merge[j][0]]
 
-                arr_index = merge[j][1]
-                count[arr_index] -= 1
-                if count[arr_index] == 0:
-                    group -= 1
+                k = merge[i][1]
+                counter[k] -= 1
+                if counter[k] == 0:
+                    count -= 1
 
-                j += 1
+                i += 1
         
-        return res
+        return [l, r]

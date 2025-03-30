@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/kRfwsXnuCz0
 
 //  You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.
 //  Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
@@ -33,23 +34,22 @@
 class Solution {
 public:
     vector<int> partitionLabels(string s) {
-        unordered_map<char, int> letters;
-        for (int i = 0; i < s.size(); i++) {
-            letters[s[i]] = i;
+        int n = s.size();
+        unordered_map<char, int> indexes;
+        for (int i = 0; i < n; i++) {
+            indexes[s[i]] = i;
         }
 
+        int i = 0;
         vector<int> res;
-        int start = 0;
-        int end = 0;
-
-        for (int i = 0; i < s.size(); i++) {
-            end = max(end, letters[s[i]]);
-            if (i == end) {
-                res.push_back(end - start + 1);
-                start = i + 1;
+        int right = 0;
+        for (int j = 0; j < n; j++) {
+            right = max(right, indexes[s[j]]);
+            if (j == right) {
+                res.push_back(j - i + 1);
+                i = j + 1;
             }
         }
-
         return res;
-    }
+    }   
 };

@@ -2,7 +2,7 @@
 //  Time: O(M + N)
 //  Space: O(N)
 //  Ref: -
-//  Note: Hash + TP
+//  Note: -
 
 //  Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
 //  The testcases will be generated such that the answer is unique.
@@ -41,42 +41,42 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        unordered_map<char, int> table;
+        int n = s.size();
+        int k = t.size();
+        unordered_map<char, int> counter;
         for (auto c : t) {
-            table[c]++;
+            counter[c]++;
         }
 
-        int l = 0;
+        int i = 0;
         int count = 0;
-        int length = s.size() + 1;
-        int head = 0;
+        int l = -1;
+        int r = -1;
 
-        for (int r = 0; r < s.size(); r++) {
-            if (table.count(s[r]) > 0) {
-                if (table[s[r]] > 0) {
+        for (int j = 0; j < n; j++) {
+            if (counter.count(s[j]) > 0) {
+                if (counter[s[j]] > 0) {
                     count += 1;
                 }
-                table[s[r]] --;
+                counter[s[j]] -= 1;
             }
 
-            while (count == t.size()) {
-                if (r - l + 1 < length) {
-                    head = l;
-                    length = r - l + 1;
+            while (count == k) {
+                if (l == -1 || j - i < r - l) {
+                    l = i;
+                    r = j;
                 }
 
-                if (table.count(s[l]) > 0) {
-                    if (table[s[l]] == 0) {
+                if (counter.count(s[i]) > 0) {
+                    counter[s[i]] += 1;
+                    if (counter[s[i]] > 0) {
                         count -= 1;
                     }
-                    table[s[l]] ++;
                 }
-
-                l++;
+                
+                i += 1;
             }
-
         }
-
-        return length > s.size() ? "" : s.substr(head, length); 
+        return l >= 0 ? s.substr(l, r - l + 1): "";
     }
 };

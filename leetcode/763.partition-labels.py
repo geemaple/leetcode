@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/kRfwsXnuCz0
 
 #  You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.
 #  Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
@@ -32,23 +33,17 @@
 
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
+        n = len(s)
+        indexes = {}
+        for i in range(n):
+            indexes[s[i]] = i
 
-        letters = {}
-        for i in range(len(s)):
-            letters[s[i]] = i
-
+        i = 0
+        right = 0
         res = []
-        start = 0
-        end = letters[s[0]]
-
-        for i in range(1, len(s)):
-            
-            if i > end:
-                res.append(end - start + 1)
-                start = i
-            
-            end = max(end, letters[s[i]])
-
-        res.append(end - start + 1)
-
+        for j in range(n):
+            right = max(right, indexes[s[j]])
+            if j == right:
+                res.append(j - i + 1)
+                i = j + 1
         return res

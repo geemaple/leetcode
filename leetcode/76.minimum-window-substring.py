@@ -2,7 +2,7 @@
 #  Time: O(M + N)
 #  Space: O(N)
 #  Ref: -
-#  Note: Hash + TP
+#  Note: -
 
 #  Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
 #  The testcases will be generated such that the answer is unique.
@@ -38,33 +38,31 @@
 #  Follow up: Could you find an algorithm that runs in O(m + n) time?
 #  
 
+from collections import Counter
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        table = {}
-        for c in t:
-            table[c] = table.get(c, 0) + 1
+        n = len(s)
+        k = len(t)
+        counter = Counter(t)
+        i = 0
+        count = 0
+        l = -1
+        r = -1
+        for j in range(n):
+            if s[j] in counter: 
+                if counter[s[j]] > 0:
+                    count += 1
+                counter[s[j]] -= 1
 
-        counter = 0
-        l = 0
-        head = 0
-        length = len(s) + 1
+            while count == k:
+                if l == - 1 or r - l > j - i:
+                    l, r = i, j
 
-        for r in range(len(s)):
-            if s[r] in table:
-                if table[s[r]] > 0:
-                    counter += 1
-                table[s[r]] -= 1
+                if s[i] in counter:
+                    counter[s[i]] += 1
+                    if counter[s[i]] > 0:
+                        count -= 1
+                    
+                i += 1
 
-            while counter == len(t):
-                if r - l + 1 < length:
-                    head = l
-                    length = r - l + 1
-
-                if s[l] in table:
-                    if table[s[l]] == 0:
-                        counter -= 1
-                    table[s[l]] += 1
-
-                l += 1
-
-        return "" if length > len(s) else s[head: head + length]
+        return s[l: r + 1] if l >= 0 else ''
