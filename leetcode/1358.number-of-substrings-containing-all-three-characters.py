@@ -52,3 +52,22 @@ class Solution:
                 i += 1
 
         return res
+    
+from collections import defaultdict
+class Solution:
+    def numberOfSubstrings(self, s: str) -> int:
+        n = len(s)
+        counter = defaultdict(int)
+        i = 0
+        res = 0
+        for j in range(n):
+            counter[s[j]] += 1
+            while len(counter) == 3:
+                counter[s[i]] -= 1
+                if counter[s[i]] == 0:
+                    del counter[s[i]]
+                i += 1
+
+            res += i
+
+        return res

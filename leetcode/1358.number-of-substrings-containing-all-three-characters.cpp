@@ -60,3 +60,31 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    int numberOfSubstrings(string s) {
+        int n = s.size();
+        vector<int> counter = vector<int>(3, 0);
+        int count = 0;
+        int res = 0;
+        int i = 0;
+        for (int j = 0; j < n; j++) {
+            counter[s[j] - 'a'] += 1;
+            if (counter[s[j] - 'a'] == 1) {
+                count += 1;
+            }
+
+            while (count == 3) {
+                counter[s[i] - 'a'] -= 1;
+                if (counter[s[i] - 'a'] == 0) {
+                    count -= 1;
+                }
+                i += 1;
+            }
+
+            res += i;
+        }
+        return res;
+    }
+};

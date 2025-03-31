@@ -12,40 +12,30 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> maxPoints(vector<vector<int>>& grid, vector<int>& queries) {
-        int directions[5] = {-1, 0, 1, 0, -1};
-        int n = grid.size();
-        int m = grid[0].size();
-
-        vector<pair<int, int>> index_queries;
-        for (int i = 0; i < queries.size(); i++) {
-            index_queries.emplace_back(queries[i], i);
+    long long putMarbles(vector<int>& weights, int k) {
+        int n = weights.size();
+        if (k == n) {
+            return 0;
         }
-        sort(index_queries.begin(), index_queries.end());
-        priority_queue<tuple<int, int, int>> q;
-        q.push({-grid[0][0], 0, 0});
-        grid[0][0] = 0;
-
-        vector<int> res(queries.size(), 0);
-        int count = 0;
-        for (auto &p: index_queries) {
-            while (!q.empty() && -get<0>(q.top()) < p.first) {
-                auto [val, x, y] = q.top();
-                q.pop();
-                count += 1;
-                for (int d = 0; d < 4; d++) {
-                    int dx = x + directions[d];
-                    int dy = y + directions[d + 1];
-                    if (dx >= 0 && dx < n && dy >= 0 && dy < m && grid[dx][dy]) {
-                        q.push({-grid[dx][dy], dx, dy});
-                        grid[dx][dy] = 0;
-                    }
-                }
-            }
-            
-            res[p.second] = count;
+        
+        k = k - 1;
+        vector<int> splits(n - 1, 0);
+        for (int i = 0; i < n - 1; i++) {
+            splits[i] = weights[i] + weights[i + 1];
         }
-        return res;
+
+        long long diff = 0;
+        nth_element(splits.begin(), splits.begin() + k, splits.end());
+        for (int i = 0; i < k; i++) {
+            diff -= splits[i];
+        }
+
+        nth_element(splits.begin(), splits.begin() + splits.size() - k + 1, splits.end());
+        for (int i = 0; i < k; i++) {
+            diff += splits[splits.size() - i - 1];
+        }
+
+        return diff;
     }
 };
 
@@ -60,9 +50,9 @@ int main() {
 //    
 //    vector<int> nums = {7,8,8,3,8,1,5,3,5,4};
 //    vector<int> end = {3,4,5,6};
-    vector<int> profit = {5,6,2};
+    vector<int> profit = {1,3,5,1};
     Solution s;
-    vector<int> res = s.maxPoints(matrix, profit);
+    int res = s.putMarbles(profit, 2);
 
     return 0;
 }
