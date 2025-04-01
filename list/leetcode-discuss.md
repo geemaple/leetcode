@@ -100,7 +100,7 @@
 74. https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
 75. https://leetcode.com/problems/merge-intervals/
 76. https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/
-77. https://leetcode.com/problems/describe-the-painting/
+77. https://www.lintcode.com/problem/amount-of-new-area-painted-each-day/
 78. https://leetcode.com/problems/minimum-moves-to-make-array-complementary/
 79. https://leetcode.com/problems/amount-of-new-area-painted-each-day/
 80. https://leetcode.com/problems/number-of-flowers-in-full-bloom/
