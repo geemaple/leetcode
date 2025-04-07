@@ -110,3 +110,31 @@ class Solution:
             res.append(Interval(merge[i - 1][1], merge[i][0]))
 
         return res
+    
+from collections import defaultdict
+class Solution:
+    """
+    @param schedule: a list schedule of employees
+    @return: Return a list of finite intervals 
+    """
+    def employee_free_time(self, schedule: List[List[int]]) -> List[Interval]:
+        # Write your code here
+        line = defaultdict(int)
+        for i in range(len(schedule)):
+            for j in range(0, len(schedule[i]), 2):
+                line[schedule[i][j]] += i + 1
+                line[schedule[i][j + 1]] -= i + 1
+
+        prefix = 0
+        start = -1
+        res = []
+        for t in sorted(line.keys()):
+            if prefix == 0 and start != -1:
+                res.append(Interval(start, t))
+                start = -1
+
+            prefix += line[t]
+            if prefix == 0 and start == -1:
+                start = t
+            
+        return res

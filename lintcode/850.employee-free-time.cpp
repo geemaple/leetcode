@@ -124,3 +124,40 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    /**
+     * @param schedule: a list schedule of employees
+     * @return: Return a list of finite intervals 
+     */
+    vector<Interval> employeeFreeTime(vector<vector<int>> &schedule) {
+        // Write your code here
+        map<int, int> line;
+
+        for (int i = 0; i < schedule.size(); ++i) {
+            for (int j = 0; j < schedule[i].size(); j += 2) {
+                line[schedule[i][j]] += i + 1;
+                line[schedule[i][j + 1]] -= i + 1;
+            }
+        }
+
+        int prefix = 0;
+        int start = -1;
+        vector<Interval> res;
+
+        for (const auto& [t, val] : line) {
+            if (prefix == 0 && start != -1) {
+                res.emplace_back(start, t);
+                start = -1;
+            }
+
+            prefix += val;
+            if (prefix == 0 && start == -1) {
+                start = t;
+            }
+        }
+
+        return res;
+    }
+};

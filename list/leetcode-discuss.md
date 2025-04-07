@@ -106,7 +106,7 @@
 80. https://leetcode.com/problems/number-of-flowers-in-full-bloom/
 81. https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
 82. https://leetcode.com/problems/my-calendar-iii/
-83. https://leetcode.com/problems/employee-free-time/
+83. https://www.lintcode.com/problem/employee-free-time/
 84. https://leetcode.com/problems/minimum-interval-to-include-each-query/
 85. https://leetcode.com/problems/rectangle-area-ii/
 86. https://leetcode.com/problems/perfect-rectangle/
