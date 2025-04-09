@@ -57,7 +57,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/128 | 3 vips |
 | [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 76/2209 | 3 vips |
 
-**Solved**: 651 problems
+**Solved**: 652 problems
 
 ## 类型/Category
 
@@ -520,7 +520,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(111) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(112) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -592,6 +592,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1674](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | Minimum Moves To Make Array Complementary | [c++](./leetcode/1674.minimum-moves-to-make-array-complementary.cpp), [python3](./leetcode/1674.minimum-moves-to-make-array-complementary.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2009](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | Minimum Number Of Operations To Make Array Continuous | [c++](./leetcode/2009.minimum-number-of-operations-to-make-array-continuous.cpp), [python3](./leetcode/2009.minimum-number-of-operations-to-make-array-continuous.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3396](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | Minimum Number Of Operations To Make Elements In Array Distinct | [c++](./leetcode/3396.minimum-number-of-operations-to-make-elements-in-array-distinct.cpp), [python3](./leetcode/3396.minimum-number-of-operations-to-make-elements-in-array-distinct.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-3375](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | Minimum Operations To Make Array Values Equal To K | [c++](./leetcode/3375.minimum-operations-to-make-array-values-equal-to-k.cpp), [python3](./leetcode/3375.minimum-operations-to-make-array-values-equal-to-k.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1658](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | Minimum Operations To Reduce X To Zero | [c++](./leetcode/1658.minimum-operations-to-reduce-x-to-zero.cpp), [python3](./leetcode/1658.minimum-operations-to-reduce-x-to-zero.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-2875](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | Minimum Size Subarray In Infinite Array | [c++](./leetcode/2875.minimum-size-subarray-in-infinite-array.cpp), [python3](./leetcode/2875.minimum-size-subarray-in-infinite-array.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Hash Table | O\(M \+ N\) | O\(N\) | - |
