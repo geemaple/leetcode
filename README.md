@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/128 | 3 vips |
-| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 77/2209 | 4 vips |
+| [🔲] | [灵茶山艾府.md](./list/灵茶山艾府.md) | 78/2209 | 4 vips |
 
-**Solved**: 655 problems
+**Solved**: 657 problems
 
 ## 类型/Category
 
@@ -102,7 +102,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(44) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(45) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
@@ -124,6 +124,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-282](https://leetcode.com/problems/expression-add-operators/) | Expression Add Operators | [c++](./leetcode/282.expression-add-operators.cpp), [python3](./leetcode/282.expression-add-operators.py) | Math | O\(2^N\) | O\(N\) | - |
 | [Leetcode-172](https://leetcode.com/problems/factorial-trailing-zeroes/) | Factorial Trailing Zeroes | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python3](./leetcode/172.factorial-trailing-zeroes.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-2965](https://leetcode.com/problems/find-missing-and-repeated-values/) | Find Missing And Repeated Values | [c++](./leetcode/2965.find-missing-and-repeated-values.cpp), [python3](./leetcode/2965.find-missing-and-repeated-values.py) | Math | O\(N^2\) | O\(N^2\) | - |
+| [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Math | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-2269](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | Find The K Beauty Of A Number | [c++](./leetcode/2269.find-the-k-beauty-of-a-number.cpp), [python3](./leetcode/2269.find-the-k-beauty-of-a-number.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-2698](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Find The Punishment Number Of An Integer | [c++](./leetcode/2698.find-the-punishment-number-of-an-integer.cpp), [python3](./leetcode/2698.find-the-punishment-number-of-an-integer.py) | Math | O\(N \* 2^K\) | O\(K\) | - |
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Math | O\(S\) | O\(1\) | - |
@@ -161,9 +162,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Combinatorics
 
-| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Combinatorics | O\(N^3\) | O\(N^3\) | - |
+| [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Combinatorics | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-1863](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Sum Of All Subset Xor Totals | [c++](./leetcode/1863.sum-of-all-subset-xor-totals.cpp), [python3](./leetcode/1863.sum-of-all-subset-xor-totals.py) | Combinatorics | O\(N\) | O\(1\) | - |
 | [Leetcode-62](https://leetcode.com/problems/unique-paths/) | Unique Paths | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Combinatorics | O\(MN\) | O\(MN\) | - |
 
@@ -421,7 +423,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(70) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(71) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -435,6 +437,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-162](https://leetcode.com/problems/find-peak-element/) | Find Peak Element | [c++](./leetcode/162.find-peak-element.cpp), [python3](./leetcode/162.find-peak-element.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-2831](https://leetcode.com/problems/find-the-longest-equal-subarray/) | Find The Longest Equal Subarray | [c++](./leetcode/2831.find-the-longest-equal-subarray.cpp), [python3](./leetcode/2831.find-the-longest-equal-subarray.py) | Binary Search | O\(N\) | O\(N\) | - |
+| [Leetcode-3134](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Find The Median Of The Uniqueness Array | [c++](./leetcode/3134.find-the-median-of-the-uniqueness-array.cpp), [python3](./leetcode/3134.find-the-median-of-the-uniqueness-array.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-278](https://leetcode.com/problems/first-bad-version/) | First Bad Version | [c++](./leetcode/278.first-bad-version.cpp), [python3](./leetcode/278.first-bad-version.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Binary Search | O\(N\) | O\(1\) | - |
@@ -522,7 +525,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(112) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(114) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -551,7 +554,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2115](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | Find All Possible Recipes From Given Supplies | [c++](./leetcode/2115.find-all-possible-recipes-from-given-supplies.cpp), [python3](./leetcode/2115.find-all-possible-recipes-from-given-supplies.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1261](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Find Elements In A Contaminated Binary Tree | [c++](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.cpp), [python3](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2965](https://leetcode.com/problems/find-missing-and-repeated-values/) | Find Missing And Repeated Values | [c++](./leetcode/2965.find-missing-and-repeated-values.cpp), [python3](./leetcode/2965.find-missing-and-repeated-values.py) | Hash Table | O\(N^2\) | O\(N^2\) | - |
+| [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Hash Table | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-2831](https://leetcode.com/problems/find-the-longest-equal-subarray/) | Find The Longest Equal Subarray | [c++](./leetcode/2831.find-the-longest-equal-subarray.cpp), [python3](./leetcode/2831.find-the-longest-equal-subarray.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-3134](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Find The Median Of The Uniqueness Array | [c++](./leetcode/3134.find-the-median-of-the-uniqueness-array.cpp), [python3](./leetcode/3134.find-the-median-of-the-uniqueness-array.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1980](https://leetcode.com/problems/find-unique-binary-string/) | Find Unique Binary String | [c++](./leetcode/1980.find-unique-binary-string.cpp), [python3](./leetcode/1980.find-unique-binary-string.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -841,7 +846,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(81) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(82) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -864,6 +869,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2269](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | Find The K Beauty Of A Number | [c++](./leetcode/2269.find-the-k-beauty-of-a-number.cpp), [python3](./leetcode/2269.find-the-k-beauty-of-a-number.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2831](https://leetcode.com/problems/find-the-longest-equal-subarray/) | Find The Longest Equal Subarray | [c++](./leetcode/2831.find-the-longest-equal-subarray.cpp), [python3](./leetcode/2831.find-the-longest-equal-subarray.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2730](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | Find The Longest Semi Repetitive Substring | [c++](./leetcode/2730.find-the-longest-semi-repetitive-substring.cpp), [python3](./leetcode/2730.find-the-longest-semi-repetitive-substring.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-3134](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Find The Median Of The Uniqueness Array | [c++](./leetcode/3134.find-the-median-of-the-uniqueness-array.cpp), [python3](./leetcode/3134.find-the-median-of-the-uniqueness-array.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-904](https://leetcode.com/problems/fruit-into-baskets/) | Fruit Into Baskets | [c++](./leetcode/904.fruit-into-baskets.cpp), [python3](./leetcode/904.fruit-into-baskets.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Sliding Window | O\(N\) | O\(1\) | - |
