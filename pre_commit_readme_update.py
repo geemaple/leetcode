@@ -25,6 +25,7 @@ TAG_COMB = 'Combinatorics'
 TAG_BIT_OP = 'Bit Manipulation'
 TAG_BIT_MASK = 'Bitmask'
 TAG_SIM = 'Simulation'
+TAG_ENUM = 'Enumeration'
 TAG_DESIGN = 'Design'
 TAG_GREEDY = 'Greedy'
 TAG_DP = 'Dynamic Programming'
@@ -90,8 +91,9 @@ TAG_MAP = {
 TAG_IGNORE = r'-'
 
 TAG_REGEX = {
-    TAG_MATH: r'^(Math|Geometry|Number Theory)$',
+    TAG_MATH: r'^(Math|Mathmatics|Geometry|Number Theory)$',
     TAG_DESIGN: r'^(Design|Iterator|Data Stream)$',
+    TAG_ENUM: r'^(Enumeration|Enumerate)$',
     TAG_BS: r'^(Binary Search|Binary Search on Answer)$',
     TAG_2P: r'^(Two Pointers|Same Direction Two Pointers)$',
     TAG_BFS: r'^(Breadth-First Search|Breadth First Search(/BFS)?|BFS)$',
@@ -329,34 +331,18 @@ class Markdown:
 
         Logger.log('----list----', Logger.BOLD)
         for status, file_path, dup, solved, vip, missing, total in sorted(list_stat, reverse=True):
-            finished = len(solved) + len(vip)
-            duplicated = finished < total and len(dup) > 0
-            
+            finished = len(solved) + len(vip)            
             Logger.log(f'{status}', end=' ')
             Logger.log(f'{finished:>3}/{total:<3}', Logger.OKGREEN, end=' ')
             Logger.log(f'{file_path:15}', Logger.OKBLUE, end=f' ')
-            if duplicated:
-                Logger.log(f'+dup:', Logger.WARNING, end=' ')
-                if len(dup) > 3:
-                    Logger.log(f'{random.sample(list(dup), 3)} ...', end=' ')
-                else:
-                    Logger.log(f'{dup}', end=' ')
-
-
+            k = 1
             filter_vip = [x for x in vip if 'leetcode' in x.link]
             if len(filter_vip) > 0:
-                if len(filter_vip) >= 3:
-                    Logger.log(f'vip: {random.sample(list(filter_vip), 3)} ...', Logger.FAIL, end='')
-                else:
-                    Logger.log(f'vip: {filter_vip}', Logger.FAIL, end='')
+                Logger.log(f'{len(filter_vip)} vips: {random.sample(list(filter_vip), k)} ...', Logger.FAIL, end='')
 
             if len(missing) > 0:
                 Logger.log(f'\n---{len(missing):3} TODO---:', Logger.WARNING, end=' ')
-                if len(missing) >= 3:
-                    Logger.log(f'{random.sample(list(missing), 3)} ...', end='')
-                else:
-                    Logger.log(f'{missing}', end='')
-
+                Logger.log(f'{random.sample(list(missing), k)} ...', end='')
 
             Logger.log('')
 

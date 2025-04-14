@@ -2,8 +2,6 @@
 
 ## [Sliding Window](https://leetcode.cn/circle/discuss/0viNMK/)
 
-### [Fixed-length Window](https://www.leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/2809359/tao-lu-jiao-ni-jie-jue-ding-chang-hua-ch-fzfo/)
-
 1. https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
 2. https://leetcode.com/problems/maximum-average-subarray-i/
 3. https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/
@@ -40,7 +38,7 @@
 32. https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
 33. https://leetcode.com/problems/contains-duplicate-iii/ +Mark
 
-### [Variable-length Window]
+### Variable-length
 
 34. https://leetcode.com/problems/longest-substring-without-repeating-characters/
 35. https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/
@@ -99,9 +97,9 @@
 83. https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/
 
 84. https://leetcode.com/problems/binary-subarrays-with-sum/
-- https://leetcode.com/problems/count-number-of-nice-subarrays/
-- https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/
-- https://leetcode.com/problems/subarrays-with-k-different-integers/
+85. https://leetcode.com/problems/count-number-of-nice-subarrays/
+86. https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/ +Mark
+87. https://leetcode.com/problems/subarrays-with-k-different-integers/
 
 - https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
 - https://leetcode.com/problems/friends-of-appropriate-ages/
@@ -111,6 +109,9 @@
 - https://leetcode.com/problems/find-all-anagrams-in-a-string/ +duplicate
 - https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
 - https://leetcode.com/problems/kth-smallest-subarray-sum/
+
+## Two Pointers
+
 - https://leetcode.com/problems/reverse-string/
 - https://leetcode.com/problems/valid-palindrome/
 - https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/

@@ -46,6 +46,35 @@
 from collections import defaultdict
 class Solution:
     def countOfSubstrings(self, word: str, k: int) -> int:
+        return self.count(word, k) - self.count(word, k + 1)
+
+    def count(self, word: str, k: int) -> int:
+        n = len(word)
+        vowel = defaultdict(int)
+        count = 0
+        i = 0
+        res = 0
+        for j in range(n):
+            if word[j] in 'aeiou':
+                vowel[word[j]] += 1
+            else:
+                count += 1
+
+            while len(vowel) == 5 and count >= k:
+                res += n - j
+                if word[i] in 'aeiou':
+                    vowel[word[i]] -= 1
+                    if vowel[word[i]] == 0:
+                        del vowel[word[i]]
+                else:
+                    count -= 1
+                i += 1
+                
+        return res
+
+from collections import defaultdict
+class Solution:
+    def countOfSubstrings(self, word: str, k: int) -> int:
         n = len(word)
         next_consonant = {}
         val = n

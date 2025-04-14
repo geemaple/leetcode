@@ -46,6 +46,46 @@
 class Solution {
 public:
     long long countOfSubstrings(string word, int k) {
+        return count(word, k) - count(word, k + 1);
+    }
+
+    long long count(string &word, int k) {
+        int n = word.size();
+        unordered_map<char, int> vowel;
+        int count = 0;
+        long long res = 0;
+        int i = 0;
+        for (int j = 0; j < n; j++) {
+            if (is_consonant(word[j])) {
+                vowel[word[j]] += 1;
+            } else {
+                count += 1;
+            }
+
+            while (vowel.size() == 5 && count >= k) {
+                res += n - j;
+                if (is_consonant(word[i])) {
+                    vowel[word[i]] -= 1;
+                    if (vowel[word[i]] == 0) {
+                        vowel.erase(word[i]);
+                    }
+                } else {
+                    count -= 1;
+                }
+                i += 1;
+            }
+        }
+        return res;
+    }
+
+    bool is_consonant(char ch) {
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+};
+
+class Solution {
+public:
+    long long countOfSubstrings(string word, int k) {
         int n = word.size();
         unordered_map<char, int> counter;
         int consonants = 0;
