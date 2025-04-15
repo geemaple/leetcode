@@ -101,7 +101,7 @@
 86. https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/ +Mark
 87. https://leetcode.com/problems/subarrays-with-k-different-integers/
 
-- https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
+88. https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
 - https://leetcode.com/problems/friends-of-appropriate-ages/
 - https://leetcode.com/problems/longest-nice-subarray/
 - https://leetcode.com/problems/swap-for-longest-repeated-character-substring/
