@@ -102,9 +102,9 @@
 87. https://leetcode.com/problems/subarrays-with-k-different-integers/
 
 88. https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
-- https://leetcode.com/problems/friends-of-appropriate-ages/
-- https://leetcode.com/problems/longest-nice-subarray/
-- https://leetcode.com/problems/swap-for-longest-repeated-character-substring/
+89. https://leetcode.com/problems/friends-of-appropriate-ages/ +Mark
+90. https://leetcode.com/problems/longest-nice-subarray/
+91. https://leetcode.com/problems/swap-for-longest-repeated-character-substring/
 - https://leetcode.com/problems/longest-repeating-character-replacement/
 - https://leetcode.com/problems/find-all-anagrams-in-a-string/ +duplicate
 - https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
@@ -230,7 +230,7 @@ https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/solutions
 - https://leetcode.com/problems/longest-subsequence-with-limited-sum/
 - https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/
 - https://leetcode.com/problems/range-frequency-queries/
-- https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate
+- https://leetcode.com/problems// +duplicate
 - https://leetcode.com/problems/minimum-array-length-after-pair-removals/
 - https://leetcode.com/problems/time-based-key-value-store/
 - https://leetcode.com/problems/snapshot-array/
