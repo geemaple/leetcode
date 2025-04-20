@@ -34,44 +34,40 @@ class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         counter = defaultdict(int)
         n = len(s)
-        j = 0
+        i = 0
         res = 0
         most_frequent = 0
 
-        for i in range(n):
-            counter[s[i]] += 1
-            most_frequent = max(most_frequent, counter[s[i]])
+        for j in range(n):
+            counter[s[j]] += 1
+            most_frequent = max(most_frequent, counter[s[j]])
 
             # length - most_frequent <= k
             # kepp most_frequent unchanged since smaller frequnt won't contribute to the result
-            while i - j + 1 - most_frequent > k:
-                counter[s[j]] -= 1
-                j += 1
+            while j - i + 1 - most_frequent > k:
+                counter[s[i]] -= 1
+                i += 1
 
-            res = max(res, i - j + 1)
+            res = max(res, j - i + 1)
 
         return res
 
-
-from collections import defaultdict
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        counter = defaultdict(int)
-        n = len(s)
-        j = 0
         res = 0
-        for i in range(n):
-            counter[s[i]] += 1
-            while i - j + 1 - self.most_frequent(counter) > k:
-                counter[s[j]] -= 1
-                j += 1
-
-            res = max(res, i - j + 1)
-
+        for ch in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+            res = max(res, self.count(s, ch, k))
         return res
 
-    def most_frequent(self, counter: dict) -> int:
+    def count(self, s: str, target: str, k: int) -> int:
+        n = len(s)
+        i = 0
         res = 0
-        for key in counter:
-            res = max(res, counter[key])
+        count = 0
+        for j in range(n):
+            count += s[j] != target
+            while count > k:
+                count -= s[i] != target
+                i += 1
+            res = max(res, j - i + 1)
         return res

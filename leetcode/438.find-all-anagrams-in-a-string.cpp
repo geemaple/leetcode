@@ -71,3 +71,42 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+        int n = s.size();
+        int k = p.size();
+        unordered_map<char, int> counter;
+        for (char &c : p) {
+            counter[c]++;
+        }
+
+        int count = 0;
+        vector<int> res;
+        for (int i = 0; i < n; ++i) {
+            if (counter.find(s[i]) != counter.end()) {
+                counter[s[i]]--;
+                if (counter[s[i]] >= 0) {
+                    count++;
+                }
+            }
+
+            if (i >= k - 1) {
+                if (count == k) {
+                    res.push_back(i - k + 1);
+                }
+
+                char left = s[i - k + 1];
+                if (counter.find(left) != counter.end()) {
+                    counter[left]++;
+                    if (counter[left] > 0) {
+                        count--;
+                    }
+                }
+            }
+        }
+
+        return res;
+    }
+};

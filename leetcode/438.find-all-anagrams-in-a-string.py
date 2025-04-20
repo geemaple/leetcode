@@ -57,3 +57,29 @@ class Solution:
                     res.append(i - k + 1)
 
         return res
+
+from collections import Counter
+class Solution:
+    def findAnagrams(self, s: str, p: str) -> List[int]:
+        n = len(s)
+        k = len(p)
+        counter = Counter(p)
+        count = 0
+        res = []
+        for i in range(n):
+            if s[i] in counter:
+                counter[s[i]] -= 1
+                if counter[s[i]] >= 0:
+                    count += 1
+
+            if i >= k - 1:
+                if count == k:
+                    res.append(i - k + 1)
+
+                left = s[i - k + 1]
+                if left in counter:
+                    counter[left] += 1
+                    if counter[left] >= 1:
+                        count -= 1
+
+        return res

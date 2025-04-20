@@ -105,8 +105,8 @@
 89. https://leetcode.com/problems/friends-of-appropriate-ages/ +Mark
 90. https://leetcode.com/problems/longest-nice-subarray/
 91. https://leetcode.com/problems/swap-for-longest-repeated-character-substring/
-- https://leetcode.com/problems/longest-repeating-character-replacement/
-- https://leetcode.com/problems/find-all-anagrams-in-a-string/ +duplicate
+92. https://leetcode.com/problems/longest-repeating-character-replacement/
+93. https://leetcode.com/problems/find-all-anagrams-in-a-string/ +duplicate
 - https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
 - https://leetcode.com/problems/kth-smallest-subarray-sum/
 

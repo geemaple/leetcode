@@ -33,23 +33,23 @@ class Solution {
 public:
     int characterReplacement(string s, int k) {
         int n = s.size();
-        int j = 0;
+        int i = 0;
         vector<int> counter(26, 0);
-        int mas_freq = 0;
+        int max_freq = 0;
         int res = 0;
 
-        for (int i = 0; i < n; i++) {
-            counter[s[i] - 'A'] += 1;
-            mas_freq = max(mas_freq, counter[s[i] - 'A']);
+        for (int j = 0; j < n; j++) {
+            counter[s[j] - 'A'] += 1;
+            max_freq = max(max_freq, counter[s[j] - 'A']);
 
             // length - most_frequent <= k
             // kepp most_frequent unchanged since smaller frequnt won't contribute to the result
-            while (i - j + 1 - mas_freq > k) {
-                counter[s[j] - 'A']--;
-                j++;   
+            while (j - i + 1 - max_freq > k) {
+                counter[s[i] - 'A']--;
+                i++;   
             }
 
-            res = max(res, i - j + 1);
+            res = max(res, j - i + 1);
         }
 
         return res;
@@ -59,19 +59,27 @@ public:
 class Solution {
 public:
     int characterReplacement(string s, int k) {
+        int res = 0;
+        for (int i = 0; i < 26; i++) {
+            res = max(res, count(s, 'A' + i, k));
+        }
+        return res;
+    }
+
+    int count(string &s, char target, int k) {
         int n = s.size();
-        int j = 0;
-        vector<int> counter(26, 0);
+        int i = 0;
+        int count = 0;
         int res = 0;
 
-        for (int i = 0; i < n; i++) {
-            counter[s[i] - 'A'] += 1;
-            while (i - j + 1 - *max_element(counter.begin(), counter.end()) > k) {
-                counter[s[j] - 'A']--;
-                j++;   
+        for (int j = 0; j < n; j++) {
+            count += s[j] != target;
+            while (count > k) {
+                count -= s[i] != target;
+                i++;   
             }
 
-            res = max(res, i - j + 1);
+            res = max(res, j - i + 1);
         }
 
         return res;
