@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/128 | 3 vips |
-| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 88/2209 | 4 vips |
+| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 90/2210 | 4 vips |
 
-**Solved**: 670 problems
+**Solved**: 673 problems
 
 ## 类型/Category
 
@@ -442,7 +442,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(75) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(77) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -511,10 +511,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-981](https://leetcode.com/problems/time-based-key-value-store/) | Time Based Key Value Store | [c++](./leetcode/981.time-based-key-value-store.cpp), [python3](./leetcode/981.time-based-key-value-store.py) | Binary Search | O\(logN\) | O\(N\) | - |
 | [Leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Binary Search | O\(logN\) | O\(1\) | - |
+| [Leetcode-1712](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | Ways To Split Array Into Three Subarrays | [c++](./leetcode/1712.ways-to-split-array-into-three-subarrays.cpp), [python3](./leetcode/1712.ways-to-split-array-into-three-subarrays.py) | Binary Search | O\(N\) | O\(N\) | - |
 | [Leetcode-3356](https://leetcode.com/problems/zero-array-transformation-ii/) | Zero Array Transformation II | [c++](./leetcode/3356.zero-array-transformation-ii.cpp), [python3](./leetcode/3356.zero-array-transformation-ii.py) | Binary Search | O\(N \+ M\) | O\(N\) | - |
 | [Lintcode-457](https://www.lintcode.com/problem/classical-binary-search/) | Classical Binary Search | [c++](./lintcode/457.classical-binary-search.cpp), [python3](./lintcode/457.classical-binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Lintcode-437](https://www.lintcode.com/problem/copy-books/) | Copy Books | [c++](./lintcode/437.copy-books.cpp), [python3](./lintcode/437.copy-books.py) | Binary Search | O\(N\*logP\) | O\(1\) | - |
 | [Lintcode-14](https://www.lintcode.com/problem/first-position-of-target/) | First Position Of Target | [c++](./lintcode/14.first-position-of-target.cpp), [python3](./lintcode/14.first-position-of-target.py) | Binary Search | O\(logN\) | O\(1\) | - |
+| [Lintcode-3736](https://www.lintcode.com/problem/kth-smallest-subarray-sum/) | Kth Smallest Subarray Sum | [c++](./lintcode/3736.kth-smallest-subarray-sum.cpp), [python3](./lintcode/3736.kth-smallest-subarray-sum.py) | Binary Search | O\(NlogA\) | O\(1\) | Leetcode-1918 |
 | [Lintcode-617](https://www.lintcode.com/problem/maximum-average-subarray-ii/) | Maximum Average Subarray II | [c++](./lintcode/617.maximum-average-subarray-ii.cpp), [python3](./lintcode/617.maximum-average-subarray-ii.py) | Binary Search | O\(Nlog\(A/ε\)\) | O\(N\) | Leetcode-644 |
 | [Lintcode-585](https://www.lintcode.com/problem/maximum-number-in-mountain-sequence/) | Maximum Number In Mountain Sequence | [c++](./lintcode/585.maximum-number-in-mountain-sequence.cpp), [python3](./lintcode/585.maximum-number-in-mountain-sequence.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Lintcode-600](https://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/) | Smallest Rectangle Enclosing Black Pixels | [c++](./lintcode/600.smallest-rectangle-enclosing-black-pixels.cpp), [python3](./lintcode/600.smallest-rectangle-enclosing-black-pixels.py) | Binary Search | O\(N \* logM \+ M \* logN\) | O\(1\) | Leetcode-302 |
@@ -680,7 +682,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Prefix Sum
 
-| Link | Problem(43) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(45) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-930](https://leetcode.com/problems/binary-subarrays-with-sum/) | Binary Subarrays With Sum | [c++](./leetcode/930.binary-subarrays-with-sum.cpp), [python3](./leetcode/930.binary-subarrays-with-sum.py) | Prefix Sum | O\(N\) | O\(1\) | - |
@@ -690,6 +692,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-2302](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | Count Subarrays With Score Less Than K | [c++](./leetcode/2302.count-subarrays-with-score-less-than-k.cpp), [python3](./leetcode/2302.count-subarrays-with-score-less-than-k.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-3261](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/) | Count Substrings That Satisfy K Constraint II | [c++](./leetcode/3261.count-substrings-that-satisfy-k-constraint-ii.cpp), [python3](./leetcode/3261.count-substrings-that-satisfy-k-constraint-ii.py) | Prefix Sum | O\(N \+ Q\) | O\(N\) | - |
+| [Leetcode-2145](https://leetcode.com/problems/count-the-hidden-sequences/) | Count The Hidden Sequences | [c++](./leetcode/2145.count-the-hidden-sequences.cpp), [python3](./leetcode/2145.count-the-hidden-sequences.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-1943](https://leetcode.com/problems/describe-the-painting/) | Describe The Painting | [c++](./leetcode/1943.describe-the-painting.cpp), [python3](./leetcode/1943.describe-the-painting.py) | Prefix Sum | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Prefix Sum | O\(N\) | O\(1\) | - |
@@ -719,6 +722,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-303](https://leetcode.com/problems/range-sum-query-immutable/) | Range Sum Query Immutable | [c++](./leetcode/303.range-sum-query-immutable.cpp), [python3](./leetcode/303.range-sum-query-immutable.py) | Prefix Sum | O\(\*1\) | O\(N\) | - |
 | [Leetcode-713](https://leetcode.com/problems/subarray-product-less-than-k/) | Subarray Product Less Than K | [c++](./leetcode/713.subarray-product-less-than-k.cpp), [python3](./leetcode/713.subarray-product-less-than-k.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-560](https://leetcode.com/problems/subarray-sum-equals-k/) | Subarray Sum Equals K | [c++](./leetcode/560.subarray-sum-equals-k.cpp), [python3](./leetcode/560.subarray-sum-equals-k.py) | Prefix Sum | O\(N\) | O\(N\) | - |
+| [Leetcode-1712](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | Ways To Split Array Into Three Subarrays | [c++](./leetcode/1712.ways-to-split-array-into-three-subarrays.cpp), [python3](./leetcode/1712.ways-to-split-array-into-three-subarrays.py) | Prefix Sum | O\(N\) | O\(N\) | - |
 | [Leetcode-3355](https://leetcode.com/problems/zero-array-transformation-i/) | Zero Array Transformation I | [c++](./leetcode/3355.zero-array-transformation-i.cpp), [python3](./leetcode/3355.zero-array-transformation-i.py) | Prefix Sum | O\(N \+ M\) | O\(N\) | - |
 | [Leetcode-3356](https://leetcode.com/problems/zero-array-transformation-ii/) | Zero Array Transformation II | [c++](./leetcode/3356.zero-array-transformation-ii.cpp), [python3](./leetcode/3356.zero-array-transformation-ii.py) | Prefix Sum | O\(N \+ M\) | O\(N\) | - |
 | [Leetcode-3362](https://leetcode.com/problems/zero-array-transformation-iii/) | Zero Array Transformation III | [c++](./leetcode/3362.zero-array-transformation-iii.cpp), [python3](./leetcode/3362.zero-array-transformation-iii.py) | Prefix Sum | O\(NlogN\) | O\(N\) | - |
@@ -835,7 +839,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(41) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(43) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Two Pointers | O\(N^3\) | O\(1\) | - |
@@ -873,7 +877,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Sum Ii Input Array Is Sorted | [c++](./leetcode/167.two-sum-ii-input-array-is-sorted.cpp), [python3](./leetcode/167.two-sum-ii-input-array-is-sorted.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Two Pointers | O\(NH\) | O\(H\) | - |
 | [Leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) | Valid Palindrome II | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python3](./leetcode/680.valid-palindrome-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-1712](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | Ways To Split Array Into Three Subarrays | [c++](./leetcode/1712.ways-to-split-array-into-three-subarrays.cpp), [python3](./leetcode/1712.ways-to-split-array-into-three-subarrays.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Lintcode-861](https://www.lintcode.com/problem/k-empty-slots/) | K Empty Slots | [c++](./lintcode/861.k-empty-slots.cpp), [python3](./lintcode/861.k-empty-slots.py) | Two Pointers | O\(N\) | O\(N\) | Leetcode-683 |
+| [Lintcode-3736](https://www.lintcode.com/problem/kth-smallest-subarray-sum/) | Kth Smallest Subarray Sum | [c++](./lintcode/3736.kth-smallest-subarray-sum.cpp), [python3](./lintcode/3736.kth-smallest-subarray-sum.py) | Two Pointers | O\(NlogA\) | O\(1\) | Leetcode-1918 |
 | [Lintcode-386](https://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters/) | Longest Substring With At Most K Distinct Characters | [c++](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.cpp), [python3](./lintcode/386.longest-substring-with-at-most-k-distinct-characters.py) | Two Pointers | O\(N\) | O\(K\) | Leetcode-340 |
 | [Lintcode-928](https://www.lintcode.com/problem/longest-substring-with-at-most-two-distinct-characters/) | Longest Substring With At Most Two Distinct Characters | [c++](./lintcode/928.longest-substring-with-at-most-two-distinct-characters.cpp), [python3](./lintcode/928.longest-substring-with-at-most-two-distinct-characters.py) | Two Pointers | O\(N\) | O\(1\) | Leetcode-159 |
 | [Lintcode-883](https://www.lintcode.com/problem/max-consecutive-ones-ii/) | Max Consecutive Ones II | [c++](./lintcode/883.max-consecutive-ones-ii.cpp), [python3](./lintcode/883.max-consecutive-ones-ii.py) | Two Pointers | O\(N\) | O\(1\) | Leetcode-487 |

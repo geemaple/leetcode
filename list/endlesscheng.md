@@ -107,8 +107,8 @@
 91. https://leetcode.com/problems/swap-for-longest-repeated-character-substring/
 92. https://leetcode.com/problems/longest-repeating-character-replacement/
 93. https://leetcode.com/problems/find-all-anagrams-in-a-string/ +duplicate
-- https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
-- https://leetcode.com/problems/kth-smallest-subarray-sum/
+94. https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/ +Mark
+95. https://www.lintcode.com/problem/kth-smallest-subarray-sum/ +Mark
 
 ## Two Pointers
 
