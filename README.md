@@ -57,7 +57,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 14/128 | 3 vips |
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 90/2210 | 4 vips |
 
-**Solved**: 673 problems
+**Solved**: 675 problems
 
 ## 类型/Category
 
@@ -103,7 +103,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(49) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(50) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
@@ -117,6 +117,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2523](https://leetcode.com/problems/closest-prime-numbers-in-range/) | Closest Prime Numbers In Range | [c++](./leetcode/2523.closest-prime-numbers-in-range.cpp), [python3](./leetcode/2523.closest-prime-numbers-in-range.py) | Math | O\(NloglogN\) | O\(N\) | - |
 | [Leetcode-3280](https://leetcode.com/problems/convert-date-to-binary/) | Convert Date To Binary | [c++](./leetcode/3280.convert-date-to-binary.cpp), [python3](./leetcode/3280.convert-date-to-binary.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-1922](https://leetcode.com/problems/count-good-numbers/) | Count Good Numbers | [c++](./leetcode/1922.count-good-numbers.cpp), [python3](./leetcode/1922.count-good-numbers.py) | Math | O\(LogN\) | O\(1\) | - |
+| [Leetcode-1399](https://leetcode.com/problems/count-largest-group/) | Count Largest Group | [c++](./leetcode/1399.count-largest-group.cpp), [python3](./leetcode/1399.count-largest-group.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-204](https://leetcode.com/problems/count-primes/) | Count Primes | [c++](./leetcode/204.count-primes.cpp), [python3](./leetcode/204.count-primes.py) | Math | O\(NlogN\) | O\(N\) | - |
@@ -167,9 +168,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Combinatorics
 
-| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(5) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Combinatorics | O\(N^3\) | O\(N^3\) | - |
+| [Leetcode-2338](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | Count The Number Of Ideal Arrays | [c++](./leetcode/2338.count-the-number-of-ideal-arrays.cpp), [python3](./leetcode/2338.count-the-number-of-ideal-arrays.py) | Combinatorics | \- | \- | - |
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Combinatorics | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-1863](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Sum Of All Subset Xor Totals | [c++](./leetcode/1863.sum-of-all-subset-xor-totals.cpp), [python3](./leetcode/1863.sum-of-all-subset-xor-totals.py) | Combinatorics | O\(N\) | O\(1\) | - |
 | [Leetcode-62](https://leetcode.com/problems/unique-paths/) | Unique Paths | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Combinatorics | O\(MN\) | O\(MN\) | - |
@@ -338,7 +340,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(89) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(90) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -356,6 +358,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-322](https://leetcode.com/problems/coin-change/) | Coin Change | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Dynamic Programming | O\(K \* N\) | O\(N\) | - |
 | [Leetcode-518](https://leetcode.com/problems/coin-change-ii/) | Coin Change II | [c++](./leetcode/518.coin-change-ii.cpp), [python3](./leetcode/518.coin-change-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Dynamic Programming | O\(N^3\) | O\(N^3\) | - |
+| [Leetcode-2338](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | Count The Number Of Ideal Arrays | [c++](./leetcode/2338.count-the-number-of-ideal-arrays.cpp), [python3](./leetcode/2338.count-the-number-of-ideal-arrays.py) | Dynamic Programming | \- | \- | - |
 | [Leetcode-2999](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | Count The Number Of Powerful Integers | [c++](./leetcode/2999.count-the-number-of-powerful-integers.cpp), [python3](./leetcode/2999.count-the-number-of-powerful-integers.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-338](https://leetcode.com/problems/counting-bits/) | Counting Bits | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-91](https://leetcode.com/problems/decode-ways/) | Decode Ways | [c++](./leetcode/91.decode-ways.cpp), [python3](./leetcode/91.decode-ways.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
@@ -550,7 +553,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(119) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(120) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Hash Table | O\(N\) | O\(N\) | - |
@@ -564,6 +567,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | [c++](./leetcode/525.contiguous-array.cpp), [python3](./leetcode/525.contiguous-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2799](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | Count Complete Subarrays In An Array | [c++](./leetcode/2799.count-complete-subarrays-in-an-array.cpp), [python3](./leetcode/2799.count-complete-subarrays-in-an-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2953](https://leetcode.com/problems/count-complete-substrings/) | Count Complete Substrings | [c++](./leetcode/2953.count-complete-substrings.cpp), [python3](./leetcode/2953.count-complete-substrings.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-1399](https://leetcode.com/problems/count-largest-group/) | Count Largest Group | [c++](./leetcode/1399.count-largest-group.cpp), [python3](./leetcode/1399.count-largest-group.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-3306](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Count Of Substrings Containing Every Vowel And K Consonants II | [c++](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp), [python3](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | Hash Table | O\(N\) | O\(N\) | - |
