@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/br1hgtnpq4k
 
 //  You are given an array nums consisting of positive integers.
 //  We call a subarray of an array complete if the following condition is satisfied:

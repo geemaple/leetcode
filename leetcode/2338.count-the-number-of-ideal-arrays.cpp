@@ -1,6 +1,6 @@
 //  Tag: Math, Dynamic Programming, Combinatorics, Number Theory
-//  Time: -
-//  Space: -
+//  Time: O(NlogN)
+//  Space: O(N)
 //  Ref: -
 //  Note: -
 //  Video: Video: https://youtu.be/tAIPbGRZojY
@@ -46,9 +46,77 @@
 //  
 //  
 
+int comb[10001][14] = { 1 }, dp[10001][14] = {}, mod = 1000000007;
+class Solution {
+public: 
+    int idealArrays(int n, int maxValue) {
+        if (comb[1][1] == 0) { // one-time computation.
+            for (int s = 1; s <= 10000; ++s)
+                for (int r = 0; r < 14; ++r)
+                    comb[s][r] = r == 0 ? 1 : (comb[s - 1][r - 1] + comb[s - 1][r]) % mod;
+                    
+            for (int div = 1; div <= 10000; ++div) { // Sieve of Eratosthenes
+                dp[div][0] += 1;
+                for (int i = 2 * div; i <= 10000; i += div)
+                    for (int bars = 0; dp[div][bars]; ++bars)
+                        dp[i][bars + 1] += dp[div][bars];
+            }
+        }
+        int res = 0;
+        for (int i = 1; i <= maxValue; ++i)
+            for (int bars = 0; bars < min(14, n) && dp[i][bars]; ++bars)
+                res = (1LL * dp[i][bars] * comb[n - 1][bars] + res) % mod;
+        return res;
+    }
+};
+
+int comb[10001][14] = {1};
 class Solution {
 public:
     int idealArrays(int n, int maxValue) {
-        // TODO, check python first
+        int k = min(n, 14);
+        int mod = 1e9 + 7;
+        unordered_map<int, vector<int>> divisors;
+        for (int i = 1; i <= maxValue; i++) {
+            for (int j = 2 * i; j <= maxValue; j += i) {
+                divisors[j].push_back(i);
+            }
+        }
+
+        vector<vector<int>> dp(k + 1, vector<int>(maxValue + 1, 0));
+        for (int i = 1; i <= maxValue; i++) {
+            dp[1][i] = 1;
+        }
+
+        for (int i = 2; i <= k; i++) {
+            for (int j = 1; j <= maxValue; j++) {
+                for (auto d: divisors[j]) {
+                    dp[i][j] = (dp[i][j] + dp[i - 1][d]) % mod;
+                }
+            }
+        }
+
+        for (int i = 1; i <= k; i++) {
+            for (int j = 1; j <= maxValue; j++) {
+                dp[i][0] = (dp[i][0] + dp[i][j]) % mod;
+            }
+        } 
+
+        if (comb[1][1] == 0) {
+            for (int i = 1; i <= 10000; i++) {
+                for (int j = 0; j < 14; j++) {
+                    comb[i][j] = j == 0 ? 1 : (comb[i - 1][j - 1] + comb[i - 1][j]) % mod;
+                }
+            }
+        }
+
+        int res = 0;
+        for (int i = 1; i <= k; i++) {
+            if (dp[i][0] > 0) {
+                res = (res + 1LL * comb[n - 1][i - 1] * dp[i][0] ) % mod;
+            }
+        }
+
+        return res;
     }
 };

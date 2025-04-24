@@ -115,7 +115,7 @@ Word Break II
 
 - https://www.lintcode.com/problem/window-sum/
 - https://www.lintcode.com/problem/move-zeroes/
-- https://www.lintcode.com/problem/valid-palindrome/
+86. https://leetcode.com/problems/valid-palindrome/
 - https://www.lintcode.com/problem/rotate-string/
 - https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate
 - https://www.lintcode.com/problem/two-sum/

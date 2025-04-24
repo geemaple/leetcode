@@ -1,6 +1,6 @@
 #  Tag: Math, Dynamic Programming, Combinatorics, Number Theory
-#  Time: -
-#  Space: -
+#  Time: O(NlogN)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
 #  Video: https://youtu.be/tAIPbGRZojY
@@ -45,6 +45,34 @@
 #  1 <= maxValue <= 104
 #  
 #  
+
+from collections import defaultdict
+import math
+class Solution:
+    def idealArrays(self, n: int, maxValue: int) -> int:
+        mod = 10 ** 9 + 7
+        k = min(n, 14)
+
+        dp = [[0] * (k + 1) for i in range(maxValue + 1)]
+
+        for i in range(1, maxValue + 1):
+            dp[i][0] += 1
+            for j in range(2 * i, maxValue + 1, i):
+                for bars in range(k):
+                    if dp[i][bars] > 0:
+                        dp[j][bars + 1] += dp[i][bars]
+                    else:
+                        break
+
+        res = 0
+        for i in range(1, maxValue + 1):
+            for bars in range(k):
+                if dp[i][bars] > 0:
+                    res = (res + math.comb(n - 1, bars) * dp[i][bars]) % mod
+                else:
+                    break
+
+        return res
 
 from collections import defaultdict
 import math
