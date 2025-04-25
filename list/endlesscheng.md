@@ -114,7 +114,7 @@
 
 96. https://leetcode.com/problems/reverse-string/
 97. https://leetcode.com/problems/valid-palindrome/
-- https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/
+98. https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/
 - https://leetcode.com/problems/watering-plants-ii/
 - https://leetcode.com/problems/squares-of-a-sorted-array/
 - https://leetcode.com/problems/find-k-closest-elements/
