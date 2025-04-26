@@ -57,7 +57,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 15/128 | 3 vips |
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 93/2210 | 4 vips |
 
-**Solved**: 677 problems
+**Solved**: 678 problems
 
 ## 类型/Category
 
@@ -793,9 +793,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Monotonic Queue
 
-| Link | Problem(3) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(4) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2762](https://leetcode.com/problems/continuous-subarrays/) | Continuous Subarrays | [c++](./leetcode/2762.continuous-subarrays.cpp), [python3](./leetcode/2762.continuous-subarrays.py) | Monotonic Queue | O\(N\) | O\(N\) | - |
+| [Leetcode-2444](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) | Count Subarrays With Fixed Bounds | [c++](./leetcode/2444.count-subarrays-with-fixed-bounds.cpp), [python3](./leetcode/2444.count-subarrays-with-fixed-bounds.py) | Monotonic Queue | O\(N\) | O\(1\) | - |
 | [Leetcode-1438](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit | [c++](./leetcode/1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.cpp), [python3](./leetcode/1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.py) | Monotonic Queue | O\(N\) | O\(N\) | - |
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Monotonic Queue | O\(N\) | O\(K\) | - |
 
@@ -896,7 +897,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(88) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(89) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -909,6 +910,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3306](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Count Of Substrings Containing Every Vowel And K Consonants II | [c++](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.cpp), [python3](./leetcode/3306.count-of-substrings-containing-every-vowel-and-k-consonants-ii.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2962](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | Count Subarrays Where Max Element Appears At Least K Times | [c++](./leetcode/2962.count-subarrays-where-max-element-appears-at-least-k-times.cpp), [python3](./leetcode/2962.count-subarrays-where-max-element-appears-at-least-k-times.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-2444](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) | Count Subarrays With Fixed Bounds | [c++](./leetcode/2444.count-subarrays-with-fixed-bounds.cpp), [python3](./leetcode/2444.count-subarrays-with-fixed-bounds.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2302](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | Count Subarrays With Score Less Than K | [c++](./leetcode/2302.count-subarrays-with-score-less-than-k.cpp), [python3](./leetcode/2302.count-subarrays-with-score-less-than-k.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3298](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) | Count Substrings That Can Be Rearranged To Contain A String II | [c++](./leetcode/3298.count-substrings-that-can-be-rearranged-to-contain-a-string-ii.cpp), [python3](./leetcode/3298.count-substrings-that-can-be-rearranged-to-contain-a-string-ii.py) | Sliding Window | O\(N\) | O\(M\) | - |
 | [Leetcode-3258](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/) | Count Substrings That Satisfy K Constraint I | [c++](./leetcode/3258.count-substrings-that-satisfy-k-constraint-i.cpp), [python3](./leetcode/3258.count-substrings-that-satisfy-k-constraint-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
