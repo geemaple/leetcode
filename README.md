@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 15/128 | 3 vips |
-| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 93/2210 | 4 vips |
+| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 96/2210 | 4 vips |
 
-**Solved**: 678 problems
+**Solved**: 681 problems
 
 ## 类型/Category
 
@@ -216,7 +216,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(26) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -231,6 +231,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1910](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Remove All Occurrences Of A Substring | [c++](./leetcode/1910.remove-all-occurrences-of-a-substring.cpp), [python3](./leetcode/1910.remove-all-occurrences-of-a-substring.py) | Simulation | O\(NM\) | O\(1\) | - |
 | [Leetcode-566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape The Matrix | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Simulation | O\(N\) | O\(K\) | - |
+| [Leetcode-2079](https://leetcode.com/problems/watering-plants/) | Watering Plants | [c++](./leetcode/2079.watering-plants.cpp), [python3](./leetcode/2079.watering-plants.py) | Simulation | O\(N\) | O\(1\) | - |
+| [Leetcode-2105](https://leetcode.com/problems/watering-plants-ii/) | Watering Plants II | [c++](./leetcode/2105.watering-plants-ii.cpp), [python3](./leetcode/2105.watering-plants-ii.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Lintcode-849](https://www.lintcode.com/problem/basic-calculator-iii/) | Basic Calculator III | [c++](./lintcode/849.basic-calculator-iii.cpp), [python3](./lintcode/849.basic-calculator-iii.py) | Simulation | O\(N\) | O\(1\) | Leetcode-772 |
 | [Lintcode-553](https://www.lintcode.com/problem/bomb-enemy/) | Bomb Enemy | [c++](./lintcode/553.bomb-enemy.cpp), [python3](./lintcode/553.bomb-enemy.py) | Simulation | O\(NM\) | O\(NM\) | Leetcode-361 |
 | [Lintcode-3662](https://www.lintcode.com/problem/design-hit-counter/) | Design Hit Counter | [c++](./lintcode/3662.design-hit-counter.cpp), [python3](./lintcode/3662.design-hit-counter.py) | Simulation | O\(N\) | O\(N\) | Leetcode-362 |
@@ -846,7 +848,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(46) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(47) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-18](https://leetcode.com/problems/4sum/) | 4Sum | [c++](./leetcode/18.4sum.cpp), [python3](./leetcode/18.4sum.py) | Two Pointers | O\(N^3\) | O\(1\) | - |
@@ -887,6 +889,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Two Pointers | O\(NH\) | O\(H\) | - |
 | [Leetcode-125](https://leetcode.com/problems/valid-palindrome/) | Valid Palindrome | [c++](./leetcode/125.valid-palindrome.cpp), [python3](./leetcode/125.valid-palindrome.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) | Valid Palindrome II | [c++](./leetcode/680.valid-palindrome-ii.cpp), [python3](./leetcode/680.valid-palindrome-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-2105](https://leetcode.com/problems/watering-plants-ii/) | Watering Plants II | [c++](./leetcode/2105.watering-plants-ii.cpp), [python3](./leetcode/2105.watering-plants-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-1712](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | Ways To Split Array Into Three Subarrays | [c++](./leetcode/1712.ways-to-split-array-into-three-subarrays.cpp), [python3](./leetcode/1712.ways-to-split-array-into-three-subarrays.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Lintcode-861](https://www.lintcode.com/problem/k-empty-slots/) | K Empty Slots | [c++](./lintcode/861.k-empty-slots.cpp), [python3](./lintcode/861.k-empty-slots.py) | Two Pointers | O\(N\) | O\(N\) | Leetcode-683 |
 | [Lintcode-3736](https://www.lintcode.com/problem/kth-smallest-subarray-sum/) | Kth Smallest Subarray Sum | [c++](./lintcode/3736.kth-smallest-subarray-sum.cpp), [python3](./lintcode/3736.kth-smallest-subarray-sum.py) | Two Pointers | O\(NlogA\) | O\(1\) | Leetcode-1918 |
@@ -1435,11 +1438,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3386](https://leetcode.com/problems/button-with-longest-push-time/) | Button With Longest Push Time | [c++](./leetcode/3386.button-with-longest-push-time.cpp), [python3](./leetcode/3386.button-with-longest-push-time.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2176](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Count Equal And Divisible Pairs In An Array | [c++](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.cpp), [python3](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.py) | Array | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2210](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Count Hills And Valleys In An Array | [c++](./leetcode/2210.count-hills-and-valleys-in-an-array.cpp), [python3](./leetcode/2210.count-hills-and-valleys-in-an-array.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-3392](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | Count Subarrays Of Length Three With A Condition | [c++](./leetcode/3392.count-subarrays-of-length-three-with-a-condition.cpp), [python3](./leetcode/3392.count-subarrays-of-length-three-with-a-condition.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3285](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Find Indices Of Stable Mountains | [c++](./leetcode/3285.find-indices-of-stable-mountains.cpp), [python3](./leetcode/3285.find-indices-of-stable-mountains.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |

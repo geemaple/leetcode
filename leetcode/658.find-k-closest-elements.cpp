@@ -31,40 +31,36 @@
 class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-        int start = 0;
-        int end = arr.size() - k;
+        int l = 0;
+        int r = arr.size() - k;
 
-        while (start < end) {
-            int mid = start + (end - start) / 2;
-            int left = x - arr[mid];
-            int right = arr[mid + k] - x;
-            if (left <= right) {
-                end = mid;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (x - arr[mid] <= arr[mid + k] - x) {
+                r = mid;
             } else {
-                start = mid + 1;
+                l = mid + 1;
             }
         }
 
-        return vector(arr.begin() + start, arr.begin() + start + k);
+        return vector(arr.begin() + l, arr.begin() + l + k);
     }
 };
 
 class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-        int start = 0;
-        int end = arr.size() - 1;
+        int l = 0;
+        int r = arr.size() - 1;
 
-        while (end - start + 1 > k) {
-            int left = x - arr[start];
-            int right = arr[end] - x;
-            if (left <= right) {
-                end --;
+        while (r - l + 1 > k) {
+            if (x - arr[l] <= arr[r] - x) {
+                r -= 1;
             } else {
-                start ++;
+                l += 1;
             }
         }
 
-        return vector(arr.begin() + start, arr.begin() + start + k);
+        return vector(arr.begin() + l, arr.begin() + l + k);
     }
 };

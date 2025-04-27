@@ -115,9 +115,9 @@
 96. https://leetcode.com/problems/reverse-string/
 97. https://leetcode.com/problems/valid-palindrome/
 98. https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/
-- https://leetcode.com/problems/watering-plants-ii/
-- https://leetcode.com/problems/squares-of-a-sorted-array/
-- https://leetcode.com/problems/find-k-closest-elements/
+99. https://leetcode.com/problems/watering-plants-ii/
+100. https://leetcode.com/problems/squares-of-a-sorted-array/
+101. https://leetcode.com/problems/find-k-closest-elements/
 - https://leetcode.com/problems/the-k-strongest-values-in-an-array/
 - https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 - https://leetcode.com/problems/sum-of-square-numbers/

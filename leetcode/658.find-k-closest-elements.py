@@ -30,33 +30,28 @@
 
 class Solution:
     def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        l = 0
+        r = len(arr) - k
 
-        start = 0
-        end = len(arr) - k
-
-        while start < end:
-            mid = start + (end - start) // 2
-
-            left = x - arr[mid]
-            right = arr[mid + k] - x
-
-            if left <= right:
-                end = mid
+        while l < r:
+            mid = l + (r - l) // 2
+            if arr[mid + k] - x >= x - arr[mid]:
+                r = mid
             else:
-                start = mid + 1
+                l = mid + 1
 
-        return arr[start: start + k]
+        return arr[l: l + k]
+
     
 class Solution:
     def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
-        
-        start = 0
-        end = len(arr) - 1
+        l = 0
+        r = len(arr) - 1
 
-        while end - start + 1 > k:
-            if x - arr[start] <= arr[end] - x:
-                end -= 1
+        while r - l + 1 > k:
+            if arr[r] - x >= x - arr[l]:
+                r -= 1
             else:
-                start += 1
+                l += 1 
 
-        return arr[start: end + 1]
+        return arr[l: r + 1]

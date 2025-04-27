@@ -33,16 +33,16 @@ public:
     vector<int> sortedSquares(vector<int>& nums) {
         int n = nums.size();
         vector<int> res(n, 0);
-        int left = 0;
-        int right = n - 1;
+        int l = 0;
+        int r = n - 1;
         int i = n - 1;
-        while (left <= right) {
-            if (abs(nums[left]) >= abs(nums[right])) {
-                res[i] = nums[left] * nums[left];
-                left += 1;
+        while (l <= r) {
+            if (abs(nums[l]) >= abs(nums[r])) {
+                res[i] = nums[l] * nums[l];
+                l += 1;
             } else {
-                res[i] = nums[right] * nums[right];
-                right -= 1; 
+                res[i] = nums[r] * nums[r];
+                r -= 1; 
             }
             i -= 1;
         }
