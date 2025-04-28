@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/ysMjMQIpHGA
 
 //  The score of an array is defined as the product of its sum and its length.
 //  

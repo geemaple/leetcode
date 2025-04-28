@@ -118,12 +118,12 @@
 99. https://leetcode.com/problems/watering-plants-ii/
 100. https://leetcode.com/problems/squares-of-a-sorted-array/
 101. https://leetcode.com/problems/find-k-closest-elements/
-- https://leetcode.com/problems/the-k-strongest-values-in-an-array/
-- https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-- https://leetcode.com/problems/sum-of-square-numbers/
-- https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/
-- https://leetcode.com/problems/4xy4Wx/
-- https://leetcode.com/problems/3sum/
+102. https://leetcode.com/problems/the-k-strongest-values-in-an-array/
+103. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+104. https://leetcode.com/problems/count-the-number-of-fair-pairs/
+105. https://leetcode.com/problems/sum-of-square-numbers/
+106. https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/ +Mark
+107. https://leetcode.com/problems/3sum/
 - https://leetcode.com/problems/3sum-closest/
 - https://leetcode.com/problems/4sum/
 - https://leetcode.com/problems/valid-triangle-number/
@@ -183,7 +183,7 @@
 - https://leetcode.com/problems/subsequence-with-the-minimum-score/
 - https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/
 - https://leetcode.com/problems/number-of-arithmetic-triplets/
-- https://leetcode.com/problems/count-the-number-of-fair-pairs/
+- https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate 
 - https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
 - https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 - https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/

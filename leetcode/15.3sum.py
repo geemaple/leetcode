@@ -43,28 +43,25 @@ class Solution:
         n = len(nums)
         nums.sort()
         res = []
-        for i in range(n):
-            if i > 0 and nums[i] == nums[i] - 1:
+        for k in range(2, n):
+            if k + 1 < n and nums[k] == nums[k + 1]:
                 continue
-
-            target = -nums[i]
-
-            left = i + 1
-            right = n - 1
-            while left < right:
-                if nums[left] + nums[right] == target:
-                    res.append([nums[left], nums[right], nums[i]])
-                    while left < right and nums[right] == nums[right - 1]:
-                        right -= 1                    
-                    while left < right and nums[left] == nums[left + 1]:
-                        left += 1
-                    left += 1
-                    right -= 1
-
-                if nums[left] + nums[right] > target:
-                    right -= 1
+            target = -nums[k]
+            l = 0
+            r = k - 1
+            while l < r:
+                if nums[l] + nums[r] == target:
+                    res.append([nums[l], nums[r], nums[k]])
+                    while l < r and nums[l + 1] == nums[l]:
+                        l += 1
+                    while l < r and nums[r - 1] == nums[r]:
+                        r -= 1
+                    l += 1
+                    r -= 1
+                elif nums[l] + nums[r] > target:
+                    r -= 1
                 else:
-                    left += 1
+                    l += 1
         return res
 
 class Solution:

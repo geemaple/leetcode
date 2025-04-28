@@ -34,26 +34,25 @@
 #  
 #  
 
-import bisect
 class Solution:
     def countFairPairs(self, nums: List[int], lower: int, upper: int) -> int:
         nums.sort()
         return self.count(nums, upper) - self.count(nums, lower - 1)
 
-    def count(self, nums: list, k: int) -> int:
+    def count(self, nums:list, k: int) -> int:
         n = len(nums)
+        r = n - 1
+        l = 0
         res = 0
-        j = n - 1
+        for l in range(n):
+            while l < r and nums[l] + nums[r] > k:
+                r -= 1
 
-        for i in range(n):
-            while i < j and nums[i] + nums[j] > k:
-                j -= 1
-
-            if i < j:
-                res += j - i
+            if l < r:
+                res += r - l
             else:
                 break
-                
+
         return res
 
 import bisect
@@ -65,12 +64,12 @@ class Solution:
     def count(self, nums: list, k: int) -> int:
         n = len(nums)
         res = 0
-        for i in range(n):
-            if nums[i] * 2 > k:
+        for l in range(n):
+            if nums[l] * 2 > k:
                 break
 
-            j = bisect.bisect_right(nums, k - nums[i]) - 1
-            res += j - i
+            r = bisect.bisect_right(nums, k - nums[l]) - 1
+            res += r - l
 
         return res
         

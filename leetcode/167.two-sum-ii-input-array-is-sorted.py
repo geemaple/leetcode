@@ -40,18 +40,15 @@
 
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        left = 0 
-        right = len(numbers) - 1
-
-        while left < right:
-            res = numbers[left] + numbers[right]
-
-            if res == target:
+        l = 0
+        r = len(numbers) - 1
+        while l <= r:
+            if numbers[l] + numbers[r] == target:
                 break
 
-            if res < target:
-                left += 1
+            if numbers[l] + numbers[r] > target:
+                r -= 1
             else:
-                right -= 1
+                l += 1
 
-        return [left + 1, right + 1]
+        return [l + 1, r + 1]

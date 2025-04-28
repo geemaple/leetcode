@@ -45,28 +45,28 @@ public:
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
 
-        for (int i = 0; i < n; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
+        for (int k = 2; k < n; k++) {
+            if (k + 1 < n && nums[k] == nums[k + 1]) {
                 continue;
             }
-            int target = -nums[i];
-            int left = i + 1;
-            int right = n - 1;
-            while (left < right) {
-                if (nums[left] + nums[right] == target) {
-                    res.push_back({nums[left], nums[right], nums[i]});
-                    while (left < right && nums[right] == nums[right - 1]) {
-                        right--;
+            int target = -nums[k];
+            int l = 0;
+            int r = k - 1;
+            while (l < r) {
+                if (nums[l] + nums[r] == target) {
+                    res.push_back({nums[l], nums[r], nums[k]});
+                    while (l < r && nums[r] == nums[r - 1]) {
+                        r--;
                     }
-                    while (left < right && nums[left] == nums[left + 1]) {
-                        left++;
+                    while (l < r && nums[l] == nums[l + 1]) {
+                        l++;
                     }
-                    left++;
-                    right--;
-                } else if (nums[left] + nums[right] > target) {
-                    right--;
+                    l++;
+                    r--;
+                } else if (nums[l] + nums[r] > target) {
+                    r--;
                 } else {
-                    left++;
+                    l++;
                 }
             }
         }

@@ -44,13 +44,13 @@ public:
     long long count(vector<int>& nums, int k) {
         int n = nums.size();
         long long res = 0;
-        int j = n - 1;
-        for (int i = 0; i < n && i < j; i++) {
-            while (i < j && nums[i] + nums[j] > k) {
-                j -= 1;
+        int r = n - 1;
+        for (int l = 0; l < n && l < r; l++) {
+            while (l < r && nums[l] + nums[r] > k) {
+                r -= 1;
             }
 
-            res += j - i;
+            res += r - l;
         }
         return res;
     }
@@ -67,13 +67,13 @@ public:
         int n = nums.size();
         long long res = 0;
 
-        for (int i = 0; i < n; i++) {
-            if (nums[i] * 2 > k) {
+        for (int l = 0; l < n; l++) {
+            if (nums[l] * 2 > k) {
                 break;
             }
 
-            int j = upper_bound(nums.begin(), nums.end(), k - nums[i]) - nums.begin() - 1;   
-            res += j - i;
+            int r = upper_bound(nums.begin(), nums.end(), k - nums[l]) - nums.begin() - 1;   
+            res += r - l;
         }
 
         return res;

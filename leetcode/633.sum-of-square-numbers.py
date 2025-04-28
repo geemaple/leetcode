@@ -24,20 +24,19 @@
 #  
 #  
 
+import math
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
-        start = 0
-        end = int(math.sqrt(c))
+        l = 0
+        r = math.floor(math.sqrt(c))
 
-        while start <= end:
-            res = start * start + end * end
-
-            if res == c:
+        while l <= r:
+            if l * l + r * r == c:
                 return True
 
-            if res > c:
-                end -= 1
+            if l * l + r * r > c:
+                r -= 1
             else:
-                start += 1
-
+                l += 1
         return False
+        

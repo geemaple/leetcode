@@ -120,7 +120,7 @@ Word Break II
 - https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate
 - https://www.lintcode.com/problem/two-sum/
 - https://www.lintcode.com/problem/two-sum-data-structure-design/
-- https://www.lintcode.com/problem/two-sum-input-array-is-sorted/
+91. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 - https://www.lintcode.com/problem/two-sum-unique-pairs/
 - https://www.lintcode.com/problem/-um/
 - https://www.lintcode.com/problem/triangle-count/

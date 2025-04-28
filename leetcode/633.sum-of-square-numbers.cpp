@@ -27,19 +27,19 @@
 class Solution {
 public:
     bool judgeSquareSum(int c) {
-        int left = 0;
-        long right = sqrt(c);
+        int l = 0;
+        long r = sqrt(c);
 
-        while (left <= right) {
-            long res = left * left + right * right;
+        while (l <= r) {
+            long res = l * l + r * r;
             if (res == c) {
                 return true;
             } 
 
             if (res > c) {
-                right --;
+                r --;
             } else {
-                left ++;
+                l ++;
             }
         }
 

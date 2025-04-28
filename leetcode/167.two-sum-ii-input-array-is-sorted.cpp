@@ -41,22 +41,22 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        int left = 0;
-        int right = numbers.size() - 1;
+        int l = 0;
+        int r = numbers.size() - 1;
 
-        while (left < right) {
-            int sum = numbers[left] + numbers[right];
+        while (l < r) {
+            int sum = numbers[l] + numbers[r];
             if (sum == target) {
                 break;
             }
 
             if (sum > target) {
-                right --;
+                r --;
             } else {
-                left ++;
+                l ++;
             }
         }
 
-        return vector<int>{left + 1, right + 1};
+        return vector<int>{l + 1, r + 1};
     }
 };
