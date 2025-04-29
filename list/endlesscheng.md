@@ -124,9 +124,9 @@
 105. https://leetcode.com/problems/sum-of-square-numbers/
 106. https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/ +Mark
 107. https://leetcode.com/problems/3sum/
-- https://leetcode.com/problems/3sum-closest/
-- https://leetcode.com/problems/4sum/
-- https://leetcode.com/problems/valid-triangle-number/
+108. https://leetcode.com/problems/3sum-closest/
+109. https://leetcode.com/problems/4sum/ +Mark
+- https://leetcode.com/problems/valid-triangle-number/ +Mark
 - https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/
 - https://leetcode.com/problems/3sum-with-multiplicity/
 - https://leetcode.com/problems/bag-of-tokens/
@@ -183,7 +183,7 @@
 - https://leetcode.com/problems/subsequence-with-the-minimum-score/
 - https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/
 - https://leetcode.com/problems/number-of-arithmetic-triplets/
-- https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate 
+- https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate
 - https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
 - https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 - https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/
