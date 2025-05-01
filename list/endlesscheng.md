@@ -126,9 +126,9 @@
 107. https://leetcode.com/problems/3sum/
 108. https://leetcode.com/problems/3sum-closest/
 109. https://leetcode.com/problems/4sum/ +Mark
-- https://leetcode.com/problems/valid-triangle-number/ +Mark
-- https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/
-- https://leetcode.com/problems/3sum-with-multiplicity/
+110. https://leetcode.com/problems/valid-triangle-number/ +Mark
+111. https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/
+112. https://leetcode.com/problems/3sum-with-multiplicity/ +Mark
 - https://leetcode.com/problems/bag-of-tokens/
 - https://leetcode.com/problems/container-with-most-water/
 - https://leetcode.com/problems/trapping-rain-water/
