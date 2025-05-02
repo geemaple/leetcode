@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 16/128 | 3 vips |
-| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 107/2209 | 4 vips |
+| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 108/2209 | 4 vips |
 
-**Solved**: 688 problems
+**Solved**: 690 problems
 
 ## 类型/Category
 
@@ -297,11 +297,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(44) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(45) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Greedy | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Greedy | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-948](https://leetcode.com/problems/bag-of-tokens/) | Bag Of Tokens | [c++](./leetcode/948.bag-of-tokens.cpp), [python3](./leetcode/948.bag-of-tokens.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Best Time To Buy And Sell Stock II | [c++](./leetcode/122.best-time-to-buy-and-sell-stock-ii.cpp), [python3](./leetcode/122.best-time-to-buy-and-sell-stock-ii.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-714](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | Best Time To Buy And Sell Stock With Transaction Fee | [c++](./leetcode/714.best-time-to-buy-and-sell-stock-with-transaction-fee.cpp), [python3](./leetcode/714.best-time-to-buy-and-sell-stock-with-transaction-fee.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-605](https://leetcode.com/problems/can-place-flowers/) | Can Place Flowers | [c++](./leetcode/605.can-place-flowers.cpp), [python3](./leetcode/605.can-place-flowers.py) | Greedy | O\(N\) | O\(N\) | - |
@@ -346,7 +347,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(90) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(91) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -412,6 +413,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | [c++](./leetcode/647.palindromic-substrings.cpp), [python3](./leetcode/647.palindromic-substrings.py) | Dynamic Programming | O\(N^2\) | O\(1\) | - |
 | [Leetcode-416](https://leetcode.com/problems/partition-equal-subset-sum/) | Partition Equal Subset Sum | [c++](./leetcode/416.partition-equal-subset-sum.cpp), [python3](./leetcode/416.partition-equal-subset-sum.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-279](https://leetcode.com/problems/perfect-squares/) | Perfect Squares | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-838](https://leetcode.com/problems/push-dominoes/) | Push Dominoes | [c++](./leetcode/838.push-dominoes.cpp), [python3](./leetcode/838.push-dominoes.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-10](https://leetcode.com/problems/regular-expression-matching/) | Regular Expression Matching | [c++](./leetcode/10.regular-expression-matching.cpp), [python3](./leetcode/10.regular-expression-matching.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-354](https://leetcode.com/problems/russian-doll-envelopes/) | Russian Doll Envelopes | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python3](./leetcode/354.russian-doll-envelopes.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-87](https://leetcode.com/problems/scramble-string/) | Scramble String | [c++](./leetcode/87.scramble-string.cpp), [python3](./leetcode/87.scramble-string.py) | Dynamic Programming | O\(N^4\) | O\(N^3\) | - |
@@ -858,7 +860,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(53) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(55) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
@@ -867,6 +869,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Two Pointers | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2460](https://leetcode.com/problems/apply-operations-to-an-array/) | Apply Operations To An Array | [c++](./leetcode/2460.apply-operations-to-an-array.cpp), [python3](./leetcode/2460.apply-operations-to-an-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-948](https://leetcode.com/problems/bag-of-tokens/) | Bag Of Tokens | [c++](./leetcode/948.bag-of-tokens.cpp), [python3](./leetcode/948.bag-of-tokens.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-696](https://leetcode.com/problems/count-binary-substrings/) | Count Binary Substrings | [c++](./leetcode/696.count-binary-substrings.cpp), [python3](./leetcode/696.count-binary-substrings.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-2824](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | Count Pairs Whose Sum Is Less Than Target | [c++](./leetcode/2824.count-pairs-whose-sum-is-less-than-target.cpp), [python3](./leetcode/2824.count-pairs-whose-sum-is-less-than-target.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2563](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | Count The Number Of Fair Pairs | [c++](./leetcode/2563.count-the-number-of-fair-pairs.cpp), [python3](./leetcode/2563.count-the-number-of-fair-pairs.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
@@ -891,6 +894,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | [c++](./leetcode/647.palindromic-substrings.cpp), [python3](./leetcode/647.palindromic-substrings.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2161](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | Partition Array According To Given Pivot | [c++](./leetcode/2161.partition-array-according-to-given-pivot.cpp), [python3](./leetcode/2161.partition-array-according-to-given-pivot.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Two Pointers | O\(N\) | O\(N\) | - |
+| [Leetcode-838](https://leetcode.com/problems/push-dominoes/) | Push Dominoes | [c++](./leetcode/838.push-dominoes.cpp), [python3](./leetcode/838.push-dominoes.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Remove Nth Node From End Of List | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-344](https://leetcode.com/problems/reverse-string/) | Reverse String | [c++](./leetcode/344.reverse-string.cpp), [python3](./leetcode/344.reverse-string.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
@@ -1010,7 +1014,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(79) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(80) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Sorting | O\(N^2\) | O\(1\) | - |
@@ -1020,6 +1024,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Sorting | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
 | [Leetcode-455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | [c++](./leetcode/455.assign-cookies.cpp), [python3](./leetcode/455.assign-cookies.py) | Sorting | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-948](https://leetcode.com/problems/bag-of-tokens/) | Bag Of Tokens | [c++](./leetcode/948.bag-of-tokens.cpp), [python3](./leetcode/948.bag-of-tokens.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-853](https://leetcode.com/problems/car-fleet/) | Car Fleet | [c++](./leetcode/853.car-fleet.cpp), [python3](./leetcode/853.car-fleet.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1094](https://leetcode.com/problems/car-pooling/) | Car Pooling | [c++](./leetcode/1094.car-pooling.cpp), [python3](./leetcode/1094.car-pooling.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3394](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | Check If Grid Can Be Cut Into Sections | [c++](./leetcode/3394.check-if-grid-can-be-cut-into-sections.cpp), [python3](./leetcode/3394.check-if-grid-can-be-cut-into-sections.py) | Sorting | O\(NlogN\) | O\(N\) | - |
