@@ -49,40 +49,35 @@ class Solution:
         
 class Solution:
     def trap(self, height: List[int]) -> int:
-        n = len(height)
-        if n < 3:
-            return 0
-
-        left = 0
-        right = n - 1
-        left_max = height[left]
-        right_max = height[right]
+        l = 0
+        r = len(height) - 1
+        left_max = height[l]
+        right_max = height[r]
 
         res = 0
-        while left <= right:
+        while l <= r:
             if left_max <= right_max:
-                res += max(0, left_max - height[left])
-                left_max = max(left_max, height[left])  
-                left += 1
+                res += max(0, left_max - height[l])
+                left_max = max(left_max, height[l])  
+                l += 1
             else:
-                res += max(0, right_max - height[right])
-                right_max = max(right_max, height[right])
-                right -= 1
+                res += max(0, right_max - height[r])
+                right_max = max(right_max, height[r])
+                r -= 1
         return res    
 
 class Solution:
     def trap(self, height: List[int]) -> int:
+        n = len(height)
         stack = []
         res = 0
-
-        for i in range(len(height)):
-            while stack and height[i] > height[stack[-1]]:
-                cur = stack.pop() 
-                if stack:
-                    distance = i - stack[-1] - 1
+        for i in range(n):
+            while len(stack) > 0 and height[stack[-1]] < height[i]:
+                cur = stack.pop()
+                if len(stack) > 0:
                     h = min(height[i], height[stack[-1]]) - height[cur]
-                    res += distance * h
+                    w = (i - stack[-1] - 1)
+                    res += h * w
 
             stack.append(i)
-
-        return res         
+        return res     

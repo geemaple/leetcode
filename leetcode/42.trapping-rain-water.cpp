@@ -56,26 +56,21 @@ public:
 class Solution {
 public:
     int trap(vector<int>& height) {
-        int n = height.size();
-        if (n < 3) {
-            return 0;
-        }
-
-        int left = 0;
-        int right = n - 1;
-        int left_max = height[left];
-        int right_max = height[right];
+        int l = 0;
+        int r = height.size() - 1;
+        int left_max = height[l];
+        int right_max = height[r];
 
         int res = 0;
-        while (left <= right) {
+        while (l <= r) {
             if (left_max <= right_max) {
-                res += max(0, left_max - height[left]);
-                left_max = max(left_max, height[left]);
-                left ++;
+                res += max(0, left_max - height[l]);
+                left_max = max(left_max, height[l]);
+                l += 1;
             } else {
-                res += max(0, right_max - height[right]);
-                right_max = max(right_max, height[right]);
-                right --;
+                res += max(0, right_max - height[r]);
+                right_max = max(right_max, height[r]);
+                r -= 1;
             }
         }
         return res;
@@ -93,9 +88,9 @@ public:
                 int cur = st.top();
                 st.pop();
                 if (!st.empty()) {
-                    int distance = i - st.top() - 1;
+                    int w = i - st.top() - 1;
                     int h = min(height[i], height[st.top()]) - height[cur];
-                    res += distance * h;
+                    res += w * h;
                 }
             }
             st.push(i);
