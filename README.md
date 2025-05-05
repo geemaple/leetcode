@@ -38,10 +38,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [50%] | [leetcode-google.md](./list/leetcode-google.md) | 240/471 | 2 vips |
-| [52%] | [leetcode-75.md](./list/leetcode-75.md) | 39/75 | - |
+| [51%] | [leetcode-google.md](./list/leetcode-google.md) | 241/471 | 2 vips |
 | [52%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 45/85 | 1 vip |
-| [54%] | [leetcode-topics.md](./list/leetcode-topics.md) | 78/144 | - |
+| [53%] | [leetcode-75.md](./list/leetcode-75.md) | 40/75 | - |
+| [54%] | [leetcode-topics.md](./list/leetcode-topics.md) | 79/144 | - |
 | [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
 | [95%] | [neetcode150.md](./list/neetcode150.md) | 143/150 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
@@ -57,7 +57,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 16/128 | 3 vips |
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 111/2209 | 4 vips |
 
-**Solved**: 692 problems
+**Solved**: 694 problems
 
 ## 类型/Category
 
@@ -349,7 +349,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(91) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(92) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -374,6 +374,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-583](https://leetcode.com/problems/delete-operation-for-two-strings/) | Delete Operation For Two Strings | [c++](./leetcode/583.delete-operation-for-two-strings.cpp), [python3](./leetcode/583.delete-operation-for-two-strings.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-241](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Different Ways To Add Parentheses | [c++](./leetcode/241.different-ways-to-add-parentheses.cpp), [python3](./leetcode/241.different-ways-to-add-parentheses.py) | Dynamic Programming | \- | \- | - |
 | [Leetcode-115](https://leetcode.com/problems/distinct-subsequences/) | Distinct Subsequences | [c++](./leetcode/115.distinct-subsequences.cpp), [python3](./leetcode/115.distinct-subsequences.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
+| [Leetcode-790](https://leetcode.com/problems/domino-and-tromino-tiling/) | Domino And Tromino Tiling | [c++](./leetcode/790.domino-and-tromino-tiling.cpp), [python3](./leetcode/790.domino-and-tromino-tiling.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-72](https://leetcode.com/problems/edit-distance/) | Edit Distance | [c++](./leetcode/72.edit-distance.cpp), [python3](./leetcode/72.edit-distance.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-403](https://leetcode.com/problems/frog-jump/) | Frog Jump | [c++](./leetcode/403.frog-jump.cpp), [python3](./leetcode/403.frog-jump.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | [c++](./leetcode/22.generate-parentheses.cpp), [python3](./leetcode/22.generate-parentheses.py) | Dynamic Programming | O\(2^N\) | O\(N\) | - |
@@ -566,7 +567,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(123) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(124) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -650,6 +651,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2875](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | Minimum Size Subarray In Infinite Array | [c++](./leetcode/2875.minimum-size-subarray-in-infinite-array.cpp), [python3](./leetcode/2875.minimum-size-subarray-in-infinite-array.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-76](https://leetcode.com/problems/minimum-window-substring/) | Minimum Window Substring | [c++](./leetcode/76.minimum-window-substring.cpp), [python3](./leetcode/76.minimum-window-substring.py) | Hash Table | O\(M \+ N\) | O\(N\) | - |
 | [Leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-1128](https://leetcode.com/problems/number-of-equivalent-domino-pairs/) | Number Of Equivalent Domino Pairs | [c++](./leetcode/1128.number-of-equivalent-domino-pairs.cpp), [python3](./leetcode/1128.number-of-equivalent-domino-pairs.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2251](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | Number Of Flowers In Full Bloom | [c++](./leetcode/2251.number-of-flowers-in-full-bloom.cpp), [python3](./leetcode/2251.number-of-flowers-in-full-bloom.py) | Hash Table | O\(NlogN \+ MlogM\) | O\(N \+ M\) | - |
 | [Leetcode-1358](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Number Of Substrings Containing All Three Characters | [c++](./leetcode/1358.number-of-substrings-containing-all-three-characters.cpp), [python3](./leetcode/1358.number-of-substrings-containing-all-three-characters.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-1577](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | Number Of Ways Where Square Of Number Is Equal To Product Of Two Numbers | [c++](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp), [python3](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | Hash Table | O\(NM\) | O\(N \+ M\) | - |
@@ -1103,7 +1105,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Counting
 
-| Link | Problem(16) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Counting | \- | \- | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Counting | O\(N\) | O\(N\) | - |
@@ -1114,6 +1116,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-169](https://leetcode.com/problems/majority-element/) | Majority Element | [c++](./leetcode/169.majority-element.cpp), [python3](./leetcode/169.majority-element.py) | Counting | O\(N\) | O\(1\) | - |
 | [Leetcode-2529](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/) | Maximum Count Of Positive Integer And Negative Integer | [c++](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.cpp), [python3](./leetcode/2529.maximum-count-of-positive-integer-and-negative-integer.py) | Counting | O\(logN\) | O\(1\) | - |
 | [Leetcode-1854](https://leetcode.com/problems/maximum-population-year/) | Maximum Population Year | [c++](./leetcode/1854.maximum-population-year.cpp), [python3](./leetcode/1854.maximum-population-year.py) | Counting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-1128](https://leetcode.com/problems/number-of-equivalent-domino-pairs/) | Number Of Equivalent Domino Pairs | [c++](./leetcode/1128.number-of-equivalent-domino-pairs.cpp), [python3](./leetcode/1128.number-of-equivalent-domino-pairs.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-383](https://leetcode.com/problems/ransom-note/) | Ransom Note | [c++](./leetcode/383.ransom-note.cpp), [python3](./leetcode/383.ransom-note.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-451](https://leetcode.com/problems/sort-characters-by-frequency/) | Sort Characters By Frequency | [c++](./leetcode/451.sort-characters-by-frequency.cpp), [python3](./leetcode/451.sort-characters-by-frequency.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-992](https://leetcode.com/problems/subarrays-with-k-different-integers/) | Subarrays With K Different Integers | [c++](./leetcode/992.subarrays-with-k-different-integers.cpp), [python3](./leetcode/992.subarrays-with-k-different-integers.py) | Counting | O\(N\) | O\(1\) | - |
