@@ -3,6 +3,7 @@
 #  Space: O(NM)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/fc0ppanEgkY
 
 #  There is a dungeon with n x m rooms arranged as a grid.
 #  You are given a 2D array moveTime of size n x m, where moveTime[i][j] represents the minimum time in seconds when you can start moving to that room. You start from the room (0, 0) at time t = 0 and can move to an adjacent room. Moving between adjacent rooms takes exactly one second.
