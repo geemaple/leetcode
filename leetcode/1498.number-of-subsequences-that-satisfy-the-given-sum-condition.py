@@ -1,5 +1,5 @@
 #  Tag: Array, Two Pointers, Binary Search, Sorting
-#  Time: O(NLogN)
+#  Time: O(NlogN)
 #  Space: O(1)
 #  Ref: -
 #  Note: -
