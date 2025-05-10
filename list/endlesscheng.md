@@ -135,10 +135,10 @@
 116. https://leetcode.com/problems/split-two-strings-to-make-palindrome/ +Mark
 117. https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/ +Mark
 118. https://leetcode.com/problems/count-pairs-of-nodes/ +Mark
-- https://leetcode.com/problems/two-sum-less-than-k/
-- https://leetcode.com/problems/sort-transformed-array/
-- https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/
-- https://leetcode.com/problems/3sum-smaller/
+119. https://www.lintcode.com/problem/two-sum-less-than-target/
+120. https://leetcode.com/problems/sort-transformed-array/
+121. https://www.lintcode.com/problem/merge-operations-to-turn-array-into-a-palindrome/
+122. https://www.lintcode.com/problem/3sum-smaller/
 
 - https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/
 - https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/
