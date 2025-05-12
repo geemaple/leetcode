@@ -140,7 +140,7 @@
 121. https://www.lintcode.com/problem/merge-operations-to-turn-array-into-a-palindrome/
 122. https://www.lintcode.com/problem/3sum-smaller/
 
-- https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/
+123. https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/ +Mark
 - https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/
 - https://leetcode.com/problems/recover-the-original-array/
 - https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/
