@@ -95,7 +95,7 @@ TAG_REGEX = {
     TAG_DESIGN: r'^(Design|Iterator|Data Stream)$',
     TAG_ENUM: r'^(Enumeration|Enumerate)$',
     TAG_BS: r'^(Binary Search|Binary Search on Answer)$',
-    TAG_2P: r'^(Two Pointers|Same Direction Two Pointers)$',
+    TAG_2P: r'^(Two Pointers|Same Direction Two Pointers|Opposite Direction Two Pointers)$',
     TAG_BFS: r'^(Breadth-First Search|Breadth First Search(/BFS)?|BFS)$',
     TAG_DFS: r'^(Depth-First Search|Depth First Search(/DFS)?|DFS)$',
     TAG_DP: r'^(DP|Dynamic Programming(/DP)?|\w+(\s\w+)* DP|Memoization)$',

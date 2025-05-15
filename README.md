@@ -57,7 +57,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 16/128 | 3 vips |
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 117/2210 | 5 vips |
 
-**Solved**: 704 problems
+**Solved**: 708 problems
 
 ## 类型/Category
 
@@ -300,7 +300,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(49) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(50) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Greedy | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
@@ -320,6 +320,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-179](https://leetcode.com/problems/largest-number/) | Largest Number | [c++](./leetcode/179.largest-number.cpp), [python3](./leetcode/179.largest-number.py) | Greedy | O\(NlogN \* K\) | O\(N\) | - |
 | [Leetcode-860](https://leetcode.com/problems/lemonade-change/) | Lemonade Change | [c++](./leetcode/860.lemonade-change.cpp), [python3](./leetcode/860.lemonade-change.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-409](https://leetcode.com/problems/longest-palindrome/) | Longest Palindrome | [c++](./leetcode/409.longest-palindrome.cpp), [python3](./leetcode/409.longest-palindrome.py) | Greedy | O\(N\) | O\(N\) | - |
+| [Leetcode-2900](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | Longest Unequal Adjacent Groups Subsequence I | [c++](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.cpp), [python3](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Greedy | O\(NlogN \+ NlogD\) | O\(1\) | - |
 | [Leetcode-3413](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Maximum Coins From K Consecutive Bags | [c++](./leetcode/3413.maximum-coins-from-k-consecutive-bags.cpp), [python3](./leetcode/3413.maximum-coins-from-k-consecutive-bags.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -354,7 +355,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(92) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(96) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -397,6 +398,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-516](https://leetcode.com/problems/longest-palindromic-subsequence/) | Longest Palindromic Subsequence | [c++](./leetcode/516.longest-palindromic-subsequence.cpp), [python3](./leetcode/516.longest-palindromic-subsequence.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-5](https://leetcode.com/problems/longest-palindromic-substring/) | Longest Palindromic Substring | [c++](./leetcode/5.longest-palindromic-substring.cpp), [python3](./leetcode/5.longest-palindromic-substring.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-1493](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | Longest Subarray Of 1S After Deleting One Element | [c++](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.cpp), [python3](./leetcode/1493.longest-subarray-of-1s-after-deleting-one-element.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
+| [Leetcode-2900](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | Longest Unequal Adjacent Groups Subsequence I | [c++](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.cpp), [python3](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
+| [Leetcode-2901](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/) | Longest Unequal Adjacent Groups Subsequence II | [c++](./leetcode/2901.longest-unequal-adjacent-groups-subsequence-ii.cpp), [python3](./leetcode/2901.longest-unequal-adjacent-groups-subsequence-ii.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-32](https://leetcode.com/problems/longest-valid-parentheses/) | Longest Valid Parentheses | [c++](./leetcode/32.longest-valid-parentheses.cpp), [python3](./leetcode/32.longest-valid-parentheses.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-85](https://leetcode.com/problems/maximal-rectangle/) | Maximal Rectangle | [c++](./leetcode/85.maximal-rectangle.cpp), [python3](./leetcode/85.maximal-rectangle.py) | Dynamic Programming | O\(NM\) | O\(M\) | - |
 | [Leetcode-221](https://leetcode.com/problems/maximal-square/) | Maximal Square | [c++](./leetcode/221.maximal-square.cpp), [python3](./leetcode/221.maximal-square.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
@@ -430,6 +433,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2140](https://leetcode.com/problems/solving-questions-with-brainpower/) | Solving Questions With Brainpower | [c++](./leetcode/2140.solving-questions-with-brainpower.cpp), [python3](./leetcode/2140.solving-questions-with-brainpower.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-313](https://leetcode.com/problems/super-ugly-number/) | Super Ugly Number | [c++](./leetcode/313.super-ugly-number.cpp), [python3](./leetcode/313.super-ugly-number.py) | Dynamic Programming | O\(NlogK\) | O\(N\+K\) | - |
 | [Leetcode-494](https://leetcode.com/problems/target-sum/) | Target Sum | [c++](./leetcode/494.target-sum.cpp), [python3](./leetcode/494.target-sum.py) | Dynamic Programming | O\(N \* Sum\) | O\(N \* Sum\) | - |
+| [Leetcode-3335](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | Total Characters In String After Transformations I | [c++](./leetcode/3335.total-characters-in-string-after-transformations-i.cpp), [python3](./leetcode/3335.total-characters-in-string-after-transformations-i.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
+| [Leetcode-3337](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | Total Characters In String After Transformations II | [c++](./leetcode/3337.total-characters-in-string-after-transformations-ii.cpp), [python3](./leetcode/3337.total-characters-in-string-after-transformations-ii.py) | Dynamic Programming | O\(LogT\) | O\(1\) | - |
 | [Leetcode-42](https://leetcode.com/problems/trapping-rain-water/) | Trapping Rain Water | [c++](./leetcode/42.trapping-rain-water.cpp), [python3](./leetcode/42.trapping-rain-water.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-120](https://leetcode.com/problems/triangle/) | Triangle | [c++](./leetcode/120.triangle.cpp), [python3](./leetcode/120.triangle.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-62](https://leetcode.com/problems/unique-paths/) | Unique Paths | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
@@ -576,7 +581,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(125) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(127) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -688,6 +693,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-981](https://leetcode.com/problems/time-based-key-value-store/) | Time Based Key Value Store | [c++](./leetcode/981.time-based-key-value-store.cpp), [python3](./leetcode/981.time-based-key-value-store.py) | Hash Table | O\(logN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Hash Table | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-692](https://leetcode.com/problems/top-k-frequent-words/) | Top K Frequent Words | [c++](./leetcode/692.top-k-frequent-words.cpp), [python3](./leetcode/692.top-k-frequent-words.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3335](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | Total Characters In String After Transformations I | [c++](./leetcode/3335.total-characters-in-string-after-transformations-i.cpp), [python3](./leetcode/3335.total-characters-in-string-after-transformations-i.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-3337](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | Total Characters In String After Transformations II | [c++](./leetcode/3337.total-characters-in-string-after-transformations-ii.cpp), [python3](./leetcode/3337.total-characters-in-string-after-transformations-ii.py) | Hash Table | O\(LogT\) | O\(1\) | - |
 | [Leetcode-1726](https://leetcode.com/problems/tuple-with-same-product/) | Tuple With Same Product | [c++](./leetcode/1726.tuple-with-same-product.cpp), [python3](./leetcode/1726.tuple-with-same-product.py) | Hash Table | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-1](https://leetcode.com/problems/two-sum/) | Two Sum | [c++](./leetcode/1.two-sum.cpp), [python3](./leetcode/1.two-sum.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Hash Table | O\(NH\) | O\(H\) | - |
@@ -1125,7 +1132,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Counting
 
-| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Counting | \- | \- | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Counting | O\(N\) | O\(N\) | - |
@@ -1143,6 +1150,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Counting | O\(N\) | O\(1\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Counting | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-692](https://leetcode.com/problems/top-k-frequent-words/) | Top K Frequent Words | [c++](./leetcode/692.top-k-frequent-words.cpp), [python3](./leetcode/692.top-k-frequent-words.py) | Counting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3335](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | Total Characters In String After Transformations I | [c++](./leetcode/3335.total-characters-in-string-after-transformations-i.cpp), [python3](./leetcode/3335.total-characters-in-string-after-transformations-i.py) | Counting | O\(N\) | O\(1\) | - |
+| [Leetcode-3337](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | Total Characters In String After Transformations II | [c++](./leetcode/3337.total-characters-in-string-after-transformations-ii.cpp), [python3](./leetcode/3337.total-characters-in-string-after-transformations-ii.py) | Counting | O\(LogT\) | O\(1\) | - |
 | [Leetcode-1726](https://leetcode.com/problems/tuple-with-same-product/) | Tuple With Same Product | [c++](./leetcode/1726.tuple-with-same-product.cpp), [python3](./leetcode/1726.tuple-with-same-product.py) | Counting | O\(N^2\) | O\(N^2\) | - |
 
 ## Quickselect
