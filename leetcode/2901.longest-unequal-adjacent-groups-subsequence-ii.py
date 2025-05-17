@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/Mu70Pw_6Ey8
 
 #  You are given a string array words, and an array groups, both arrays having length n.
 #  The hamming distance between two strings of equal length is the number of positions at which the corresponding characters are different.

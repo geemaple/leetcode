@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/zJ1zc2-ymJM
 
 #  Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
 #  We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
@@ -34,17 +35,18 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        r = 0
-        b = len(nums) - 1
+        n = len(nums)
+        l = 0
+        r = n - 1
         i = 0
-        while i <= b:
+        while i <= r:
             if nums[i] == 0:
-                nums[r], nums[i] = nums[i], nums[r]
-                r += 1
+                nums[i], nums[l] = nums[l], nums[i]
+                l += 1
                 i += 1
             elif nums[i] == 2:
-                nums[b], nums[i] = nums[i], nums[b]
-                b -= 1
+                nums[i], nums[r] = nums[r], nums[i]
+                r -= 1
             else:
                 i += 1
 
@@ -53,14 +55,14 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        r = 0
-        for i in range(len(nums)):
+        n = len(nums)
+        l = 0
+        for i in range(n):
             if nums[i] == 0:
-                nums[r], nums[i] = nums[i], nums[r]
-                r += 1
+                nums[l], nums[i] = nums[i], nums[l]
+                l += 1
 
-        w = r
-        for i in range(r, len(nums)):
-            if nums[i] == 1:
-                nums[w], nums[i] = nums[i], nums[w]
-                w += 1
+        for i in range(n):
+            if nums[i] == 1:            
+                nums[l], nums[i] = nums[i], nums[l]
+                l += 1

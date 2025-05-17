@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/zJ1zc2-ymJM
 
 //  Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
 //  We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
@@ -32,15 +33,18 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int r = 0;
-        int b = nums.size() - 1;
+        int l = 0;
+        int r = nums.size() - 1;
         int i = 0;
 
-        while (i <= b) {
+        while (i <= r) {
             if (nums[i] == 0) {
-                swap(nums[i++], nums[r++]);
+                swap(nums[i], nums[l]);
+                i += 1;
+                l += 1;
             } else if (nums[i] == 2) {
-                swap(nums[i], nums[b--]);
+                swap(nums[i], nums[r]);
+                r -= 1;
             } else {
                 i++;
             }
@@ -51,17 +55,18 @@ public:
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int r = 0;
+        int l = 0;
         for (int i = 0; i < nums.size(); i++) {
             if (nums[i] == 0) {
-                swap(nums[r++], nums[i]);
+                swap(nums[l], nums[i]);
+                l += 1;
             }
         }
         
-        int w = r;
-        for (int i = w; i < nums.size(); i++) {
+        for (int i = l; i < nums.size(); i++) {
             if (nums[i] == 1) {
-                swap(nums[w++], nums[i]);
+                swap(nums[l], nums[i]);
+                l += 1;
             }
         }
         

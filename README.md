@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 16/128 | 3 vips |
-| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 117/2210 | 5 vips |
+| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 118/2210 | 5 vips |
 
-**Solved**: 708 problems
+**Solved**: 710 problems
 
 ## 类型/Category
 
@@ -252,11 +252,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Enumeration
 
-| Link | Problem(10) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(11) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1534](https://leetcode.com/problems/count-good-triplets/) | Count Good Triplets | [c++](./leetcode/1534.count-good-triplets.cpp), [python3](./leetcode/1534.count-good-triplets.py) | Enumeration | O\(N^3\) | O\(1\) | - |
 | [Leetcode-204](https://leetcode.com/problems/count-primes/) | Count Primes | [c++](./leetcode/204.count-primes.cpp), [python3](./leetcode/204.count-primes.py) | Enumeration | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2843](https://leetcode.com/problems/count-symmetric-integers/) | Count Symmetric Integers | [c++](./leetcode/2843.count-symmetric-integers.cpp), [python3](./leetcode/2843.count-symmetric-integers.py) | Enumeration | O\(N\) | O\(1\) | - |
+| [Leetcode-2970](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | Count The Number Of Incremovable Subarrays I | [c++](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.cpp), [python3](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.py) | Enumeration | O\(N\) | O\(1\) | - |
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Enumeration | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-2094](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Finding 3 Digit Even Numbers | [c++](./leetcode/2094.finding-3-digit-even-numbers.cpp), [python3](./leetcode/2094.finding-3-digit-even-numbers.py) | Enumeration | O\(1\) | O\(1\) | - |
 | [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Enumeration | O\(N \* sqrt\(Num\)\) | O\(N\) | - |
@@ -466,7 +467,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(84) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(86) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -476,6 +477,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2302](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | Count Subarrays With Score Less Than K | [c++](./leetcode/2302.count-subarrays-with-score-less-than-k.cpp), [python3](./leetcode/2302.count-subarrays-with-score-less-than-k.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-3261](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/) | Count Substrings That Satisfy K Constraint II | [c++](./leetcode/3261.count-substrings-that-satisfy-k-constraint-ii.cpp), [python3](./leetcode/3261.count-substrings-that-satisfy-k-constraint-ii.py) | Binary Search | O\(N \+ Q\) | O\(N\) | - |
 | [Leetcode-2563](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | Count The Number Of Fair Pairs | [c++](./leetcode/2563.count-the-number-of-fair-pairs.cpp), [python3](./leetcode/2563.count-the-number-of-fair-pairs.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-2970](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | Count The Number Of Incremovable Subarrays I | [c++](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.cpp), [python3](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.py) | Binary Search | O\(N\) | O\(1\) | - |
+| [Leetcode-2972](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | Count The Number Of Incremovable Subarrays II | [c++](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.cpp), [python3](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1901](https://leetcode.com/problems/find-a-peak-element-ii/) | Find A Peak Element II | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python3](./leetcode/1901.find-a-peak-element-ii.py) | Binary Search | O\(N \* logM\) | O\(1\) | - |
 | [Leetcode-34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Find First And Last Position Of Element In Sorted Array | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python3](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -882,7 +885,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(63) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(65) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
@@ -897,6 +900,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1782](https://leetcode.com/problems/count-pairs-of-nodes/) | Count Pairs Of Nodes | [c++](./leetcode/1782.count-pairs-of-nodes.cpp), [python3](./leetcode/1782.count-pairs-of-nodes.py) | Two Pointers | O\(VlogV \+ E\) | O\(V \+ E\) | - |
 | [Leetcode-2824](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | Count Pairs Whose Sum Is Less Than Target | [c++](./leetcode/2824.count-pairs-whose-sum-is-less-than-target.cpp), [python3](./leetcode/2824.count-pairs-whose-sum-is-less-than-target.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2563](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | Count The Number Of Fair Pairs | [c++](./leetcode/2563.count-the-number-of-fair-pairs.cpp), [python3](./leetcode/2563.count-the-number-of-fair-pairs.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-2970](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | Count The Number Of Incremovable Subarrays I | [c++](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.cpp), [python3](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-2972](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | Count The Number Of Incremovable Subarrays II | [c++](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.cpp), [python3](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-295](https://leetcode.com/problems/find-median-from-data-stream/) | Find Median From Data Stream | [c++](./leetcode/295.find-median-from-data-stream.cpp), [python3](./leetcode/295.find-median-from-data-stream.py) | Two Pointers | O\(logN\) | O\(N\) | - |
 | [Leetcode-287](https://leetcode.com/problems/find-the-duplicate-number/) | Find The Duplicate Number | [c++](./leetcode/287.find-the-duplicate-number.cpp), [python3](./leetcode/287.find-the-duplicate-number.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-28](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | Find The Index Of The First Occurrence In A String | [c++](./leetcode/28.find-the-index-of-the-first-occurrence-in-a-string.cpp), [python3](./leetcode/28.find-the-index-of-the-first-occurrence-in-a-string.py) | Two Pointers | O\(M \+ N\) | O\(N\) | - |
