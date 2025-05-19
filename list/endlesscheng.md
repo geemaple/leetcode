@@ -18,24 +18,24 @@
 14. https://www.lintcode.com/problem/minimum-swaps-to-group-all-1s-together/
 15. https://www.lintcode.com/problem/number-of-unique-flavors-remaining-after-sharing-k-candies/
 
-16. https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
+16. https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/
 17. https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/
 18. https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/
 19. https://leetcode.com/problems/sliding-subarray-beauty/ +Mark
-20. https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/
-21. https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/ +Mark
-22. https://leetcode.com/problems/permutation-in-string/
-23. https://leetcode.com/problems/find-all-anagrams-in-a-string/
-24. https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-25. https://leetcode.com/problems/find-substring-with-given-hash-value/ +Mark
-26. https://leetcode.com/problems/count-complete-substrings/
-27. https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/
-28. https://www.lintcode.com/problem/k-empty-slots/ +Mark
-29. https://www.lintcode.com/problem/number-of-equal-count-substrings/
-30. https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/
+20. https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/ +Mark
+21. https://leetcode.com/problems/permutation-in-string/
+22. https://leetcode.com/problems/find-all-anagrams-in-a-string/
+23. https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+24. https://leetcode.com/problems/find-substring-with-given-hash-value/ +Mark
+25. https://leetcode.com/problems/count-complete-substrings/
+26. https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/
+27. https://www.lintcode.com/problem/k-empty-slots/ +Mark
+28. https://www.lintcode.com/problem/number-of-equal-count-substrings/
+29. https://leetcode.com/problems/maximum-frequency-score-of-a-subarray/
 
-31. https://leetcode.com/problems/find-the-k-beauty-of-a-number/
-32. https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
+30. https://leetcode.com/problems/find-the-k-beauty-of-a-number/
+31. https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
+32. https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
 33. https://leetcode.com/problems/contains-duplicate-iii/ +Mark
 
 ### Variable-length
@@ -140,10 +140,13 @@
 121. https://www.lintcode.com/problem/merge-operations-to-turn-array-into-a-palindrome/
 122. https://www.lintcode.com/problem/3sum-smaller/
 
-123. https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/ +Mark
-124. https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/ +Mark
-- https://leetcode.com/problems/recover-the-original-array/
+123. https://leetcode.com/problems/valid-triangle-number/ +duplicate
+124. https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/ +Mark
+125. https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/ +Mark
+126. https://leetcode.com/problems/recover-the-original-array/ +Mark
+- https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/
 - https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/
+
 - https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 - https://leetcode.com/problems/maximum-score-of-a-good-subarray/
 - https://leetcode.com/problems/remove-element/
@@ -2111,7 +2114,7 @@ https://leetcode.com/problems/range-sum-query-mutable/solution/dai-ni-fa-ming-sh
 - https://leetcode.com/problems/largest-submatrix-with-rearrangements/
 - https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/ +duplicate
 - https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/
-- https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/
+- https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/ +duplicate
 https://leetcode.com/problems/minimum-processing-time/solution/tan-xin-pythonjavacgo-by-endlesscheng-8fzf/
 - https://leetcode.com/problems/minimum-processing-time/
 - https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/
