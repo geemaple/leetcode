@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/BlTvWQkRYnI
 
 #  You are given an integer array nums of length n and a 2D array queries, where queries[i] = [li, ri].
 #  For each queries[i]:

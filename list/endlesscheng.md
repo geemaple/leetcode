@@ -144,11 +144,13 @@
 124. https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/ +Mark
 125. https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/ +Mark
 126. https://leetcode.com/problems/recover-the-original-array/ +Mark
-- https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/
-- https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/
+127. https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/ +Mark
+128. https://leetcode.com/problems/minimize-connected-groups-by-inserting-interval/
 
-- https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
-- https://leetcode.com/problems/maximum-score-of-a-good-subarray/
+129. https://leetcode.com/problems/shortest-unsorted-continuous-subarray/ +Mark
+
+130. https://leetcode.com/problems/maximum-score-of-a-good-subarray/
+
 - https://leetcode.com/problems/remove-element/
 - https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
