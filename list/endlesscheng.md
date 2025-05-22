@@ -151,12 +151,12 @@
 
 130. https://leetcode.com/problems/maximum-score-of-a-good-subarray/
 
-- https://leetcode.com/problems/remove-element/
-- https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-- https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
-- https://leetcode.com/problems/move-zeroes/
-- https://leetcode.com/problems/sort-array-by-parity/
-- https://leetcode.com/problems/sort-array-by-parity-ii/
+131. https://leetcode.com/problems/remove-element/
+132. https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+133. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+134. https://leetcode.com/problems/move-zeroes/
+135. https://leetcode.com/problems/sort-array-by-parity/
+136. https://leetcode.com/problems/sort-array-by-parity-ii/ +Mark
 - https://leetcode.com/problems/apply-operations-to-an-array/
 - https://leetcode.com/problems/duplicate-zeros/
 - https://leetcode.com/problems/minimum-common-value/

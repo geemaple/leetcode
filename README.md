@@ -42,7 +42,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [52%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 45/85 | 1 vip |
 | [53%] | [leetcode-75.md](./list/leetcode-75.md) | 40/75 | - |
 | [55%] | [leetcode-topics.md](./list/leetcode-topics.md) | 80/144 | - |
-| [86%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 130/150 | - |
+| [87%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 131/150 | - |
 | [95%] | [neetcode150.md](./list/neetcode150.md) | 143/150 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
 | [✅] | [9c-dp.md](./list/9c-dp.md) | 42/45 | 3 vips |
@@ -55,9 +55,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [✅] | [leetcode-top-100-liked.md](./list/leetcode-top-100-liked.md) | 100/100 | - |
 | [✅] | [leetcode101.md](./list/leetcode101.md) | 183/184 | 1 vip |
 | [🔲] | [9c-basic.md](./list/9c-basic.md) | 16/128 | 3 vips |
-| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 122/2210 | 6 vips |
+| [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 128/2210 | 6 vips |
 
-**Solved**: 716 problems
+**Solved**: 719 problems
 
 ## 类型/Category
 
@@ -897,7 +897,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(69) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(75) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
@@ -931,6 +931,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2570](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | Merge Two 2D Arrays By Summing Values | [c++](./leetcode/2570.merge-two-2d-arrays-by-summing-values.cpp), [python3](./leetcode/2570.merge-two-2d-arrays-by-summing-values.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-876](https://leetcode.com/problems/middle-of-the-linked-list/) | Middle Of The Linked List | [c++](./leetcode/876.middle-of-the-linked-list.cpp), [python3](./leetcode/876.middle-of-the-linked-list.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-1750](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | Minimum Length Of String After Deleting Similar Ends | [c++](./leetcode/1750.minimum-length-of-string-after-deleting-similar-ends.cpp), [python3](./leetcode/1750.minimum-length-of-string-after-deleting-similar-ends.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-283](https://leetcode.com/problems/move-zeroes/) | Move Zeroes | [c++](./leetcode/283.move-zeroes.cpp), [python3](./leetcode/283.move-zeroes.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-1040](https://leetcode.com/problems/moving-stones-until-consecutive-ii/) | Moving Stones Until Consecutive II | [c++](./leetcode/1040.moving-stones-until-consecutive-ii.cpp), [python3](./leetcode/1040.moving-stones-until-consecutive-ii.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1498](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) | Number Of Subsequences That Satisfy The Given Sum Condition | [c++](./leetcode/1498.number-of-subsequences-that-satisfy-the-given-sum-condition.cpp), [python3](./leetcode/1498.number-of-subsequences-that-satisfy-the-given-sum-condition.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1577](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | Number Of Ways Where Square Of Number Is Equal To Product Of Two Numbers | [c++](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp), [python3](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | Two Pointers | O\(NM\) | O\(N \+ M\) | - |
@@ -940,11 +941,16 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-838](https://leetcode.com/problems/push-dominoes/) | Push Dominoes | [c++](./leetcode/838.push-dominoes.cpp), [python3](./leetcode/838.push-dominoes.py) | Two Pointers | O\(N\) | O\(N\) | - |
 | [Leetcode-2122](https://leetcode.com/problems/recover-the-original-array/) | Recover The Original Array | [c++](./leetcode/2122.recover-the-original-array.cpp), [python3](./leetcode/2122.recover-the-original-array.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
+| [Leetcode-26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Remove Duplicates From Sorted Array | [c++](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python3](./leetcode/26.remove-duplicates-from-sorted-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-80](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Remove Duplicates From Sorted Array II | [c++](./leetcode/80.remove-duplicates-from-sorted-array-ii.cpp), [python3](./leetcode/80.remove-duplicates-from-sorted-array-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-27](https://leetcode.com/problems/remove-element/) | Remove Element | [c++](./leetcode/27.remove-element.cpp), [python3](./leetcode/27.remove-element.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Remove Nth Node From End Of List | [c++](./leetcode/19.remove-nth-node-from-end-of-list.cpp), [python3](./leetcode/19.remove-nth-node-from-end-of-list.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-344](https://leetcode.com/problems/reverse-string/) | Reverse String | [c++](./leetcode/344.reverse-string.cpp), [python3](./leetcode/344.reverse-string.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-189](https://leetcode.com/problems/rotate-array/) | Rotate Array | [c++](./leetcode/189.rotate-array.cpp), [python3](./leetcode/189.rotate-array.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-1574](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) | Shortest Subarray To Be Removed To Make Array Sorted | [c++](./leetcode/1574.shortest-subarray-to-be-removed-to-make-array-sorted.cpp), [python3](./leetcode/1574.shortest-subarray-to-be-removed-to-make-array-sorted.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | Shortest Unsorted Continuous Subarray | [c++](./leetcode/581.shortest-unsorted-continuous-subarray.cpp), [python3](./leetcode/581.shortest-unsorted-continuous-subarray.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-905](https://leetcode.com/problems/sort-array-by-parity/) | Sort Array By Parity | [c++](./leetcode/905.sort-array-by-parity.cpp), [python3](./leetcode/905.sort-array-by-parity.py) | Two Pointers | O\(N\) | O\(1\) | - |
+| [Leetcode-922](https://leetcode.com/problems/sort-array-by-parity-ii/) | Sort Array By Parity II | [c++](./leetcode/922.sort-array-by-parity-ii.cpp), [python3](./leetcode/922.sort-array-by-parity-ii.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Two Pointers | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-1616](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | Split Two Strings To Make Palindrome | [c++](./leetcode/1616.split-two-strings-to-make-palindrome.cpp), [python3](./leetcode/1616.split-two-strings-to-make-palindrome.py) | Two Pointers | O\(N\) | O\(1\) | - |
@@ -1065,7 +1071,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(87) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(89) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Sorting | O\(N^2\) | O\(1\) | - |
@@ -1140,6 +1146,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-354](https://leetcode.com/problems/russian-doll-envelopes/) | Russian Doll Envelopes | [c++](./leetcode/354.russian-doll-envelopes.cpp), [python3](./leetcode/354.russian-doll-envelopes.py) | Sorting | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | Shortest Unsorted Continuous Subarray | [c++](./leetcode/581.shortest-unsorted-continuous-subarray.cpp), [python3](./leetcode/581.shortest-unsorted-continuous-subarray.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-632](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) | Smallest Range Covering Elements From K Lists | [c++](./leetcode/632.smallest-range-covering-elements-from-k-lists.cpp), [python3](./leetcode/632.smallest-range-covering-elements-from-k-lists.py) | Sorting | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-905](https://leetcode.com/problems/sort-array-by-parity/) | Sort Array By Parity | [c++](./leetcode/905.sort-array-by-parity.cpp), [python3](./leetcode/905.sort-array-by-parity.py) | Sorting | O\(N\) | O\(1\) | - |
+| [Leetcode-922](https://leetcode.com/problems/sort-array-by-parity-ii/) | Sort Array By Parity II | [c++](./leetcode/922.sort-array-by-parity-ii.cpp), [python3](./leetcode/922.sort-array-by-parity-ii.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
 | [Leetcode-977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares Of A Sorted Array | [c++](./leetcode/977.squares-of-a-sorted-array.cpp), [python3](./leetcode/977.squares-of-a-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
@@ -1567,7 +1575,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(100) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(97) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
 | [Leetcode-269](https://leetcode.com/problems/alien-dictionary/) | Alien Dictionary | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | - |
@@ -1619,7 +1627,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-928](https://leetcode.com/problems/minimize-malware-spread-ii/) | Minimize Malware Spread II | [python3](./leetcode/928.minimize-malware-spread-ii.py) | Other | \- | \- | - |
 | [Leetcode-433](https://leetcode.com/problems/minimum-genetic-mutation/) | Minimum Genetic Mutation | [c++](./leetcode/433.minimum-genetic-mutation.cpp), [python3](./leetcode/433.minimum-genetic-mutation.py) | Other | \- | \- | - |
 | [Leetcode-599](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | Minimum Index Sum Of Two Lists | [c++](./leetcode/599.minimum-index-sum-of-two-lists.cpp) | Other | \- | \- | - |
-| [Leetcode-283](https://leetcode.com/problems/move-zeroes/) | Move Zeroes | [c++](./leetcode/283.move-zeroes.cpp), [python3](./leetcode/283.move-zeroes.py) | Other | \- | \- | - |
 | [Leetcode-346](https://leetcode.com/problems/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./leetcode/346.moving-average-from-data-stream.cpp), [python3](./leetcode/346.moving-average-from-data-stream.py) | Other | \- | \- | - |
 | [Leetcode-31](https://leetcode.com/problems/next-permutation/) | Next Permutation | [c++](./leetcode/31.next-permutation.cpp), [python3](./leetcode/31.next-permutation.py) | Other | \- | \- | - |
 | [Leetcode-447](https://leetcode.com/problems/number-of-boomerangs/) | Number Of Boomerangs | [c++](./leetcode/447.number-of-boomerangs.cpp), [python3](./leetcode/447.number-of-boomerangs.py) | Other | \- | \- | - |
@@ -1634,8 +1641,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-119](https://leetcode.com/problems/pascals-triangle-ii/) | Pascals Triangle II | [c++](./leetcode/119.pascals-triangle-ii.cpp), [python3](./leetcode/119.pascals-triangle-ii.py) | Other | \- | \- | - |
 | [Leetcode-66](https://leetcode.com/problems/plus-one/) | Plus One | [c++](./leetcode/66.plus-one.cpp), [python3](./leetcode/66.plus-one.py) | Other | \- | \- | - |
 | [Leetcode-755](https://leetcode.com/problems/pour-water/) | Pour Water | [python3](./leetcode/755.pour-water.py) | Other | \- | \- | - |
-| [Leetcode-26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Remove Duplicates From Sorted Array | [c++](./leetcode/26.remove-duplicates-from-sorted-array.cpp), [python3](./leetcode/26.remove-duplicates-from-sorted-array.py) | Other | \- | \- | - |
-| [Leetcode-27](https://leetcode.com/problems/remove-element/) | Remove Element | [c++](./leetcode/27.remove-element.cpp), [python3](./leetcode/27.remove-element.py) | Other | \- | \- | - |
 | [Leetcode-203](https://leetcode.com/problems/remove-linked-list-elements/) | Remove Linked List Elements | [python3](./leetcode/203.remove-linked-list-elements.py) | Other | \- | \- | - |
 | [Leetcode-143](https://leetcode.com/problems/reorder-list/) | Reorder List | [python3](./leetcode/143.reorder-list.py) | Other | \- | \- | - |
 | [Leetcode-7](https://leetcode.com/problems/reverse-integer/) | Reverse Integer | [c++](./leetcode/7.reverse-integer.cpp), [python3](./leetcode/7.reverse-integer.py) | Other | \- | \- | - |
