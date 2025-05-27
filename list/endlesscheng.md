@@ -120,9 +120,9 @@
 101. https://leetcode.com/problems/find-k-closest-elements/
 102. https://leetcode.com/problems/the-k-strongest-values-in-an-array/
 103. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-104. https://leetcode.com/problems/count-the-number-of-fair-pairs/
-105. https://leetcode.com/problems/sum-of-square-numbers/
-106. https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/ +Mark
+104. https://leetcode.com/problems/sum-of-square-numbers/
+105. https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/ +Mark
+106. https://leetcode.com/problems/count-the-number-of-fair-pairs/
 107. https://leetcode.com/problems/3sum/
 108. https://leetcode.com/problems/3sum-closest/
 109. https://leetcode.com/problems/4sum/ +Mark
@@ -157,12 +157,20 @@
 134. https://leetcode.com/problems/move-zeroes/
 135. https://leetcode.com/problems/sort-array-by-parity/
 136. https://leetcode.com/problems/sort-array-by-parity-ii/ +Mark
-- https://leetcode.com/problems/apply-operations-to-an-array/
-- https://leetcode.com/problems/duplicate-zeros/
-- https://leetcode.com/problems/minimum-common-value/
-- https://leetcode.com/problems/merge-sorted-array/
-- https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
-- https://leetcode.com/problems/2vYnGI/
+137. https://leetcode.com/problems/transform-array-by-parity/
+138. https://leetcode.com/problems/apply-operations-to-an-array/
+139. https://leetcode.com/problems/duplicate-zeros/ +Mark
+140. https://leetcode.com/problems/sort-colors/
+
+- https://leetcode.com/problems/build-array-from-permutation/
+- https://leetcode.com/problems/find-all-duplicates-in-an-array/
+- https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+- https://leetcode.com/problems/first-missing-positive/
+- https://leetcode.com/problems/find-the-duplicate-number/
+
+146. https://leetcode.com/problems/minimum-common-value/
+147. https://leetcode.com/problems/merge-sorted-array/
+148. https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
 - https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
 - https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
 - https://leetcode.com/problems/long-pressed-name/
@@ -542,7 +550,7 @@ https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/solution/tu-
 - https://leetcode.com/problems/guess-the-number-using-bitwise-questions-i/
 - https://leetcode.com/problems/guess-the-number-using-bitwise-questions-ii/
 - https://leetcode.com/problems/single-number/
-- https://leetcode.com/problems/find-the-duplicate-number/
+- https://leetcode.com/problems/find-the-duplicate-number/ +duplicate
 - https://leetcode.com/problems/single-number-iii/
 - https://leetcode.com/problems/find-missing-and-repeated-values/
 - https://leetcode.com/problems/single-number-ii/

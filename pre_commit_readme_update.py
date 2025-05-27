@@ -379,7 +379,7 @@ class Problem:
                     continue
                 
                 name = match.group(1)
-                match = re.search(r'(www\.)?(\w+)\.com', parsed_link.netloc)
+                match = re.search(r'(www\.)?(\w+)\.(com|cn)', parsed_link.netloc)
                 source = match.group(2)
                 
                 s = Problem(link, source, mark, name, '', mod_datetime)
