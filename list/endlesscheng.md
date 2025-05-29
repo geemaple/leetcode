@@ -162,17 +162,17 @@
 139. https://leetcode.com/problems/duplicate-zeros/ +Mark
 140. https://leetcode.com/problems/sort-colors/
 
-- https://leetcode.com/problems/build-array-from-permutation/
-- https://leetcode.com/problems/find-all-duplicates-in-an-array/
-- https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
-- https://leetcode.com/problems/first-missing-positive/
-- https://leetcode.com/problems/find-the-duplicate-number/
+141. https://leetcode.com/problems/build-array-from-permutation/ +Mark
+142. https://leetcode.com/problems/find-all-duplicates-in-an-array/ +Mark
+143. https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+144. https://leetcode.com/problems/first-missing-positive/
+145. https://leetcode.com/problems/find-the-duplicate-number/
 
 146. https://leetcode.com/problems/minimum-common-value/
 147. https://leetcode.com/problems/merge-sorted-array/
 148. https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
-- https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
-- https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
+149. https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
+150. https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
 - https://leetcode.com/problems/long-pressed-name/
 - https://leetcode.com/problems/expressive-words/
 - https://leetcode.com/problems/move-pieces-to-obtain-a-string/

@@ -43,6 +43,8 @@ TAG_HEAP = 'Heap'
 TAG_2P = 'Two Pointers'
 TAG_SWIN = 'Sliding Window'
 TAG_SORT = 'Sorting'
+TAG_BUCKET_SORT = 'Bucket Sort'
+TAG_INDEX_SORT = 'Index Sort'
 TAG_COUNT = 'Counting'
 TAG_QUICK_SELECT = 'Quickselect'
 TAG_DC = 'Divide and Conquer'
@@ -99,7 +101,7 @@ TAG_REGEX = {
     TAG_BFS: r'^(Breadth-First Search|Breadth First Search(/BFS)?|BFS)$',
     TAG_DFS: r'^(Depth-First Search|Depth First Search(/DFS)?|DFS)$',
     TAG_DP: r'^(DP|Dynamic Programming(/DP)?|\w+(\s\w+)* DP|Memoization)$',
-    TAG_SORT: r'^(Sort(ing)?|\w+ Sort)$',
+    TAG_SORT: r'^(Sort(ing)?|Merge Sort)$',
     TAG_PROB: r'^(Randomized|\w+ Sampling|Probability and Statistics)$',
     TAG_QUEUE: r'^Queue$',
     TAG_HEAP: r'^(Heap|Heap \(Priority Queue\)|Priority Queue)$',

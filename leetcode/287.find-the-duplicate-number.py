@@ -1,4 +1,4 @@
-#  Tag: Array, Two Pointers, Binary Search, Bit Manipulation
+#  Tag: Array, Two Pointers, Binary Search, Bit Manipulation, Index Sort
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -
@@ -91,3 +91,19 @@ class Solution:
             if x <= target:
                 count += 1
         return count
+
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        nums = [0] + nums
+        n = len(nums)
+        i = 1
+        while i < n:
+            j = nums[i]
+            if j > 0 and j < n and nums[i] != nums[j]:
+                nums[i], nums[j] = nums[j], nums[i]
+            else:
+                i += 1
+
+        for i in range(1, n):
+            if nums[i] != i:
+                return nums[i]

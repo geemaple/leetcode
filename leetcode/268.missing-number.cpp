@@ -1,4 +1,4 @@
-//  Tag: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
+//  Tag: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting, Index Sort
 //  Time: O(N)
 //  Space: O(1)
 //  Ref: -
@@ -59,5 +59,29 @@ public:
         }
 
         return res;
+    }
+};
+
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        nums.insert(nums.begin(), -1);
+        int i = 1;
+        while (i < nums.size()) {
+            int j = nums[i];
+            if (j >= 0 && j < nums.size() && nums[i] != nums[j]) {
+                swap(nums[i], nums[j]);
+            } else {
+                i += 1;
+            }
+        }
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] != i) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 };

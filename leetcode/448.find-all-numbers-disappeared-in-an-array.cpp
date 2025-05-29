@@ -1,4 +1,4 @@
-//  Tag: Array, Hash Table
+//  Tag: Array, Hash Table, Index Sort
 //  Time: O(N)
 //  Space: O(1)
 //  Ref: -
@@ -27,15 +27,22 @@
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
-        int n = nums.size();
-        unordered_set<int> cache(nums.begin(), nums.end());
+        nums.insert(nums.begin(), 0);
+        int i = 1;
+        while (i < nums.size()) {
+            int j = nums[i];
+            if (i > 0 && i < nums.size() && nums[i] != nums[j]) {
+                swap(nums[i], nums[j]);
+            } else {
+                i += 1;
+            }
+        }
         vector<int> res;
-        for (int i = 1; i <= n; i++) {
-            if (cache.count(i) == 0) {
+        for (int i = 1; i < nums.size(); i++) {
+            if (nums[i] != i) {
                 res.push_back(i);
             }
         }
-
         return res;
     }
 };
@@ -56,6 +63,22 @@ public:
         for (int i = 1; i <= n; i++) {
             int pos = i - 1;
             if (nums[pos] > 0) {
+                res.push_back(i);
+            }
+        }
+
+        return res;
+    }
+};
+
+class Solution {
+public:
+    vector<int> findDisappearedNumbers(vector<int>& nums) {
+        int n = nums.size();
+        unordered_set<int> cache(nums.begin(), nums.end());
+        vector<int> res;
+        for (int i = 1; i <= n; i++) {
+            if (cache.count(i) == 0) {
                 res.push_back(i);
             }
         }

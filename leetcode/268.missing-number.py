@@ -1,4 +1,4 @@
-#  Tag: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
+#  Tag: Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting, Index Sort
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -
@@ -51,3 +51,19 @@ class Solution:
         for i in range(n):
             res -= nums[i]
         return res
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        nums = [-1] + nums
+        n = len(nums)
+        i = 1
+        while i < n:
+            j = nums[i]
+            if nums[i] >= 0 and nums[i] < n and nums[i] != nums[j]:
+                nums[i], nums[j] = nums[j], nums[i]
+            else:
+                i += 1
+
+        for i in range(n):
+            if nums[i] != i:
+                return i

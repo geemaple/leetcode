@@ -1,4 +1,4 @@
-//  Tag: Array, Two Pointers, Binary Search, Bit Manipulation
+//  Tag: Array, Two Pointers, Binary Search, Bit Manipulation, Index Sort
 //  Time: O(N)
 //  Space: O(1)
 //  Ref: -
@@ -97,5 +97,29 @@ public:
             }
         }
         return count;
+    }
+};
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        nums.insert(nums.begin(), 0);
+        int i = 1;
+        while (i < nums.size()) {
+            int j = nums[i];
+            if (j > 0 && j < nums.size() && nums[i] != nums[j]) {
+                swap(nums[i], nums[j]);
+            } else {
+                i += 1;
+            }
+        }
+
+        for (int i = 1; i < nums.size(); i++) {
+            if (nums[i] != i) {
+                return nums[i];
+            }
+        }
+
+        return -1;
     }
 };

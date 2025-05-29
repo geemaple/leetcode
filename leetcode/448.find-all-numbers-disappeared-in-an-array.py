@@ -1,4 +1,4 @@
-#  Tag: Array, Hash Table
+#  Tag: Array, Hash Table, Index Sort
 #  Time: O(N)
 #  Space: O(1)
 #  Ref: -
@@ -23,6 +23,25 @@
 #   
 #  Follow up: Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
 #  
+
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        nums = [0] + nums
+        n = len(nums)
+        i = 1
+        while i < n:
+            j = nums[i]
+            if j > 0 and j < n and nums[i] != nums[j]:
+                nums[i], nums[j] = nums[j], nums[i]
+            else:
+                i += 1
+
+        res = []
+        for i in range(1, n):
+            if nums[i] != i:
+                res.append(i)
+
+        return res
 
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
