@@ -173,13 +173,12 @@
 148. https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
 149. https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/
 150. https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
-- https://leetcode.com/problems/long-pressed-name/
-- https://leetcode.com/problems/expressive-words/
-- https://leetcode.com/problems/move-pieces-to-obtain-a-string/
-- https://leetcode.com/problems/swap-adjacent-in-lr-string/
-- https://leetcode.com/problems/backspace-string-compare/
-- https://leetcode.com/problems/interval-list-intersections/
-- https://leetcode.com/problems/smallest-difference-lcci/
+151. https://leetcode.com/problems/long-pressed-name/ +Mark
+152. https://leetcode.com/problems/expressive-words/ +Mark
+153. https://leetcode.com/problems/move-pieces-to-obtain-a-string/
+154. https://leetcode.com/problems/swap-adjacent-in-lr-string/
+155. https://leetcode.com/problems/backspace-string-compare/
+156. https://leetcode.com/problems/interval-list-intersections/
 - https://leetcode.com/problems/get-the-maximum-score/
 - https://leetcode.com/problems/shortest-word-distance-ii/
 - https://leetcode.com/problems/maximum-coins-heroes-can-collect/
