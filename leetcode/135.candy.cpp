@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/hvZxZWBUza8
 
 //  There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
 //  You are giving candies to these children subjected to the following requirements:
