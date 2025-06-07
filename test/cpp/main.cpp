@@ -12,30 +12,33 @@ using namespace std;
 
 class Solution {
 public:
-    int firstMissingPositive(vector<int>& nums) {
-        nums.insert(nums.begin(), 0);
-        int i = 1;
-        while (i < nums.size()) {
-            int j = nums[i];
-            if (j > 0 && j < nums.size() && nums[i] != nums[j]) {
-                swap(nums[i], nums[j]);
+    string clearStars(string s) {
+        int n = s.size();
+        priority_queue<pair<int, int>, vector<pair<int, int>>> heap;
+        vector<bool> removed(n, false);
+
+        for (int i = 0; i < n; i++) {
+            if (s[i] == '*') {
+                auto [small, index] = heap.top();
+                heap.pop();
+                removed[index] = true;
             } else {
-                i += 1;
+                heap.emplace(-s[i], i);
             }
         }
 
-        for (int i = 1; i < nums.size(); i++) {
-            if (nums[i] != i) {
-                return i;
+        string res = "";
+        for (int i = 0; i < n; i++) {
+            if (s[i] != '*' && !removed[i]) {
+                res += s[i];
             }
         }
-
-        return nums.size();
+        return res;
     }
 };
 
 int main() {
-    std::string str = "aeioqq";
+    std::string str = "aaba*";
     
     vector<vector<int>> matrix1 = {
         {0,1},{0,2},{2,3},{2,4}
@@ -53,7 +56,7 @@ int main() {
 //    vector<int> end = {3,4,5,6};
     vector<int> profit = {1,3,5,1};
     Solution s;
-    int res = s.firstMissingPositive(profit);
+    string res = s.clearStars(str);
     cout << res << endl;
     return 0;
 }
