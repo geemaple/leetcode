@@ -18,29 +18,28 @@ from typing import (
 )
 import heapq
 
-import bisect
 class Solution:
-    def maxTotalFruits(self, fruits: List[List[int]], startPos: int, k: int) -> int:
-        n = len(fruits)
-        l = bisect.bisect_left(fruits, startPos - k, key=lambda x: x[0])
-        pick = 0
-        res = 0
-        r = l
-        while (r < n and fruits[r][0] <= startPos + k):
-            pick += fruits[r][1]
-            while min(startPos - 2 * fruits[l][0] + fruits[r][0], 2 * fruits[r][0] - fruits[l][0] - startPos) > k:
-                pick -= fruits[l][1]
-                l += 1
+    def lexicalOrder(self, n: int) -> List[int]:
+        res = []
+        cur = 1
+        print(n)
+        for i in range(n):
+            print(cur)
+            res.append(cur)
+            if cur * 10 <= n:
+                cur *= 10
+            else:
+                while cur % 10 == 9 or cur >= n:
+                    cur %= 10
 
-            res = max(res, pick)
-            r += 1
+                cur += 1
 
         return res
 
 s = Solution()
 ts = datetime.now()
 
-res = s.maxTotalFruits([[2,8],[6,3],[8,6]], 5, 4)
+res = s.lexicalOrder(13)
 
 print(datetime.now() - ts)
 print(res)
