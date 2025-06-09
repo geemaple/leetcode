@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 148/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 747 problems
+**Solved**: 748 problems
 
 ## 类型/Category
 
@@ -1599,10 +1599,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Trie
 
-| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Design Add And Search Words Data Structure | [c++](./leetcode/211.design-add-and-search-words-data-structure.cpp), [python3](./leetcode/211.design-add-and-search-words-data-structure.py) | Trie | O\(26^k \* N\) | O\(LN\) | - |
 | [Leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Trie | O\(N\) | O\(L\) | - |
+| [Leetcode-440](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | K Th Smallest In Lexicographical Order | [c++](./leetcode/440.k-th-smallest-in-lexicographical-order.cpp), [python3](./leetcode/440.k-th-smallest-in-lexicographical-order.py) | Trie | O\(\(logN\) ^ 2\) | O\(1\) | - |
 | [Leetcode-386](https://leetcode.com/problems/lexicographical-numbers/) | Lexicographical Numbers | [c++](./leetcode/386.lexicographical-numbers.cpp), [python3](./leetcode/386.lexicographical-numbers.py) | Trie | O\(N\) | O\(1\) | - |
 | [Leetcode-692](https://leetcode.com/problems/top-k-frequent-words/) | Top K Frequent Words | [c++](./leetcode/692.top-k-frequent-words.cpp), [python3](./leetcode/692.top-k-frequent-words.py) | Trie | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Trie | O\(MN\) | O\(N\) | - |
