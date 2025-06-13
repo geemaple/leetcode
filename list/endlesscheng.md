@@ -179,12 +179,13 @@
 154. https://leetcode.com/problems/swap-adjacent-in-lr-string/
 155. https://leetcode.com/problems/backspace-string-compare/
 156. https://leetcode.com/problems/interval-list-intersections/
-- https://leetcode.com/problems/get-the-maximum-score/
-- https://leetcode.com/problems/shortest-word-distance-ii/
-- https://leetcode.com/problems/maximum-coins-heroes-can-collect/
-- https://leetcode.com/problems/meeting-scheduler/
+157. https://leetcode.com/problems/get-the-maximum-score/
+158. https://www.lintcode.com/problem/shortest-word-distance-ii/
+159. https://www.lintcode.com/problem/maximum-coins-heroes-can-collect/
+- https://www.lintcode.com/problem/meeting-scheduler/
 - https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
 - https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/
+
 - https://leetcode.com/problems/is-subsequence/
 - https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
 - https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
