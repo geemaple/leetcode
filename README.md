@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 151/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 756 problems
+**Solved**: 760 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(55) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(58) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
@@ -126,6 +126,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-204](https://leetcode.com/problems/count-primes/) | Count Primes | [c++](./leetcode/204.count-primes.cpp), [python3](./leetcode/204.count-primes.py) | Math | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2843](https://leetcode.com/problems/count-symmetric-integers/) | Count Symmetric Integers | [c++](./leetcode/2843.count-symmetric-integers.cpp), [python3](./leetcode/2843.count-symmetric-integers.py) | Math | O\(N\) | O\(1\) | - |
+| [Leetcode-3405](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | Count The Number Of Arrays With K Matching Adjacent Elements | [c++](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp), [python3](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-2579](https://leetcode.com/problems/count-total-number-of-colored-cells/) | Count Total Number Of Colored Cells | [c++](./leetcode/2579.count-total-number-of-colored-cells.cpp), [python3](./leetcode/2579.count-total-number-of-colored-cells.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-2929](https://leetcode.com/problems/distribute-candies-among-children-ii/) | Distribute Candies Among Children II | [c++](./leetcode/2929.distribute-candies-among-children-ii.cpp), [python3](./leetcode/2929.distribute-candies-among-children-ii.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2894](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/) | Divisible And Non Divisible Sums Difference | [c++](./leetcode/2894.divisible-and-non-divisible-sums-difference.cpp), [python3](./leetcode/2894.divisible-and-non-divisible-sums-difference.py) | Math | O\(1\) | O\(1\) | - |
@@ -141,7 +142,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Math | O\(S\) | O\(1\) | - |
 | [Leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
+| [Leetcode-1432](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | Max Difference You Can Get From Changing An Integer | [c++](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.cpp), [python3](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-149](https://leetcode.com/problems/max-points-on-a-line/) | Max Points On A Line | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Math | O\(N^2\) | O\(N\) | - |
+| [Leetcode-2566](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/) | Maximum Difference By Remapping A Digit | [c++](./leetcode/2566.maximum-difference-by-remapping-a-digit.cpp), [python3](./leetcode/2566.maximum-difference-by-remapping-a-digit.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-1610](https://leetcode.com/problems/maximum-number-of-visible-points/) | Maximum Number Of Visible Points | [c++](./leetcode/1610.maximum-number-of-visible-points.cpp), [python3](./leetcode/1610.maximum-number-of-visible-points.py) | Math | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Math | O\(N \* sqrt\(Num\)\) | O\(N\) | - |
 | [Leetcode-462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves To Equal Array Elements II | [c++](./leetcode/462.minimum-moves-to-equal-array-elements-ii.cpp), [python3](./leetcode/462.minimum-moves-to-equal-array-elements-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
@@ -177,9 +180,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Combinatorics
 
-| Link | Problem(6) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Combinatorics | O\(N^3\) | O\(N^3\) | - |
+| [Leetcode-3405](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | Count The Number Of Arrays With K Matching Adjacent Elements | [c++](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp), [python3](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | Combinatorics | O\(N\) | O\(N\) | - |
 | [Leetcode-2338](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | Count The Number Of Ideal Arrays | [c++](./leetcode/2338.count-the-number-of-ideal-arrays.cpp), [python3](./leetcode/2338.count-the-number-of-ideal-arrays.py) | Combinatorics | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2929](https://leetcode.com/problems/distribute-candies-among-children-ii/) | Distribute Candies Among Children II | [c++](./leetcode/2929.distribute-candies-among-children-ii.cpp), [python3](./leetcode/2929.distribute-candies-among-children-ii.py) | Combinatorics | O\(N\) | O\(1\) | - |
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Combinatorics | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
@@ -318,7 +322,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(58) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(60) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Greedy | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
@@ -344,8 +348,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2131](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | Longest Palindrome By Concatenating Two Letter Words | [c++](./leetcode/2131.longest-palindrome-by-concatenating-two-letter-words.cpp), [python3](./leetcode/2131.longest-palindrome-by-concatenating-two-letter-words.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-2900](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | Longest Unequal Adjacent Groups Subsequence I | [c++](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.cpp), [python3](./leetcode/2900.longest-unequal-adjacent-groups-subsequence-i.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Greedy | O\(N\) | O\(1\) | - |
+| [Leetcode-1432](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | Max Difference You Can Get From Changing An Integer | [c++](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.cpp), [python3](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Greedy | O\(NlogN \+ NlogD\) | O\(1\) | - |
 | [Leetcode-3413](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Maximum Coins From K Consecutive Bags | [c++](./leetcode/3413.maximum-coins-from-k-consecutive-bags.cpp), [python3](./leetcode/3413.maximum-coins-from-k-consecutive-bags.py) | Greedy | O\(NlogN\) | O\(1\) | - |
+| [Leetcode-2566](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/) | Maximum Difference By Remapping A Digit | [c++](./leetcode/2566.maximum-difference-by-remapping-a-digit.cpp), [python3](./leetcode/2566.maximum-difference-by-remapping-a-digit.py) | Greedy | O\(1\) | O\(1\) | - |
 | [Leetcode-646](https://leetcode.com/problems/maximum-length-of-pair-chain/) | Maximum Length Of Pair Chain | [c++](./leetcode/646.maximum-length-of-pair-chain.cpp), [python3](./leetcode/646.maximum-length-of-pair-chain.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1353](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) | Maximum Number Of Events That Can Be Attended | [c++](./leetcode/1353.maximum-number-of-events-that-can-be-attended.cpp), [python3](./leetcode/1353.maximum-number-of-events-that-can-be-attended.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2071](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | Maximum Number Of Tasks You Can Assign | [c++](./leetcode/2071.maximum-number-of-tasks-you-can-assign.cpp), [python3](./leetcode/2071.maximum-number-of-tasks-you-can-assign.py) | Greedy | O\(NLogN\) | O\(N\) | - |
@@ -1626,7 +1632,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(11) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(12) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3386](https://leetcode.com/problems/button-with-longest-push-time/) | Button With Longest Push Time | [c++](./leetcode/3386.button-with-longest-push-time.cpp), [python3](./leetcode/3386.button-with-longest-push-time.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2176](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Count Equal And Divisible Pairs In An Array | [c++](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.cpp), [python3](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.py) | Array | O\(N^2\) | O\(1\) | - |
@@ -1636,6 +1642,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2942](https://leetcode.com/problems/find-words-containing-character/) | Find Words Containing Character | [c++](./leetcode/2942.find-words-containing-character.cpp), [python3](./leetcode/2942.find-words-containing-character.py) | Array | O\(N^2\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3423](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/) | Maximum Difference Between Adjacent Elements In A Circular Array | [c++](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.cpp), [python3](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Maximum Difference Between Increasing Elements | [c++](./leetcode/2016.maximum-difference-between-increasing-elements.cpp), [python3](./leetcode/2016.maximum-difference-between-increasing-elements.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-1550](https://leetcode.com/problems/three-consecutive-odds/) | Three Consecutive Odds | [c++](./leetcode/1550.three-consecutive-odds.cpp), [python3](./leetcode/1550.three-consecutive-odds.py) | Array | O\(N\) | O\(1\) | - |
 | [Lintcode-3847](https://www.lintcode.com/problem/number-of-subarrays-having-even-product/) | Number Of Subarrays Having Even Product | [c++](./lintcode/3847.number-of-subarrays-having-even-product.cpp), [python3](./lintcode/3847.number-of-subarrays-having-even-product.py) | Array | O\(N\) | O\(1\) | Leetcode-2495 |
