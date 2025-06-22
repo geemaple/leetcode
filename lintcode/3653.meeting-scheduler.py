@@ -75,17 +75,26 @@ class Solution:
     """
     def earliest_appropriate_duration(self, slots1: List[Interval], slots2: List[Interval], duration: int) -> Interval:
         # --- write your code here ---
+        n = len(slots1)
+        m = len(slots2)
+        # slots1.sort(key=lambda x: (x.start, x.end))
+        # slots2.sort(key=lambda x: (x.start, x.end))
+
         i = 0
         j = 0
-        while i < len(slots1) and j < len(slots2):
-            tmp = [max(slots1[i].start, slots2[j].start), min(slots1[i].end, slots2[j].end)]
-            if tmp[1] - tmp[0] >= duration:
-                return Interval(tmp[0], tmp[0] + duration)
-         
-            if slots1[i].end >= slots2[j].end:
-                j += 1
-            else:
+
+        while i < n and j < m:
+            print(i, j)
+            start = max(slots1[i].start, slots2[j].start)
+            end = min(slots1[i].end, slots2[j].end)
+            if end - start >= duration:
+                return Interval(start, start + duration)
+       
+            if slots1[i].end < slots2[j].end:
                 i += 1
+            else:
+                j += 1
+
 
         return Interval(-1, -1)
     

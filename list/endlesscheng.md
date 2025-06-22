@@ -182,9 +182,9 @@
 157. https://leetcode.com/problems/get-the-maximum-score/
 158. https://www.lintcode.com/problem/shortest-word-distance-ii/
 159. https://www.lintcode.com/problem/maximum-coins-heroes-can-collect/
-- https://www.lintcode.com/problem/meeting-scheduler/
-- https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
-- https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/
+160. https://www.lintcode.com/problem/meeting-scheduler/
+161. https://www.lintcode.com/problem/dot-product-of-two-sparse-vectors/
+162. https://www.lintcode.com/problem/product-of-two-run-length-encoded-arrays/
 
 - https://leetcode.com/problems/is-subsequence/
 - https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/

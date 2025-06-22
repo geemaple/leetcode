@@ -73,12 +73,23 @@ public:
      */
     Interval earliestAppropriateDuration(vector<Interval> &slots1, vector<Interval> &slots2, int duration) {
         // --- write your code here ---
+        int n = slots1.size();
+        int m = slots2.size();
+
+        // sort(slots1.begin(), slots1.end(), [](Interval &a, Interval &b) {
+        //     return a.start < b.start || a.end < b.end;
+        // });
+        // sort(slots2.begin(), slots2.end(), [](Interval &a, Interval &b) {
+        //     return a.start < b.start || a.end < b.end;
+        // });
+
         int i = 0;
         int j = 0;
-        while (i < slots1.size() && j < slots2.size()) {
-            pair<int, int> p = make_pair(max(slots1[i].start, slots2[j].start), min(slots1[i].end, slots2[j].end));
-            if (p.second - p.first >= duration) {
-                return Interval(p.first, p.first + duration);
+        while (i < n && j < m) {
+            int start = max(slots1[i].start, slots2[j].start);
+            int end = min(slots1[i].end, slots2[j].end);
+            if (end - start >= duration) {
+                return Interval(start, start + duration);
             }
 
             if (slots1[i].end < slots2[j].end) {
