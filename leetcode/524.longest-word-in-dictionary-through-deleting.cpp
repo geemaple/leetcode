@@ -1,5 +1,5 @@
 //  Tag: Array, Two Pointers, String, Sorting
-//  Time: O(N*logN + M * N)
+//  Time: O(NlogN + NM)
 //  Space: O(1)
 //  Ref: -
 //  Note: -
@@ -33,7 +33,7 @@ public:
             return a.size() == b.size() ? a < b : a.size() > b.size();
         });
 
-        for (string t : dictionary) {
+        for (string &t : dictionary) {
             int k = 0;
             for (int i = 0; i < s.size(); i++) {
                 if (k < t.size() && s[i] == t[k]) {

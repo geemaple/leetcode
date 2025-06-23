@@ -1,5 +1,5 @@
 #  Tag: Array, Two Pointers, String, Sorting
-#  Time: O(N*logN + M * N)
+#  Time: O(NlogN + NM)
 #  Space: O(1)
 #  Ref: -
 #  Note: -

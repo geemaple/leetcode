@@ -186,8 +186,8 @@
 161. https://www.lintcode.com/problem/dot-product-of-two-sparse-vectors/
 162. https://www.lintcode.com/problem/product-of-two-run-length-encoded-arrays/
 
-- https://leetcode.com/problems/is-subsequence/
-- https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/
+163. https://leetcode.com/problems/is-subsequence/
+164. https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/ +Mark
 - https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
 - https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/
 - https://leetcode.com/problems/camelcase-matching/
