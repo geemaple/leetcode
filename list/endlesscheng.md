@@ -188,9 +188,9 @@
 
 163. https://leetcode.com/problems/is-subsequence/
 164. https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/ +Mark
-- https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
-- https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/
-- https://leetcode.com/problems/camelcase-matching/
+165. https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
+166. https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/
+167. https://leetcode.com/problems/camelcase-matching/ +Mark
 - https://leetcode.com/problems/find-the-integer-added-to-array-ii/
 - https://leetcode.com/problems/longest-uncommon-subsequence-ii/
 - https://leetcode.com/problems/maximum-number-of-removable-characters/

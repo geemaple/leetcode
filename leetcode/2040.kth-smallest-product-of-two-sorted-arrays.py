@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/kw0qMFMjHhU
 
 #  Given two sorted 0-indexed integer arrays nums1 and nums2 as well as an integer k, return the kth (1-based) smallest product of nums1[i] * nums2[j] where 0 <= i < nums1.length and 0 <= j < nums2.length.
 #   
@@ -70,7 +71,7 @@ class Solution:
         count = 0
         for i in range(n):
             if nums1[i] > 0:
-                count += bisect_right(nums2, target // nums1[i])
+                count += bisect_right(nums2, math.floor(target / nums1[i]))
             elif nums1[i] < 0:
                 count += m - bisect_left(nums2, math.ceil(target / nums1[i]))
             else:
