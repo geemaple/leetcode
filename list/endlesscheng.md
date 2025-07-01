@@ -191,8 +191,9 @@
 165. https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
 166. https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/
 167. https://leetcode.com/problems/camelcase-matching/ +Mark
-- https://leetcode.com/problems/find-the-integer-added-to-array-ii/
-- https://leetcode.com/problems/longest-uncommon-subsequence-ii/
+168. https://leetcode.com/problems/find-the-integer-added-to-array-ii/
+169. https://leetcode.com/problems/longest-uncommon-subsequence-ii/ +Mark
+
 - https://leetcode.com/problems/maximum-number-of-removable-characters/
 - https://leetcode.com/problems/subsequence-with-the-minimum-score/
 - https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/
