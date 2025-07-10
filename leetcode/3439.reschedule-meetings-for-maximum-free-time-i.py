@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/g5ZvtEyK4Zg
 
 #  You are given an integer eventTime denoting the duration of an event, where the event occurs from time t = 0 to time t = eventTime.
 #  You are also given two integer arrays startTime and endTime, each of length n. These represent the start and end time of n non-overlapping meetings, where the ith meeting occurs during the time [startTime[i], endTime[i]].
@@ -48,24 +49,23 @@
 
 class Solution:
     def maxFreeTime(self, eventTime: int, k: int, startTime: List[int], endTime: List[int]) -> int:
-        start = 0
+        n = len(startTime)
         slots = []
-        for i in range(len(startTime)):
-            empty = startTime[i] - start
-            slots.append(empty)
-            start = endTime[i]
-
-        slots.append(eventTime - start)
-        n = len(slots)
-        if k + 1 >= n:
-            return sum(slots)
-
-        res = 0
-        tmp = 0
+        pre = 0
         for i in range(n):
-            tmp += slots[i]
+            slots.append(startTime[i] - pre)
+            pre = endTime[i]
+
+        slots.append(eventTime - pre)
+
+        m = len(slots)
+        res = 0
+        count = 0
+        for i in range(m):
+            count += slots[i]
+            res = max(res, count)
+
             if i >= k:
-                res = max(res, tmp)
-                tmp -= slots[i - k]
+                count -= slots[i - k]
 
         return res

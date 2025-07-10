@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/g5ZvtEyK4Zg
 
 //  You are given an integer eventTime denoting the duration of an event, where the event occurs from time t = 0 to time t = eventTime.
 //  You are also given two integer arrays startTime and endTime, each of length n. These represent the start and end time of n non-overlapping meetings, where the ith meeting occurs during the time [startTime[i], endTime[i]].
@@ -49,26 +50,22 @@
 class Solution {
 public:
     int maxFreeTime(int eventTime, int k, vector<int>& startTime, vector<int>& endTime) {
-        int start = 0;
+        int pre = 0;
         vector<int> slots;
         for (int i = 0; i < startTime.size(); i++) {
-            slots.push_back(startTime[i] - start);
-            start = endTime[i];
+            slots.push_back(startTime[i] - pre);
+            pre = endTime[i];
         }
-        slots.push_back(eventTime - start);
-        if (k + 1 >= slots.size()) {
-            return accumulate(slots.begin(), slots.end(), 0);
-        } 
+        slots.push_back(eventTime - pre);
 
         int res = 0;
-        int tmp = 0;
+        int count = 0;
         for (int i = 0; i < slots.size(); i++) {
-            tmp += slots[i];
+            count += slots[i];
+            res = max(res, count);
             if (i >= k) {
-                res = max(res, tmp);
-                tmp -= slots[i - k];
+                count -= slots[i - k];
             }
-
         }
 
         return res;
