@@ -195,8 +195,8 @@
 169. https://leetcode.com/problems/longest-uncommon-subsequence-ii/ +Mark
 
 170. https://leetcode.com/problems/maximum-number-of-removable-characters/
-- https://leetcode.com/problems/subsequence-with-the-minimum-score/
-- https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/
+171. https://leetcode.com/problems/subsequence-with-the-minimum-score/ +Mark
+172. https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/ +Mark
 
 - https://leetcode.com/problems/number-of-arithmetic-triplets/
 - https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate
