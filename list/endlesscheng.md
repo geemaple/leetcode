@@ -198,8 +198,8 @@
 171. https://leetcode.com/problems/subsequence-with-the-minimum-score/ +Mark
 172. https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/ +Mark
 
-- https://leetcode.com/problems/number-of-arithmetic-triplets/
-- https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate
+173. https://leetcode.com/problems/number-of-arithmetic-triplets/
+174. https://leetcode.com/problems/count-the-number-of-fair-pairs/ +duplicate
 - https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
 - https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 - https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/
