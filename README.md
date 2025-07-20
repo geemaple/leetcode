@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 800 problems
+**Solved**: 802 problems
 
 ## 类型/Category
 
@@ -662,7 +662,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(147) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(148) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -686,6 +686,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3325](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | Count Substrings With K Frequency Characters I | [c++](./leetcode/3325.count-substrings-with-k-frequency-characters-i.cpp), [python3](./leetcode/3325.count-substrings-with-k-frequency-characters-i.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2537](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | Count The Number Of Good Subarrays | [c++](./leetcode/2537.count-the-number-of-good-subarrays.cpp), [python3](./leetcode/2537.count-the-number-of-good-subarrays.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-697](https://leetcode.com/problems/degree-of-an-array/) | Degree Of An Array | [c++](./leetcode/697.degree-of-an-array.cpp), [python3](./leetcode/697.degree-of-an-array.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-1948](https://leetcode.com/problems/delete-duplicate-folders-in-system/) | Delete Duplicate Folders In System | [c++](./leetcode/1948.delete-duplicate-folders-in-system.cpp), [python3](./leetcode/1948.delete-duplicate-folders-in-system.py) | Hash Table | O\(NM\) | O\(NM\) | - |
 | [Leetcode-1110](https://leetcode.com/problems/delete-nodes-and-return-forest/) | Delete Nodes And Return Forest | [c++](./leetcode/1110.delete-nodes-and-return-forest.cpp), [python3](./leetcode/1110.delete-nodes-and-return-forest.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1943](https://leetcode.com/problems/describe-the-painting/) | Describe The Painting | [c++](./leetcode/1943.describe-the-painting.cpp), [python3](./leetcode/1943.describe-the-painting.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Hash Table | O\(LogN\) | O\(N\) | - |
@@ -1444,7 +1445,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(68) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(69) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -1496,6 +1497,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | Recover A Tree From Preorder Traversal | [c++](./leetcode/1028.recover-a-tree-from-preorder-traversal.cpp), [python3](./leetcode/1028.recover-a-tree-from-preorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-99](https://leetcode.com/problems/recover-binary-search-tree/) | Recover Binary Search Tree | [c++](./leetcode/99.recover-binary-search-tree.cpp), [python3](./leetcode/99.recover-binary-search-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Depth-First Search | O\(N\) | O\(1\) | - |
+| [Leetcode-1233](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | Remove Sub Folders From The Filesystem | [c++](./leetcode/1233.remove-sub-folders-from-the-filesystem.cpp), [python3](./leetcode/1233.remove-sub-folders-from-the-filesystem.py) | Depth-First Search | O\(L \* NLogN\) | O\(1\) | - |
 | [Leetcode-100](https://leetcode.com/problems/same-tree/) | Same Tree | [c++](./leetcode/100.same-tree.cpp), [python3](./leetcode/100.same-tree.py) | Depth-First Search | O\(N\) | O\(H\) | - |
 | [Leetcode-297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize And Deserialize Binary Tree | [c++](./leetcode/297.serialize-and-deserialize-binary-tree.cpp), [python3](./leetcode/297.serialize-and-deserialize-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-449](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Serialize And Deserialize Bst | [c++](./leetcode/449.serialize-and-deserialize-bst.cpp), [python3](./leetcode/449.serialize-and-deserialize-bst.py) | Depth-First Search | O\(N\) | O\(H\) | - |
@@ -1694,13 +1696,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Trie
 
-| Link | Problem(9) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(11) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1023](https://leetcode.com/problems/camelcase-matching/) | Camelcase Matching | [c++](./leetcode/1023.camelcase-matching.cpp), [python3](./leetcode/1023.camelcase-matching.py) | Trie | O\(NM\) | O\(1\) | - |
+| [Leetcode-1948](https://leetcode.com/problems/delete-duplicate-folders-in-system/) | Delete Duplicate Folders In System | [c++](./leetcode/1948.delete-duplicate-folders-in-system.cpp), [python3](./leetcode/1948.delete-duplicate-folders-in-system.py) | Trie | O\(NM\) | O\(NM\) | - |
 | [Leetcode-211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Design Add And Search Words Data Structure | [c++](./leetcode/211.design-add-and-search-words-data-structure.cpp), [python3](./leetcode/211.design-add-and-search-words-data-structure.py) | Trie | O\(26^k \* N\) | O\(LN\) | - |
 | [Leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Trie | O\(N\) | O\(L\) | - |
 | [Leetcode-440](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | K Th Smallest In Lexicographical Order | [c++](./leetcode/440.k-th-smallest-in-lexicographical-order.cpp), [python3](./leetcode/440.k-th-smallest-in-lexicographical-order.py) | Trie | O\(\(logN\) ^ 2\) | O\(1\) | - |
 | [Leetcode-386](https://leetcode.com/problems/lexicographical-numbers/) | Lexicographical Numbers | [c++](./leetcode/386.lexicographical-numbers.cpp), [python3](./leetcode/386.lexicographical-numbers.py) | Trie | O\(N\) | O\(1\) | - |
+| [Leetcode-1233](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | Remove Sub Folders From The Filesystem | [c++](./leetcode/1233.remove-sub-folders-from-the-filesystem.cpp), [python3](./leetcode/1233.remove-sub-folders-from-the-filesystem.py) | Trie | O\(L \* NLogN\) | O\(1\) | - |
 | [Leetcode-692](https://leetcode.com/problems/top-k-frequent-words/) | Top K Frequent Words | [c++](./leetcode/692.top-k-frequent-words.cpp), [python3](./leetcode/692.top-k-frequent-words.py) | Trie | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Trie | O\(MN\) | O\(N\) | - |
 | [Leetcode-212](https://leetcode.com/problems/word-search-ii/) | Word Search II | [c++](./leetcode/212.word-search-ii.cpp), [python3](./leetcode/212.word-search-ii.py) | Trie | O\(NM\*4^L\) | O\(MN \+ KL\) | - |
