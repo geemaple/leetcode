@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/avwe1VdqZ-E
 
 //  You are given an array of positive integers nums and want to erase a subarray containing unique elements. The score you get by erasing the subarray is equal to the sum of its elements.
 //  Return the maximum score you can get by erasing exactly one subarray.
