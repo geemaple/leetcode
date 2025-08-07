@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/hVJCdAoJD4Y
 
 #  Fruits are available at some positions on an infinite x-axis. You are given a 2D integer array fruits where fruits[i] = [positioni, amounti] depicts amounti fruits at the position positioni. fruits is already sorted by positioni in ascending order, and each positioni is unique.
 #  You are also given an integer startPos and an integer k. Initially, you are at the position startPos. From any position, you can either walk to the left or right. It takes one step to move one unit on the x-axis, and you can walk at most k steps in total. For every position you reach, you harvest all the fruits at that position, and the fruits will disappear from that position.
@@ -92,7 +93,7 @@ class Solution:
                 
         return res
 
-    def pickFruits(self, fruits: list, prefix: prefix, l: int, r: int):
+    def pickFruits(self, fruits: list, prefix: list, l: int, r: int):
         i = bisect.bisect_left(fruits, l, key=lambda x: x[0])
-        j = bisect.bisect_right(fruits, r, key=lambda x: x[0]) - 1
-        return prefix[j + 1] - prefix[i] if i <= j else 0
+        j = bisect.bisect_right(fruits, r, key=lambda x: x[0])
+        return prefix[j] - prefix[i] if i < j else 0

@@ -12,57 +12,66 @@ using namespace std;
 
 class Solution {
 public:
-    int res = INT_MAX;
-    int total = 0;
-    int minimumScore(vector<int>& nums, vector<vector<int>>& edges) {
-        int n = nums.size();
-        vector<vector<int>> graph(n);
-        for (auto &e :  edges) {
-            graph[e[0]].push_back(e[1]);
-            graph[e[1]].push_back(e[0]);
-        }
-
-        for (int i = 0; i < n; i++) {
-            total ^= nums[i];
-        }
-
-        dfs(nums, graph, 0, -1);
+    int maxCollectedFruits(vector<vector<int>>& fruits) {
+        int n = fruits.size();
+        int child1 = 0;
         
-        return res;
-    }
-
-    int dfs(vector<int>& nums, vector<vector<int>> &graph, int i, int p) {
-        int xor = nums[i];
-        for (auto &j : graph[i]) {
-            if (j != p) {
-                xor ^= dfs(nums, graph, j, i);
+        // Step 1: Calculate child1 and set the diagonal to 0
+        for (int i = 0; i < n; ++i) {
+            child1 += fruits[i][i];
+            fruits[i][i] = 0;
+        }
+        
+        // Step 2: Dynamic Programming for child2
+        vector<vector<int>> dp(n, vector<int>(n, 0));
+        dp[0][n - 1] = fruits[0][n - 1];
+        
+        for (int i = 1; i < n; ++i) {
+            for (int j = n - i - 1; j < n; ++j) {
+                if (j == 0) {
+                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j + 1]) + fruits[i][j];
+                } else if (j == n - 1) {
+                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1]) + fruits[i][j];
+                } else {
+                    dp[i][j] = max({dp[i - 1][j - 1], dp[i - 1][j], dp[i - 1][j + 1]}) + fruits[i][j];
+                }
             }
         }
-
-        for (auto &j : graph[i]) {
-            if (j == p) {
-                dfs2(nums, graph, j, i, xor, x);
+        
+        int child2 = dp[n - 1][n - 1];
+        int j = n - 1;
+        
+        // Step 3: Trace back the path for child2
+        for (int i = n - 1; i > 0; --i) {
+            int val = fruits[i][j];
+            fruits[i][j] = 0;
+            if (j > 0 && dp[i - 1][j - 1] + val == dp[i][j]) {
+                j = j - 1;
+            } else if (j < n - 1 && dp[i - 1][j + 1] + val == dp[i][j]) {
+                j = j + 1;
             }
         }
-
-        return one;
-    }
-
-    int dfs2(vector<int>& nums, vector<vector<int>> &graph, int i, int p, int one, int anc) {
-        int xor = nums[i];
-        for (auto &j : graph[i]) {
-            if (j != p) {
-                xor ^= dfs(nums, graph, j, i, one, anc);
+        
+        // Step 4: Dynamic Programming for child3
+        fill(dp.begin(), dp.end(), vector<int>(n, 0));
+        dp[n - 1][0] = fruits[n - 1][0];
+        
+        for (int j = 1; j < n; ++j) {
+            for (int i = n - j - 1; i < n; ++i) {
+                if (i == 0) {
+                    dp[i][j] = max(dp[i][j - 1], dp[i + 1][j - 1]) + fruits[i][j];
+                } else if (i == n - 1) {
+                    dp[i][j] = max(dp[i][j - 1], dp[i - 1][j - 1]) + fruits[i][j];
+                } else {
+                    dp[i][j] = max({dp[i][j - 1], dp[i - 1][j - 1], dp[i + 1][j - 1]}) + fruits[i][j];
+                }
             }
         }
-
-        if (p != anc) {
-            int biggest = max({one, xor, total ^ one ^ xor});
-            int smallest = min({one, xor, total ^ one ^ xor});
-            res = min(res, biggest - smallest);
-        }
-
-        return one;
+        
+        int child3 = dp[n - 1][n - 1];
+        
+        // Step 5: Return the final result
+        return child1 + child2 + child3;
     }
 };
 

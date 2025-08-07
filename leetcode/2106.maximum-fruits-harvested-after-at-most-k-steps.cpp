@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/hVJCdAoJD4Y
 
 //  Fruits are available at some positions on an infinite x-axis. You are given a 2D integer array fruits where fruits[i] = [positioni, amounti] depicts amounti fruits at the position positioni. fruits is already sorted by positioni in ascending order, and each positioni is unique.
 //  You are also given an integer startPos and an integer k. Initially, you are at the position startPos. From any position, you can either walk to the left or right. It takes one step to move one unit on the x-axis, and you can walk at most k steps in total. For every position you reach, you harvest all the fruits at that position, and the fruits will disappear from that position.
@@ -74,18 +75,6 @@ public:
         }
         return res;
     }
-
-    int pickFruits(vector<vector<int>>& fruits, vector<int>& prefix, int l, int r) {
-        auto i = lower_bound(fruits.begin(), fruits.end(), vector<int>{l}, [](const vector<int>& a, const vector<int>& b) {
-            return a[0] < b[0];
-        }) - fruits.begin();
-
-        auto j = upper_bound(fruits.begin(), fruits.end(), vector<int>{r}, [](const vector<int>& a, const vector<int>& b) {
-            return a[0] < b[0];
-        }) - fruits.begin() - 1;
-        
-        return (i <= j) ? (prefix[j + 1] - prefix[i]) : 0;
-    }
 };
 
 class Solution {
@@ -117,8 +106,8 @@ public:
 
         auto j = upper_bound(fruits.begin(), fruits.end(), vector<int>{r}, [](const vector<int>& a, const vector<int>& b) {
             return a[0] < b[0];
-        }) - fruits.begin() - 1;
+        }) - fruits.begin();
 
-        return (i <= j) ? (prefix[j + 1] - prefix[i]) : 0;
+        return (i < j) ? (prefix[j] - prefix[i]) : 0;
     }
 };
