@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/Z1kYsGvgEMss
 
 #  Given an integer n, return true if it is a power of two. Otherwise, return false.
 #  An integer n is a power of two, if there exists an integer x such that n == 2x.
@@ -31,6 +32,14 @@
 #  
 #   
 #  Follow up: Could you solve it without loops/recursion?
+
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        count = 0
+        while n > 0:
+            count += (n & 1)
+            n = n >> 1
+        return count == 1
 
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:

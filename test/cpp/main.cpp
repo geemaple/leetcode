@@ -10,68 +10,65 @@
 
 using namespace std;
 
+class SegmentTree {
+public:
+    vector<int> seg;
+    SegmentTree(vector<int> &baskets) {
+        int n = baskets.size();
+        int size = 4 * n;
+        seg.resize(size);
+        build(baskets, 1, 0, n - 1);
+    }
+
+    void update(int i) {
+        seg[i] = max(seg[2 * i], seg[2 * i + 1]);
+    }
+
+    void build(vector<int> &baskets, int v, int i, int j) {
+        if (i == j) {
+            seg[v] = baskets[i];
+            return;
+        }
+
+        int m = (i + j) / 2;
+        build(baskets, 2 * v, i, m);
+        build(baskets, 2 * v + 1, m + 1, j);
+        update(v);
+    }
+
+    int query_and_update(int v, int i, int j, int val) {
+        if (seg[v] < val) {
+            return -1;
+        }
+
+        if (i == j) {
+            seg[v] = -1;
+            return i;
+        }
+
+        int m = (i + j) / 2;
+        int t = query_and_update(2 * v, i, m, val);
+        if (t == -1) {
+            t = query_and_update(2 * v + 1, m + 1, j, val);
+        }
+        update(v);
+        return t;
+    }
+
+};
+
 class Solution {
 public:
-    int maxCollectedFruits(vector<vector<int>>& fruits) {
+    int numOfUnplacedFruits(vector<int>& fruits, vector<int>& baskets) {
         int n = fruits.size();
-        int child1 = 0;
-        
-        // Step 1: Calculate child1 and set the diagonal to 0
-        for (int i = 0; i < n; ++i) {
-            child1 += fruits[i][i];
-            fruits[i][i] = 0;
-        }
-        
-        // Step 2: Dynamic Programming for child2
-        vector<vector<int>> dp(n, vector<int>(n, 0));
-        dp[0][n - 1] = fruits[0][n - 1];
-        
-        for (int i = 1; i < n; ++i) {
-            for (int j = n - i - 1; j < n; ++j) {
-                if (j == 0) {
-                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j + 1]) + fruits[i][j];
-                } else if (j == n - 1) {
-                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - 1]) + fruits[i][j];
-                } else {
-                    dp[i][j] = max({dp[i - 1][j - 1], dp[i - 1][j], dp[i - 1][j + 1]}) + fruits[i][j];
-                }
+        SegmentTree tree = SegmentTree(baskets);
+        int res = 0;
+        for (auto &x: fruits) {
+            if (tree.query_and_update(1, 0, n - 1, x) == -1) {
+                res += 1;
             }
         }
-        
-        int child2 = dp[n - 1][n - 1];
-        int j = n - 1;
-        
-        // Step 3: Trace back the path for child2
-        for (int i = n - 1; i > 0; --i) {
-            int val = fruits[i][j];
-            fruits[i][j] = 0;
-            if (j > 0 && dp[i - 1][j - 1] + val == dp[i][j]) {
-                j = j - 1;
-            } else if (j < n - 1 && dp[i - 1][j + 1] + val == dp[i][j]) {
-                j = j + 1;
-            }
-        }
-        
-        // Step 4: Dynamic Programming for child3
-        fill(dp.begin(), dp.end(), vector<int>(n, 0));
-        dp[n - 1][0] = fruits[n - 1][0];
-        
-        for (int j = 1; j < n; ++j) {
-            for (int i = n - j - 1; i < n; ++i) {
-                if (i == 0) {
-                    dp[i][j] = max(dp[i][j - 1], dp[i + 1][j - 1]) + fruits[i][j];
-                } else if (i == n - 1) {
-                    dp[i][j] = max(dp[i][j - 1], dp[i - 1][j - 1]) + fruits[i][j];
-                } else {
-                    dp[i][j] = max({dp[i][j - 1], dp[i - 1][j - 1], dp[i + 1][j - 1]}) + fruits[i][j];
-                }
-            }
-        }
-        
-        int child3 = dp[n - 1][n - 1];
-        
-        // Step 5: Return the final result
-        return child1 + child2 + child3;
+        return res;
     }
 };
 

@@ -3,7 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
-#  Video: TODO
+#  Video: https://youtu.be/z3WygSNkRLM
 
 #  You are given two arrays of integers, fruits and baskets, each of length n, where fruits[i] represents the quantity of the ith type of fruit, and baskets[j] represents the capacity of the jth basket.
 #  From left to right, place the fruits according to these rules:
@@ -47,49 +47,46 @@
 #  
 #  
 
-class segmentTree:
+class SegmentTree:
     def __init__(self, baskets: list):
         n = len(baskets)
         size = 4 * n
-        self.seg = [0 for i in range(size)]
+        self.seg = [0] * size
         self.build(baskets, 1, 0, n - 1)
 
-    def update(self, i):
-        self.seg[i] = max(self.seg[i * 2], self.seg[i * 2 + 1])
-
-    def build(self, basksets:list, i: int, l: int, r: int):
-        if l == r:
-            self.seg[i] = basksets[l]
+    def build(self, baskets: list, v: int, i: int, j: int):
+        if i == j:
+            self.seg[v] = baskets[i]
             return
 
-        m = (l + r) // 2
-        self.build(basksets, i * 2, l, m)
-        self.build(basksets, i * 2 + 1, m + 1, r)
-        self.update(i)
+        m = (i + j) // 2
+        self.build(baskets, 2 * v, i, m)
+        self.build(baskets, 2 * v + 1, m + 1, j)
+        self.seg[v] = max(self.seg[2 * v], self.seg[2 * v + 1])
 
-    def query_and_update(self, i: int, l: int, r: int, val: int) -> int:
-        if self.seg[i] < val:
+    def put(self, v: int, i: int, j: int, x: int) -> int:
+        if self.seg[v] < x:
             return -1
 
-        if l == r:
-            self.seg[i] = -1
-            return l
+        if i == j:
+            self.seg[v] = 0
+            return i
 
-        m = (l + r) // 2
-        t = self.query_and_update(2 * i, l, m, val)
-        if t == -1:
-            t = self.query_and_update(2 * i + 1, m + 1, r, val)
-        self.update(i)
+        m = (i + j) // 2
+        index = self.put(2 * v, i, m, x)
+        if index == -1:
+            index = self.put(2 * v + 1, m + 1, j, x)
 
-        return t
+        self.seg[v] = max(self.seg[2 * v], self.seg[2 * v + 1])
+        return index
 
 class Solution:
     def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:
         n = len(baskets)
-        seg = segmentTree(baskets)
+        seg = SegmentTree(baskets)
         res = 0
         for x in fruits:
-            if seg.query_and_update(1, 0, n - 1, x) == -1:
+            if seg.put(1, 0, n - 1, x) == -1:
                 res += 1
-
+            
         return res

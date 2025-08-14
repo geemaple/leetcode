@@ -3,7 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
-//  Video: TODO
+//  Video: https://youtu.be/z3WygSNkRLM
 
 //  You are given two arrays of integers, fruits and baskets, each of length n, where fruits[i] represents the quantity of the ith type of fruit, and baskets[j] represents the capacity of the jth basket.
 //  From left to right, place the fruits according to these rules:
@@ -61,34 +61,34 @@ public:
         seg[i] = max(seg[2 * i], seg[2 * i + 1]);
     }
 
-    void build(vector<int> &baskets, int i, int l, int r) {
-        if (l == r) {
-            seg[i] = baskets[l];
+    void build(vector<int> &baskets, int v, int i, int j) {
+        if (i == j) {
+            seg[v] = baskets[i];
             return;
         }
 
-        int m = (l + r) / 2;
-        build(baskets, 2 * i, l, m);
-        build(baskets, 2 * i + 1, m + 1, r);
-        update(i);
+        int m = (i + j) / 2;
+        build(baskets, 2 * v, i, m);
+        build(baskets, 2 * v + 1, m + 1, j);
+        update(v);
     }
 
-    int query_and_update(int i, int l, int r, int val) {
-        if (seg[i] < val) {
+    int query_and_update(int v, int i, int j, int val) {
+        if (seg[v] < val) {
             return -1;
         }
 
-        if (l == r) {
-            seg[i] = -1; 
-            return l;
+        if (i == j) {
+            seg[v] = -1;
+            return i;
         }
 
-        int m = (l + r) / 2;
-        int t = query_and_update(2 * i, l, m, val);
+        int m = (i + j) / 2;
+        int t = query_and_update(2 * v, i, m, val);
         if (t == -1) {
-            t = query_and_update(2 * i + 1, m + 1, r, val);
+            t = query_and_update(2 * v + 1, m + 1, j, val);
         }
-        update(i);
+        update(v);
         return t;
     }
 
