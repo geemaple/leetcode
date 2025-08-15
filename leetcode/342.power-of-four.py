@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/JOtR3Fvh2ds
 
 #  Given an integer n, return true if it is a power of four. Otherwise, return false.
 #  An integer n is a power of four, if there exists an integer x such that n == 4x.
@@ -24,6 +25,15 @@
 #  
 #   
 #  Follow up: Could you solve it without loops/recursion?
+
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        while n > 1:
+            if n % 4 != 0:
+                return False
+            n = n // 4
+
+        return n == 1
 
 class Solution:
     def isPowerOfFour(self, n: int) -> bool:
