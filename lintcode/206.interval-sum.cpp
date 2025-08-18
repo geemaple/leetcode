@@ -57,7 +57,61 @@ public:
     }
 };
 
-// Follow up
+class SegmentTree {
+public:
+    vector<long long> seg;
+    SegmentTree(vector<int> &a) {
+        int n = a.size();
+        seg.resize(4 * n);
+        build(a, 1, 0, n - 1);
+    }
+
+    void build(vector<int> &a, int v, int i, int j) {
+        if (i == j) {
+            seg[v] = a[i];
+            return;
+        }
+        int m = (i + j) / 2;
+        build(a, 2 * v, i, m);
+        build(a, 2 * v + 1, m + 1, j);
+        seg[v] = seg[2 * v] + seg[2 * v + 1];
+    }
+
+    long long query(int v, int i, int j, int l, int r) {
+        if (l > r) {
+            return 0;
+        }
+        
+        if (l == i && r == j) {
+            return seg[v];
+        }
+
+        int m = (i + j) / 2;
+        long long left = query(2 * v, i, m, l, min(m, r));
+        long long right = query(2 * v + 1, m + 1, j, max(m + 1, l), r);
+        return left + right;
+    }
+};
+
+class Solution {
+public:
+    /**
+     * @param a: An integer list
+     * @param queries: An query list
+     * @return: The result list
+     */
+    vector<long long> intervalSum(vector<int> &a, vector<Interval> &queries) {
+        // write your code here
+        int n = a.size();
+        SegmentTree seg = SegmentTree(a);
+        vector<long long> res;
+        for (auto &x: queries) {
+            res.push_back(seg.query(1, 0, n - 1, x.start, x.end));
+        }
+        return res;
+    }
+};
+
 class SegTreeNode {
 public:
     int start, end;

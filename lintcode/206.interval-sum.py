@@ -55,7 +55,50 @@ class Solution:
         
         return res
     
-# Follow up
+class segmentTree:
+    def __init__(self, a: list):
+        n = len(a)
+        self.seg = [0 for i in range(4 * n)]
+        self.build(a, 1, 0, n - 1)
+        print(self.seg)
+
+    def build(self, a: list, v: int, i: int, j: int):
+        if i == j:
+            self.seg[v] = a[i]
+            return
+
+        m = (i + j) // 2
+        self.build(a, 2 * v, i, m)
+        self.build(a, 2 * v + 1, m + 1, j)
+        self.seg[v] = self.seg[2 * v] + self.seg[2 * v + 1]
+
+    def query(self, v: int, i: int, j: int, l: int, r: int) -> int:
+        if l > r:
+            return 0
+
+        if l == i and r == j:
+            return self.seg[v]
+
+        m = (i + j) // 2
+        left = self.query(2 * v, i, m, l, min(m, r))
+        right = self.query(2 * v + 1, m + 1, j, max(m + 1, l), r)
+        return left + right
+
+class Solution:
+    """
+    @param a: An integer list
+    @param queries: An query list
+    @return: The result list
+    """
+    def interval_sum(self, a: List[int], queries: List[Interval]) -> List[int]:
+        # write your code here
+        n = len(a)
+        seg = segmentTree(a)
+        res = []
+        for x in queries:
+            res.append(seg.query(1, 0, n - 1, x.start, x.end))
+        return res
+    
 class SegmentTreeNode:
     def __init__(self, start, end):
         self.start, self.end = start, end

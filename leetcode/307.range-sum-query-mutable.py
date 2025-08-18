@@ -41,6 +41,59 @@
 #  At most 3 * 104 calls will be made to update and sumRange.
 #  
 #  
+class segmentTree:
+    def __init__(self, a: list):
+        n = len(a)
+        self.seg = [0 for i in range(4 * n)]
+        self.build(a, 1, 0, n - 1)
+        print(self.seg)
+
+    def build(self, a: list, v: int, i: int, j: int):
+        if i == j:
+            self.seg[v] = a[i]
+            return
+
+        m = (i + j) // 2
+        self.build(a, 2 * v, i, m)
+        self.build(a, 2 * v + 1, m + 1, j)
+        self.seg[v] = self.seg[2 * v] + self.seg[2 * v + 1]
+
+    def query(self, v: int, i: int, j: int, l: int, r: int) -> int:
+        if l > r:
+            return 0
+
+        if l == i and r == j:
+            return self.seg[v]
+
+        m = (i + j) // 2
+        left = self.query(2 * v, i, m, l, min(m, r))
+        right = self.query(2 * v + 1, m + 1, j, max(m + 1, l), r)
+        return left + right
+
+    def update(self, v: int, i: int, j: int, pos: int, val: int):
+        if i == j:
+            self.seg[v] = val
+            return
+
+        m = (i + j) // 2
+        if pos <= m:
+            self.update(2 * v, i, m, pos, val)
+        else:
+            self.update(2 * v + 1, m + 1, j, pos, val)
+
+        self.seg[v] = self.seg[2 * v] + self.seg[2 * v + 1]
+
+class NumArray:
+
+    def __init__(self, nums: List[int]):
+        self.n = len(nums)
+        self.seg = segmentTree(nums)
+
+    def update(self, index: int, val: int) -> None:
+        self.seg.update(1, 0, self.n - 1, index, val)        
+
+    def sumRange(self, left: int, right: int) -> int:
+        return self.seg.query(1, 0, self.n - 1, left, right)
 
 class SegmentTreeNode:
     def __init__(self, start: int, end: int, val: int):
