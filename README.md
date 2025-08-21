@@ -38,7 +38,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 | Status | List | Progress | Notes |
 | ----- | ----- | ----- | ----- |
-| [53%] | [leetcode-google.md](./list/leetcode-google.md) | 251/471 | 2 vips |
+| [53%] | [leetcode-google.md](./list/leetcode-google.md) | 252/471 | 2 vips |
 | [54%] | [leetcode-75.md](./list/leetcode-75.md) | 41/75 | - |
 | [55%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 47/85 | 1 vip |
 | [56%] | [leetcode-topics.md](./list/leetcode-topics.md) | 82/144 | - |
@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 823 problems
+**Solved**: 826 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(64) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(65) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -157,6 +157,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1040](https://leetcode.com/problems/moving-stones-until-consecutive-ii/) | Moving Stones Until Consecutive II | [c++](./leetcode/1040.moving-stones-until-consecutive-ii.cpp), [python3](./leetcode/1040.moving-stones-until-consecutive-ii.py) | Math | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Math | O\(NM\) | O\(N\+M\) | - |
 | [Leetcode-1577](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | Number Of Ways Where Square Of Number Is Equal To Product Of Two Numbers | [c++](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.cpp), [python3](./leetcode/1577.number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers.py) | Math | O\(NM\) | O\(N \+ M\) | - |
+| [Leetcode-2348](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | Number Of Zero Filled Subarrays | [c++](./leetcode/2348.number-of-zero-filled-subarrays.cpp), [python3](./leetcode/2348.number-of-zero-filled-subarrays.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-326](https://leetcode.com/problems/power-of-three/) | Power Of Three | [c++](./leetcode/326.power-of-three.cpp), [python3](./leetcode/326.power-of-three.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-50](https://leetcode.com/problems/powx-n/) | Powx N | [c++](./leetcode/50.powx-n.cpp), [python3](./leetcode/50.powx-n.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-1352](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Product Of The Last K Numbers | [c++](./leetcode/1352.product-of-the-last-k-numbers.cpp), [python3](./leetcode/1352.product-of-the-last-k-numbers.py) | Math | O\(1\) | O\(N\) | - |
@@ -429,7 +430,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(115) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(117) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -448,6 +449,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-322](https://leetcode.com/problems/coin-change/) | Coin Change | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Dynamic Programming | O\(K \* N\) | O\(N\) | - |
 | [Leetcode-518](https://leetcode.com/problems/coin-change-ii/) | Coin Change II | [c++](./leetcode/518.coin-change-ii.cpp), [python3](./leetcode/518.coin-change-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-3343](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Count Number Of Balanced Permutations | [c++](./leetcode/3343.count-number-of-balanced-permutations.cpp), [python3](./leetcode/3343.count-number-of-balanced-permutations.py) | Dynamic Programming | O\(N^3\) | O\(N^3\) | - |
+| [Leetcode-1277](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | Count Square Submatrices With All Ones | [c++](./leetcode/1277.count-square-submatrices-with-all-ones.cpp), [python3](./leetcode/1277.count-square-submatrices-with-all-ones.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
+| [Leetcode-1504](https://leetcode.com/problems/count-submatrices-with-all-ones/) | Count Submatrices With All Ones | [c++](./leetcode/1504.count-submatrices-with-all-ones.cpp), [python3](./leetcode/1504.count-submatrices-with-all-ones.py) | Dynamic Programming | O\(MN\) | O\(N\) | - |
 | [Leetcode-2338](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | Count The Number Of Ideal Arrays | [c++](./leetcode/2338.count-the-number-of-ideal-arrays.cpp), [python3](./leetcode/2338.count-the-number-of-ideal-arrays.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2999](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | Count The Number Of Powerful Integers | [c++](./leetcode/2999.count-the-number-of-powerful-integers.cpp), [python3](./leetcode/2999.count-the-number-of-powerful-integers.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-338](https://leetcode.com/problems/counting-bits/) | Counting Bits | [c++](./leetcode/338.counting-bits.cpp), [python3](./leetcode/338.counting-bits.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
@@ -531,7 +534,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-120](https://leetcode.com/problems/triangle/) | Triangle | [c++](./leetcode/120.triangle.cpp), [python3](./leetcode/120.triangle.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-62](https://leetcode.com/problems/unique-paths/) | Unique Paths | [c++](./leetcode/62.unique-paths.cpp), [python3](./leetcode/62.unique-paths.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-63](https://leetcode.com/problems/unique-paths-ii/) | Unique Paths II | [c++](./leetcode/63.unique-paths-ii.cpp), [python3](./leetcode/63.unique-paths-ii.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
-| [Leetcode-2787](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | Ways To Express An Integer As Sum Of Powers | [python3](./leetcode/2787.ways-to-express-an-integer-as-sum-of-powers.py) | Dynamic Programming | \- | \- | - |
+| [Leetcode-2787](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | Ways To Express An Integer As Sum Of Powers | [c++](./leetcode/2787.ways-to-express-an-integer-as-sum-of-powers.cpp), [python3](./leetcode/2787.ways-to-express-an-integer-as-sum-of-powers.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-376](https://leetcode.com/problems/wiggle-subsequence/) | Wiggle Subsequence | [c++](./leetcode/376.wiggle-subsequence.cpp), [python3](./leetcode/376.wiggle-subsequence.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-44](https://leetcode.com/problems/wildcard-matching/) | Wildcard Matching | [c++](./leetcode/44.wildcard-matching.cpp), [python3](./leetcode/44.wildcard-matching.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Dynamic Programming | O\(MN\) | O\(N\) | - |
@@ -946,10 +949,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Monotonic Stack
 
-| Link | Problem(11) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(12) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Monotonic Stack | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
 | [Leetcode-853](https://leetcode.com/problems/car-fleet/) | Car Fleet | [c++](./leetcode/853.car-fleet.cpp), [python3](./leetcode/853.car-fleet.py) | Monotonic Stack | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-1504](https://leetcode.com/problems/count-submatrices-with-all-ones/) | Count Submatrices With All Ones | [c++](./leetcode/1504.count-submatrices-with-all-ones.cpp), [python3](./leetcode/1504.count-submatrices-with-all-ones.py) | Monotonic Stack | O\(MN\) | O\(N\) | - |
 | [Leetcode-739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | [c++](./leetcode/739.daily-temperatures.cpp), [python3](./leetcode/739.daily-temperatures.py) | Monotonic Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-84](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Largest Rectangle In Histogram | [c++](./leetcode/84.largest-rectangle-in-histogram.cpp), [python3](./leetcode/84.largest-rectangle-in-histogram.py) | Monotonic Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Monotonic Stack | O\(N\) | O\(1\) | - |

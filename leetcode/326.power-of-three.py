@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/j_NQmPXl8XU
 
 #  Given an integer n, return true if it is a power of three. Otherwise, return false.
 #  An integer n is a power of three, if there exists an integer x such that n == 3x.
@@ -44,12 +45,21 @@ class Solution:
 
         return n == 1
 
+
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        for i in range(32):
+            tmp = 3 ** i
+            if tmp > n:
+                break
+
+            if tmp == n:
+                return True
+            
+        return False
+
 class Solution(object):
-    def isPowerOfThree(self, n):
-        """
-        :type n: int
-        :rtype: bool
-        """
+    def isPowerOfThree(self, n: int) -> bool:
         # 3 ** 19 < MAX_INT
         # 3 ** 20 > MAX_INT
         
