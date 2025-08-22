@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 826 problems
+**Solved**: 827 problems
 
 ## 类型/Category
 
@@ -1762,7 +1762,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(13) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(14) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3386](https://leetcode.com/problems/button-with-longest-push-time/) | Button With Longest Push Time | [c++](./leetcode/3386.button-with-longest-push-time.cpp), [python3](./leetcode/3386.button-with-longest-push-time.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2176](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Count Equal And Divisible Pairs In An Array | [c++](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.cpp), [python3](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.py) | Array | O\(N^2\) | O\(1\) | - |
@@ -1770,6 +1770,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3392](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | Count Subarrays Of Length Three With A Condition | [c++](./leetcode/3392.count-subarrays-of-length-three-with-a-condition.cpp), [python3](./leetcode/3392.count-subarrays-of-length-three-with-a-condition.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3285](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Find Indices Of Stable Mountains | [c++](./leetcode/3285.find-indices-of-stable-mountains.cpp), [python3](./leetcode/3285.find-indices-of-stable-mountains.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3131](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | Find The Integer Added To Array I | [c++](./leetcode/3131.find-the-integer-added-to-array-i.cpp), [python3](./leetcode/3131.find-the-integer-added-to-array-i.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-3195](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | Find The Minimum Area To Cover All Ones I | [c++](./leetcode/3195.find-the-minimum-area-to-cover-all-ones-i.cpp), [python3](./leetcode/3195.find-the-minimum-area-to-cover-all-ones-i.py) | Array | O\(NM\) | O\(N\) | - |
 | [Leetcode-2942](https://leetcode.com/problems/find-words-containing-character/) | Find Words Containing Character | [c++](./leetcode/2942.find-words-containing-character.cpp), [python3](./leetcode/2942.find-words-containing-character.py) | Array | O\(N^2\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3423](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/) | Maximum Difference Between Adjacent Elements In A Circular Array | [c++](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.cpp), [python3](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.py) | Array | O\(N\) | O\(1\) | - |
