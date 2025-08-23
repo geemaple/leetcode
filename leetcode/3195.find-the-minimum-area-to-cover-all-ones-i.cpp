@@ -1,6 +1,6 @@
 //  Tag: Array, Matrix
 //  Time: O(NM)
-//  Space: O(N)
+//  Space: O(1)
 //  Ref: -
 //  Note: -
 //  Video: https://youtu.be/3SG5bLLokOs
