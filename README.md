@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 828 problems
+**Solved**: 829 problems
 
 ## 类型/Category
 
@@ -249,7 +249,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(35) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -259,6 +259,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1920](https://leetcode.com/problems/build-array-from-permutation/) | Build Array From Permutation | [c++](./leetcode/1920.build-array-from-permutation.cpp), [python3](./leetcode/1920.build-array-from-permutation.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Leetcode-1094](https://leetcode.com/problems/car-pooling/) | Car Pooling | [c++](./leetcode/1094.car-pooling.cpp), [python3](./leetcode/1094.car-pooling.py) | Simulation | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3174](https://leetcode.com/problems/clear-digits/) | Clear Digits | [c++](./leetcode/3174.clear-digits.cpp), [python3](./leetcode/3174.clear-digits.py) | Simulation | O\(N\) | O\(N\) | - |
+| [Leetcode-498](https://leetcode.com/problems/diagonal-traverse/) | Diagonal Traverse | [c++](./leetcode/498.diagonal-traverse.cpp), [python3](./leetcode/498.diagonal-traverse.py) | Simulation | O\(NM\) | O\(1\) | - |
 | [Leetcode-2138](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | Divide A String Into Groups Of Size K | [c++](./leetcode/2138.divide-a-string-into-groups-of-size-k.cpp), [python3](./leetcode/2138.divide-a-string-into-groups-of-size-k.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Leetcode-3304](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | Find The K Th Character In String Game I | [c++](./leetcode/3304.find-the-k-th-character-in-string-game-i.cpp), [python3](./leetcode/3304.find-the-k-th-character-in-string-game-i.py) | Simulation | O\(logK\) | O\(1\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Simulation | O\(N\) | O\(N\) | - |
@@ -1763,7 +1764,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Array
 
-| Link | Problem(14) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(15) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3386](https://leetcode.com/problems/button-with-longest-push-time/) | Button With Longest Push Time | [c++](./leetcode/3386.button-with-longest-push-time.cpp), [python3](./leetcode/3386.button-with-longest-push-time.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2176](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Count Equal And Divisible Pairs In An Array | [c++](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.cpp), [python3](./leetcode/2176.count-equal-and-divisible-pairs-in-an-array.py) | Array | O\(N^2\) | O\(1\) | - |
@@ -1774,6 +1775,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3195](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | Find The Minimum Area To Cover All Ones I | [c++](./leetcode/3195.find-the-minimum-area-to-cover-all-ones-i.cpp), [python3](./leetcode/3195.find-the-minimum-area-to-cover-all-ones-i.py) | Array | O\(NM\) | O\(1\) | - |
 | [Leetcode-2942](https://leetcode.com/problems/find-words-containing-character/) | Find Words Containing Character | [c++](./leetcode/2942.find-words-containing-character.cpp), [python3](./leetcode/2942.find-words-containing-character.py) | Array | O\(N^2\) | O\(1\) | - |
 | [Leetcode-674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Longest Continuous Increasing Subsequence | [c++](./leetcode/674.longest-continuous-increasing-subsequence.cpp), [python3](./leetcode/674.longest-continuous-increasing-subsequence.py) | Array | O\(N\) | O\(1\) | - |
+| [Leetcode-3000](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/) | Maximum Area Of Longest Diagonal Rectangle | [c++](./leetcode/3000.maximum-area-of-longest-diagonal-rectangle.cpp), [python3](./leetcode/3000.maximum-area-of-longest-diagonal-rectangle.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-3423](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/) | Maximum Difference Between Adjacent Elements In A Circular Array | [c++](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.cpp), [python3](./leetcode/3423.maximum-difference-between-adjacent-elements-in-a-circular-array.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Maximum Difference Between Increasing Elements | [c++](./leetcode/2016.maximum-difference-between-increasing-elements.cpp), [python3](./leetcode/2016.maximum-difference-between-increasing-elements.py) | Array | O\(N\) | O\(1\) | - |
 | [Leetcode-665](https://leetcode.com/problems/non-decreasing-array/) | Non Decreasing Array | [c++](./leetcode/665.non-decreasing-array.cpp), [python3](./leetcode/665.non-decreasing-array.py) | Array | O\(N\) | O\(1\) | - |
@@ -1815,7 +1817,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Other
 
-| Link | Problem(94) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(93) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-454](https://leetcode.com/problems/4sum-ii/) | 4Sum II | [c++](./leetcode/454.4sum-ii.cpp) | Other | \- | \- | - |
 | [Leetcode-269](https://leetcode.com/problems/alien-dictionary/) | Alien Dictionary | [python3](./leetcode/269.alien-dictionary.py) | Other | \- | \- | - |
@@ -1835,7 +1837,6 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-138](https://leetcode.com/problems/copy-list-with-random-pointer/) | Copy List With Random Pointer | [python3](./leetcode/138.copy-list-with-random-pointer.py) | Other | \- | \- | - |
 | [Leetcode-207](https://leetcode.com/problems/course-schedule/) | Course Schedule | [c++](./leetcode/207.course-schedule.cpp), [python3](./leetcode/207.course-schedule.py) | Other | \- | \- | - |
 | [Leetcode-237](https://leetcode.com/problems/delete-node-in-a-linked-list/) | Delete Node In A Linked List | [python3](./leetcode/237.delete-node-in-a-linked-list.py) | Other | \- | \- | - |
-| [Leetcode-498](https://leetcode.com/problems/diagonal-traverse/) | Diagonal Traverse | [c++](./leetcode/498.diagonal-traverse.cpp) | Other | \- | \- | - |
 | [Leetcode-29](https://leetcode.com/problems/divide-two-integers/) | Divide Two Integers | [c++](./leetcode/29.divide-two-integers.cpp), [python3](./leetcode/29.divide-two-integers.py) | Other | \- | \- | - |
 | [Leetcode-760](https://leetcode.com/problems/find-anagram-mappings/) | Find Anagram Mappings | [python3](./leetcode/760.find-anagram-mappings.py) | Other | \- | \- | - |
 | [Leetcode-652](https://leetcode.com/problems/find-duplicate-subtrees/) | Find Duplicate Subtrees | [c++](./leetcode/652.find-duplicate-subtrees.cpp) | Other | \- | \- | - |

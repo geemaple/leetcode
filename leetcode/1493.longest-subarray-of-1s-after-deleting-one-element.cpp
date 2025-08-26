@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/YGpsuMoVo4M
 
 //  Given a binary array nums, you should delete one element from it.
 //  Return the size of the longest non-empty subarray containing only 1's in the resulting array. Return 0 if there is no such subarray.
@@ -37,36 +38,18 @@ class Solution {
 public:
     int longestSubarray(vector<int>& nums) {
         int n = nums.size();
-        vector<int> counter = {0, 0};
-        int i = 0;
         int res = 0;
+        int i = 0;
+        int count = 0;
         for (int j = 0; j < n; j++) {
-            while (nums[j] == 0 && counter[0] == 1) {
-                counter[nums[i]] -= 1;
+            count += (nums[j] == 0);
+            while (count > 1) {
+                count -= (nums[i] == 0);
                 i += 1;
             }
-            counter[nums[j]] += 1;
             res = max(res, j - i + 1);
         }
-        return res - 1;
-    }
-};
-
-class Solution {
-public:
-    int longestSubarray(vector<int>& nums) {
-        int n = nums.size();
-        int zero = 0;
-        int i = 0;
-        int res = 0;
-        for (int j = 0; j < n; j++) {
-            while (nums[j] == 0 && zero == 1) {
-                zero -= nums[i] == 0;
-                i += 1;
-            }
-            zero += nums[j] == 0;
-            res = max(res, j - i + 1);
-        }
+        
         return res - 1;
     }
 };
