@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 829 problems
+**Solved**: 832 problems
 
 ## 类型/Category
 
@@ -107,11 +107,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(65) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(66) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Math | O\(N \+ M\) | O\(1\) | - |
+| [Leetcode-3021](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | Alice And Bob Playing Flower Game | [c++](./leetcode/3021.alice-and-bob-playing-flower-game.cpp), [python3](./leetcode/3021.alice-and-bob-playing-flower-game.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Math | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
 | [Leetcode-504](https://leetcode.com/problems/base-7/) | Base 7 | [c++](./leetcode/504.base-7.cpp), [python3](./leetcode/504.base-7.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | [c++](./leetcode/224.basic-calculator.cpp), [python3](./leetcode/224.basic-calculator.py) | Math | O\(N\) | O\(N\) | - |
@@ -432,7 +433,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(117) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(118) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -481,6 +482,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1857](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | Largest Color Value In A Directed Graph | [c++](./leetcode/1857.largest-color-value-in-a-directed-graph.cpp), [python3](./leetcode/1857.largest-color-value-in-a-directed-graph.py) | Dynamic Programming | O\(N \+ M\) | O\(N \+ M\) | - |
 | [Leetcode-368](https://leetcode.com/problems/largest-divisible-subset/) | Largest Divisible Subset | [c++](./leetcode/368.largest-divisible-subset.cpp), [python3](./leetcode/368.largest-divisible-subset.py) | Dynamic Programming | O\(N^2\) | O\(N\) | - |
 | [Leetcode-873](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/) | Length Of Longest Fibonacci Subsequence | [c++](./leetcode/873.length-of-longest-fibonacci-subsequence.cpp), [python3](./leetcode/873.length-of-longest-fibonacci-subsequence.py) | Dynamic Programming | O\(N^2\) | O\(N^2\) | - |
+| [Leetcode-3459](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | Length Of Longest V Shaped Diagonal Segment | [c++](./leetcode/3459.length-of-longest-v-shaped-diagonal-segment.cpp), [python3](./leetcode/3459.length-of-longest-v-shaped-diagonal-segment.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
 | [Leetcode-2311](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/) | Longest Binary Subsequence Less Than Or Equal To K | [c++](./leetcode/2311.longest-binary-subsequence-less-than-or-equal-to-k.cpp), [python3](./leetcode/2311.longest-binary-subsequence-less-than-or-equal-to-k.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-1143](https://leetcode.com/problems/longest-common-subsequence/) | Longest Common Subsequence | [c++](./leetcode/1143.longest-common-subsequence.cpp), [python3](./leetcode/1143.longest-common-subsequence.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Longest Increasing Path In A Matrix | [c++](./leetcode/329.longest-increasing-path-in-a-matrix.cpp), [python3](./leetcode/329.longest-increasing-path-in-a-matrix.py) | Dynamic Programming | O\(NM\) | O\(NM\) | - |
@@ -835,7 +837,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum Iv Input Is A Bst | [c++](./leetcode/653.two-sum-iv-input-is-a-bst.cpp), [python3](./leetcode/653.two-sum-iv-input-is-a-bst.py) | Hash Table | O\(NH\) | O\(H\) | - |
 | [Leetcode-2434](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) | Using A Robot To Print The Lexicographically Smallest String | [c++](./leetcode/2434.using-a-robot-to-print-the-lexicographically-smallest-string.cpp), [python3](./leetcode/2434.using-a-robot-to-print-the-lexicographically-smallest-string.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | [c++](./leetcode/242.valid-anagram.cpp), [python3](./leetcode/242.valid-anagram.py) | Hash Table | O\(N\) | O\(1\) | - |
-| [Leetcode-36](https://leetcode.com/problems/valid-sudoku/) | Valid Sudoku | [c++](./leetcode/36.valid-sudoku.cpp), [python3](./leetcode/36.valid-sudoku.py) | Hash Table | O\(N^2\) | O\(N^2\) | - |
+| [Leetcode-36](https://leetcode.com/problems/valid-sudoku/) | Valid Sudoku | [c++](./leetcode/36.valid-sudoku.cpp), [python3](./leetcode/36.valid-sudoku.py) | Hash Table | O\(N^2\) | O\(N\) | - |
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Hash Table | O\(N\) | O\(K\) | - |
 | [Leetcode-139](https://leetcode.com/problems/word-break/) | Word Break | [c++](./leetcode/139.word-break.cpp), [python3](./leetcode/139.word-break.py) | Hash Table | O\(MN\) | O\(N\) | - |
 | [Leetcode-126](https://leetcode.com/problems/word-ladder-ii/) | Word Ladder II | [c++](./leetcode/126.word-ladder-ii.cpp), [python3](./leetcode/126.word-ladder-ii.py) | Hash Table | O\(\(N\*L\)^C\) | O\(N\) | - |
@@ -1239,7 +1241,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(96) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(97) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Sorting | O\(N^2\) | O\(1\) | - |
@@ -1325,6 +1327,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-922](https://leetcode.com/problems/sort-array-by-parity-ii/) | Sort Array By Parity II | [c++](./leetcode/922.sort-array-by-parity-ii.cpp), [python3](./leetcode/922.sort-array-by-parity-ii.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-75](https://leetcode.com/problems/sort-colors/) | Sort Colors | [c++](./leetcode/75.sort-colors.cpp), [python3](./leetcode/75.sort-colors.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-148](https://leetcode.com/problems/sort-list/) | Sort List | [c++](./leetcode/148.sort-list.cpp), [python3](./leetcode/148.sort-list.py) | Sorting | O\(NlogN\) | O\(logN\) | - |
+| [Leetcode-3446](https://leetcode.com/problems/sort-matrix-by-diagonals/) | Sort Matrix By Diagonals | [c++](./leetcode/3446.sort-matrix-by-diagonals.cpp), [python3](./leetcode/3446.sort-matrix-by-diagonals.py) | Sorting | O\(N^2LogN\) | O\(N\) | - |
 | [Leetcode-977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares Of A Sorted Array | [c++](./leetcode/977.squares-of-a-sorted-array.cpp), [python3](./leetcode/977.squares-of-a-sorted-array.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-1471](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | The K Strongest Values In An Array | [c++](./leetcode/1471.the-k-strongest-values-in-an-array.cpp), [python3](./leetcode/1471.the-k-strongest-values-in-an-array.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-3024](https://leetcode.com/problems/type-of-triangle/) | Type Of Triangle | [c++](./leetcode/3024.type-of-triangle.cpp), [python3](./leetcode/3024.type-of-triangle.py) | Sorting | O\(1\) | O\(1\) | - |

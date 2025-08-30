@@ -1,8 +1,9 @@
 //  Tag: Array, Hash Table, Matrix
 //  Time: O(N^2)
-//  Space: O(N^2)
+//  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/uTGP_TbEE2g
 
 //  Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 //  
@@ -54,6 +55,38 @@
 //  board[i][j] is a digit 1-9 or '.'.
 //  
 //  
+
+class Solution {
+public:
+    bool isValidSudoku(vector<vector<char>>& board) {
+        int n = board.size();
+
+        int row[9] = {0};
+        int col[9] = {0};
+        int sec[9] = {0};
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == '.') {
+                    continue;
+                }
+
+                int num = board[i][j] - '0';
+                int bit = 1 << num;
+                int k = i / 3 * 3 + j / 3;
+                if (bit & row[i] || bit & col[j] || bit & sec[k]) {
+                    return false;
+                }
+
+                row[i] |= bit;
+                col[j] |= bit;
+                sec[k] |= bit;
+            }
+        }
+
+        return true;
+    }
+};
 
 class Solution {
 public:

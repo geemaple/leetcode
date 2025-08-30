@@ -1,8 +1,9 @@
 #  Tag: Array, Hash Table, Matrix
 #  Time: O(N^2)
-#  Space: O(N^2)
+#  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/uTGP_TbEE2g
 
 #  Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 #  
@@ -58,6 +59,31 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         n = len(board)
+
+        row = [0] * n
+        col = [0] * n
+        sec = [0] * n
+
+        for i in range(n):
+            for j in range(n):
+                if board[i][j] != '.':
+                    
+                    num = ord(board[i][j]) - ord('0')
+                    bit = 1 << num
+                    s = (i // 3) * 3 + (j // 3)
+
+                    if bit & row[i] or bit & col[j] or bit & sec[s]:
+                        return False
+
+                    row[i] |= bit
+                    col[j] |= bit
+                    sec[s] |= bit
+
+        return True
+
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        n = len(board)
         row = [[False] * n for i in range(n)]
         col = [[False] * n for i in range(n)]
         zone = [[False] * n for i in range(n)]
@@ -66,8 +92,9 @@ class Solution:
             for j in range(n):
                 if board[i][j] == '.':
                     continue
-                k = i // 3 * 3 + j // 3 - 1
+                k = i // 3 * 3 + j // 3
                 number = int(board[i][j]) - 1
+
                 if row[i][number] or col[j][number] or zone[k][number]:
                     return False
 
