@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/XJ9Y4vUEplU
 
 #  Write a program to solve a Sudoku puzzle by filling the empty cells.
 #  A sudoku solution must satisfy all of the following rules:
@@ -31,6 +32,59 @@
 #  It is guaranteed that the input board has only one solution.
 #  
 #  
+
+class Solution:
+    def solveSudoku(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        n = len(board)
+        row = [0] * n
+        col = [0] * n
+        sec = [0] * n
+
+        for i in range(n):
+            for j in range(n):
+                if board[i][j] == '.':
+                    continue
+
+                num = ord(board[i][j]) - ord('0')
+                k = i // 3 * 3 + j // 3
+                bit = 1 << num
+                row[i] |= bit
+                col[j] |= bit
+                sec[k] |= bit
+
+        def dfs(i: int, j: int) -> bool:
+            if i >= n:
+                return True
+            elif j >= n:
+                return dfs(i + 1, 0)
+            elif board[i][j] != '.':
+                return dfs(i, j + 1)
+            else:
+                k = i // 3 * 3 + j // 3
+
+                for num in range(1, 10):
+                    bit = 1 << num
+                    if (bit & row[i] or bit & col[j] or bit & sec[k]):
+                        continue
+
+                    board[i][j] = str(num)
+                    row[i] |= bit
+                    col[j] |= bit
+                    sec[k] |= bit
+                    if dfs(i, j + 1):
+                        return True
+
+                    row[i] ^= bit
+                    col[j] ^= bit
+                    sec[k] ^= bit
+                    board[i][j] = '.'
+
+                return False
+
+        dfs(0, 0)
 
 class Solution:
     def solveSudoku(self, board: List[List[str]]) -> None:

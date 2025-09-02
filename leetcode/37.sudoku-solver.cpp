@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/XJ9Y4vUEplU
 
 //  Write a program to solve a Sudoku puzzle by filling the empty cells.
 //  A sudoku solution must satisfy all of the following rules:
@@ -31,6 +32,67 @@
 //  It is guaranteed that the input board has only one solution.
 //  
 //  
+
+class Solution {
+public:
+    void solveSudoku(vector<vector<char>>& board) {
+        int n = board.size();
+        vector<int> row(n, 0), col(n, 0), sec(n, 0);
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] != '.') {
+                    int num = board[i][j] - '0';
+                    int k = (i / 3) * 3 + (j / 3);
+                    int bit = 1 << num;
+                    row[i] |= bit;
+                    col[j] |= bit;
+                    sec[k] |= bit;
+                }
+            }
+        }
+
+        dfs(board, row, col, sec, 0, 0, n);
+    }
+
+    bool dfs(vector<vector<char>>& board,
+             vector<int>& row,
+             vector<int>& col,
+             vector<int>& sec,
+             int i, int j, int n) {
+        if (i >= n) {
+            return true;
+        } else if (j >= n) {
+            return dfs(board, row, col, sec, i + 1, 0, n);
+        } else if (board[i][j] != '.') {
+            return dfs(board, row, col, sec, i, j + 1, n);
+        } else {
+            int k = (i / 3) * 3 + (j / 3);
+
+            for (int num = 1; num <= 9; num++) {
+                int bit = 1 << num;
+                if ((row[i] & bit) || (col[j] & bit) || (sec[k] & bit)) {
+                    continue;
+                }
+
+                board[i][j] = '0' + num;
+                row[i] |= bit;
+                col[j] |= bit;
+                sec[k] |= bit;
+
+                if (dfs(board, row, col, sec, i, j + 1, n)) {
+                    return true;
+                }
+
+                row[i] ^= bit;
+                col[j] ^= bit;
+                sec[k] ^= bit;
+                board[i][j] = '.';
+            }
+            return false;
+        }
+    }
+};
 
 class Solution {
 public:
