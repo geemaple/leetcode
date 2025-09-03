@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 835 problems
+**Solved**: 836 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(67) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(68) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -142,6 +142,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Math | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-2269](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | Find The K Beauty Of A Number | [c++](./leetcode/2269.find-the-k-beauty-of-a-number.cpp), [python3](./leetcode/2269.find-the-k-beauty-of-a-number.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-3025](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | Find The Number Of Ways To Place People I | [c++](./leetcode/3025.find-the-number-of-ways-to-place-people-i.cpp), [python3](./leetcode/3025.find-the-number-of-ways-to-place-people-i.py) | Math | O\(N^3\) | O\(1\) | - |
+| [Leetcode-3027](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | Find The Number Of Ways To Place People II | [c++](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.cpp), [python3](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.py) | Math | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2698](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Find The Punishment Number Of An Integer | [c++](./leetcode/2698.find-the-punishment-number-of-an-integer.cpp), [python3](./leetcode/2698.find-the-punishment-number-of-an-integer.py) | Math | O\(N \* 2^K\) | O\(K\) | - |
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Math | O\(S\) | O\(1\) | - |
 | [Leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Math | O\(N\) | O\(1\) | - |
@@ -291,7 +292,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Enumeration
 
-| Link | Problem(27) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1534](https://leetcode.com/problems/count-good-triplets/) | Count Good Triplets | [c++](./leetcode/1534.count-good-triplets.cpp), [python3](./leetcode/1534.count-good-triplets.py) | Enumeration | O\(N^3\) | O\(1\) | - |
 | [Leetcode-2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | Count Number Of Maximum Bitwise Or Subsets | [c++](./leetcode/2044.count-number-of-maximum-bitwise-or-subsets.cpp), [python3](./leetcode/2044.count-number-of-maximum-bitwise-or-subsets.py) | Enumeration | O\(2^N\) | O\(N\) | - |
@@ -304,6 +305,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3403](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | Find The Lexicographically Largest String From The Box I | [c++](./leetcode/3403.find-the-lexicographically-largest-string-from-the-box-i.cpp), [python3](./leetcode/3403.find-the-lexicographically-largest-string-from-the-box-i.py) | Enumeration | O\(N\) | O\(N\) | - |
 | [Leetcode-3197](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | Find The Minimum Area To Cover All Ones II | [c++](./leetcode/3197.find-the-minimum-area-to-cover-all-ones-ii.cpp), [python3](./leetcode/3197.find-the-minimum-area-to-cover-all-ones-ii.py) | Enumeration | O\(N^2M^2\) | O\(1\) | - |
 | [Leetcode-3025](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | Find The Number Of Ways To Place People I | [c++](./leetcode/3025.find-the-number-of-ways-to-place-people-i.cpp), [python3](./leetcode/3025.find-the-number-of-ways-to-place-people-i.py) | Enumeration | O\(N^3\) | O\(1\) | - |
+| [Leetcode-3027](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | Find The Number Of Ways To Place People II | [c++](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.cpp), [python3](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.py) | Enumeration | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2094](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Finding 3 Digit Even Numbers | [c++](./leetcode/2094.finding-3-digit-even-numbers.cpp), [python3](./leetcode/2094.finding-3-digit-even-numbers.py) | Enumeration | O\(1\) | O\(1\) | - |
 | [Leetcode-2014](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | Longest Subsequence Repeated K Times | [c++](./leetcode/2014.longest-subsequence-repeated-k-times.cpp), [python3](./leetcode/2014.longest-subsequence-repeated-k-times.py) | Enumeration | O\(An\) | O\(1\) | - |
 | [Leetcode-3480](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | Maximize Subarrays After Removing One Conflicting Pair | [c++](./leetcode/3480.maximize-subarrays-after-removing-one-conflicting-pair.cpp), [python3](./leetcode/3480.maximize-subarrays-after-removing-one-conflicting-pair.py) | Enumeration | O\(N \+ M\) | O\(N\) | - |
@@ -582,7 +584,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2970](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | Count The Number Of Incremovable Subarrays I | [c++](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.cpp), [python3](./leetcode/2970.count-the-number-of-incremovable-subarrays-i.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-2972](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | Count The Number Of Incremovable Subarrays II | [c++](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.cpp), [python3](./leetcode/2972.count-the-number-of-incremovable-subarrays-ii.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-3048](https://leetcode.com/problems/earliest-second-to-mark-indices-i/) | Earliest Second To Mark Indices I | [c++](./leetcode/3048.earliest-second-to-mark-indices-i.cpp), [python3](./leetcode/3048.earliest-second-to-mark-indices-i.py) | Binary Search | O\(NlogN\) | O\(N\) | - |
-| [Leetcode-2258](https://leetcode.com/problems/escape-the-spreading-fire/) | Escape The Spreading Fire | [c++](./leetcode/2258.escape-the-spreading-fire.cpp), [python3](./leetcode/2258.escape-the-spreading-fire.py) | Binary Search | \- | \- | - |
+| [Leetcode-2258](https://leetcode.com/problems/escape-the-spreading-fire/) | Escape The Spreading Fire | [c++](./leetcode/2258.escape-the-spreading-fire.cpp), [python3](./leetcode/2258.escape-the-spreading-fire.py) | Binary Search | O\(MNlog\(MN\)\) | O\(MN\) | - |
 | [Leetcode-1901](https://leetcode.com/problems/find-a-peak-element-ii/) | Find A Peak Element II | [c++](./leetcode/1901.find-a-peak-element-ii.cpp), [python3](./leetcode/1901.find-a-peak-element-ii.py) | Binary Search | O\(N \* logM\) | O\(1\) | - |
 | [Leetcode-34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Find First And Last Position Of Element In Sorted Array | [c++](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.cpp), [python3](./leetcode/34.find-first-and-last-position-of-element-in-sorted-array.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Binary Search | O\(Log\(N \- K\)\) | O\(1\) | - |
@@ -1246,7 +1248,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(98) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(99) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Sorting | O\(N^2\) | O\(1\) | - |
@@ -1276,6 +1278,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3132](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | Find The Integer Added To Array II | [c++](./leetcode/3132.find-the-integer-added-to-array-ii.cpp), [python3](./leetcode/3132.find-the-integer-added-to-array-ii.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-3068](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/) | Find The Maximum Sum Of Node Values | [c++](./leetcode/3068.find-the-maximum-sum-of-node-values.cpp), [python3](./leetcode/3068.find-the-maximum-sum-of-node-values.py) | Sorting | O\(N\) | O\(1\) | - |
 | [Leetcode-3025](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | Find The Number Of Ways To Place People I | [c++](./leetcode/3025.find-the-number-of-ways-to-place-people-i.cpp), [python3](./leetcode/3025.find-the-number-of-ways-to-place-people-i.py) | Sorting | O\(N^3\) | O\(1\) | - |
+| [Leetcode-3027](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | Find The Number Of Ways To Place People II | [c++](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.cpp), [python3](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2094](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Finding 3 Digit Even Numbers | [c++](./leetcode/2094.finding-3-digit-even-numbers.cpp), [python3](./leetcode/2094.finding-3-digit-even-numbers.py) | Sorting | O\(1\) | O\(1\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Sorting | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-825](https://leetcode.com/problems/friends-of-appropriate-ages/) | Friends Of Appropriate Ages | [c++](./leetcode/825.friends-of-appropriate-ages.cpp), [python3](./leetcode/825.friends-of-appropriate-ages.py) | Sorting | O\(N\) | O\(1\) | - |
@@ -1453,7 +1456,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-199](https://leetcode.com/problems/binary-tree-right-side-view/) | Binary Tree Right Side View | [c++](./leetcode/199.binary-tree-right-side-view.cpp), [python3](./leetcode/199.binary-tree-right-side-view.py) | Breadth-First Search | O\(N\) | O\(W\) | - |
 | [Leetcode-322](https://leetcode.com/problems/coin-change/) | Coin Change | [c++](./leetcode/322.coin-change.cpp), [python3](./leetcode/322.coin-change.py) | Breadth-First Search | O\(K \* N\) | O\(N\) | - |
 | [Leetcode-2685](https://leetcode.com/problems/count-the-number-of-complete-components/) | Count The Number Of Complete Components | [c++](./leetcode/2685.count-the-number-of-complete-components.cpp), [python3](./leetcode/2685.count-the-number-of-complete-components.py) | Breadth-First Search | O\(E \+ V\) | O\(V\) | - |
-| [Leetcode-2258](https://leetcode.com/problems/escape-the-spreading-fire/) | Escape The Spreading Fire | [c++](./leetcode/2258.escape-the-spreading-fire.cpp), [python3](./leetcode/2258.escape-the-spreading-fire.py) | Breadth-First Search | \- | \- | - |
+| [Leetcode-2258](https://leetcode.com/problems/escape-the-spreading-fire/) | Escape The Spreading Fire | [c++](./leetcode/2258.escape-the-spreading-fire.cpp), [python3](./leetcode/2258.escape-the-spreading-fire.py) | Breadth-First Search | O\(MNlog\(MN\)\) | O\(MN\) | - |
 | [Leetcode-513](https://leetcode.com/problems/find-bottom-left-tree-value/) | Find Bottom Left Tree Value | [c++](./leetcode/513.find-bottom-left-tree-value.cpp), [python3](./leetcode/513.find-bottom-left-tree-value.py) | Breadth-First Search | O\(N\) | O\(W\) | - |
 | [Leetcode-1261](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Find Elements In A Contaminated Binary Tree | [c++](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.cpp), [python3](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.py) | Breadth-First Search | O\(N\) | O\(N\) | - |
 | [Leetcode-733](https://leetcode.com/problems/flood-fill/) | Flood Fill | [c++](./leetcode/733.flood-fill.cpp), [python3](./leetcode/733.flood-fill.py) | Breadth-First Search | O\(NM\) | O\(NM\) | - |
