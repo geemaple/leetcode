@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 836 problems
+**Solved**: 837 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(68) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(69) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -137,6 +137,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-168](https://leetcode.com/problems/excel-sheet-column-title/) | Excel Sheet Column Title | [c++](./leetcode/168.excel-sheet-column-title.cpp), [python3](./leetcode/168.excel-sheet-column-title.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-282](https://leetcode.com/problems/expression-add-operators/) | Expression Add Operators | [c++](./leetcode/282.expression-add-operators.cpp), [python3](./leetcode/282.expression-add-operators.py) | Math | O\(2^N\) | O\(N\) | - |
 | [Leetcode-172](https://leetcode.com/problems/factorial-trailing-zeroes/) | Factorial Trailing Zeroes | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python3](./leetcode/172.factorial-trailing-zeroes.py) | Math | O\(logN\) | O\(1\) | - |
+| [Leetcode-3516](https://leetcode.com/problems/find-closest-person/) | Find Closest Person | [c++](./leetcode/3516.find-closest-person.cpp), [python3](./leetcode/3516.find-closest-person.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-2965](https://leetcode.com/problems/find-missing-and-repeated-values/) | Find Missing And Repeated Values | [c++](./leetcode/2965.find-missing-and-repeated-values.cpp), [python3](./leetcode/2965.find-missing-and-repeated-values.py) | Math | O\(N^2\) | O\(N^2\) | - |
 | [Leetcode-1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Find Numbers With Even Number Of Digits | [c++](./leetcode/1295.find-numbers-with-even-number-of-digits.cpp), [python3](./leetcode/1295.find-numbers-with-even-number-of-digits.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Math | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
