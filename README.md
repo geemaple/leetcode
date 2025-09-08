@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 837 problems
+**Solved**: 841 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(69) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(71) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -123,6 +123,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2523](https://leetcode.com/problems/closest-prime-numbers-in-range/) | Closest Prime Numbers In Range | [c++](./leetcode/2523.closest-prime-numbers-in-range.cpp), [python3](./leetcode/2523.closest-prime-numbers-in-range.py) | Math | O\(NloglogN\) | O\(N\) | - |
 | [Leetcode-1290](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | Convert Binary Number In A Linked List To Integer | [c++](./leetcode/1290.convert-binary-number-in-a-linked-list-to-integer.cpp), [python3](./leetcode/1290.convert-binary-number-in-a-linked-list-to-integer.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-3280](https://leetcode.com/problems/convert-date-to-binary/) | Convert Date To Binary | [c++](./leetcode/3280.convert-date-to-binary.cpp), [python3](./leetcode/3280.convert-date-to-binary.py) | Math | O\(1\) | O\(1\) | - |
+| [Leetcode-1317](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | Convert Integer To The Sum Of Two No Zero Integers | [c++](./leetcode/1317.convert-integer-to-the-sum-of-two-no-zero-integers.cpp), [python3](./leetcode/1317.convert-integer-to-the-sum-of-two-no-zero-integers.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-1922](https://leetcode.com/problems/count-good-numbers/) | Count Good Numbers | [c++](./leetcode/1922.count-good-numbers.cpp), [python3](./leetcode/1922.count-good-numbers.py) | Math | O\(LogN\) | O\(1\) | - |
 | [Leetcode-1399](https://leetcode.com/problems/count-largest-group/) | Count Largest Group | [c++](./leetcode/1399.count-largest-group.cpp), [python3](./leetcode/1399.count-largest-group.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Math | O\(N\) | O\(N\) | - |
@@ -139,6 +140,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-172](https://leetcode.com/problems/factorial-trailing-zeroes/) | Factorial Trailing Zeroes | [c++](./leetcode/172.factorial-trailing-zeroes.cpp), [python3](./leetcode/172.factorial-trailing-zeroes.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-3516](https://leetcode.com/problems/find-closest-person/) | Find Closest Person | [c++](./leetcode/3516.find-closest-person.cpp), [python3](./leetcode/3516.find-closest-person.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-2965](https://leetcode.com/problems/find-missing-and-repeated-values/) | Find Missing And Repeated Values | [c++](./leetcode/2965.find-missing-and-repeated-values.cpp), [python3](./leetcode/2965.find-missing-and-repeated-values.py) | Math | O\(N^2\) | O\(N^2\) | - |
+| [Leetcode-1304](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | Find N Unique Integers Sum Up To Zero | [c++](./leetcode/1304.find-n-unique-integers-sum-up-to-zero.cpp), [python3](./leetcode/1304.find-n-unique-integers-sum-up-to-zero.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Find Numbers With Even Number Of Digits | [c++](./leetcode/1295.find-numbers-with-even-number-of-digits.cpp), [python3](./leetcode/1295.find-numbers-with-even-number-of-digits.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-3272](https://leetcode.com/problems/find-the-count-of-good-integers/) | Find The Count Of Good Integers | [c++](./leetcode/3272.find-the-count-of-good-integers.cpp), [python3](./leetcode/3272.find-the-count-of-good-integers.py) | Math | O\(10\*\*\(N/2\) \* NlogN\) | O\(10\*\*\(N/2\)\) | - |
 | [Leetcode-2269](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | Find The K Beauty Of A Number | [c++](./leetcode/2269.find-the-k-beauty-of-a-number.cpp), [python3](./leetcode/2269.find-the-k-beauty-of-a-number.py) | Math | O\(N\) | O\(N\) | - |
@@ -205,7 +207,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(36) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -225,7 +227,9 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [c++](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.cpp), [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Bit Manipulation | O\(2^K \* K\) | O\(2^K \* K\) | - |
 | [Leetcode-318](https://leetcode.com/problems/maximum-product-of-word-lengths/) | Maximum Product Of Word Lengths | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python3](./leetcode/318.maximum-product-of-word-lengths.py) | Bit Manipulation | O\(N^2\) | O\(N\) | - |
 | [Leetcode-3108](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | Minimum Cost Walk In Weighted Graph | [c++](./leetcode/3108.minimum-cost-walk-in-weighted-graph.cpp), [python3](./leetcode/3108.minimum-cost-walk-in-weighted-graph.py) | Bit Manipulation | O\(N \+ M\) | O\(N\) | - |
+| [Leetcode-3495](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | Minimum Operations To Make Array Elements Zero | [c++](./leetcode/3495.minimum-operations-to-make-array-elements-zero.cpp), [python3](./leetcode/3495.minimum-operations-to-make-array-elements-zero.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-3191](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | Minimum Operations To Make Binary Array Elements Equal To One I | [c++](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp), [python3](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
+| [Leetcode-2749](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Minimum Operations To Make The Integer Zero | [c++](./leetcode/2749.minimum-operations-to-make-the-integer-zero.cpp), [python3](./leetcode/2749.minimum-operations-to-make-the-integer-zero.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 | [Leetcode-2322](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | Minimum Score After Removals On A Tree | [c++](./leetcode/2322.minimum-score-after-removals-on-a-tree.cpp), [python3](./leetcode/2322.minimum-score-after-removals-on-a-tree.py) | Bit Manipulation | O\(N^2\) | O\(N\) | - |
 | [Leetcode-268](https://leetcode.com/problems/missing-number/) | Missing Number | [c++](./leetcode/268.missing-number.cpp), [python3](./leetcode/268.missing-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-476](https://leetcode.com/problems/number-complement/) | Number Complement | [c++](./leetcode/476.number-complement.cpp), [python3](./leetcode/476.number-complement.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -293,7 +297,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Enumeration
 
-| Link | Problem(28) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(29) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1534](https://leetcode.com/problems/count-good-triplets/) | Count Good Triplets | [c++](./leetcode/1534.count-good-triplets.cpp), [python3](./leetcode/1534.count-good-triplets.py) | Enumeration | O\(N^3\) | O\(1\) | - |
 | [Leetcode-2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | Count Number Of Maximum Bitwise Or Subsets | [c++](./leetcode/2044.count-number-of-maximum-bitwise-or-subsets.cpp), [python3](./leetcode/2044.count-number-of-maximum-bitwise-or-subsets.py) | Enumeration | O\(2^N\) | O\(N\) | - |
@@ -313,6 +317,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3445](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) | Maximum Difference Between Even And Odd Frequency II | [c++](./leetcode/3445.maximum-difference-between-even-and-odd-frequency-ii.cpp), [python3](./leetcode/3445.maximum-difference-between-even-and-odd-frequency-ii.py) | Enumeration | O\(N\) | O\(1\) | - |
 | [Leetcode-3411](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Maximum Subarray With Equal Products | [c++](./leetcode/3411.maximum-subarray-with-equal-products.cpp), [python3](./leetcode/3411.maximum-subarray-with-equal-products.py) | Enumeration | O\(N \* sqrt\(Num\)\) | O\(N\) | - |
 | [Leetcode-2234](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | Maximum Total Beauty Of The Gardens | [c++](./leetcode/2234.maximum-total-beauty-of-the-gardens.cpp), [python3](./leetcode/2234.maximum-total-beauty-of-the-gardens.py) | Enumeration | O\(NlogN \+ T\) | O\(1\) | - |
+| [Leetcode-2749](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Minimum Operations To Make The Integer Zero | [c++](./leetcode/2749.minimum-operations-to-make-the-integer-zero.cpp), [python3](./leetcode/2749.minimum-operations-to-make-the-integer-zero.py) | Enumeration | O\(1\) | O\(1\) | - |
 | [Leetcode-2367](https://leetcode.com/problems/number-of-arithmetic-triplets/) | Number Of Arithmetic Triplets | [c++](./leetcode/2367.number-of-arithmetic-triplets.cpp), [python3](./leetcode/2367.number-of-arithmetic-triplets.py) | Enumeration | O\(N\) | O\(1\) | - |
 | [Leetcode-2122](https://leetcode.com/problems/recover-the-original-array/) | Recover The Original Array | [c++](./leetcode/2122.recover-the-original-array.cpp), [python3](./leetcode/2122.recover-the-original-array.py) | Enumeration | O\(N^2\) | O\(1\) | - |
 | [Leetcode-869](https://leetcode.com/problems/reordered-power-of-2/) | Reordered Power Of 2 | [c++](./leetcode/869.reordered-power-of-2.cpp), [python3](./leetcode/869.reordered-power-of-2.py) | Enumeration | O\(N\) | O\(1\) | - |
