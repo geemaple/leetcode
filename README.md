@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 851 problems
+**Solved**: 855 problems
 
 ## 类型/Category
 
@@ -334,13 +334,15 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Design
 
-| Link | Problem(31) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(34) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-173](https://leetcode.com/problems/binary-search-tree-iterator/) | Binary Search Tree Iterator | [c++](./leetcode/173.binary-search-tree-iterator.cpp), [python3](./leetcode/173.binary-search-tree-iterator.py) | Design | O\(1\) | O\(H\) | - |
 | [Leetcode-2353](https://leetcode.com/problems/design-a-food-rating-system/) | Design A Food Rating System | [c++](./leetcode/2353.design-a-food-rating-system.cpp), [python3](./leetcode/2353.design-a-food-rating-system.py) | Design | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Design | O\(LogN\) | O\(N\) | - |
 | [Leetcode-211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Design Add And Search Words Data Structure | [c++](./leetcode/211.design-add-and-search-words-data-structure.cpp), [python3](./leetcode/211.design-add-and-search-words-data-structure.py) | Design | O\(26^k \* N\) | O\(LN\) | - |
+| [Leetcode-1912](https://leetcode.com/problems/design-movie-rental-system/) | Design Movie Rental System | [c++](./leetcode/1912.design-movie-rental-system.cpp), [python3](./leetcode/1912.design-movie-rental-system.py) | Design | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3484](https://leetcode.com/problems/design-spreadsheet/) | Design Spreadsheet | [c++](./leetcode/3484.design-spreadsheet.cpp), [python3](./leetcode/3484.design-spreadsheet.py) | Design | O\(N\) | O\(N\) | - |
 | [Leetcode-3408](https://leetcode.com/problems/design-task-manager/) | Design Task Manager | [c++](./leetcode/3408.design-task-manager.cpp), [python3](./leetcode/3408.design-task-manager.py) | Design | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-535](https://leetcode.com/problems/encode-and-decode-tinyurl/) | Encode And Decode Tinyurl | [c++](./leetcode/535.encode-and-decode-tinyurl.cpp), [python3](./leetcode/535.encode-and-decode-tinyurl.py) | Design | O\(1\) | O\(N\) | - |
 | [Leetcode-1261](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Find Elements In A Contaminated Binary Tree | [c++](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.cpp), [python3](./leetcode/1261.find-elements-in-a-contaminated-binary-tree.py) | Design | O\(N\) | O\(N\) | - |
@@ -348,6 +350,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1865](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Finding Pairs With A Certain Sum | [c++](./leetcode/1865.finding-pairs-with-a-certain-sum.cpp), [python3](./leetcode/1865.finding-pairs-with-a-certain-sum.py) | Design | O\(N\) | O\(N \+ M\) | - |
 | [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Design | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Design | O\(\*1\) | O\(N\) | - |
+| [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Design | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Design | O\(N\) | O\(N\) | - |
 | [Leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Design | O\(N\) | O\(L\) | - |
 | [Leetcode-380](https://leetcode.com/problems/insert-delete-getrandom-o1/) | Insert Delete Getrandom O1 | [c++](./leetcode/380.insert-delete-getrandom-o1.cpp), [python3](./leetcode/380.insert-delete-getrandom-o1.py) | Design | O\(1\) | O\(N\) | - |
@@ -585,7 +588,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(100) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(101) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-704](https://leetcode.com/problems/binary-search/) | Binary Search | [c++](./leetcode/704.binary-search.cpp), [python3](./leetcode/704.binary-search.py) | Binary Search | O\(logN\) | O\(1\) | - |
@@ -617,6 +620,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-374](https://leetcode.com/problems/guess-number-higher-or-lower/) | Guess Number Higher Or Lower | [c++](./leetcode/374.guess-number-higher-or-lower.cpp), [python3](./leetcode/374.guess-number-higher-or-lower.py) | Binary Search | O\(logN\) | O\(1\) | - |
 | [Leetcode-2560](https://leetcode.com/problems/house-robber-iv/) | House Robber IV | [c++](./leetcode/2560.house-robber-iv.cpp), [python3](./leetcode/2560.house-robber-iv.py) | Binary Search | O\(AlogN\) | O\(1\) | - |
+| [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Binary Search | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-875](https://leetcode.com/problems/koko-eating-bananas/) | Koko Eating Bananas | [c++](./leetcode/875.koko-eating-bananas.cpp), [python3](./leetcode/875.koko-eating-bananas.py) | Binary Search | O\(NlogA\) | O\(1\) | - |
 | [Leetcode-378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element In A Sorted Matrix | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python3](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | Binary Search | O\(KlogN\) | O\(N\) | - |
 | [Leetcode-2040](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/) | Kth Smallest Product Of Two Sorted Arrays | [c++](./leetcode/2040.kth-smallest-product-of-two-sorted-arrays.cpp), [python3](./leetcode/2040.kth-smallest-product-of-two-sorted-arrays.py) | Binary Search | O\(logA \* NlogM\) | O\(1\) | - |
@@ -717,7 +721,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(157) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(161) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -732,6 +736,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-525](https://leetcode.com/problems/contiguous-array/) | Contiguous Array | [c++](./leetcode/525.contiguous-array.cpp), [python3](./leetcode/525.contiguous-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2799](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | Count Complete Subarrays In An Array | [c++](./leetcode/2799.count-complete-subarrays-in-an-array.cpp), [python3](./leetcode/2799.count-complete-subarrays-in-an-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2953](https://leetcode.com/problems/count-complete-substrings/) | Count Complete Substrings | [c++](./leetcode/2953.count-complete-substrings.cpp), [python3](./leetcode/2953.count-complete-substrings.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-3005](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | Count Elements With Maximum Frequency | [c++](./leetcode/3005.count-elements-with-maximum-frequency.cpp), [python3](./leetcode/3005.count-elements-with-maximum-frequency.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1399](https://leetcode.com/problems/count-largest-group/) | Count Largest Group | [c++](./leetcode/1399.count-largest-group.cpp), [python3](./leetcode/1399.count-largest-group.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -746,6 +751,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1943](https://leetcode.com/problems/describe-the-painting/) | Describe The Painting | [c++](./leetcode/1943.describe-the-painting.cpp), [python3](./leetcode/1943.describe-the-painting.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2353](https://leetcode.com/problems/design-a-food-rating-system/) | Design A Food Rating System | [c++](./leetcode/2353.design-a-food-rating-system.cpp), [python3](./leetcode/2353.design-a-food-rating-system.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Hash Table | O\(LogN\) | O\(N\) | - |
+| [Leetcode-1912](https://leetcode.com/problems/design-movie-rental-system/) | Design Movie Rental System | [c++](./leetcode/1912.design-movie-rental-system.cpp), [python3](./leetcode/1912.design-movie-rental-system.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3484](https://leetcode.com/problems/design-spreadsheet/) | Design Spreadsheet | [c++](./leetcode/3484.design-spreadsheet.cpp), [python3](./leetcode/3484.design-spreadsheet.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-3408](https://leetcode.com/problems/design-task-manager/) | Design Task Manager | [c++](./leetcode/3408.design-task-manager.cpp), [python3](./leetcode/3408.design-task-manager.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2206](https://leetcode.com/problems/divide-array-into-equal-pairs/) | Divide Array Into Equal Pairs | [c++](./leetcode/2206.divide-array-into-equal-pairs.cpp), [python3](./leetcode/2206.divide-array-into-equal-pairs.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-535](https://leetcode.com/problems/encode-and-decode-tinyurl/) | Encode And Decode Tinyurl | [c++](./leetcode/535.encode-and-decode-tinyurl.cpp), [python3](./leetcode/535.encode-and-decode-tinyurl.py) | Hash Table | O\(1\) | O\(N\) | - |
@@ -771,6 +778,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-49](https://leetcode.com/problems/group-anagrams/) | Group Anagrams | [c++](./leetcode/49.group-anagrams.cpp), [python3](./leetcode/49.group-anagrams.py) | Hash Table | O\(NL\) | O\(N\) | - |
 | [Leetcode-846](https://leetcode.com/problems/hand-of-straights/) | Hand Of Straights | [c++](./leetcode/846.hand-of-straights.cpp), [python3](./leetcode/846.hand-of-straights.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Hash Table | O\(S\) | O\(1\) | - |
+| [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Hash Table | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie Prefix Tree | [c++](./leetcode/208.implement-trie-prefix-tree.cpp), [python3](./leetcode/208.implement-trie-prefix-tree.py) | Hash Table | O\(N\) | O\(L\) | - |
 | [Leetcode-380](https://leetcode.com/problems/insert-delete-getrandom-o1/) | Insert Delete Getrandom O1 | [c++](./leetcode/380.insert-delete-getrandom-o1.cpp), [python3](./leetcode/380.insert-delete-getrandom-o1.py) | Hash Table | O\(1\) | O\(N\) | - |
 | [Leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -997,11 +1005,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Queue
 
-| Link | Problem(7) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Queue | O\(N\) | O\(N\) | - |
 | [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Queue | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Queue | O\(\*1\) | O\(N\) | - |
+| [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Queue | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Queue | O\(N\) | O\(N\) | - |
 | [Leetcode-3191](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | Minimum Operations To Make Binary Array Elements Equal To One I | [c++](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp), [python3](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | Queue | O\(N\) | O\(1\) | - |
 | [Leetcode-2327](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Number Of People Aware Of A Secret | [c++](./leetcode/2327.number-of-people-aware-of-a-secret.cpp), [python3](./leetcode/2327.number-of-people-aware-of-a-secret.py) | Queue | O\(N\) | O\(N\) | - |
@@ -1019,13 +1028,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(46) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(47) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1094](https://leetcode.com/problems/car-pooling/) | Car Pooling | [c++](./leetcode/1094.car-pooling.cpp), [python3](./leetcode/1094.car-pooling.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-787](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | Cheapest Flights Within K Stops | [c++](./leetcode/787.cheapest-flights-within-k-stops.cpp), [python3](./leetcode/787.cheapest-flights-within-k-stops.py) | Heap | O\(ElogV\) | O\(E\+V\) | - |
 | [Leetcode-2762](https://leetcode.com/problems/continuous-subarrays/) | Continuous Subarrays | [c++](./leetcode/2762.continuous-subarrays.cpp), [python3](./leetcode/2762.continuous-subarrays.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-2353](https://leetcode.com/problems/design-a-food-rating-system/) | Design A Food Rating System | [c++](./leetcode/2353.design-a-food-rating-system.cpp), [python3](./leetcode/2353.design-a-food-rating-system.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Heap | O\(LogN\) | O\(N\) | - |
+| [Leetcode-1912](https://leetcode.com/problems/design-movie-rental-system/) | Design Movie Rental System | [c++](./leetcode/1912.design-movie-rental-system.cpp), [python3](./leetcode/1912.design-movie-rental-system.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3408](https://leetcode.com/problems/design-task-manager/) | Design Task Manager | [c++](./leetcode/3408.design-task-manager.cpp), [python3](./leetcode/3408.design-task-manager.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3286](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Find A Safe Walk Through A Grid | [c++](./leetcode/3286.find-a-safe-walk-through-a-grid.cpp), [python3](./leetcode/3286.find-a-safe-walk-through-a-grid.py) | Heap | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-658](https://leetcode.com/problems/find-k-closest-elements/) | Find K Closest Elements | [c++](./leetcode/658.find-k-closest-elements.cpp), [python3](./leetcode/658.find-k-closest-elements.py) | Heap | O\(Log\(N \- K\)\) | O\(1\) | - |
@@ -1397,9 +1407,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Counting
 
-| Link | Problem(29) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(30) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Counting | \- | \- | - |
+| [Leetcode-3005](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | Count Elements With Maximum Frequency | [c++](./leetcode/3005.count-elements-with-maximum-frequency.cpp), [python3](./leetcode/3005.count-elements-with-maximum-frequency.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-2206](https://leetcode.com/problems/divide-array-into-equal-pairs/) | Divide Array Into Equal Pairs | [c++](./leetcode/2206.divide-array-into-equal-pairs.cpp), [python3](./leetcode/2206.divide-array-into-equal-pairs.py) | Counting | O\(N\) | O\(N\) | - |
 | [Leetcode-1394](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | Find Lucky Integer In An Array | [c++](./leetcode/1394.find-lucky-integer-in-an-array.cpp), [python3](./leetcode/1394.find-lucky-integer-in-an-array.py) | Counting | O\(N\) | O\(N\) | - |
@@ -1690,16 +1701,18 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Ordered Set
 
-| Link | Problem(15) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-220](https://leetcode.com/problems/contains-duplicate-iii/) | Contains Duplicate III | [c++](./leetcode/220.contains-duplicate-iii.cpp), [python3](./leetcode/220.contains-duplicate-iii.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-2762](https://leetcode.com/problems/continuous-subarrays/) | Continuous Subarrays | [c++](./leetcode/2762.continuous-subarrays.cpp), [python3](./leetcode/2762.continuous-subarrays.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-2179](https://leetcode.com/problems/count-good-triplets-in-an-array/) | Count Good Triplets In An Array | [c++](./leetcode/2179.count-good-triplets-in-an-array.cpp), [python3](./leetcode/2179.count-good-triplets-in-an-array.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2353](https://leetcode.com/problems/design-a-food-rating-system/) | Design A Food Rating System | [c++](./leetcode/2353.design-a-food-rating-system.cpp), [python3](./leetcode/2353.design-a-food-rating-system.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Ordered Set | O\(LogN\) | O\(N\) | - |
+| [Leetcode-1912](https://leetcode.com/problems/design-movie-rental-system/) | Design Movie Rental System | [c++](./leetcode/1912.design-movie-rental-system.cpp), [python3](./leetcode/1912.design-movie-rental-system.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3408](https://leetcode.com/problems/design-task-manager/) | Design Task Manager | [c++](./leetcode/3408.design-task-manager.cpp), [python3](./leetcode/3408.design-task-manager.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3477](https://leetcode.com/problems/fruits-into-baskets-ii/) | Fruits Into Baskets II | [c++](./leetcode/3477.fruits-into-baskets-ii.cpp), [python3](./leetcode/3477.fruits-into-baskets-ii.py) | Ordered Set | O\(N^2\) | O\(1\) | - |
 | [Leetcode-3479](https://leetcode.com/problems/fruits-into-baskets-iii/) | Fruits Into Baskets III | [c++](./leetcode/3479.fruits-into-baskets-iii.cpp), [python3](./leetcode/3479.fruits-into-baskets-iii.py) | Ordered Set | O\(NLogN\) | O\(N\) | - |
+| [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Ordered Set | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-1438](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit | [c++](./leetcode/1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.cpp), [python3](./leetcode/1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-895](https://leetcode.com/problems/maximum-frequency-stack/) | Maximum Frequency Stack | [c++](./leetcode/895.maximum-frequency-stack.cpp), [python3](./leetcode/895.maximum-frequency-stack.py) | Ordered Set | O\(1\) | O\(N\) | - |
 | [Leetcode-729](https://leetcode.com/problems/my-calendar-i/) | My Calendar I | [c++](./leetcode/729.my-calendar-i.cpp), [python3](./leetcode/729.my-calendar-i.py) | Ordered Set | O\(LogN\) | O\(N\) | - |
