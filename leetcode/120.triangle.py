@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/cQKJpyKC3JI
 
 #  Given a triangle array, return the minimum path sum from top to bottom.
 #  For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
@@ -37,14 +38,11 @@
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         n = len(triangle)
-        m = len(triangle[-1])
+        for i in range(n - 1, 0, -1):
+            for j in range(i):
+                triangle[i - 1][j] += min(triangle[i][j], triangle[i][j + 1]) 
 
-        dp = list(triangle[-1])
-        for i in range(n - 2, -1, -1):
-            for j in range(len(triangle[i])):
-                dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
-
-        return dp[0]
+        return triangle[0][0]
         
 # DP top-down O(N^2)
 class Solution(object):

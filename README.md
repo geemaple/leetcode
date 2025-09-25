@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 855 problems
+**Solved**: 857 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(73) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(74) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -147,6 +147,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3025](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | Find The Number Of Ways To Place People I | [c++](./leetcode/3025.find-the-number-of-ways-to-place-people-i.cpp), [python3](./leetcode/3025.find-the-number-of-ways-to-place-people-i.py) | Math | O\(N^3\) | O\(1\) | - |
 | [Leetcode-3027](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | Find The Number Of Ways To Place People II | [c++](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.cpp), [python3](./leetcode/3027.find-the-number-of-ways-to-place-people-ii.py) | Math | O\(N^2\) | O\(1\) | - |
 | [Leetcode-2698](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Find The Punishment Number Of An Integer | [c++](./leetcode/2698.find-the-punishment-number-of-an-integer.cpp), [python3](./leetcode/2698.find-the-punishment-number-of-an-integer.py) | Math | O\(N \* 2^K\) | O\(K\) | - |
+| [Leetcode-166](https://leetcode.com/problems/fraction-to-recurring-decimal/) | Fraction To Recurring Decimal | [c++](./leetcode/166.fraction-to-recurring-decimal.cpp), [python3](./leetcode/166.fraction-to-recurring-decimal.py) | Math | O\(D\) | O\(D\) | - |
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Math | O\(S\) | O\(1\) | - |
 | [Leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
@@ -721,7 +722,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(161) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(162) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -774,6 +775,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1865](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Finding Pairs With A Certain Sum | [c++](./leetcode/1865.finding-pairs-with-a-certain-sum.cpp), [python3](./leetcode/1865.finding-pairs-with-a-certain-sum.py) | Hash Table | O\(N\) | O\(N \+ M\) | - |
 | [Leetcode-41](https://leetcode.com/problems/first-missing-positive/) | First Missing Positive | [c++](./leetcode/41.first-missing-positive.cpp), [python3](./leetcode/41.first-missing-positive.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-166](https://leetcode.com/problems/fraction-to-recurring-decimal/) | Fraction To Recurring Decimal | [c++](./leetcode/166.fraction-to-recurring-decimal.cpp), [python3](./leetcode/166.fraction-to-recurring-decimal.py) | Hash Table | O\(D\) | O\(D\) | - |
 | [Leetcode-904](https://leetcode.com/problems/fruit-into-baskets/) | Fruit Into Baskets | [c++](./leetcode/904.fruit-into-baskets.cpp), [python3](./leetcode/904.fruit-into-baskets.py) | Hash Table | O\(N\) | O\(1\) | - |
 | [Leetcode-49](https://leetcode.com/problems/group-anagrams/) | Group Anagrams | [c++](./leetcode/49.group-anagrams.cpp), [python3](./leetcode/49.group-anagrams.py) | Hash Table | O\(NL\) | O\(N\) | - |
 | [Leetcode-846](https://leetcode.com/problems/hand-of-straights/) | Hand Of Straights | [c++](./leetcode/846.hand-of-straights.cpp), [python3](./leetcode/846.hand-of-straights.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
@@ -1080,7 +1082,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Two Pointers
 
-| Link | Problem(100) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(101) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Two Pointers | O\(N^2\) | O\(1\) | - |
@@ -1093,6 +1095,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-844](https://leetcode.com/problems/backspace-string-compare/) | Backspace String Compare | [c++](./leetcode/844.backspace-string-compare.cpp), [python3](./leetcode/844.backspace-string-compare.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-948](https://leetcode.com/problems/bag-of-tokens/) | Bag Of Tokens | [c++](./leetcode/948.bag-of-tokens.cpp), [python3](./leetcode/948.bag-of-tokens.py) | Two Pointers | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1023](https://leetcode.com/problems/camelcase-matching/) | Camelcase Matching | [c++](./leetcode/1023.camelcase-matching.cpp), [python3](./leetcode/1023.camelcase-matching.py) | Two Pointers | O\(NM\) | O\(1\) | - |
+| [Leetcode-165](https://leetcode.com/problems/compare-version-numbers/) | Compare Version Numbers | [c++](./leetcode/165.compare-version-numbers.cpp), [python3](./leetcode/165.compare-version-numbers.py) | Two Pointers | O\(N \+ M\) | O\(1\) | - |
 | [Leetcode-11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | [c++](./leetcode/11.container-with-most-water.cpp), [python3](./leetcode/11.container-with-most-water.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-696](https://leetcode.com/problems/count-binary-substrings/) | Count Binary Substrings | [c++](./leetcode/696.count-binary-substrings.cpp), [python3](./leetcode/696.count-binary-substrings.py) | Two Pointers | O\(N\) | O\(1\) | - |
 | [Leetcode-1782](https://leetcode.com/problems/count-pairs-of-nodes/) | Count Pairs Of Nodes | [c++](./leetcode/1782.count-pairs-of-nodes.cpp), [python3](./leetcode/1782.count-pairs-of-nodes.py) | Two Pointers | O\(VlogV \+ E\) | O\(V \+ E\) | - |

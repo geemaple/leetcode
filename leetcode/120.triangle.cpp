@@ -3,6 +3,7 @@
 //  Space: O(N)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/cQKJpyKC3JI
 
 //  Given a triangle array, return the minimum path sum from top to bottom.
 //  For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
@@ -38,15 +39,14 @@ class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
         int n = triangle.size();
-        vector<int> dp = triangle.back();
 
-        for (int i = n - 2; i >= 0; i--) {
-            for (int j = 0; j < triangle[i].size(); j++) {
-                dp[j] = triangle[i][j] + min(dp[j], dp[j + 1]);
+        for (int i = n - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                triangle[i - 1][j] += min(triangle[i][j], triangle[i][j + 1]);
             }
         }
 
-        return dp[0];
+        return triangle[0][0];
     }
 };
 
