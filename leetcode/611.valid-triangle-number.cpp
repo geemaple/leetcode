@@ -3,6 +3,7 @@
 //  Space: O(1)
 //  Ref: -
 //  Note: -
+//  Video: https://youtu.be/bk7wSRuKgco
 
 //  Given an integer array nums, return the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
 //   
@@ -44,6 +45,22 @@ public:
                 } else {
                     l += 1;
                 }
+            }
+        }
+        return res;
+    }
+};
+
+class Solution {
+public:
+    int triangleNumber(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int k = lower_bound(nums.begin(), nums.end(), nums[i] + nums[j]) - nums.begin();
+                res += max(0, k - j - 1);
             }
         }
         return res;

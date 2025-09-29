@@ -41,7 +41,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [53%] | [leetcode-google.md](./list/leetcode-google.md) | 253/471 | 2 vips |
 | [54%] | [leetcode-75.md](./list/leetcode-75.md) | 41/75 | - |
 | [55%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 47/85 | 1 vip |
-| [56%] | [leetcode-topics.md](./list/leetcode-topics.md) | 82/144 | - |
+| [57%] | [leetcode-topics.md](./list/leetcode-topics.md) | 83/144 | - |
 | [72%] | [test.md](./list/test.md) | 151/207 | 6 vips |
 | [88%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 133/150 | - |
 | [95%] | [neetcode150.md](./list/neetcode150.md) | 143/150 | - |
@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 857 problems
+**Solved**: 860 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(74) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(76) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -151,6 +151,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-202](https://leetcode.com/problems/happy-number/) | Happy Number | [c++](./leetcode/202.happy-number.cpp), [python3](./leetcode/202.happy-number.py) | Math | O\(S\) | O\(1\) | - |
 | [Leetcode-12](https://leetcode.com/problems/integer-to-roman/) | Integer To Roman | [c++](./leetcode/12.integer-to-roman.cpp), [python3](./leetcode/12.integer-to-roman.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Math | O\(NlogN\) | O\(K\) | - |
+| [Leetcode-976](https://leetcode.com/problems/largest-perimeter-triangle/) | Largest Perimeter Triangle | [c++](./leetcode/976.largest-perimeter-triangle.cpp), [python3](./leetcode/976.largest-perimeter-triangle.py) | Math | \- | \- | - |
+| [Leetcode-812](https://leetcode.com/problems/largest-triangle-area/) | Largest Triangle Area | [c++](./leetcode/812.largest-triangle-area.cpp), [python3](./leetcode/812.largest-triangle-area.py) | Math | O\(N^3\) | O\(1\) | - |
 | [Leetcode-1432](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | Max Difference You Can Get From Changing An Integer | [c++](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.cpp), [python3](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-149](https://leetcode.com/problems/max-points-on-a-line/) | Max Points On A Line | [c++](./leetcode/149.max-points-on-a-line.cpp), [python3](./leetcode/149.max-points-on-a-line.py) | Math | O\(N^2\) | O\(N\) | - |
 | [Leetcode-1323](https://leetcode.com/problems/maximum-69-number/) | Maximum 69 Number | [c++](./leetcode/1323.maximum-69-number.cpp), [python3](./leetcode/1323.maximum-69-number.py) | Math | O\(1\) | O\(1\) | - |
@@ -374,7 +376,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(75) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(76) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2486](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | Append Characters To String To Make Subsequence | [c++](./leetcode/2486.append-characters-to-string-to-make-subsequence.cpp), [python3](./leetcode/2486.append-characters-to-string-to-make-subsequence.py) | Greedy | O\(N\) | O\(1\) | - |
@@ -397,6 +399,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-846](https://leetcode.com/problems/hand-of-straights/) | Hand Of Straights | [c++](./leetcode/846.hand-of-straights.cpp), [python3](./leetcode/846.hand-of-straights.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-55](https://leetcode.com/problems/jump-game/) | Jump Game | [c++](./leetcode/55.jump-game.cpp), [python3](./leetcode/55.jump-game.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-179](https://leetcode.com/problems/largest-number/) | Largest Number | [c++](./leetcode/179.largest-number.cpp), [python3](./leetcode/179.largest-number.py) | Greedy | O\(NlogN \* K\) | O\(N\) | - |
+| [Leetcode-976](https://leetcode.com/problems/largest-perimeter-triangle/) | Largest Perimeter Triangle | [c++](./leetcode/976.largest-perimeter-triangle.cpp), [python3](./leetcode/976.largest-perimeter-triangle.py) | Greedy | \- | \- | - |
 | [Leetcode-860](https://leetcode.com/problems/lemonade-change/) | Lemonade Change | [c++](./leetcode/860.lemonade-change.cpp), [python3](./leetcode/860.lemonade-change.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-3170](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | Lexicographically Minimum String After Removing Stars | [c++](./leetcode/3170.lexicographically-minimum-string-after-removing-stars.cpp), [python3](./leetcode/3170.lexicographically-minimum-string-after-removing-stars.py) | Greedy | O\(NLogN\) | O\(N\) | - |
 | [Leetcode-2311](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/) | Longest Binary Subsequence Less Than Or Equal To K | [c++](./leetcode/2311.longest-binary-subsequence-less-than-or-equal-to-k.cpp), [python3](./leetcode/2311.longest-binary-subsequence-less-than-or-equal-to-k.py) | Greedy | O\(N\) | O\(1\) | - |
@@ -454,7 +457,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(119) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(120) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -531,6 +534,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1888](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Minimum Number Of Flips To Make The Binary String Alternating | [c++](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.cpp), [python3](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-1326](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | Minimum Number Of Taps To Open To Water A Garden | [c++](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.cpp), [python3](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | [c++](./leetcode/64.minimum-path-sum.cpp), [python3](./leetcode/64.minimum-path-sum.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
+| [Leetcode-1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | Minimum Score Triangulation Of Polygon | [c++](./leetcode/1039.minimum-score-triangulation-of-polygon.cpp), [python3](./leetcode/1039.minimum-score-triangulation-of-polygon.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | - |
 | [Leetcode-837](https://leetcode.com/problems/new-21-game/) | New 21 Game | [c++](./leetcode/837.new-21-game.cpp), [python3](./leetcode/837.new-21-game.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Dynamic Programming | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2327](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Number Of People Aware Of A Secret | [c++](./leetcode/2327.number-of-people-aware-of-a-secret.cpp), [python3](./leetcode/2327.number-of-people-aware-of-a-secret.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
@@ -1285,7 +1289,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sorting
 
-| Link | Problem(100) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(101) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-15](https://leetcode.com/problems/3sum/) | 3Sum | [c++](./leetcode/15.3sum.cpp), [python3](./leetcode/15.3sum.py) | Sorting | O\(N^2\) | O\(1\) | - |
 | [Leetcode-16](https://leetcode.com/problems/3sum-closest/) | 3Sum Closest | [c++](./leetcode/16.3sum-closest.cpp), [python3](./leetcode/16.3sum-closest.py) | Sorting | O\(N^2\) | O\(1\) | - |
@@ -1326,6 +1330,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element In A Sorted Matrix | [c++](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.cpp), [python3](./leetcode/378.kth-smallest-element-in-a-sorted-matrix.py) | Sorting | O\(KlogN\) | O\(N\) | - |
 | [Leetcode-368](https://leetcode.com/problems/largest-divisible-subset/) | Largest Divisible Subset | [c++](./leetcode/368.largest-divisible-subset.cpp), [python3](./leetcode/368.largest-divisible-subset.py) | Sorting | O\(N^2\) | O\(N\) | - |
 | [Leetcode-179](https://leetcode.com/problems/largest-number/) | Largest Number | [c++](./leetcode/179.largest-number.cpp), [python3](./leetcode/179.largest-number.py) | Sorting | O\(NlogN \* K\) | O\(N\) | - |
+| [Leetcode-976](https://leetcode.com/problems/largest-perimeter-triangle/) | Largest Perimeter Triangle | [c++](./leetcode/976.largest-perimeter-triangle.cpp), [python3](./leetcode/976.largest-perimeter-triangle.py) | Sorting | \- | \- | - |
 | [Leetcode-522](https://leetcode.com/problems/longest-uncommon-subsequence-ii/) | Longest Uncommon Subsequence II | [c++](./leetcode/522.longest-uncommon-subsequence-ii.cpp), [python3](./leetcode/522.longest-uncommon-subsequence-ii.py) | Sorting | O\(N^2\) | O\(N\) | - |
 | [Leetcode-524](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) | Longest Word In Dictionary Through Deleting | [c++](./leetcode/524.longest-word-in-dictionary-through-deleting.cpp), [python3](./leetcode/524.longest-word-in-dictionary-through-deleting.py) | Sorting | O\(NlogN \+ NM\) | O\(1\) | - |
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Sorting | O\(N\) | O\(1\) | - |

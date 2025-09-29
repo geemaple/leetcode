@@ -3,6 +3,7 @@
 #  Space: O(1)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/bk7wSRuKgco
 
 #  Given an integer array nums, return the number of triplets chosen from the array that can make triangles if we take them as side lengths of a triangle.
 #   
@@ -43,4 +44,17 @@ class Solution:
                 else:
                     l += 1
                 
+        return res
+
+import bisect
+class Solution:
+    def triangleNumber(self, nums: List[int]) -> int:
+        res = 0
+        n = len(nums)
+        nums.sort()
+        for i in range(n):
+            for j in range(i + 1, n):
+                k = bisect.bisect_left(nums, nums[i] + nums[j])
+                res += max(0, k - j - 1)
+
         return res
