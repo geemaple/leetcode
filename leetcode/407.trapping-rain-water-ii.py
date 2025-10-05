@@ -3,6 +3,7 @@
 #  Space: O(N)
 #  Ref: -
 #  Note: -
+#  Video: https://youtu.be/v_pHAOp1Fzc
 
 #  Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining.
 #   
@@ -36,31 +37,31 @@ class Solution:
     def trapRainWater(self, heightMap: List[List[int]]) -> int:
         n = len(heightMap)
         m = len(heightMap[0])
+
+        visited = [[False] * m for i in range(n)]
         heap = []
-
-        visited = set()
-        for i in range(n):
-            heapq.heappush(heap, (heightMap[i][0], (i , 0)))
-            heapq.heappush(heap, (heightMap[i][m - 1], (i, m - 1)))
-            visited.add((i, 0))
-            visited.add((i, m - 1))
-
         for j in range(m):
-            heapq.heappush(heap, (heightMap[0][j], (0, j)))
-            heapq.heappush(heap, (heightMap[n - 1][j], (n - 1, j)))
-            visited.add((0, j))
-            visited.add((n - 1, j))
+            heapq.heappush(heap, (heightMap[0][j], 0, j))
+            heapq.heappush(heap, (heightMap[n - 1][j], n - 1, j))
+            visited[0][j] = True
+            visited[n - 1][j] = True
 
-        res = 0
+        for i in range(n):
+            heapq.heappush(heap, (heightMap[i][0], i, 0))
+            heapq.heappush(heap, (heightMap[i][m - 1], i, m - 1))
+            visited[i][0] = True
+            visited[i][m - 1] = True
+
         directions = [-1, 0, 1, 0, -1]
+        res = 0
         while len(heap) > 0:
-            h, (i, j) = heapq.heappop(heap)
-            for d in range(4):
-                x = i + directions[d]
-                y = j + directions[d + 1]
-                if 0 <= x < n and 0 <= y < m and (x, y) not in visited:
-                    visited.add((x, y))
-                    heapq.heappush(heap, (max(h, heightMap[x][y]), (x, y)))
-                    res += max(0, h - heightMap[x][y])
+            h, x, y = heapq.heappop(heap)
+            for i in range(4):
+                dx = x + directions[i]
+                dy = y + directions[i + 1]
+                if 0 <= dx < n and 0 <= dy < m and not visited[dx][dy]:
+                    visited[dx][dy] = True
+                    res += max(0, h - heightMap[dx][dy])
+                    heapq.heappush(heap, (max(h, heightMap[dx][dy]), dx, dy))
 
         return res

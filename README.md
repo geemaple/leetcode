@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 862 problems
+**Solved**: 863 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(78) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(79) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -186,6 +186,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Math | O\(logN\) | O\(1\) | - |
 | [Leetcode-3227](https://leetcode.com/problems/vowels-game-in-a-string/) | Vowels Game In A String | [c++](./leetcode/3227.vowels-game-in-a-string.cpp), [python3](./leetcode/3227.vowels-game-in-a-string.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-1518](https://leetcode.com/problems/water-bottles/) | Water Bottles | [c++](./leetcode/1518.water-bottles.cpp), [python3](./leetcode/1518.water-bottles.py) | Math | O\(LogN\) | O\(1\) | - |
+| [Leetcode-3100](https://leetcode.com/problems/water-bottles-ii/) | Water Bottles II | [c++](./leetcode/3100.water-bottles-ii.cpp), [python3](./leetcode/3100.water-bottles-ii.py) | Math | O\(LogN\) | O\(1\) | - |
 | [Lintcode-654](https://www.lintcode.com/problem/sparse-matrix-multiplication/) | Sparse Matrix Multiplication | [c++](./lintcode/654.sparse-matrix-multiplication.cpp), [python3](./lintcode/654.sparse-matrix-multiplication.py) | Math | O\(NMK\) | O\(NM\) | Leetcode-311 |
 
 ## Probability
@@ -265,7 +266,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(38) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(39) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -290,6 +291,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape The Matrix | [c++](./leetcode/566.reshape-the-matrix.cpp), [python3](./leetcode/566.reshape-the-matrix.py) | Simulation | O\(MN\) | O\(1\) | - |
 | [Leetcode-874](https://leetcode.com/problems/walking-robot-simulation/) | Walking Robot Simulation | [c++](./leetcode/874.walking-robot-simulation.cpp), [python3](./leetcode/874.walking-robot-simulation.py) | Simulation | O\(N\) | O\(K\) | - |
 | [Leetcode-1518](https://leetcode.com/problems/water-bottles/) | Water Bottles | [c++](./leetcode/1518.water-bottles.cpp), [python3](./leetcode/1518.water-bottles.py) | Simulation | O\(LogN\) | O\(1\) | - |
+| [Leetcode-3100](https://leetcode.com/problems/water-bottles-ii/) | Water Bottles II | [c++](./leetcode/3100.water-bottles-ii.cpp), [python3](./leetcode/3100.water-bottles-ii.py) | Simulation | O\(LogN\) | O\(1\) | - |
 | [Leetcode-2079](https://leetcode.com/problems/watering-plants/) | Watering Plants | [c++](./leetcode/2079.watering-plants.cpp), [python3](./leetcode/2079.watering-plants.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Leetcode-2105](https://leetcode.com/problems/watering-plants-ii/) | Watering Plants II | [c++](./leetcode/2105.watering-plants-ii.cpp), [python3](./leetcode/2105.watering-plants-ii.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Lintcode-849](https://www.lintcode.com/problem/basic-calculator-iii/) | Basic Calculator III | [c++](./lintcode/849.basic-calculator-iii.cpp), [python3](./lintcode/849.basic-calculator-iii.py) | Simulation | O\(N\) | O\(1\) | Leetcode-772 |
