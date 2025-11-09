@@ -42,7 +42,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [55%] | [leetcode-discuss.md](./list/leetcode-discuss.md) | 47/85 | 1 vip |
 | [56%] | [leetcode-75.md](./list/leetcode-75.md) | 42/75 | - |
 | [58%] | [leetcode-topics.md](./list/leetcode-topics.md) | 84/144 | - |
-| [73%] | [test.md](./list/test.md) | 153/207 | 6 vips |
+| [74%] | [test.md](./list/test.md) | 154/207 | 6 vips |
 | [88%] | [leetcode-top-interview-150.md](./list/leetcode-top-interview-150.md) | 133/150 | - |
 | [95%] | [neetcode150.md](./list/neetcode150.md) | 143/150 | - |
 | [✅] | [9c-advanced.md](./list/9c-advanced.md) | 75/93 | 18 vips |
@@ -59,7 +59,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [🔲] | [endlesscheng.md](./list/endlesscheng.md) | 165/2214 | 6 vips |
 | [🔲] | [leetcode-trending.md](./list/leetcode-trending.md) | 0/21 | - |
 
-**Solved**: 883 problems
+**Solved**: 896 problems
 
 ## 类型/Category
 
@@ -107,7 +107,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Math
 
-| Link | Problem(84) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(86) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-679](https://leetcode.com/problems/24-game/) | 24 Game | [c++](./leetcode/679.24-game.cpp), [python3](./leetcode/679.24-game.py) | Math | O\(4！ \* 4 ^ 3\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Math | O\(N\) | O\(1\) | - |
@@ -130,6 +130,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1399](https://leetcode.com/problems/count-largest-group/) | Count Largest Group | [c++](./leetcode/1399.count-largest-group.cpp), [python3](./leetcode/1399.count-largest-group.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-2364](https://leetcode.com/problems/count-number-of-bad-pairs/) | Count Number Of Bad Pairs | [c++](./leetcode/2364.count-number-of-bad-pairs.cpp), [python3](./leetcode/2364.count-number-of-bad-pairs.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-1248](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Count Number Of Nice Subarrays | [c++](./leetcode/1248.count-number-of-nice-subarrays.cpp), [python3](./leetcode/1248.count-number-of-nice-subarrays.py) | Math | O\(N\) | O\(1\) | - |
+| [Leetcode-2169](https://leetcode.com/problems/count-operations-to-obtain-zero/) | Count Operations To Obtain Zero | [c++](./leetcode/2169.count-operations-to-obtain-zero.cpp), [python3](./leetcode/2169.count-operations-to-obtain-zero.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-204](https://leetcode.com/problems/count-primes/) | Count Primes | [c++](./leetcode/204.count-primes.cpp), [python3](./leetcode/204.count-primes.py) | Math | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2843](https://leetcode.com/problems/count-symmetric-integers/) | Count Symmetric Integers | [c++](./leetcode/2843.count-symmetric-integers.cpp), [python3](./leetcode/2843.count-symmetric-integers.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-3405](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | Count The Number Of Arrays With K Matching Adjacent Elements | [c++](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.cpp), [python3](./leetcode/3405.count-the-number-of-arrays-with-k-matching-adjacent-elements.py) | Math | O\(N\) | O\(N\) | - |
@@ -186,6 +187,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-69](https://leetcode.com/problems/sqrtx/) | Sqrtx | [c++](./leetcode/69.sqrtx.cpp), [python3](./leetcode/69.sqrtx.py) | Math | N\(logN\) | O\(1\) | - |
 | [Leetcode-2081](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | Sum Of K Mirror Numbers | [c++](./leetcode/2081.sum-of-k-mirror-numbers.cpp), [python3](./leetcode/2081.sum-of-k-mirror-numbers.py) | Math | O\(N\) | O\(1\) | - |
 | [Leetcode-633](https://leetcode.com/problems/sum-of-square-numbers/) | Sum Of Square Numbers | [c++](./leetcode/633.sum-of-square-numbers.cpp), [python3](./leetcode/633.sum-of-square-numbers.py) | Math | O\(N\) | O\(1\) | - |
+| [Leetcode-3289](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | The Two Sneaky Numbers Of Digitville | [c++](./leetcode/3289.the-two-sneaky-numbers-of-digitville.cpp), [python3](./leetcode/3289.the-two-sneaky-numbers-of-digitville.py) | Math | O\(N\) | O\(N\) | - |
 | [Leetcode-3024](https://leetcode.com/problems/type-of-triangle/) | Type Of Triangle | [c++](./leetcode/3024.type-of-triangle.cpp), [python3](./leetcode/3024.type-of-triangle.py) | Math | O\(1\) | O\(1\) | - |
 | [Leetcode-263](https://leetcode.com/problems/ugly-number/) | Ugly Number | [c++](./leetcode/263.ugly-number.cpp), [python3](./leetcode/263.ugly-number.py) | Math | O\(k\) | O\(1\) | - |
 | [Leetcode-367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | [c++](./leetcode/367.valid-perfect-square.cpp), [python3](./leetcode/367.valid-perfect-square.py) | Math | O\(logN\) | O\(1\) | - |
@@ -223,7 +225,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Bit Manipulation
 
-| Link | Problem(37) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(39) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Bit Manipulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-693](https://leetcode.com/problems/binary-number-with-alternating-bits/) | Binary Number With Alternating Bits | [c++](./leetcode/693.binary-number-with-alternating-bits.cpp), [python3](./leetcode/693.binary-number-with-alternating-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -244,6 +246,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3283](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Maximum Number Of Moves To Kill All Pawns | [c++](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.cpp), [python3](./leetcode/3283.maximum-number-of-moves-to-kill-all-pawns.py) | Bit Manipulation | O\(2^K \* K\) | O\(2^K \* K\) | - |
 | [Leetcode-318](https://leetcode.com/problems/maximum-product-of-word-lengths/) | Maximum Product Of Word Lengths | [c++](./leetcode/318.maximum-product-of-word-lengths.cpp), [python3](./leetcode/318.maximum-product-of-word-lengths.py) | Bit Manipulation | O\(N^2\) | O\(N\) | - |
 | [Leetcode-3108](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | Minimum Cost Walk In Weighted Graph | [c++](./leetcode/3108.minimum-cost-walk-in-weighted-graph.cpp), [python3](./leetcode/3108.minimum-cost-walk-in-weighted-graph.py) | Bit Manipulation | O\(N \+ M\) | O\(N\) | - |
+| [Leetcode-1611](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/) | Minimum One Bit Operations To Make Integers Zero | [c++](./leetcode/1611.minimum-one-bit-operations-to-make-integers-zero.cpp), [python3](./leetcode/1611.minimum-one-bit-operations-to-make-integers-zero.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 | [Leetcode-3495](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | Minimum Operations To Make Array Elements Zero | [c++](./leetcode/3495.minimum-operations-to-make-array-elements-zero.cpp), [python3](./leetcode/3495.minimum-operations-to-make-array-elements-zero.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-3191](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | Minimum Operations To Make Binary Array Elements Equal To One I | [c++](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp), [python3](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-2749](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Minimum Operations To Make The Integer Zero | [c++](./leetcode/2749.minimum-operations-to-make-the-integer-zero.cpp), [python3](./leetcode/2749.minimum-operations-to-make-the-integer-zero.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -259,6 +262,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-645](https://leetcode.com/problems/set-mismatch/) | Set Mismatch | [c++](./leetcode/645.set-mismatch.cpp), [python3](./leetcode/645.set-mismatch.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-136](https://leetcode.com/problems/single-number/) | Single Number | [c++](./leetcode/136.single-number.cpp), [python3](./leetcode/136.single-number.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-260](https://leetcode.com/problems/single-number-iii/) | Single Number III | [c++](./leetcode/260.single-number-iii.cpp), [python3](./leetcode/260.single-number-iii.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
+| [Leetcode-3370](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | Smallest Number With All Set Bits | [c++](./leetcode/3370.smallest-number-with-all-set-bits.cpp), [python3](./leetcode/3370.smallest-number-with-all-set-bits.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
 | [Leetcode-2411](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/) | Smallest Subarrays With Maximum Bitwise Or | [c++](./leetcode/2411.smallest-subarrays-with-maximum-bitwise-or.cpp), [python3](./leetcode/2411.smallest-subarrays-with-maximum-bitwise-or.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-1863](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Sum Of All Subset Xor Totals | [c++](./leetcode/1863.sum-of-all-subset-xor-totals.cpp), [python3](./leetcode/1863.sum-of-all-subset-xor-totals.py) | Bit Manipulation | O\(N\) | O\(1\) | - |
 | [Leetcode-371](https://leetcode.com/problems/sum-of-two-integers/) | Sum Of Two Integers | [c++](./leetcode/371.sum-of-two-integers.cpp), [python3](./leetcode/371.sum-of-two-integers.py) | Bit Manipulation | O\(1\) | O\(1\) | - |
@@ -275,7 +279,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Simulation
 
-| Link | Problem(43) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(46) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-67](https://leetcode.com/problems/add-binary/) | Add Binary | [c++](./leetcode/67.add-binary.cpp), [python3](./leetcode/67.add-binary.py) | Simulation | O\(M\+N\) | O\(1\) | - |
 | [Leetcode-415](https://leetcode.com/problems/add-strings/) | Add Strings | [c++](./leetcode/415.add-strings.cpp), [python3](./leetcode/415.add-strings.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -286,6 +290,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1094](https://leetcode.com/problems/car-pooling/) | Car Pooling | [c++](./leetcode/1094.car-pooling.cpp), [python3](./leetcode/1094.car-pooling.py) | Simulation | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3461](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | Check If Digits Are Equal In String After Operations I | [c++](./leetcode/3461.check-if-digits-are-equal-in-string-after-operations-i.cpp), [python3](./leetcode/3461.check-if-digits-are-equal-in-string-after-operations-i.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-3174](https://leetcode.com/problems/clear-digits/) | Clear Digits | [c++](./leetcode/3174.clear-digits.cpp), [python3](./leetcode/3174.clear-digits.py) | Simulation | O\(N\) | O\(N\) | - |
+| [Leetcode-2169](https://leetcode.com/problems/count-operations-to-obtain-zero/) | Count Operations To Obtain Zero | [c++](./leetcode/2169.count-operations-to-obtain-zero.cpp), [python3](./leetcode/2169.count-operations-to-obtain-zero.py) | Simulation | O\(N\) | O\(1\) | - |
+| [Leetcode-2257](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | Count Unguarded Cells In The Grid | [c++](./leetcode/2257.count-unguarded-cells-in-the-grid.cpp), [python3](./leetcode/2257.count-unguarded-cells-in-the-grid.py) | Simulation | O\(MN\) | O\(MN\) | - |
 | [Leetcode-498](https://leetcode.com/problems/diagonal-traverse/) | Diagonal Traverse | [c++](./leetcode/498.diagonal-traverse.cpp), [python3](./leetcode/498.diagonal-traverse.py) | Simulation | O\(NM\) | O\(1\) | - |
 | [Leetcode-2138](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | Divide A String Into Groups Of Size K | [c++](./leetcode/2138.divide-a-string-into-groups-of-size-k.cpp), [python3](./leetcode/2138.divide-a-string-into-groups-of-size-k.py) | Simulation | O\(N\) | O\(1\) | - |
 | [Leetcode-2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | Final Value Of Variable After Performing Operations | [c++](./leetcode/2011.final-value-of-variable-after-performing-operations.cpp), [python3](./leetcode/2011.final-value-of-variable-after-performing-operations.py) | Simulation | O\(N\) | O\(1\) | - |
@@ -294,6 +300,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-2221](https://leetcode.com/problems/find-triangular-sum-of-an-array/) | Find Triangular Sum Of An Array | [c++](./leetcode/2221.find-triangular-sum-of-an-array.cpp), [python3](./leetcode/2221.find-triangular-sum-of-an-array.py) | Simulation | O\(N^2\) | O\(1\) | - |
 | [Leetcode-3477](https://leetcode.com/problems/fruits-into-baskets-ii/) | Fruits Into Baskets II | [c++](./leetcode/3477.fruits-into-baskets-ii.cpp), [python3](./leetcode/3477.fruits-into-baskets-ii.py) | Simulation | O\(N^2\) | O\(1\) | - |
+| [Leetcode-3354](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | Make Array Elements Equal To Zero | [c++](./leetcode/3354.make-array-elements-equal-to-zero.cpp), [python3](./leetcode/3354.make-array-elements-equal-to-zero.py) | Simulation | O\(N\) | O\(N\) | - |
 | [Leetcode-2402](https://leetcode.com/problems/meeting-rooms-iii/) | Meeting Rooms III | [c++](./leetcode/2402.meeting-rooms-iii.cpp), [python3](./leetcode/2402.meeting-rooms-iii.py) | Simulation | O\(MlogM \+ MlogN \+ N\) | O\(N \+ M\) | - |
 | [Leetcode-3066](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | Minimum Operations To Exceed Threshold Value II | [c++](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.cpp), [python3](./leetcode/3066.minimum-operations-to-exceed-threshold-value-ii.py) | Simulation | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-43](https://leetcode.com/problems/multiply-strings/) | Multiply Strings | [c++](./leetcode/43.multiply-strings.cpp), [python3](./leetcode/43.multiply-strings.py) | Simulation | O\(NM\) | O\(N\+M\) | - |
@@ -399,7 +406,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Greedy
 
-| Link | Problem(79) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(82) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-870](https://leetcode.com/problems/advantage-shuffle/) | Advantage Shuffle | [c++](./leetcode/870.advantage-shuffle.cpp), [python3](./leetcode/870.advantage-shuffle.py) | Greedy | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2486](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | Append Characters To String To Make Subsequence | [c++](./leetcode/2486.append-characters-to-string-to-make-subsequence.cpp), [python3](./leetcode/2486.append-characters-to-string-to-make-subsequence.py) | Greedy | O\(N\) | O\(1\) | - |
@@ -434,6 +441,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-1432](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | Max Difference You Can Get From Changing An Integer | [c++](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.cpp), [python3](./leetcode/1432.max-difference-you-can-get-from-changing-an-integer.py) | Greedy | O\(N\) | O\(N\) | - |
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Greedy | O\(NlogN \+ NlogD\) | O\(1\) | - |
+| [Leetcode-2528](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | Maximize The Minimum Powered City | [c++](./leetcode/2528.maximize-the-minimum-powered-city.cpp), [python3](./leetcode/2528.maximize-the-minimum-powered-city.py) | Greedy | O\(NLogA\) | O\(N\) | - |
 | [Leetcode-1323](https://leetcode.com/problems/maximum-69-number/) | Maximum 69 Number | [c++](./leetcode/1323.maximum-69-number.cpp), [python3](./leetcode/1323.maximum-69-number.py) | Greedy | O\(1\) | O\(1\) | - |
 | [Leetcode-1792](https://leetcode.com/problems/maximum-average-pass-ratio/) | Maximum Average Pass Ratio | [c++](./leetcode/1792.maximum-average-pass-ratio.cpp), [python3](./leetcode/1792.maximum-average-pass-ratio.py) | Greedy | O\(\(N \+ K\)logN\) | O\(N\) | - |
 | [Leetcode-3413](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Maximum Coins From K Consecutive Bags | [c++](./leetcode/3413.maximum-coins-from-k-consecutive-bags.cpp), [python3](./leetcode/3413.maximum-coins-from-k-consecutive-bags.py) | Greedy | O\(NlogN\) | O\(1\) | - |
@@ -454,8 +462,10 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2918](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | Minimum Equal Sum Of Two Arrays After Replacing Zeros | [c++](./leetcode/2918.minimum-equal-sum-of-two-arrays-after-replacing-zeros.cpp), [python3](./leetcode/2918.minimum-equal-sum-of-two-arrays-after-replacing-zeros.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Minimum Number Of Arrows To Burst Balloons | [c++](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.cpp), [python3](./leetcode/452.minimum-number-of-arrows-to-burst-balloons.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1888](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Minimum Number Of Flips To Make The Binary String Alternating | [c++](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.cpp), [python3](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.py) | Greedy | O\(N\) | O\(1\) | - |
+| [Leetcode-1526](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Minimum Number Of Increments On Subarrays To Form A Target Array | [c++](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp), [python3](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-1733](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | Minimum Number Of People To Teach | [c++](./leetcode/1733.minimum-number-of-people-to-teach.cpp), [python3](./leetcode/1733.minimum-number-of-people-to-teach.py) | Greedy | O\(MN\) | O\(M \+ N\) | - |
 | [Leetcode-1326](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | Minimum Number Of Taps To Open To Water A Garden | [c++](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.cpp), [python3](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.py) | Greedy | O\(N\) | O\(N\) | - |
+| [Leetcode-1578](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/) | Minimum Time To Make Rope Colorful | [c++](./leetcode/1578.minimum-time-to-make-rope-colorful.cpp), [python3](./leetcode/1578.minimum-time-to-make-rope-colorful.py) | Greedy | O\(N\) | O\(1\) | - |
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2294](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) | Partition Array Such That Maximum Difference Is K | [c++](./leetcode/2294.partition-array-such-that-maximum-difference-is-k.cpp), [python3](./leetcode/2294.partition-array-such-that-maximum-difference-is-k.py) | Greedy | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Greedy | O\(N\) | O\(N\) | - |
@@ -483,7 +493,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Dynamic Programming
 
-| Link | Problem(122) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(125) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-650](https://leetcode.com/problems/2-keys-keyboard/) | 2 Keys Keyboard | [c++](./leetcode/650.2-keys-keyboard.cpp), [python3](./leetcode/650.2-keys-keyboard.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
@@ -560,9 +570,12 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3277](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | Maximum Xor Score Subarray Queries | [c++](./leetcode/3277.maximum-xor-score-subarray-queries.cpp), [python3](./leetcode/3277.maximum-xor-score-subarray-queries.py) | Dynamic Programming | O\(N^2 \+ M\) | O\(N^2\) | - |
 | [Leetcode-2163](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) | Minimum Difference In Sums After Removal Of Elements | [c++](./leetcode/2163.minimum-difference-in-sums-after-removal-of-elements.cpp), [python3](./leetcode/2163.minimum-difference-in-sums-after-removal-of-elements.py) | Dynamic Programming | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-1888](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Minimum Number Of Flips To Make The Binary String Alternating | [c++](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.cpp), [python3](./leetcode/1888.minimum-number-of-flips-to-make-the-binary-string-alternating.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
+| [Leetcode-1526](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Minimum Number Of Increments On Subarrays To Form A Target Array | [c++](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp), [python3](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-1326](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | Minimum Number Of Taps To Open To Water A Garden | [c++](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.cpp), [python3](./leetcode/1326.minimum-number-of-taps-to-open-to-water-a-garden.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
+| [Leetcode-1611](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/) | Minimum One Bit Operations To Make Integers Zero | [c++](./leetcode/1611.minimum-one-bit-operations-to-make-integers-zero.cpp), [python3](./leetcode/1611.minimum-one-bit-operations-to-make-integers-zero.py) | Dynamic Programming | O\(1\) | O\(1\) | - |
 | [Leetcode-64](https://leetcode.com/problems/minimum-path-sum/) | Minimum Path Sum | [c++](./leetcode/64.minimum-path-sum.cpp), [python3](./leetcode/64.minimum-path-sum.py) | Dynamic Programming | O\(MN\) | O\(MN\) | - |
 | [Leetcode-1039](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | Minimum Score Triangulation Of Polygon | [c++](./leetcode/1039.minimum-score-triangulation-of-polygon.cpp), [python3](./leetcode/1039.minimum-score-triangulation-of-polygon.py) | Dynamic Programming | O\(N^3\) | O\(N^2\) | - |
+| [Leetcode-1578](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/) | Minimum Time To Make Rope Colorful | [c++](./leetcode/1578.minimum-time-to-make-rope-colorful.cpp), [python3](./leetcode/1578.minimum-time-to-make-rope-colorful.py) | Dynamic Programming | O\(N\) | O\(1\) | - |
 | [Leetcode-837](https://leetcode.com/problems/new-21-game/) | New 21 Game | [c++](./leetcode/837.new-21-game.cpp), [python3](./leetcode/837.new-21-game.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
 | [Leetcode-435](https://leetcode.com/problems/non-overlapping-intervals/) | Non Overlapping Intervals | [c++](./leetcode/435.non-overlapping-intervals.cpp), [python3](./leetcode/435.non-overlapping-intervals.py) | Dynamic Programming | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2327](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Number Of People Aware Of A Secret | [c++](./leetcode/2327.number-of-people-aware-of-a-secret.cpp), [python3](./leetcode/2327.number-of-people-aware-of-a-secret.py) | Dynamic Programming | O\(N\) | O\(N\) | - |
@@ -621,7 +634,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Binary Search
 
-| Link | Problem(107) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(108) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3350](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/) | Adjacent Increasing Subarrays Detection II | [c++](./leetcode/3350.adjacent-increasing-subarrays-detection-ii.cpp), [python3](./leetcode/3350.adjacent-increasing-subarrays-detection-ii.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
@@ -663,6 +676,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1004](https://leetcode.com/problems/max-consecutive-ones-iii/) | Max Consecutive Ones III | [c++](./leetcode/1004.max-consecutive-ones-iii.cpp), [python3](./leetcode/1004.max-consecutive-ones-iii.py) | Binary Search | O\(N\) | O\(1\) | - |
 | [Leetcode-3281](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Maximize Score Of Numbers In Ranges | [c++](./leetcode/3281.maximize-score-of-numbers-in-ranges.cpp), [python3](./leetcode/3281.maximize-score-of-numbers-in-ranges.py) | Binary Search | O\(NlogN \+ NlogD\) | O\(1\) | - |
 | [Leetcode-2024](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | Maximize The Confusion Of An Exam | [c++](./leetcode/2024.maximize-the-confusion-of-an-exam.cpp), [python3](./leetcode/2024.maximize-the-confusion-of-an-exam.py) | Binary Search | O\(N\) | O\(1\) | - |
+| [Leetcode-2528](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | Maximize The Minimum Powered City | [c++](./leetcode/2528.maximize-the-minimum-powered-city.cpp), [python3](./leetcode/2528.maximize-the-minimum-powered-city.py) | Binary Search | O\(NLogA\) | O\(N\) | - |
 | [Leetcode-2555](https://leetcode.com/problems/maximize-win-from-two-segments/) | Maximize Win From Two Segments | [c++](./leetcode/2555.maximize-win-from-two-segments.cpp), [python3](./leetcode/2555.maximize-win-from-two-segments.py) | Binary Search | O\(N\) | O\(N\) | - |
 | [Leetcode-2779](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | Maximum Beauty Of An Array After Applying Operation | [c++](./leetcode/2779.maximum-beauty-of-an-array-after-applying-operation.cpp), [python3](./leetcode/2779.maximum-beauty-of-an-array-after-applying-operation.py) | Binary Search | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-2226](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | Maximum Candies Allocated To K Children | [c++](./leetcode/2226.maximum-candies-allocated-to-k-children.cpp), [python3](./leetcode/2226.maximum-candies-allocated-to-k-children.py) | Binary Search | O\(AlogN\) | O\(1\) | - |
@@ -733,12 +747,13 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Linked List
 
-| Link | Problem(22) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(23) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2](https://leetcode.com/problems/add-two-numbers/) | Add Two Numbers | [c++](./leetcode/2.add-two-numbers.cpp), [python3](./leetcode/2.add-two-numbers.py) | Linked List | O\(N \+ M\) | O\(1\) | - |
 | [Leetcode-432](https://leetcode.com/problems/all-oone-data-structure/) | All Oone Data Structure | [c++](./leetcode/432.all-oone-data-structure.cpp), [python3](./leetcode/432.all-oone-data-structure.py) | Linked List | O\(1\) | O\(N\) | - |
 | [Leetcode-1290](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | Convert Binary Number In A Linked List To Integer | [c++](./leetcode/1290.convert-binary-number-in-a-linked-list-to-integer.cpp), [python3](./leetcode/1290.convert-binary-number-in-a-linked-list-to-integer.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Convert Sorted List To Binary Search Tree | [c++](./leetcode/109.convert-sorted-list-to-binary-search-tree.cpp), [python3](./leetcode/109.convert-sorted-list-to-binary-search-tree.py) | Linked List | O\(NlogN\) | O\(logN\) | - |
+| [Leetcode-3217](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | Delete Nodes From Linked List Present In Array | [c++](./leetcode/3217.delete-nodes-from-linked-list-present-in-array.cpp), [python3](./leetcode/3217.delete-nodes-from-linked-list-present-in-array.py) | Linked List | O\(N\) | O\(N\) | - |
 | [Leetcode-114](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Flatten Binary Tree To Linked List | [c++](./leetcode/114.flatten-binary-tree-to-linked-list.cpp), [python3](./leetcode/114.flatten-binary-tree-to-linked-list.py) | Linked List | O\(N\) | O\(H\) | - |
 | [Leetcode-160](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Intersection Of Two Linked Lists | [c++](./leetcode/160.intersection-of-two-linked-lists.cpp), [python3](./leetcode/160.intersection-of-two-linked-lists.py) | Linked List | O\(N\) | O\(1\) | - |
 | [Leetcode-141](https://leetcode.com/problems/linked-list-cycle/) | Linked List Cycle | [c++](./leetcode/141.linked-list-cycle.cpp), [python3](./leetcode/141.linked-list-cycle.py) | Linked List | O\(N\) | O\(1\) | - |
@@ -760,7 +775,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Hash Table
 
-| Link | Problem(168) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(173) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-923](https://leetcode.com/problems/3sum-with-multiplicity/) | 3Sum With Multiplicity | [c++](./leetcode/923.3sum-with-multiplicity.cpp), [python3](./leetcode/923.3sum-with-multiplicity.py) | Hash Table | \- | \- | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Hash Table | O\(MlogM\) | O\(N\) | - |
@@ -788,6 +803,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-697](https://leetcode.com/problems/degree-of-an-array/) | Degree Of An Array | [c++](./leetcode/697.degree-of-an-array.cpp), [python3](./leetcode/697.degree-of-an-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1948](https://leetcode.com/problems/delete-duplicate-folders-in-system/) | Delete Duplicate Folders In System | [c++](./leetcode/1948.delete-duplicate-folders-in-system.cpp), [python3](./leetcode/1948.delete-duplicate-folders-in-system.py) | Hash Table | O\(NM\) | O\(NM\) | - |
 | [Leetcode-1110](https://leetcode.com/problems/delete-nodes-and-return-forest/) | Delete Nodes And Return Forest | [c++](./leetcode/1110.delete-nodes-and-return-forest.cpp), [python3](./leetcode/1110.delete-nodes-and-return-forest.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-3217](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | Delete Nodes From Linked List Present In Array | [c++](./leetcode/3217.delete-nodes-from-linked-list-present-in-array.cpp), [python3](./leetcode/3217.delete-nodes-from-linked-list-present-in-array.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1943](https://leetcode.com/problems/describe-the-painting/) | Describe The Painting | [c++](./leetcode/1943.describe-the-painting.cpp), [python3](./leetcode/1943.describe-the-painting.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2353](https://leetcode.com/problems/design-a-food-rating-system/) | Design A Food Rating System | [c++](./leetcode/2353.design-a-food-rating-system.cpp), [python3](./leetcode/2353.design-a-food-rating-system.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2349](https://leetcode.com/problems/design-a-number-container-system/) | Design A Number Container System | [c++](./leetcode/2349.design-a-number-container-system.cpp), [python3](./leetcode/2349.design-a-number-container-system.py) | Hash Table | O\(LogN\) | O\(N\) | - |
@@ -811,6 +827,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3134](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Find The Median Of The Uniqueness Array | [c++](./leetcode/3134.find-the-median-of-the-uniqueness-array.cpp), [python3](./leetcode/3134.find-the-median-of-the-uniqueness-array.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-3160](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Find The Number Of Distinct Colors Among The Balls | [c++](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.cpp), [python3](./leetcode/3160.find-the-number-of-distinct-colors-among-the-balls.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-1980](https://leetcode.com/problems/find-unique-binary-string/) | Find Unique Binary String | [c++](./leetcode/1980.find-unique-binary-string.cpp), [python3](./leetcode/1980.find-unique-binary-string.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-3318](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | Find X Sum Of All K Long Subarrays I | [c++](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.cpp), [python3](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.py) | Hash Table | O\(NKlogK\) | O\(K\) | - |
+| [Leetcode-3321](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | Find X Sum Of All K Long Subarrays II | [c++](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.cpp), [python3](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.py) | Hash Table | O\(NLogK\) | O\(K\) | - |
 | [Leetcode-2094](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Finding 3 Digit Even Numbers | [c++](./leetcode/2094.finding-3-digit-even-numbers.cpp), [python3](./leetcode/2094.finding-3-digit-even-numbers.py) | Hash Table | O\(1\) | O\(1\) | - |
 | [Leetcode-1865](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Finding Pairs With A Certain Sum | [c++](./leetcode/1865.finding-pairs-with-a-certain-sum.cpp), [python3](./leetcode/1865.finding-pairs-with-a-certain-sum.py) | Hash Table | O\(N\) | O\(N \+ M\) | - |
 | [Leetcode-41](https://leetcode.com/problems/first-missing-positive/) | First Missing Positive | [c++](./leetcode/41.first-missing-positive.cpp), [python3](./leetcode/41.first-missing-positive.py) | Hash Table | O\(N\) | O\(1\) | - |
@@ -883,6 +901,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-763](https://leetcode.com/problems/partition-labels/) | Partition Labels | [c++](./leetcode/763.partition-labels.cpp), [python3](./leetcode/763.partition-labels.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-567](https://leetcode.com/problems/permutation-in-string/) | Permutation In String | [c++](./leetcode/567.permutation-in-string.cpp), [python3](./leetcode/567.permutation-in-string.py) | Hash Table | O\(N\+M\) | O\(N\) | - |
 | [Leetcode-2848](https://leetcode.com/problems/points-that-intersect-with-cars/) | Points That Intersect With Cars | [c++](./leetcode/2848.points-that-intersect-with-cars.cpp), [python3](./leetcode/2848.points-that-intersect-with-cars.py) | Hash Table | O\(N\) | O\(N\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Hash Table | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-781](https://leetcode.com/problems/rabbits-in-forest/) | Rabbits In Forest | [c++](./leetcode/781.rabbits-in-forest.cpp), [python3](./leetcode/781.rabbits-in-forest.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-383](https://leetcode.com/problems/ransom-note/) | Ransom Note | [c++](./leetcode/383.ransom-note.cpp), [python3](./leetcode/383.ransom-note.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2561](https://leetcode.com/problems/rearranging-fruits/) | Rearranging Fruits | [c++](./leetcode/2561.rearranging-fruits.cpp), [python3](./leetcode/2561.rearranging-fruits.py) | Hash Table | O\(\(N \+ M\)log\(N \+ M\)\) | O\(N \+ M\) | - |
@@ -906,6 +925,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-1156](https://leetcode.com/problems/swap-for-longest-repeated-character-substring/) | Swap For Longest Repeated Character Substring | [c++](./leetcode/1156.swap-for-longest-repeated-character-substring.cpp), [python3](./leetcode/1156.swap-for-longest-repeated-character-substring.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-2516](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/) | Take K Of Each Character From Left And Right | [c++](./leetcode/2516.take-k-of-each-character-from-left-and-right.cpp), [python3](./leetcode/2516.take-k-of-each-character-from-left-and-right.py) | Hash Table | \- | \- | - |
 | [Leetcode-621](https://leetcode.com/problems/task-scheduler/) | Task Scheduler | [c++](./leetcode/621.task-scheduler.cpp), [python3](./leetcode/621.task-scheduler.py) | Hash Table | O\(N\) | O\(1\) | - |
+| [Leetcode-3289](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | The Two Sneaky Numbers Of Digitville | [c++](./leetcode/3289.the-two-sneaky-numbers-of-digitville.cpp), [python3](./leetcode/3289.the-two-sneaky-numbers-of-digitville.py) | Hash Table | O\(N\) | O\(N\) | - |
 | [Leetcode-981](https://leetcode.com/problems/time-based-key-value-store/) | Time Based Key Value Store | [c++](./leetcode/981.time-based-key-value-store.cpp), [python3](./leetcode/981.time-based-key-value-store.py) | Hash Table | O\(logN\) | O\(N\) | - |
 | [Leetcode-347](https://leetcode.com/problems/top-k-frequent-elements/) | Top K Frequent Elements | [c++](./leetcode/347.top-k-frequent-elements.cpp), [python3](./leetcode/347.top-k-frequent-elements.py) | Hash Table | O\(N\), O\(C\*logK\) | O\(N\) | - |
 | [Leetcode-692](https://leetcode.com/problems/top-k-frequent-words/) | Top K Frequent Words | [c++](./leetcode/692.top-k-frequent-words.cpp), [python3](./leetcode/692.top-k-frequent-words.py) | Hash Table | O\(NlogN\) | O\(N\) | - |
@@ -941,7 +961,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Prefix Sum
 
-| Link | Problem(56) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(58) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2968](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Apply Operations To Maximize Frequency Score | [c++](./leetcode/2968.apply-operations-to-maximize-frequency-score.cpp), [python3](./leetcode/2968.apply-operations-to-maximize-frequency-score.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-930](https://leetcode.com/problems/binary-subarrays-with-sum/) | Binary Subarrays With Sum | [c++](./leetcode/930.binary-subarrays-with-sum.cpp), [python3](./leetcode/930.binary-subarrays-with-sum.py) | Prefix Sum | O\(N\) | O\(1\) | - |
@@ -958,9 +978,11 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3333](https://leetcode.com/problems/find-the-original-typed-string-ii/) | Find The Original Typed String II | [c++](./leetcode/3333.find-the-original-typed-string-ii.cpp), [python3](./leetcode/3333.find-the-original-typed-string-ii.py) | Prefix Sum | O\(NK\) | O\(NK\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Prefix Sum | O\(N\) | O\(1\) | - |
+| [Leetcode-3354](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | Make Array Elements Equal To Zero | [c++](./leetcode/3354.make-array-elements-equal-to-zero.cpp), [python3](./leetcode/3354.make-array-elements-equal-to-zero.py) | Prefix Sum | O\(N\) | O\(N\) | - |
 | [Leetcode-1004](https://leetcode.com/problems/max-consecutive-ones-iii/) | Max Consecutive Ones III | [c++](./leetcode/1004.max-consecutive-ones-iii.cpp), [python3](./leetcode/1004.max-consecutive-ones-iii.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-3480](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | Maximize Subarrays After Removing One Conflicting Pair | [c++](./leetcode/3480.maximize-subarrays-after-removing-one-conflicting-pair.cpp), [python3](./leetcode/3480.maximize-subarrays-after-removing-one-conflicting-pair.py) | Prefix Sum | O\(N \+ M\) | O\(N\) | - |
 | [Leetcode-2024](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | Maximize The Confusion Of An Exam | [c++](./leetcode/2024.maximize-the-confusion-of-an-exam.cpp), [python3](./leetcode/2024.maximize-the-confusion-of-an-exam.py) | Prefix Sum | O\(N\) | O\(1\) | - |
+| [Leetcode-2528](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | Maximize The Minimum Powered City | [c++](./leetcode/2528.maximize-the-minimum-powered-city.cpp), [python3](./leetcode/2528.maximize-the-minimum-powered-city.py) | Prefix Sum | O\(NLogA\) | O\(N\) | - |
 | [Leetcode-3413](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Maximum Coins From K Consecutive Bags | [c++](./leetcode/3413.maximum-coins-from-k-consecutive-bags.cpp), [python3](./leetcode/3413.maximum-coins-from-k-consecutive-bags.py) | Prefix Sum | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-3445](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) | Maximum Difference Between Even And Odd Frequency II | [c++](./leetcode/3445.maximum-difference-between-even-and-odd-frequency-ii.cpp), [python3](./leetcode/3445.maximum-difference-between-even-and-odd-frequency-ii.py) | Prefix Sum | O\(N\) | O\(1\) | - |
 | [Leetcode-3346](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | Maximum Frequency Of An Element After Performing Operations I | [c++](./leetcode/3346.maximum-frequency-of-an-element-after-performing-operations-i.cpp), [python3](./leetcode/3346.maximum-frequency-of-an-element-after-performing-operations-i.py) | Prefix Sum | O\(NlogN\) | O\(N\) | - |
@@ -1038,7 +1060,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Monotonic Stack
 
-| Link | Problem(12) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(13) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-2818](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Apply Operations To Maximize Score | [c++](./leetcode/2818.apply-operations-to-maximize-score.cpp), [python3](./leetcode/2818.apply-operations-to-maximize-score.py) | Monotonic Stack | O\(\(N \+ K\) \* logN\) | O\(Max\) | - |
 | [Leetcode-853](https://leetcode.com/problems/car-fleet/) | Car Fleet | [c++](./leetcode/853.car-fleet.cpp), [python3](./leetcode/853.car-fleet.py) | Monotonic Stack | O\(NlogN\) | O\(N\) | - |
@@ -1048,6 +1070,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | [c++](./leetcode/769.max-chunks-to-make-sorted.cpp), [python3](./leetcode/769.max-chunks-to-make-sorted.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
 | [Leetcode-85](https://leetcode.com/problems/maximal-rectangle/) | Maximal Rectangle | [c++](./leetcode/85.maximal-rectangle.cpp), [python3](./leetcode/85.maximal-rectangle.py) | Monotonic Stack | O\(NM\) | O\(M\) | - |
 | [Leetcode-1793](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | Maximum Score Of A Good Subarray | [c++](./leetcode/1793.maximum-score-of-a-good-subarray.cpp), [python3](./leetcode/1793.maximum-score-of-a-good-subarray.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
+| [Leetcode-1526](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Minimum Number Of Increments On Subarrays To Form A Target Array | [c++](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.cpp), [python3](./leetcode/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
 | [Leetcode-503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | [c++](./leetcode/503.next-greater-element-ii.cpp), [python3](./leetcode/503.next-greater-element-ii.py) | Monotonic Stack | O\(N\) | O\(N\) | - |
 | [Leetcode-1574](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) | Shortest Subarray To Be Removed To Make Array Sorted | [c++](./leetcode/1574.shortest-subarray-to-be-removed-to-make-array-sorted.cpp), [python3](./leetcode/1574.shortest-subarray-to-be-removed-to-make-array-sorted.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
 | [Leetcode-581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | Shortest Unsorted Continuous Subarray | [c++](./leetcode/581.shortest-unsorted-continuous-subarray.cpp), [python3](./leetcode/581.shortest-unsorted-continuous-subarray.py) | Monotonic Stack | O\(N\) | O\(1\) | - |
@@ -1055,13 +1078,14 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Queue
 
-| Link | Problem(8) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(9) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-387](https://leetcode.com/problems/first-unique-character-in-a-string/) | First Unique Character In A String | [c++](./leetcode/387.first-unique-character-in-a-string.cpp), [python3](./leetcode/387.first-unique-character-in-a-string.py) | Queue | O\(N\) | O\(N\) | - |
 | [Leetcode-341](https://leetcode.com/problems/flatten-nested-list-iterator/) | Flatten Nested List Iterator | [c++](./leetcode/341.flatten-nested-list-iterator.cpp), [python3](./leetcode/341.flatten-nested-list-iterator.py) | Queue | O\(\*1\) | O\(N\) | - |
 | [Leetcode-232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue Using Stacks | [c++](./leetcode/232.implement-queue-using-stacks.cpp), [python3](./leetcode/232.implement-queue-using-stacks.py) | Queue | O\(\*1\) | O\(N\) | - |
 | [Leetcode-3508](https://leetcode.com/problems/implement-router/) | Implement Router | [c++](./leetcode/3508.implement-router.cpp), [python3](./leetcode/3508.implement-router.py) | Queue | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-225](https://leetcode.com/problems/implement-stack-using-queues/) | Implement Stack Using Queues | [c++](./leetcode/225.implement-stack-using-queues.cpp), [python3](./leetcode/225.implement-stack-using-queues.py) | Queue | O\(N\) | O\(N\) | - |
+| [Leetcode-2528](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | Maximize The Minimum Powered City | [c++](./leetcode/2528.maximize-the-minimum-powered-city.cpp), [python3](./leetcode/2528.maximize-the-minimum-powered-city.py) | Queue | O\(NLogA\) | O\(N\) | - |
 | [Leetcode-3191](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | Minimum Operations To Make Binary Array Elements Equal To One I | [c++](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.cpp), [python3](./leetcode/3191.minimum-operations-to-make-binary-array-elements-equal-to-one-i.py) | Queue | O\(N\) | O\(1\) | - |
 | [Leetcode-2327](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Number Of People Aware Of A Secret | [c++](./leetcode/2327.number-of-people-aware-of-a-secret.cpp), [python3](./leetcode/2327.number-of-people-aware-of-a-secret.py) | Queue | O\(N\) | O\(N\) | - |
 | [Lintcode-642](https://www.lintcode.com/problem/moving-average-from-data-stream/) | Moving Average From Data Stream | [c++](./lintcode/642.moving-average-from-data-stream.cpp), [python3](./lintcode/642.moving-average-from-data-stream.py) | Queue | O\(1\) | O\(K\) | Leetcode-346 |
@@ -1078,7 +1102,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Heap
 
-| Link | Problem(48) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(51) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-1488](https://leetcode.com/problems/avoid-flood-in-the-city/) | Avoid Flood In The City | [c++](./leetcode/1488.avoid-flood-in-the-city.cpp), [python3](./leetcode/1488.avoid-flood-in-the-city.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-1094](https://leetcode.com/problems/car-pooling/) | Car Pooling | [c++](./leetcode/1094.car-pooling.cpp), [python3](./leetcode/1094.car-pooling.py) | Heap | O\(NlogN\) | O\(N\) | - |
@@ -1094,6 +1118,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3341](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/) | Find Minimum Time To Reach Last Room I | [c++](./leetcode/3341.find-minimum-time-to-reach-last-room-i.cpp), [python3](./leetcode/3341.find-minimum-time-to-reach-last-room-i.py) | Heap | O\(NMlog\(NM\)\) | O\(NM\) | - |
 | [Leetcode-3342](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/) | Find Minimum Time To Reach Last Room II | [c++](./leetcode/3342.find-minimum-time-to-reach-last-room-ii.cpp), [python3](./leetcode/3342.find-minimum-time-to-reach-last-room-ii.py) | Heap | O\(NMlog\(NM\)\) | O\(NM\) | - |
 | [Leetcode-2099](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | Find Subsequence Of Length K With The Largest Sum | [c++](./leetcode/2099.find-subsequence-of-length-k-with-the-largest-sum.cpp), [python3](./leetcode/2099.find-subsequence-of-length-k-with-the-largest-sum.py) | Heap | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3318](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | Find X Sum Of All K Long Subarrays I | [c++](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.cpp), [python3](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.py) | Heap | O\(NKlogK\) | O\(K\) | - |
+| [Leetcode-3321](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | Find X Sum Of All K Long Subarrays II | [c++](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.cpp), [python3](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.py) | Heap | O\(NLogK\) | O\(K\) | - |
 | [Leetcode-973](https://leetcode.com/problems/k-closest-points-to-origin/) | K Closest Points To Origin | [c++](./leetcode/973.k-closest-points-to-origin.cpp), [python3](./leetcode/973.k-closest-points-to-origin.py) | Heap | O\(NlogN\) | O\(K\) | - |
 | [Leetcode-3275](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | K Th Nearest Obstacle Queries | [c++](./leetcode/3275.k-th-nearest-obstacle-queries.cpp), [python3](./leetcode/3275.k-th-nearest-obstacle-queries.py) | Heap | O\(NlogK\) | O\(K\) | - |
 | [Leetcode-703](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | Kth Largest Element In A Stream | [c++](./leetcode/703.kth-largest-element-in-a-stream.cpp), [python3](./leetcode/703.kth-largest-element-in-a-stream.py) | Heap | O\(logN\) | O\(N\) | - |
@@ -1114,6 +1140,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-743](https://leetcode.com/problems/network-delay-time/) | Network Delay Time | [c++](./leetcode/743.network-delay-time.cpp), [python3](./leetcode/743.network-delay-time.py) | Heap | O\(ElogE\) | O\(E\+V\) | - |
 | [Leetcode-1514](https://leetcode.com/problems/path-with-maximum-probability/) | Path With Maximum Probability | [c++](./leetcode/1514.path-with-maximum-probability.cpp), [python3](./leetcode/1514.path-with-maximum-probability.py) | Heap | O\(VlogE\) | O\(V\+E\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Heap | O\(NMlogNM\) | O\(NM\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Heap | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-2551](https://leetcode.com/problems/put-marbles-in-bags/) | Put Marbles In Bags | [c++](./leetcode/2551.put-marbles-in-bags.cpp), [python3](./leetcode/2551.put-marbles-in-bags.py) | Heap | O\(N\) | O\(N\) | - |
 | [Leetcode-882](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | Reachable Nodes In Subdivided Graph | [c++](./leetcode/882.reachable-nodes-in-subdivided-graph.cpp), [python3](./leetcode/882.reachable-nodes-in-subdivided-graph.py) | Heap | O\(ElogE\) | O\(V\+E\) | - |
 | [Leetcode-239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | [c++](./leetcode/239.sliding-window-maximum.cpp), [python3](./leetcode/239.sliding-window-maximum.py) | Heap | O\(N\) | O\(K\) | - |
@@ -1239,7 +1266,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Sliding Window
 
-| Link | Problem(94) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(97) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-3206](https://leetcode.com/problems/alternating-groups-i/) | Alternating Groups I | [c++](./leetcode/3206.alternating-groups-i.cpp), [python3](./leetcode/3206.alternating-groups-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3208](https://leetcode.com/problems/alternating-groups-ii/) | Alternating Groups II | [c++](./leetcode/3208.alternating-groups-ii.cpp), [python3](./leetcode/3208.alternating-groups-ii.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -1267,6 +1294,8 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-2831](https://leetcode.com/problems/find-the-longest-equal-subarray/) | Find The Longest Equal Subarray | [c++](./leetcode/2831.find-the-longest-equal-subarray.cpp), [python3](./leetcode/2831.find-the-longest-equal-subarray.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-2730](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | Find The Longest Semi Repetitive Substring | [c++](./leetcode/2730.find-the-longest-semi-repetitive-substring.cpp), [python3](./leetcode/2730.find-the-longest-semi-repetitive-substring.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-3134](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Find The Median Of The Uniqueness Array | [c++](./leetcode/3134.find-the-median-of-the-uniqueness-array.cpp), [python3](./leetcode/3134.find-the-median-of-the-uniqueness-array.py) | Sliding Window | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3318](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | Find X Sum Of All K Long Subarrays I | [c++](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.cpp), [python3](./leetcode/3318.find-x-sum-of-all-k-long-subarrays-i.py) | Sliding Window | O\(NKlogK\) | O\(K\) | - |
+| [Leetcode-3321](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | Find X Sum Of All K Long Subarrays II | [c++](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.cpp), [python3](./leetcode/3321.find-x-sum-of-all-k-long-subarrays-ii.py) | Sliding Window | O\(NLogK\) | O\(K\) | - |
 | [Leetcode-1838](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Frequency Of The Most Frequent Element | [c++](./leetcode/1838.frequency-of-the-most-frequent-element.cpp), [python3](./leetcode/1838.frequency-of-the-most-frequent-element.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
 | [Leetcode-904](https://leetcode.com/problems/fruit-into-baskets/) | Fruit Into Baskets | [c++](./leetcode/904.fruit-into-baskets.cpp), [python3](./leetcode/904.fruit-into-baskets.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-1208](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Get Equal Substrings Within Budget | [c++](./leetcode/1208.get-equal-substrings-within-budget.cpp), [python3](./leetcode/1208.get-equal-substrings-within-budget.py) | Sliding Window | O\(N\) | O\(1\) | - |
@@ -1284,6 +1313,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | [c++](./leetcode/3.longest-substring-without-repeating-characters.cpp), [python3](./leetcode/3.longest-substring-without-repeating-characters.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-1004](https://leetcode.com/problems/max-consecutive-ones-iii/) | Max Consecutive Ones III | [c++](./leetcode/1004.max-consecutive-ones-iii.cpp), [python3](./leetcode/1004.max-consecutive-ones-iii.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2024](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | Maximize The Confusion Of An Exam | [c++](./leetcode/2024.maximize-the-confusion-of-an-exam.cpp), [python3](./leetcode/2024.maximize-the-confusion-of-an-exam.py) | Sliding Window | O\(N\) | O\(1\) | - |
+| [Leetcode-2528](https://leetcode.com/problems/maximize-the-minimum-powered-city/) | Maximize The Minimum Powered City | [c++](./leetcode/2528.maximize-the-minimum-powered-city.cpp), [python3](./leetcode/2528.maximize-the-minimum-powered-city.py) | Sliding Window | O\(NLogA\) | O\(N\) | - |
 | [Leetcode-2555](https://leetcode.com/problems/maximize-win-from-two-segments/) | Maximize Win From Two Segments | [c++](./leetcode/2555.maximize-win-from-two-segments.cpp), [python3](./leetcode/2555.maximize-win-from-two-segments.py) | Sliding Window | O\(N\) | O\(N\) | - |
 | [Leetcode-643](https://leetcode.com/problems/maximum-average-subarray-i/) | Maximum Average Subarray I | [c++](./leetcode/643.maximum-average-subarray-i.cpp), [python3](./leetcode/643.maximum-average-subarray-i.py) | Sliding Window | O\(N\) | O\(1\) | - |
 | [Leetcode-2779](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | Maximum Beauty Of An Array After Applying Operation | [c++](./leetcode/2779.maximum-beauty-of-an-array-after-applying-operation.cpp), [python3](./leetcode/2779.maximum-beauty-of-an-array-after-applying-operation.py) | Sliding Window | O\(NlogN\) | O\(1\) | - |
@@ -1547,7 +1577,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Breadth-First Search
 
-| Link | Problem(52) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(53) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-542](https://leetcode.com/problems/01-matrix/) | 01 Matrix | [c++](./leetcode/542.01-matrix.cpp), [python3](./leetcode/542.01-matrix.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Breadth-First Search | O\(MlogM\) | O\(N\) | - |
@@ -1584,6 +1614,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Pacific Atlantic Water Flow | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python3](./leetcode/417.pacific-atlantic-water-flow.py) | Breadth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Breadth-First Search | O\(NMlogNM\) | O\(NM\) | - |
 | [Leetcode-279](https://leetcode.com/problems/perfect-squares/) | Perfect Squares | [c++](./leetcode/279.perfect-squares.cpp), [python3](./leetcode/279.perfect-squares.py) | Breadth-First Search | O\(NlogN\) | O\(N\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Breadth-First Search | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Breadth-First Search | O\(N\) | O\(1\) | - |
 | [Leetcode-994](https://leetcode.com/problems/rotting-oranges/) | Rotting Oranges | [c++](./leetcode/994.rotting-oranges.cpp), [python3](./leetcode/994.rotting-oranges.py) | Breadth-First Search | O\(NM\) | O\(NM\) | - |
 | [Leetcode-100](https://leetcode.com/problems/same-tree/) | Same Tree | [c++](./leetcode/100.same-tree.cpp), [python3](./leetcode/100.same-tree.py) | Breadth-First Search | O\(N\) | O\(H\) | - |
@@ -1604,7 +1635,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Depth-First Search
 
-| Link | Problem(71) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(72) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Depth-First Search | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | All Nodes Distance K In Binary Tree | [c++](./leetcode/863.all-nodes-distance-k-in-binary-tree.cpp), [python3](./leetcode/863.all-nodes-distance-k-in-binary-tree.py) | Depth-First Search | O\(N\) | O\(N\) | - |
@@ -1653,6 +1684,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Pacific Atlantic Water Flow | [c++](./leetcode/417.pacific-atlantic-water-flow.cpp), [python3](./leetcode/417.pacific-atlantic-water-flow.py) | Depth-First Search | O\(MN\) | O\(MN\) | - |
 | [Leetcode-437](https://leetcode.com/problems/path-sum-iii/) | Path Sum III | [c++](./leetcode/437.path-sum-iii.cpp), [python3](./leetcode/437.path-sum-iii.py) | Depth-First Search | O\(N^2\) | O\(H\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Depth-First Search | O\(NMlogNM\) | O\(NM\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Depth-First Search | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-938](https://leetcode.com/problems/range-sum-of-bst/) | Range Sum Of Bst | [c++](./leetcode/938.range-sum-of-bst.cpp), [python3](./leetcode/938.range-sum-of-bst.py) | Depth-First Search | O\(N\) | O\(W\) | - |
 | [Leetcode-332](https://leetcode.com/problems/reconstruct-itinerary/) | Reconstruct Itinerary | [c++](./leetcode/332.reconstruct-itinerary.cpp), [python3](./leetcode/332.reconstruct-itinerary.py) | Depth-First Search | O\(ElogE\) | O\(E\+V\) | - |
 | [Leetcode-1028](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | Recover A Tree From Preorder Traversal | [c++](./leetcode/1028.recover-a-tree-from-preorder-traversal.cpp), [python3](./leetcode/1028.recover-a-tree-from-preorder-traversal.py) | Depth-First Search | O\(N\) | O\(H\) | - |
@@ -1768,7 +1800,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Ordered Set
 
-| Link | Problem(17) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(18) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-220](https://leetcode.com/problems/contains-duplicate-iii/) | Contains Duplicate III | [c++](./leetcode/220.contains-duplicate-iii.cpp), [python3](./leetcode/220.contains-duplicate-iii.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-2762](https://leetcode.com/problems/continuous-subarrays/) | Continuous Subarrays | [c++](./leetcode/2762.continuous-subarrays.cpp), [python3](./leetcode/2762.continuous-subarrays.py) | Ordered Set | O\(N\) | O\(N\) | - |
@@ -1786,6 +1818,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-731](https://leetcode.com/problems/my-calendar-ii/) | My Calendar II | [c++](./leetcode/731.my-calendar-ii.cpp), [python3](./leetcode/731.my-calendar-ii.py) | Ordered Set | O\(N\) | O\(N\) | - |
 | [Leetcode-732](https://leetcode.com/problems/my-calendar-iii/) | My Calendar III | [c++](./leetcode/732.my-calendar-iii.cpp), [python3](./leetcode/732.my-calendar-iii.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 | [Leetcode-2251](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | Number Of Flowers In Full Bloom | [c++](./leetcode/2251.number-of-flowers-in-full-bloom.cpp), [python3](./leetcode/2251.number-of-flowers-in-full-bloom.py) | Ordered Set | O\(NlogN \+ MlogM\) | O\(N \+ M\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Ordered Set | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-218](https://leetcode.com/problems/the-skyline-problem/) | The Skyline Problem | [c++](./leetcode/218.the-skyline-problem.cpp), [python3](./leetcode/218.the-skyline-problem.py) | Ordered Set | O\(NlogN\) | O\(N\) | - |
 
 ## Binary Search Tree
@@ -1846,7 +1879,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 
 ## Union Find
 
-| Link | Problem(18) | Solution | Tag | Time | Space | Ref |
+| Link | Problem(19) | Solution | Tag | Time | Space | Ref |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | [Leetcode-721](https://leetcode.com/problems/accounts-merge/) | Accounts Merge | [c++](./leetcode/721.accounts-merge.cpp), [python3](./leetcode/721.accounts-merge.py) | Union Find | O\(MlogM\) | O\(N\) | - |
 | [Leetcode-2685](https://leetcode.com/problems/count-the-number-of-complete-components/) | Count The Number Of Complete Components | [c++](./leetcode/2685.count-the-number-of-complete-components.cpp), [python3](./leetcode/2685.count-the-number-of-complete-components.py) | Union Find | O\(E \+ V\) | O\(V\) | - |
@@ -1859,6 +1892,7 @@ python problem.py https://www.lintcode.com/problem/92 -l cpp
 | [Leetcode-200](https://leetcode.com/problems/number-of-islands/) | Number Of Islands | [c++](./leetcode/200.number-of-islands.cpp), [python3](./leetcode/200.number-of-islands.py) | Union Find | O\(MN\) | O\(MN\) | - |
 | [Leetcode-547](https://leetcode.com/problems/number-of-provinces/) | Number Of Provinces | [c++](./leetcode/547.number-of-provinces.cpp), [python3](./leetcode/547.number-of-provinces.py) | Union Find | O\(N^2\) | O\(N\) | - |
 | [Leetcode-1631](https://leetcode.com/problems/path-with-minimum-effort/) | Path With Minimum Effort | [c++](./leetcode/1631.path-with-minimum-effort.cpp), [python3](./leetcode/1631.path-with-minimum-effort.py) | Union Find | O\(NMlogNM\) | O\(NM\) | - |
+| [Leetcode-3607](https://leetcode.com/problems/power-grid-maintenance/) | Power Grid Maintenance | [c++](./leetcode/3607.power-grid-maintenance.cpp), [python3](./leetcode/3607.power-grid-maintenance.py) | Union Find | O\(CLogC \+ QLogC\) | O\(C\) | - |
 | [Leetcode-684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | [c++](./leetcode/684.redundant-connection.cpp), [python3](./leetcode/684.redundant-connection.py) | Union Find | O\(N\) | O\(1\) | - |
 | [Leetcode-130](https://leetcode.com/problems/surrounded-regions/) | Surrounded Regions | [c++](./leetcode/130.surrounded-regions.cpp), [python3](./leetcode/130.surrounded-regions.py) | Union Find | O\(MN\) | O\(MN\) | - |
 | [Leetcode-778](https://leetcode.com/problems/swim-in-rising-water/) | Swim In Rising Water | [c++](./leetcode/778.swim-in-rising-water.cpp), [python3](./leetcode/778.swim-in-rising-water.py) | Union Find | O\(N^2 \* logN\) | O\(N^2\) | - |
