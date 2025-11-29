@@ -68,6 +68,32 @@ public:
 class Solution {
 public:
     int findMaxForm(vector<string>& strs, int m, int n) {
+        vector<vector<vector<int>>> dp(strs.size(), vector<vector<int>>(m + 1, vector<int>(n + 1, -1)));
+        return dfs(strs, 0, m, n, dp);
+    }
+
+    int dfs(vector<string>& strs, int i, int m, int n, vector<vector<vector<int>>> &dp) {
+        if (i == strs.size()) {
+            return 0;
+        }
+
+        if (dp[i][m][n] == -1) {
+            int zero = count(strs[i].begin(), strs[i].end(), '0');
+            int one = strs[i].size() - zero;
+            int res = dfs(strs, i + 1, m, n, dp);
+            if (zero <= m && one <= n) {
+                res = max(res, dfs(strs, i + 1, m - zero, n - one, dp) + 1);
+            }
+
+            dp[i][m][n] = res;
+        }
+        return dp[i][m][n];
+    }
+};
+
+class Solution {
+public:
+    int findMaxForm(vector<string>& strs, int m, int n) {
         
         int k = strs.size();
         vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));

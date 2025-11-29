@@ -53,6 +53,25 @@ class Solution:
 
         return dp[k][m][n]
 
+from functools import cache
+class Solution:
+    def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
+        @cache
+        def dp(i: int, m: int, n: int) -> int:
+            if i == len(strs):
+                return 0
+
+            zero = strs[i].count('0')
+            one = len(strs[i]) - zero
+
+            res = dp(i + 1, m, n)
+            if zero <= m and one <= n:
+                res = max(res, dp(i + 1, m - zero, n - one) + 1)
+
+            return res
+
+        return dp(0, m, n)
+
 class Solution:
     def findMaxForm(self, strs: List[str], m: int, n: int) -> int:
 
