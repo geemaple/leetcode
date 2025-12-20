@@ -18,15 +18,18 @@ COMMENT = {
     'python3': '#',
     'python': '#',
     'cpp': '//',
+    'golang': '//',
+    'swift': '//',
     'java': '//',
     'Pandas': '#',
     'MySQL': '--',
-
 }
 
 EXTENTION = {
     'python3': 'py',
     'python': 'py',
+    'swift': 'swift',
+    'golang': 'go',
     'cpp': 'cpp',
     'java': 'java',
     'Pandas': 'py',
