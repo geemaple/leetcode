@@ -78,3 +78,39 @@ public:
         return max_element(counter.begin(), counter.end()) - counter.begin();
     }
 };
+
+class Solution {
+public:
+    int mostBooked(int n, vector<vector<int>>& meetings) {
+        int m = meetings.size();
+        sort(meetings.begin(), meetings.end());
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> room;
+        priority_queue<int, vector<int>, greater<int>> ready;
+
+        for (int i = 0; i < n; i++) {
+            ready.emplace(i);
+        }
+        vector<int> counter(n, 0);
+        for (auto &m: meetings) {
+            while (!room.empty() && room.top().first <= m[0]) {
+                auto [pre_end, i] = room.top();
+                room.pop();
+                ready.emplace(i);
+            }
+
+            if (!ready.empty()) {
+                int i = ready.top();
+                ready.pop();
+                room.emplace(m[1], i);
+                counter[i] += 1;
+            } else {
+                auto [pre_end, i] = room.top();
+                room.pop();
+                room.emplace(pre_end - m[0] + m[1], i);
+                counter[i] += 1;
+            }
+        }
+
+        return max_element(counter.begin(), counter.end()) - counter.begin();
+    }
+};

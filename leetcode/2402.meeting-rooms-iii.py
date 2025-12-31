@@ -76,3 +76,33 @@ class Solution:
                 res = i
 
         return res
+
+import heapq
+class Solution:
+    def mostBooked(self, n: int, meetings: List[List[int]]) -> int:
+        meetings.sort()
+        ready = [i for i in range(n)]
+        heapq.heapify(ready)
+        room = []        
+        count = [0] * n
+
+        for start, end in meetings:
+            while len(room) > 0 and room[0][0] <= start:
+                pre_end, i = heapq.heappop(room)
+                heapq.heappush(ready, i)
+
+            if len(ready) > 0:
+                i = heapq.heappop(ready)
+                heapq.heappush(room, (end, i))
+            else:
+                pre_end, i = heapq.heappop(room)
+                heapq.heappush(room, (pre_end - start + end , i))
+
+            count[i] += 1
+
+        res = 0
+        for i in range(n):
+            if count[i] > count[res]:
+                res = i
+
+        return res
