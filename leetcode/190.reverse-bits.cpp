@@ -34,7 +34,7 @@
 
 class Solution {
 public:
-    uint32_t reverseBits(uint32_t n) {
+    int reverseBits(int n) {
         int res = 0;
         for (int i = 0; i < 32; i++) {
             res = (res << 1) + (n & 1);
@@ -47,7 +47,7 @@ public:
 
 class Solution {
 public:
-    uint32_t reverseBits(uint32_t n) {
+    int reverseBits(int n) {
         uint32_t res = n;
 
         res = res >> 16 | res << 16;

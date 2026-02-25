@@ -41,13 +41,12 @@ class Solution:
 
 class Solution:
     def hasAlternatingBits(self, n: int) -> bool:
-        pre = n & 1
-        n = n >> 1
+        target = n & 1
         while n > 0:
-            cur = n & 1
-            if pre == cur:
+            if (n & 1) != target:
                 return False
+
             n = n >> 1
-            pre = cur
+            target = 1 - target
         return True
             

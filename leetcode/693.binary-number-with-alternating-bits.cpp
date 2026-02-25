@@ -48,17 +48,14 @@ public:
 class Solution {
 public:
     bool hasAlternatingBits(int n) {
-        int pre = n & 1;
-        n = n >> 1;
+        int target = n & 1;
         while (n > 0) {
-            int cur = n & 1;
-            if (cur == pre) {
+            if ((n & 1) != target) {
                 return false;
             }
-            pre = cur;
             n = n >> 1;
+            target = 1 - target;
         }
-
         return true;
     }
 };

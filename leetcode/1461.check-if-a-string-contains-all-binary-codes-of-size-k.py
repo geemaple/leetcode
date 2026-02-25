@@ -35,13 +35,13 @@
 
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
-        target = 2 ** k
-        visited = set()
         n = len(s)
+        seen = set()
         for i in range(n - k + 1):
-            visited.add(s[i: i + k])
+            seen.add(s[i: i + k])
 
-        return len(visited) == target
+        return len(seen) == 2 ** k
+
     
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
