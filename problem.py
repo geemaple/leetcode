@@ -13,6 +13,7 @@ import argparse
 import re
 import sys
 from logger import Logger
+import browser_cookie3
 
 COMMENT = {
     'python3': '#',
@@ -95,6 +96,8 @@ class Problem:
 
 def parse_leetcode(url, lang, translate):
     session = requests.session()
+    cj = browser_cookie3.brave(domain_name='leetcode.com')
+    session.cookies = cj
 
     problem = Problem('leetcode', lang)
     problem.title = re.search(r"/problems/([\w-]+)/?", url).group(1)
