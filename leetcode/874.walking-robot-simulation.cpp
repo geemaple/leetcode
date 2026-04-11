@@ -65,36 +65,42 @@
 //  
 //  
 
+struct pair_hash {
+    size_t operator()(const pair<int,int>& p) const {
+        return hash<int>()(p.first) ^ (hash<int>()(p.second) << 16);
+    }
+};
+
 class Solution {
 public:
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
-        unordered_set<string> obs;
-        for (auto &coord: obstacles) {
-            obs.insert(to_string(coord[0]) + "," + to_string(coord[1]));
-        }
+        vector<pair<int,int>> directions = {{0,1}, {1,0}, {0,-1}, {-1,0}};
+        int d = 0; // 当前方向索引
+        int x = 0, y = 0;
         int res = 0;
-        int d = 0;
-        int x = 0;
-        int y = 0;
-        vector<vector<int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        for (auto c: commands) {
-            if (c == -2) {
-                d = (d + 3) % 4;
-            } else if (c == -1) {
-                d = (d + 1) % 4;
-            } else {
-                for (int i = 0; i < c; i++) {
-                    int new_x = x + directions[d][0];
-                    int new_y = y + directions[d][1];
-                    string key = to_string(new_x) + "," + to_string(new_y);
-                    if (obs.count(key) > 0) {
-                        break;
-                    }
-                    x = new_x;
-                    y = new_y;
-                }
+        
+        // 把障碍物存到 unordered_set 中
+        unordered_set<pair<int,int>, pair_hash> ob;
+        for (auto &o : obstacles) {
+            ob.insert({o[0], o[1]});
+        }
 
-                res = max(res, x * x + y * y);
+        for (int c : commands) {
+            if (c == -1) { // 右转
+                d = (d + 1) % 4;
+                continue;
+            }
+            if (c == -2) { // 左转
+                d = (d + 3) % 4; // 等价于 (d - 1 + 4) % 4
+                continue;
+            }
+            for (int k = 0; k < c; ++k) {
+                int dx = x + directions[d].first;
+                int dy = y + directions[d].second;
+                if (ob.count({dx, dy})) break;
+                x = dx;
+                y = dy;
+                res = max(res, x*x + y*y);
             }
         }
         return res;

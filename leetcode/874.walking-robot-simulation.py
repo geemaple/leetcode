@@ -67,27 +67,28 @@
 
 class Solution:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
-        
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        obs = set(map(tuple, obstacles))
         d = 0
-        pos = [0, 0]
+        x, y = 0, 0
         res = 0
+        ob = {(x[0], x[1]) for x in obstacles}
 
         for c in commands:
+            if c == -1:
+                d = (d + 1) % 4
+                continue
+
             if c == -2:
                 d = (d + 3) % 4
-            elif c == -1:
-                d = (d + 1) % 4
-            else:
-                for i in range(c):
-                    tmp_x = pos[0] + directions[d][0]
-                    tmp_y = pos[1] + directions[d][1]
-                    if (tmp_x, tmp_y) in obs:
-                        break
-                    
-                    pos = [tmp_x, tmp_y]
-                    
-                res = max(res, pos[0] ** 2 + pos[1] ** 2)
+                continue
+
+            for k in range(c):
+                dx = x + directions[d][0]
+                dy = y + directions[d][1]
+                if (dx, dy) in ob:
+                    break
+                res = max(res, dx * dx + dy * dy)
+                x, y = dx, dy
                 
+
         return res

@@ -19,8 +19,8 @@
 15. https://www.lintcode.com/problem/recover-rotated-sorted-array/
 16. https://leetcode.com/problems/rotate-string/
 17. https://www.lintcode.com/problem/copy-books/
+18. https://leetcode.com/problems/find-k-closest-elements/
 
-Closest Number in Sorted Array
 Rectangle Enclosing Black Pixels
 
 ### 二叉树、分治
@@ -115,12 +115,12 @@ Word Break II
 
 - https://www.lintcode.com/problem/window-sum/
 - https://www.lintcode.com/problem/move-zeroes/
-86. https://leetcode.com/problems/valid-palindrome/
+87. https://leetcode.com/problems/valid-palindrome/
 - https://www.lintcode.com/problem/rotate-string/
 - https://www.lintcode.com/problem/recover-rotated-sorted-array/ +duplicate
 - https://www.lintcode.com/problem/two-sum/
 - https://www.lintcode.com/problem/two-sum-data-structure-design/
-91. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+92. https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 - https://www.lintcode.com/problem/two-sum-unique-pairs/
 - https://www.lintcode.com/problem/-um/
 - https://www.lintcode.com/problem/triangle-count/
